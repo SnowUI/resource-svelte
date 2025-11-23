@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M28.7 28.713A1 1 0 0 1 28 29a1.04 1.04 0 0 1-.712-.287l-5.4-5.413a11.525 11.525 0 1 1 1.412-1.412l5.4 5.4a1 1 0 0 1 0 1.425M14.5 24A9.5 9.5 0 1 0 5 14.5a9.513 9.513 0 0 0 9.5 9.5"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

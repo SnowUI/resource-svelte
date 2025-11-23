@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M29 14a8.01 8.01 0 0 1-8 8H6.414l4.294 4.293a1 1 0 0 1-1.415 1.415l-6-6a1 1 0 0 1 0-1.415l6-6a1 1 0 0 1 1.415 1.415L6.414 20H21a6 6 0 1 0 0-12H10a1 1 0 1 1 0-2h11a8.01 8.01 0 0 1 8 8"/>`, 'thin': `<path fill="currentColor" d="M28.5 14a7.51 7.51 0 0 1-7.5 7.5H5.207l5.147 5.146a.501.501 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708.708L5.207 20.5H21a6.5 6.5 0 1 0 0-13H10a.5.5 0 0 1 0-1h11a7.51 7.51 0 0 1 7.5 7.5"/>`, 'light': `<path fill="currentColor" d="M28.75 14A7.76 7.76 0 0 1 21 21.75H5.811l4.72 4.72a.75.75 0 1 1-1.06 1.06l-6-6a.75.75 0 0 1 0-1.06l6-6a.75.75 0 0 1 1.06 1.06l-4.72 4.72h15.19a6.25 6.25 0 0 0 0-12.5H10a.75.75 0 1 1 0-1.5h11A7.76 7.76 0 0 1 28.75 14"/>`, 'bold': `<path fill="currentColor" d="M29.5 14a8.51 8.51 0 0 1-8.5 8.5H7.625l3.44 3.439a1.504 1.504 0 0 1-2.125 2.125l-6-6a1.5 1.5 0 0 1 0-2.125l6-6a1.502 1.502 0 1 1 2.125 2.125L7.625 19.5H21a5.5 5.5 0 0 0 0-11H10a1.5 1.5 0 0 1 0-3h11a8.51 8.51 0 0 1 8.5 8.5"/>`, 'fill': `<path fill="currentColor" d="M29 14a8.01 8.01 0 0 1-8 8H11v5a1.001 1.001 0 0 1-1.707.707l-6-6a1 1 0 0 1 0-1.415l6-6A1 1 0 0 1 11 15v5h10a6 6 0 1 0 0-12H10a1 1 0 1 1 0-2h11a8.01 8.01 0 0 1 8 8"/>`, 'duotone': `<path fill="currentColor" d="M10 15v12l-6-6z" opacity=".08"/><path fill="currentColor" d="M21 6H10a1 1 0 1 0 0 2h11a6 6 0 1 1 0 12H11v-5a1.001 1.001 0 0 0-1.707-.707l-6 6a1 1 0 0 0 0 1.415l6 6A1 1 0 0 0 11 27v-5h10a8 8 0 0 0 0-16M9 24.586 5.414 21 9 17.414z"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

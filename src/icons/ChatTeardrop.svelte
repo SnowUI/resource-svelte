@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M16.5 3A12.514 12.514 0 0 0 4 15.5v10.541A1.96 1.96 0 0 0 5.959 28H16.5a12.5 12.5 0 0 0 0-25m0 23H6V15.5A10.5 10.5 0 1 1 16.5 26"/>`, 'thin': `<path fill="currentColor" d="M16.5 3.5a12.014 12.014 0 0 0-12 12v10.541A1.46 1.46 0 0 0 5.959 27.5H16.5a12 12 0 0 0 0-24m0 23H5.959a.46.46 0 0 1-.459-.459V15.5a11 11 0 1 1 11 11"/>`, 'light': `<path fill="currentColor" d="M16.5 3.25A12.264 12.264 0 0 0 4.25 15.5v10.541a1.71 1.71 0 0 0 1.709 1.709H16.5a12.25 12.25 0 0 0 0-24.5m0 23H5.959a.21.21 0 0 1-.209-.209V15.5A10.75 10.75 0 1 1 16.5 26.25"/>`, 'bold': `<path fill="currentColor" d="M16.5 2.5a13.014 13.014 0 0 0-13 13v10.541A2.46 2.46 0 0 0 5.959 28.5H16.5a13 13 0 1 0 0-26m0 23h-10v-10a10 10 0 1 1 10 10"/>`, 'fill': `<path fill="currentColor" d="M29 15.5A12.514 12.514 0 0 1 16.5 28H5.959A1.96 1.96 0 0 1 4 26.041V15.5a12.5 12.5 0 0 1 25 0"/>`, 'duotone': `<path fill="currentColor" d="M28 15.5A11.5 11.5 0 0 1 16.5 27H5.959A.957.957 0 0 1 5 26.041V15.5a11.5 11.5 0 1 1 23 0" opacity=".08"/><path fill="currentColor" d="M16.5 3A12.514 12.514 0 0 0 4 15.5v10.541A1.96 1.96 0 0 0 5.959 28H16.5a12.5 12.5 0 0 0 0-25m0 23H6V15.5A10.5 10.5 0 1 1 16.5 26"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

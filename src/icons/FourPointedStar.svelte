@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="m14.832 22.544-5.376-5.375c-.608-.609-.608-1.73 0-2.338l5.376-5.375c.608-.608 1.728-.608 2.337 0l5.375 5.376c.608.608.608 1.728 0 2.337l-5.375 5.375c-.609.608-1.73.608-2.338 0" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M16 9.934a.7.7 0 0 0-.49.175l-5.4 5.4a.7.7 0 0 0-.176.491c0 .22.079.394.175.49l5.4 5.4c.097.097.27.176.491.176s.394-.079.49-.175l5.4-5.4a.7.7 0 0 0 .176-.491.7.7 0 0 0-.175-.49l-5.4-5.4A.7.7 0 0 0 16 9.933M16 8c.648 0 1.343.227 1.858.742l5.4 5.4c.515.515.742 1.21.742 1.858s-.227 1.343-.742 1.858l-5.4 5.4c-.515.515-1.21.742-1.858.742s-1.343-.227-1.858-.742l-5.4-5.4C8.227 17.343 8 16.648 8 16s.227-1.343.742-1.858l5.4-5.4C14.657 8.227 15.352 8 16 8" clipRule="evenodd"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

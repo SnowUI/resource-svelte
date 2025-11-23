@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="url(#a)" d="M6 5a2 2 0 0 1 2-2h12l6 6v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path fill="#DCCFE8" d="m26 9-6-6v4a2 2 0 0 0 2 2z"/><path fill="#A1A2CD" fillRule="evenodd" d="M9.5 13a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zM9 19.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1z" clipRule="evenodd"/><path fill="url(#b)" d="M24.85 12.707a1 1 0 0 1 1.413 0l2.829 2.829a1 1 0 0 1 0 1.414L16.364 29.678l-4.243-4.243z"/><path fill="url(#c)" d="M12.121 29.678v-4.242l4.243 4.242z"/><path fill="#1C1C1C" d="M12.121 29.678v-1.414l1.415 1.414z"/><path fill="url(#d)" d="M23.435 14.121h6v3h-6z" transform="rotate(45 23.435 14.121)"/><defs><linearGradient id="a" x1="16" x2="16" y1="3" y2="31" gradientUnits="userSpaceOnUse"><stop stopColor="#F1ECF7"/><stop offset="1" stopColor="#E8DEF2"/></linearGradient><linearGradient id="b" x1="27.678" x2="14.243" y1="14.121" y2="27.556" gradientUnits="userSpaceOnUse"><stop stopColor="#FF6659"/><stop offset="1" stopColor="#FF8749"/></linearGradient><linearGradient id="c" x1="14.243" x2="12.121" y1="27.557" y2="29.678" gradientUnits="userSpaceOnUse"><stop stopColor="#FFBA9F"/><stop offset="1" stopColor="#DE8893"/></linearGradient><linearGradient id="d" x1="23.749" x2="30.82" y1="15.05" y2="15.05" gradientUnits="userSpaceOnUse"><stop stopColor="#E3DBEF"/><stop offset=".807" stopColor="#F6F1FE"/><stop offset="1" stopColor="#EADEFC"/></linearGradient></defs>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

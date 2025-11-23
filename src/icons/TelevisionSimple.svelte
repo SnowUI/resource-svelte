@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M27 8h-8.586l4.293-4.292a1 1 0 0 0-1.415-1.415L16 7.586l-5.292-5.293a1 1 0 1 0-1.415 1.415L13.586 8H5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2m0 17H5V10h22z"/>`, 'thin': `<path fill="currentColor" d="M27 8.5h-9.792l5.146-5.146a.5.5 0 0 0-.708-.708L16 8.292l-5.646-5.646a.5.5 0 0 0-.708.708L14.793 8.5H5A1.5 1.5 0 0 0 3.5 10v15A1.5 1.5 0 0 0 5 26.5h22a1.5 1.5 0 0 0 1.5-1.5V10A1.5 1.5 0 0 0 27 8.5m.5 16.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .5-.5h22a.5.5 0 0 1 .5.5z"/>`, 'light': `<path fill="currentColor" d="M27 8.25h-9.19l4.72-4.72a.75.75 0 0 0-1.06-1.06L16 7.94 10.53 2.47a.75.75 0 1 0-1.06 1.06l4.72 4.72H5A1.75 1.75 0 0 0 3.25 10v15A1.75 1.75 0 0 0 5 26.75h22A1.75 1.75 0 0 0 28.75 25V10A1.75 1.75 0 0 0 27 8.25M27.25 25a.25.25 0 0 1-.25.25H5a.25.25 0 0 1-.25-.25V10A.25.25 0 0 1 5 9.75h22a.25.25 0 0 1 .25.25z"/>`, 'bold': `<path fill="currentColor" d="M27 7.5h-7.375l3.44-3.44a1.503 1.503 0 1 0-2.125-2.125L16 6.875 11.061 1.94a1.502 1.502 0 1 0-2.125 2.125L12.375 7.5H5A2.5 2.5 0 0 0 2.5 10v15A2.5 2.5 0 0 0 5 27.5h22a2.5 2.5 0 0 0 2.5-2.5V10A2.5 2.5 0 0 0 27 7.5m-.5 17h-21v-14h21z"/>`, 'fill': `<path fill="currentColor" d="M29 10v15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2h8.586L9.293 3.708a1 1 0 1 1 1.415-1.415L16 7.586l5.293-5.293a1 1 0 1 1 1.415 1.415L18.414 8H27a2 2 0 0 1 2 2"/>`, 'duotone': `<path fill="currentColor" d="M28 10v15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1h22a1 1 0 0 1 1 1" opacity=".08"/><path fill="currentColor" d="M27 8h-8.586l4.293-4.292a1 1 0 0 0-1.415-1.415L16 7.586l-5.292-5.293a1 1 0 1 0-1.415 1.415L13.586 8H5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2m0 17H5V10h22z"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M21.293 16.293 25.586 12H11a6 6 0 1 0 0 12h11a1 1 0 1 1 0 2H11a8 8 0 0 1 0-16h14.586l-4.293-4.292a1.001 1.001 0 0 1 1.415-1.415l6 6a1 1 0 0 1 0 1.415l-6 6a1 1 0 0 1-1.415-1.415"/>`, 'thin': `<path fill="currentColor" d="m21.646 16.646 5.147-5.146H11a6.5 6.5 0 0 0 0 13h11a.5.5 0 0 1 0 1H11a7.5 7.5 0 1 1 0-15h15.793l-5.147-5.146a.5.5 0 0 1 .708-.708l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708"/>`, 'light': `<path fill="currentColor" d="m21.47 16.47 4.719-4.72H11a6.25 6.25 0 0 0 0 12.5h11a.75.75 0 1 1 0 1.5H11a7.75 7.75 0 1 1 0-15.5h15.189L21.47 5.53a.75.75 0 0 1 1.06-1.06l6 6a.75.75 0 0 1 0 1.06l-6 6a.75.75 0 0 1-1.06-1.06"/>`, 'bold': `<path fill="currentColor" d="m20.939 15.939 3.436-3.44H11a5.5 5.5 0 0 0 0 11h11a1.5 1.5 0 0 1 0 3H11A8.5 8.5 0 1 1 11 9.5h13.375l-3.436-3.439a1.503 1.503 0 0 1 2.125-2.125l6 6a1.5 1.5 0 0 1 0 2.125l-6 6a1.502 1.502 0 1 1-2.125-2.125z"/>`, 'fill': `<path fill="currentColor" d="M21 17v-5H11a6 6 0 1 0 0 12h11a1 1 0 1 1 0 2H11a8 8 0 0 1 0-16h10V5a1 1 0 0 1 1.707-.707l6 6a1 1 0 0 1 0 1.415l-6 6A1 1 0 0 1 21 17"/>`, 'duotone': `<path fill="currentColor" d="m28 11-6 6V5z" opacity=".08"/><path fill="currentColor" d="M21.618 17.924a1 1 0 0 0 1.09-.216l6-6a1 1 0 0 0 0-1.415l-6-6A1 1 0 0 0 21 5v5H11a8 8 0 1 0 0 16h11a1 1 0 0 0 0-2H11a6 6 0 0 1 0-12h10v5a1 1 0 0 0 .617.924M23 7.414 26.586 11 23 14.586z"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="m29.708 15.293-12-12A1 1 0 0 0 16 4v5H9a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7v5a1 1 0 0 0 1.707.708l12-12a1 1 0 0 0 0-1.415M18 25.586V22a1 1 0 0 0-1-1h-7V11h7a1 1 0 0 0 1-1V6.414L27.586 16zM6 10v12a1 1 0 0 1-2 0V10a1 1 0 1 1 2 0"/>`, 'thin': `<path fill="currentColor" d="m29.354 15.646-12-12A.5.5 0 0 0 16.5 4v5.5H9a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h7.5V28a.5.5 0 0 0 .854.354l12-12a.503.503 0 0 0 0-.708M17.5 26.792V22a.5.5 0 0 0-.5-.5H9.5v-11H17a.5.5 0 0 0 .5-.5V5.207L28.293 16zM5.5 10v12a.5.5 0 0 1-1 0V10a.5.5 0 0 1 1 0"/>`, 'light': `<path fill="currentColor" d="m29.53 15.47-12-12a.75.75 0 0 0-1.28.53v5.25H9a.75.75 0 0 0-.75.75v12a.75.75 0 0 0 .75.75h7.25V28a.75.75 0 0 0 1.28.53l12-12a.75.75 0 0 0 0-1.06M17.75 26.19V22a.75.75 0 0 0-.75-.75H9.75v-10.5H17a.75.75 0 0 0 .75-.75V5.811l10.189 10.19zM5.75 10v12a.75.75 0 1 1-1.5 0V10a.75.75 0 1 1 1.5 0"/>`, 'bold': `<path fill="currentColor" d="m30.061 14.939-12-12A1.5 1.5 0 0 0 15.5 4v4.5H10A1.5 1.5 0 0 0 8.5 10v12a1.5 1.5 0 0 0 1.5 1.5h5.5V28a1.5 1.5 0 0 0 2.561 1.061l12-12a1.5 1.5 0 0 0 0-2.122M18.5 24.375V22a1.5 1.5 0 0 0-1.5-1.5h-5.5v-9H17a1.5 1.5 0 0 0 1.5-1.5V7.625L26.875 16zM6.5 10v12a1.5 1.5 0 0 1-3 0V10a1.5 1.5 0 0 1 3 0"/>`, 'fill': `<path fill="currentColor" d="M6 10v12a1 1 0 0 1-2 0V10a1 1 0 1 1 2 0m23.708 5.293-12-12A1 1 0 0 0 16 4v5H9a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7v5a1 1 0 0 0 1.707.708l12-12a1 1 0 0 0 0-1.415"/>`, 'duotone': `<path fill="currentColor" d="M17 28v-6H9V10h8V4l12 12z" opacity=".08"/><path fill="currentColor" d="m29.708 15.293-12-12A1 1 0 0 0 16 4v5H9a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h7v5a1 1 0 0 0 1.707.708l12-12a1 1 0 0 0 0-1.415M18 25.586V22a1 1 0 0 0-1-1h-7V11h7a1 1 0 0 0 1-1V6.414L27.586 16zM6 10v12a1 1 0 0 1-2 0V10a1 1 0 1 1 2 0"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

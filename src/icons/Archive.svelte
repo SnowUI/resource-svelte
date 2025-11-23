@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2v11a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V13a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2 18H6V13h20zm2-13H4V8h24zm-16 6a1 1 0 0 1 1-1h6a1 1 0 0 1 0 2h-6a1 1 0 0 1-1-1"/>`, 'thin': `<path fill="currentColor" d="M28 6.5H4A1.5 1.5 0 0 0 2.5 8v3A1.5 1.5 0 0 0 4 12.5h.5V24A1.5 1.5 0 0 0 6 25.5h20a1.5 1.5 0 0 0 1.5-1.5V12.5h.5a1.5 1.5 0 0 0 1.5-1.5V8A1.5 1.5 0 0 0 28 6.5M26.5 24a.5.5 0 0 1-.5.5H6a.5.5 0 0 1-.5-.5V12.5h21zm2-13a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V8a.5.5 0 0 1 .5-.5h24a.5.5 0 0 1 .5.5zm-16 6a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>`, 'light': `<path fill="currentColor" d="M28 6.25H4A1.75 1.75 0 0 0 2.25 8v3A1.75 1.75 0 0 0 4 12.75h.25V24A1.75 1.75 0 0 0 6 25.75h20A1.75 1.75 0 0 0 27.75 24V12.75H28A1.75 1.75 0 0 0 29.75 11V8A1.75 1.75 0 0 0 28 6.25M26.25 24a.25.25 0 0 1-.25.25H6a.25.25 0 0 1-.25-.25V12.75h20.5zm2-13a.25.25 0 0 1-.25.25H4a.25.25 0 0 1-.25-.25V8A.25.25 0 0 1 4 7.75h24a.25.25 0 0 1 .25.25zm-16 6a.75.75 0 0 1 .75-.75h6a.75.75 0 1 1 0 1.5h-6a.75.75 0 0 1-.75-.75"/>`, 'bold': `<path fill="currentColor" d="M28 5.5H4A2.5 2.5 0 0 0 1.5 8v3a2.5 2.5 0 0 0 2 2.45V24A2.5 2.5 0 0 0 6 26.5h20a2.5 2.5 0 0 0 2.5-2.5V13.45a2.5 2.5 0 0 0 2-2.45V8A2.5 2.5 0 0 0 28 5.5m-23.5 3h23v2h-23zm2 15v-10h19v10zm14-6.5a1.5 1.5 0 0 1-1.5 1.5h-6a1.5 1.5 0 1 1 0-3h6a1.5 1.5 0 0 1 1.5 1.5"/>`, 'fill': `<path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2v11a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V13a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-9 12h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2m9-7H4V8h24z"/>`, 'duotone': `<path fill="currentColor" d="M27 12v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V12z" opacity=".08"/><path fill="currentColor" d="M28 6H4a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2v11a2 2 0 0 0 2 2h20a2 2 0 0 0 2-2V13a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m-2 18H6V13h20zm2-13H4V8h24zm-16 6a1 1 0 0 1 1-1h6a1 1 0 0 1 0 2h-6a1 1 0 0 1-1-1"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />

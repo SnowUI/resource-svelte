@@ -1,0 +1,11 @@
+<script lang="ts">
+  import IconBase from '../lib/IconBase.svelte';
+  import type { IconProps } from '../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M28 8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3v4a1 1 0 1 0 2 0v-4h14v4a1 1 0 0 0 2 0v-4h3a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2m0 8.086L21.914 10H28zM10.086 10l9 9h-6.172L4 10.086V10zM4 12.914 10.086 19H4zM28 19h-6.086l-9-9h6.172L28 18.915z"/>`, 'thin': `<path fill="currentColor" d="M28 8.5H4A1.5 1.5 0 0 0 2.5 10v9A1.5 1.5 0 0 0 4 20.5h3.5V25a.5.5 0 0 0 1 0v-4.5h15V25a.5.5 0 0 0 1 0v-4.5H28a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 28 8.5m.5 1.5v7.293L20.708 9.5H28a.5.5 0 0 1 .5.5M4 9.5h6.293l10 10h-7.585L3.5 10.293V10a.5.5 0 0 1 .5-.5M3.5 19v-7.292l7.793 7.792H4a.5.5 0 0 1-.5-.5m24.5.5h-6.292l-10-10h7.585l9.207 9.208V19a.5.5 0 0 1-.5.5"/>`, 'light': `<path fill="currentColor" d="M28 8.25H4A1.75 1.75 0 0 0 2.25 10v9A1.75 1.75 0 0 0 4 20.75h3.25V25a.75.75 0 1 0 1.5 0v-4.25h14.5V25a.75.75 0 1 0 1.5 0v-4.25H28A1.75 1.75 0 0 0 29.75 19v-9A1.75 1.75 0 0 0 28 8.25m.25 1.75v6.69l-6.94-6.94H28a.25.25 0 0 1 .25.25M4 9.75h6.19l9.5 9.5h-6.875L3.75 10.19V10A.25.25 0 0 1 4 9.75M3.75 19v-6.69l6.94 6.94H4a.25.25 0 0 1-.25-.25m24.25.25h-6.19l-9.5-9.5h6.875l9.065 9.06V19a.25.25 0 0 1-.25.25"/>`, 'bold': `<path fill="currentColor" d="M28 7.5H4A2.5 2.5 0 0 0 1.5 10v9A2.5 2.5 0 0 0 4 21.5h2.5V25a1.5 1.5 0 0 0 3 0v-3.5h13V25a1.5 1.5 0 1 0 3 0v-3.5H28a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 28 7.5m-.5 7.375L23.125 10.5H27.5zM22.125 18.5l-8-8h4.75l8 8zm-9 0-8-8h4.75l8 8zM4.5 14.125 8.875 18.5H4.5z"/>`, 'fill': `<path fill="currentColor" d="M28 8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3v4a1 1 0 1 0 2 0v-4h14v4a1 1 0 0 0 2 0v-4h3a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2M4 11.5l7.5 7.5H4zM28 19h-7.5l-9-9h9l7.5 7.5z"/>`, 'duotone': `<path fill="currentColor" d="M29 10v8.5L19.5 9H28a1 1 0 0 1 1 1M4 9a1 1 0 0 0-1 1v.5l9.5 9.5h9l-11-11z" opacity=".08"/><path fill="currentColor" d="M28 8H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3v4a1 1 0 1 0 2 0v-4h14v4a1 1 0 0 0 2 0v-4h3a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2m0 8.086L21.914 10H28zM10.086 10l9 9h-6.172L4 10.086V10zM4 12.914 10.086 19H4zM28 19h-6.086l-9-9h6.172L28 18.915z"/>` } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase viewBox={viewBox} weights={weights} {...rest} />
