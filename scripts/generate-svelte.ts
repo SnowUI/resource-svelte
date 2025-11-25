@@ -38,16 +38,16 @@ function sanitizeComponentName(name: string, group: string): string {
 }
 
 async function main() {
-  // When running from resource/svelte/scripts/, __dirname is resource/svelte/scripts/
-  // So we need to go up one level to get to resource/svelte/
+  // When running from resource-svelte/scripts/, __dirname is resource-svelte/scripts/
+  // So we need to go up one level to get to resource-svelte/
   const sveltePkgDir = path.resolve(__dirname, '..');
   const srcDir = path.join(sveltePkgDir, 'src');
   
-  // Try to find resource-core directory
-  // 1. First, try monorepo structure: ../core (from resource/svelte/ to resource/core)
+  // Try to find resource-base directory
+  // 1. First, try monorepo structure: ../resource-base (from resource-svelte/ to resource-base)
   // 2. Then, try npm package: node_modules/@snowui-design-system/resource-core
   const repoRoot = path.resolve(sveltePkgDir, '..');
-  const monorepoCoreDir = path.join(repoRoot, 'core');
+  const monorepoCoreDir = path.join(repoRoot, 'resource-base');
   const npmCoreDir = path.join(sveltePkgDir, 'node_modules', '@snowui-design-system', 'resource-core');
   
   let resourceCoreDir: string;
