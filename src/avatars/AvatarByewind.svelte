@@ -1,18 +1,18 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import AvatarByewindSrc from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-32.jpg';
-import AvatarByewindSrc16 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-16.jpg';
-import AvatarByewindSrc20 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-20.jpg';
-import AvatarByewindSrc24 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-24.jpg';
-import AvatarByewindSrc28 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-28.jpg';
-import AvatarByewindSrc40 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-40.jpg';
-import AvatarByewindSrc48 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-48.jpg';
-import AvatarByewindSrc56 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-56.jpg';
-import AvatarByewindSrc64 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-64.jpg';
-import AvatarByewindSrc80 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-80.jpg';
-import AvatarByewindSrc128 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-128.jpg';
-import AvatarByewindSrc256 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-256.jpg';
-import AvatarByewindSrc512 from '@snowui-design-system/resource-core/assets/avatars/avatar-byewind-512.jpg';
+import AvatarByewindSrc from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-32.jpg';
+import AvatarByewindSrc16 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-16.jpg';
+import AvatarByewindSrc20 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-20.jpg';
+import AvatarByewindSrc24 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-24.jpg';
+import AvatarByewindSrc28 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-28.jpg';
+import AvatarByewindSrc40 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-40.jpg';
+import AvatarByewindSrc48 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-48.jpg';
+import AvatarByewindSrc56 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-56.jpg';
+import AvatarByewindSrc64 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-64.jpg';
+import AvatarByewindSrc80 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-80.jpg';
+import AvatarByewindSrc128 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-128.jpg';
+import AvatarByewindSrc256 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-256.jpg';
+import AvatarByewindSrc512 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-512.jpg';
   const AvatarByewindSizeMap = {
     16: AvatarByewindSrc16,
     20: AvatarByewindSrc20,

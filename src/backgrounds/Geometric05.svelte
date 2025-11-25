@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { BackgroundProps } from '../lib/types';
-import Geometric05Src from '@snowui-design-system/resource-core/assets/backgrounds/geometric-05-1024.jpg';
-import Geometric05Src320 from '@snowui-design-system/resource-core/assets/backgrounds/geometric-05-320.jpg';
-import Geometric05Src640 from '@snowui-design-system/resource-core/assets/backgrounds/geometric-05-640.jpg';
-import Geometric05Src1920 from '@snowui-design-system/resource-core/assets/backgrounds/geometric-05-1920.jpg';
+import Geometric05Src from '@snowui-design-system/resource-base/assets/backgrounds/geometric-05-1024.jpg';
+import Geometric05Src320 from '@snowui-design-system/resource-base/assets/backgrounds/geometric-05-320.jpg';
+import Geometric05Src640 from '@snowui-design-system/resource-base/assets/backgrounds/geometric-05-640.jpg';
+import Geometric05Src1920 from '@snowui-design-system/resource-base/assets/backgrounds/geometric-05-1920.jpg';
   const Geometric05WidthMap = {
     320: Geometric05Src320,
     640: Geometric05Src640,

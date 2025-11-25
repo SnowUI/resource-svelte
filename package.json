@@ -1,7 +1,7 @@
 {
     "name": "@snowui-design-system/resource-svelte",
     "version": "1.0.22",
-    "description": "A lightweight Svelte component package that automatically generates icon, avatar, background, and other components from processed assets in @snowui-design-system/resource-core.",
+    "description": "A lightweight Svelte component package that automatically generates icon, avatar, background, and other components from processed assets in @snowui-design-system/resource-base.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "svelte": "./src/index.ts",
@@ -18,7 +18,7 @@
         "generate": "tsx scripts/generate-svelte.ts"
     },
     "dependencies": {
-        "@snowui-design-system/resource-core": "^1.0.22"
+        "@snowui-design-system/resource-base": "^1.0.23"
     },
     "peerDependencies": {
         "svelte": "^4.0.0 || ^5.0.0"

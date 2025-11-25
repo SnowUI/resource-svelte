@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import GrokSrc from '@snowui-design-system/resource-core/assets/logos/grok.svg';
+import GrokSrc from '@snowui-design-system/resource-base/assets/logos/grok.svg';
   let { size = 32, width, height, alt = "Grok", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);

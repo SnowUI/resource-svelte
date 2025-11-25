@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { BackgroundProps } from '../lib/types';
-import VoiceSrc from '@snowui-design-system/resource-core/assets/illustrations/voice.svg';
+import VoiceSrc from '@snowui-design-system/resource-base/assets/illustrations/voice.svg';
   let { width = 320, height, alt = "Voice", class: className = "", ...rest }: BackgroundProps = $props();
   let resolvedWidth = $derived(width ?? 320);
   let imageSrc = $derived(VoiceSrc);

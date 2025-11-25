@@ -45,7 +45,7 @@ async function main() {
   
   // Try to find resource-base directory
   // 1. First, try monorepo structure: ../resource-base (from resource-svelte/ to resource-base)
-  // 2. Then, try npm package: node_modules/@snowui-design-system/resource-core
+  // 2. Then, try npm package: node_modules/@snowui-design-system/resource-base
   const repoRoot = path.resolve(sveltePkgDir, '..');
   const monorepoCoreDir = path.join(repoRoot, 'resource-base');
   const npmCoreDir = path.join(sveltePkgDir, 'node_modules', '@snowui-design-system', 'resource-core');
@@ -66,7 +66,7 @@ async function main() {
       console.error('❌ Error: Cannot find resource-core directory.');
       console.error('   Tried:', monorepoCoreDir);
       console.error('   Tried:', npmCoreDir);
-      console.error('   Please ensure @snowui-design-system/resource-core is installed.');
+      console.error('   Please ensure @snowui-design-system/resource-base is installed.');
       process.exit(1);
     }
   }

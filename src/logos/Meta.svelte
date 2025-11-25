@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import MetaSrc from '@snowui-design-system/resource-core/assets/logos/meta.svg';
+import MetaSrc from '@snowui-design-system/resource-base/assets/logos/meta.svg';
   let { size = 32, width, height, alt = "Meta", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);

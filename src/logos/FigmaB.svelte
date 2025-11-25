@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import FigmaBSrc from '@snowui-design-system/resource-core/assets/logos/figma-b.svg';
+import FigmaBSrc from '@snowui-design-system/resource-base/assets/logos/figma-b.svg';
   let { size = 32, width, height, alt = "FigmaB", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);

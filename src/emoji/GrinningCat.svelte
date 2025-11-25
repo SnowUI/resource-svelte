@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import GrinningCatSrc from '@snowui-design-system/resource-core/assets/emoji/grinning-cat.svg';
+import GrinningCatSrc from '@snowui-design-system/resource-base/assets/emoji/grinning-cat.svg';
   let { size = 32, width, height, alt = "GrinningCat", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);

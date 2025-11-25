@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import RobotEmojiSrc from '@snowui-design-system/resource-core/assets/emoji/robot-emoji.svg';
+import RobotEmojiSrc from '@snowui-design-system/resource-base/assets/emoji/robot-emoji.svg';
   let { size = 32, width, height, alt = "RobotEmoji", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);

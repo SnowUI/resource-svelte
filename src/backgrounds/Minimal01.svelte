@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { BackgroundProps } from '../lib/types';
-import Minimal01Src from '@snowui-design-system/resource-core/assets/backgrounds/minimal-01-1024.jpg';
-import Minimal01Src320 from '@snowui-design-system/resource-core/assets/backgrounds/minimal-01-320.jpg';
-import Minimal01Src640 from '@snowui-design-system/resource-core/assets/backgrounds/minimal-01-640.jpg';
-import Minimal01Src1920 from '@snowui-design-system/resource-core/assets/backgrounds/minimal-01-1920.jpg';
+import Minimal01Src from '@snowui-design-system/resource-base/assets/backgrounds/minimal-01-1024.jpg';
+import Minimal01Src320 from '@snowui-design-system/resource-base/assets/backgrounds/minimal-01-320.jpg';
+import Minimal01Src640 from '@snowui-design-system/resource-base/assets/backgrounds/minimal-01-640.jpg';
+import Minimal01Src1920 from '@snowui-design-system/resource-base/assets/backgrounds/minimal-01-1920.jpg';
   const Minimal01WidthMap = {
     320: Minimal01Src320,
     640: Minimal01Src640,

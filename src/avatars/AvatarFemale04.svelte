@@ -1,18 +1,18 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import AvatarFemale04Src from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-32.jpg';
-import AvatarFemale04Src16 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-16.jpg';
-import AvatarFemale04Src20 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-20.jpg';
-import AvatarFemale04Src24 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-24.jpg';
-import AvatarFemale04Src28 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-28.jpg';
-import AvatarFemale04Src40 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-40.jpg';
-import AvatarFemale04Src48 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-48.jpg';
-import AvatarFemale04Src56 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-56.jpg';
-import AvatarFemale04Src64 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-64.jpg';
-import AvatarFemale04Src80 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-80.jpg';
-import AvatarFemale04Src128 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-128.jpg';
-import AvatarFemale04Src256 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-256.jpg';
-import AvatarFemale04Src512 from '@snowui-design-system/resource-core/assets/avatars/avatar-female-04-512.jpg';
+import AvatarFemale04Src from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-32.jpg';
+import AvatarFemale04Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-16.jpg';
+import AvatarFemale04Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-20.jpg';
+import AvatarFemale04Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-24.jpg';
+import AvatarFemale04Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-28.jpg';
+import AvatarFemale04Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-40.jpg';
+import AvatarFemale04Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-48.jpg';
+import AvatarFemale04Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-56.jpg';
+import AvatarFemale04Src64 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-64.jpg';
+import AvatarFemale04Src80 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-80.jpg';
+import AvatarFemale04Src128 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-128.jpg';
+import AvatarFemale04Src256 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-256.jpg';
+import AvatarFemale04Src512 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-512.jpg';
   const AvatarFemale04SizeMap = {
     16: AvatarFemale04Src16,
     20: AvatarFemale04Src20,

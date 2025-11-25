@@ -210,7 +210,7 @@ export function generateAvatarComponentCode(
   const defaultAssetsMatch = normalizedDefaultPath.match(/assets\/(.+)$/);
   
   if (defaultAssetsMatch) {
-    const assetPath = `@snowui-design-system/resource-core/assets/${defaultAssetsMatch[1]}`;
+    const assetPath = `@snowui-design-system/resource-base/assets/${defaultAssetsMatch[1]}`;
     imports.push(`import ${importIdentifier} from '${assetPath}';`);
   } else {
     const importPath = path.relative('src/avatars', defaultFilePath).replace(/\\/g, '/');
@@ -234,7 +234,7 @@ export function generateAvatarComponentCode(
       const sizeAssetsMatch = normalizedSizePath.match(/assets\/(.+)$/);
       
       if (sizeAssetsMatch) {
-        const sizeAssetPath = `@snowui-design-system/resource-core/assets/${sizeAssetsMatch[1]}`;
+        const sizeAssetPath = `@snowui-design-system/resource-base/assets/${sizeAssetsMatch[1]}`;
         sizeImports.push(`import ${sizeImportName} from '${sizeAssetPath}';`);
       } else {
         const sizeImportPath = path.relative('src/avatars', sizeFile.path).replace(/\\/g, '/');
@@ -341,7 +341,7 @@ export function generateIllustrationComponentCode(
   const defaultAssetsMatch = normalizedDefaultPath.match(/assets\/(.+)$/);
   
   if (defaultAssetsMatch) {
-    const assetPath = `@snowui-design-system/resource-core/assets/${defaultAssetsMatch[1]}`;
+    const assetPath = `@snowui-design-system/resource-base/assets/${defaultAssetsMatch[1]}`;
     imports.push(`import ${importIdentifier} from '${assetPath}';`);
   } else {
     const importPath = path.relative('src/illustrations', defaultFilePath).replace(/\\/g, '/');
@@ -365,7 +365,7 @@ export function generateIllustrationComponentCode(
       const sizeAssetsMatch = normalizedSizePath.match(/assets\/(.+)$/);
       
       if (sizeAssetsMatch) {
-        const sizeAssetPath = `@snowui-design-system/resource-core/assets/${sizeAssetsMatch[1]}`;
+        const sizeAssetPath = `@snowui-design-system/resource-base/assets/${sizeAssetsMatch[1]}`;
         sizeImports.push(`import ${sizeImportName} from '${sizeAssetPath}';`);
       } else {
         const sizeImportPath = path.relative('src/illustrations', sizeFile.path).replace(/\\/g, '/');

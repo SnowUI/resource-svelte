@@ -1,18 +1,18 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import Avatar3d03Src from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-32.jpg';
-import Avatar3d03Src16 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-16.jpg';
-import Avatar3d03Src20 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-20.jpg';
-import Avatar3d03Src24 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-24.jpg';
-import Avatar3d03Src28 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-28.jpg';
-import Avatar3d03Src40 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-40.jpg';
-import Avatar3d03Src48 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-48.jpg';
-import Avatar3d03Src56 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-56.jpg';
-import Avatar3d03Src64 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-64.jpg';
-import Avatar3d03Src80 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-80.jpg';
-import Avatar3d03Src128 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-128.jpg';
-import Avatar3d03Src256 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-256.jpg';
-import Avatar3d03Src512 from '@snowui-design-system/resource-core/assets/avatars/avatar-3d-03-512.jpg';
+import Avatar3d03Src from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-32.jpg';
+import Avatar3d03Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-16.jpg';
+import Avatar3d03Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-20.jpg';
+import Avatar3d03Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-24.jpg';
+import Avatar3d03Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-28.jpg';
+import Avatar3d03Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-40.jpg';
+import Avatar3d03Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-48.jpg';
+import Avatar3d03Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-56.jpg';
+import Avatar3d03Src64 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-64.jpg';
+import Avatar3d03Src80 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-80.jpg';
+import Avatar3d03Src128 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-128.jpg';
+import Avatar3d03Src256 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-256.jpg';
+import Avatar3d03Src512 from '@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-512.jpg';
   const Avatar3d03SizeMap = {
     16: Avatar3d03Src16,
     20: Avatar3d03Src20,

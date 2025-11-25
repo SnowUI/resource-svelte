@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { BackgroundProps } from '../lib/types';
-import Gradient10Src from '@snowui-design-system/resource-core/assets/backgrounds/gradient-10-1024.jpg';
-import Gradient10Src320 from '@snowui-design-system/resource-core/assets/backgrounds/gradient-10-320.jpg';
-import Gradient10Src640 from '@snowui-design-system/resource-core/assets/backgrounds/gradient-10-640.jpg';
-import Gradient10Src1920 from '@snowui-design-system/resource-core/assets/backgrounds/gradient-10-1920.jpg';
+import Gradient10Src from '@snowui-design-system/resource-base/assets/backgrounds/gradient-10-1024.jpg';
+import Gradient10Src320 from '@snowui-design-system/resource-base/assets/backgrounds/gradient-10-320.jpg';
+import Gradient10Src640 from '@snowui-design-system/resource-base/assets/backgrounds/gradient-10-640.jpg';
+import Gradient10Src1920 from '@snowui-design-system/resource-base/assets/backgrounds/gradient-10-1920.jpg';
   const Gradient10WidthMap = {
     320: Gradient10Src320,
     640: Gradient10Src640,

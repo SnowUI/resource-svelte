@@ -1,18 +1,18 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import AvatarMale05Src from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-32.jpg';
-import AvatarMale05Src16 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-16.jpg';
-import AvatarMale05Src20 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-20.jpg';
-import AvatarMale05Src24 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-24.jpg';
-import AvatarMale05Src28 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-28.jpg';
-import AvatarMale05Src40 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-40.jpg';
-import AvatarMale05Src48 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-48.jpg';
-import AvatarMale05Src56 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-56.jpg';
-import AvatarMale05Src64 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-64.jpg';
-import AvatarMale05Src80 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-80.jpg';
-import AvatarMale05Src128 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-128.jpg';
-import AvatarMale05Src256 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-256.jpg';
-import AvatarMale05Src512 from '@snowui-design-system/resource-core/assets/avatars/avatar-male-05-512.jpg';
+import AvatarMale05Src from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-32.jpg';
+import AvatarMale05Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-16.jpg';
+import AvatarMale05Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-20.jpg';
+import AvatarMale05Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-24.jpg';
+import AvatarMale05Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-28.jpg';
+import AvatarMale05Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-40.jpg';
+import AvatarMale05Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-48.jpg';
+import AvatarMale05Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-56.jpg';
+import AvatarMale05Src64 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-64.jpg';
+import AvatarMale05Src80 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-80.jpg';
+import AvatarMale05Src128 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-128.jpg';
+import AvatarMale05Src256 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-256.jpg';
+import AvatarMale05Src512 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-512.jpg';
   const AvatarMale05SizeMap = {
     16: AvatarMale05Src16,
     20: AvatarMale05Src20,

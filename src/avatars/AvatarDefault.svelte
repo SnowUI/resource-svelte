@@ -1,18 +1,18 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import AvatarDefaultSrc from '@snowui-design-system/resource-core/assets/avatars/avatar-default-32.jpg';
-import AvatarDefaultSrc16 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-16.jpg';
-import AvatarDefaultSrc20 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-20.jpg';
-import AvatarDefaultSrc24 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-24.jpg';
-import AvatarDefaultSrc28 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-28.jpg';
-import AvatarDefaultSrc40 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-40.jpg';
-import AvatarDefaultSrc48 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-48.jpg';
-import AvatarDefaultSrc56 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-56.jpg';
-import AvatarDefaultSrc64 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-64.jpg';
-import AvatarDefaultSrc80 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-80.jpg';
-import AvatarDefaultSrc128 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-128.jpg';
-import AvatarDefaultSrc256 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-256.jpg';
-import AvatarDefaultSrc512 from '@snowui-design-system/resource-core/assets/avatars/avatar-default-512.jpg';
+import AvatarDefaultSrc from '@snowui-design-system/resource-base/assets/avatars/avatar-default-32.jpg';
+import AvatarDefaultSrc16 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-16.jpg';
+import AvatarDefaultSrc20 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-20.jpg';
+import AvatarDefaultSrc24 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-24.jpg';
+import AvatarDefaultSrc28 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-28.jpg';
+import AvatarDefaultSrc40 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-40.jpg';
+import AvatarDefaultSrc48 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-48.jpg';
+import AvatarDefaultSrc56 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-56.jpg';
+import AvatarDefaultSrc64 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-64.jpg';
+import AvatarDefaultSrc80 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-80.jpg';
+import AvatarDefaultSrc128 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-128.jpg';
+import AvatarDefaultSrc256 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-256.jpg';
+import AvatarDefaultSrc512 from '@snowui-design-system/resource-base/assets/avatars/avatar-default-512.jpg';
   const AvatarDefaultSizeMap = {
     16: AvatarDefaultSrc16,
     20: AvatarDefaultSrc20,

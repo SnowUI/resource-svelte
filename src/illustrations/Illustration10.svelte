@@ -1,9 +1,9 @@
 <script lang="ts">
   import type { BackgroundProps } from '../lib/types';
-import Illustration10Src from '@snowui-design-system/resource-core/assets/illustrations/illustration-10-320.png';
-import Illustration10Src160 from '@snowui-design-system/resource-core/assets/illustrations/illustration-10-160.png';
-import Illustration10Src640 from '@snowui-design-system/resource-core/assets/illustrations/illustration-10-640.png';
-import Illustration10Src1024 from '@snowui-design-system/resource-core/assets/illustrations/illustration-10-1024.png';
+import Illustration10Src from '@snowui-design-system/resource-base/assets/illustrations/illustration-10-320.png';
+import Illustration10Src160 from '@snowui-design-system/resource-base/assets/illustrations/illustration-10-160.png';
+import Illustration10Src640 from '@snowui-design-system/resource-base/assets/illustrations/illustration-10-640.png';
+import Illustration10Src1024 from '@snowui-design-system/resource-base/assets/illustrations/illustration-10-1024.png';
   const Illustration10WidthMap = {
     160: Illustration10Src160,
     320: Illustration10Src,
