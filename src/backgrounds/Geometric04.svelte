@@ -12,16 +12,14 @@ import Geometric04Src1920 from '@snowui-design-system/resource-base/assets/backg
   } as const;
   const Geometric04AvailableWidths = [320, 640, 1024, 1920] as const;
 
-  // 查找最接近的可用宽度
+  // 查找最接近的 3x 宽度
   const findClosestWidth = (target: number, available: readonly number[]): number => {
     if (available.length === 0) return target;
-    // 如果目标宽度在可用宽度中，直接返回
-    if (available.includes(target)) return target;
-    // 找到最接近的宽度
+    const preferred = target * 3;
     let closest = available[0];
-    let minDiff = Math.abs(target - closest);
+    let minDiff = Math.abs(preferred - closest);
     for (const width of available) {
-      const diff = Math.abs(target - width);
+      const diff = Math.abs(preferred - width);
       if (diff < minDiff) {
         minDiff = diff;
         closest = width;

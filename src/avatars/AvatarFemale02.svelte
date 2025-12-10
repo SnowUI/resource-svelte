@@ -8,11 +8,23 @@ import AvatarFemale02Src28 from '@snowui-design-system/resource-base/assets/avat
 import AvatarFemale02Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-40.jpg';
 import AvatarFemale02Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-48.jpg';
 import AvatarFemale02Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-56.jpg';
+import AvatarFemale02Src60 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-60.jpg';
 import AvatarFemale02Src64 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-64.jpg';
+import AvatarFemale02Src72 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-72.jpg';
 import AvatarFemale02Src80 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-80.jpg';
+import AvatarFemale02Src84 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-84.jpg';
+import AvatarFemale02Src96 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-96.jpg';
+import AvatarFemale02Src120 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-120.jpg';
 import AvatarFemale02Src128 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-128.jpg';
+import AvatarFemale02Src144 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-144.jpg';
+import AvatarFemale02Src168 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-168.jpg';
+import AvatarFemale02Src192 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-192.jpg';
+import AvatarFemale02Src240 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-240.jpg';
 import AvatarFemale02Src256 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-256.jpg';
+import AvatarFemale02Src384 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-384.jpg';
 import AvatarFemale02Src512 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-512.jpg';
+import AvatarFemale02Src768 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-768.jpg';
+import AvatarFemale02Src1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-02-1536.jpg';
   const AvatarFemale02SizeMap = {
     16: AvatarFemale02Src16,
     20: AvatarFemale02Src20,
@@ -22,24 +34,34 @@ import AvatarFemale02Src512 from '@snowui-design-system/resource-base/assets/ava
     40: AvatarFemale02Src40,
     48: AvatarFemale02Src48,
     56: AvatarFemale02Src56,
+    60: AvatarFemale02Src60,
     64: AvatarFemale02Src64,
+    72: AvatarFemale02Src72,
     80: AvatarFemale02Src80,
+    84: AvatarFemale02Src84,
+    96: AvatarFemale02Src96,
+    120: AvatarFemale02Src120,
     128: AvatarFemale02Src128,
+    144: AvatarFemale02Src144,
+    168: AvatarFemale02Src168,
+    192: AvatarFemale02Src192,
+    240: AvatarFemale02Src240,
     256: AvatarFemale02Src256,
+    384: AvatarFemale02Src384,
     512: AvatarFemale02Src512,
+    768: AvatarFemale02Src768,
+    1536: AvatarFemale02Src1536,
   } as const;
-  const AvatarFemale02AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512] as const;
+  const AvatarFemale02AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
-  // 查找最接近的可用尺寸
+  // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {
     if (available.length === 0) return target;
-    // 如果目标尺寸在可用尺寸中，直接返回
-    if (available.includes(target)) return target;
-    // 找到最接近的尺寸
+    const preferred = target * 3;
     let closest = available[0];
-    let minDiff = Math.abs(target - closest);
+    let minDiff = Math.abs(preferred - closest);
     for (const size of available) {
-      const diff = Math.abs(target - size);
+      const diff = Math.abs(preferred - size);
       if (diff < minDiff) {
         minDiff = diff;
         closest = size;

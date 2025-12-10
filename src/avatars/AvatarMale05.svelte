@@ -8,11 +8,23 @@ import AvatarMale05Src28 from '@snowui-design-system/resource-base/assets/avatar
 import AvatarMale05Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-40.jpg';
 import AvatarMale05Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-48.jpg';
 import AvatarMale05Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-56.jpg';
+import AvatarMale05Src60 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-60.jpg';
 import AvatarMale05Src64 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-64.jpg';
+import AvatarMale05Src72 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-72.jpg';
 import AvatarMale05Src80 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-80.jpg';
+import AvatarMale05Src84 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-84.jpg';
+import AvatarMale05Src96 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-96.jpg';
+import AvatarMale05Src120 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-120.jpg';
 import AvatarMale05Src128 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-128.jpg';
+import AvatarMale05Src144 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-144.jpg';
+import AvatarMale05Src168 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-168.jpg';
+import AvatarMale05Src192 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-192.jpg';
+import AvatarMale05Src240 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-240.jpg';
 import AvatarMale05Src256 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-256.jpg';
+import AvatarMale05Src384 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-384.jpg';
 import AvatarMale05Src512 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-512.jpg';
+import AvatarMale05Src768 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-768.jpg';
+import AvatarMale05Src1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-05-1536.jpg';
   const AvatarMale05SizeMap = {
     16: AvatarMale05Src16,
     20: AvatarMale05Src20,
@@ -22,24 +34,34 @@ import AvatarMale05Src512 from '@snowui-design-system/resource-base/assets/avata
     40: AvatarMale05Src40,
     48: AvatarMale05Src48,
     56: AvatarMale05Src56,
+    60: AvatarMale05Src60,
     64: AvatarMale05Src64,
+    72: AvatarMale05Src72,
     80: AvatarMale05Src80,
+    84: AvatarMale05Src84,
+    96: AvatarMale05Src96,
+    120: AvatarMale05Src120,
     128: AvatarMale05Src128,
+    144: AvatarMale05Src144,
+    168: AvatarMale05Src168,
+    192: AvatarMale05Src192,
+    240: AvatarMale05Src240,
     256: AvatarMale05Src256,
+    384: AvatarMale05Src384,
     512: AvatarMale05Src512,
+    768: AvatarMale05Src768,
+    1536: AvatarMale05Src1536,
   } as const;
-  const AvatarMale05AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512] as const;
+  const AvatarMale05AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
-  // 查找最接近的可用尺寸
+  // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {
     if (available.length === 0) return target;
-    // 如果目标尺寸在可用尺寸中，直接返回
-    if (available.includes(target)) return target;
-    // 找到最接近的尺寸
+    const preferred = target * 3;
     let closest = available[0];
-    let minDiff = Math.abs(target - closest);
+    let minDiff = Math.abs(preferred - closest);
     for (const size of available) {
-      const diff = Math.abs(target - size);
+      const diff = Math.abs(preferred - size);
       if (diff < minDiff) {
         minDiff = diff;
         closest = size;
