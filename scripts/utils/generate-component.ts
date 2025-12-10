@@ -256,18 +256,16 @@ export function generateAvatarComponentCode(
     ? `[${availableSizes.join(', ')}]`
     : '[]';
   
-  // 查找最接近尺寸的辅助函数
+  // 查找最接近尺寸的辅助函数（优先匹配接近 3x 的资源）
   const findClosestSizeHelper = hasSizes ? `
-  // 查找最接近的可用尺寸
+  // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {
     if (available.length === 0) return target;
-    // 如果目标尺寸在可用尺寸中，直接返回
-    if (available.includes(target)) return target;
-    // 找到最接近的尺寸
+    const preferred = target * 3;
     let closest = available[0];
-    let minDiff = Math.abs(target - closest);
+    let minDiff = Math.abs(preferred - closest);
     for (const size of available) {
-      const diff = Math.abs(target - size);
+      const diff = Math.abs(preferred - size);
       if (diff < minDiff) {
         minDiff = diff;
         closest = size;
@@ -387,18 +385,16 @@ export function generateIllustrationComponentCode(
     ? `[${availableWidths.join(', ')}]`
     : '[]';
   
-  // 查找最接近宽度的辅助函数
+  // 查找最接近宽度的辅助函数（优先匹配接近 3x 的资源）
   const findClosestWidthHelper = hasSizes ? `
-  // 查找最接近的可用宽度
+  // 查找最接近的 3x 宽度
   const findClosestWidth = (target: number, available: readonly number[]): number => {
     if (available.length === 0) return target;
-    // 如果目标宽度在可用宽度中，直接返回
-    if (available.includes(target)) return target;
-    // 找到最接近的宽度
+    const preferred = target * 3;
     let closest = available[0];
-    let minDiff = Math.abs(target - closest);
+    let minDiff = Math.abs(preferred - closest);
     for (const width of available) {
-      const diff = Math.abs(target - width);
+      const diff = Math.abs(preferred - width);
       if (diff < minDiff) {
         minDiff = diff;
         closest = width;

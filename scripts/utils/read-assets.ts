@@ -107,9 +107,17 @@ export async function readMaterialAssets(resourceCoreDir: string, folder: string
         if (!baseName) continue;
         
         // 检查是否是带尺寸后缀的文件（如 avatar-byewind-64.jpg）
-        // 合法的尺寸：16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512
-        // 以及 backgrounds/images/illustrations 的宽度：160, 320, 640, 1024, 1920
-        const VALID_SIZES = new Set([16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512, 160, 320, 640, 1024, 1920]);
+        // 合法尺寸：1x + 3x（avatars），以及 backgrounds/images/illustrations 的宽度
+        const AVATAR_SIZES_1X = [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512];
+        const AVATAR_SIZES_3X = AVATAR_SIZES_1X.map((s) => s * 3);
+        const WIDTH_SIZES_1X = [160, 320, 640, 1024, 1920];
+        const WIDTH_SIZES_3X = WIDTH_SIZES_1X.map((s) => s * 3); // 480, 960, 1920, 3072, 5760
+        const VALID_SIZES = new Set([
+          ...AVATAR_SIZES_1X,
+          ...AVATAR_SIZES_3X,
+          ...WIDTH_SIZES_1X,
+          ...WIDTH_SIZES_3X,
+        ]);
         
         const sizeMatch = baseName.match(/^(.+)-(\d+)$/);
         let kebab: string;
