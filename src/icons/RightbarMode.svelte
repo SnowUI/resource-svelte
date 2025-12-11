@@ -2,7 +2,7 @@
   import IconBase from '../lib/IconBase.svelte';
   import type { IconProps } from '../lib/types';
   
-  const weights = { 'regular': `<path fill="currentColor" fillRule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clipRule="evenodd"/>` } as const;
+  const weights = { 'regular': `<path fill="currentColor" fill-rule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>` } as const;
   const defaultViewBox = "0 0 32 32";
 
   let { viewBox = defaultViewBox, ...rest }: IconProps = $props();

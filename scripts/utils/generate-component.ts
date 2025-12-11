@@ -177,8 +177,9 @@ export function wrapSvgAsSvelte(svgByWeight: Record<string, string>, componentNa
       .replace(/\n+/g, ' ')
       .replace(/\s{2,}/g, ' ')
       .trim();
+    // 保留原始属性名（fill-rule / clip-rule 等），仅做颜色和样式规范化
     const normalizedInner = removeXmlnsAttributes(
-      convertStyleAttributes(normalizeAttributeNames(normalizeColorAttributes(inner)))
+      convertStyleAttributes(normalizeColorAttributes(inner))
     );
     // Escape backticks and dollar signs for template literal
     const escaped = normalizedInner.replace(/`/g, '\\`').replace(/\$/g, '\\$');

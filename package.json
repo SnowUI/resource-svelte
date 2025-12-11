@@ -18,7 +18,7 @@
         "generate": "tsx scripts/generate-svelte.ts"
     },
     "dependencies": {
-        "@snowui-design-system/resource-base": "^1.0.24"
+        "@snowui-design-system/resource-base": "workspace:*"
     },
     "peerDependencies": {
         "svelte": "^4.0.0 || ^5.0.0"
