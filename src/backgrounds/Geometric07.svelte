@@ -27,17 +27,19 @@ import Geometric07Src1920 from '@snowui-design-system/resource-base/assets/backg
     }
     return closest;
   };
-  let { width = 1024, height, alt = "Geometric07", class: className = "", ...rest }: BackgroundProps = $props();
-  let resolvedWidth = $derived(width ?? 1024);
-  // 根据 width 选择对应宽度的图片，如果没有精确匹配则使用最接近的宽度
-  let closestWidth = $derived(findClosestWidth(resolvedWidth, Geometric07AvailableWidths));
+  let { width, height = 128, alt = "Geometric07", class: className = "", ...rest }: BackgroundProps = $props();
+  let resolvedWidth = $derived(width ?? undefined);
+  let resolvedHeight = $derived(height ?? 128);
+  // 根据请求宽度选择资源；未传 width 时使用默认宽度选择最接近资源，渲染时保持宽度自适应
+  let sourceWidth = $derived(resolvedWidth ?? 1024);
+  let closestWidth = $derived(findClosestWidth(sourceWidth, Geometric07AvailableWidths));
   let imageSrc = $derived(Geometric07WidthMap[closestWidth as keyof typeof Geometric07WidthMap] ?? Geometric07Src);
 </script>
 <img
   src={imageSrc}
   alt={alt}
-  width={resolvedWidth}
-  height={height ?? undefined}
+  width={resolvedWidth ?? undefined}
+  height={resolvedHeight}
   class={className}
   {...rest}
 />

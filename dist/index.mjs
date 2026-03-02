@@ -5,10 +5,17 @@ import * as $2 from "svelte/internal/client";
 // src/lib/IconBase.svelte
 import "svelte/internal/disclose-version";
 import * as $ from "svelte/internal/client";
+import { getContext } from "svelte";
+
+// src/lib/types.ts
+var RESOURCE_ICON_CONTEXT_KEY = Symbol("RESOURCE_ICON_CONTEXT_KEY");
+
+// src/lib/IconBase.svelte
 var root_1 = $.from_svg(`<svg><!></svg>`);
 function IconBase($$anchor, $$props) {
   $.push($$props, true);
-  let size = $.prop($$props, "size", 3, 24), color = $.prop($$props, "color", 3, "currentColor"), weight = $.prop($$props, "weight", 3, "regular"), className = $.prop($$props, "class", 3, ""), viewBox = $.prop($$props, "viewBox", 3, "0 0 256 256"), restProps = $.rest_props($$props, [
+  const ctx = getContext(RESOURCE_ICON_CONTEXT_KEY);
+  let color = $.prop($$props, "color", 3, "currentColor"), className = $.prop($$props, "class", 3, ""), viewBox = $.prop($$props, "viewBox", 3, "0 0 256 256"), restProps = $.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -19,7 +26,14 @@ function IconBase($$anchor, $$props) {
     "weights",
     "viewBox"
   ]);
-  let content = $.derived(() => $$props.weights && $$props.weights[weight()] || $$props.weights?.regular || "");
+  let size = $.derived(() => $$props.size ?? ctx?.size ?? 32);
+  let weight = $.derived(() => $$props.weight ?? ctx?.weight ?? "regular");
+  $.user_effect(() => {
+    if ($$props.size !== void 0 && ctx?.registerChildSize) {
+      ctx.registerChildSize($$props.size);
+    }
+  });
+  let content = $.derived(() => $$props.weights && $$props.weights[$.get(weight)] || $$props.weights?.regular || "");
   let hasContent = $.derived(() => !!$.get(content));
   var fragment = $.comment();
   var node = $.first_child(fragment);
@@ -27,8 +41,8 @@ function IconBase($$anchor, $$props) {
     var consequent = ($$anchor2) => {
       var svg = root_1();
       $.attribute_effect(svg, () => ({
-        width: size(),
-        height: size(),
+        width: $.get(size),
+        height: $.get(size),
         viewBox: viewBox(),
         fill: color(),
         xmlns: "http://www.w3.org/2000/svg",
@@ -100,7 +114,7 @@ import "svelte/internal/disclose-version";
 import * as $4 from "svelte/internal/client";
 function Ai($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M24.937 4.653c-.322-.87-1.553-.87-1.876 0l-.793 2.144a1 1 0 0 1-.59.59l-2.144.794c-.87.322-.87 1.553 0 1.875l2.143.794a1 1 0 0 1 .591.59l.793 2.144c.323.87 1.554.87 1.876 0l.793-2.144a1 1 0 0 1 .591-.59l2.144-.794c.87-.322.87-1.553 0-1.875l-2.144-.794a1 1 0 0 1-.59-.59z"/><path fill="currentColor" fillRule="evenodd" d="m4.97 27.361 2.061-8.243h7.939l2.06 8.243a1 1 0 0 0 1.94-.485L13.91 6.637c-.757-3.03-5.063-3.03-5.82 0L3.03 26.876a1 1 0 0 0 1.94.485m7-20.239c-.252-1.01-1.687-1.01-1.94 0l-2.499 9.996h6.939z" clipRule="evenodd"/><path fill="currentColor" d="M25 18.118a1 1 0 1 0-2 0v9a1 1 0 1 0 2 0z"/>`
+    "regular": `<path fill="currentColor" d="M24.937 4.653c-.322-.87-1.553-.87-1.876 0l-.793 2.144a1 1 0 0 1-.59.59l-2.144.794c-.87.322-.87 1.553 0 1.875l2.143.794a1 1 0 0 1 .591.59l.793 2.144c.323.87 1.554.87 1.876 0l.793-2.144a1 1 0 0 1 .591-.59l2.144-.794c.87-.322.87-1.553 0-1.875l-2.144-.794a1 1 0 0 1-.59-.59z"/><path fill="currentColor" fill-rule="evenodd" d="m4.97 27.361 2.061-8.243h7.939l2.06 8.243a1 1 0 0 0 1.94-.485L13.91 6.637c-.757-3.03-5.063-3.03-5.82 0L3.03 26.876a1 1 0 0 0 1.94.485m7-20.239c-.252-1.01-1.687-1.01-1.94 0l-2.499 9.996h6.939z" clip-rule="evenodd"/><path fill="currentColor" d="M25 18.118a1 1 0 1 0-2 0v9a1 1 0 1 0 2 0z"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $4.prop($$props, "viewBox", 3, defaultViewBox), rest = $4.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2012,7 +2026,7 @@ import "svelte/internal/disclose-version";
 import * as $75 from "svelte/internal/client";
 function ArrowFall($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M28.693 7.279a1 1 0 0 1 .028 1.414l-6.72 7a1 1 0 0 1-1.442 0l-4.079-4.249-4.833 5.035 3.443 3.306L4 23l2.76-11.212 3.444 3.306 5.555-5.787a1 1 0 0 1 1.442 0l4.079 4.249 5.999-6.249a1 1 0 0 1 1.413-.028" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M28.693 7.279a1 1 0 0 1 .028 1.414l-6.72 7a1 1 0 0 1-1.442 0l-4.079-4.249-4.833 5.035 3.443 3.306L4 23l2.76-11.212 3.444 3.306 5.555-5.787a1 1 0 0 1 1.442 0l4.079 4.249 5.999-6.249a1 1 0 0 1 1.413-.028" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $75.prop($$props, "viewBox", 3, defaultViewBox), rest = $75.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2385,12 +2399,12 @@ import "svelte/internal/disclose-version";
 import * as $89 from "svelte/internal/client";
 function ArrowLineDown2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M7.293 11.32a.943.943 0 0 1 1.414 0l6.586 7.18a.943.943 0 0 0 1.414 0l6.586-7.18a.943.943 0 0 1 1.414 0c.39.425.39 1.115 0 1.541l-6.586 7.181c-1.171 1.277-3.07 1.277-4.242 0l-6.586-7.18a1.16 1.16 0 0 1 0-1.543" clipRule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fillRule="evenodd" d="M7.178 11.14a.51.51 0 0 1 .747.047l6.888 8.142a1.537 1.537 0 0 0 2.374 0l6.888-8.142a.51.51 0 0 1 .747-.047.575.575 0 0 1 .044.784l-6.887 8.142a2.564 2.564 0 0 1-3.958 0l-6.888-8.142a.575.575 0 0 1 .045-.784" clipRule="evenodd"/>`,
-    "light": `<path fill="currentColor" fillRule="evenodd" d="M7.26 11.2a.76.76 0 0 1 1.088.065l6.691 7.714c.512.59 1.41.59 1.922 0l6.69-7.714a.76.76 0 0 1 1.09-.066c.318.29.347.789.064 1.115l-6.69 7.713a2.784 2.784 0 0 1-4.23 0l-6.69-7.713a.8.8 0 0 1 .064-1.115" clipRule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fillRule="evenodd" d="M6.53 10.414a1.54 1.54 0 0 1 2.23.136l6.847 7.99c.209.245.577.245.786 0l6.848-7.99a1.54 1.54 0 0 1 2.229-.136 1.68 1.68 0 0 1 .131 2.312l-6.847 7.991a3.597 3.597 0 0 1-5.508 0L6.4 12.727a1.68 1.68 0 0 1 .131-2.313" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M7.293 11.32a.943.943 0 0 1 1.414 0l6.586 7.18a.943.943 0 0 0 1.414 0l6.586-7.18a.943.943 0 0 1 1.414 0c.39.425.39 1.115 0 1.541l-6.586 7.181c-1.171 1.277-3.07 1.277-4.242 0l-6.586-7.18a1.16 1.16 0 0 1 0-1.543" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M7.178 11.14a.51.51 0 0 1 .747.047l6.888 8.142a1.537 1.537 0 0 0 2.374 0l6.888-8.142a.51.51 0 0 1 .747-.047.575.575 0 0 1 .044.784l-6.887 8.142a2.564 2.564 0 0 1-3.958 0l-6.888-8.142a.575.575 0 0 1 .045-.784" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M7.26 11.2a.76.76 0 0 1 1.088.065l6.691 7.714c.512.59 1.41.59 1.922 0l6.69-7.714a.76.76 0 0 1 1.09-.066c.318.29.347.789.064 1.115l-6.69 7.713a2.784 2.784 0 0 1-4.23 0l-6.69-7.713a.8.8 0 0 1 .064-1.115" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M6.53 10.414a1.54 1.54 0 0 1 2.23.136l6.847 7.99c.209.245.577.245.786 0l6.848-7.99a1.54 1.54 0 0 1 2.229-.136 1.68 1.68 0 0 1 .131 2.312l-6.847 7.991a3.597 3.597 0 0 1-5.508 0L6.4 12.727a1.68 1.68 0 0 1 .131-2.313" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="m14.53 21.37-9.224-9.536c-.654-.677-.19-1.834.735-1.834H25.96c.926 0 1.39 1.157.735 1.834l-9.225 9.537a2.03 2.03 0 0 1-2.938 0"/>`,
-    "duotone": `<path fill="currentColor" d="m14.53 21.37-9.224-9.536c-.654-.677-.19-1.834.735-1.834H25.96c.926 0 1.39 1.157.735 1.834l-9.225 9.537a2.03 2.03 0 0 1-2.938 0" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M4.61 12.629C3.307 11.289 4.23 9 6.076 9h19.85c1.845 0 2.769 2.29 1.464 3.629l-9.193 9.437a3.05 3.05 0 0 1-4.392 0zm21.315-1.503H6.075l9.193 9.437c.404.415 1.06.415 1.464 0zl.732.751z" clipRule="evenodd"/>`
+    "duotone": `<path fill="currentColor" d="m14.53 21.37-9.224-9.536c-.654-.677-.19-1.834.735-1.834H25.96c.926 0 1.39 1.157.735 1.834l-9.225 9.537a2.03 2.03 0 0 1-2.938 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M4.61 12.629C3.307 11.289 4.23 9 6.076 9h19.85c1.845 0 2.769 2.29 1.464 3.629l-9.193 9.437a3.05 3.05 0 0 1-4.392 0zm21.315-1.503H6.075l9.193 9.437c.404.415 1.06.415 1.464 0zl.732.751z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $89.prop($$props, "viewBox", 3, defaultViewBox), rest = $89.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2493,12 +2507,12 @@ import "svelte/internal/disclose-version";
 import * as $93 from "svelte/internal/client";
 function ArrowLineLeft2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M20.68 7.293a.943.943 0 0 1 0 1.414l-7.18 6.586a.943.943 0 0 0 0 1.414l7.18 6.586a.943.943 0 0 1 0 1.414c-.425.39-1.116.39-1.541 0l-7.181-6.586c-1.277-1.171-1.277-3.07 0-4.242l7.18-6.586a1.16 1.16 0 0 1 1.543 0" clipRule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fillRule="evenodd" d="M20.86 7.178a.51.51 0 0 1-.047.747l-8.142 6.888a1.537 1.537 0 0 0 0 2.374l8.142 6.888c.23.194.25.528.047.747a.575.575 0 0 1-.784.044l-8.142-6.887a2.564 2.564 0 0 1 0-3.958l8.142-6.888a.575.575 0 0 1 .784.045" clipRule="evenodd"/>`,
-    "light": `<path fill="currentColor" fillRule="evenodd" d="M20.8 7.26a.76.76 0 0 1-.065 1.088L13.02 15.04c-.59.512-.59 1.41 0 1.922l7.714 6.69a.76.76 0 0 1 .066 1.09.8.8 0 0 1-1.115.064l-7.713-6.69a2.784 2.784 0 0 1 0-4.23l7.713-6.69a.8.8 0 0 1 1.115.064" clipRule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fillRule="evenodd" d="M21.586 6.53c.601.652.54 1.65-.136 2.23l-7.99 6.847a.514.514 0 0 0 0 .786l7.99 6.848a1.54 1.54 0 0 1 .136 2.229 1.68 1.68 0 0 1-2.312.131l-7.991-6.847a3.597 3.597 0 0 1 0-5.508l7.99-6.847a1.68 1.68 0 0 1 2.313.131" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M20.68 7.293a.943.943 0 0 1 0 1.414l-7.18 6.586a.943.943 0 0 0 0 1.414l7.18 6.586a.943.943 0 0 1 0 1.414c-.425.39-1.116.39-1.541 0l-7.181-6.586c-1.277-1.171-1.277-3.07 0-4.242l7.18-6.586a1.16 1.16 0 0 1 1.543 0" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M20.86 7.178a.51.51 0 0 1-.047.747l-8.142 6.888a1.537 1.537 0 0 0 0 2.374l8.142 6.888c.23.194.25.528.047.747a.575.575 0 0 1-.784.044l-8.142-6.887a2.564 2.564 0 0 1 0-3.958l8.142-6.888a.575.575 0 0 1 .784.045" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M20.8 7.26a.76.76 0 0 1-.065 1.088L13.02 15.04c-.59.512-.59 1.41 0 1.922l7.714 6.69a.76.76 0 0 1 .066 1.09.8.8 0 0 1-1.115.064l-7.713-6.69a2.784 2.784 0 0 1 0-4.23l7.713-6.69a.8.8 0 0 1 1.115.064" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M21.586 6.53c.601.652.54 1.65-.136 2.23l-7.99 6.847a.514.514 0 0 0 0 .786l7.99 6.848a1.54 1.54 0 0 1 .136 2.229 1.68 1.68 0 0 1-2.312.131l-7.991-6.847a3.597 3.597 0 0 1 0-5.508l7.99-6.847a1.68 1.68 0 0 1 2.313.131" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="m10.63 14.53 9.536-9.224c.677-.654 1.834-.19 1.834.735v19.918c0 .926-1.157 1.39-1.834.735l-9.537-9.225a2.03 2.03 0 0 1 0-2.938"/>`,
-    "duotone": `<path fill="currentColor" d="m10.63 14.53 9.536-9.224c.677-.654 1.834-.19 1.834.735v19.918c0 .926-1.157 1.39-1.834.735l-9.537-9.225a2.03 2.03 0 0 1 0-2.938" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M19.371 4.61C20.711 3.307 23 4.23 23 6.076v19.85c0 1.845-2.29 2.769-3.629 1.464l-9.437-9.193a3.05 3.05 0 0 1 0-4.392zm1.503 21.315V6.075l-9.437 9.193a1.016 1.016 0 0 0 0 1.464z" clipRule="evenodd"/>`
+    "duotone": `<path fill="currentColor" d="m10.63 14.53 9.536-9.224c.677-.654 1.834-.19 1.834.735v19.918c0 .926-1.157 1.39-1.834.735l-9.537-9.225a2.03 2.03 0 0 1 0-2.938" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M19.371 4.61C20.711 3.307 23 4.23 23 6.076v19.85c0 1.845-2.29 2.769-3.629 1.464l-9.437-9.193a3.05 3.05 0 0 1 0-4.392zm1.503 21.315V6.075l-9.437 9.193a1.016 1.016 0 0 0 0 1.464z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $93.prop($$props, "viewBox", 3, defaultViewBox), rest = $93.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2547,12 +2561,12 @@ import "svelte/internal/disclose-version";
 import * as $95 from "svelte/internal/client";
 function ArrowLineRight2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M11.32 24.707a.943.943 0 0 1 0-1.414l7.18-6.586a.943.943 0 0 0 0-1.414l-7.18-6.586a.943.943 0 0 1 0-1.414 1.16 1.16 0 0 1 1.541 0l7.181 6.586c1.277 1.171 1.277 3.07 0 4.242l-7.18 6.586c-.427.39-1.117.39-1.543 0" clipRule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fillRule="evenodd" d="M11.14 24.822a.51.51 0 0 1 .047-.747l8.142-6.888a1.537 1.537 0 0 0 0-2.374l-8.142-6.888a.51.51 0 0 1-.047-.747.575.575 0 0 1 .784-.045l8.142 6.888a2.564 2.564 0 0 1 0 3.958l-8.142 6.887a.575.575 0 0 1-.784-.044" clipRule="evenodd"/>`,
-    "light": `<path fill="currentColor" fillRule="evenodd" d="M11.2 24.74a.76.76 0 0 1 .065-1.088l7.714-6.691c.59-.512.59-1.41 0-1.922l-7.714-6.69a.76.76 0 0 1-.066-1.09.8.8 0 0 1 1.115-.064l7.713 6.69a2.784 2.784 0 0 1 0 4.23l-7.713 6.69a.8.8 0 0 1-1.115-.064" clipRule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fillRule="evenodd" d="M10.414 25.47a1.54 1.54 0 0 1 .136-2.23l7.99-6.847a.514.514 0 0 0 0-.786l-7.99-6.848a1.54 1.54 0 0 1-.136-2.229 1.68 1.68 0 0 1 2.312-.131l7.991 6.847a3.597 3.597 0 0 1 0 5.508l-7.99 6.847c-.677.58-1.712.52-2.313-.131" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M11.32 24.707a.943.943 0 0 1 0-1.414l7.18-6.586a.943.943 0 0 0 0-1.414l-7.18-6.586a.943.943 0 0 1 0-1.414 1.16 1.16 0 0 1 1.541 0l7.181 6.586c1.277 1.171 1.277 3.07 0 4.242l-7.18 6.586c-.427.39-1.117.39-1.543 0" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M11.14 24.822a.51.51 0 0 1 .047-.747l8.142-6.888a1.537 1.537 0 0 0 0-2.374l-8.142-6.888a.51.51 0 0 1-.047-.747.575.575 0 0 1 .784-.045l8.142 6.888a2.564 2.564 0 0 1 0 3.958l-8.142 6.887a.575.575 0 0 1-.784-.044" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M11.2 24.74a.76.76 0 0 1 .065-1.088l7.714-6.691c.59-.512.59-1.41 0-1.922l-7.714-6.69a.76.76 0 0 1-.066-1.09.8.8 0 0 1 1.115-.064l7.713 6.69a2.784 2.784 0 0 1 0 4.23l-7.713 6.69a.8.8 0 0 1-1.115-.064" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M10.414 25.47a1.54 1.54 0 0 1 .136-2.23l7.99-6.847a.514.514 0 0 0 0-.786l-7.99-6.848a1.54 1.54 0 0 1-.136-2.229 1.68 1.68 0 0 1 2.312-.131l7.991 6.847a3.597 3.597 0 0 1 0 5.508l-7.99 6.847c-.677.58-1.712.52-2.313-.131" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="m21.37 17.47-9.536 9.224c-.677.654-1.834.19-1.834-.735V6.041c0-.926 1.157-1.39 1.834-.735l9.537 9.225a2.03 2.03 0 0 1 0 2.938"/>`,
-    "duotone": `<path fill="currentColor" d="m21.37 17.47-9.536 9.224c-.677.654-1.834.19-1.834-.735V6.041c0-.926 1.157-1.39 1.834-.735l9.537 9.225a2.03 2.03 0 0 1 0 2.938" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M12.629 27.39C11.289 28.693 9 27.77 9 25.924V6.075c0-1.845 2.29-2.769 3.629-1.464l9.437 9.193a3.05 3.05 0 0 1 0 4.392zM11.126 6.074v19.85l9.437-9.193a1.016 1.016 0 0 0 0-1.464z" clipRule="evenodd"/>`
+    "duotone": `<path fill="currentColor" d="m21.37 17.47-9.536 9.224c-.677.654-1.834.19-1.834-.735V6.041c0-.926 1.157-1.39 1.834-.735l9.537 9.225a2.03 2.03 0 0 1 0 2.938" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M12.629 27.39C11.289 28.693 9 27.77 9 25.924V6.075c0-1.845 2.29-2.769 3.629-1.464l9.437 9.193a3.05 3.05 0 0 1 0 4.392zM11.126 6.074v19.85l9.437-9.193a1.016 1.016 0 0 0 0-1.464z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $95.prop($$props, "viewBox", 3, defaultViewBox), rest = $95.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2601,12 +2615,12 @@ import "svelte/internal/disclose-version";
 import * as $97 from "svelte/internal/client";
 function ArrowLineUp2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M24.707 20.68a.943.943 0 0 1-1.414 0l-6.586-7.18a.943.943 0 0 0-1.414 0l-6.586 7.18a.943.943 0 0 1-1.414 0 1.16 1.16 0 0 1 0-1.541l6.586-7.181c1.171-1.277 3.07-1.277 4.242 0l6.586 7.18c.39.426.39 1.117 0 1.543" clipRule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fillRule="evenodd" d="M24.822 20.86a.51.51 0 0 1-.747-.047l-6.888-8.142a1.537 1.537 0 0 0-2.374 0l-6.888 8.142a.51.51 0 0 1-.747.047.575.575 0 0 1-.045-.784l6.888-8.142a2.564 2.564 0 0 1 3.958 0l6.887 8.142c.195.23.175.58-.044.784" clipRule="evenodd"/>`,
-    "light": `<path fill="currentColor" fillRule="evenodd" d="M24.74 20.8a.76.76 0 0 1-1.088-.065L16.96 13.02a1.265 1.265 0 0 0-1.922 0l-6.69 7.714a.76.76 0 0 1-1.09.066.8.8 0 0 1-.064-1.115l6.69-7.713a2.784 2.784 0 0 1 4.23 0l6.69 7.713a.8.8 0 0 1-.064 1.115" clipRule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fillRule="evenodd" d="M25.47 21.586c-.652.601-1.65.54-2.23-.136l-6.847-7.99a.514.514 0 0 0-.786 0l-6.848 7.99a1.54 1.54 0 0 1-2.229.136 1.68 1.68 0 0 1-.131-2.312l6.847-7.991a3.597 3.597 0 0 1 5.508 0l6.847 7.99c.58.677.52 1.712-.131 2.313" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M24.707 20.68a.943.943 0 0 1-1.414 0l-6.586-7.18a.943.943 0 0 0-1.414 0l-6.586 7.18a.943.943 0 0 1-1.414 0 1.16 1.16 0 0 1 0-1.541l6.586-7.181c1.171-1.277 3.07-1.277 4.242 0l6.586 7.18c.39.426.39 1.117 0 1.543" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M24.822 20.86a.51.51 0 0 1-.747-.047l-6.888-8.142a1.537 1.537 0 0 0-2.374 0l-6.888 8.142a.51.51 0 0 1-.747.047.575.575 0 0 1-.045-.784l6.888-8.142a2.564 2.564 0 0 1 3.958 0l6.887 8.142c.195.23.175.58-.044.784" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M24.74 20.8a.76.76 0 0 1-1.088-.065L16.96 13.02a1.265 1.265 0 0 0-1.922 0l-6.69 7.714a.76.76 0 0 1-1.09.066.8.8 0 0 1-.064-1.115l6.69-7.713a2.784 2.784 0 0 1 4.23 0l6.69 7.713a.8.8 0 0 1-.064 1.115" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M25.47 21.586c-.652.601-1.65.54-2.23-.136l-6.847-7.99a.514.514 0 0 0-.786 0l-6.848 7.99a1.54 1.54 0 0 1-2.229.136 1.68 1.68 0 0 1-.131-2.312l6.847-7.991a3.597 3.597 0 0 1 5.508 0l6.847 7.99c.58.677.52 1.712-.131 2.313" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="m17.47 10.63 9.224 9.536c.654.677.19 1.834-.735 1.834H6.041c-.926 0-1.39-1.157-.735-1.834l9.225-9.537a2.03 2.03 0 0 1 2.938 0"/>`,
-    "duotone": `<path fill="currentColor" d="m17.47 10.63 9.224 9.536c.654.677.19 1.834-.735 1.834H6.041c-.926 0-1.39-1.157-.735-1.834l9.225-9.537a2.03 2.03 0 0 1 2.938 0" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M27.39 19.371c1.304 1.34.38 3.629-1.465 3.629H6.075c-1.845 0-2.769-2.29-1.464-3.629l9.193-9.437a3.05 3.05 0 0 1 4.392 0zM6.074 20.874h19.85l-9.193-9.437a1.016 1.016 0 0 0-1.464 0z" clipRule="evenodd"/>`
+    "duotone": `<path fill="currentColor" d="m17.47 10.63 9.224 9.536c.654.677.19 1.834-.735 1.834H6.041c-.926 0-1.39-1.157-.735-1.834l9.225-9.537a2.03 2.03 0 0 1 2.938 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M27.39 19.371c1.304 1.34.38 3.629-1.465 3.629H6.075c-1.845 0-2.769-2.29-1.464-3.629l9.193-9.437a3.05 3.05 0 0 1 4.392 0zM6.074 20.874h19.85l-9.193-9.437a1.016 1.016 0 0 0-1.464 0z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $97.prop($$props, "viewBox", 3, defaultViewBox), rest = $97.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -2780,7 +2794,7 @@ import "svelte/internal/disclose-version";
 import * as $104 from "svelte/internal/client";
 function ArrowRise($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M16.91 11.216 28 8l-2.76 11.212-3.444-3.306-5.555 5.786a1 1 0 0 1-1.442 0l-4.079-4.248-5.999 6.249a1 1 0 1 1-1.442-1.386l6.72-7a1 1 0 0 1 1.442 0l4.079 4.249 4.833-5.035z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16.91 11.216 28 8l-2.76 11.212-3.444-3.306-5.555 5.786a1 1 0 0 1-1.442 0l-4.079-4.248-5.999 6.249a1 1 0 1 1-1.442-1.386l6.72-7a1 1 0 0 1 1.442 0l4.079 4.249 4.833-5.035z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $104.prop($$props, "viewBox", 3, defaultViewBox), rest = $104.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -4191,7 +4205,7 @@ import "svelte/internal/disclose-version";
 import * as $157 from "svelte/internal/client";
 function BadgeIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M14.522 1.623a2 2 0 0 1 2.956 0l.971 1.065a2 2 0 0 0 2.086.56l1.373-.438a2 2 0 0 1 2.561 1.478l.308 1.409a2 2 0 0 0 1.526 1.526l1.409.308a2 2 0 0 1 1.478 2.56l-.437 1.375a2 2 0 0 0 .559 2.085l1.065.97a2 2 0 0 1 0 2.957l-1.065.971a2 2 0 0 0-.56 2.086l.438 1.373a2 2 0 0 1-1.478 2.561l-1.408.308a2 2 0 0 0-1.527 1.527l-.308 1.408a2 2 0 0 1-2.56 1.478l-1.374-.437a2 2 0 0 0-2.086.559l-.97 1.065a2 2 0 0 1-2.957 0l-.971-1.065a2 2 0 0 0-2.086-.559l-1.373.437a2 2 0 0 1-2.561-1.478l-.308-1.408a2 2 0 0 0-1.527-1.527l-1.408-.308a2 2 0 0 1-1.478-2.56l.437-1.374a2 2 0 0 0-.559-2.085l-1.065-.971a2 2 0 0 1 0-2.957l1.065-.971a2 2 0 0 0 .56-2.085l-.438-1.374a2 2 0 0 1 1.478-2.56l1.408-.309a2 2 0 0 0 1.527-1.526l.308-1.409a2 2 0 0 1 2.56-1.478l1.374.437a2 2 0 0 0 2.086-.559z"/><path fill="#fff" fillRule="evenodd" d="M16 7a.514.514 0 0 0-.514.514v6.748c0 .155 0 .233-.031.27a.13.13 0 0 1-.108.044c-.047-.004-.102-.059-.213-.169l-4.77-4.771a.514.514 0 0 0-.728.727l4.771 4.772c.11.11.165.165.17.212a.13.13 0 0 1-.046.108c-.036.03-.114.03-.27.03H7.515a.514.514 0 0 0 0 1.03h6.748c.156 0 .233 0 .27.03a.13.13 0 0 1 .044.108c-.004.047-.059.102-.169.213l-4.771 4.77a.514.514 0 1 0 .727.728l4.772-4.771c.11-.11.165-.166.212-.17a.13.13 0 0 1 .108.046c.03.036.03.113.03.27v6.747a.514.514 0 0 0 1.03 0v-6.748c0-.155 0-.233.03-.27a.13.13 0 0 1 .108-.044c.047.003.102.059.213.169l4.77 4.771a.514.514 0 0 0 .728-.727l-4.771-4.771c-.11-.11-.166-.166-.17-.213a.13.13 0 0 1 .046-.108c.036-.03.113-.03.27-.03h6.747a.514.514 0 0 0 0-1.03h-6.748c-.155 0-.233 0-.27-.03a.13.13 0 0 1-.044-.108c.003-.047.059-.102.169-.213l4.771-4.77a.514.514 0 0 0-.727-.728l-4.771 4.771c-.11.11-.166.165-.213.17a.13.13 0 0 1-.108-.046c-.03-.036-.03-.113-.03-.27V7.515A.514.514 0 0 0 16 7" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M14.522 1.623a2 2 0 0 1 2.956 0l.971 1.065a2 2 0 0 0 2.086.56l1.373-.438a2 2 0 0 1 2.561 1.478l.308 1.409a2 2 0 0 0 1.526 1.526l1.409.308a2 2 0 0 1 1.478 2.56l-.437 1.375a2 2 0 0 0 .559 2.085l1.065.97a2 2 0 0 1 0 2.957l-1.065.971a2 2 0 0 0-.56 2.086l.438 1.373a2 2 0 0 1-1.478 2.561l-1.408.308a2 2 0 0 0-1.527 1.527l-.308 1.408a2 2 0 0 1-2.56 1.478l-1.374-.437a2 2 0 0 0-2.086.559l-.97 1.065a2 2 0 0 1-2.957 0l-.971-1.065a2 2 0 0 0-2.086-.559l-1.373.437a2 2 0 0 1-2.561-1.478l-.308-1.408a2 2 0 0 0-1.527-1.527l-1.408-.308a2 2 0 0 1-1.478-2.56l.437-1.374a2 2 0 0 0-.559-2.085l-1.065-.971a2 2 0 0 1 0-2.957l1.065-.971a2 2 0 0 0 .56-2.085l-.438-1.374a2 2 0 0 1 1.478-2.56l1.408-.309a2 2 0 0 0 1.527-1.526l.308-1.409a2 2 0 0 1 2.56-1.478l1.374.437a2 2 0 0 0 2.086-.559z"/><path fill="#fff" fill-rule="evenodd" d="M16 7a.514.514 0 0 0-.514.514v6.748c0 .155 0 .233-.031.27a.13.13 0 0 1-.108.044c-.047-.004-.102-.059-.213-.169l-4.77-4.771a.514.514 0 0 0-.728.727l4.771 4.772c.11.11.165.165.17.212a.13.13 0 0 1-.046.108c-.036.03-.114.03-.27.03H7.515a.514.514 0 0 0 0 1.03h6.748c.156 0 .233 0 .27.03a.13.13 0 0 1 .044.108c-.004.047-.059.102-.169.213l-4.771 4.77a.514.514 0 1 0 .727.728l4.772-4.771c.11-.11.165-.166.212-.17a.13.13 0 0 1 .108.046c.03.036.03.113.03.27v6.747a.514.514 0 0 0 1.03 0v-6.748c0-.155 0-.233.03-.27a.13.13 0 0 1 .108-.044c.047.003.102.059.213.169l4.77 4.771a.514.514 0 0 0 .728-.727l-4.771-4.771c-.11-.11-.166-.166-.17-.213a.13.13 0 0 1 .046-.108c.036-.03.113-.03.27-.03h6.747a.514.514 0 0 0 0-1.03h-6.748c-.155 0-.233 0-.27-.03a.13.13 0 0 1-.044-.108c.003-.047.059-.102.169-.213l4.771-4.77a.514.514 0 0 0-.727-.728l-4.771 4.771c-.11.11-.166.165-.213.17a.13.13 0 0 1-.108-.046c-.03-.036-.03-.113-.03-.27V7.515A.514.514 0 0 0 16 7" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $157.prop($$props, "viewBox", 3, defaultViewBox), rest = $157.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -8744,7 +8758,7 @@ import "svelte/internal/disclose-version";
 import * as $326 from "svelte/internal/client";
 function CheckboxFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M17.2 4h-2.4c-2.273 0-3.858.002-5.092.102-1.21.1-1.905.284-2.432.552a6 6 0 0 0-2.622 2.622c-.268.527-.453 1.222-.552 2.432C4.002 10.942 4 12.527 4 14.8v2.4c0 2.273.002 3.858.102 5.092.1 1.21.284 1.905.552 2.432a6 6 0 0 0 2.622 2.622c.527.268 1.222.453 2.432.552 1.234.1 2.819.102 5.092.102h2.4c2.273 0 3.858-.002 5.092-.102 1.21-.1 1.905-.284 2.432-.552a6 6 0 0 0 2.622-2.622c.268-.527.453-1.222.552-2.433.1-1.233.102-2.818.102-5.091v-2.4c0-2.273-.002-3.858-.102-5.092-.1-1.21-.284-1.905-.552-2.432a6 6 0 0 0-2.622-2.622c-.527-.268-1.222-.453-2.433-.552C21.059 4.002 19.473 4 17.2 4M2.872 6.368C2 8.08 2 10.32 2 14.8v2.4c0 4.48 0 6.72.872 8.432a8 8 0 0 0 3.496 3.496C8.08 30 10.32 30 14.8 30h2.4c4.48 0 6.72 0 8.432-.872a8 8 0 0 0 3.496-3.496C30 23.92 30 21.68 30 17.2v-2.4c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C23.92 2 21.68 2 17.2 2h-2.4c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496" clipRule="evenodd" opacity=".2"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M17.2 4h-2.4c-2.273 0-3.858.002-5.092.102-1.21.1-1.905.284-2.432.552a6 6 0 0 0-2.622 2.622c-.268.527-.453 1.222-.552 2.432C4.002 10.942 4 12.527 4 14.8v2.4c0 2.273.002 3.858.102 5.092.1 1.21.284 1.905.552 2.432a6 6 0 0 0 2.622 2.622c.527.268 1.222.453 2.432.552 1.234.1 2.819.102 5.092.102h2.4c2.273 0 3.858-.002 5.092-.102 1.21-.1 1.905-.284 2.432-.552a6 6 0 0 0 2.622-2.622c.268-.527.453-1.222.552-2.433.1-1.233.102-2.818.102-5.091v-2.4c0-2.273-.002-3.858-.102-5.092-.1-1.21-.284-1.905-.552-2.432a6 6 0 0 0-2.622-2.622c-.527-.268-1.222-.453-2.433-.552C21.059 4.002 19.473 4 17.2 4M2.872 6.368C2 8.08 2 10.32 2 14.8v2.4c0 4.48 0 6.72.872 8.432a8 8 0 0 0 3.496 3.496C8.08 30 10.32 30 14.8 30h2.4c4.48 0 6.72 0 8.432-.872a8 8 0 0 0 3.496-3.496C30 23.92 30 21.68 30 17.2v-2.4c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C23.92 2 21.68 2 17.2 2h-2.4c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496" clip-rule="evenodd" opacity=".2"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $326.prop($$props, "viewBox", 3, defaultViewBox), rest = $326.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -8766,7 +8780,7 @@ import "svelte/internal/disclose-version";
 import * as $327 from "svelte/internal/client";
 function CheckboxMultiple($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)"><path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/></g><path fill="#fff" fillRule="evenodd" d="M9.5 16a1.5 1.5 0 0 1 1.5-1.5h10a1.5 1.5 0 0 1 0 3H11A1.5 1.5 0 0 1 9.5 16" clipRule="evenodd"/><defs><filter id="a" width="29" height="30" x="2" y="1.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3728"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3728" mode="overlay" result="effect2_innerShadow_7214_3728"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3728" result="effect3_innerShadow_7214_3728"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3728" mode="overlay" result="effect4_innerShadow_7214_3728"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M9.5 16a1.5 1.5 0 0 1 1.5-1.5h10a1.5 1.5 0 0 1 0 3H11A1.5 1.5 0 0 1 9.5 16" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $327.prop($$props, "viewBox", 3, defaultViewBox), rest = $327.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -8788,7 +8802,7 @@ import "svelte/internal/disclose-version";
 import * as $328 from "svelte/internal/client";
 function CheckboxTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)"><path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/></g><path fill="#fff" fillRule="evenodd" d="M22.017 12.398a1.5 1.5 0 0 1 .085 2.12l-5.622 6.09a2 2 0 0 1-2.975-.039l-3.134-3.581a1.5 1.5 0 0 1 2.258-1.976l2.4 2.744 4.869-5.273a1.5 1.5 0 0 1 2.12-.085" clipRule="evenodd"/><defs><filter id="a" width="29" height="30" x="2" y="1.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3730"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3730" mode="overlay" result="effect2_innerShadow_7214_3730"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3730" result="effect3_innerShadow_7214_3730"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3730" mode="overlay" result="effect4_innerShadow_7214_3730"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M22.017 12.398a1.5 1.5 0 0 1 .085 2.12l-5.622 6.09a2 2 0 0 1-2.975-.039l-3.134-3.581a1.5 1.5 0 1 1 2.258-1.976l2.4 2.744 4.869-5.273a1.5 1.5 0 0 1 2.12-.085" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $328.prop($$props, "viewBox", 3, defaultViewBox), rest = $328.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -8837,7 +8851,7 @@ import "svelte/internal/disclose-version";
 import * as $330 from "svelte/internal/client";
 function Chip($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M0 8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4z" opacity=".04"/><path fill="currentColor" fillRule="evenodd" d="M28 4a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4zm-6.5 1H4a3 3 0 0 0-3 3v3.5h6.375a4.125 4.125 0 0 1 4.125 4.125V27h10zm1 22H28a3 3 0 0 0 3-3v-.27h-8.5zm8.5-4.27v-5.025h-8.5v5.026zm0-6.025V11.68h-8.5v5.025zm0-6.025V8a3 3 0 0 0-3-3h-5.5v5.68zM1 17.232V12.5h6.375c1.726 0 3.125 1.4 3.125 3.125v1.607zm0 5.731v-4.731h9.5v4.731zM1 24v-.037h9.5V27H4a3 3 0 0 1-3-3" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M0 8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4z" opacity=".04"/><path fill="currentColor" fill-rule="evenodd" d="M28 4a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4zm-6.5 1H4a3 3 0 0 0-3 3v3.5h6.375a4.125 4.125 0 0 1 4.125 4.125V27h10zm1 22H28a3 3 0 0 0 3-3v-.27h-8.5zm8.5-4.27v-5.025h-8.5v5.026zm0-6.025V11.68h-8.5v5.025zm0-6.025V8a3 3 0 0 0-3-3h-5.5v5.68zM1 17.232V12.5h6.375c1.726 0 3.125 1.4 3.125 3.125v1.607zm0 5.731v-4.731h9.5v4.731zM1 24v-.037h9.5V27H4a3 3 0 0 1-3-3" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $330.prop($$props, "viewBox", 3, defaultViewBox), rest = $330.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -12035,7 +12049,7 @@ import "svelte/internal/disclose-version";
 import * as $449 from "svelte/internal/client";
 function DocxIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#9D9C9B" fillRule="evenodd" d="M8 2.794v26.412C8 30.75 9.231 32 10.75 32h18.5c1.519 0 2.75-1.25 2.75-2.794V7.351c0-.746-.294-1.461-.816-1.986L26.648.807A2.73 2.73 0 0 0 24.714 0H10.75C9.231 0 8 1.25 8 2.794m1.75 26.412V2.794c0-.561.448-1.016 1-1.016h13.625v6.095c0 1.052.84 1.905 1.875 1.905h4v19.428c0 .561-.448 1.016-1 1.016h-18.5c-.552 0-1-.455-1-1.016M30.25 8v-.649c0-.271-.107-.531-.297-.722l-3.828-3.846v5.09c0 .07.056.127.125.127z" clipRule="evenodd"/><path fill="#6BB3EC" fillRule="evenodd" d="M20.5 13.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#508FD6" fillRule="evenodd" d="M20.5 17.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#3770C3" fillRule="evenodd" d="M20.5 21.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#3770C3" d="M0 9.25a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#fff" d="M5.462 21.522 3.5 11.5h1.702l1.23 6.884L7.938 11.5h1.975l1.442 7 1.265-7h1.668l-1.996 10.022h-1.764l-1.64-7.493-1.627 7.493z"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 13.125C20.5 12.6418 20.8918 12.25 21.375 12.25H27.125C27.6082 12.25 28 12.6418 28 13.125C28 13.6082 27.6082 14 27.125 14H21.375C20.8918 14 20.5 13.6082 20.5 13.125Z" fill="#6BB3EC"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 17.125C20.5 16.6418 20.8918 16.25 21.375 16.25H27.125C27.6082 16.25 28 16.6418 28 17.125C28 17.6082 27.6082 18 27.125 18H21.375C20.8918 18 20.5 17.6082 20.5 17.125Z" fill="#508FD6"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.125C20.5 20.6418 20.8918 20.25 21.375 20.25H27.125C27.6082 20.25 28 20.6418 28 21.125C28 21.6082 27.6082 22 27.125 22H21.375C20.8918 22 20.5 21.6082 20.5 21.125Z" fill="#3770C3"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3770C3"/> <path d="M5.46191 21.5215L3.5 11.5H5.20215L6.43262 18.3838L7.93652 11.5H9.91211L11.3545 18.5L12.6191 11.5H14.2871L12.291 21.5215H10.5273L8.88672 14.0293L7.25977 21.5215H5.46191Z" fill="white"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $449.prop($$props, "viewBox", 3, defaultViewBox), rest = $449.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -12138,7 +12152,7 @@ import "svelte/internal/disclose-version";
 import * as $453 from "svelte/internal/client";
 function DotCircle($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M16 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 3a7 7 0 1 0 0-14 7 7 0 0 0 0 14" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 3a7 7 0 1 0 0-14 7 7 0 0 0 0 14" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="M22 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/>`
   };
   const defaultViewBox = "0 0 32 32";
@@ -12215,7 +12229,7 @@ import "svelte/internal/disclose-version";
 import * as $456 from "svelte/internal/client";
 function DotSquare($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M14.133 11.8a2.333 2.333 0 0 0-2.333 2.333v3.734a2.333 2.333 0 0 0 2.333 2.333h3.734a2.333 2.333 0 0 0 2.333-2.333v-3.734a2.333 2.333 0 0 0-2.333-2.333zM9 14.133A5.133 5.133 0 0 1 14.133 9h3.734A5.133 5.133 0 0 1 23 14.133v3.734A5.133 5.133 0 0 1 17.867 23h-3.734A5.133 5.133 0 0 1 9 17.867z" clipRule="evenodd"/>`,
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M14.133 11.8a2.333 2.333 0 0 0-2.333 2.333v3.734a2.333 2.333 0 0 0 2.333 2.333h3.734a2.333 2.333 0 0 0 2.333-2.333v-3.734a2.333 2.333 0 0 0-2.333-2.333zM9 14.133A5.133 5.133 0 0 1 14.133 9h3.734A5.133 5.133 0 0 1 23 14.133v3.734A5.133 5.133 0 0 1 17.867 23h-3.734A5.133 5.133 0 0 1 9 17.867z" clip-rule="evenodd"/>`,
     "fill": `<path fill="currentColor" d="M10 14a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"/>`
   };
   const defaultViewBox = "0 0 32 32";
@@ -13237,7 +13251,7 @@ import "svelte/internal/disclose-version";
 import * as $494 from "svelte/internal/client";
 function Explain($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M5 9h22a1 1 0 1 0 0-2H5a1 1 0 0 0 0 2M5 17h9a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2M5 25h5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2"/><path fill="currentColor" fillRule="evenodd" d="M21.68 12.653c.323-.87 1.554-.87 1.876 0l.929 2.508a1 1 0 0 0 .59.591l2.509.929c.87.322.87 1.553 0 1.875l-2.509.929a1 1 0 0 0-.59.59l-.929 2.509c-.322.87-1.553.87-1.875 0l-.658-1.778-5.837 5.837c-.426.426-1.088.455-1.479.064-.39-.39-.362-1.052.065-1.479l5.918-5.918-2.037-.754c-.87-.322-.87-1.553 0-1.875l2.509-.929a1 1 0 0 0 .59-.59zm.48 3.03.459-1.242.459 1.241a2.5 2.5 0 0 0 1.477 1.477l1.241.46-1.241.459a2.5 2.5 0 0 0-1.477 1.477l-.46 1.241-.459-1.241a2.5 2.5 0 0 0-1.477-1.477l-1.241-.46 1.241-.459a2.5 2.5 0 0 0 1.477-1.477" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M5 9h22a1 1 0 1 0 0-2H5a1 1 0 0 0 0 2M5 17h9a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2M5 25h5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2"/><path fill="currentColor" fill-rule="evenodd" d="M21.68 12.653c.323-.87 1.554-.87 1.876 0l.929 2.508a1 1 0 0 0 .59.591l2.509.929c.87.322.87 1.553 0 1.875l-2.509.929a1 1 0 0 0-.59.59l-.929 2.509c-.322.87-1.553.87-1.875 0l-.658-1.778-5.837 5.837c-.426.426-1.088.455-1.479.064-.39-.39-.362-1.052.065-1.479l5.918-5.918-2.037-.754c-.87-.322-.87-1.553 0-1.875l2.509-.929a1 1 0 0 0 .59-.59zm.48 3.03.459-1.242.459 1.241a2.5 2.5 0 0 0 1.477 1.477l1.241.46-1.241.459a2.5 2.5 0 0 0-1.477 1.477l-.46 1.241-.459-1.241a2.5 2.5 0 0 0-1.477-1.477l-1.241-.46 1.241-.459a2.5 2.5 0 0 0 1.477-1.477" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $494.prop($$props, "viewBox", 3, defaultViewBox), rest = $494.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -16040,7 +16054,7 @@ import "svelte/internal/disclose-version";
 import * as $598 from "svelte/internal/client";
 function FormIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#9D9C9B" fillRule="evenodd" d="M8 2.794v26.412C8 30.75 9.231 32 10.75 32h18.5c1.519 0 2.75-1.25 2.75-2.794V7.351c0-.746-.294-1.461-.816-1.986L26.648.807A2.73 2.73 0 0 0 24.714 0H10.75C9.231 0 8 1.25 8 2.794m1.75 26.412V2.794c0-.561.448-1.016 1-1.016h13.625v6.095c0 1.052.84 1.905 1.875 1.905h4v19.428c0 .561-.448 1.016-1 1.016h-18.5c-.552 0-1-.455-1-1.016M30.25 8v-.649c0-.271-.107-.531-.297-.722l-3.828-3.846v5.09c0 .07.056.127.125.127z" clipRule="evenodd"/><path fill="#4EA7AF" fillRule="evenodd" d="M25 14h-5v-2h5a3 3 0 1 1 0 6h-5v-2h5a1 1 0 1 0 0-2" clipRule="evenodd"/><path fill="#3D9298" fillRule="evenodd" d="M25 22h-5v-2h5a3 3 0 1 1 0 6h-5v-2h5a1 1 0 1 0 0-2" clipRule="evenodd"/><path fill="#3D9298" d="M0 9.25a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#fff" d="M6.5 21.522V11.5H12v2H8.5v2H12v2H8.5l.023 4.021z"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 14H20V12H25C26.6569 12 28 13.3431 28 15C28 16.6569 26.6569 18 25 18H20V16H25C25.5523 16 26 15.5523 26 15C26 14.4477 25.5523 14 25 14Z" fill="#4EA7AF"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 22H20V20H25C26.6569 20 28 21.3431 28 23C28 24.6569 26.6569 26 25 26H20V24H25C25.5523 24 26 23.5523 26 23C26 22.4477 25.5523 22 25 22Z" fill="#3D9298"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3D9298"/> <path d="M6.5 21.5215V11.5H12V13.5H8.5V15.5H12V17.5H8.5L8.52344 21.5215H6.5Z" fill="white"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $598.prop($$props, "viewBox", 3, defaultViewBox), rest = $598.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -16062,15 +16076,14 @@ import "svelte/internal/disclose-version";
 import * as $599 from "svelte/internal/client";
 function FourLeafClover($$anchor, $$props) {
   const weights = {
-    regular: `<path fill="currentColor" fillRule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clipRule="evenodd"/>`,
-    thin: `<path fill="currentColor" fillRule="evenodd" d="M14 9.5v3.3a1.2 1.2 0 0 1-1.2 1.2H9.5A4.5 4.5 0 1 1 14 9.5m-10 0a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5M9.5 18h3.3a1.2 1.2 0 0 1 1.2 1.2v3.3A4.5 4.5 0 1 1 9.5 18M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M19.2 14h3.3A4.5 4.5 0 1 0 18 9.5v3.3a1.2 1.2 0 0 0 1.2 1.2m3.3-10A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14h3.3a4.5 4.5 0 1 1-4.5 4.5v-3.3a1.2 1.2 0 0 1 1.2-1.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clipRule="evenodd"/>`,
-    light: `<path fill="currentColor" fillRule="evenodd" d="M13.5 9.5v3.3a.7.7 0 0 1-.7.7H9.5a4 4 0 1 1 4-4M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m5.5 9h3.3a.7.7 0 0 1 .7.7v3.3a4 4 0 1 1-4-4m-5.5 4A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0m15.2-9h3.3a4 4 0 1 0-4-4v3.3a.7.7 0 0 0 .7.7M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14.5h3.3a4 4 0 1 1-4 4v-3.3a.7.7 0 0 1 .7-.7m-2.2.7a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clipRule="evenodd"/>`,
-    bold: `<path fill="currentColor" fillRule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m8 0V12H9.5A2.5 2.5 0 1 1 12 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 20H12v2.5A2.5 2.5 0 1 1 9.5 20M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11M20 12h2.5A2.5 2.5 0 1 0 20 9.5zM17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm3 3.3V20h2.5a2.5 2.5 0 1 1-2.5 2.5" clipRule="evenodd"/>`,
-    fill: `<path fill="currentColor" fillRule="evenodd" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4m0 13a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zm2.2 7.5a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z" clipRule="evenodd"/>`,
-    duotone: `<g style="opacity: 0.08"><path fill="currentColor" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4M9.5 17a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zM19.2 17a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z"/></g><path fill="currentColor" fillRule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M14 9.5v3.3a1.2 1.2 0 0 1-1.2 1.2H9.5A4.5 4.5 0 1 1 14 9.5m-10 0a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5M9.5 18h3.3a1.2 1.2 0 0 1 1.2 1.2v3.3A4.5 4.5 0 1 1 9.5 18M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M19.2 14h3.3A4.5 4.5 0 1 0 18 9.5v3.3a1.2 1.2 0 0 0 1.2 1.2m3.3-10A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14h3.3a4.5 4.5 0 1 1-4.5 4.5v-3.3a1.2 1.2 0 0 1 1.2-1.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M13.5 9.5v3.3a.7.7 0 0 1-.7.7H9.5a4 4 0 1 1 4-4M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m5.5 9h3.3a.7.7 0 0 1 .7.7v3.3a4 4 0 1 1-4-4m-5.5 4A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0m15.2-9h3.3a4 4 0 1 0-4-4v3.3a.7.7 0 0 0 .7.7M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14.5h3.3a4 4 0 1 1-4 4v-3.3a.7.7 0 0 1 .7-.7m-2.2.7a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m8 0V12H9.5A2.5 2.5 0 1 1 12 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 20H12v2.5A2.5 2.5 0 1 1 9.5 20M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11M20 12h2.5A2.5 2.5 0 1 0 20 9.5zM17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm3 3.3V20h2.5a2.5 2.5 0 1 1-2.5 2.5" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4m0 13a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zm2.2 7.5a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z" clip-rule="evenodd"/>`,
+    "duotone": `<g opacity=".08"><path fill="currentColor" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4M9.5 17a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zM19.2 17a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z"/></g><path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
-  console.log("FourLeafClover weights:", weights);
   let viewBox = $599.prop($$props, "viewBox", 3, defaultViewBox), rest = $599.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
   IconBase($$anchor, $599.spread_props(
     {
@@ -16090,7 +16103,7 @@ import "svelte/internal/disclose-version";
 import * as $600 from "svelte/internal/client";
 function FourPointedStar($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m14.832 22.544-5.376-5.375c-.608-.609-.608-1.73 0-2.338l5.376-5.375c.608-.608 1.728-.608 2.337 0l5.375 5.376c.608.608.608 1.728 0 2.337l-5.375 5.375c-.609.608-1.73.608-2.338 0" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M16 9.934a.7.7 0 0 0-.49.175l-5.4 5.4a.7.7 0 0 0-.176.491c0 .22.079.394.175.49l5.4 5.4c.097.097.27.176.491.176s.394-.079.49-.175l5.4-5.4a.7.7 0 0 0 .176-.491.7.7 0 0 0-.175-.49l-5.4-5.4A.7.7 0 0 0 16 9.933M16 8c.648 0 1.343.227 1.858.742l5.4 5.4c.515.515.742 1.21.742 1.858s-.227 1.343-.742 1.858l-5.4 5.4c-.515.515-1.21.742-1.858.742s-1.343-.227-1.858-.742l-5.4-5.4C8.227 17.343 8 16.648 8 16s.227-1.343.742-1.858l5.4-5.4C14.657 8.227 15.352 8 16 8" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="m14.832 22.544-5.376-5.375c-.608-.609-.608-1.73 0-2.338l5.376-5.375c.608-.608 1.728-.608 2.337 0l5.375 5.376c.608.608.608 1.728 0 2.337l-5.375 5.375c-.609.608-1.73.608-2.338 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 9.934a.7.7 0 0 0-.49.175l-5.4 5.4a.7.7 0 0 0-.176.491c0 .22.079.394.175.49l5.4 5.4c.097.097.27.176.491.176s.394-.079.49-.175l5.4-5.4a.7.7 0 0 0 .176-.491.7.7 0 0 0-.175-.49l-5.4-5.4A.7.7 0 0 0 16 9.933M16 8c.648 0 1.343.227 1.858.742l5.4 5.4c.515.515.742 1.21.742 1.858s-.227 1.343-.742 1.858l-5.4 5.4c-.515.515-1.21.742-1.858.742s-1.343-.227-1.858-.742l-5.4-5.4C8.227 17.343 8 16.648 8 16s.227-1.343.742-1.858l5.4-5.4C14.657 8.227 15.352 8 16 8" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $600.prop($$props, "viewBox", 3, defaultViewBox), rest = $600.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -17354,7 +17367,7 @@ import "svelte/internal/disclose-version";
 import * as $647 from "svelte/internal/client";
 function Goto($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M26.523 5.402a1 1 0 0 1 1 1v4.904a1 1 0 1 1-2 0v-2.49l-6.442 6.442a1 1 0 0 1-1.414-1.414l6.442-6.442h-2.49a1 1 0 0 1 0-2z" clipRule="evenodd"/><path fill="currentColor" fillRule="evenodd" d="m4.879 13.98 9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.687a1 1 0 0 0 0 1.414l9.402 9.402a1 1 0 0 0 1.414 0l9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.688a3 3 0 0 1-4.242 0l-9.402-9.402a3 3 0 0 1 0-4.243" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M26.523 5.402a1 1 0 0 1 1 1v4.904a1 1 0 1 1-2 0v-2.49l-6.442 6.442a1 1 0 0 1-1.414-1.414l6.442-6.442h-2.49a1 1 0 0 1 0-2z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="m4.879 13.98 9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.687a1 1 0 0 0 0 1.414l9.402 9.402a1 1 0 0 0 1.414 0l9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.688a3 3 0 0 1-4.242 0l-9.402-9.402a3 3 0 0 1 0-4.243" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $647.prop($$props, "viewBox", 3, defaultViewBox), rest = $647.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -18483,7 +18496,7 @@ import "svelte/internal/disclose-version";
 import * as $689 from "svelte/internal/client";
 function Help($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M21.284 27.049S18.986 28 16.5 28H5.976s-.395.005-.76-.143c0 0-.366-.149-.645-.428 0 0-.279-.28-.428-.645 0 0-.148-.365-.143-.746V15.5s0-2.486.952-4.783c0 0 .951-2.298 2.71-4.056 0 0 1.757-1.758 4.055-2.71 0 0 2.297-.951 4.783-.951 0 0 2.486 0 4.784.952 0 0 2.297.951 4.055 2.71 0 0 1.758 1.757 2.71 4.055 0 0 .951 2.297.951 4.783v.003s0 2.485-.951 4.78c0 0-.952 2.298-2.71 4.056 0 0-1.758 1.758-4.055 2.71M16.5 5s-2.089 0-4.018.8c0 0-1.93.799-3.407 2.275 0 0-1.476 1.477-2.276 3.407 0 0-.799 1.93-.799 4.018V26h10.5s2.089 0 4.018-.8c0 0 1.93-.799 3.407-2.275 0 0 1.476-1.477 2.276-3.407 0 0 .799-1.93.799-4.018 0 0 0-2.089-.8-4.018 0 0-.799-1.93-2.275-3.407 0 0-1.477-1.476-3.407-2.276 0 0-1.93-.799-4.018-.799" clipRule="evenodd"/><path fill="currentColor" d="m17.647 9-.211 9.243h-2.059L15.173 9zm-1.24 13.232a1.37 1.37 0 0 1-.998-.41 1.36 1.36 0 0 1-.409-.997q0-.575.41-.984.414-.41.997-.41.569 0 .984.41.422.409.422.984 0 .39-.198.71a1.5 1.5 0 0 1-.512.511 1.34 1.34 0 0 1-.697.186"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.284 27.049S18.986 28 16.5 28H5.976s-.395.005-.76-.143c0 0-.366-.149-.645-.428 0 0-.279-.28-.428-.645 0 0-.148-.365-.143-.746V15.5s0-2.486.952-4.783c0 0 .951-2.298 2.71-4.056 0 0 1.757-1.758 4.055-2.71 0 0 2.297-.951 4.783-.951 0 0 2.486 0 4.784.952 0 0 2.297.951 4.055 2.71 0 0 1.758 1.757 2.71 4.055 0 0 .951 2.297.951 4.783v.003s0 2.485-.951 4.78c0 0-.952 2.298-2.71 4.056 0 0-1.758 1.758-4.055 2.71M16.5 5s-2.089 0-4.018.8c0 0-1.93.799-3.407 2.275 0 0-1.476 1.477-2.276 3.407 0 0-.799 1.93-.799 4.018V26h10.5s2.089 0 4.018-.8c0 0 1.93-.799 3.407-2.275 0 0 1.476-1.477 2.276-3.407 0 0 .799-1.93.799-4.018 0 0 0-2.089-.8-4.018 0 0-.799-1.93-2.275-3.407 0 0-1.477-1.476-3.407-2.276 0 0-1.93-.799-4.018-.799" clip-rule="evenodd"/><path fill="currentColor" d="m17.647 9-.211 9.243h-2.059L15.173 9zm-1.24 13.232a1.37 1.37 0 0 1-.998-.41 1.36 1.36 0 0 1-.409-.997q0-.575.41-.984.414-.41.997-.41.569 0 .984.41.422.409.422.984 0 .39-.198.71a1.5 1.5 0 0 1-.512.511 1.34 1.34 0 0 1-.697.186"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $689.prop($$props, "viewBox", 3, defaultViewBox), rest = $689.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -18613,7 +18626,7 @@ import "svelte/internal/disclose-version";
 import * as $694 from "svelte/internal/client";
 function HorizontalScreen($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M27 11H5v11h22zM5 9a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M27 11H5v11h22zM5 9a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $694.prop($$props, "viewBox", 3, defaultViewBox), rest = $694.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -18986,12 +18999,12 @@ import "svelte/internal/disclose-version";
 import * as $708 from "svelte/internal/client";
 function IconSet($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clipRule="evenodd" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.364 3.363a.5.5 0 0 0 0 .707l3.364 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clipRule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fillRule="evenodd" d="M19.5 5a.5.5 0 0 1 .5-.5h4A3.5 3.5 0 0 1 27.5 8v4a.5.5 0 0 1-1 0V8A2.5 2.5 0 0 0 24 5.5h-4a.5.5 0 0 1-.5-.5m-2.44 6.646 3.365 3.364a1.5 1.5 0 0 1 0 2.122l-3.364 3.364a1.5 1.5 0 0 1-2.122 0l-3.364-3.364a1.5 1.5 0 0 1 0-2.122l3.364-3.364a1.5 1.5 0 0 1 2.122 0m-.706.707a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.707zM12 27.5a.5.5 0 0 0 0-1H8A2.5 2.5 0 0 1 5.5 24v-4a.5.5 0 0 0-1 0v4A3.5 3.5 0 0 0 8 27.5zm-7-15a.5.5 0 0 1-.5-.5V8A3.5 3.5 0 0 1 8 4.5h4a.5.5 0 0 1 0 1H8A2.5 2.5 0 0 0 5.5 8v4a.5.5 0 0 1-.5.5M27.5 20a.5.5 0 0 0-1 0v4a2.5 2.5 0 0 1-2.5 2.5h-4a.5.5 0 0 0 0 1h4a3.5 3.5 0 0 0 3.5-3.5z" clipRule="evenodd"/>`,
-    "light": `<path fill="currentColor" fillRule="evenodd" d="M19.25 5a.75.75 0 0 1 .75-.75h4A3.75 3.75 0 0 1 27.75 8v4a.75.75 0 0 1-1.5 0V8A2.25 2.25 0 0 0 24 5.75h-4a.75.75 0 0 1-.75-.75m-1.836 6.293 3.364 3.364a2 2 0 0 1 0 2.828l-3.364 3.364a2 2 0 0 1-2.828 0l-3.364-3.364a2 2 0 0 1 0-2.828l3.364-3.364a2 2 0 0 1 2.828 0m-1.06 1.06a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .708l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 27.75a.75.75 0 0 0 0-1.5H8A2.25 2.25 0 0 1 5.75 24v-4a.75.75 0 0 0-1.5 0v4A3.75 3.75 0 0 0 8 27.75zm-7-15a.75.75 0 0 1-.75-.75V8A3.75 3.75 0 0 1 8 4.25h4a.75.75 0 0 1 0 1.5H8A2.25 2.25 0 0 0 5.75 8v4a.75.75 0 0 1-.75.75M27.75 20a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 24 26.25h-4a.75.75 0 0 0 0 1.5h4A3.75 3.75 0 0 0 27.75 24z" clipRule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fillRule="evenodd" d="M18.5 5A1.5 1.5 0 0 1 20 3.5h4A4.5 4.5 0 0 1 28.5 8v4a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 0 24 6.5h-4A1.5 1.5 0 0 1 18.5 5m-.025 5.232 3.364 3.364a3.5 3.5 0 0 1 0 4.95l-3.364 3.364a3.5 3.5 0 0 1-4.95 0l-3.364-3.364a3.5 3.5 0 0 1 0-4.95l3.364-3.364a3.5 3.5 0 0 1 4.95 0m-2.121 2.122a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 28.5a1.5 1.5 0 0 0 0-3H8A1.5 1.5 0 0 1 6.5 24v-4a1.5 1.5 0 0 0-3 0v4A4.5 4.5 0 0 0 8 28.5zm-7-15A1.5 1.5 0 0 1 3.5 12V8A4.5 4.5 0 0 1 8 3.5h4a1.5 1.5 0 0 1 0 3H8A1.5 1.5 0 0 0 6.5 8v4A1.5 1.5 0 0 1 5 13.5M28.5 20a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 0 0 3h4a4.5 4.5 0 0 0 4.5-4.5z" clipRule="evenodd"/>`,
-    "fill": `<path fill="currentColor" d="M16.707 12.707a1 1 0 0 0-1.414 0l-2.657 2.657a1 1 0 0 0 0 1.414l2.657 2.657a1 1 0 0 0 1.414 0l2.657-2.657a1 1 0 0 0 0-1.414z"/><path fill="currentColor" fillRule="evenodd" d="M4 8a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm10.586 2.414a2 2 0 0 1 2.828 0l4.243 4.243a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1-2.828 0l-4.243-4.243a2 2 0 0 1 0-2.828z" clipRule="evenodd"/>`,
-    "duotone": `<path fill="currentColor" fillRule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clipRule="evenodd" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.363 3.363a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.364 3.363a.5.5 0 0 0 0 .707l3.364 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M19.5 5a.5.5 0 0 1 .5-.5h4A3.5 3.5 0 0 1 27.5 8v4a.5.5 0 0 1-1 0V8A2.5 2.5 0 0 0 24 5.5h-4a.5.5 0 0 1-.5-.5m-2.44 6.646 3.365 3.364a1.5 1.5 0 0 1 0 2.122l-3.364 3.364a1.5 1.5 0 0 1-2.122 0l-3.364-3.364a1.5 1.5 0 0 1 0-2.122l3.364-3.364a1.5 1.5 0 0 1 2.122 0m-.706.707a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.707zM12 27.5a.5.5 0 0 0 0-1H8A2.5 2.5 0 0 1 5.5 24v-4a.5.5 0 0 0-1 0v4A3.5 3.5 0 0 0 8 27.5zm-7-15a.5.5 0 0 1-.5-.5V8A3.5 3.5 0 0 1 8 4.5h4a.5.5 0 0 1 0 1H8A2.5 2.5 0 0 0 5.5 8v4a.5.5 0 0 1-.5.5M27.5 20a.5.5 0 0 0-1 0v4a2.5 2.5 0 0 1-2.5 2.5h-4a.5.5 0 0 0 0 1h4a3.5 3.5 0 0 0 3.5-3.5z" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M19.25 5a.75.75 0 0 1 .75-.75h4A3.75 3.75 0 0 1 27.75 8v4a.75.75 0 0 1-1.5 0V8A2.25 2.25 0 0 0 24 5.75h-4a.75.75 0 0 1-.75-.75m-1.836 6.293 3.364 3.364a2 2 0 0 1 0 2.828l-3.364 3.364a2 2 0 0 1-2.828 0l-3.364-3.364a2 2 0 0 1 0-2.828l3.364-3.364a2 2 0 0 1 2.828 0m-1.06 1.06a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .708l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 27.75a.75.75 0 0 0 0-1.5H8A2.25 2.25 0 0 1 5.75 24v-4a.75.75 0 0 0-1.5 0v4A3.75 3.75 0 0 0 8 27.75zm-7-15a.75.75 0 0 1-.75-.75V8A3.75 3.75 0 0 1 8 4.25h4a.75.75 0 0 1 0 1.5H8A2.25 2.25 0 0 0 5.75 8v4a.75.75 0 0 1-.75.75M27.75 20a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 24 26.25h-4a.75.75 0 0 0 0 1.5h4A3.75 3.75 0 0 0 27.75 24z" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M18.5 5A1.5 1.5 0 0 1 20 3.5h4A4.5 4.5 0 0 1 28.5 8v4a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 0 24 6.5h-4A1.5 1.5 0 0 1 18.5 5m-.025 5.232 3.364 3.364a3.5 3.5 0 0 1 0 4.95l-3.364 3.364a3.5 3.5 0 0 1-4.95 0l-3.364-3.364a3.5 3.5 0 0 1 0-4.95l3.364-3.364a3.5 3.5 0 0 1 4.95 0m-2.121 2.122a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 28.5a1.5 1.5 0 0 0 0-3H8A1.5 1.5 0 0 1 6.5 24v-4a1.5 1.5 0 0 0-3 0v4A4.5 4.5 0 0 0 8 28.5zm-7-15A1.5 1.5 0 0 1 3.5 12V8A4.5 4.5 0 0 1 8 3.5h4a1.5 1.5 0 0 1 0 3H8A1.5 1.5 0 0 0 6.5 8v4A1.5 1.5 0 0 1 5 13.5M28.5 20a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 0 0 3h4a4.5 4.5 0 0 0 4.5-4.5z" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" d="M16.707 12.707a1 1 0 0 0-1.414 0l-2.657 2.657a1 1 0 0 0 0 1.414l2.657 2.657a1 1 0 0 0 1.414 0l2.657-2.657a1 1 0 0 0 0-1.414z"/><path fill="currentColor" fill-rule="evenodd" d="M4 8a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm10.586 2.414a2 2 0 0 1 2.828 0l4.243 4.243a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1-2.828 0l-4.243-4.243a2 2 0 0 1 0-2.828z" clip-rule="evenodd"/>`,
+    "duotone": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.363 3.363a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $708.prop($$props, "viewBox", 3, defaultViewBox), rest = $708.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -20075,7 +20088,7 @@ import "svelte/internal/disclose-version";
 import * as $750 from "svelte/internal/client";
 function Line($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M16 4c.552 0 1 .512 1 1.143v21.714c0 .631-.448 1.143-1 1.143s-1-.512-1-1.143V5.143C15 4.512 15.448 4 16 4" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 4c.552 0 1 .512 1 1.143v21.714c0 .631-.448 1.143-1 1.143s-1-.512-1-1.143V5.143C15 4.512 15.448 4 16 4" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $750.prop($$props, "viewBox", 3, defaultViewBox), rest = $750.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -21177,7 +21190,7 @@ import "svelte/internal/disclose-version";
 import * as $791 from "svelte/internal/client";
 function Maximize($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M23 9H9v14h14zM9 7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 9H9v14h14zM9 7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $791.prop($$props, "viewBox", 3, defaultViewBox), rest = $791.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -21631,7 +21644,7 @@ import "svelte/internal/disclose-version";
 import * as $808 from "svelte/internal/client";
 function Minimize($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M6 16a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M6 16a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $808.prop($$props, "viewBox", 3, defaultViewBox), rest = $808.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -22436,7 +22449,7 @@ import "svelte/internal/disclose-version";
 import * as $838 from "svelte/internal/client";
 function Notepad2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="url(#a)" d="M6 5a2 2 0 0 1 2-2h12l6 6v18a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2z"/><path fill="#DCCFE8" d="m26 9-6-6v4a2 2 0 0 0 2 2z"/><path fill="#A1A2CD" fillRule="evenodd" d="M9.5 13a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1zM9 19.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1z" clipRule="evenodd"/><path fill="url(#b)" d="M24.85 12.707a1 1 0 0 1 1.413 0l2.829 2.829a1 1 0 0 1 0 1.414L16.364 29.678l-4.243-4.243z"/><path fill="url(#c)" d="M12.121 29.678v-4.242l4.243 4.242z"/><path fill="#1C1C1C" d="M12.121 29.678v-1.414l1.415 1.414z"/><path fill="url(#d)" d="M23.435 14.121h6v3h-6z" transform="rotate(45 23.435 14.121)"/><defs><linearGradient id="a" x1="16" x2="16" y1="3" y2="31" gradientUnits="userSpaceOnUse"><stop stopColor="#F1ECF7"/><stop offset="1" stopColor="#E8DEF2"/></linearGradient><linearGradient id="b" x1="27.678" x2="14.243" y1="14.121" y2="27.556" gradientUnits="userSpaceOnUse"><stop stopColor="#FF6659"/><stop offset="1" stopColor="#FF8749"/></linearGradient><linearGradient id="c" x1="14.243" x2="12.121" y1="27.557" y2="29.678" gradientUnits="userSpaceOnUse"><stop stopColor="#FFBA9F"/><stop offset="1" stopColor="#DE8893"/></linearGradient><linearGradient id="d" x1="23.749" x2="30.82" y1="15.05" y2="15.05" gradientUnits="userSpaceOnUse"><stop stopColor="#E3DBEF"/><stop offset=".807" stopColor="#F6F1FE"/><stop offset="1" stopColor="#EADEFC"/></linearGradient></defs>`
+    "regular": `<path d="M6 5C6 3.89543 6.89543 3 8 3H20L26 9V27C26 28.1046 25.1046 29 24 29H8C6.89543 29 6 28.1046 6 27V5Z" fill="url(#paint0_linear_7421_2768)"/> <path d="M26 9L20 3V7C20 8.10457 20.8954 9 22 9H26Z" fill="#DCCFE8"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13C9.22386 13 9 13.2239 9 13.5C9 13.7761 9.22386 14 9.5 14H22.5C22.7761 14 23 13.7761 23 13.5C23 13.2239 22.7761 13 22.5 13H9.5ZM9.5 16C9.22386 16 9 16.2239 9 16.5C9 16.7761 9.22386 17 9.5 17H22.5C22.7761 17 23 16.7761 23 16.5C23 16.2239 22.7761 16 22.5 16H9.5ZM9 19.5C9 19.2239 9.22386 19 9.5 19H22.5C22.7761 19 23 19.2239 23 19.5C23 19.7761 22.7761 20 22.5 20H9.5C9.22386 20 9 19.7761 9 19.5ZM9.5 22C9.22386 22 9 22.2239 9 22.5C9 22.7761 9.22386 23 9.5 23H22.5C22.7761 23 23 22.7761 23 22.5C23 22.2239 22.7761 22 22.5 22H9.5Z" fill="#A1A2CD"/> <path d="M24.8493 12.7071C25.2398 12.3166 25.873 12.3166 26.2635 12.7071L29.0919 15.5355C29.4825 15.9261 29.4825 16.5592 29.0919 16.9497L16.364 29.6777L12.1214 25.435L24.8493 12.7071Z" fill="url(#paint1_linear_7421_2768)"/> <path d="M12.1213 29.6772V25.4346L16.364 29.6772H12.1213Z" fill="url(#paint2_linear_7421_2768)"/> <path d="M12.1213 29.6779V28.2637L13.5356 29.6779H12.1213Z" fill="#1C1C1C"/> <rect x="23.4351" y="14.1211" width="6" height="3" transform="rotate(45 23.4351 14.1211)" fill="url(#paint3_linear_7421_2768)"/> <defs> <linearGradient id="paint0_linear_7421_2768" x1="16" y1="3" x2="16" y2="31" gradientUnits="userSpaceOnUse"> <stop stop-color="#F1ECF7"/> <stop offset="1" stop-color="#E8DEF2"/> </linearGradient> <linearGradient id="paint1_linear_7421_2768" x1="27.6777" y1="14.1213" x2="14.2427" y2="27.5563" gradientUnits="userSpaceOnUse"> <stop stop-color="#FF6659"/> <stop offset="1" stop-color="#FF8749"/> </linearGradient> <linearGradient id="paint2_linear_7421_2768" x1="14.2427" y1="27.5559" x2="12.1213" y2="29.6772" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFBA9F"/> <stop offset="1" stop-color="#DE8893"/> </linearGradient> <linearGradient id="paint3_linear_7421_2768" x1="23.7487" y1="15.05" x2="30.8198" y2="15.05" gradientUnits="userSpaceOnUse"> <stop stop-color="#E3DBEF"/> <stop offset="0.807292" stop-color="#F6F1FE"/> <stop offset="1" stop-color="#EADEFC"/> </linearGradient> </defs>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $838.prop($$props, "viewBox", 3, defaultViewBox), rest = $838.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -23457,7 +23470,7 @@ import "svelte/internal/disclose-version";
 import * as $876 from "svelte/internal/client";
 function OnenoteIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#AE4BD5" d="M28 3.5A1.5 1.5 0 0 1 29.5 2h1A1.5 1.5 0 0 1 32 3.5v5a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 28 8.5z"/><path fill="#9332BF" d="M28 13.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#7719AA" d="M28 23.5a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v5a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#9D9C9B" fillRule="evenodd" d="M7.5 29.206V2.794C7.5 1.25 8.731 0 10.25 0h16.5c1.519 0 2.75 1.25 2.75 2.794v26.412C29.5 30.75 28.269 32 26.75 32h-16.5c-1.519 0-2.75-1.25-2.75-2.794M9.25 2.794v26.412c0 .561.448 1.016 1 1.016h16.5c.552 0 1-.455 1-1.016V2.794c0-.561-.448-1.016-1-1.016h-16.5c-.552 0-1 .455-1 1.016" clipRule="evenodd"/><path fill="#7719AA" d="M0 9.25a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#fff" d="M4 21.5V12h1.75l6.5 6.5V12H14v9.5h-1.75L5.75 15v6.5z"/>`
+    "regular": `<path d="M28 3.5C28 2.67157 28.6716 2 29.5 2H30.5C31.3284 2 32 2.67157 32 3.5V8.5C32 9.32843 31.3284 10 30.5 10H29.5C28.6716 10 28 9.32843 28 8.5V3.5Z" fill="#AE4BD5"/> <path d="M28 13.5C28 12.6716 28.6716 12 29.5 12H30.5C31.3284 12 32 12.6716 32 13.5V18.5C32 19.3284 31.3284 20 30.5 20H29.5C28.6716 20 28 19.3284 28 18.5V13.5Z" fill="#9332BF"/> <path d="M28 23.5C28 22.6716 28.6716 22 29.5 22H30.5C31.3284 22 32 22.6716 32 23.5V28.5C32 29.3284 31.3284 30 30.5 30H29.5C28.6716 30 28 29.3284 28 28.5V23.5Z" fill="#7719AA"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 29.2064V2.79365C7.5 1.25076 8.73122 0 10.25 0H26.75C28.2688 0 29.5 1.25076 29.5 2.79365V29.2064C29.5 30.7492 28.2688 32 26.75 32H10.25C8.73122 32 7.5 30.7492 7.5 29.2064ZM9.25 2.79365V29.2064C9.25 29.7674 9.69772 30.2222 10.25 30.2222H26.75C27.3023 30.2222 27.75 29.7674 27.75 29.2064V2.79365C27.75 2.2326 27.3023 1.77778 26.75 1.77778H10.25C9.69772 1.77778 9.25 2.2326 9.25 2.79365Z" fill="#9D9C9B"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#7719AA"/> <path d="M4 21.5V12H5.75L12.25 18.5V12H14V21.5H12.25L5.75 15V21.5H4Z" fill="white"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $876.prop($$props, "viewBox", 3, defaultViewBox), rest = $876.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -25823,7 +25836,7 @@ import "svelte/internal/disclose-version";
 import * as $964 from "svelte/internal/client";
 function PptIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#9D9C9B" fillRule="evenodd" d="M8 2.794v26.412C8 30.75 9.231 32 10.75 32h18.5c1.519 0 2.75-1.25 2.75-2.794V7.351c0-.746-.294-1.461-.816-1.986L26.648.807A2.73 2.73 0 0 0 24.714 0H10.75C9.231 0 8 1.25 8 2.794m1.75 26.412V2.794c0-.561.448-1.016 1-1.016h13.625v6.095c0 1.052.84 1.905 1.875 1.905h4v19.428c0 .561-.448 1.016-1 1.016h-18.5c-.552 0-1-.455-1-1.016M30.25 8v-.649c0-.271-.107-.531-.297-.722l-3.828-3.846v5.09c0 .07.056.127.125.127z" clipRule="evenodd"/><path fill="#E48762" d="M20 24q6 0 6-6h-4v-4h-2v10"/><path fill="#F9D4C4" d="M24 16v-4c1.5 0 4 2.5 4 4z"/><path fill="#C25B33" d="M0 9.25a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#fff" d="M6 21.522V11.5h2.666q1.49 0 1.948.144.732.232 1.203.99.48.76.479 1.956 0 1.087-.41 1.825-.41.732-1.026 1.032-.615.294-2.119.294H7.654v3.78zm1.654-8.327v2.844h.916q.924 0 1.251-.13a1.12 1.12 0 0 0 .547-.465q.212-.342.212-.834 0-.499-.219-.84a1.08 1.08 0 0 0-.54-.458q-.32-.117-1.36-.117z"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path d="M20 24C24 24 26 22 26 18H22V14H20V18V24Z" fill="#E48762"/> <path d="M24 16V12C25.5 12 28 14.5 28 16H24Z" fill="#F9D4C4"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#C25B33"/> <path d="M6 21.5215V11.5H8.66602C9.65951 11.5 10.3089 11.5479 10.6143 11.6436C11.1019 11.7985 11.5029 12.1289 11.8174 12.6348C12.1364 13.1406 12.2959 13.7923 12.2959 14.5898C12.2959 15.3145 12.1592 15.9229 11.8857 16.415C11.6123 16.9027 11.2705 17.2467 10.8604 17.4473C10.4502 17.6432 9.74381 17.7412 8.74121 17.7412H7.6543V21.5215H6ZM7.6543 13.1953V16.0391H8.57031C9.18555 16.0391 9.60254 15.9958 9.82129 15.9092C10.0446 15.8226 10.2269 15.6676 10.3682 15.4443C10.5094 15.2165 10.5801 14.9385 10.5801 14.6104C10.5801 14.2777 10.5072 13.9974 10.3613 13.7695C10.2155 13.5417 10.0355 13.389 9.82129 13.3115C9.6071 13.234 9.15365 13.1953 8.46094 13.1953H7.6543Z" fill="white"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $964.prop($$props, "viewBox", 3, defaultViewBox), rest = $964.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26358,7 +26371,7 @@ import "svelte/internal/disclose-version";
 import * as $984 from "svelte/internal/client";
 function Radio2true($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)"><path fill="currentColor" fillRule="evenodd" d="M16 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12m0 8c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clipRule="evenodd"/></g><defs><filter id="a" width="29" height="30" x="2" y="1.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3733"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3733" mode="overlay" result="effect2_innerShadow_7214_3733"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3733" result="effect3_innerShadow_7214_3733"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3733" mode="overlay" result="effect4_innerShadow_7214_3733"/></filter></defs>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12m0 8c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $984.prop($$props, "viewBox", 3, defaultViewBox), rest = $984.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26407,7 +26420,7 @@ import "svelte/internal/disclose-version";
 import * as $986 from "svelte/internal/client";
 function RadioFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clipRule="evenodd" opacity=".2"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $986.prop($$props, "viewBox", 3, defaultViewBox), rest = $986.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26456,7 +26469,7 @@ import "svelte/internal/disclose-version";
 import * as $988 from "svelte/internal/client";
 function RadioTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clipRule="evenodd" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M23 16a7 7 0 1 1-14 0 7 7 0 0 1 14 0"/></g><defs><filter id="a" width="15" height="16" x="9" y="8.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3727" mode="overlay" result="effect2_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3727" result="effect3_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3727" mode="overlay" result="effect4_innerShadow_7214_3727"/></filter></defs>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M23 16a7 7 0 1 1-14 0 7 7 0 0 1 14 0"/></g><defs><filter id="a" width="15" height="16" x="9" y="8.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3727" mode="overlay" result="effect2_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3727" result="effect3_innerShadow_7214_3727"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3727" mode="overlay" result="effect4_innerShadow_7214_3727"/></filter></defs>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $988.prop($$props, "viewBox", 3, defaultViewBox), rest = $988.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26559,7 +26572,7 @@ import "svelte/internal/disclose-version";
 import * as $992 from "svelte/internal/client";
 function Rating1($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M17.05 12.273V21h-1.056v-7.193h-.069q-.06.12-.306.273-.247.15-.64.264-.391.11-.894.11v-.886q.507 0 .877-.183.372-.183.618-.43.251-.247.38-.448l.153-.234z"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M17.05 12.273V21h-1.056v-7.193h-.069q-.06.12-.306.273-.247.15-.64.264a3.3 3.3 0 0 1-.894.11v-.886q.507 0 .877-.183.372-.183.618-.43.252-.247.38-.448l.153-.234z"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $992.prop($$props, "viewBox", 3, defaultViewBox), rest = $992.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26581,7 +26594,7 @@ import "svelte/internal/disclose-version";
 import * as $993 from "svelte/internal/client";
 function Rating2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13.27 21v-.767l2.881-3.154q.508-.553.835-.963.33-.413.486-.775.162-.366.162-.767 0-.46-.221-.797a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.209a1.44 1.44 0 0 0-.575.575q-.2.37-.2.87h-1.006q0-.768.353-1.347.354-.58.963-.904.614-.324 1.377-.324.766 0 1.36.324.591.324.928.874t.337 1.223q0 .481-.175.941-.17.456-.596 1.019a18 18 0 0 1-1.172 1.364l-1.96 2.096v.068h4.056V21z"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13.27 21v-.767l2.881-3.154q.508-.553.835-.963.33-.413.486-.775.162-.366.162-.767 0-.46-.221-.797a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.209a1.44 1.44 0 0 0-.575.575 1.8 1.8 0 0 0-.2.87h-1.006q0-.768.353-1.347.354-.58.963-.904a2.9 2.9 0 0 1 1.377-.324q.766 0 1.36.324.591.324.928.874t.337 1.223q0 .481-.175.941-.17.456-.596 1.019-.422.558-1.172 1.364l-1.96 2.096v.068h4.056V21z"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $993.prop($$props, "viewBox", 3, defaultViewBox), rest = $993.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -26603,7 +26616,7 @@ import "svelte/internal/disclose-version";
 import * as $994 from "svelte/internal/client";
 function Rating3($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13 18.818h1.073q.047.444.303.75.26.303.673.46.414.154.916.154a2.5 2.5 0 0 0 .98-.183q.435-.183.69-.546.256-.366.256-.907a1.8 1.8 0 0 0-.221-.878q-.222-.41-.712-.66-.49-.252-1.3-.252h-.698v-.852l2.182-2.625v-.069h-3.716v-.937h5.164v.767l-2.335 2.83v.068q.563.026 1.048.23.49.204.853.554.366.35.57.814.205.465.205 1.01 0 .745-.383 1.33-.38.58-1.053.911-.67.333-1.547.332-.776 0-1.427-.272a2.6 2.6 0 0 1-1.061-.789 2.2 2.2 0 0 1-.46-1.24"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13 18.818h1.073q.047.444.303.75.26.303.673.46.414.154.916.154a2.5 2.5 0 0 0 .98-.183q.435-.183.69-.546.256-.366.256-.907 0-.474-.221-.878-.222-.41-.712-.66-.49-.252-1.3-.252h-.698v-.852l2.182-2.625v-.069h-3.716v-.937h5.164v.767l-2.335 2.83v.068q.563.026 1.049.23.489.204.852.554.366.35.57.814.205.465.205 1.01 0 .745-.383 1.33-.38.58-1.053.911-.668.333-1.547.332-.776 0-1.427-.272a2.6 2.6 0 0 1-1.061-.789 2.2 2.2 0 0 1-.46-1.24"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $994.prop($$props, "viewBox", 3, defaultViewBox), rest = $994.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -27010,7 +27023,7 @@ import "svelte/internal/disclose-version";
 import * as $1010 from "svelte/internal/client";
 function RightbarMode($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1010.prop($$props, "viewBox", 3, defaultViewBox), rest = $1010.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -27139,10 +27152,8 @@ function Rocket($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1015 from "svelte/internal/client";
 function Round2($$anchor, $$props) {
-  const weights = {
-    "regular": `<g filter="url(#a)"><circle cx="22" cy="20" r="14" fill="#fff"/></g><defs><filter id="a" width="44" height="44" x="0" y="0" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="4"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_7159_6029"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_7159_6029" result="shape"/></filter></defs>`
-  };
-  const defaultViewBox = "0 0 44 44";
+  const weights = { "regular": `<circle cx="16.25" cy="16" r="14" fill="#fff"/>` };
+  const defaultViewBox = "0 0 32 32";
   let viewBox = $1015.prop($$props, "viewBox", 3, defaultViewBox), rest = $1015.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
   IconBase($$anchor, $1015.spread_props(
     {
@@ -27162,7 +27173,7 @@ import "svelte/internal/disclose-version";
 import * as $1016 from "svelte/internal/client";
 function Round($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M25 16a9 9 0 1 1-18 0 9 9 0 0 1 18 0" opacity=".08"/><path fill="currentColor" fillRule="evenodd" d="M16 24a8 8 0 1 0 0-16 8 8 0 0 0 0 16m0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M25 16a9 9 0 1 1-18 0 9 9 0 0 1 18 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 24a8 8 0 1 0 0-16 8 8 0 0 0 0 16m0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1016.prop($$props, "viewBox", 3, defaultViewBox), rest = $1016.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -27184,7 +27195,7 @@ import "svelte/internal/disclose-version";
 import * as $1017 from "svelte/internal/client";
 function RoundedCorner($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M23 8a1 1 0 0 1 1 1v4c0 6.075-4.925 11-11 11H9a1 1 0 1 1 0-2h4a9 9 0 0 0 9-9V9a1 1 0 0 1 1-1" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 8a1 1 0 0 1 1 1v4c0 6.075-4.925 11-11 11H9a1 1 0 1 1 0-2h4a9 9 0 0 0 9-9V9a1 1 0 0 1 1-1" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1017.prop($$props, "viewBox", 3, defaultViewBox), rest = $1017.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -27638,7 +27649,7 @@ import "svelte/internal/disclose-version";
 import * as $1034 from "svelte/internal/client";
 function SearchIcon2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="url(#a)" d="M28.071 14.4c0 5.744-4.656 10.4-10.4 10.4-5.743 0-10.4-4.656-10.4-10.4S11.928 4 17.671 4s10.4 4.656 10.4 10.4"/><path fill="currentColor" fillRule="evenodd" d="M17.671 23.3a8.9 8.9 0 1 0 0-17.8 8.9 8.9 0 0 0 0 17.8m0 1.5c5.744 0 10.4-4.656 10.4-10.4S23.415 4 17.671 4c-5.743 0-10.4 4.656-10.4 10.4s4.657 10.4 10.4 10.4" clipRule="evenodd"/><g filter="url(#b)"><ellipse cx="22.373" cy="10.302" fill="url(#c)" rx="2" ry="1.5" transform="rotate(45 22.373 10.302)"/></g><path fill="url(#d)" d="M11.567 20.918a3 3 0 0 1 0 4.242l-3.203 3.203a3 3 0 1 1-4.243-4.242l3.203-3.203a3 3 0 0 1 4.243 0"/><path fill="currentColor" fillRule="evenodd" d="m7.303 27.303 3.203-3.203a1.5 1.5 0 1 0-2.121-2.122l-3.203 3.203a1.5 1.5 0 0 0 2.121 2.122m4.264-2.143a3 3 0 0 0-4.243-4.242L4.121 24.12a3 3 0 1 0 4.243 4.243z" clipRule="evenodd"/><defs><linearGradient id="c" x1="22.373" x2="22.373" y1="8.802" y2="11.802" gradientUnits="userSpaceOnUse"><stop stopColor="#fff"/><stop offset="1" stopColor="#fff" stopOpacity="0"/></linearGradient><linearGradient id="d" x1="9.965" x2="5.723" y1="26.762" y2="22.519" gradientUnits="userSpaceOnUse"><stop offset=".599" stopColor="#B5B7F9"/><stop offset="1" stopColor="#EBEBFF"/></linearGradient><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="rotate(90 1.636 16.036)scale(10.4)" gradientUnits="userSpaceOnUse"><stop offset=".583" stopColor="#83D0FC"/><stop offset="1" stopColor="#D6F0FF"/></radialGradient><filter id="b" width="5.536" height="5.536" x="19.605" y="7.534" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_7159_6037" stdDeviation=".5"/></filter></defs>`
+    "regular": `<path d="M28.0712 14.4C28.0712 20.1437 23.4149 24.7999 17.6712 24.7999C11.9275 24.7999 7.27124 20.1437 7.27124 14.4C7.27124 8.65622 11.9275 4 17.6712 4C23.4149 4 28.0712 8.65622 28.0712 14.4Z" fill="url(#paint0_radial_7159_6037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6712 23.2999C22.5865 23.2999 26.5712 19.3153 26.5712 14.4C26.5712 9.48465 22.5865 5.5 17.6712 5.5C12.7559 5.5 8.77124 9.48465 8.77124 14.4C8.77124 19.3153 12.7559 23.2999 17.6712 23.2999ZM17.6712 24.7999C23.4149 24.7999 28.0712 20.1437 28.0712 14.4C28.0712 8.65622 23.4149 4 17.6712 4C11.9275 4 7.27124 8.65622 7.27124 14.4C7.27124 20.1437 11.9275 24.7999 17.6712 24.7999Z" fill="currentColor"/> <g filter="url(#filter0_f_7159_6037)"> <ellipse cx="22.3733" cy="10.302" rx="2" ry="1.5" transform="rotate(45 22.3733 10.302)" fill="url(#paint1_linear_7159_6037)"/> </g> <path d="M11.567 20.9177C12.7386 22.0893 12.7386 23.9888 11.567 25.1604L8.3639 28.3635C7.19233 29.5351 5.29283 29.5351 4.12126 28.3635C2.94968 27.1919 2.94968 25.2925 4.12126 24.1209L7.32439 20.9177C8.49596 19.7462 10.3955 19.7462 11.567 20.9177Z" fill="url(#paint2_linear_7159_6037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30324 27.3029L10.5064 24.0997C11.0922 23.5139 11.0922 22.5642 10.5064 21.9784C9.92059 21.3926 8.97084 21.3926 8.38505 21.9784L5.18192 25.1815C4.59613 25.7673 4.59613 26.7171 5.18192 27.3029C5.7677 27.8886 6.71745 27.8886 7.30324 27.3029ZM11.567 25.1604C12.7386 23.9888 12.7386 22.0893 11.567 20.9177C10.3955 19.7462 8.49596 19.7462 7.32439 20.9177L4.12126 24.1209C2.94968 25.2925 2.94968 27.1919 4.12126 28.3635C5.29283 29.5351 7.19233 29.5351 8.3639 28.3635L11.567 25.1604Z" fill="currentColor"/> <defs> <filter id="filter0_f_7159_6037" x="19.6055" y="7.53418" width="5.53571" height="5.53613" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_7159_6037"/> </filter> <radialGradient id="paint0_radial_7159_6037" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.6712 14.4) rotate(90) scale(10.4)"> <stop offset="0.583333" stop-color="#83D0FC"/> <stop offset="1" stop-color="#D6F0FF"/> </radialGradient> <linearGradient id="paint1_linear_7159_6037" x1="22.3733" y1="8.80202" x2="22.3733" y2="11.802" gradientUnits="userSpaceOnUse"> <stop stop-color="white"/> <stop offset="1" stop-color="white" stop-opacity="0"/> </linearGradient> <linearGradient id="paint2_linear_7159_6037" x1="9.96547" y1="26.762" x2="5.72283" y2="22.5193" gradientUnits="userSpaceOnUse"> <stop offset="0.598958" stop-color="#B5B7F9"/> <stop offset="1" stop-color="#EBEBFF"/> </linearGradient> </defs>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1034.prop($$props, "viewBox", 3, defaultViewBox), rest = $1034.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -29351,7 +29362,7 @@ import "svelte/internal/disclose-version";
 import * as $1098 from "svelte/internal/client";
 function SnowIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M25.8 11.8a4.2 4.2 0 1 1 0 8.4H6.2a4.2 4.2 0 1 1 0-8.4z"/><path fill="currentColor" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="#fff" fill-opacity=".4" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="currentColor" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="#fff" fill-opacity=".2" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="currentColor" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-opacity=".3" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fillRule="evenodd" d="M16 6.2a.56.56 0 0 0-.56.56v7.347c0 .17 0 .255-.034.294a.14.14 0 0 1-.117.049c-.051-.004-.111-.064-.231-.184L9.862 9.07a.56.56 0 0 0-.792.792l5.196 5.195c.12.12.18.18.184.231a.14.14 0 0 1-.05.118c-.038.033-.123.033-.293.033H6.76a.56.56 0 1 0 0 1.12h7.347c.17 0 .255 0 .294.034a.14.14 0 0 1 .049.117c-.005.052-.064.112-.184.232L9.07 22.138a.56.56 0 1 0 .792.792l5.196-5.195c.12-.12.18-.18.231-.184a.14.14 0 0 1 .117.048c.034.04.034.124.034.294v7.347a.56.56 0 1 0 1.12 0v-7.347c0-.17 0-.255.034-.294a.14.14 0 0 1 .117-.048c.051.004.111.064.231.184l5.196 5.195a.56.56 0 0 0 .792-.792l-5.196-5.195c-.12-.12-.18-.18-.184-.232a.14.14 0 0 1 .049-.117c.04-.034.124-.034.294-.034h7.347a.56.56 0 0 0 0-1.12h-7.347c-.17 0-.255 0-.294-.033a.14.14 0 0 1-.049-.118c.004-.051.064-.111.184-.231l5.196-5.195a.56.56 0 1 0-.792-.792l-5.196 5.195c-.12.12-.18.18-.231.184a.14.14 0 0 1-.117-.049c-.034-.04-.034-.124-.034-.293V6.76A.56.56 0 0 0 16 6.2" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M25.8 11.8a4.2 4.2 0 1 1 0 8.4H6.2a4.2 4.2 0 1 1 0-8.4z"/><path fill="currentColor" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="#fff" fill-opacity=".4" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="currentColor" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="#fff" fill-opacity=".2" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="currentColor" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-opacity=".3" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-rule="evenodd" d="M16 6.2a.56.56 0 0 0-.56.56v7.347c0 .17 0 .255-.034.294a.14.14 0 0 1-.117.049c-.051-.004-.111-.064-.231-.184L9.862 9.07a.56.56 0 0 0-.792.792l5.196 5.195c.12.12.18.18.184.231a.14.14 0 0 1-.05.118c-.038.033-.123.033-.293.033H6.76a.56.56 0 1 0 0 1.12h7.347c.17 0 .255 0 .294.034a.14.14 0 0 1 .049.117c-.005.052-.064.112-.184.232L9.07 22.138a.56.56 0 1 0 .792.792l5.196-5.195c.12-.12.18-.18.231-.184a.14.14 0 0 1 .117.048c.034.04.034.124.034.294v7.347a.56.56 0 1 0 1.12 0v-7.347c0-.17 0-.255.034-.294a.14.14 0 0 1 .117-.048c.051.004.111.064.231.184l5.196 5.195a.56.56 0 0 0 .792-.792l-5.196-5.195c-.12-.12-.18-.18-.184-.232a.14.14 0 0 1 .049-.117c.04-.034.124-.034.294-.034h7.347a.56.56 0 0 0 0-1.12h-7.347c-.17 0-.255 0-.294-.033a.14.14 0 0 1-.049-.118c.004-.051.064-.111.184-.231l5.196-5.195a.56.56 0 1 0-.792-.792l-5.196 5.195c-.12.12-.18.18-.231.184a.14.14 0 0 1-.117-.049c-.034-.04-.034-.124-.034-.293V6.76A.56.56 0 0 0 16 6.2" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1098.prop($$props, "viewBox", 3, defaultViewBox), rest = $1098.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -30502,8 +30513,8 @@ import "svelte/internal/disclose-version";
 import * as $1141 from "svelte/internal/client";
 function Stars($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="m13.5 6.763-1.261 3.408a3.5 3.5 0 0 1-2.068 2.068L6.763 13.5l3.408 1.261a3.5 3.5 0 0 1 2.068 2.068l1.261 3.408 1.261-3.408a3.5 3.5 0 0 1 2.068-2.068l3.408-1.261-3.408-1.261a3.5 3.5 0 0 1-2.068-2.068zm1.407-1.961c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM23.5 20.322l-.46 1.242a2.5 2.5 0 0 1-1.476 1.477l-1.242.459 1.242.46a2.5 2.5 0 0 1 1.477 1.476l.459 1.242.46-1.242a2.5 2.5 0 0 1 1.476-1.477l1.241-.459-1.24-.46a2.5 2.5 0 0 1-1.478-1.476zm.938-1.787c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clipRule="evenodd"/>`,
-    "fill": `<path fill="currentColor" fillRule="evenodd" d="M14.907 4.802c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM24.438 18.535c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m13.5 6.763-1.261 3.408a3.5 3.5 0 0 1-2.068 2.068L6.763 13.5l3.408 1.261a3.5 3.5 0 0 1 2.068 2.068l1.261 3.408 1.261-3.408a3.5 3.5 0 0 1 2.068-2.068l3.408-1.261-3.408-1.261a3.5 3.5 0 0 1-2.068-2.068zm1.407-1.961c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM23.5 20.322l-.46 1.242a2.5 2.5 0 0 1-1.476 1.477l-1.242.459 1.242.46a2.5 2.5 0 0 1 1.477 1.476l.459 1.242.46-1.242a2.5 2.5 0 0 1 1.476-1.477l1.241-.459-1.24-.46a2.5 2.5 0 0 1-1.478-1.476zm.938-1.787c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M14.907 4.802c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM24.438 18.535c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1141.prop($$props, "viewBox", 3, defaultViewBox), rest = $1141.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -31725,7 +31736,7 @@ import "svelte/internal/disclose-version";
 import * as $1187 from "svelte/internal/client";
 function TextA($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="m6.116 21.532 9-17a1 1 0 0 1 1.768 0l9 17a1 1 0 0 1 .116.459V22a1 1 0 0 1-.99 1H25a1 1 0 0 1-.884-.533L21.751 18H10.249l-2.365 4.468a1 1 0 0 1-.881.532H7a1 1 0 0 1-1-.995V22a1 1 0 0 1 .116-.468M20.692 16 16 7.137 11.308 16zM5 26a1 1 0 1 0 0 2h22a1 1 0 1 0 0-2z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m6.116 21.532 9-17a1 1 0 0 1 1.768 0l9 17a1 1 0 0 1 .116.459V22a1 1 0 0 1-.99 1H25a1 1 0 0 1-.884-.533L21.751 18H10.249l-2.365 4.468a1 1 0 0 1-.881.532H7a1 1 0 0 1-1-.995V22a1 1 0 0 1 .116-.468M20.692 16 16 7.137 11.308 16zM5 26a1 1 0 1 0 0 2h22a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1187.prop($$props, "viewBox", 3, defaultViewBox), rest = $1187.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -32660,7 +32671,7 @@ import "svelte/internal/disclose-version";
 import * as $1222 from "svelte/internal/client";
 function ToggleFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)" opacity=".21"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M16 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3731"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3731" mode="overlay" result="effect2_innerShadow_7214_3731"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3731" result="effect3_innerShadow_7214_3731"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3731" mode="overlay" result="effect4_innerShadow_7214_3731"/></filter><filter id="b" width="20" height="20" x="0" y="8" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_7214_3731"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_7214_3731" result="shape"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8" opacity=".2"/><path fill="#fff" d="M16 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1222.prop($$props, "viewBox", 3, defaultViewBox), rest = $1222.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -32736,7 +32747,7 @@ import "svelte/internal/disclose-version";
 import * as $1225 from "svelte/internal/client";
 function ToggleTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M28 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_7214_3732"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_7214_3732" mode="overlay" result="effect2_innerShadow_7214_3732"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_7214_3732" result="effect3_innerShadow_7214_3732"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_7214_3732" mode="overlay" result="effect4_innerShadow_7214_3732"/></filter><filter id="b" width="20" height="20" x="12" y="8" colorInterpolationFilters="sRGB" filterUnits="userSpaceOnUse"><feFlood floodOpacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_7214_3732"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_7214_3732" result="shape"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8" opacity=".2"/><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/><path fill="#fff" d="M28 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1225.prop($$props, "viewBox", 3, defaultViewBox), rest = $1225.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -33595,7 +33606,7 @@ import "svelte/internal/disclose-version";
 import * as $1257 from "svelte/internal/client";
 function TxtIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#9D9C9B" fillRule="evenodd" d="M4 2.794v26.412C4 30.75 5.231 32 6.75 32h18.5c1.519 0 2.75-1.25 2.75-2.794V7.351c0-.746-.294-1.461-.816-1.986L22.648.807A2.73 2.73 0 0 0 20.714 0H6.75C5.231 0 4 1.25 4 2.794m1.75 26.412V2.794c0-.561.448-1.016 1-1.016h13.625v6.095c0 1.052.84 1.905 1.875 1.905h4v19.428c0 .561-.448 1.016-1 1.016H6.75c-.552 0-1-.455-1-1.016M26.25 8v-.649c0-.271-.107-.531-.297-.722l-3.828-3.846v5.09c0 .07.056.127.125.127z" clipRule="evenodd"/><path fill="#C9C7C5" fillRule="evenodd" d="M8 13c0-.75.25-1 1-1h14c.75 0 1 .25 1 1s-.25 1-1 1H9c-.75 0-1-.25-1-1M8 17c0-.75.25-1 1-1h14c.75 0 1 .25 1 1s-.25 1-1 1H9c-.75 0-1-.25-1-1M8 21c0-.75.25-1 1-1h14c.75 0 1 .25 1 1s-.25 1-1 1H9c-.75 0-1-.25-1-1M8 25c0-.75.25-1 1-1h14c.75 0 1 .25 1 1s-.25 1-1 1H9c-.75 0-1-.25-1-1" clipRule="evenodd"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.79365V29.2064C4 30.7492 5.23122 32 6.75 32H25.25C26.7688 32 28 30.7492 28 29.2064V7.35127C28 6.60502 27.7061 5.88979 27.1838 5.36503L22.6478 0.807413C22.133 0.29013 21.4381 0 20.714 0H6.75C5.23122 0 4 1.25076 4 2.79365ZM5.75 29.2064V2.79365C5.75 2.2326 6.19772 1.77778 6.75 1.77778H20.375V7.87302C20.375 8.92499 21.2145 9.77778 22.25 9.77778H26.25V29.2064C26.25 29.7674 25.8023 30.2222 25.25 30.2222H6.75C6.19772 30.2222 5.75 29.7674 5.75 29.2064ZM26.25 8V7.35127C26.25 7.07991 26.1431 6.81982 25.9532 6.629L22.125 2.78254V7.87302C22.125 7.94315 22.181 8 22.25 8H26.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13C8 12.25 8.25 12 9 12H23C23.75 12 24 12.25 24 13C24 13.75 23.75 14 23 14H9C8.25 14 8 13.75 8 13Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17C8 16.25 8.25 16 9 16H23C23.75 16 24 16.25 24 17C24 17.75 23.75 18 23 18H9C8.25 18 8 17.75 8 17Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8 20.25 8.25 20 9 20H23C23.75 20 24 20.25 24 21C24 21.75 23.75 22 23 22H9C8.25 22 8 21.75 8 21Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 25C8 24.25 8.25 24 9 24H23C23.75 24 24 24.25 24 25C24 25.75 23.75 26 23 26H9C8.25 26 8 25.75 8 25Z" fill="#C9C7C5"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1257.prop($$props, "viewBox", 3, defaultViewBox), rest = $1257.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -34265,7 +34276,7 @@ import "svelte/internal/disclose-version";
 import * as $1282 from "svelte/internal/client";
 function Variables($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M21.432 26.78 29 22.41a2 2 0 0 0 1-1.731v-9.317a2 2 0 0 0-1-1.733l-7.57-4.37a1 1 0 0 0-1 1.733l6.57 3.792a2 2 0 0 1 1 1.732v7.008a2 2 0 0 1-1 1.732l-6.57 3.793a1 1 0 0 0 1 1.732M11.5 19a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/><path fill="currentColor" fillRule="evenodd" d="M12.5 5.577a2 2 0 0 0-2 0l-7.96 4.596a2 2 0 0 0-1 1.732v9.19a2 2 0 0 0 1 1.732l7.96 4.596a2 2 0 0 0 2 0l7.96-4.596a2 2 0 0 0 1-1.732v-9.19a2 2 0 0 0-1-1.732zm6.96 6.328L11.5 7.309l-7.96 4.596v9.19l7.96 4.596 7.96-4.596z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M21.432 26.78 29 22.41a2 2 0 0 0 1-1.731v-9.317a2 2 0 0 0-1-1.733l-7.57-4.37a1 1 0 0 0-1 1.733l6.57 3.792a2 2 0 0 1 1 1.732v7.008a2 2 0 0 1-1 1.732l-6.57 3.793a1 1 0 0 0 1 1.732M11.5 19a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/><path fill="currentColor" fill-rule="evenodd" d="M12.5 5.577a2 2 0 0 0-2 0l-7.96 4.596a2 2 0 0 0-1 1.732v9.19a2 2 0 0 0 1 1.732l7.96 4.596a2 2 0 0 0 2 0l7.96-4.596a2 2 0 0 0 1-1.732v-9.19a2 2 0 0 0-1-1.732zm6.96 6.328L11.5 7.309l-7.96 4.596v9.19l7.96 4.596 7.96-4.596z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1282.prop($$props, "viewBox", 3, defaultViewBox), rest = $1282.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -34314,7 +34325,7 @@ import "svelte/internal/disclose-version";
 import * as $1284 from "svelte/internal/client";
 function VerticalScreen($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fillRule="evenodd" d="M21.5 27.5v-22h-11v22zm2-22a2 2 0 0 0-2-2h-11a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.5 27.5v-22h-11v22zm2-22a2 2 0 0 0-2-2h-11a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1284.prop($$props, "viewBox", 3, defaultViewBox), rest = $1284.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -35362,7 +35373,7 @@ import "svelte/internal/disclose-version";
 import * as $1323 from "svelte/internal/client";
 function Windowed($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M12 7a1 1 0 1 0 0 2h8a3 3 0 0 1 3 3v7.5a1 1 0 1 0 2 0V12a5 5 0 0 0-5-5z"/><path fill="currentColor" fillRule="evenodd" d="M7 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2 0h10v10H9z" clipRule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M12 7a1 1 0 1 0 0 2h8a3 3 0 0 1 3 3v7.5a1 1 0 1 0 2 0V12a5 5 0 0 0-5-5z"/><path fill="currentColor" fill-rule="evenodd" d="M7 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2 0h10v10H9z" clip-rule="evenodd"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1323.prop($$props, "viewBox", 3, defaultViewBox), rest = $1323.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -35546,7 +35557,7 @@ import "svelte/internal/disclose-version";
 import * as $1330 from "svelte/internal/client";
 function XlsxIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="#9D9C9B" fillRule="evenodd" d="M8 2.794v26.412C8 30.75 9.231 32 10.75 32h18.5c1.519 0 2.75-1.25 2.75-2.794V7.351c0-.746-.294-1.461-.816-1.986L26.648.807A2.73 2.73 0 0 0 24.714 0H10.75C9.231 0 8 1.25 8 2.794m1.75 26.412V2.794c0-.561.448-1.016 1-1.016h13.625v6.095c0 1.052.84 1.905 1.875 1.905h4v19.428c0 .561-.448 1.016-1 1.016h-18.5c-.552 0-1-.455-1-1.016M30.25 8v-.649c0-.271-.107-.531-.297-.722l-3.828-3.846v5.09c0 .07.056.127.125.127z" clipRule="evenodd"/><path fill="#69C997" fillRule="evenodd" d="M20.5 13.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#54AD7D" fillRule="evenodd" d="M20.5 17.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#2B593D" fillRule="evenodd" d="M20.5 21.125c0-.483.392-.875.875-.875h5.75a.875.875 0 0 1 0 1.75h-5.75a.875.875 0 0 1-.875-.875" clipRule="evenodd"/><path fill="#3D8A58" d="M0 9.25a1.5 1.5 0 0 1 1.5-1.5h15a1.5 1.5 0 0 1 1.5 1.5v15a1.5 1.5 0 0 1-1.5 1.5h-15a1.5 1.5 0 0 1-1.5-1.5z"/><path fill="#fff" d="m5 21.772 2.81-5.23-2.55-4.792H7.2l1.648 3.22 1.613-3.22h1.92l-2.549 4.867 2.81 5.154H10.64l-1.826-3.465L6.99 21.77z"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 13.125C20.5 12.6418 20.8918 12.25 21.375 12.25H27.125C27.6082 12.25 28 12.6418 28 13.125C28 13.6082 27.6082 14 27.125 14H21.375C20.8918 14 20.5 13.6082 20.5 13.125Z" fill="#69C997"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 17.125C20.5 16.6418 20.8918 16.25 21.375 16.25H27.125C27.6082 16.25 28 16.6418 28 17.125C28 17.6082 27.6082 18 27.125 18H21.375C20.8918 18 20.5 17.6082 20.5 17.125Z" fill="#54AD7D"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.125C20.5 20.6418 20.8918 20.25 21.375 20.25H27.125C27.6082 20.25 28 20.6418 28 21.125C28 21.6082 27.6082 22 27.125 22H21.375C20.8918 22 20.5 21.6082 20.5 21.125Z" fill="#2B593D"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3D8A58"/> <path d="M5 21.7715L7.80957 16.542L5.25977 11.75H7.20117L8.84863 14.9697L10.4619 11.75H12.3828L9.83301 16.6172L12.6426 21.7715H10.6396L8.81445 18.3057L6.98926 21.7715H5Z" fill="white"/>`
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1330.prop($$props, "viewBox", 3, defaultViewBox), rest = $1330.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -35648,10 +35659,12 @@ function YoutubeLogo($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1334 from "svelte/internal/client";
 import Avatar3d01Src from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-32.jpg";
+import Avatar3d01Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-12.jpg";
 import Avatar3d01Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-16.jpg";
 import Avatar3d01Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-20.jpg";
 import Avatar3d01Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-24.jpg";
 import Avatar3d01Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-28.jpg";
+import Avatar3d01Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-36.jpg";
 import Avatar3d01Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-40.jpg";
 import Avatar3d01Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-48.jpg";
 import Avatar3d01Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-56.jpg";
@@ -35675,11 +35688,13 @@ import Avatar3d01Src1536 from "@snowui-design-system/resource-base/assets/avatar
 var root = $1334.from_html(`<img/>`);
 function Avatar3d01($$anchor, $$props) {
   const Avatar3d01SizeMap = {
+    12: Avatar3d01Src12,
     16: Avatar3d01Src16,
     20: Avatar3d01Src20,
     24: Avatar3d01Src24,
     28: Avatar3d01Src28,
     32: Avatar3d01Src,
+    36: Avatar3d01Src36,
     40: Avatar3d01Src40,
     48: Avatar3d01Src48,
     56: Avatar3d01Src56,
@@ -35702,11 +35717,13 @@ function Avatar3d01($$anchor, $$props) {
     1536: Avatar3d01Src1536
   };
   const Avatar3d01AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -35773,10 +35790,12 @@ function Avatar3d01($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1335 from "svelte/internal/client";
 import Avatar3d02Src from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-32.jpg";
+import Avatar3d02Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-12.jpg";
 import Avatar3d02Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-16.jpg";
 import Avatar3d02Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-20.jpg";
 import Avatar3d02Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-24.jpg";
 import Avatar3d02Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-28.jpg";
+import Avatar3d02Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-36.jpg";
 import Avatar3d02Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-40.jpg";
 import Avatar3d02Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-48.jpg";
 import Avatar3d02Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-56.jpg";
@@ -35800,11 +35819,13 @@ import Avatar3d02Src1536 from "@snowui-design-system/resource-base/assets/avatar
 var root2 = $1335.from_html(`<img/>`);
 function Avatar3d02($$anchor, $$props) {
   const Avatar3d02SizeMap = {
+    12: Avatar3d02Src12,
     16: Avatar3d02Src16,
     20: Avatar3d02Src20,
     24: Avatar3d02Src24,
     28: Avatar3d02Src28,
     32: Avatar3d02Src,
+    36: Avatar3d02Src36,
     40: Avatar3d02Src40,
     48: Avatar3d02Src48,
     56: Avatar3d02Src56,
@@ -35827,11 +35848,13 @@ function Avatar3d02($$anchor, $$props) {
     1536: Avatar3d02Src1536
   };
   const Avatar3d02AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -35898,10 +35921,12 @@ function Avatar3d02($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1336 from "svelte/internal/client";
 import Avatar3d03Src from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-32.jpg";
+import Avatar3d03Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-12.jpg";
 import Avatar3d03Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-16.jpg";
 import Avatar3d03Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-20.jpg";
 import Avatar3d03Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-24.jpg";
 import Avatar3d03Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-28.jpg";
+import Avatar3d03Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-36.jpg";
 import Avatar3d03Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-40.jpg";
 import Avatar3d03Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-48.jpg";
 import Avatar3d03Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-56.jpg";
@@ -35925,11 +35950,13 @@ import Avatar3d03Src1536 from "@snowui-design-system/resource-base/assets/avatar
 var root3 = $1336.from_html(`<img/>`);
 function Avatar3d03($$anchor, $$props) {
   const Avatar3d03SizeMap = {
+    12: Avatar3d03Src12,
     16: Avatar3d03Src16,
     20: Avatar3d03Src20,
     24: Avatar3d03Src24,
     28: Avatar3d03Src28,
     32: Avatar3d03Src,
+    36: Avatar3d03Src36,
     40: Avatar3d03Src40,
     48: Avatar3d03Src48,
     56: Avatar3d03Src56,
@@ -35952,11 +35979,13 @@ function Avatar3d03($$anchor, $$props) {
     1536: Avatar3d03Src1536
   };
   const Avatar3d03AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36023,10 +36052,12 @@ function Avatar3d03($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1337 from "svelte/internal/client";
 import Avatar3d04Src from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-32.jpg";
+import Avatar3d04Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-12.jpg";
 import Avatar3d04Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-16.jpg";
 import Avatar3d04Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-20.jpg";
 import Avatar3d04Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-24.jpg";
 import Avatar3d04Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-28.jpg";
+import Avatar3d04Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-36.jpg";
 import Avatar3d04Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-40.jpg";
 import Avatar3d04Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-48.jpg";
 import Avatar3d04Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-56.jpg";
@@ -36050,11 +36081,13 @@ import Avatar3d04Src1536 from "@snowui-design-system/resource-base/assets/avatar
 var root4 = $1337.from_html(`<img/>`);
 function Avatar3d04($$anchor, $$props) {
   const Avatar3d04SizeMap = {
+    12: Avatar3d04Src12,
     16: Avatar3d04Src16,
     20: Avatar3d04Src20,
     24: Avatar3d04Src24,
     28: Avatar3d04Src28,
     32: Avatar3d04Src,
+    36: Avatar3d04Src36,
     40: Avatar3d04Src40,
     48: Avatar3d04Src48,
     56: Avatar3d04Src56,
@@ -36077,11 +36110,13 @@ function Avatar3d04($$anchor, $$props) {
     1536: Avatar3d04Src1536
   };
   const Avatar3d04AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36148,10 +36183,12 @@ function Avatar3d04($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1338 from "svelte/internal/client";
 import AvatarAbstract01Src from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-32.jpg";
+import AvatarAbstract01Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-12.jpg";
 import AvatarAbstract01Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-16.jpg";
 import AvatarAbstract01Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-20.jpg";
 import AvatarAbstract01Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-24.jpg";
 import AvatarAbstract01Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-28.jpg";
+import AvatarAbstract01Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-36.jpg";
 import AvatarAbstract01Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-40.jpg";
 import AvatarAbstract01Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-48.jpg";
 import AvatarAbstract01Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-56.jpg";
@@ -36175,11 +36212,13 @@ import AvatarAbstract01Src1536 from "@snowui-design-system/resource-base/assets/
 var root5 = $1338.from_html(`<img/>`);
 function AvatarAbstract01($$anchor, $$props) {
   const AvatarAbstract01SizeMap = {
+    12: AvatarAbstract01Src12,
     16: AvatarAbstract01Src16,
     20: AvatarAbstract01Src20,
     24: AvatarAbstract01Src24,
     28: AvatarAbstract01Src28,
     32: AvatarAbstract01Src,
+    36: AvatarAbstract01Src36,
     40: AvatarAbstract01Src40,
     48: AvatarAbstract01Src48,
     56: AvatarAbstract01Src56,
@@ -36202,11 +36241,13 @@ function AvatarAbstract01($$anchor, $$props) {
     1536: AvatarAbstract01Src1536
   };
   const AvatarAbstract01AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36273,10 +36314,12 @@ function AvatarAbstract01($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1339 from "svelte/internal/client";
 import AvatarAbstract02Src from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-32.jpg";
+import AvatarAbstract02Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-12.jpg";
 import AvatarAbstract02Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-16.jpg";
 import AvatarAbstract02Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-20.jpg";
 import AvatarAbstract02Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-24.jpg";
 import AvatarAbstract02Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-28.jpg";
+import AvatarAbstract02Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-36.jpg";
 import AvatarAbstract02Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-40.jpg";
 import AvatarAbstract02Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-48.jpg";
 import AvatarAbstract02Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-56.jpg";
@@ -36300,11 +36343,13 @@ import AvatarAbstract02Src1536 from "@snowui-design-system/resource-base/assets/
 var root6 = $1339.from_html(`<img/>`);
 function AvatarAbstract02($$anchor, $$props) {
   const AvatarAbstract02SizeMap = {
+    12: AvatarAbstract02Src12,
     16: AvatarAbstract02Src16,
     20: AvatarAbstract02Src20,
     24: AvatarAbstract02Src24,
     28: AvatarAbstract02Src28,
     32: AvatarAbstract02Src,
+    36: AvatarAbstract02Src36,
     40: AvatarAbstract02Src40,
     48: AvatarAbstract02Src48,
     56: AvatarAbstract02Src56,
@@ -36327,11 +36372,13 @@ function AvatarAbstract02($$anchor, $$props) {
     1536: AvatarAbstract02Src1536
   };
   const AvatarAbstract02AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36398,10 +36445,12 @@ function AvatarAbstract02($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1340 from "svelte/internal/client";
 import AvatarAbstract03Src from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-32.jpg";
+import AvatarAbstract03Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-12.jpg";
 import AvatarAbstract03Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-16.jpg";
 import AvatarAbstract03Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-20.jpg";
 import AvatarAbstract03Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-24.jpg";
 import AvatarAbstract03Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-28.jpg";
+import AvatarAbstract03Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-36.jpg";
 import AvatarAbstract03Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-40.jpg";
 import AvatarAbstract03Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-48.jpg";
 import AvatarAbstract03Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-56.jpg";
@@ -36425,11 +36474,13 @@ import AvatarAbstract03Src1536 from "@snowui-design-system/resource-base/assets/
 var root7 = $1340.from_html(`<img/>`);
 function AvatarAbstract03($$anchor, $$props) {
   const AvatarAbstract03SizeMap = {
+    12: AvatarAbstract03Src12,
     16: AvatarAbstract03Src16,
     20: AvatarAbstract03Src20,
     24: AvatarAbstract03Src24,
     28: AvatarAbstract03Src28,
     32: AvatarAbstract03Src,
+    36: AvatarAbstract03Src36,
     40: AvatarAbstract03Src40,
     48: AvatarAbstract03Src48,
     56: AvatarAbstract03Src56,
@@ -36452,11 +36503,13 @@ function AvatarAbstract03($$anchor, $$props) {
     1536: AvatarAbstract03Src1536
   };
   const AvatarAbstract03AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36523,10 +36576,12 @@ function AvatarAbstract03($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1341 from "svelte/internal/client";
 import AvatarAbstract04Src from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-32.jpg";
+import AvatarAbstract04Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-12.jpg";
 import AvatarAbstract04Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-16.jpg";
 import AvatarAbstract04Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-20.jpg";
 import AvatarAbstract04Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-24.jpg";
 import AvatarAbstract04Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-28.jpg";
+import AvatarAbstract04Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-36.jpg";
 import AvatarAbstract04Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-40.jpg";
 import AvatarAbstract04Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-48.jpg";
 import AvatarAbstract04Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-56.jpg";
@@ -36550,11 +36605,13 @@ import AvatarAbstract04Src1536 from "@snowui-design-system/resource-base/assets/
 var root8 = $1341.from_html(`<img/>`);
 function AvatarAbstract04($$anchor, $$props) {
   const AvatarAbstract04SizeMap = {
+    12: AvatarAbstract04Src12,
     16: AvatarAbstract04Src16,
     20: AvatarAbstract04Src20,
     24: AvatarAbstract04Src24,
     28: AvatarAbstract04Src28,
     32: AvatarAbstract04Src,
+    36: AvatarAbstract04Src36,
     40: AvatarAbstract04Src40,
     48: AvatarAbstract04Src48,
     56: AvatarAbstract04Src56,
@@ -36577,11 +36634,13 @@ function AvatarAbstract04($$anchor, $$props) {
     1536: AvatarAbstract04Src1536
   };
   const AvatarAbstract04AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36648,10 +36707,12 @@ function AvatarAbstract04($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1342 from "svelte/internal/client";
 import AvatarByewindSrc from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-32.jpg";
+import AvatarByewindSrc12 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-12.jpg";
 import AvatarByewindSrc16 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-16.jpg";
 import AvatarByewindSrc20 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-20.jpg";
 import AvatarByewindSrc24 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-24.jpg";
 import AvatarByewindSrc28 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-28.jpg";
+import AvatarByewindSrc36 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-36.jpg";
 import AvatarByewindSrc40 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-40.jpg";
 import AvatarByewindSrc48 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-48.jpg";
 import AvatarByewindSrc56 from "@snowui-design-system/resource-base/assets/avatars/avatar-byewind-56.jpg";
@@ -36675,11 +36736,13 @@ import AvatarByewindSrc1536 from "@snowui-design-system/resource-base/assets/ava
 var root9 = $1342.from_html(`<img/>`);
 function AvatarByewind($$anchor, $$props) {
   const AvatarByewindSizeMap = {
+    12: AvatarByewindSrc12,
     16: AvatarByewindSrc16,
     20: AvatarByewindSrc20,
     24: AvatarByewindSrc24,
     28: AvatarByewindSrc28,
     32: AvatarByewindSrc,
+    36: AvatarByewindSrc36,
     40: AvatarByewindSrc40,
     48: AvatarByewindSrc48,
     56: AvatarByewindSrc56,
@@ -36702,11 +36765,13 @@ function AvatarByewind($$anchor, $$props) {
     1536: AvatarByewindSrc1536
   };
   const AvatarByewindAvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36773,10 +36838,12 @@ function AvatarByewind($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1343 from "svelte/internal/client";
 import AvatarDefaultSrc from "@snowui-design-system/resource-base/assets/avatars/avatar-default-32.jpg";
+import AvatarDefaultSrc12 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-12.jpg";
 import AvatarDefaultSrc16 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-16.jpg";
 import AvatarDefaultSrc20 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-20.jpg";
 import AvatarDefaultSrc24 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-24.jpg";
 import AvatarDefaultSrc28 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-28.jpg";
+import AvatarDefaultSrc36 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-36.jpg";
 import AvatarDefaultSrc40 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-40.jpg";
 import AvatarDefaultSrc48 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-48.jpg";
 import AvatarDefaultSrc56 from "@snowui-design-system/resource-base/assets/avatars/avatar-default-56.jpg";
@@ -36800,11 +36867,13 @@ import AvatarDefaultSrc1536 from "@snowui-design-system/resource-base/assets/ava
 var root10 = $1343.from_html(`<img/>`);
 function AvatarDefault($$anchor, $$props) {
   const AvatarDefaultSizeMap = {
+    12: AvatarDefaultSrc12,
     16: AvatarDefaultSrc16,
     20: AvatarDefaultSrc20,
     24: AvatarDefaultSrc24,
     28: AvatarDefaultSrc28,
     32: AvatarDefaultSrc,
+    36: AvatarDefaultSrc36,
     40: AvatarDefaultSrc40,
     48: AvatarDefaultSrc48,
     56: AvatarDefaultSrc56,
@@ -36827,11 +36896,13 @@ function AvatarDefault($$anchor, $$props) {
     1536: AvatarDefaultSrc1536
   };
   const AvatarDefaultAvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -36898,10 +36969,12 @@ function AvatarDefault($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1344 from "svelte/internal/client";
 import AvatarFemale01Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-32.jpg";
+import AvatarFemale01Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-12.jpg";
 import AvatarFemale01Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-16.jpg";
 import AvatarFemale01Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-20.jpg";
 import AvatarFemale01Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-24.jpg";
 import AvatarFemale01Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-28.jpg";
+import AvatarFemale01Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-36.jpg";
 import AvatarFemale01Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-40.jpg";
 import AvatarFemale01Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-48.jpg";
 import AvatarFemale01Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-01-56.jpg";
@@ -36925,11 +36998,13 @@ import AvatarFemale01Src1536 from "@snowui-design-system/resource-base/assets/av
 var root11 = $1344.from_html(`<img/>`);
 function AvatarFemale01($$anchor, $$props) {
   const AvatarFemale01SizeMap = {
+    12: AvatarFemale01Src12,
     16: AvatarFemale01Src16,
     20: AvatarFemale01Src20,
     24: AvatarFemale01Src24,
     28: AvatarFemale01Src28,
     32: AvatarFemale01Src,
+    36: AvatarFemale01Src36,
     40: AvatarFemale01Src40,
     48: AvatarFemale01Src48,
     56: AvatarFemale01Src56,
@@ -36952,11 +37027,13 @@ function AvatarFemale01($$anchor, $$props) {
     1536: AvatarFemale01Src1536
   };
   const AvatarFemale01AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37023,10 +37100,12 @@ function AvatarFemale01($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1345 from "svelte/internal/client";
 import AvatarFemale02Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-32.jpg";
+import AvatarFemale02Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-12.jpg";
 import AvatarFemale02Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-16.jpg";
 import AvatarFemale02Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-20.jpg";
 import AvatarFemale02Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-24.jpg";
 import AvatarFemale02Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-28.jpg";
+import AvatarFemale02Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-36.jpg";
 import AvatarFemale02Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-40.jpg";
 import AvatarFemale02Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-48.jpg";
 import AvatarFemale02Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-02-56.jpg";
@@ -37050,11 +37129,13 @@ import AvatarFemale02Src1536 from "@snowui-design-system/resource-base/assets/av
 var root12 = $1345.from_html(`<img/>`);
 function AvatarFemale02($$anchor, $$props) {
   const AvatarFemale02SizeMap = {
+    12: AvatarFemale02Src12,
     16: AvatarFemale02Src16,
     20: AvatarFemale02Src20,
     24: AvatarFemale02Src24,
     28: AvatarFemale02Src28,
     32: AvatarFemale02Src,
+    36: AvatarFemale02Src36,
     40: AvatarFemale02Src40,
     48: AvatarFemale02Src48,
     56: AvatarFemale02Src56,
@@ -37077,11 +37158,13 @@ function AvatarFemale02($$anchor, $$props) {
     1536: AvatarFemale02Src1536
   };
   const AvatarFemale02AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37148,10 +37231,12 @@ function AvatarFemale02($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1346 from "svelte/internal/client";
 import AvatarFemale03Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-32.jpg";
+import AvatarFemale03Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-12.jpg";
 import AvatarFemale03Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-16.jpg";
 import AvatarFemale03Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-20.jpg";
 import AvatarFemale03Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-24.jpg";
 import AvatarFemale03Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-28.jpg";
+import AvatarFemale03Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-36.jpg";
 import AvatarFemale03Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-40.jpg";
 import AvatarFemale03Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-48.jpg";
 import AvatarFemale03Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-03-56.jpg";
@@ -37175,11 +37260,13 @@ import AvatarFemale03Src1536 from "@snowui-design-system/resource-base/assets/av
 var root13 = $1346.from_html(`<img/>`);
 function AvatarFemale03($$anchor, $$props) {
   const AvatarFemale03SizeMap = {
+    12: AvatarFemale03Src12,
     16: AvatarFemale03Src16,
     20: AvatarFemale03Src20,
     24: AvatarFemale03Src24,
     28: AvatarFemale03Src28,
     32: AvatarFemale03Src,
+    36: AvatarFemale03Src36,
     40: AvatarFemale03Src40,
     48: AvatarFemale03Src48,
     56: AvatarFemale03Src56,
@@ -37202,11 +37289,13 @@ function AvatarFemale03($$anchor, $$props) {
     1536: AvatarFemale03Src1536
   };
   const AvatarFemale03AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37273,10 +37362,12 @@ function AvatarFemale03($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1347 from "svelte/internal/client";
 import AvatarFemale04Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-32.jpg";
+import AvatarFemale04Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-12.jpg";
 import AvatarFemale04Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-16.jpg";
 import AvatarFemale04Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-20.jpg";
 import AvatarFemale04Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-24.jpg";
 import AvatarFemale04Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-28.jpg";
+import AvatarFemale04Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-36.jpg";
 import AvatarFemale04Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-40.jpg";
 import AvatarFemale04Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-48.jpg";
 import AvatarFemale04Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-04-56.jpg";
@@ -37300,11 +37391,13 @@ import AvatarFemale04Src1536 from "@snowui-design-system/resource-base/assets/av
 var root14 = $1347.from_html(`<img/>`);
 function AvatarFemale04($$anchor, $$props) {
   const AvatarFemale04SizeMap = {
+    12: AvatarFemale04Src12,
     16: AvatarFemale04Src16,
     20: AvatarFemale04Src20,
     24: AvatarFemale04Src24,
     28: AvatarFemale04Src28,
     32: AvatarFemale04Src,
+    36: AvatarFemale04Src36,
     40: AvatarFemale04Src40,
     48: AvatarFemale04Src48,
     56: AvatarFemale04Src56,
@@ -37327,11 +37420,13 @@ function AvatarFemale04($$anchor, $$props) {
     1536: AvatarFemale04Src1536
   };
   const AvatarFemale04AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37398,10 +37493,12 @@ function AvatarFemale04($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1348 from "svelte/internal/client";
 import AvatarFemale05Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-32.jpg";
+import AvatarFemale05Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-12.jpg";
 import AvatarFemale05Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-16.jpg";
 import AvatarFemale05Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-20.jpg";
 import AvatarFemale05Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-24.jpg";
 import AvatarFemale05Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-28.jpg";
+import AvatarFemale05Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-36.jpg";
 import AvatarFemale05Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-40.jpg";
 import AvatarFemale05Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-48.jpg";
 import AvatarFemale05Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-05-56.jpg";
@@ -37425,11 +37522,13 @@ import AvatarFemale05Src1536 from "@snowui-design-system/resource-base/assets/av
 var root15 = $1348.from_html(`<img/>`);
 function AvatarFemale05($$anchor, $$props) {
   const AvatarFemale05SizeMap = {
+    12: AvatarFemale05Src12,
     16: AvatarFemale05Src16,
     20: AvatarFemale05Src20,
     24: AvatarFemale05Src24,
     28: AvatarFemale05Src28,
     32: AvatarFemale05Src,
+    36: AvatarFemale05Src36,
     40: AvatarFemale05Src40,
     48: AvatarFemale05Src48,
     56: AvatarFemale05Src56,
@@ -37452,11 +37551,13 @@ function AvatarFemale05($$anchor, $$props) {
     1536: AvatarFemale05Src1536
   };
   const AvatarFemale05AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37523,10 +37624,12 @@ function AvatarFemale05($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1349 from "svelte/internal/client";
 import AvatarFemale06Src from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-32.jpg";
+import AvatarFemale06Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-12.jpg";
 import AvatarFemale06Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-16.jpg";
 import AvatarFemale06Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-20.jpg";
 import AvatarFemale06Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-24.jpg";
 import AvatarFemale06Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-28.jpg";
+import AvatarFemale06Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-36.jpg";
 import AvatarFemale06Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-40.jpg";
 import AvatarFemale06Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-48.jpg";
 import AvatarFemale06Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-female-06-56.jpg";
@@ -37550,11 +37653,13 @@ import AvatarFemale06Src1536 from "@snowui-design-system/resource-base/assets/av
 var root16 = $1349.from_html(`<img/>`);
 function AvatarFemale06($$anchor, $$props) {
   const AvatarFemale06SizeMap = {
+    12: AvatarFemale06Src12,
     16: AvatarFemale06Src16,
     20: AvatarFemale06Src20,
     24: AvatarFemale06Src24,
     28: AvatarFemale06Src28,
     32: AvatarFemale06Src,
+    36: AvatarFemale06Src36,
     40: AvatarFemale06Src40,
     48: AvatarFemale06Src48,
     56: AvatarFemale06Src56,
@@ -37577,11 +37682,13 @@ function AvatarFemale06($$anchor, $$props) {
     1536: AvatarFemale06Src1536
   };
   const AvatarFemale06AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37648,10 +37755,12 @@ function AvatarFemale06($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1350 from "svelte/internal/client";
 import AvatarMale01Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-32.jpg";
+import AvatarMale01Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-12.jpg";
 import AvatarMale01Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-16.jpg";
 import AvatarMale01Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-20.jpg";
 import AvatarMale01Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-24.jpg";
 import AvatarMale01Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-28.jpg";
+import AvatarMale01Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-36.jpg";
 import AvatarMale01Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-40.jpg";
 import AvatarMale01Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-48.jpg";
 import AvatarMale01Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-01-56.jpg";
@@ -37675,11 +37784,13 @@ import AvatarMale01Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root17 = $1350.from_html(`<img/>`);
 function AvatarMale01($$anchor, $$props) {
   const AvatarMale01SizeMap = {
+    12: AvatarMale01Src12,
     16: AvatarMale01Src16,
     20: AvatarMale01Src20,
     24: AvatarMale01Src24,
     28: AvatarMale01Src28,
     32: AvatarMale01Src,
+    36: AvatarMale01Src36,
     40: AvatarMale01Src40,
     48: AvatarMale01Src48,
     56: AvatarMale01Src56,
@@ -37702,11 +37813,13 @@ function AvatarMale01($$anchor, $$props) {
     1536: AvatarMale01Src1536
   };
   const AvatarMale01AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37773,10 +37886,12 @@ function AvatarMale01($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1351 from "svelte/internal/client";
 import AvatarMale02Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-32.jpg";
+import AvatarMale02Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-12.jpg";
 import AvatarMale02Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-16.jpg";
 import AvatarMale02Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-20.jpg";
 import AvatarMale02Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-24.jpg";
 import AvatarMale02Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-28.jpg";
+import AvatarMale02Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-36.jpg";
 import AvatarMale02Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-40.jpg";
 import AvatarMale02Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-48.jpg";
 import AvatarMale02Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-02-56.jpg";
@@ -37800,11 +37915,13 @@ import AvatarMale02Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root18 = $1351.from_html(`<img/>`);
 function AvatarMale02($$anchor, $$props) {
   const AvatarMale02SizeMap = {
+    12: AvatarMale02Src12,
     16: AvatarMale02Src16,
     20: AvatarMale02Src20,
     24: AvatarMale02Src24,
     28: AvatarMale02Src28,
     32: AvatarMale02Src,
+    36: AvatarMale02Src36,
     40: AvatarMale02Src40,
     48: AvatarMale02Src48,
     56: AvatarMale02Src56,
@@ -37827,11 +37944,13 @@ function AvatarMale02($$anchor, $$props) {
     1536: AvatarMale02Src1536
   };
   const AvatarMale02AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -37898,10 +38017,12 @@ function AvatarMale02($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1352 from "svelte/internal/client";
 import AvatarMale03Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-32.jpg";
+import AvatarMale03Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-12.jpg";
 import AvatarMale03Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-16.jpg";
 import AvatarMale03Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-20.jpg";
 import AvatarMale03Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-24.jpg";
 import AvatarMale03Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-28.jpg";
+import AvatarMale03Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-36.jpg";
 import AvatarMale03Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-40.jpg";
 import AvatarMale03Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-48.jpg";
 import AvatarMale03Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-03-56.jpg";
@@ -37925,11 +38046,13 @@ import AvatarMale03Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root19 = $1352.from_html(`<img/>`);
 function AvatarMale03($$anchor, $$props) {
   const AvatarMale03SizeMap = {
+    12: AvatarMale03Src12,
     16: AvatarMale03Src16,
     20: AvatarMale03Src20,
     24: AvatarMale03Src24,
     28: AvatarMale03Src28,
     32: AvatarMale03Src,
+    36: AvatarMale03Src36,
     40: AvatarMale03Src40,
     48: AvatarMale03Src48,
     56: AvatarMale03Src56,
@@ -37952,11 +38075,13 @@ function AvatarMale03($$anchor, $$props) {
     1536: AvatarMale03Src1536
   };
   const AvatarMale03AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -38023,10 +38148,12 @@ function AvatarMale03($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1353 from "svelte/internal/client";
 import AvatarMale04Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-32.jpg";
+import AvatarMale04Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-12.jpg";
 import AvatarMale04Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-16.jpg";
 import AvatarMale04Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-20.jpg";
 import AvatarMale04Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-24.jpg";
 import AvatarMale04Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-28.jpg";
+import AvatarMale04Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-36.jpg";
 import AvatarMale04Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-40.jpg";
 import AvatarMale04Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-48.jpg";
 import AvatarMale04Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-04-56.jpg";
@@ -38050,11 +38177,13 @@ import AvatarMale04Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root20 = $1353.from_html(`<img/>`);
 function AvatarMale04($$anchor, $$props) {
   const AvatarMale04SizeMap = {
+    12: AvatarMale04Src12,
     16: AvatarMale04Src16,
     20: AvatarMale04Src20,
     24: AvatarMale04Src24,
     28: AvatarMale04Src28,
     32: AvatarMale04Src,
+    36: AvatarMale04Src36,
     40: AvatarMale04Src40,
     48: AvatarMale04Src48,
     56: AvatarMale04Src56,
@@ -38077,11 +38206,13 @@ function AvatarMale04($$anchor, $$props) {
     1536: AvatarMale04Src1536
   };
   const AvatarMale04AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -38148,10 +38279,12 @@ function AvatarMale04($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1354 from "svelte/internal/client";
 import AvatarMale05Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-32.jpg";
+import AvatarMale05Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-12.jpg";
 import AvatarMale05Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-16.jpg";
 import AvatarMale05Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-20.jpg";
 import AvatarMale05Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-24.jpg";
 import AvatarMale05Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-28.jpg";
+import AvatarMale05Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-36.jpg";
 import AvatarMale05Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-40.jpg";
 import AvatarMale05Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-48.jpg";
 import AvatarMale05Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-05-56.jpg";
@@ -38175,11 +38308,13 @@ import AvatarMale05Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root21 = $1354.from_html(`<img/>`);
 function AvatarMale05($$anchor, $$props) {
   const AvatarMale05SizeMap = {
+    12: AvatarMale05Src12,
     16: AvatarMale05Src16,
     20: AvatarMale05Src20,
     24: AvatarMale05Src24,
     28: AvatarMale05Src28,
     32: AvatarMale05Src,
+    36: AvatarMale05Src36,
     40: AvatarMale05Src40,
     48: AvatarMale05Src48,
     56: AvatarMale05Src56,
@@ -38202,11 +38337,13 @@ function AvatarMale05($$anchor, $$props) {
     1536: AvatarMale05Src1536
   };
   const AvatarMale05AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -38273,10 +38410,12 @@ function AvatarMale05($$anchor, $$props) {
 import "svelte/internal/disclose-version";
 import * as $1355 from "svelte/internal/client";
 import AvatarMale06Src from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-32.jpg";
+import AvatarMale06Src12 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-12.jpg";
 import AvatarMale06Src16 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-16.jpg";
 import AvatarMale06Src20 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-20.jpg";
 import AvatarMale06Src24 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-24.jpg";
 import AvatarMale06Src28 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-28.jpg";
+import AvatarMale06Src36 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-36.jpg";
 import AvatarMale06Src40 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-40.jpg";
 import AvatarMale06Src48 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-48.jpg";
 import AvatarMale06Src56 from "@snowui-design-system/resource-base/assets/avatars/avatar-male-06-56.jpg";
@@ -38300,11 +38439,13 @@ import AvatarMale06Src1536 from "@snowui-design-system/resource-base/assets/avat
 var root22 = $1355.from_html(`<img/>`);
 function AvatarMale06($$anchor, $$props) {
   const AvatarMale06SizeMap = {
+    12: AvatarMale06Src12,
     16: AvatarMale06Src16,
     20: AvatarMale06Src20,
     24: AvatarMale06Src24,
     28: AvatarMale06Src28,
     32: AvatarMale06Src,
+    36: AvatarMale06Src36,
     40: AvatarMale06Src40,
     48: AvatarMale06Src48,
     56: AvatarMale06Src56,
@@ -38327,11 +38468,13 @@ function AvatarMale06($$anchor, $$props) {
     1536: AvatarMale06Src1536
   };
   const AvatarMale06AvailableSizes = [
+    12,
     16,
     20,
     24,
     28,
     32,
+    36,
     40,
     48,
     56,
@@ -38424,7 +38567,7 @@ function Geometric01($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1356.prop($$props, "width", 3, 1024), alt = $1356.prop($$props, "alt", 3, "Geometric01"), className = $1356.prop($$props, "class", 3, ""), rest = $1356.rest_props($$props, [
+  let height = $1356.prop($$props, "height", 3, 128), alt = $1356.prop($$props, "alt", 3, "Geometric01"), className = $1356.prop($$props, "class", 3, ""), rest = $1356.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38433,15 +38576,17 @@ function Geometric01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1356.derived(() => width() ?? 1024);
-  let closestWidth = $1356.derived(() => findClosestWidth($1356.get(resolvedWidth), Geometric01AvailableWidths));
+  let resolvedWidth = $1356.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1356.derived(() => height() ?? 128);
+  let sourceWidth = $1356.derived(() => $1356.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1356.derived(() => findClosestWidth($1356.get(sourceWidth), Geometric01AvailableWidths));
   let imageSrc = $1356.derived(() => Geometric01WidthMap[$1356.get(closestWidth)] ?? Geometric01Src);
   var img = root23();
   $1356.attribute_effect(img, () => ({
     src: $1356.get(imageSrc),
     alt: alt(),
-    width: $1356.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1356.get(resolvedWidth) ?? void 0,
+    height: $1356.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38479,7 +38624,7 @@ function Geometric02($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1357.prop($$props, "width", 3, 1024), alt = $1357.prop($$props, "alt", 3, "Geometric02"), className = $1357.prop($$props, "class", 3, ""), rest = $1357.rest_props($$props, [
+  let height = $1357.prop($$props, "height", 3, 128), alt = $1357.prop($$props, "alt", 3, "Geometric02"), className = $1357.prop($$props, "class", 3, ""), rest = $1357.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38488,15 +38633,17 @@ function Geometric02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1357.derived(() => width() ?? 1024);
-  let closestWidth = $1357.derived(() => findClosestWidth($1357.get(resolvedWidth), Geometric02AvailableWidths));
+  let resolvedWidth = $1357.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1357.derived(() => height() ?? 128);
+  let sourceWidth = $1357.derived(() => $1357.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1357.derived(() => findClosestWidth($1357.get(sourceWidth), Geometric02AvailableWidths));
   let imageSrc = $1357.derived(() => Geometric02WidthMap[$1357.get(closestWidth)] ?? Geometric02Src);
   var img = root24();
   $1357.attribute_effect(img, () => ({
     src: $1357.get(imageSrc),
     alt: alt(),
-    width: $1357.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1357.get(resolvedWidth) ?? void 0,
+    height: $1357.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38534,7 +38681,7 @@ function Geometric03($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1358.prop($$props, "width", 3, 1024), alt = $1358.prop($$props, "alt", 3, "Geometric03"), className = $1358.prop($$props, "class", 3, ""), rest = $1358.rest_props($$props, [
+  let height = $1358.prop($$props, "height", 3, 128), alt = $1358.prop($$props, "alt", 3, "Geometric03"), className = $1358.prop($$props, "class", 3, ""), rest = $1358.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38543,15 +38690,17 @@ function Geometric03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1358.derived(() => width() ?? 1024);
-  let closestWidth = $1358.derived(() => findClosestWidth($1358.get(resolvedWidth), Geometric03AvailableWidths));
+  let resolvedWidth = $1358.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1358.derived(() => height() ?? 128);
+  let sourceWidth = $1358.derived(() => $1358.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1358.derived(() => findClosestWidth($1358.get(sourceWidth), Geometric03AvailableWidths));
   let imageSrc = $1358.derived(() => Geometric03WidthMap[$1358.get(closestWidth)] ?? Geometric03Src);
   var img = root25();
   $1358.attribute_effect(img, () => ({
     src: $1358.get(imageSrc),
     alt: alt(),
-    width: $1358.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1358.get(resolvedWidth) ?? void 0,
+    height: $1358.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38589,7 +38738,7 @@ function Geometric04($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1359.prop($$props, "width", 3, 1024), alt = $1359.prop($$props, "alt", 3, "Geometric04"), className = $1359.prop($$props, "class", 3, ""), rest = $1359.rest_props($$props, [
+  let height = $1359.prop($$props, "height", 3, 128), alt = $1359.prop($$props, "alt", 3, "Geometric04"), className = $1359.prop($$props, "class", 3, ""), rest = $1359.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38598,15 +38747,17 @@ function Geometric04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1359.derived(() => width() ?? 1024);
-  let closestWidth = $1359.derived(() => findClosestWidth($1359.get(resolvedWidth), Geometric04AvailableWidths));
+  let resolvedWidth = $1359.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1359.derived(() => height() ?? 128);
+  let sourceWidth = $1359.derived(() => $1359.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1359.derived(() => findClosestWidth($1359.get(sourceWidth), Geometric04AvailableWidths));
   let imageSrc = $1359.derived(() => Geometric04WidthMap[$1359.get(closestWidth)] ?? Geometric04Src);
   var img = root26();
   $1359.attribute_effect(img, () => ({
     src: $1359.get(imageSrc),
     alt: alt(),
-    width: $1359.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1359.get(resolvedWidth) ?? void 0,
+    height: $1359.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38644,7 +38795,7 @@ function Geometric05($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1360.prop($$props, "width", 3, 1024), alt = $1360.prop($$props, "alt", 3, "Geometric05"), className = $1360.prop($$props, "class", 3, ""), rest = $1360.rest_props($$props, [
+  let height = $1360.prop($$props, "height", 3, 128), alt = $1360.prop($$props, "alt", 3, "Geometric05"), className = $1360.prop($$props, "class", 3, ""), rest = $1360.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38653,15 +38804,17 @@ function Geometric05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1360.derived(() => width() ?? 1024);
-  let closestWidth = $1360.derived(() => findClosestWidth($1360.get(resolvedWidth), Geometric05AvailableWidths));
+  let resolvedWidth = $1360.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1360.derived(() => height() ?? 128);
+  let sourceWidth = $1360.derived(() => $1360.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1360.derived(() => findClosestWidth($1360.get(sourceWidth), Geometric05AvailableWidths));
   let imageSrc = $1360.derived(() => Geometric05WidthMap[$1360.get(closestWidth)] ?? Geometric05Src);
   var img = root27();
   $1360.attribute_effect(img, () => ({
     src: $1360.get(imageSrc),
     alt: alt(),
-    width: $1360.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1360.get(resolvedWidth) ?? void 0,
+    height: $1360.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38699,7 +38852,7 @@ function Geometric06($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1361.prop($$props, "width", 3, 1024), alt = $1361.prop($$props, "alt", 3, "Geometric06"), className = $1361.prop($$props, "class", 3, ""), rest = $1361.rest_props($$props, [
+  let height = $1361.prop($$props, "height", 3, 128), alt = $1361.prop($$props, "alt", 3, "Geometric06"), className = $1361.prop($$props, "class", 3, ""), rest = $1361.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38708,15 +38861,17 @@ function Geometric06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1361.derived(() => width() ?? 1024);
-  let closestWidth = $1361.derived(() => findClosestWidth($1361.get(resolvedWidth), Geometric06AvailableWidths));
+  let resolvedWidth = $1361.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1361.derived(() => height() ?? 128);
+  let sourceWidth = $1361.derived(() => $1361.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1361.derived(() => findClosestWidth($1361.get(sourceWidth), Geometric06AvailableWidths));
   let imageSrc = $1361.derived(() => Geometric06WidthMap[$1361.get(closestWidth)] ?? Geometric06Src);
   var img = root28();
   $1361.attribute_effect(img, () => ({
     src: $1361.get(imageSrc),
     alt: alt(),
-    width: $1361.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1361.get(resolvedWidth) ?? void 0,
+    height: $1361.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38754,7 +38909,7 @@ function Geometric07($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1362.prop($$props, "width", 3, 1024), alt = $1362.prop($$props, "alt", 3, "Geometric07"), className = $1362.prop($$props, "class", 3, ""), rest = $1362.rest_props($$props, [
+  let height = $1362.prop($$props, "height", 3, 128), alt = $1362.prop($$props, "alt", 3, "Geometric07"), className = $1362.prop($$props, "class", 3, ""), rest = $1362.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38763,15 +38918,17 @@ function Geometric07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1362.derived(() => width() ?? 1024);
-  let closestWidth = $1362.derived(() => findClosestWidth($1362.get(resolvedWidth), Geometric07AvailableWidths));
+  let resolvedWidth = $1362.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1362.derived(() => height() ?? 128);
+  let sourceWidth = $1362.derived(() => $1362.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1362.derived(() => findClosestWidth($1362.get(sourceWidth), Geometric07AvailableWidths));
   let imageSrc = $1362.derived(() => Geometric07WidthMap[$1362.get(closestWidth)] ?? Geometric07Src);
   var img = root29();
   $1362.attribute_effect(img, () => ({
     src: $1362.get(imageSrc),
     alt: alt(),
-    width: $1362.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1362.get(resolvedWidth) ?? void 0,
+    height: $1362.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38809,7 +38966,7 @@ function Gradient01($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1363.prop($$props, "width", 3, 1024), alt = $1363.prop($$props, "alt", 3, "Gradient01"), className = $1363.prop($$props, "class", 3, ""), rest = $1363.rest_props($$props, [
+  let height = $1363.prop($$props, "height", 3, 128), alt = $1363.prop($$props, "alt", 3, "Gradient01"), className = $1363.prop($$props, "class", 3, ""), rest = $1363.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38818,15 +38975,17 @@ function Gradient01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1363.derived(() => width() ?? 1024);
-  let closestWidth = $1363.derived(() => findClosestWidth($1363.get(resolvedWidth), Gradient01AvailableWidths));
+  let resolvedWidth = $1363.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1363.derived(() => height() ?? 128);
+  let sourceWidth = $1363.derived(() => $1363.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1363.derived(() => findClosestWidth($1363.get(sourceWidth), Gradient01AvailableWidths));
   let imageSrc = $1363.derived(() => Gradient01WidthMap[$1363.get(closestWidth)] ?? Gradient01Src);
   var img = root30();
   $1363.attribute_effect(img, () => ({
     src: $1363.get(imageSrc),
     alt: alt(),
-    width: $1363.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1363.get(resolvedWidth) ?? void 0,
+    height: $1363.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38864,7 +39023,7 @@ function Gradient02($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1364.prop($$props, "width", 3, 1024), alt = $1364.prop($$props, "alt", 3, "Gradient02"), className = $1364.prop($$props, "class", 3, ""), rest = $1364.rest_props($$props, [
+  let height = $1364.prop($$props, "height", 3, 128), alt = $1364.prop($$props, "alt", 3, "Gradient02"), className = $1364.prop($$props, "class", 3, ""), rest = $1364.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38873,15 +39032,17 @@ function Gradient02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1364.derived(() => width() ?? 1024);
-  let closestWidth = $1364.derived(() => findClosestWidth($1364.get(resolvedWidth), Gradient02AvailableWidths));
+  let resolvedWidth = $1364.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1364.derived(() => height() ?? 128);
+  let sourceWidth = $1364.derived(() => $1364.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1364.derived(() => findClosestWidth($1364.get(sourceWidth), Gradient02AvailableWidths));
   let imageSrc = $1364.derived(() => Gradient02WidthMap[$1364.get(closestWidth)] ?? Gradient02Src);
   var img = root31();
   $1364.attribute_effect(img, () => ({
     src: $1364.get(imageSrc),
     alt: alt(),
-    width: $1364.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1364.get(resolvedWidth) ?? void 0,
+    height: $1364.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38919,7 +39080,7 @@ function Gradient03($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1365.prop($$props, "width", 3, 1024), alt = $1365.prop($$props, "alt", 3, "Gradient03"), className = $1365.prop($$props, "class", 3, ""), rest = $1365.rest_props($$props, [
+  let height = $1365.prop($$props, "height", 3, 128), alt = $1365.prop($$props, "alt", 3, "Gradient03"), className = $1365.prop($$props, "class", 3, ""), rest = $1365.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38928,15 +39089,17 @@ function Gradient03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1365.derived(() => width() ?? 1024);
-  let closestWidth = $1365.derived(() => findClosestWidth($1365.get(resolvedWidth), Gradient03AvailableWidths));
+  let resolvedWidth = $1365.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1365.derived(() => height() ?? 128);
+  let sourceWidth = $1365.derived(() => $1365.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1365.derived(() => findClosestWidth($1365.get(sourceWidth), Gradient03AvailableWidths));
   let imageSrc = $1365.derived(() => Gradient03WidthMap[$1365.get(closestWidth)] ?? Gradient03Src);
   var img = root32();
   $1365.attribute_effect(img, () => ({
     src: $1365.get(imageSrc),
     alt: alt(),
-    width: $1365.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1365.get(resolvedWidth) ?? void 0,
+    height: $1365.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -38974,7 +39137,7 @@ function Gradient04($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1366.prop($$props, "width", 3, 1024), alt = $1366.prop($$props, "alt", 3, "Gradient04"), className = $1366.prop($$props, "class", 3, ""), rest = $1366.rest_props($$props, [
+  let height = $1366.prop($$props, "height", 3, 128), alt = $1366.prop($$props, "alt", 3, "Gradient04"), className = $1366.prop($$props, "class", 3, ""), rest = $1366.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -38983,15 +39146,17 @@ function Gradient04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1366.derived(() => width() ?? 1024);
-  let closestWidth = $1366.derived(() => findClosestWidth($1366.get(resolvedWidth), Gradient04AvailableWidths));
+  let resolvedWidth = $1366.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1366.derived(() => height() ?? 128);
+  let sourceWidth = $1366.derived(() => $1366.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1366.derived(() => findClosestWidth($1366.get(sourceWidth), Gradient04AvailableWidths));
   let imageSrc = $1366.derived(() => Gradient04WidthMap[$1366.get(closestWidth)] ?? Gradient04Src);
   var img = root33();
   $1366.attribute_effect(img, () => ({
     src: $1366.get(imageSrc),
     alt: alt(),
-    width: $1366.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1366.get(resolvedWidth) ?? void 0,
+    height: $1366.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39029,7 +39194,7 @@ function Gradient05($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1367.prop($$props, "width", 3, 1024), alt = $1367.prop($$props, "alt", 3, "Gradient05"), className = $1367.prop($$props, "class", 3, ""), rest = $1367.rest_props($$props, [
+  let height = $1367.prop($$props, "height", 3, 128), alt = $1367.prop($$props, "alt", 3, "Gradient05"), className = $1367.prop($$props, "class", 3, ""), rest = $1367.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39038,15 +39203,17 @@ function Gradient05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1367.derived(() => width() ?? 1024);
-  let closestWidth = $1367.derived(() => findClosestWidth($1367.get(resolvedWidth), Gradient05AvailableWidths));
+  let resolvedWidth = $1367.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1367.derived(() => height() ?? 128);
+  let sourceWidth = $1367.derived(() => $1367.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1367.derived(() => findClosestWidth($1367.get(sourceWidth), Gradient05AvailableWidths));
   let imageSrc = $1367.derived(() => Gradient05WidthMap[$1367.get(closestWidth)] ?? Gradient05Src);
   var img = root34();
   $1367.attribute_effect(img, () => ({
     src: $1367.get(imageSrc),
     alt: alt(),
-    width: $1367.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1367.get(resolvedWidth) ?? void 0,
+    height: $1367.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39084,7 +39251,7 @@ function Gradient06($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1368.prop($$props, "width", 3, 1024), alt = $1368.prop($$props, "alt", 3, "Gradient06"), className = $1368.prop($$props, "class", 3, ""), rest = $1368.rest_props($$props, [
+  let height = $1368.prop($$props, "height", 3, 128), alt = $1368.prop($$props, "alt", 3, "Gradient06"), className = $1368.prop($$props, "class", 3, ""), rest = $1368.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39093,15 +39260,17 @@ function Gradient06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1368.derived(() => width() ?? 1024);
-  let closestWidth = $1368.derived(() => findClosestWidth($1368.get(resolvedWidth), Gradient06AvailableWidths));
+  let resolvedWidth = $1368.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1368.derived(() => height() ?? 128);
+  let sourceWidth = $1368.derived(() => $1368.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1368.derived(() => findClosestWidth($1368.get(sourceWidth), Gradient06AvailableWidths));
   let imageSrc = $1368.derived(() => Gradient06WidthMap[$1368.get(closestWidth)] ?? Gradient06Src);
   var img = root35();
   $1368.attribute_effect(img, () => ({
     src: $1368.get(imageSrc),
     alt: alt(),
-    width: $1368.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1368.get(resolvedWidth) ?? void 0,
+    height: $1368.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39139,7 +39308,7 @@ function Gradient07($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1369.prop($$props, "width", 3, 1024), alt = $1369.prop($$props, "alt", 3, "Gradient07"), className = $1369.prop($$props, "class", 3, ""), rest = $1369.rest_props($$props, [
+  let height = $1369.prop($$props, "height", 3, 128), alt = $1369.prop($$props, "alt", 3, "Gradient07"), className = $1369.prop($$props, "class", 3, ""), rest = $1369.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39148,15 +39317,17 @@ function Gradient07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1369.derived(() => width() ?? 1024);
-  let closestWidth = $1369.derived(() => findClosestWidth($1369.get(resolvedWidth), Gradient07AvailableWidths));
+  let resolvedWidth = $1369.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1369.derived(() => height() ?? 128);
+  let sourceWidth = $1369.derived(() => $1369.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1369.derived(() => findClosestWidth($1369.get(sourceWidth), Gradient07AvailableWidths));
   let imageSrc = $1369.derived(() => Gradient07WidthMap[$1369.get(closestWidth)] ?? Gradient07Src);
   var img = root36();
   $1369.attribute_effect(img, () => ({
     src: $1369.get(imageSrc),
     alt: alt(),
-    width: $1369.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1369.get(resolvedWidth) ?? void 0,
+    height: $1369.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39194,7 +39365,7 @@ function Gradient08($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1370.prop($$props, "width", 3, 1024), alt = $1370.prop($$props, "alt", 3, "Gradient08"), className = $1370.prop($$props, "class", 3, ""), rest = $1370.rest_props($$props, [
+  let height = $1370.prop($$props, "height", 3, 128), alt = $1370.prop($$props, "alt", 3, "Gradient08"), className = $1370.prop($$props, "class", 3, ""), rest = $1370.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39203,15 +39374,17 @@ function Gradient08($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1370.derived(() => width() ?? 1024);
-  let closestWidth = $1370.derived(() => findClosestWidth($1370.get(resolvedWidth), Gradient08AvailableWidths));
+  let resolvedWidth = $1370.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1370.derived(() => height() ?? 128);
+  let sourceWidth = $1370.derived(() => $1370.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1370.derived(() => findClosestWidth($1370.get(sourceWidth), Gradient08AvailableWidths));
   let imageSrc = $1370.derived(() => Gradient08WidthMap[$1370.get(closestWidth)] ?? Gradient08Src);
   var img = root37();
   $1370.attribute_effect(img, () => ({
     src: $1370.get(imageSrc),
     alt: alt(),
-    width: $1370.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1370.get(resolvedWidth) ?? void 0,
+    height: $1370.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39249,7 +39422,7 @@ function Gradient09($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1371.prop($$props, "width", 3, 1024), alt = $1371.prop($$props, "alt", 3, "Gradient09"), className = $1371.prop($$props, "class", 3, ""), rest = $1371.rest_props($$props, [
+  let height = $1371.prop($$props, "height", 3, 128), alt = $1371.prop($$props, "alt", 3, "Gradient09"), className = $1371.prop($$props, "class", 3, ""), rest = $1371.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39258,15 +39431,17 @@ function Gradient09($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1371.derived(() => width() ?? 1024);
-  let closestWidth = $1371.derived(() => findClosestWidth($1371.get(resolvedWidth), Gradient09AvailableWidths));
+  let resolvedWidth = $1371.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1371.derived(() => height() ?? 128);
+  let sourceWidth = $1371.derived(() => $1371.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1371.derived(() => findClosestWidth($1371.get(sourceWidth), Gradient09AvailableWidths));
   let imageSrc = $1371.derived(() => Gradient09WidthMap[$1371.get(closestWidth)] ?? Gradient09Src);
   var img = root38();
   $1371.attribute_effect(img, () => ({
     src: $1371.get(imageSrc),
     alt: alt(),
-    width: $1371.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1371.get(resolvedWidth) ?? void 0,
+    height: $1371.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39304,7 +39479,7 @@ function Gradient10($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1372.prop($$props, "width", 3, 1024), alt = $1372.prop($$props, "alt", 3, "Gradient10"), className = $1372.prop($$props, "class", 3, ""), rest = $1372.rest_props($$props, [
+  let height = $1372.prop($$props, "height", 3, 128), alt = $1372.prop($$props, "alt", 3, "Gradient10"), className = $1372.prop($$props, "class", 3, ""), rest = $1372.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39313,15 +39488,17 @@ function Gradient10($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1372.derived(() => width() ?? 1024);
-  let closestWidth = $1372.derived(() => findClosestWidth($1372.get(resolvedWidth), Gradient10AvailableWidths));
+  let resolvedWidth = $1372.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1372.derived(() => height() ?? 128);
+  let sourceWidth = $1372.derived(() => $1372.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1372.derived(() => findClosestWidth($1372.get(sourceWidth), Gradient10AvailableWidths));
   let imageSrc = $1372.derived(() => Gradient10WidthMap[$1372.get(closestWidth)] ?? Gradient10Src);
   var img = root39();
   $1372.attribute_effect(img, () => ({
     src: $1372.get(imageSrc),
     alt: alt(),
-    width: $1372.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1372.get(resolvedWidth) ?? void 0,
+    height: $1372.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39359,7 +39536,7 @@ function Gradient11($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1373.prop($$props, "width", 3, 1024), alt = $1373.prop($$props, "alt", 3, "Gradient11"), className = $1373.prop($$props, "class", 3, ""), rest = $1373.rest_props($$props, [
+  let height = $1373.prop($$props, "height", 3, 128), alt = $1373.prop($$props, "alt", 3, "Gradient11"), className = $1373.prop($$props, "class", 3, ""), rest = $1373.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39368,15 +39545,17 @@ function Gradient11($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1373.derived(() => width() ?? 1024);
-  let closestWidth = $1373.derived(() => findClosestWidth($1373.get(resolvedWidth), Gradient11AvailableWidths));
+  let resolvedWidth = $1373.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1373.derived(() => height() ?? 128);
+  let sourceWidth = $1373.derived(() => $1373.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1373.derived(() => findClosestWidth($1373.get(sourceWidth), Gradient11AvailableWidths));
   let imageSrc = $1373.derived(() => Gradient11WidthMap[$1373.get(closestWidth)] ?? Gradient11Src);
   var img = root40();
   $1373.attribute_effect(img, () => ({
     src: $1373.get(imageSrc),
     alt: alt(),
-    width: $1373.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1373.get(resolvedWidth) ?? void 0,
+    height: $1373.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39414,7 +39593,7 @@ function Gradient12($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1374.prop($$props, "width", 3, 1024), alt = $1374.prop($$props, "alt", 3, "Gradient12"), className = $1374.prop($$props, "class", 3, ""), rest = $1374.rest_props($$props, [
+  let height = $1374.prop($$props, "height", 3, 128), alt = $1374.prop($$props, "alt", 3, "Gradient12"), className = $1374.prop($$props, "class", 3, ""), rest = $1374.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39423,15 +39602,17 @@ function Gradient12($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1374.derived(() => width() ?? 1024);
-  let closestWidth = $1374.derived(() => findClosestWidth($1374.get(resolvedWidth), Gradient12AvailableWidths));
+  let resolvedWidth = $1374.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1374.derived(() => height() ?? 128);
+  let sourceWidth = $1374.derived(() => $1374.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1374.derived(() => findClosestWidth($1374.get(sourceWidth), Gradient12AvailableWidths));
   let imageSrc = $1374.derived(() => Gradient12WidthMap[$1374.get(closestWidth)] ?? Gradient12Src);
   var img = root41();
   $1374.attribute_effect(img, () => ({
     src: $1374.get(imageSrc),
     alt: alt(),
-    width: $1374.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1374.get(resolvedWidth) ?? void 0,
+    height: $1374.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39469,7 +39650,7 @@ function Gradient13($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1375.prop($$props, "width", 3, 1024), alt = $1375.prop($$props, "alt", 3, "Gradient13"), className = $1375.prop($$props, "class", 3, ""), rest = $1375.rest_props($$props, [
+  let height = $1375.prop($$props, "height", 3, 128), alt = $1375.prop($$props, "alt", 3, "Gradient13"), className = $1375.prop($$props, "class", 3, ""), rest = $1375.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39478,15 +39659,17 @@ function Gradient13($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1375.derived(() => width() ?? 1024);
-  let closestWidth = $1375.derived(() => findClosestWidth($1375.get(resolvedWidth), Gradient13AvailableWidths));
+  let resolvedWidth = $1375.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1375.derived(() => height() ?? 128);
+  let sourceWidth = $1375.derived(() => $1375.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1375.derived(() => findClosestWidth($1375.get(sourceWidth), Gradient13AvailableWidths));
   let imageSrc = $1375.derived(() => Gradient13WidthMap[$1375.get(closestWidth)] ?? Gradient13Src);
   var img = root42();
   $1375.attribute_effect(img, () => ({
     src: $1375.get(imageSrc),
     alt: alt(),
-    width: $1375.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1375.get(resolvedWidth) ?? void 0,
+    height: $1375.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39524,7 +39707,7 @@ function Gradient14($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1376.prop($$props, "width", 3, 1024), alt = $1376.prop($$props, "alt", 3, "Gradient14"), className = $1376.prop($$props, "class", 3, ""), rest = $1376.rest_props($$props, [
+  let height = $1376.prop($$props, "height", 3, 128), alt = $1376.prop($$props, "alt", 3, "Gradient14"), className = $1376.prop($$props, "class", 3, ""), rest = $1376.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39533,15 +39716,17 @@ function Gradient14($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1376.derived(() => width() ?? 1024);
-  let closestWidth = $1376.derived(() => findClosestWidth($1376.get(resolvedWidth), Gradient14AvailableWidths));
+  let resolvedWidth = $1376.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1376.derived(() => height() ?? 128);
+  let sourceWidth = $1376.derived(() => $1376.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1376.derived(() => findClosestWidth($1376.get(sourceWidth), Gradient14AvailableWidths));
   let imageSrc = $1376.derived(() => Gradient14WidthMap[$1376.get(closestWidth)] ?? Gradient14Src);
   var img = root43();
   $1376.attribute_effect(img, () => ({
     src: $1376.get(imageSrc),
     alt: alt(),
-    width: $1376.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1376.get(resolvedWidth) ?? void 0,
+    height: $1376.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39579,7 +39764,7 @@ function Minimal01($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1377.prop($$props, "width", 3, 1024), alt = $1377.prop($$props, "alt", 3, "Minimal01"), className = $1377.prop($$props, "class", 3, ""), rest = $1377.rest_props($$props, [
+  let height = $1377.prop($$props, "height", 3, 128), alt = $1377.prop($$props, "alt", 3, "Minimal01"), className = $1377.prop($$props, "class", 3, ""), rest = $1377.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39588,15 +39773,17 @@ function Minimal01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1377.derived(() => width() ?? 1024);
-  let closestWidth = $1377.derived(() => findClosestWidth($1377.get(resolvedWidth), Minimal01AvailableWidths));
+  let resolvedWidth = $1377.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1377.derived(() => height() ?? 128);
+  let sourceWidth = $1377.derived(() => $1377.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1377.derived(() => findClosestWidth($1377.get(sourceWidth), Minimal01AvailableWidths));
   let imageSrc = $1377.derived(() => Minimal01WidthMap[$1377.get(closestWidth)] ?? Minimal01Src);
   var img = root44();
   $1377.attribute_effect(img, () => ({
     src: $1377.get(imageSrc),
     alt: alt(),
-    width: $1377.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1377.get(resolvedWidth) ?? void 0,
+    height: $1377.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39634,7 +39821,7 @@ function Minimal02($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1378.prop($$props, "width", 3, 1024), alt = $1378.prop($$props, "alt", 3, "Minimal02"), className = $1378.prop($$props, "class", 3, ""), rest = $1378.rest_props($$props, [
+  let height = $1378.prop($$props, "height", 3, 128), alt = $1378.prop($$props, "alt", 3, "Minimal02"), className = $1378.prop($$props, "class", 3, ""), rest = $1378.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39643,15 +39830,17 @@ function Minimal02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1378.derived(() => width() ?? 1024);
-  let closestWidth = $1378.derived(() => findClosestWidth($1378.get(resolvedWidth), Minimal02AvailableWidths));
+  let resolvedWidth = $1378.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1378.derived(() => height() ?? 128);
+  let sourceWidth = $1378.derived(() => $1378.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1378.derived(() => findClosestWidth($1378.get(sourceWidth), Minimal02AvailableWidths));
   let imageSrc = $1378.derived(() => Minimal02WidthMap[$1378.get(closestWidth)] ?? Minimal02Src);
   var img = root45();
   $1378.attribute_effect(img, () => ({
     src: $1378.get(imageSrc),
     alt: alt(),
-    width: $1378.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1378.get(resolvedWidth) ?? void 0,
+    height: $1378.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -39689,7 +39878,7 @@ function Minimal03($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1379.prop($$props, "width", 3, 1024), alt = $1379.prop($$props, "alt", 3, "Minimal03"), className = $1379.prop($$props, "class", 3, ""), rest = $1379.rest_props($$props, [
+  let height = $1379.prop($$props, "height", 3, 128), alt = $1379.prop($$props, "alt", 3, "Minimal03"), className = $1379.prop($$props, "class", 3, ""), rest = $1379.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -39698,15 +39887,17 @@ function Minimal03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1379.derived(() => width() ?? 1024);
-  let closestWidth = $1379.derived(() => findClosestWidth($1379.get(resolvedWidth), Minimal03AvailableWidths));
+  let resolvedWidth = $1379.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1379.derived(() => height() ?? 128);
+  let sourceWidth = $1379.derived(() => $1379.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1379.derived(() => findClosestWidth($1379.get(sourceWidth), Minimal03AvailableWidths));
   let imageSrc = $1379.derived(() => Minimal03WidthMap[$1379.get(closestWidth)] ?? Minimal03Src);
   var img = root46();
   $1379.attribute_effect(img, () => ({
     src: $1379.get(imageSrc),
     alt: alt(),
-    width: $1379.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1379.get(resolvedWidth) ?? void 0,
+    height: $1379.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41064,7 +41255,7 @@ import * as $1422 from "svelte/internal/client";
 import HumanoidSrc from "@snowui-design-system/resource-base/assets/illustrations/humanoid.svg";
 var root89 = $1422.from_html(`<img/>`);
 function Humanoid($$anchor, $$props) {
-  let width = $1422.prop($$props, "width", 3, 320), alt = $1422.prop($$props, "alt", 3, "Humanoid"), className = $1422.prop($$props, "class", 3, ""), rest = $1422.rest_props($$props, [
+  let height = $1422.prop($$props, "height", 3, 128), alt = $1422.prop($$props, "alt", 3, "Humanoid"), className = $1422.prop($$props, "class", 3, ""), rest = $1422.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41073,14 +41264,15 @@ function Humanoid($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1422.derived(() => width() ?? 320);
+  let resolvedWidth = $1422.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1422.derived(() => height() ?? 128);
   let imageSrc = $1422.derived(() => HumanoidSrc);
   var img = root89();
   $1422.attribute_effect(img, () => ({
     src: $1422.get(imageSrc),
     alt: alt(),
-    width: $1422.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1422.get(resolvedWidth) ?? void 0,
+    height: $1422.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41118,7 +41310,7 @@ function Illustration01($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1423.prop($$props, "width", 3, 320), alt = $1423.prop($$props, "alt", 3, "Illustration01"), className = $1423.prop($$props, "class", 3, ""), rest = $1423.rest_props($$props, [
+  let height = $1423.prop($$props, "height", 3, 128), alt = $1423.prop($$props, "alt", 3, "Illustration01"), className = $1423.prop($$props, "class", 3, ""), rest = $1423.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41127,15 +41319,17 @@ function Illustration01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1423.derived(() => width() ?? 320);
-  let closestWidth = $1423.derived(() => findClosestWidth($1423.get(resolvedWidth), Illustration01AvailableWidths));
+  let resolvedWidth = $1423.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1423.derived(() => height() ?? 128);
+  let sourceWidth = $1423.derived(() => $1423.get(resolvedWidth) ?? 320);
+  let closestWidth = $1423.derived(() => findClosestWidth($1423.get(sourceWidth), Illustration01AvailableWidths));
   let imageSrc = $1423.derived(() => Illustration01WidthMap[$1423.get(closestWidth)] ?? Illustration01Src);
   var img = root90();
   $1423.attribute_effect(img, () => ({
     src: $1423.get(imageSrc),
     alt: alt(),
-    width: $1423.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1423.get(resolvedWidth) ?? void 0,
+    height: $1423.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41173,7 +41367,7 @@ function Illustration02($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1424.prop($$props, "width", 3, 320), alt = $1424.prop($$props, "alt", 3, "Illustration02"), className = $1424.prop($$props, "class", 3, ""), rest = $1424.rest_props($$props, [
+  let height = $1424.prop($$props, "height", 3, 128), alt = $1424.prop($$props, "alt", 3, "Illustration02"), className = $1424.prop($$props, "class", 3, ""), rest = $1424.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41182,15 +41376,17 @@ function Illustration02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1424.derived(() => width() ?? 320);
-  let closestWidth = $1424.derived(() => findClosestWidth($1424.get(resolvedWidth), Illustration02AvailableWidths));
+  let resolvedWidth = $1424.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1424.derived(() => height() ?? 128);
+  let sourceWidth = $1424.derived(() => $1424.get(resolvedWidth) ?? 320);
+  let closestWidth = $1424.derived(() => findClosestWidth($1424.get(sourceWidth), Illustration02AvailableWidths));
   let imageSrc = $1424.derived(() => Illustration02WidthMap[$1424.get(closestWidth)] ?? Illustration02Src);
   var img = root91();
   $1424.attribute_effect(img, () => ({
     src: $1424.get(imageSrc),
     alt: alt(),
-    width: $1424.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1424.get(resolvedWidth) ?? void 0,
+    height: $1424.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41228,7 +41424,7 @@ function Illustration03($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1425.prop($$props, "width", 3, 320), alt = $1425.prop($$props, "alt", 3, "Illustration03"), className = $1425.prop($$props, "class", 3, ""), rest = $1425.rest_props($$props, [
+  let height = $1425.prop($$props, "height", 3, 128), alt = $1425.prop($$props, "alt", 3, "Illustration03"), className = $1425.prop($$props, "class", 3, ""), rest = $1425.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41237,15 +41433,17 @@ function Illustration03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1425.derived(() => width() ?? 320);
-  let closestWidth = $1425.derived(() => findClosestWidth($1425.get(resolvedWidth), Illustration03AvailableWidths));
+  let resolvedWidth = $1425.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1425.derived(() => height() ?? 128);
+  let sourceWidth = $1425.derived(() => $1425.get(resolvedWidth) ?? 320);
+  let closestWidth = $1425.derived(() => findClosestWidth($1425.get(sourceWidth), Illustration03AvailableWidths));
   let imageSrc = $1425.derived(() => Illustration03WidthMap[$1425.get(closestWidth)] ?? Illustration03Src);
   var img = root92();
   $1425.attribute_effect(img, () => ({
     src: $1425.get(imageSrc),
     alt: alt(),
-    width: $1425.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1425.get(resolvedWidth) ?? void 0,
+    height: $1425.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41283,7 +41481,7 @@ function Illustration04($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1426.prop($$props, "width", 3, 320), alt = $1426.prop($$props, "alt", 3, "Illustration04"), className = $1426.prop($$props, "class", 3, ""), rest = $1426.rest_props($$props, [
+  let height = $1426.prop($$props, "height", 3, 128), alt = $1426.prop($$props, "alt", 3, "Illustration04"), className = $1426.prop($$props, "class", 3, ""), rest = $1426.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41292,15 +41490,17 @@ function Illustration04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1426.derived(() => width() ?? 320);
-  let closestWidth = $1426.derived(() => findClosestWidth($1426.get(resolvedWidth), Illustration04AvailableWidths));
+  let resolvedWidth = $1426.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1426.derived(() => height() ?? 128);
+  let sourceWidth = $1426.derived(() => $1426.get(resolvedWidth) ?? 320);
+  let closestWidth = $1426.derived(() => findClosestWidth($1426.get(sourceWidth), Illustration04AvailableWidths));
   let imageSrc = $1426.derived(() => Illustration04WidthMap[$1426.get(closestWidth)] ?? Illustration04Src);
   var img = root93();
   $1426.attribute_effect(img, () => ({
     src: $1426.get(imageSrc),
     alt: alt(),
-    width: $1426.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1426.get(resolvedWidth) ?? void 0,
+    height: $1426.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41338,7 +41538,7 @@ function Illustration05($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1427.prop($$props, "width", 3, 320), alt = $1427.prop($$props, "alt", 3, "Illustration05"), className = $1427.prop($$props, "class", 3, ""), rest = $1427.rest_props($$props, [
+  let height = $1427.prop($$props, "height", 3, 128), alt = $1427.prop($$props, "alt", 3, "Illustration05"), className = $1427.prop($$props, "class", 3, ""), rest = $1427.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41347,15 +41547,17 @@ function Illustration05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1427.derived(() => width() ?? 320);
-  let closestWidth = $1427.derived(() => findClosestWidth($1427.get(resolvedWidth), Illustration05AvailableWidths));
+  let resolvedWidth = $1427.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1427.derived(() => height() ?? 128);
+  let sourceWidth = $1427.derived(() => $1427.get(resolvedWidth) ?? 320);
+  let closestWidth = $1427.derived(() => findClosestWidth($1427.get(sourceWidth), Illustration05AvailableWidths));
   let imageSrc = $1427.derived(() => Illustration05WidthMap[$1427.get(closestWidth)] ?? Illustration05Src);
   var img = root94();
   $1427.attribute_effect(img, () => ({
     src: $1427.get(imageSrc),
     alt: alt(),
-    width: $1427.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1427.get(resolvedWidth) ?? void 0,
+    height: $1427.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41393,7 +41595,7 @@ function Illustration06($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1428.prop($$props, "width", 3, 320), alt = $1428.prop($$props, "alt", 3, "Illustration06"), className = $1428.prop($$props, "class", 3, ""), rest = $1428.rest_props($$props, [
+  let height = $1428.prop($$props, "height", 3, 128), alt = $1428.prop($$props, "alt", 3, "Illustration06"), className = $1428.prop($$props, "class", 3, ""), rest = $1428.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41402,15 +41604,17 @@ function Illustration06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1428.derived(() => width() ?? 320);
-  let closestWidth = $1428.derived(() => findClosestWidth($1428.get(resolvedWidth), Illustration06AvailableWidths));
+  let resolvedWidth = $1428.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1428.derived(() => height() ?? 128);
+  let sourceWidth = $1428.derived(() => $1428.get(resolvedWidth) ?? 320);
+  let closestWidth = $1428.derived(() => findClosestWidth($1428.get(sourceWidth), Illustration06AvailableWidths));
   let imageSrc = $1428.derived(() => Illustration06WidthMap[$1428.get(closestWidth)] ?? Illustration06Src);
   var img = root95();
   $1428.attribute_effect(img, () => ({
     src: $1428.get(imageSrc),
     alt: alt(),
-    width: $1428.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1428.get(resolvedWidth) ?? void 0,
+    height: $1428.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41448,7 +41652,7 @@ function Illustration07($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1429.prop($$props, "width", 3, 320), alt = $1429.prop($$props, "alt", 3, "Illustration07"), className = $1429.prop($$props, "class", 3, ""), rest = $1429.rest_props($$props, [
+  let height = $1429.prop($$props, "height", 3, 128), alt = $1429.prop($$props, "alt", 3, "Illustration07"), className = $1429.prop($$props, "class", 3, ""), rest = $1429.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41457,15 +41661,17 @@ function Illustration07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1429.derived(() => width() ?? 320);
-  let closestWidth = $1429.derived(() => findClosestWidth($1429.get(resolvedWidth), Illustration07AvailableWidths));
+  let resolvedWidth = $1429.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1429.derived(() => height() ?? 128);
+  let sourceWidth = $1429.derived(() => $1429.get(resolvedWidth) ?? 320);
+  let closestWidth = $1429.derived(() => findClosestWidth($1429.get(sourceWidth), Illustration07AvailableWidths));
   let imageSrc = $1429.derived(() => Illustration07WidthMap[$1429.get(closestWidth)] ?? Illustration07Src);
   var img = root96();
   $1429.attribute_effect(img, () => ({
     src: $1429.get(imageSrc),
     alt: alt(),
-    width: $1429.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1429.get(resolvedWidth) ?? void 0,
+    height: $1429.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41503,7 +41709,7 @@ function Illustration08($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1430.prop($$props, "width", 3, 320), alt = $1430.prop($$props, "alt", 3, "Illustration08"), className = $1430.prop($$props, "class", 3, ""), rest = $1430.rest_props($$props, [
+  let height = $1430.prop($$props, "height", 3, 128), alt = $1430.prop($$props, "alt", 3, "Illustration08"), className = $1430.prop($$props, "class", 3, ""), rest = $1430.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41512,15 +41718,17 @@ function Illustration08($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1430.derived(() => width() ?? 320);
-  let closestWidth = $1430.derived(() => findClosestWidth($1430.get(resolvedWidth), Illustration08AvailableWidths));
+  let resolvedWidth = $1430.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1430.derived(() => height() ?? 128);
+  let sourceWidth = $1430.derived(() => $1430.get(resolvedWidth) ?? 320);
+  let closestWidth = $1430.derived(() => findClosestWidth($1430.get(sourceWidth), Illustration08AvailableWidths));
   let imageSrc = $1430.derived(() => Illustration08WidthMap[$1430.get(closestWidth)] ?? Illustration08Src);
   var img = root97();
   $1430.attribute_effect(img, () => ({
     src: $1430.get(imageSrc),
     alt: alt(),
-    width: $1430.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1430.get(resolvedWidth) ?? void 0,
+    height: $1430.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41558,7 +41766,7 @@ function Illustration09($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1431.prop($$props, "width", 3, 320), alt = $1431.prop($$props, "alt", 3, "Illustration09"), className = $1431.prop($$props, "class", 3, ""), rest = $1431.rest_props($$props, [
+  let height = $1431.prop($$props, "height", 3, 128), alt = $1431.prop($$props, "alt", 3, "Illustration09"), className = $1431.prop($$props, "class", 3, ""), rest = $1431.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41567,15 +41775,17 @@ function Illustration09($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1431.derived(() => width() ?? 320);
-  let closestWidth = $1431.derived(() => findClosestWidth($1431.get(resolvedWidth), Illustration09AvailableWidths));
+  let resolvedWidth = $1431.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1431.derived(() => height() ?? 128);
+  let sourceWidth = $1431.derived(() => $1431.get(resolvedWidth) ?? 320);
+  let closestWidth = $1431.derived(() => findClosestWidth($1431.get(sourceWidth), Illustration09AvailableWidths));
   let imageSrc = $1431.derived(() => Illustration09WidthMap[$1431.get(closestWidth)] ?? Illustration09Src);
   var img = root98();
   $1431.attribute_effect(img, () => ({
     src: $1431.get(imageSrc),
     alt: alt(),
-    width: $1431.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1431.get(resolvedWidth) ?? void 0,
+    height: $1431.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41613,7 +41823,7 @@ function Illustration10($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1432.prop($$props, "width", 3, 320), alt = $1432.prop($$props, "alt", 3, "Illustration10"), className = $1432.prop($$props, "class", 3, ""), rest = $1432.rest_props($$props, [
+  let height = $1432.prop($$props, "height", 3, 128), alt = $1432.prop($$props, "alt", 3, "Illustration10"), className = $1432.prop($$props, "class", 3, ""), rest = $1432.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41622,15 +41832,17 @@ function Illustration10($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1432.derived(() => width() ?? 320);
-  let closestWidth = $1432.derived(() => findClosestWidth($1432.get(resolvedWidth), Illustration10AvailableWidths));
+  let resolvedWidth = $1432.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1432.derived(() => height() ?? 128);
+  let sourceWidth = $1432.derived(() => $1432.get(resolvedWidth) ?? 320);
+  let closestWidth = $1432.derived(() => findClosestWidth($1432.get(sourceWidth), Illustration10AvailableWidths));
   let imageSrc = $1432.derived(() => Illustration10WidthMap[$1432.get(closestWidth)] ?? Illustration10Src);
   var img = root99();
   $1432.attribute_effect(img, () => ({
     src: $1432.get(imageSrc),
     alt: alt(),
-    width: $1432.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1432.get(resolvedWidth) ?? void 0,
+    height: $1432.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41668,7 +41880,7 @@ function Illustration11($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1433.prop($$props, "width", 3, 320), alt = $1433.prop($$props, "alt", 3, "Illustration11"), className = $1433.prop($$props, "class", 3, ""), rest = $1433.rest_props($$props, [
+  let height = $1433.prop($$props, "height", 3, 128), alt = $1433.prop($$props, "alt", 3, "Illustration11"), className = $1433.prop($$props, "class", 3, ""), rest = $1433.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41677,15 +41889,17 @@ function Illustration11($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1433.derived(() => width() ?? 320);
-  let closestWidth = $1433.derived(() => findClosestWidth($1433.get(resolvedWidth), Illustration11AvailableWidths));
+  let resolvedWidth = $1433.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1433.derived(() => height() ?? 128);
+  let sourceWidth = $1433.derived(() => $1433.get(resolvedWidth) ?? 320);
+  let closestWidth = $1433.derived(() => findClosestWidth($1433.get(sourceWidth), Illustration11AvailableWidths));
   let imageSrc = $1433.derived(() => Illustration11WidthMap[$1433.get(closestWidth)] ?? Illustration11Src);
   var img = root100();
   $1433.attribute_effect(img, () => ({
     src: $1433.get(imageSrc),
     alt: alt(),
-    width: $1433.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1433.get(resolvedWidth) ?? void 0,
+    height: $1433.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41723,7 +41937,7 @@ function Illustration12($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1434.prop($$props, "width", 3, 320), alt = $1434.prop($$props, "alt", 3, "Illustration12"), className = $1434.prop($$props, "class", 3, ""), rest = $1434.rest_props($$props, [
+  let height = $1434.prop($$props, "height", 3, 128), alt = $1434.prop($$props, "alt", 3, "Illustration12"), className = $1434.prop($$props, "class", 3, ""), rest = $1434.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41732,15 +41946,17 @@ function Illustration12($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1434.derived(() => width() ?? 320);
-  let closestWidth = $1434.derived(() => findClosestWidth($1434.get(resolvedWidth), Illustration12AvailableWidths));
+  let resolvedWidth = $1434.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1434.derived(() => height() ?? 128);
+  let sourceWidth = $1434.derived(() => $1434.get(resolvedWidth) ?? 320);
+  let closestWidth = $1434.derived(() => findClosestWidth($1434.get(sourceWidth), Illustration12AvailableWidths));
   let imageSrc = $1434.derived(() => Illustration12WidthMap[$1434.get(closestWidth)] ?? Illustration12Src);
   var img = root101();
   $1434.attribute_effect(img, () => ({
     src: $1434.get(imageSrc),
     alt: alt(),
-    width: $1434.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1434.get(resolvedWidth) ?? void 0,
+    height: $1434.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -41748,14 +41964,74 @@ function Illustration12($$anchor, $$props) {
   $1434.append($$anchor, img);
 }
 
-// src/illustrations/Illustration13.svelte
+// src/illustrations/Illustration.svelte
 import "svelte/internal/disclose-version";
 import * as $1435 from "svelte/internal/client";
+import IllustrationSrc from "@snowui-design-system/resource-base/assets/illustrations/illustration-12.png";
+import IllustrationSrc12 from "@snowui-design-system/resource-base/assets/illustrations/illustration-12.png";
+import IllustrationSrc16 from "@snowui-design-system/resource-base/assets/illustrations/illustration-16.png";
+import IllustrationSrc20 from "@snowui-design-system/resource-base/assets/illustrations/illustration-20.png";
+import IllustrationSrc24 from "@snowui-design-system/resource-base/assets/illustrations/illustration-24.png";
+import IllustrationSrc28 from "@snowui-design-system/resource-base/assets/illustrations/illustration-28.png";
+var root102 = $1435.from_html(`<img/>`);
+function Illustration($$anchor, $$props) {
+  const IllustrationWidthMap = {
+    12: IllustrationSrc12,
+    16: IllustrationSrc16,
+    20: IllustrationSrc20,
+    24: IllustrationSrc24,
+    28: IllustrationSrc28
+  };
+  const IllustrationAvailableWidths = [12, 16, 20, 24, 28];
+  const findClosestWidth = (target, available) => {
+    if (available.length === 0) return target;
+    const preferred = target * 3;
+    let closest = available[0];
+    let minDiff = Math.abs(preferred - closest);
+    for (const width2 of available) {
+      const diff = Math.abs(preferred - width2);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = width2;
+      }
+    }
+    return closest;
+  };
+  let height = $1435.prop($$props, "height", 3, 128), alt = $1435.prop($$props, "alt", 3, "Illustration"), className = $1435.prop($$props, "class", 3, ""), rest = $1435.rest_props($$props, [
+    "$$slots",
+    "$$events",
+    "$$legacy",
+    "width",
+    "height",
+    "alt",
+    "class"
+  ]);
+  let resolvedWidth = $1435.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1435.derived(() => height() ?? 128);
+  let sourceWidth = $1435.derived(() => $1435.get(resolvedWidth) ?? 320);
+  let closestWidth = $1435.derived(() => findClosestWidth($1435.get(sourceWidth), IllustrationAvailableWidths));
+  let imageSrc = $1435.derived(() => IllustrationWidthMap[$1435.get(closestWidth)] ?? IllustrationSrc);
+  var img = root102();
+  $1435.attribute_effect(img, () => ({
+    src: $1435.get(imageSrc),
+    alt: alt(),
+    width: $1435.get(resolvedWidth) ?? void 0,
+    height: $1435.get(resolvedHeight),
+    class: className(),
+    ...rest
+  }));
+  $1435.replay_events(img);
+  $1435.append($$anchor, img);
+}
+
+// src/illustrations/Illustration13.svelte
+import "svelte/internal/disclose-version";
+import * as $1436 from "svelte/internal/client";
 import Illustration13Src from "@snowui-design-system/resource-base/assets/illustrations/illustration-13-320.png";
 import Illustration13Src160 from "@snowui-design-system/resource-base/assets/illustrations/illustration-13-160.png";
 import Illustration13Src640 from "@snowui-design-system/resource-base/assets/illustrations/illustration-13-640.png";
 import Illustration13Src1024 from "@snowui-design-system/resource-base/assets/illustrations/illustration-13-1024.png";
-var root102 = $1435.from_html(`<img/>`);
+var root103 = $1436.from_html(`<img/>`);
 function Illustration13($$anchor, $$props) {
   const Illustration13WidthMap = {
     160: Illustration13Src160,
@@ -41778,7 +42054,7 @@ function Illustration13($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1435.prop($$props, "width", 3, 320), alt = $1435.prop($$props, "alt", 3, "Illustration13"), className = $1435.prop($$props, "class", 3, ""), rest = $1435.rest_props($$props, [
+  let height = $1436.prop($$props, "height", 3, 128), alt = $1436.prop($$props, "alt", 3, "Illustration13"), className = $1436.prop($$props, "class", 3, ""), rest = $1436.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41787,30 +42063,32 @@ function Illustration13($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1435.derived(() => width() ?? 320);
-  let closestWidth = $1435.derived(() => findClosestWidth($1435.get(resolvedWidth), Illustration13AvailableWidths));
-  let imageSrc = $1435.derived(() => Illustration13WidthMap[$1435.get(closestWidth)] ?? Illustration13Src);
-  var img = root102();
-  $1435.attribute_effect(img, () => ({
-    src: $1435.get(imageSrc),
+  let resolvedWidth = $1436.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1436.derived(() => height() ?? 128);
+  let sourceWidth = $1436.derived(() => $1436.get(resolvedWidth) ?? 320);
+  let closestWidth = $1436.derived(() => findClosestWidth($1436.get(sourceWidth), Illustration13AvailableWidths));
+  let imageSrc = $1436.derived(() => Illustration13WidthMap[$1436.get(closestWidth)] ?? Illustration13Src);
+  var img = root103();
+  $1436.attribute_effect(img, () => ({
+    src: $1436.get(imageSrc),
     alt: alt(),
-    width: $1435.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1436.get(resolvedWidth) ?? void 0,
+    height: $1436.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1435.replay_events(img);
-  $1435.append($$anchor, img);
+  $1436.replay_events(img);
+  $1436.append($$anchor, img);
 }
 
 // src/illustrations/Illustration14.svelte
 import "svelte/internal/disclose-version";
-import * as $1436 from "svelte/internal/client";
+import * as $1437 from "svelte/internal/client";
 import Illustration14Src from "@snowui-design-system/resource-base/assets/illustrations/illustration-14-320.png";
 import Illustration14Src160 from "@snowui-design-system/resource-base/assets/illustrations/illustration-14-160.png";
 import Illustration14Src640 from "@snowui-design-system/resource-base/assets/illustrations/illustration-14-640.png";
 import Illustration14Src1024 from "@snowui-design-system/resource-base/assets/illustrations/illustration-14-1024.png";
-var root103 = $1436.from_html(`<img/>`);
+var root104 = $1437.from_html(`<img/>`);
 function Illustration14($$anchor, $$props) {
   const Illustration14WidthMap = {
     160: Illustration14Src160,
@@ -41833,7 +42111,7 @@ function Illustration14($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1436.prop($$props, "width", 3, 320), alt = $1436.prop($$props, "alt", 3, "Illustration14"), className = $1436.prop($$props, "class", 3, ""), rest = $1436.rest_props($$props, [
+  let height = $1437.prop($$props, "height", 3, 128), alt = $1437.prop($$props, "alt", 3, "Illustration14"), className = $1437.prop($$props, "class", 3, ""), rest = $1437.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41842,30 +42120,32 @@ function Illustration14($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1436.derived(() => width() ?? 320);
-  let closestWidth = $1436.derived(() => findClosestWidth($1436.get(resolvedWidth), Illustration14AvailableWidths));
-  let imageSrc = $1436.derived(() => Illustration14WidthMap[$1436.get(closestWidth)] ?? Illustration14Src);
-  var img = root103();
-  $1436.attribute_effect(img, () => ({
-    src: $1436.get(imageSrc),
+  let resolvedWidth = $1437.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1437.derived(() => height() ?? 128);
+  let sourceWidth = $1437.derived(() => $1437.get(resolvedWidth) ?? 320);
+  let closestWidth = $1437.derived(() => findClosestWidth($1437.get(sourceWidth), Illustration14AvailableWidths));
+  let imageSrc = $1437.derived(() => Illustration14WidthMap[$1437.get(closestWidth)] ?? Illustration14Src);
+  var img = root104();
+  $1437.attribute_effect(img, () => ({
+    src: $1437.get(imageSrc),
     alt: alt(),
-    width: $1436.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1437.get(resolvedWidth) ?? void 0,
+    height: $1437.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1436.replay_events(img);
-  $1436.append($$anchor, img);
+  $1437.replay_events(img);
+  $1437.append($$anchor, img);
 }
 
 // src/illustrations/Illustration15.svelte
 import "svelte/internal/disclose-version";
-import * as $1437 from "svelte/internal/client";
+import * as $1438 from "svelte/internal/client";
 import Illustration15Src from "@snowui-design-system/resource-base/assets/illustrations/illustration-15-320.png";
 import Illustration15Src160 from "@snowui-design-system/resource-base/assets/illustrations/illustration-15-160.png";
 import Illustration15Src640 from "@snowui-design-system/resource-base/assets/illustrations/illustration-15-640.png";
 import Illustration15Src1024 from "@snowui-design-system/resource-base/assets/illustrations/illustration-15-1024.png";
-var root104 = $1437.from_html(`<img/>`);
+var root105 = $1438.from_html(`<img/>`);
 function Illustration15($$anchor, $$props) {
   const Illustration15WidthMap = {
     160: Illustration15Src160,
@@ -41888,7 +42168,7 @@ function Illustration15($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1437.prop($$props, "width", 3, 320), alt = $1437.prop($$props, "alt", 3, "Illustration15"), className = $1437.prop($$props, "class", 3, ""), rest = $1437.rest_props($$props, [
+  let height = $1438.prop($$props, "height", 3, 128), alt = $1438.prop($$props, "alt", 3, "Illustration15"), className = $1438.prop($$props, "class", 3, ""), rest = $1438.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41897,30 +42177,32 @@ function Illustration15($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1437.derived(() => width() ?? 320);
-  let closestWidth = $1437.derived(() => findClosestWidth($1437.get(resolvedWidth), Illustration15AvailableWidths));
-  let imageSrc = $1437.derived(() => Illustration15WidthMap[$1437.get(closestWidth)] ?? Illustration15Src);
-  var img = root104();
-  $1437.attribute_effect(img, () => ({
-    src: $1437.get(imageSrc),
+  let resolvedWidth = $1438.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1438.derived(() => height() ?? 128);
+  let sourceWidth = $1438.derived(() => $1438.get(resolvedWidth) ?? 320);
+  let closestWidth = $1438.derived(() => findClosestWidth($1438.get(sourceWidth), Illustration15AvailableWidths));
+  let imageSrc = $1438.derived(() => Illustration15WidthMap[$1438.get(closestWidth)] ?? Illustration15Src);
+  var img = root105();
+  $1438.attribute_effect(img, () => ({
+    src: $1438.get(imageSrc),
     alt: alt(),
-    width: $1437.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1438.get(resolvedWidth) ?? void 0,
+    height: $1438.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1437.replay_events(img);
-  $1437.append($$anchor, img);
+  $1438.replay_events(img);
+  $1438.append($$anchor, img);
 }
 
 // src/illustrations/Illustration16.svelte
 import "svelte/internal/disclose-version";
-import * as $1438 from "svelte/internal/client";
+import * as $1439 from "svelte/internal/client";
 import Illustration16Src from "@snowui-design-system/resource-base/assets/illustrations/illustration-16-320.png";
 import Illustration16Src160 from "@snowui-design-system/resource-base/assets/illustrations/illustration-16-160.png";
 import Illustration16Src640 from "@snowui-design-system/resource-base/assets/illustrations/illustration-16-640.png";
 import Illustration16Src1024 from "@snowui-design-system/resource-base/assets/illustrations/illustration-16-1024.png";
-var root105 = $1438.from_html(`<img/>`);
+var root106 = $1439.from_html(`<img/>`);
 function Illustration16($$anchor, $$props) {
   const Illustration16WidthMap = {
     160: Illustration16Src160,
@@ -41943,7 +42225,7 @@ function Illustration16($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1438.prop($$props, "width", 3, 320), alt = $1438.prop($$props, "alt", 3, "Illustration16"), className = $1438.prop($$props, "class", 3, ""), rest = $1438.rest_props($$props, [
+  let height = $1439.prop($$props, "height", 3, 128), alt = $1439.prop($$props, "alt", 3, "Illustration16"), className = $1439.prop($$props, "class", 3, ""), rest = $1439.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -41952,71 +42234,17 @@ function Illustration16($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1438.derived(() => width() ?? 320);
-  let closestWidth = $1438.derived(() => findClosestWidth($1438.get(resolvedWidth), Illustration16AvailableWidths));
-  let imageSrc = $1438.derived(() => Illustration16WidthMap[$1438.get(closestWidth)] ?? Illustration16Src);
-  var img = root105();
-  $1438.attribute_effect(img, () => ({
-    src: $1438.get(imageSrc),
-    alt: alt(),
-    width: $1438.get(resolvedWidth),
-    height: $$props.height ?? void 0,
-    class: className(),
-    ...rest
-  }));
-  $1438.replay_events(img);
-  $1438.append($$anchor, img);
-}
-
-// src/illustrations/Illustration.svelte
-import "svelte/internal/disclose-version";
-import * as $1439 from "svelte/internal/client";
-import IllustrationSrc from "@snowui-design-system/resource-base/assets/illustrations/illustration-16.png";
-import IllustrationSrc16 from "@snowui-design-system/resource-base/assets/illustrations/illustration-16.png";
-import IllustrationSrc20 from "@snowui-design-system/resource-base/assets/illustrations/illustration-20.png";
-import IllustrationSrc24 from "@snowui-design-system/resource-base/assets/illustrations/illustration-24.png";
-import IllustrationSrc28 from "@snowui-design-system/resource-base/assets/illustrations/illustration-28.png";
-var root106 = $1439.from_html(`<img/>`);
-function Illustration($$anchor, $$props) {
-  const IllustrationWidthMap = {
-    16: IllustrationSrc16,
-    20: IllustrationSrc20,
-    24: IllustrationSrc24,
-    28: IllustrationSrc28
-  };
-  const IllustrationAvailableWidths = [16, 20, 24, 28];
-  const findClosestWidth = (target, available) => {
-    if (available.length === 0) return target;
-    const preferred = target * 3;
-    let closest = available[0];
-    let minDiff = Math.abs(preferred - closest);
-    for (const width2 of available) {
-      const diff = Math.abs(preferred - width2);
-      if (diff < minDiff) {
-        minDiff = diff;
-        closest = width2;
-      }
-    }
-    return closest;
-  };
-  let width = $1439.prop($$props, "width", 3, 320), alt = $1439.prop($$props, "alt", 3, "Illustration"), className = $1439.prop($$props, "class", 3, ""), rest = $1439.rest_props($$props, [
-    "$$slots",
-    "$$events",
-    "$$legacy",
-    "width",
-    "height",
-    "alt",
-    "class"
-  ]);
-  let resolvedWidth = $1439.derived(() => width() ?? 320);
-  let closestWidth = $1439.derived(() => findClosestWidth($1439.get(resolvedWidth), IllustrationAvailableWidths));
-  let imageSrc = $1439.derived(() => IllustrationWidthMap[$1439.get(closestWidth)] ?? IllustrationSrc);
+  let resolvedWidth = $1439.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1439.derived(() => height() ?? 128);
+  let sourceWidth = $1439.derived(() => $1439.get(resolvedWidth) ?? 320);
+  let closestWidth = $1439.derived(() => findClosestWidth($1439.get(sourceWidth), Illustration16AvailableWidths));
+  let imageSrc = $1439.derived(() => Illustration16WidthMap[$1439.get(closestWidth)] ?? Illustration16Src);
   var img = root106();
   $1439.attribute_effect(img, () => ({
     src: $1439.get(imageSrc),
     alt: alt(),
-    width: $1439.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1439.get(resolvedWidth) ?? void 0,
+    height: $1439.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42054,7 +42282,7 @@ function Illustration17($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1440.prop($$props, "width", 3, 320), alt = $1440.prop($$props, "alt", 3, "Illustration17"), className = $1440.prop($$props, "class", 3, ""), rest = $1440.rest_props($$props, [
+  let height = $1440.prop($$props, "height", 3, 128), alt = $1440.prop($$props, "alt", 3, "Illustration17"), className = $1440.prop($$props, "class", 3, ""), rest = $1440.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42063,15 +42291,17 @@ function Illustration17($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1440.derived(() => width() ?? 320);
-  let closestWidth = $1440.derived(() => findClosestWidth($1440.get(resolvedWidth), Illustration17AvailableWidths));
+  let resolvedWidth = $1440.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1440.derived(() => height() ?? 128);
+  let sourceWidth = $1440.derived(() => $1440.get(resolvedWidth) ?? 320);
+  let closestWidth = $1440.derived(() => findClosestWidth($1440.get(sourceWidth), Illustration17AvailableWidths));
   let imageSrc = $1440.derived(() => Illustration17WidthMap[$1440.get(closestWidth)] ?? Illustration17Src);
   var img = root107();
   $1440.attribute_effect(img, () => ({
     src: $1440.get(imageSrc),
     alt: alt(),
-    width: $1440.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1440.get(resolvedWidth) ?? void 0,
+    height: $1440.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42109,7 +42339,7 @@ function Illustration18($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1441.prop($$props, "width", 3, 320), alt = $1441.prop($$props, "alt", 3, "Illustration18"), className = $1441.prop($$props, "class", 3, ""), rest = $1441.rest_props($$props, [
+  let height = $1441.prop($$props, "height", 3, 128), alt = $1441.prop($$props, "alt", 3, "Illustration18"), className = $1441.prop($$props, "class", 3, ""), rest = $1441.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42118,15 +42348,17 @@ function Illustration18($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1441.derived(() => width() ?? 320);
-  let closestWidth = $1441.derived(() => findClosestWidth($1441.get(resolvedWidth), Illustration18AvailableWidths));
+  let resolvedWidth = $1441.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1441.derived(() => height() ?? 128);
+  let sourceWidth = $1441.derived(() => $1441.get(resolvedWidth) ?? 320);
+  let closestWidth = $1441.derived(() => findClosestWidth($1441.get(sourceWidth), Illustration18AvailableWidths));
   let imageSrc = $1441.derived(() => Illustration18WidthMap[$1441.get(closestWidth)] ?? Illustration18Src);
   var img = root108();
   $1441.attribute_effect(img, () => ({
     src: $1441.get(imageSrc),
     alt: alt(),
-    width: $1441.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1441.get(resolvedWidth) ?? void 0,
+    height: $1441.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42164,7 +42396,7 @@ function Illustration19($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1442.prop($$props, "width", 3, 320), alt = $1442.prop($$props, "alt", 3, "Illustration19"), className = $1442.prop($$props, "class", 3, ""), rest = $1442.rest_props($$props, [
+  let height = $1442.prop($$props, "height", 3, 128), alt = $1442.prop($$props, "alt", 3, "Illustration19"), className = $1442.prop($$props, "class", 3, ""), rest = $1442.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42173,15 +42405,17 @@ function Illustration19($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1442.derived(() => width() ?? 320);
-  let closestWidth = $1442.derived(() => findClosestWidth($1442.get(resolvedWidth), Illustration19AvailableWidths));
+  let resolvedWidth = $1442.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1442.derived(() => height() ?? 128);
+  let sourceWidth = $1442.derived(() => $1442.get(resolvedWidth) ?? 320);
+  let closestWidth = $1442.derived(() => findClosestWidth($1442.get(sourceWidth), Illustration19AvailableWidths));
   let imageSrc = $1442.derived(() => Illustration19WidthMap[$1442.get(closestWidth)] ?? Illustration19Src);
   var img = root109();
   $1442.attribute_effect(img, () => ({
     src: $1442.get(imageSrc),
     alt: alt(),
-    width: $1442.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1442.get(resolvedWidth) ?? void 0,
+    height: $1442.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42219,7 +42453,7 @@ function Illustration20($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1443.prop($$props, "width", 3, 320), alt = $1443.prop($$props, "alt", 3, "Illustration20"), className = $1443.prop($$props, "class", 3, ""), rest = $1443.rest_props($$props, [
+  let height = $1443.prop($$props, "height", 3, 128), alt = $1443.prop($$props, "alt", 3, "Illustration20"), className = $1443.prop($$props, "class", 3, ""), rest = $1443.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42228,15 +42462,17 @@ function Illustration20($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1443.derived(() => width() ?? 320);
-  let closestWidth = $1443.derived(() => findClosestWidth($1443.get(resolvedWidth), Illustration20AvailableWidths));
+  let resolvedWidth = $1443.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1443.derived(() => height() ?? 128);
+  let sourceWidth = $1443.derived(() => $1443.get(resolvedWidth) ?? 320);
+  let closestWidth = $1443.derived(() => findClosestWidth($1443.get(sourceWidth), Illustration20AvailableWidths));
   let imageSrc = $1443.derived(() => Illustration20WidthMap[$1443.get(closestWidth)] ?? Illustration20Src);
   var img = root110();
   $1443.attribute_effect(img, () => ({
     src: $1443.get(imageSrc),
     alt: alt(),
-    width: $1443.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1443.get(resolvedWidth) ?? void 0,
+    height: $1443.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42274,7 +42510,7 @@ function Illustration21($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1444.prop($$props, "width", 3, 320), alt = $1444.prop($$props, "alt", 3, "Illustration21"), className = $1444.prop($$props, "class", 3, ""), rest = $1444.rest_props($$props, [
+  let height = $1444.prop($$props, "height", 3, 128), alt = $1444.prop($$props, "alt", 3, "Illustration21"), className = $1444.prop($$props, "class", 3, ""), rest = $1444.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42283,15 +42519,17 @@ function Illustration21($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1444.derived(() => width() ?? 320);
-  let closestWidth = $1444.derived(() => findClosestWidth($1444.get(resolvedWidth), Illustration21AvailableWidths));
+  let resolvedWidth = $1444.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1444.derived(() => height() ?? 128);
+  let sourceWidth = $1444.derived(() => $1444.get(resolvedWidth) ?? 320);
+  let closestWidth = $1444.derived(() => findClosestWidth($1444.get(sourceWidth), Illustration21AvailableWidths));
   let imageSrc = $1444.derived(() => Illustration21WidthMap[$1444.get(closestWidth)] ?? Illustration21Src);
   var img = root111();
   $1444.attribute_effect(img, () => ({
     src: $1444.get(imageSrc),
     alt: alt(),
-    width: $1444.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1444.get(resolvedWidth) ?? void 0,
+    height: $1444.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42329,7 +42567,7 @@ function Illustration22($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1445.prop($$props, "width", 3, 320), alt = $1445.prop($$props, "alt", 3, "Illustration22"), className = $1445.prop($$props, "class", 3, ""), rest = $1445.rest_props($$props, [
+  let height = $1445.prop($$props, "height", 3, 128), alt = $1445.prop($$props, "alt", 3, "Illustration22"), className = $1445.prop($$props, "class", 3, ""), rest = $1445.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42338,15 +42576,17 @@ function Illustration22($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1445.derived(() => width() ?? 320);
-  let closestWidth = $1445.derived(() => findClosestWidth($1445.get(resolvedWidth), Illustration22AvailableWidths));
+  let resolvedWidth = $1445.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1445.derived(() => height() ?? 128);
+  let sourceWidth = $1445.derived(() => $1445.get(resolvedWidth) ?? 320);
+  let closestWidth = $1445.derived(() => findClosestWidth($1445.get(sourceWidth), Illustration22AvailableWidths));
   let imageSrc = $1445.derived(() => Illustration22WidthMap[$1445.get(closestWidth)] ?? Illustration22Src);
   var img = root112();
   $1445.attribute_effect(img, () => ({
     src: $1445.get(imageSrc),
     alt: alt(),
-    width: $1445.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1445.get(resolvedWidth) ?? void 0,
+    height: $1445.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42384,7 +42624,7 @@ function Illustration23($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1446.prop($$props, "width", 3, 320), alt = $1446.prop($$props, "alt", 3, "Illustration23"), className = $1446.prop($$props, "class", 3, ""), rest = $1446.rest_props($$props, [
+  let height = $1446.prop($$props, "height", 3, 128), alt = $1446.prop($$props, "alt", 3, "Illustration23"), className = $1446.prop($$props, "class", 3, ""), rest = $1446.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42393,15 +42633,17 @@ function Illustration23($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1446.derived(() => width() ?? 320);
-  let closestWidth = $1446.derived(() => findClosestWidth($1446.get(resolvedWidth), Illustration23AvailableWidths));
+  let resolvedWidth = $1446.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1446.derived(() => height() ?? 128);
+  let sourceWidth = $1446.derived(() => $1446.get(resolvedWidth) ?? 320);
+  let closestWidth = $1446.derived(() => findClosestWidth($1446.get(sourceWidth), Illustration23AvailableWidths));
   let imageSrc = $1446.derived(() => Illustration23WidthMap[$1446.get(closestWidth)] ?? Illustration23Src);
   var img = root113();
   $1446.attribute_effect(img, () => ({
     src: $1446.get(imageSrc),
     alt: alt(),
-    width: $1446.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1446.get(resolvedWidth) ?? void 0,
+    height: $1446.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42439,7 +42681,7 @@ function Illustration24($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1447.prop($$props, "width", 3, 320), alt = $1447.prop($$props, "alt", 3, "Illustration24"), className = $1447.prop($$props, "class", 3, ""), rest = $1447.rest_props($$props, [
+  let height = $1447.prop($$props, "height", 3, 128), alt = $1447.prop($$props, "alt", 3, "Illustration24"), className = $1447.prop($$props, "class", 3, ""), rest = $1447.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42448,15 +42690,17 @@ function Illustration24($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1447.derived(() => width() ?? 320);
-  let closestWidth = $1447.derived(() => findClosestWidth($1447.get(resolvedWidth), Illustration24AvailableWidths));
+  let resolvedWidth = $1447.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1447.derived(() => height() ?? 128);
+  let sourceWidth = $1447.derived(() => $1447.get(resolvedWidth) ?? 320);
+  let closestWidth = $1447.derived(() => findClosestWidth($1447.get(sourceWidth), Illustration24AvailableWidths));
   let imageSrc = $1447.derived(() => Illustration24WidthMap[$1447.get(closestWidth)] ?? Illustration24Src);
   var img = root114();
   $1447.attribute_effect(img, () => ({
     src: $1447.get(imageSrc),
     alt: alt(),
-    width: $1447.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1447.get(resolvedWidth) ?? void 0,
+    height: $1447.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42494,7 +42738,7 @@ function Illustration25($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1448.prop($$props, "width", 3, 320), alt = $1448.prop($$props, "alt", 3, "Illustration25"), className = $1448.prop($$props, "class", 3, ""), rest = $1448.rest_props($$props, [
+  let height = $1448.prop($$props, "height", 3, 128), alt = $1448.prop($$props, "alt", 3, "Illustration25"), className = $1448.prop($$props, "class", 3, ""), rest = $1448.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42503,15 +42747,17 @@ function Illustration25($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1448.derived(() => width() ?? 320);
-  let closestWidth = $1448.derived(() => findClosestWidth($1448.get(resolvedWidth), Illustration25AvailableWidths));
+  let resolvedWidth = $1448.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1448.derived(() => height() ?? 128);
+  let sourceWidth = $1448.derived(() => $1448.get(resolvedWidth) ?? 320);
+  let closestWidth = $1448.derived(() => findClosestWidth($1448.get(sourceWidth), Illustration25AvailableWidths));
   let imageSrc = $1448.derived(() => Illustration25WidthMap[$1448.get(closestWidth)] ?? Illustration25Src);
   var img = root115();
   $1448.attribute_effect(img, () => ({
     src: $1448.get(imageSrc),
     alt: alt(),
-    width: $1448.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1448.get(resolvedWidth) ?? void 0,
+    height: $1448.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42549,7 +42795,7 @@ function Illustration26($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1449.prop($$props, "width", 3, 320), alt = $1449.prop($$props, "alt", 3, "Illustration26"), className = $1449.prop($$props, "class", 3, ""), rest = $1449.rest_props($$props, [
+  let height = $1449.prop($$props, "height", 3, 128), alt = $1449.prop($$props, "alt", 3, "Illustration26"), className = $1449.prop($$props, "class", 3, ""), rest = $1449.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42558,15 +42804,17 @@ function Illustration26($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1449.derived(() => width() ?? 320);
-  let closestWidth = $1449.derived(() => findClosestWidth($1449.get(resolvedWidth), Illustration26AvailableWidths));
+  let resolvedWidth = $1449.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1449.derived(() => height() ?? 128);
+  let sourceWidth = $1449.derived(() => $1449.get(resolvedWidth) ?? 320);
+  let closestWidth = $1449.derived(() => findClosestWidth($1449.get(sourceWidth), Illustration26AvailableWidths));
   let imageSrc = $1449.derived(() => Illustration26WidthMap[$1449.get(closestWidth)] ?? Illustration26Src);
   var img = root116();
   $1449.attribute_effect(img, () => ({
     src: $1449.get(imageSrc),
     alt: alt(),
-    width: $1449.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1449.get(resolvedWidth) ?? void 0,
+    height: $1449.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42604,7 +42852,7 @@ function Illustration27($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1450.prop($$props, "width", 3, 320), alt = $1450.prop($$props, "alt", 3, "Illustration27"), className = $1450.prop($$props, "class", 3, ""), rest = $1450.rest_props($$props, [
+  let height = $1450.prop($$props, "height", 3, 128), alt = $1450.prop($$props, "alt", 3, "Illustration27"), className = $1450.prop($$props, "class", 3, ""), rest = $1450.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42613,15 +42861,17 @@ function Illustration27($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1450.derived(() => width() ?? 320);
-  let closestWidth = $1450.derived(() => findClosestWidth($1450.get(resolvedWidth), Illustration27AvailableWidths));
+  let resolvedWidth = $1450.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1450.derived(() => height() ?? 128);
+  let sourceWidth = $1450.derived(() => $1450.get(resolvedWidth) ?? 320);
+  let closestWidth = $1450.derived(() => findClosestWidth($1450.get(sourceWidth), Illustration27AvailableWidths));
   let imageSrc = $1450.derived(() => Illustration27WidthMap[$1450.get(closestWidth)] ?? Illustration27Src);
   var img = root117();
   $1450.attribute_effect(img, () => ({
     src: $1450.get(imageSrc),
     alt: alt(),
-    width: $1450.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1450.get(resolvedWidth) ?? void 0,
+    height: $1450.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42659,7 +42909,7 @@ function Illustration28($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1451.prop($$props, "width", 3, 320), alt = $1451.prop($$props, "alt", 3, "Illustration28"), className = $1451.prop($$props, "class", 3, ""), rest = $1451.rest_props($$props, [
+  let height = $1451.prop($$props, "height", 3, 128), alt = $1451.prop($$props, "alt", 3, "Illustration28"), className = $1451.prop($$props, "class", 3, ""), rest = $1451.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42668,15 +42918,17 @@ function Illustration28($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1451.derived(() => width() ?? 320);
-  let closestWidth = $1451.derived(() => findClosestWidth($1451.get(resolvedWidth), Illustration28AvailableWidths));
+  let resolvedWidth = $1451.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1451.derived(() => height() ?? 128);
+  let sourceWidth = $1451.derived(() => $1451.get(resolvedWidth) ?? 320);
+  let closestWidth = $1451.derived(() => findClosestWidth($1451.get(sourceWidth), Illustration28AvailableWidths));
   let imageSrc = $1451.derived(() => Illustration28WidthMap[$1451.get(closestWidth)] ?? Illustration28Src);
   var img = root118();
   $1451.attribute_effect(img, () => ({
     src: $1451.get(imageSrc),
     alt: alt(),
-    width: $1451.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1451.get(resolvedWidth) ?? void 0,
+    height: $1451.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42690,7 +42942,7 @@ import * as $1452 from "svelte/internal/client";
 import LineDrawing01Src from "@snowui-design-system/resource-base/assets/illustrations/line-drawing-01.svg";
 var root119 = $1452.from_html(`<img/>`);
 function LineDrawing01($$anchor, $$props) {
-  let width = $1452.prop($$props, "width", 3, 320), alt = $1452.prop($$props, "alt", 3, "LineDrawing01"), className = $1452.prop($$props, "class", 3, ""), rest = $1452.rest_props($$props, [
+  let height = $1452.prop($$props, "height", 3, 128), alt = $1452.prop($$props, "alt", 3, "LineDrawing01"), className = $1452.prop($$props, "class", 3, ""), rest = $1452.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42699,14 +42951,15 @@ function LineDrawing01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1452.derived(() => width() ?? 320);
+  let resolvedWidth = $1452.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1452.derived(() => height() ?? 128);
   let imageSrc = $1452.derived(() => LineDrawing01Src);
   var img = root119();
   $1452.attribute_effect(img, () => ({
     src: $1452.get(imageSrc),
     alt: alt(),
-    width: $1452.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1452.get(resolvedWidth) ?? void 0,
+    height: $1452.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42720,7 +42973,7 @@ import * as $1453 from "svelte/internal/client";
 import LineDrawing02Src from "@snowui-design-system/resource-base/assets/illustrations/line-drawing-02.svg";
 var root120 = $1453.from_html(`<img/>`);
 function LineDrawing02($$anchor, $$props) {
-  let width = $1453.prop($$props, "width", 3, 320), alt = $1453.prop($$props, "alt", 3, "LineDrawing02"), className = $1453.prop($$props, "class", 3, ""), rest = $1453.rest_props($$props, [
+  let height = $1453.prop($$props, "height", 3, 128), alt = $1453.prop($$props, "alt", 3, "LineDrawing02"), className = $1453.prop($$props, "class", 3, ""), rest = $1453.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42729,14 +42982,15 @@ function LineDrawing02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1453.derived(() => width() ?? 320);
+  let resolvedWidth = $1453.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1453.derived(() => height() ?? 128);
   let imageSrc = $1453.derived(() => LineDrawing02Src);
   var img = root120();
   $1453.attribute_effect(img, () => ({
     src: $1453.get(imageSrc),
     alt: alt(),
-    width: $1453.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1453.get(resolvedWidth) ?? void 0,
+    height: $1453.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42750,7 +43004,7 @@ import * as $1454 from "svelte/internal/client";
 import LineDrawing03Src from "@snowui-design-system/resource-base/assets/illustrations/line-drawing-03.svg";
 var root121 = $1454.from_html(`<img/>`);
 function LineDrawing03($$anchor, $$props) {
-  let width = $1454.prop($$props, "width", 3, 320), alt = $1454.prop($$props, "alt", 3, "LineDrawing03"), className = $1454.prop($$props, "class", 3, ""), rest = $1454.rest_props($$props, [
+  let height = $1454.prop($$props, "height", 3, 128), alt = $1454.prop($$props, "alt", 3, "LineDrawing03"), className = $1454.prop($$props, "class", 3, ""), rest = $1454.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42759,14 +43013,15 @@ function LineDrawing03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1454.derived(() => width() ?? 320);
+  let resolvedWidth = $1454.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1454.derived(() => height() ?? 128);
   let imageSrc = $1454.derived(() => LineDrawing03Src);
   var img = root121();
   $1454.attribute_effect(img, () => ({
     src: $1454.get(imageSrc),
     alt: alt(),
-    width: $1454.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1454.get(resolvedWidth) ?? void 0,
+    height: $1454.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42780,7 +43035,7 @@ import * as $1455 from "svelte/internal/client";
 import QrCodeBigSrc from "@snowui-design-system/resource-base/assets/illustrations/qr-code-big.svg";
 var root122 = $1455.from_html(`<img/>`);
 function QrCodeBig($$anchor, $$props) {
-  let width = $1455.prop($$props, "width", 3, 320), alt = $1455.prop($$props, "alt", 3, "QrCodeBig"), className = $1455.prop($$props, "class", 3, ""), rest = $1455.rest_props($$props, [
+  let height = $1455.prop($$props, "height", 3, 128), alt = $1455.prop($$props, "alt", 3, "QrCodeBig"), className = $1455.prop($$props, "class", 3, ""), rest = $1455.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42789,14 +43044,15 @@ function QrCodeBig($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1455.derived(() => width() ?? 320);
+  let resolvedWidth = $1455.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1455.derived(() => height() ?? 128);
   let imageSrc = $1455.derived(() => QrCodeBigSrc);
   var img = root122();
   $1455.attribute_effect(img, () => ({
     src: $1455.get(imageSrc),
     alt: alt(),
-    width: $1455.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1455.get(resolvedWidth) ?? void 0,
+    height: $1455.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42810,7 +43066,7 @@ import * as $1456 from "svelte/internal/client";
 import VoiceSrc from "@snowui-design-system/resource-base/assets/illustrations/voice.svg";
 var root123 = $1456.from_html(`<img/>`);
 function Voice($$anchor, $$props) {
-  let width = $1456.prop($$props, "width", 3, 320), alt = $1456.prop($$props, "alt", 3, "Voice"), className = $1456.prop($$props, "class", 3, ""), rest = $1456.rest_props($$props, [
+  let height = $1456.prop($$props, "height", 3, 128), alt = $1456.prop($$props, "alt", 3, "Voice"), className = $1456.prop($$props, "class", 3, ""), rest = $1456.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42819,14 +43075,15 @@ function Voice($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1456.derived(() => width() ?? 320);
+  let resolvedWidth = $1456.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1456.derived(() => height() ?? 128);
   let imageSrc = $1456.derived(() => VoiceSrc);
   var img = root123();
   $1456.attribute_effect(img, () => ({
     src: $1456.get(imageSrc),
     alt: alt(),
-    width: $1456.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1456.get(resolvedWidth) ?? void 0,
+    height: $1456.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -42864,7 +43121,7 @@ function Image01($$anchor, $$props) {
     }
     return closest;
   };
-  let width = $1457.prop($$props, "width", 3, 320), alt = $1457.prop($$props, "alt", 3, "Image01"), className = $1457.prop($$props, "class", 3, ""), rest = $1457.rest_props($$props, [
+  let height = $1457.prop($$props, "height", 3, 128), alt = $1457.prop($$props, "alt", 3, "Image01"), className = $1457.prop($$props, "class", 3, ""), rest = $1457.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -42873,15 +43130,17 @@ function Image01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1457.derived(() => width() ?? 320);
-  let closestWidth = $1457.derived(() => findClosestWidth($1457.get(resolvedWidth), Image01AvailableWidths));
+  let resolvedWidth = $1457.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1457.derived(() => height() ?? 128);
+  let sourceWidth = $1457.derived(() => $1457.get(resolvedWidth) ?? 320);
+  let closestWidth = $1457.derived(() => findClosestWidth($1457.get(sourceWidth), Image01AvailableWidths));
   let imageSrc = $1457.derived(() => Image01WidthMap[$1457.get(closestWidth)] ?? Image01Src);
   var img = root124();
   $1457.attribute_effect(img, () => ({
     src: $1457.get(imageSrc),
     alt: alt(),
-    width: $1457.get(resolvedWidth),
-    height: $$props.height ?? void 0,
+    width: $1457.get(resolvedWidth) ?? void 0,
+    height: $1457.get(resolvedHeight),
     class: className(),
     ...rest
   }));
@@ -46212,7 +46471,7 @@ var iconsByName = {
 // src/component-names.ts
 var componentNames = {
   avatars: ["Avatar3d01", "Avatar3d02", "Avatar3d03", "Avatar3d04", "AvatarAbstract01", "AvatarAbstract02", "AvatarAbstract03", "AvatarAbstract04", "AvatarByewind", "AvatarDefault", "AvatarFemale01", "AvatarFemale02", "AvatarFemale03", "AvatarFemale04", "AvatarFemale05", "AvatarFemale06", "AvatarMale01", "AvatarMale02", "AvatarMale03", "AvatarMale04", "AvatarMale05", "AvatarMale06"],
-  backgrounds: ["Geometric01", "Geometric02", "Geometric03", "Geometric04", "Geometric05", "Geometric06", "Geometric07", "Gradient01", "Gradient02", "Gradient03", "Gradient04", "Gradient05", "Gradient06", "Gradient07", "Gradient08", "Gradient09", "Gradient10", "Gradient11", "Gradient12", "Gradient13", "Gradient14", "Minimal01", "Minimal02", "Minimal03"],
+  backgrounds: ["Geometric01", "Geometric02", "Geometric03", "Geometric04", "Geometric05", "Geometric06", "Geometric07", "Gradient", "Gradient01", "Gradient02", "Gradient03", "Gradient04", "Gradient05", "Gradient06", "Gradient07", "Gradient08", "Gradient09", "Gradient10", "Gradient11", "Gradient12", "Gradient13", "Gradient14", "Minimal01", "Minimal02", "Minimal03"],
   cursors: ["CursorsBeachball", "CursorsCross", "CursorsDefault", "CursorsHandGrabbing", "CursorsHandOpen", "CursorsHandPointing", "CursorsMenu", "CursorsMove", "CursorsResizeDown", "CursorsResizeLeft", "CursorsResizeLeftRight", "CursorsResizeNorthEastSouthWest", "CursorsResizeNorthSouth", "CursorsResizeNorthWestSouthEast", "CursorsResizeRight", "CursorsResizeUp", "CursorsResizeUpDown", "CursorsResizeWestEast", "CursorsTextCursor", "CursorsZoomIn", "CursorsZoomOut"],
   emoji: ["BombEmoji", "FaceBlowingKiss", "FaceSteamFromNose", "FaceTearsJoy", "GrinningCat", "GrinningFaceSweat", "HeartArrow", "HundredPoints", "LoudlyCryingFace", "RedHeart", "RobotEmoji", "SeeMonkey", "SkullCrossbones", "SmilingFaceHearts", "SmilingFaceHorns", "SmilingFaceSunglasses", "SnowflakeEmoji", "Snowman", "UmbrellaEmoji", "WinkingFace", "WinkingFaceTongue"],
   illustrations: ["Humanoid", "Illustration", "Illustration01", "Illustration02", "Illustration03", "Illustration04", "Illustration05", "Illustration06", "Illustration07", "Illustration08", "Illustration09", "Illustration10", "Illustration11", "Illustration12", "Illustration13", "Illustration14", "Illustration15", "Illustration16", "Illustration17", "Illustration18", "Illustration19", "Illustration20", "Illustration21", "Illustration22", "Illustration23", "Illustration24", "Illustration25", "Illustration26", "Illustration27", "Illustration28", "LineDrawing01", "LineDrawing02", "LineDrawing03", "QrCodeBig", "Voice"],
@@ -47358,6 +47617,7 @@ export {
   Question,
   Queue,
   Quotes,
+  RESOURCE_ICON_CONTEXT_KEY,
   Radical,
   Radio,
   Radio2true,

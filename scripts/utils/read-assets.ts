@@ -105,10 +105,10 @@ export async function readMaterialAssets(resourceCoreDir: string, folder: string
         if (!ALLOWED_MATERIAL_EXTS.has(ext)) continue;
         const baseName = f.replace(/\.[^.]+$/, '');
         if (!baseName) continue;
-        
+
         // 检查是否是带尺寸后缀的文件（如 avatar-byewind-64.jpg）
         // 合法尺寸：1x + 3x（avatars），以及 backgrounds/images/illustrations 的宽度
-        const AVATAR_SIZES_1X = [16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512];
+        const AVATAR_SIZES_1X = [12, 16, 20, 24, 28, 32, 40, 48, 56, 64, 80, 128, 256, 512];
         const AVATAR_SIZES_3X = AVATAR_SIZES_1X.map((s) => s * 3);
         const WIDTH_SIZES_1X = [160, 320, 640, 1024, 1920];
         const WIDTH_SIZES_3X = WIDTH_SIZES_1X.map((s) => s * 3); // 480, 960, 1920, 3072, 5760
@@ -118,11 +118,11 @@ export async function readMaterialAssets(resourceCoreDir: string, folder: string
           ...WIDTH_SIZES_1X,
           ...WIDTH_SIZES_3X,
         ]);
-        
+
         const sizeMatch = baseName.match(/^(.+)-(\d+)$/);
         let kebab: string;
         let size: number | undefined;
-        
+
         if (sizeMatch) {
           const potentialSize = parseInt(sizeMatch[2], 10);
           // 如果数字是合法的尺寸，则认为是尺寸后缀
@@ -138,7 +138,7 @@ export async function readMaterialAssets(resourceCoreDir: string, folder: string
           kebab = baseName;
           size = undefined;
         }
-        
+
         const existing = map.get(kebab);
         const fileEntry: MaterialFile & { size?: number } = {
           format: ext.slice(1),

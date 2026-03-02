@@ -318,7 +318,7 @@ export function generateAvatarComponentCode(
 }
 
 /**
- * 生成 Illustration 组件代码（宽度固定，高度自适应）
+ * 生成 Illustration/Background/Image 组件代码（默认高度固定，宽度自适应）
  */
 export function generateIllustrationComponentCode(
   componentName: string, 
@@ -417,13 +417,17 @@ export function generateIllustrationComponentCode(
     '',
     findClosestWidthHelper,
     '',
-    `  let { width = ${defaultWidth}, height, alt = "${componentName}", class: className = "", ...rest }: BackgroundProps = $props();`,
-    `  let resolvedWidth = $derived(width ?? ${defaultWidth});`,
+    `  let { width, height = 128, alt = "${componentName}", class: className = "", ...rest }: BackgroundProps = $props();`,
+    `  let resolvedWidth = $derived(width ?? undefined);`,
+    `  let resolvedHeight = $derived(height ?? 128);`,
     hasSizes 
-      ? `  // 根据 width 选择对应宽度的图片，如果没有精确匹配则使用最接近的宽度`
+      ? `  // 根据请求宽度选择资源；未传 width 时使用默认宽度选择最接近资源，渲染时保持宽度自适应`
       : '',
     hasSizes
-      ? `  let closestWidth = $derived(findClosestWidth(resolvedWidth, ${componentName}AvailableWidths));`
+      ? `  let sourceWidth = $derived(resolvedWidth ?? ${defaultWidth});`
+      : '',
+    hasSizes
+      ? `  let closestWidth = $derived(findClosestWidth(sourceWidth, ${componentName}AvailableWidths));`
       : '',
     hasSizes
       ? `  let imageSrc = $derived(${componentName}WidthMap[closestWidth as keyof typeof ${componentName}WidthMap] ?? ${importIdentifier});`
@@ -434,8 +438,8 @@ export function generateIllustrationComponentCode(
     `<img`,
     `  src={imageSrc}`,
     `  alt={alt}`,
-    `  width={resolvedWidth}`,
-    `  height={height ?? undefined}`,
+    `  width={resolvedWidth ?? undefined}`,
+    `  height={resolvedHeight}`,
     `  class={className}`,
     `  {...rest}`,
     `/>`,
@@ -444,4 +448,3 @@ export function generateIllustrationComponentCode(
   
   return componentCode;
 }
-

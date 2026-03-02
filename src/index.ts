@@ -1431,11 +1431,11 @@ export { default as Illustration09 } from './illustrations/Illustration09.svelte
 export { default as Illustration10 } from './illustrations/Illustration10.svelte';
 export { default as Illustration11 } from './illustrations/Illustration11.svelte';
 export { default as Illustration12 } from './illustrations/Illustration12.svelte';
+export { default as Illustration } from './illustrations/Illustration.svelte';
 export { default as Illustration13 } from './illustrations/Illustration13.svelte';
 export { default as Illustration14 } from './illustrations/Illustration14.svelte';
 export { default as Illustration15 } from './illustrations/Illustration15.svelte';
 export { default as Illustration16 } from './illustrations/Illustration16.svelte';
-export { default as Illustration } from './illustrations/Illustration.svelte';
 export { default as Illustration17 } from './illustrations/Illustration17.svelte';
 export { default as Illustration18 } from './illustrations/Illustration18.svelte';
 export { default as Illustration19 } from './illustrations/Illustration19.svelte';
@@ -1520,3 +1520,4 @@ export { iconsByName as icons } from './icons/by-name';
 export type { IconName } from './icons/by-name';
 export { componentNames } from './component-names';
 export type { ComponentCategory } from './component-names';
+export { RESOURCE_ICON_CONTEXT_KEY } from './lib/types';

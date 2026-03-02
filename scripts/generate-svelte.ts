@@ -285,6 +285,7 @@ async function main() {
     `export type { IconName } from './icons/by-name';`,
     `export { componentNames } from './component-names';`,
     `export type { ComponentCategory } from './component-names';`,
+    `export { RESOURCE_ICON_CONTEXT_KEY } from './lib/types';`,
     ''
   ];
   const indexContent = indexContentLines.join('\n');
@@ -328,4 +329,3 @@ main().catch(err => {
   console.error(err);
   process.exit(1);
 });
-

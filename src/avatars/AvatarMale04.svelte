@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
 import AvatarMale04Src from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-32.jpg';
+import AvatarMale04Src12 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-12.jpg';
 import AvatarMale04Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-16.jpg';
 import AvatarMale04Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-20.jpg';
 import AvatarMale04Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-24.jpg';
 import AvatarMale04Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-28.jpg';
+import AvatarMale04Src36 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-36.jpg';
 import AvatarMale04Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-40.jpg';
 import AvatarMale04Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-48.jpg';
 import AvatarMale04Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-56.jpg';
@@ -26,11 +28,13 @@ import AvatarMale04Src512 from '@snowui-design-system/resource-base/assets/avata
 import AvatarMale04Src768 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-768.jpg';
 import AvatarMale04Src1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-male-04-1536.jpg';
   const AvatarMale04SizeMap = {
+    12: AvatarMale04Src12,
     16: AvatarMale04Src16,
     20: AvatarMale04Src20,
     24: AvatarMale04Src24,
     28: AvatarMale04Src28,
     32: AvatarMale04Src,
+    36: AvatarMale04Src36,
     40: AvatarMale04Src40,
     48: AvatarMale04Src48,
     56: AvatarMale04Src56,
@@ -52,7 +56,7 @@ import AvatarMale04Src1536 from '@snowui-design-system/resource-base/assets/avat
     768: AvatarMale04Src768,
     1536: AvatarMale04Src1536,
   } as const;
-  const AvatarMale04AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
+  const AvatarMale04AvailableSizes = [12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
   // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {

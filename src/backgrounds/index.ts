@@ -17,6 +17,7 @@ export { default as Gradient09 } from './Gradient09.svelte';
 export { default as Gradient10 } from './Gradient10.svelte';
 export { default as Gradient11 } from './Gradient11.svelte';
 export { default as Gradient12 } from './Gradient12.svelte';
+export { default as Gradient } from './Gradient.svelte';
 export { default as Gradient13 } from './Gradient13.svelte';
 export { default as Gradient14 } from './Gradient14.svelte';
 export { default as Minimal01 } from './Minimal01.svelte';

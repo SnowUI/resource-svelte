@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
 import AvatarFemale04Src from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-32.jpg';
+import AvatarFemale04Src12 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-12.jpg';
 import AvatarFemale04Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-16.jpg';
 import AvatarFemale04Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-20.jpg';
 import AvatarFemale04Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-24.jpg';
 import AvatarFemale04Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-28.jpg';
+import AvatarFemale04Src36 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-36.jpg';
 import AvatarFemale04Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-40.jpg';
 import AvatarFemale04Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-48.jpg';
 import AvatarFemale04Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-56.jpg';
@@ -26,11 +28,13 @@ import AvatarFemale04Src512 from '@snowui-design-system/resource-base/assets/ava
 import AvatarFemale04Src768 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-768.jpg';
 import AvatarFemale04Src1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-female-04-1536.jpg';
   const AvatarFemale04SizeMap = {
+    12: AvatarFemale04Src12,
     16: AvatarFemale04Src16,
     20: AvatarFemale04Src20,
     24: AvatarFemale04Src24,
     28: AvatarFemale04Src28,
     32: AvatarFemale04Src,
+    36: AvatarFemale04Src36,
     40: AvatarFemale04Src40,
     48: AvatarFemale04Src48,
     56: AvatarFemale04Src56,
@@ -52,7 +56,7 @@ import AvatarFemale04Src1536 from '@snowui-design-system/resource-base/assets/av
     768: AvatarFemale04Src768,
     1536: AvatarFemale04Src1536,
   } as const;
-  const AvatarFemale04AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
+  const AvatarFemale04AvailableSizes = [12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
   // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {

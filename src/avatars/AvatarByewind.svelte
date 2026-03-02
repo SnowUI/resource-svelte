@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
 import AvatarByewindSrc from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-32.jpg';
+import AvatarByewindSrc12 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-12.jpg';
 import AvatarByewindSrc16 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-16.jpg';
 import AvatarByewindSrc20 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-20.jpg';
 import AvatarByewindSrc24 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-24.jpg';
 import AvatarByewindSrc28 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-28.jpg';
+import AvatarByewindSrc36 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-36.jpg';
 import AvatarByewindSrc40 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-40.jpg';
 import AvatarByewindSrc48 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-48.jpg';
 import AvatarByewindSrc56 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-56.jpg';
@@ -26,11 +28,13 @@ import AvatarByewindSrc512 from '@snowui-design-system/resource-base/assets/avat
 import AvatarByewindSrc768 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-768.jpg';
 import AvatarByewindSrc1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-byewind-1536.jpg';
   const AvatarByewindSizeMap = {
+    12: AvatarByewindSrc12,
     16: AvatarByewindSrc16,
     20: AvatarByewindSrc20,
     24: AvatarByewindSrc24,
     28: AvatarByewindSrc28,
     32: AvatarByewindSrc,
+    36: AvatarByewindSrc36,
     40: AvatarByewindSrc40,
     48: AvatarByewindSrc48,
     56: AvatarByewindSrc56,
@@ -52,7 +56,7 @@ import AvatarByewindSrc1536 from '@snowui-design-system/resource-base/assets/ava
     768: AvatarByewindSrc768,
     1536: AvatarByewindSrc1536,
   } as const;
-  const AvatarByewindAvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
+  const AvatarByewindAvailableSizes = [12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
   // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {

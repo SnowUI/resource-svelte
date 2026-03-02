@@ -1,10 +1,12 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
 import AvatarAbstract02Src from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-32.jpg';
+import AvatarAbstract02Src12 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-12.jpg';
 import AvatarAbstract02Src16 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-16.jpg';
 import AvatarAbstract02Src20 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-20.jpg';
 import AvatarAbstract02Src24 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-24.jpg';
 import AvatarAbstract02Src28 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-28.jpg';
+import AvatarAbstract02Src36 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-36.jpg';
 import AvatarAbstract02Src40 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-40.jpg';
 import AvatarAbstract02Src48 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-48.jpg';
 import AvatarAbstract02Src56 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-56.jpg';
@@ -26,11 +28,13 @@ import AvatarAbstract02Src512 from '@snowui-design-system/resource-base/assets/a
 import AvatarAbstract02Src768 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-768.jpg';
 import AvatarAbstract02Src1536 from '@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-1536.jpg';
   const AvatarAbstract02SizeMap = {
+    12: AvatarAbstract02Src12,
     16: AvatarAbstract02Src16,
     20: AvatarAbstract02Src20,
     24: AvatarAbstract02Src24,
     28: AvatarAbstract02Src28,
     32: AvatarAbstract02Src,
+    36: AvatarAbstract02Src36,
     40: AvatarAbstract02Src40,
     48: AvatarAbstract02Src48,
     56: AvatarAbstract02Src56,
@@ -52,7 +56,7 @@ import AvatarAbstract02Src1536 from '@snowui-design-system/resource-base/assets/
     768: AvatarAbstract02Src768,
     1536: AvatarAbstract02Src1536,
   } as const;
-  const AvatarAbstract02AvailableSizes = [16, 20, 24, 28, 32, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
+  const AvatarAbstract02AvailableSizes = [12, 16, 20, 24, 28, 32, 36, 40, 48, 56, 60, 64, 72, 80, 84, 96, 120, 128, 144, 168, 192, 240, 256, 384, 512, 768, 1536] as const;
 
   // 查找最接近的 3x 尺寸
   const findClosestSize = (target: number, available: readonly number[]): number => {

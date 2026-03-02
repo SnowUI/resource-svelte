@@ -27,17 +27,19 @@ import Illustration01Src1024 from '@snowui-design-system/resource-base/assets/il
     }
     return closest;
   };
-  let { width = 320, height, alt = "Illustration01", class: className = "", ...rest }: BackgroundProps = $props();
-  let resolvedWidth = $derived(width ?? 320);
-  // 根据 width 选择对应宽度的图片，如果没有精确匹配则使用最接近的宽度
-  let closestWidth = $derived(findClosestWidth(resolvedWidth, Illustration01AvailableWidths));
+  let { width, height = 128, alt = "Illustration01", class: className = "", ...rest }: BackgroundProps = $props();
+  let resolvedWidth = $derived(width ?? undefined);
+  let resolvedHeight = $derived(height ?? 128);
+  // 根据请求宽度选择资源；未传 width 时使用默认宽度选择最接近资源，渲染时保持宽度自适应
+  let sourceWidth = $derived(resolvedWidth ?? 320);
+  let closestWidth = $derived(findClosestWidth(sourceWidth, Illustration01AvailableWidths));
   let imageSrc = $derived(Illustration01WidthMap[closestWidth as keyof typeof Illustration01WidthMap] ?? Illustration01Src);
 </script>
 <img
   src={imageSrc}
   alt={alt}
-  width={resolvedWidth}
-  height={height ?? undefined}
+  width={resolvedWidth ?? undefined}
+  height={resolvedHeight}
   class={className}
   {...rest}
 />
