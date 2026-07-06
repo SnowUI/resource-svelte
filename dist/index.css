@@ -1,0 +1,10 @@
+/* svelte-css:src/lib/Icon.svelte.css */
+:where(.resource-icon-missing) {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  line-height: 1;
+}
+/*# sourceMappingURL=index.css.map */

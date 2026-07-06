@@ -58,5 +58,5 @@ export { default as Twitter } from './Twitter.svelte';
 export { default as Visa } from './Visa.svelte';
 export { default as WhatsApp } from './WhatsApp.svelte';
 export { default as Word } from './Word.svelte';
-export { default as Xlogo } from './Xlogo.svelte';
+export { default as XLogo } from './XLogo.svelte';
 export { default as Youtube } from './Youtube.svelte';

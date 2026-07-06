@@ -1,28 +1,42 @@
 import * as path from 'path';
 
-export function generateIconComponentCode(componentName: string, weightsObjectLiteral: string, viewBox: string | null = null): string {
+export function generateIconComponentCode(
+  componentName: string,
+  weightsObjectLiteral: string,
+  viewBox: string | null = null,
+  meta?: { collection: string; usageName: string },
+): string {
+  // 注意：组件物理目录为 src/icons/{collection}/{Name}.svelte，所以 lib 是 ../../lib
   const lines = [
     `<script lang="ts">`,
-    `  import IconBase from '../lib/IconBase.svelte';`,
-    `  import type { IconProps } from '../lib/types';`,
+    `  import IconBase from '../../lib/IconBase.svelte';`,
+    `  import type { IconProps } from '../../lib/types';`,
     `  `,
     `  const weights = ${weightsObjectLiteral} as const;`,
   ];
-  
+
+  if (meta) {
+    lines.push(
+      `  const meta = { collection: '${meta.collection}', usageName: '${meta.usageName}', componentName: '${componentName}' } as const;`,
+    );
+  }
+
   if (viewBox) {
     lines.push(`  const defaultViewBox = "${viewBox}";`, '');
   }
-  
+
   lines.push(
-    viewBox 
+    viewBox
       ? `  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();`
       : `  let { ...rest }: IconProps = $props();`,
     `</script>`,
     ``,
-    `<IconBase viewBox={viewBox} weights={weights} {...rest} />`,
-    ''
+    meta
+      ? `<IconBase {meta} viewBox={viewBox} weights={weights} {...rest} />`
+      : `<IconBase viewBox={viewBox} weights={weights} {...rest} />`,
+    '',
   );
-  
+
   return lines.join('\n');
 }
 

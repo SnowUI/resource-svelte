@@ -7,6 +7,9 @@ export interface IconAsset {
   name: string;
   kebabName: string;
   pascalName: string;
+  collection: string;
+  /** "special" 类无权重维度，weights 只有 regular */
+  isSpecial: boolean;
   weights: Partial<Record<IconWeight, string>>; // weight -> SVG content
 }
 
@@ -37,34 +40,81 @@ function toKebabCase(input: string): string {
 export async function readIconAssets(resourceCoreDir: string): Promise<IconAsset[]> {
   const iconsDir = path.join(resourceCoreDir, 'assets', 'icons');
   const weights: IconWeight[] = ['regular', 'thin', 'light', 'bold', 'fill', 'duotone'];
-  const map = new Map<string, IconAsset>();
 
-  for (const w of weights) {
-    const weightDir = path.join(iconsDir, w);
-    try {
-      const files = await fs.readdir(weightDir);
+  // 发现 collection 子目录
+  let collections: string[] = [];
+  try {
+    const entries = await fs.readdir(iconsDir, { withFileTypes: true });
+    collections = entries.filter((e) => e.isDirectory()).map((e) => e.name).sort();
+  } catch {
+    return [];
+  }
+
+  const result: IconAsset[] = [];
+
+  for (const collection of collections) {
+    const collectionDir = path.join(iconsDir, collection);
+    const isSpecial = collection === 'special';
+
+    if (isSpecial) {
+      // special：collection 根目录扁平 SVG，无权重
+      let files: string[] = [];
+      try {
+        files = await fs.readdir(collectionDir);
+      } catch {
+        continue;
+      }
       for (const file of files) {
         if (!file.endsWith('.svg')) continue;
-        // e.g. four-leaf-clover-regular.svg -> name without suffix
-        const kebabName = file.replace(new RegExp(`-${w}\\.svg$`), '').replace(/\.svg$/, '');
+        const kebabName = file.replace(/\.svg$/, '');
         const pascalName = toPascalCase(kebabName);
-        const fullPath = path.join(weightDir, file);
+        const fullPath = path.join(collectionDir, file);
         const svg = await fs.readFile(fullPath, 'utf8');
-        const existing = map.get(kebabName) || {
+        result.push({
           name: kebabName,
           kebabName,
           pascalName,
-          weights: {},
-        };
-        existing.weights[w] = svg;
-        map.set(kebabName, existing);
+          collection,
+          isSpecial: true,
+          weights: { regular: svg },
+        });
       }
-    } catch {
-      // skip missing weight folder
+    } else {
+      // 普通 collection：按 weight 子目录
+      const map = new Map<string, IconAsset>();
+      for (const w of weights) {
+        const weightDir = path.join(collectionDir, w);
+        let files: string[];
+        try {
+          files = await fs.readdir(weightDir);
+        } catch {
+          continue;
+        }
+        for (const file of files) {
+          if (!file.endsWith('.svg')) continue;
+          const kebabName = file.replace(/\.svg$/, '');
+          const pascalName = toPascalCase(kebabName);
+          const fullPath = path.join(weightDir, file);
+          const svg = await fs.readFile(fullPath, 'utf8');
+          const existing =
+            map.get(kebabName) ||
+            ({
+              name: kebabName,
+              kebabName,
+              pascalName,
+              collection,
+              isSpecial: false,
+              weights: {},
+            } as IconAsset);
+          existing.weights[w] = svg;
+          map.set(kebabName, existing);
+        }
+      }
+      result.push(...map.values());
     }
   }
 
-  return Array.from(map.values());
+  return result;
 }
 
 const ALLOWED_MATERIAL_EXTS = new Set(['.png', '.jpg', '.jpeg', '.webp', '.svg']);

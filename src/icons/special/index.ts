@@ -1,0 +1,10 @@
+export { default as DefaultIcon } from './DefaultIcon.svelte';
+export { default as DocxIcon } from './DocxIcon.svelte';
+export { default as FormIcon } from './FormIcon.svelte';
+export { default as Notepad } from './Notepad.svelte';
+export { default as OnenoteIcon } from './OnenoteIcon.svelte';
+export { default as PptIcon } from './PptIcon.svelte';
+export { default as RoundAlt } from './RoundAlt.svelte';
+export { default as SearchIcon } from './SearchIcon.svelte';
+export { default as TxtIcon } from './TxtIcon.svelte';
+export { default as XlsxIcon } from './XlsxIcon.svelte';

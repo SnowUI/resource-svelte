@@ -1,0 +1,12 @@
+<script lang="ts">
+  import IconBase from '../../lib/IconBase.svelte';
+  import type { IconProps } from '../../lib/types';
+  
+  const weights = { 'regular': `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M22.017 12.398a1.5 1.5 0 0 1 .085 2.12l-5.622 6.09a2 2 0 0 1-2.975-.039l-3.134-3.581a1.5 1.5 0 1 1 2.258-1.976l2.4 2.744 4.869-5.273a1.5 1.5 0 0 1 2.12-.085" clip-rule="evenodd"/>` } as const;
+  const meta = { collection: 'snowui', usageName: 'checkbox-true', componentName: 'CheckboxTrue' } as const;
+  const defaultViewBox = "0 0 32 32";
+
+  let { viewBox = defaultViewBox, ...rest }: IconProps = $props();
+</script>
+
+<IconBase {meta} viewBox={viewBox} weights={weights} {...rest} />
