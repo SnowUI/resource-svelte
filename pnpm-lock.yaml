@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@snowui-design-system/resource-base':
-        specifier: ^1.0.27
-        version: 1.0.27
+        specifier: ^1.0.28
+        version: 1.0.28
     devDependencies:
       '@types/node':
         specifier: ^20.0.0
@@ -468,8 +468,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@snowui-design-system/resource-base@1.0.27':
-    resolution: {integrity: sha512-hdEV7IMqVL7kRAmTNlI1DUdnGWn+enCjRLXugOMnoQPWlZi/EYDzq0fD7pRfwdslMteOsgdorMnuppSxyHVzCQ==}
+  '@snowui-design-system/resource-base@1.0.28':
+    resolution: {integrity: sha512-IEmNXkmGHfGonbOAHVpUjOjJL+UvBeOQOg1yYbERGDqHLj7dtN5JHquLAwqw704EwVi/bkL+1KTUrRYYQm0VyA==}
 
   '@sveltejs/acorn-typescript@1.0.7':
     resolution: {integrity: sha512-znp1A/Y1Jj4l/Zy7PX5DZKBE0ZNY+5QBngiE21NJkfSTyzzC5iKNWOtwFXKtIrn7MXEFBck4jD95iBNkGjK92Q==}
@@ -978,7 +978,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.53.3':
     optional: true
 
-  '@snowui-design-system/resource-base@1.0.27': {}
+  '@snowui-design-system/resource-base@1.0.28': {}
 
   '@sveltejs/acorn-typescript@1.0.7(acorn@8.15.0)':
     dependencies:
