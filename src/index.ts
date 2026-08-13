@@ -177,6 +177,7 @@ export { default as Slack } from './logos/Slack.svelte';
 export { default as Snapchat } from './logos/Snapchat.svelte';
 export { default as SnowLogo } from './logos/SnowLogo.svelte';
 export { default as Stripe } from './logos/Stripe.svelte';
+export { default as Svelte } from './logos/Svelte.svelte';
 export { default as Telegram } from './logos/Telegram.svelte';
 export { default as Threads } from './logos/Threads.svelte';
 export { default as TikTok } from './logos/TikTok.svelte';

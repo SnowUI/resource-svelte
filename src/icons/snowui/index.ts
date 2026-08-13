@@ -6,7 +6,6 @@ export { default as ArrowLineLeft } from './ArrowLineLeft.svelte';
 export { default as ArrowLineRight } from './ArrowLineRight.svelte';
 export { default as ArrowLineUp } from './ArrowLineUp.svelte';
 export { default as ArrowLineUpDown } from './ArrowLineUpDown.svelte';
-export { default as ArrowRight } from './ArrowRight.svelte';
 export { default as ArrowRise } from './ArrowRise.svelte';
 export { default as ArrowsDown } from './ArrowsDown.svelte';
 export { default as ArrowsDownUp } from './ArrowsDownUp.svelte';

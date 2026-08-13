@@ -1256,7 +1256,6 @@ import snowui_ArrowLineLeft from './snowui/ArrowLineLeft.svelte';
 import snowui_ArrowLineRight from './snowui/ArrowLineRight.svelte';
 import snowui_ArrowLineUp from './snowui/ArrowLineUp.svelte';
 import snowui_ArrowLineUpDown from './snowui/ArrowLineUpDown.svelte';
-import snowui_ArrowRight from './snowui/ArrowRight.svelte';
 import snowui_ArrowRise from './snowui/ArrowRise.svelte';
 import snowui_ArrowsDown from './snowui/ArrowsDown.svelte';
 import snowui_ArrowsDownUp from './snowui/ArrowsDownUp.svelte';
@@ -1350,7 +1349,6 @@ function _ensure() {
     'arrow-line-right': snowui_ArrowLineRight,
     'arrow-line-up': snowui_ArrowLineUp,
     'arrow-line-up-down': snowui_ArrowLineUpDown,
-    'arrow-right': snowui_ArrowRight,
     'arrow-rise': snowui_ArrowRise,
     'arrows-down': snowui_ArrowsDown,
     'arrows-down-up': snowui_ArrowsDownUp,
@@ -2777,7 +2775,7 @@ function _ensure() {
     'arrow-line-up-down': snowui_ArrowLineUpDown,
     'arrow-line-up-left': phosphor_ArrowLineUpLeft,
     'arrow-line-up-right': phosphor_ArrowLineUpRight,
-    'arrow-right': snowui_ArrowRight,
+    'arrow-right': phosphor_ArrowRight,
     'arrow-rise': snowui_ArrowRise,
     'arrow-square-down': phosphor_ArrowSquareDown,
     'arrow-square-down-left': phosphor_ArrowSquareDownLeft,

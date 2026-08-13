@@ -134,7 +134,7 @@ __export(index_exports, {
   ArrowLineUpDown: () => ArrowLineUpDown,
   ArrowLineUpLeft: () => ArrowLineUpLeft,
   ArrowLineUpRight: () => ArrowLineUpRight,
-  ArrowRight: () => ArrowRight2,
+  ArrowRight: () => ArrowRight,
   ArrowRise: () => ArrowRise,
   ArrowSquareDown: () => ArrowSquareDown,
   ArrowSquareDownLeft: () => ArrowSquareDownLeft,
@@ -1358,6 +1358,7 @@ __export(index_exports, {
   SunDim: () => SunDim,
   SunHorizon: () => SunHorizon,
   Sunglasses: () => Sunglasses,
+  Svelte: () => Svelte,
   Swap: () => Swap,
   Swatches: () => Swatches,
   SwimmingPool: () => SwimmingPool,
@@ -1550,12 +1551,12 @@ __export(index_exports, {
 module.exports = __toCommonJS(index_exports);
 
 // src/icons/snowui/Add.svelte
-var import_disclose_version1333 = require("svelte/internal/disclose-version");
-var $1333 = __toESM(require("svelte/internal/client"));
-
-// src/lib/IconBase.svelte
 var import_disclose_version1332 = require("svelte/internal/disclose-version");
 var $1332 = __toESM(require("svelte/internal/client"));
+
+// src/lib/IconBase.svelte
+var import_disclose_version1331 = require("svelte/internal/disclose-version");
+var $1331 = __toESM(require("svelte/internal/client"));
 var import_svelte = require("svelte");
 
 // src/lib/types.ts
@@ -45541,17 +45542,17 @@ function ArrowLineUpDown($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ArrowRight.svelte
+// src/icons/snowui/ArrowRise.svelte
 var import_disclose_version1257 = require("svelte/internal/disclose-version");
 var $1257 = __toESM(require("svelte/internal/client"));
-function ArrowRight2($$anchor, $$props) {
+function ArrowRise($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M5 17h22a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2"/><path fill="currentColor" d="m25.586 16-8.293 8.293a1 1 0 0 0 1.414 1.414l9-9a1 1 0 0 0 0-1.414l-9-9a1 1 0 1 0-1.414 1.414z"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16.91 11.216 28 8l-2.76 11.212-3.444-3.306-5.555 5.786a1 1 0 0 1-1.442 0l-4.079-4.248-5.999 6.249a1 1 0 1 1-1.442-1.386l6.72-7a1 1 0 0 1 1.442 0l4.079 4.249 4.833-5.035z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "arrow-right",
-    componentName: "ArrowRight"
+    usageName: "arrow-rise",
+    componentName: "ArrowRise"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1257.prop($$props, "viewBox", 3, defaultViewBox), rest = $1257.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45571,17 +45572,17 @@ function ArrowRight2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ArrowRise.svelte
+// src/icons/snowui/ArrowsDown.svelte
 var import_disclose_version1258 = require("svelte/internal/disclose-version");
 var $1258 = __toESM(require("svelte/internal/client"));
-function ArrowRise($$anchor, $$props) {
+function ArrowsDown($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16.91 11.216 28 8l-2.76 11.212-3.444-3.306-5.555 5.786a1 1 0 0 1-1.442 0l-4.079-4.248-5.999 6.249a1 1 0 1 1-1.442-1.386l6.72-7a1 1 0 0 1 1.442 0l4.079 4.249 4.833-5.035z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M12.707 21.293 15 23.586V6a1 1 0 1 1 2 0v17.586l2.293-2.293a1 1 0 1 1 1.414 1.415l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.415"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "arrow-rise",
-    componentName: "ArrowRise"
+    usageName: "arrows-down",
+    componentName: "ArrowsDown"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1258.prop($$props, "viewBox", 3, defaultViewBox), rest = $1258.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45601,17 +45602,17 @@ function ArrowRise($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ArrowsDown.svelte
+// src/icons/snowui/ArrowsDownUp.svelte
 var import_disclose_version1259 = require("svelte/internal/disclose-version");
 var $1259 = __toESM(require("svelte/internal/client"));
-function ArrowsDown($$anchor, $$props) {
+function ArrowsDownUp2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M12.707 21.293 15 23.586V6a1 1 0 1 1 2 0v17.586l2.293-2.293a1 1 0 1 1 1.414 1.415l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.415"/>`
+    "regular": `<path fill="currentColor" d="M6.707 21.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1.001 1.001 0 0 0-1.414-1.414L10 24.586z"/><path fill="currentColor" d="M9 6v20a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0M25.292 10.707A1.002 1.002 0 0 0 27 10a1 1 0 0 0-.293-.707l-4-4a1 1 0 0 0-1.414 0l-4 4a1 1 0 0 0 1.414 1.414L22 7.414z"/><path fill="currentColor" d="M23 26V6a1 1 0 1 0-2 0v20a1 1 0 1 0 2 0"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "arrows-down",
-    componentName: "ArrowsDown"
+    usageName: "arrows-down-up",
+    componentName: "ArrowsDownUp"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1259.prop($$props, "viewBox", 3, defaultViewBox), rest = $1259.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45631,17 +45632,17 @@ function ArrowsDown($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ArrowsDownUp.svelte
+// src/icons/snowui/ArrowsUp.svelte
 var import_disclose_version1260 = require("svelte/internal/disclose-version");
 var $1260 = __toESM(require("svelte/internal/client"));
-function ArrowsDownUp2($$anchor, $$props) {
+function ArrowsUp($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M6.707 21.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1.001 1.001 0 0 0-1.414-1.414L10 24.586z"/><path fill="currentColor" d="M9 6v20a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0M25.292 10.707A1.002 1.002 0 0 0 27 10a1 1 0 0 0-.293-.707l-4-4a1 1 0 0 0-1.414 0l-4 4a1 1 0 0 0 1.414 1.414L22 7.414z"/><path fill="currentColor" d="M23 26V6a1 1 0 1 0-2 0v20a1 1 0 1 0 2 0"/>`
+    "regular": `<path fill="currentColor" d="m17 8.414 2.293 2.293a1 1 0 0 0 1.414-1.414l-4-4a1 1 0 0 0-1.414 0l-4 4a1.001 1.001 0 0 0 1.414 1.414L15 8.414V26a1 1 0 1 0 2 0z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "arrows-down-up",
-    componentName: "ArrowsDownUp"
+    usageName: "arrows-up",
+    componentName: "ArrowsUp"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1260.prop($$props, "viewBox", 3, defaultViewBox), rest = $1260.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45661,17 +45662,17 @@ function ArrowsDownUp2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ArrowsUp.svelte
+// src/icons/snowui/Badge.svelte
 var import_disclose_version1261 = require("svelte/internal/disclose-version");
 var $1261 = __toESM(require("svelte/internal/client"));
-function ArrowsUp($$anchor, $$props) {
+function Badge($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m17 8.414 2.293 2.293a1 1 0 0 0 1.414-1.414l-4-4a1 1 0 0 0-1.414 0l-4 4a1.001 1.001 0 0 0 1.414 1.414L15 8.414V26a1 1 0 1 0 2 0z"/>`
+    "regular": `<path fill="currentColor" d="M14.522 1.623a2 2 0 0 1 2.956 0l.971 1.065a2 2 0 0 0 2.086.56l1.373-.438a2 2 0 0 1 2.561 1.478l.308 1.409a2 2 0 0 0 1.526 1.526l1.409.308a2 2 0 0 1 1.478 2.56l-.437 1.375a2 2 0 0 0 .559 2.085l1.065.97a2 2 0 0 1 0 2.957l-1.065.971a2 2 0 0 0-.56 2.086l.438 1.373a2 2 0 0 1-1.478 2.561l-1.408.308a2 2 0 0 0-1.527 1.527l-.308 1.408a2 2 0 0 1-2.56 1.478l-1.374-.437a2 2 0 0 0-2.086.559l-.97 1.065a2 2 0 0 1-2.957 0l-.971-1.065a2 2 0 0 0-2.086-.559l-1.373.437a2 2 0 0 1-2.561-1.478l-.308-1.408a2 2 0 0 0-1.527-1.527l-1.408-.308a2 2 0 0 1-1.478-2.56l.437-1.374a2 2 0 0 0-.559-2.085l-1.065-.971a2 2 0 0 1 0-2.957l1.065-.971a2 2 0 0 0 .56-2.085l-.438-1.374a2 2 0 0 1 1.478-2.56l1.408-.309a2 2 0 0 0 1.527-1.526l.308-1.409a2 2 0 0 1 2.56-1.478l1.374.437a2 2 0 0 0 2.086-.559z"/><path fill="#fff" fill-rule="evenodd" d="M16 7a.514.514 0 0 0-.514.514v6.748c0 .155 0 .233-.031.27a.13.13 0 0 1-.108.044c-.047-.004-.102-.059-.213-.169l-4.77-4.771a.514.514 0 0 0-.728.727l4.771 4.772c.11.11.165.165.17.212a.13.13 0 0 1-.046.108c-.036.03-.114.03-.27.03H7.515a.514.514 0 0 0 0 1.03h6.748c.156 0 .233 0 .27.03a.13.13 0 0 1 .044.108c-.004.047-.059.102-.169.213l-4.771 4.77a.514.514 0 1 0 .727.728l4.772-4.771c.11-.11.165-.166.212-.17a.13.13 0 0 1 .108.046c.03.036.03.113.03.27v6.747a.514.514 0 0 0 1.03 0v-6.748c0-.155 0-.233.03-.27a.13.13 0 0 1 .108-.044c.047.003.102.059.213.169l4.77 4.771a.514.514 0 0 0 .728-.727l-4.771-4.771c-.11-.11-.166-.166-.17-.213a.13.13 0 0 1 .046-.108c.036-.03.113-.03.27-.03h6.747a.514.514 0 0 0 0-1.03h-6.748c-.155 0-.233 0-.27-.03a.13.13 0 0 1-.044-.108c.003-.047.059-.102.169-.213l4.771-4.77a.514.514 0 0 0-.727-.728l-4.771 4.771c-.11.11-.166.165-.213.17a.13.13 0 0 1-.108-.046c-.03-.036-.03-.113-.03-.27V7.515A.514.514 0 0 0 16 7" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "arrows-up",
-    componentName: "ArrowsUp"
+    usageName: "badge",
+    componentName: "Badge"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1261.prop($$props, "viewBox", 3, defaultViewBox), rest = $1261.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45691,17 +45692,17 @@ function ArrowsUp($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Badge.svelte
+// src/icons/snowui/ChatDashed.svelte
 var import_disclose_version1262 = require("svelte/internal/disclose-version");
 var $1262 = __toESM(require("svelte/internal/client"));
-function Badge($$anchor, $$props) {
+function ChatDashed($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M14.522 1.623a2 2 0 0 1 2.956 0l.971 1.065a2 2 0 0 0 2.086.56l1.373-.438a2 2 0 0 1 2.561 1.478l.308 1.409a2 2 0 0 0 1.526 1.526l1.409.308a2 2 0 0 1 1.478 2.56l-.437 1.375a2 2 0 0 0 .559 2.085l1.065.97a2 2 0 0 1 0 2.957l-1.065.971a2 2 0 0 0-.56 2.086l.438 1.373a2 2 0 0 1-1.478 2.561l-1.408.308a2 2 0 0 0-1.527 1.527l-.308 1.408a2 2 0 0 1-2.56 1.478l-1.374-.437a2 2 0 0 0-2.086.559l-.97 1.065a2 2 0 0 1-2.957 0l-.971-1.065a2 2 0 0 0-2.086-.559l-1.373.437a2 2 0 0 1-2.561-1.478l-.308-1.408a2 2 0 0 0-1.527-1.527l-1.408-.308a2 2 0 0 1-1.478-2.56l.437-1.374a2 2 0 0 0-.559-2.085l-1.065-.971a2 2 0 0 1 0-2.957l1.065-.971a2 2 0 0 0 .56-2.085l-.438-1.374a2 2 0 0 1 1.478-2.56l1.408-.309a2 2 0 0 0 1.527-1.526l.308-1.409a2 2 0 0 1 2.56-1.478l1.374.437a2 2 0 0 0 2.086-.559z"/><path fill="#fff" fill-rule="evenodd" d="M16 7a.514.514 0 0 0-.514.514v6.748c0 .155 0 .233-.031.27a.13.13 0 0 1-.108.044c-.047-.004-.102-.059-.213-.169l-4.77-4.771a.514.514 0 0 0-.728.727l4.771 4.772c.11.11.165.165.17.212a.13.13 0 0 1-.046.108c-.036.03-.114.03-.27.03H7.515a.514.514 0 0 0 0 1.03h6.748c.156 0 .233 0 .27.03a.13.13 0 0 1 .044.108c-.004.047-.059.102-.169.213l-4.771 4.77a.514.514 0 1 0 .727.728l4.772-4.771c.11-.11.165-.166.212-.17a.13.13 0 0 1 .108.046c.03.036.03.113.03.27v6.747a.514.514 0 0 0 1.03 0v-6.748c0-.155 0-.233.03-.27a.13.13 0 0 1 .108-.044c.047.003.102.059.213.169l4.77 4.771a.514.514 0 0 0 .728-.727l-4.771-4.771c-.11-.11-.166-.166-.17-.213a.13.13 0 0 1 .046-.108c.036-.03.113-.03.27-.03h6.747a.514.514 0 0 0 0-1.03h-6.748c-.155 0-.233 0-.27-.03a.13.13 0 0 1-.044-.108c.003-.047.059-.102.169-.213l4.771-4.77a.514.514 0 0 0-.727-.728l-4.771 4.771c-.11.11-.166.165-.213.17a.13.13 0 0 1-.108-.046c-.03-.036-.03-.113-.03-.27V7.515A.514.514 0 0 0 16 7" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M4.553 21.904a.983.983 0 1 1 1.872.604l-1.455 4.52 1.3-.454h.001l4.318-1.504.384.214q.597.331 1.235.587a.985.985 0 0 1-.73 1.83 13 13 0 0 1-1.063-.485l-4.799 1.672a2 2 0 0 1-.143.044l-.022.004q-.058.016-.116.027-.03.007-.062.01l-.069.012c-1.33.169-2.486-1.074-2.143-2.433q.016-.064.037-.129l.435-1.351v-.002zM18.326 26.432a.984.984 0 0 1 .382 1.932 12.8 12.8 0 0 1-4.106.142.985.985 0 0 1 .246-1.954 11 11 0 0 0 3.478-.12M25.21 21.823a.984.984 0 1 1 1.636 1.095 12.9 12.9 0 0 1-3.527 3.532.983.983 0 1 1-1.094-1.637 10.9 10.9 0 0 0 2.986-2.99M27.6 12.53a.985.985 0 0 1 1.157.776q.241 1.215.243 2.498-.002 1.283-.243 2.498a.985.985 0 1 1-1.93-.383q.204-1.027.206-2.115-.001-1.089-.206-2.115a.985.985 0 0 1 .774-1.158M3.671 13.306a.984.984 0 1 1 1.93.383 10.9 10.9 0 0 0-.127 3.428.984.984 0 1 1-1.953.237 13 13 0 0 1 .15-4.048M9.11 5.157a.983.983 0 1 1 1.093 1.637 10.9 10.9 0 0 0-2.986 2.99.984.984 0 1 1-1.635-1.095A12.9 12.9 0 0 1 9.11 5.157M21.954 5.428a.983.983 0 0 1 1.365-.27 12.9 12.9 0 0 1 3.527 3.531.984.984 0 1 1-1.635 1.096 10.9 10.9 0 0 0-2.986-2.99.987.987 0 0 1-.271-1.367M16.214 3q1.282.002 2.494.243a.986.986 0 0 1-.382 1.933 11 11 0 0 0-2.112-.206c-.723 0-1.43.07-2.112.206a.984.984 0 1 1-.382-1.933A13 13 0 0 1 16.214 3"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "badge",
-    componentName: "Badge"
+    usageName: "chat-dashed",
+    componentName: "ChatDashed"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1262.prop($$props, "viewBox", 3, defaultViewBox), rest = $1262.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45721,17 +45722,17 @@ function Badge($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ChatDashed.svelte
+// src/icons/snowui/CheckboxFalse.svelte
 var import_disclose_version1263 = require("svelte/internal/disclose-version");
 var $1263 = __toESM(require("svelte/internal/client"));
-function ChatDashed($$anchor, $$props) {
+function CheckboxFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M4.553 21.904a.983.983 0 1 1 1.872.604l-1.455 4.52 1.3-.454h.001l4.318-1.504.384.214q.597.331 1.235.587a.985.985 0 0 1-.73 1.83 13 13 0 0 1-1.063-.485l-4.799 1.672a2 2 0 0 1-.143.044l-.022.004q-.058.016-.116.027-.03.007-.062.01l-.069.012c-1.33.169-2.486-1.074-2.143-2.433q.016-.064.037-.129l.435-1.351v-.002zM18.326 26.432a.984.984 0 0 1 .382 1.932 12.8 12.8 0 0 1-4.106.142.985.985 0 0 1 .246-1.954 11 11 0 0 0 3.478-.12M25.21 21.823a.984.984 0 1 1 1.636 1.095 12.9 12.9 0 0 1-3.527 3.532.983.983 0 1 1-1.094-1.637 10.9 10.9 0 0 0 2.986-2.99M27.6 12.53a.985.985 0 0 1 1.157.776q.241 1.215.243 2.498-.002 1.283-.243 2.498a.985.985 0 1 1-1.93-.383q.204-1.027.206-2.115-.001-1.089-.206-2.115a.985.985 0 0 1 .774-1.158M3.671 13.306a.984.984 0 1 1 1.93.383 10.9 10.9 0 0 0-.127 3.428.984.984 0 1 1-1.953.237 13 13 0 0 1 .15-4.048M9.11 5.157a.983.983 0 1 1 1.093 1.637 10.9 10.9 0 0 0-2.986 2.99.984.984 0 1 1-1.635-1.095A12.9 12.9 0 0 1 9.11 5.157M21.954 5.428a.983.983 0 0 1 1.365-.27 12.9 12.9 0 0 1 3.527 3.531.984.984 0 1 1-1.635 1.096 10.9 10.9 0 0 0-2.986-2.99.987.987 0 0 1-.271-1.367M16.214 3q1.282.002 2.494.243a.986.986 0 0 1-.382 1.933 11 11 0 0 0-2.112-.206c-.723 0-1.43.07-2.112.206a.984.984 0 1 1-.382-1.933A13 13 0 0 1 16.214 3"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M17.2 4h-2.4c-2.273 0-3.858.002-5.092.102-1.21.1-1.905.284-2.432.552a6 6 0 0 0-2.622 2.622c-.268.527-.453 1.222-.552 2.432C4.002 10.942 4 12.527 4 14.8v2.4c0 2.273.002 3.858.102 5.092.1 1.21.284 1.905.552 2.432a6 6 0 0 0 2.622 2.622c.527.268 1.222.453 2.432.552 1.234.1 2.819.102 5.092.102h2.4c2.273 0 3.858-.002 5.092-.102 1.21-.1 1.905-.284 2.432-.552a6 6 0 0 0 2.622-2.622c.268-.527.453-1.222.552-2.433.1-1.233.102-2.818.102-5.091v-2.4c0-2.273-.002-3.858-.102-5.092-.1-1.21-.284-1.905-.552-2.432a6 6 0 0 0-2.622-2.622c-.527-.268-1.222-.453-2.433-.552C21.059 4.002 19.473 4 17.2 4M2.872 6.368C2 8.08 2 10.32 2 14.8v2.4c0 4.48 0 6.72.872 8.432a8 8 0 0 0 3.496 3.496C8.08 30 10.32 30 14.8 30h2.4c4.48 0 6.72 0 8.432-.872a8 8 0 0 0 3.496-3.496C30 23.92 30 21.68 30 17.2v-2.4c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C23.92 2 21.68 2 17.2 2h-2.4c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496" clip-rule="evenodd" opacity=".2"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "chat-dashed",
-    componentName: "ChatDashed"
+    usageName: "checkbox-false",
+    componentName: "CheckboxFalse"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1263.prop($$props, "viewBox", 3, defaultViewBox), rest = $1263.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45751,17 +45752,17 @@ function ChatDashed($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/CheckboxFalse.svelte
+// src/icons/snowui/CheckboxMultiple.svelte
 var import_disclose_version1264 = require("svelte/internal/disclose-version");
 var $1264 = __toESM(require("svelte/internal/client"));
-function CheckboxFalse($$anchor, $$props) {
+function CheckboxMultiple($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M17.2 4h-2.4c-2.273 0-3.858.002-5.092.102-1.21.1-1.905.284-2.432.552a6 6 0 0 0-2.622 2.622c-.268.527-.453 1.222-.552 2.432C4.002 10.942 4 12.527 4 14.8v2.4c0 2.273.002 3.858.102 5.092.1 1.21.284 1.905.552 2.432a6 6 0 0 0 2.622 2.622c.527.268 1.222.453 2.432.552 1.234.1 2.819.102 5.092.102h2.4c2.273 0 3.858-.002 5.092-.102 1.21-.1 1.905-.284 2.432-.552a6 6 0 0 0 2.622-2.622c.268-.527.453-1.222.552-2.433.1-1.233.102-2.818.102-5.091v-2.4c0-2.273-.002-3.858-.102-5.092-.1-1.21-.284-1.905-.552-2.432a6 6 0 0 0-2.622-2.622c-.527-.268-1.222-.453-2.433-.552C21.059 4.002 19.473 4 17.2 4M2.872 6.368C2 8.08 2 10.32 2 14.8v2.4c0 4.48 0 6.72.872 8.432a8 8 0 0 0 3.496 3.496C8.08 30 10.32 30 14.8 30h2.4c4.48 0 6.72 0 8.432-.872a8 8 0 0 0 3.496-3.496C30 23.92 30 21.68 30 17.2v-2.4c0-4.48 0-6.72-.872-8.432a8 8 0 0 0-3.496-3.496C23.92 2 21.68 2 17.2 2h-2.4c-4.48 0-6.72 0-8.432.872a8 8 0 0 0-3.496 3.496" clip-rule="evenodd" opacity=".2"/>`
+    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M9.5 16a1.5 1.5 0 0 1 1.5-1.5h10a1.5 1.5 0 0 1 0 3H11A1.5 1.5 0 0 1 9.5 16" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "checkbox-false",
-    componentName: "CheckboxFalse"
+    usageName: "checkbox-multiple",
+    componentName: "CheckboxMultiple"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1264.prop($$props, "viewBox", 3, defaultViewBox), rest = $1264.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45781,17 +45782,17 @@ function CheckboxFalse($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/CheckboxMultiple.svelte
+// src/icons/snowui/CheckboxTrue.svelte
 var import_disclose_version1265 = require("svelte/internal/disclose-version");
 var $1265 = __toESM(require("svelte/internal/client"));
-function CheckboxMultiple($$anchor, $$props) {
+function CheckboxTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M9.5 16a1.5 1.5 0 0 1 1.5-1.5h10a1.5 1.5 0 0 1 0 3H11A1.5 1.5 0 0 1 9.5 16" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M22.017 12.398a1.5 1.5 0 0 1 .085 2.12l-5.622 6.09a2 2 0 0 1-2.975-.039l-3.134-3.581a1.5 1.5 0 1 1 2.258-1.976l2.4 2.744 4.869-5.273a1.5 1.5 0 0 1 2.12-.085" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "checkbox-multiple",
-    componentName: "CheckboxMultiple"
+    usageName: "checkbox-true",
+    componentName: "CheckboxTrue"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1265.prop($$props, "viewBox", 3, defaultViewBox), rest = $1265.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45811,17 +45812,17 @@ function CheckboxMultiple($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/CheckboxTrue.svelte
+// src/icons/snowui/Chip.svelte
 var import_disclose_version1266 = require("svelte/internal/disclose-version");
 var $1266 = __toESM(require("svelte/internal/client"));
-function CheckboxTrue($$anchor, $$props) {
+function Chip($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M2 14.8c0-4.48 0-6.72.872-8.432a8 8 0 0 1 3.496-3.496C8.08 2 10.32 2 14.8 2h2.4c4.48 0 6.72 0 8.432.872a8 8 0 0 1 3.496 3.496C30 8.08 30 10.32 30 14.8v2.4c0 4.48 0 6.72-.872 8.432a8 8 0 0 1-3.496 3.496C23.92 30 21.68 30 17.2 30h-2.4c-4.48 0-6.72 0-8.432-.872a8 8 0 0 1-3.496-3.496C2 23.92 2 21.68 2 17.2z"/><path fill="#fff" fill-rule="evenodd" d="M22.017 12.398a1.5 1.5 0 0 1 .085 2.12l-5.622 6.09a2 2 0 0 1-2.975-.039l-3.134-3.581a1.5 1.5 0 1 1 2.258-1.976l2.4 2.744 4.869-5.273a1.5 1.5 0 0 1 2.12-.085" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M0 8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4z" opacity=".04"/><path fill="currentColor" fill-rule="evenodd" d="M28 4a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4zm-6.5 1H4a3 3 0 0 0-3 3v3.5h6.375a4.125 4.125 0 0 1 4.125 4.125V27h10zm1 22H28a3 3 0 0 0 3-3v-.27h-8.5zm8.5-4.27v-5.025h-8.5v5.026zm0-6.025V11.68h-8.5v5.025zm0-6.025V8a3 3 0 0 0-3-3h-5.5v5.68zM1 17.232V12.5h6.375c1.726 0 3.125 1.4 3.125 3.125v1.607zm0 5.731v-4.731h9.5v4.731zM1 24v-.037h9.5V27H4a3 3 0 0 1-3-3" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "checkbox-true",
-    componentName: "CheckboxTrue"
+    usageName: "chip",
+    componentName: "Chip"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1266.prop($$props, "viewBox", 3, defaultViewBox), rest = $1266.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45841,17 +45842,22 @@ function CheckboxTrue($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Chip.svelte
+// src/icons/snowui/Clipboard.svelte
 var import_disclose_version1267 = require("svelte/internal/disclose-version");
 var $1267 = __toESM(require("svelte/internal/client"));
-function Chip($$anchor, $$props) {
+function Clipboard2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M0 8a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4z" opacity=".04"/><path fill="currentColor" fill-rule="evenodd" d="M28 4a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4zm-6.5 1H4a3 3 0 0 0-3 3v3.5h6.375a4.125 4.125 0 0 1 4.125 4.125V27h10zm1 22H28a3 3 0 0 0 3-3v-.27h-8.5zm8.5-4.27v-5.025h-8.5v5.026zm0-6.025V11.68h-8.5v5.025zm0-6.025V8a3 3 0 0 0-3-3h-5.5v5.68zM1 17.232V12.5h6.375c1.726 0 3.125 1.4 3.125 3.125v1.607zm0 5.731v-4.731h9.5v4.731zM1 24v-.037h9.5V27H4a3 3 0 0 1-3-3" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M21 19a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1m-1-5h-8a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2m7-8v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4.533a5.99 5.99 0 0 1 8.935 0H25a2 2 0 0 1 2 2M12 8h8a4 4 0 1 0-8 0m13-2h-3.344A6 6 0 0 1 22 8v1a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V8c0-.682.116-1.358.344-2H7v21h18z"/>`,
+    "thin": `<path fill="currentColor" d="M20.5 19a.5.5 0 0 1-.5.5h-8a.5.5 0 1 1 0-1h8a.5.5 0 0 1 .5.5m-.5-4.5h-8a.5.5 0 0 0 0 1h8a.5.5 0 1 0 0-1M26.5 6v21a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 27V6A1.5 1.5 0 0 1 7 4.5h4.76a5.5 5.5 0 0 1 8.48 0H25A1.5 1.5 0 0 1 26.5 6m-15 2v.5h9V8a4.5 4.5 0 1 0-9 0m14-2a.5.5 0 0 0-.5-.5h-4.104c.398.773.604 1.63.604 2.5v1a.5.5 0 0 1-.5.5H11a.5.5 0 0 1-.5-.5V8c0-.87.206-1.727.604-2.5H7a.5.5 0 0 0-.5.5v21a.5.5 0 0 0 .5.5h18a.5.5 0 0 0 .5-.5z"/>`,
+    "light": `<path fill="currentColor" d="M20.75 19a.75.75 0 0 1-.75.75h-8a.75.75 0 1 1 0-1.5h8a.75.75 0 0 1 .75.75M20 14.25h-8a.75.75 0 1 0 0 1.5h8a.75.75 0 1 0 0-1.5M26.75 6v21A1.75 1.75 0 0 1 25 28.75H7A1.75 1.75 0 0 1 5.25 27V6A1.75 1.75 0 0 1 7 4.25h4.646a5.74 5.74 0 0 1 8.708 0H25A1.75 1.75 0 0 1 26.75 6m-15 2v.25h8.5V8a4.25 4.25 0 0 0-8.5 0m13.5-2a.25.25 0 0 0-.25-.25h-3.709c.304.711.46 1.477.459 2.25v1a.75.75 0 0 1-.75.75H11a.75.75 0 0 1-.75-.75V8c0-.773.155-1.539.459-2.25H7a.25.25 0 0 0-.25.25v21a.25.25 0 0 0 .25.25h18a.25.25 0 0 0 .25-.25z"/>`,
+    "bold": `<path fill="currentColor" d="M21.5 19.5A1.5 1.5 0 0 1 20 21h-8a1.5 1.5 0 1 1 0-3h8a1.5 1.5 0 0 1 1.5 1.5M20 13h-8a1.5 1.5 0 0 0 0 3h8a1.5 1.5 0 1 0 0-3m7.5-7v21a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 27V6A2.5 2.5 0 0 1 7 3.5h4.316a6.486 6.486 0 0 1 9.368 0H25A2.5 2.5 0 0 1 27.5 6M16 4.5a3.5 3.5 0 0 0-3.464 3h6.928A3.5 3.5 0 0 0 16 4.5m8.5 2h-2.176c.116.491.176.995.176 1.5v1a1.5 1.5 0 0 1-1.5 1.5H11A1.5 1.5 0 0 1 9.5 9V8c0-.505.06-1.009.176-1.5H7.5v20h17z"/>`,
+    "fill": `<path fill="currentColor" d="M25 4h-4.532a5.99 5.99 0 0 0-8.935 0H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-9 0a4 4 0 0 1 4 4h-8a4 4 0 0 1 4-4m4 16h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 0 2m0-4h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 0 2"/>`,
+    "duotone": `<path fill="currentColor" d="M26 6v21a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5a4.98 4.98 0 0 0-1 3v1h10V8a4.98 4.98 0 0 0-1-3h5a1 1 0 0 1 1 1" opacity=".08"/><path fill="currentColor" d="M21 19a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1m-1-5h-8a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2m7-8v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4.533a5.99 5.99 0 0 1 8.935 0H25a2 2 0 0 1 2 2M12 8h8a4 4 0 1 0-8 0m13-2h-3.344A6 6 0 0 1 22 8v1a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V8c0-.682.116-1.358.344-2H7v21h18z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "chip",
-    componentName: "Chip"
+    usageName: "clipboard",
+    componentName: "Clipboard"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1267.prop($$props, "viewBox", 3, defaultViewBox), rest = $1267.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45871,22 +45877,17 @@ function Chip($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Clipboard.svelte
+// src/icons/snowui/Close.svelte
 var import_disclose_version1268 = require("svelte/internal/disclose-version");
 var $1268 = __toESM(require("svelte/internal/client"));
-function Clipboard2($$anchor, $$props) {
+function Close($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M21 19a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1m-1-5h-8a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2m7-8v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4.533a5.99 5.99 0 0 1 8.935 0H25a2 2 0 0 1 2 2M12 8h8a4 4 0 1 0-8 0m13-2h-3.344A6 6 0 0 1 22 8v1a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V8c0-.682.116-1.358.344-2H7v21h18z"/>`,
-    "thin": `<path fill="currentColor" d="M20.5 19a.5.5 0 0 1-.5.5h-8a.5.5 0 1 1 0-1h8a.5.5 0 0 1 .5.5m-.5-4.5h-8a.5.5 0 0 0 0 1h8a.5.5 0 1 0 0-1M26.5 6v21a1.5 1.5 0 0 1-1.5 1.5H7A1.5 1.5 0 0 1 5.5 27V6A1.5 1.5 0 0 1 7 4.5h4.76a5.5 5.5 0 0 1 8.48 0H25A1.5 1.5 0 0 1 26.5 6m-15 2v.5h9V8a4.5 4.5 0 1 0-9 0m14-2a.5.5 0 0 0-.5-.5h-4.104c.398.773.604 1.63.604 2.5v1a.5.5 0 0 1-.5.5H11a.5.5 0 0 1-.5-.5V8c0-.87.206-1.727.604-2.5H7a.5.5 0 0 0-.5.5v21a.5.5 0 0 0 .5.5h18a.5.5 0 0 0 .5-.5z"/>`,
-    "light": `<path fill="currentColor" d="M20.75 19a.75.75 0 0 1-.75.75h-8a.75.75 0 1 1 0-1.5h8a.75.75 0 0 1 .75.75M20 14.25h-8a.75.75 0 1 0 0 1.5h8a.75.75 0 1 0 0-1.5M26.75 6v21A1.75 1.75 0 0 1 25 28.75H7A1.75 1.75 0 0 1 5.25 27V6A1.75 1.75 0 0 1 7 4.25h4.646a5.74 5.74 0 0 1 8.708 0H25A1.75 1.75 0 0 1 26.75 6m-15 2v.25h8.5V8a4.25 4.25 0 0 0-8.5 0m13.5-2a.25.25 0 0 0-.25-.25h-3.709c.304.711.46 1.477.459 2.25v1a.75.75 0 0 1-.75.75H11a.75.75 0 0 1-.75-.75V8c0-.773.155-1.539.459-2.25H7a.25.25 0 0 0-.25.25v21a.25.25 0 0 0 .25.25h18a.25.25 0 0 0 .25-.25z"/>`,
-    "bold": `<path fill="currentColor" d="M21.5 19.5A1.5 1.5 0 0 1 20 21h-8a1.5 1.5 0 1 1 0-3h8a1.5 1.5 0 0 1 1.5 1.5M20 13h-8a1.5 1.5 0 0 0 0 3h8a1.5 1.5 0 1 0 0-3m7.5-7v21a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 27V6A2.5 2.5 0 0 1 7 3.5h4.316a6.486 6.486 0 0 1 9.368 0H25A2.5 2.5 0 0 1 27.5 6M16 4.5a3.5 3.5 0 0 0-3.464 3h6.928A3.5 3.5 0 0 0 16 4.5m8.5 2h-2.176c.116.491.176.995.176 1.5v1a1.5 1.5 0 0 1-1.5 1.5H11A1.5 1.5 0 0 1 9.5 9V8c0-.505.06-1.009.176-1.5H7.5v20h17z"/>`,
-    "fill": `<path fill="currentColor" d="M25 4h-4.532a5.99 5.99 0 0 0-8.935 0H7a2 2 0 0 0-2 2v21a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-9 0a4 4 0 0 1 4 4h-8a4 4 0 0 1 4-4m4 16h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 0 2m0-4h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 0 2"/>`,
-    "duotone": `<path fill="currentColor" d="M26 6v21a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5a4.98 4.98 0 0 0-1 3v1h10V8a4.98 4.98 0 0 0-1-3h5a1 1 0 0 1 1 1" opacity=".08"/><path fill="currentColor" d="M21 19a1 1 0 0 1-1 1h-8a1 1 0 1 1 0-2h8a1 1 0 0 1 1 1m-1-5h-8a1 1 0 0 0 0 2h8a1 1 0 1 0 0-2m7-8v21a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h4.533a5.99 5.99 0 0 1 8.935 0H25a2 2 0 0 1 2 2M12 8h8a4 4 0 1 0-8 0m13-2h-3.344A6 6 0 0 1 22 8v1a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V8c0-.682.116-1.358.344-2H7v21h18z"/>`
+    "regular": `<path fill="currentColor" d="M9.855 8.318a1.086 1.086 0 1 0-1.537 1.537L14.464 16l-6.146 6.145a1.086 1.086 0 0 0 1.537 1.537L16 17.536l6.145 6.146a1.086 1.086 0 1 0 1.537-1.537L17.536 16l6.146-6.145a1.086 1.086 0 1 0-1.537-1.537L16 14.464z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "clipboard",
-    componentName: "Clipboard"
+    usageName: "close",
+    componentName: "Close"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1268.prop($$props, "viewBox", 3, defaultViewBox), rest = $1268.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45906,17 +45907,22 @@ function Clipboard2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Close.svelte
+// src/icons/snowui/Copy.svelte
 var import_disclose_version1269 = require("svelte/internal/disclose-version");
 var $1269 = __toESM(require("svelte/internal/client"));
-function Close($$anchor, $$props) {
+function Copy2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M9.855 8.318a1.086 1.086 0 1 0-1.537 1.537L14.464 16l-6.146 6.145a1.086 1.086 0 0 0 1.537 1.537L16 17.536l6.145 6.146a1.086 1.086 0 1 0 1.537-1.537L17.536 16l6.146-6.145a1.086 1.086 0 1 0-1.537-1.537L16 14.464z"/>`
+    "regular": `<path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-7 22H6V12h14zm6-6h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`,
+    "thin": `<path fill="currentColor" d="M27 4.5H11a.5.5 0 0 0-.5.5v5.5H5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h16a.5.5 0 0 0 .5-.5v-5.5H27a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5m-6.5 22h-15v-15h15zm6-6h-5V11a.5.5 0 0 0-.5-.5h-9.5v-5h15z"/>`,
+    "light": `<path fill="currentColor" d="M27 4.25H11a.75.75 0 0 0-.75.75v5.25H5a.75.75 0 0 0-.75.75v16a.75.75 0 0 0 .75.75h16a.75.75 0 0 0 .75-.75v-5.25H27a.75.75 0 0 0 .75-.75V5a.75.75 0 0 0-.75-.75m-6.75 22H5.75v-14.5h14.5zm6-6h-4.5V11a.75.75 0 0 0-.75-.75h-9.25v-4.5h14.5z"/>`,
+    "bold": `<path fill="currentColor" d="M27 3.5H11A1.5 1.5 0 0 0 9.5 5v4.5H5A1.5 1.5 0 0 0 3.5 11v16A1.5 1.5 0 0 0 5 28.5h16a1.5 1.5 0 0 0 1.5-1.5v-4.5H27a1.5 1.5 0 0 0 1.5-1.5V5A1.5 1.5 0 0 0 27 3.5m-7.5 22h-13v-13h13zm6-6h-3V11A1.5 1.5 0 0 0 21 9.5h-8.5v-3h13z"/>`,
+    "fill": `<path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-1 16h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`,
+    "duotone": `<path fill="currentColor" d="M27 5v16h-6V11H11V5z" opacity=".08"/><path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-7 22H6V12h14zm6-6h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "close",
-    componentName: "Close"
+    usageName: "copy",
+    componentName: "Copy"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1269.prop($$props, "viewBox", 3, defaultViewBox), rest = $1269.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45936,22 +45942,18 @@ function Close($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Copy.svelte
+// src/icons/snowui/DotCircle.svelte
 var import_disclose_version1270 = require("svelte/internal/disclose-version");
 var $1270 = __toESM(require("svelte/internal/client"));
-function Copy2($$anchor, $$props) {
+function DotCircle($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-7 22H6V12h14zm6-6h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`,
-    "thin": `<path fill="currentColor" d="M27 4.5H11a.5.5 0 0 0-.5.5v5.5H5a.5.5 0 0 0-.5.5v16a.5.5 0 0 0 .5.5h16a.5.5 0 0 0 .5-.5v-5.5H27a.5.5 0 0 0 .5-.5V5a.5.5 0 0 0-.5-.5m-6.5 22h-15v-15h15zm6-6h-5V11a.5.5 0 0 0-.5-.5h-9.5v-5h15z"/>`,
-    "light": `<path fill="currentColor" d="M27 4.25H11a.75.75 0 0 0-.75.75v5.25H5a.75.75 0 0 0-.75.75v16a.75.75 0 0 0 .75.75h16a.75.75 0 0 0 .75-.75v-5.25H27a.75.75 0 0 0 .75-.75V5a.75.75 0 0 0-.75-.75m-6.75 22H5.75v-14.5h14.5zm6-6h-4.5V11a.75.75 0 0 0-.75-.75h-9.25v-4.5h14.5z"/>`,
-    "bold": `<path fill="currentColor" d="M27 3.5H11A1.5 1.5 0 0 0 9.5 5v4.5H5A1.5 1.5 0 0 0 3.5 11v16A1.5 1.5 0 0 0 5 28.5h16a1.5 1.5 0 0 0 1.5-1.5v-4.5H27a1.5 1.5 0 0 0 1.5-1.5V5A1.5 1.5 0 0 0 27 3.5m-7.5 22h-13v-13h13zm6-6h-3V11A1.5 1.5 0 0 0 21 9.5h-8.5v-3h13z"/>`,
-    "fill": `<path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-1 16h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`,
-    "duotone": `<path fill="currentColor" d="M27 5v16h-6V11H11V5z" opacity=".08"/><path fill="currentColor" d="M27 4H11a1 1 0 0 0-1 1v5H5a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5h5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1m-7 22H6V12h14zm6-6h-4v-9a1 1 0 0 0-1-1h-9V6h14z"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 3a7 7 0 1 0 0-14 7 7 0 0 0 0 14" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" d="M22 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "copy",
-    componentName: "Copy"
+    usageName: "dot-circle",
+    componentName: "DotCircle"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1270.prop($$props, "viewBox", 3, defaultViewBox), rest = $1270.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -45971,18 +45973,18 @@ function Copy2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/DotCircle.svelte
+// src/icons/snowui/DotSquare.svelte
 var import_disclose_version1271 = require("svelte/internal/disclose-version");
 var $1271 = __toESM(require("svelte/internal/client"));
-function DotCircle($$anchor, $$props) {
+function DotSquare($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 20a4 4 0 1 0 0-8 4 4 0 0 0 0 8m0 3a7 7 0 1 0 0-14 7 7 0 0 0 0 14" clip-rule="evenodd"/>`,
-    "fill": `<path fill="currentColor" d="M22 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M14.133 11.8a2.333 2.333 0 0 0-2.333 2.333v3.734a2.333 2.333 0 0 0 2.333 2.333h3.734a2.333 2.333 0 0 0 2.333-2.333v-3.734a2.333 2.333 0 0 0-2.333-2.333zM9 14.133A5.133 5.133 0 0 1 14.133 9h3.734A5.133 5.133 0 0 1 23 14.133v3.734A5.133 5.133 0 0 1 17.867 23h-3.734A5.133 5.133 0 0 1 9 17.867z" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" d="M10 14a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "dot-circle",
-    componentName: "DotCircle"
+    usageName: "dot-square",
+    componentName: "DotSquare"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1271.prop($$props, "viewBox", 3, defaultViewBox), rest = $1271.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46002,18 +46004,17 @@ function DotCircle($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/DotSquare.svelte
+// src/icons/snowui/Explain.svelte
 var import_disclose_version1272 = require("svelte/internal/disclose-version");
 var $1272 = __toESM(require("svelte/internal/client"));
-function DotSquare($$anchor, $$props) {
+function Explain($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M14.133 11.8a2.333 2.333 0 0 0-2.333 2.333v3.734a2.333 2.333 0 0 0 2.333 2.333h3.734a2.333 2.333 0 0 0 2.333-2.333v-3.734a2.333 2.333 0 0 0-2.333-2.333zM9 14.133A5.133 5.133 0 0 1 14.133 9h3.734A5.133 5.133 0 0 1 23 14.133v3.734A5.133 5.133 0 0 1 17.867 23h-3.734A5.133 5.133 0 0 1 9 17.867z" clip-rule="evenodd"/>`,
-    "fill": `<path fill="currentColor" d="M10 14a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v4a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4z"/>`
+    "regular": `<path fill="currentColor" d="M5 9h22a1 1 0 1 0 0-2H5a1 1 0 0 0 0 2M5 17h9a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2M5 25h5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2"/><path fill="currentColor" fill-rule="evenodd" d="M21.68 12.653c.323-.87 1.554-.87 1.876 0l.929 2.508a1 1 0 0 0 .59.591l2.509.929c.87.322.87 1.553 0 1.875l-2.509.929a1 1 0 0 0-.59.59l-.929 2.509c-.322.87-1.553.87-1.875 0l-.658-1.778-5.837 5.837c-.426.426-1.088.455-1.479.064-.39-.39-.362-1.052.065-1.479l5.918-5.918-2.037-.754c-.87-.322-.87-1.553 0-1.875l2.509-.929a1 1 0 0 0 .59-.59zm.48 3.03.459-1.242.459 1.241a2.5 2.5 0 0 0 1.477 1.477l1.241.46-1.241.459a2.5 2.5 0 0 0-1.477 1.477l-.46 1.241-.459-1.241a2.5 2.5 0 0 0-1.477-1.477l-1.241-.46 1.241-.459a2.5 2.5 0 0 0 1.477-1.477" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "dot-square",
-    componentName: "DotSquare"
+    usageName: "explain",
+    componentName: "Explain"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1272.prop($$props, "viewBox", 3, defaultViewBox), rest = $1272.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46033,17 +46034,22 @@ function DotSquare($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Explain.svelte
+// src/icons/snowui/FourLeafClover.svelte
 var import_disclose_version1273 = require("svelte/internal/disclose-version");
 var $1273 = __toESM(require("svelte/internal/client"));
-function Explain($$anchor, $$props) {
+function FourLeafClover($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M5 9h22a1 1 0 1 0 0-2H5a1 1 0 0 0 0 2M5 17h9a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2M5 25h5a1 1 0 1 0 0-2H5a1 1 0 1 0 0 2"/><path fill="currentColor" fill-rule="evenodd" d="M21.68 12.653c.323-.87 1.554-.87 1.876 0l.929 2.508a1 1 0 0 0 .59.591l2.509.929c.87.322.87 1.553 0 1.875l-2.509.929a1 1 0 0 0-.59.59l-.929 2.509c-.322.87-1.553.87-1.875 0l-.658-1.778-5.837 5.837c-.426.426-1.088.455-1.479.064-.39-.39-.362-1.052.065-1.479l5.918-5.918-2.037-.754c-.87-.322-.87-1.553 0-1.875l2.509-.929a1 1 0 0 0 .59-.59zm.48 3.03.459-1.242.459 1.241a2.5 2.5 0 0 0 1.477 1.477l1.241.46-1.241.459a2.5 2.5 0 0 0-1.477 1.477l-.46 1.241-.459-1.241a2.5 2.5 0 0 0-1.477-1.477l-1.241-.46 1.241-.459a2.5 2.5 0 0 0 1.477-1.477" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M14 9.5v3.3a1.2 1.2 0 0 1-1.2 1.2H9.5A4.5 4.5 0 1 1 14 9.5m-10 0a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5M9.5 18h3.3a1.2 1.2 0 0 1 1.2 1.2v3.3A4.5 4.5 0 1 1 9.5 18M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M19.2 14h3.3A4.5 4.5 0 1 0 18 9.5v3.3a1.2 1.2 0 0 0 1.2 1.2m3.3-10A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14h3.3a4.5 4.5 0 1 1-4.5 4.5v-3.3a1.2 1.2 0 0 1 1.2-1.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M13.5 9.5v3.3a.7.7 0 0 1-.7.7H9.5a4 4 0 1 1 4-4M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m5.5 9h3.3a.7.7 0 0 1 .7.7v3.3a4 4 0 1 1-4-4m-5.5 4A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0m15.2-9h3.3a4 4 0 1 0-4-4v3.3a.7.7 0 0 0 .7.7M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14.5h3.3a4 4 0 1 1-4 4v-3.3a.7.7 0 0 1 .7-.7m-2.2.7a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m8 0V12H9.5A2.5 2.5 0 1 1 12 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 20H12v2.5A2.5 2.5 0 1 1 9.5 20M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11M20 12h2.5A2.5 2.5 0 1 0 20 9.5zM17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm3 3.3V20h2.5a2.5 2.5 0 1 1-2.5 2.5" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4m0 13a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zm2.2 7.5a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z" clip-rule="evenodd"/>`,
+    "duotone": `<g opacity=".08"><path fill="currentColor" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4M9.5 17a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zM19.2 17a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z"/></g><path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "explain",
-    componentName: "Explain"
+    usageName: "four-leaf-clover",
+    componentName: "FourLeafClover"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1273.prop($$props, "viewBox", 3, defaultViewBox), rest = $1273.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46063,22 +46069,17 @@ function Explain($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/FourLeafClover.svelte
+// src/icons/snowui/FourPointedStar.svelte
 var import_disclose_version1274 = require("svelte/internal/disclose-version");
 var $1274 = __toESM(require("svelte/internal/client"));
-function FourLeafClover($$anchor, $$props) {
+function FourPointedStar($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M14 9.5v3.3a1.2 1.2 0 0 1-1.2 1.2H9.5A4.5 4.5 0 1 1 14 9.5m-10 0a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5M9.5 18h3.3a1.2 1.2 0 0 1 1.2 1.2v3.3A4.5 4.5 0 1 1 9.5 18M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M19.2 14h3.3A4.5 4.5 0 1 0 18 9.5v3.3a1.2 1.2 0 0 0 1.2 1.2m3.3-10A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14h3.3a4.5 4.5 0 1 1-4.5 4.5v-3.3a1.2 1.2 0 0 1 1.2-1.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
-    "light": `<path fill="currentColor" fill-rule="evenodd" d="M13.5 9.5v3.3a.7.7 0 0 1-.7.7H9.5a4 4 0 1 1 4-4M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m5.5 9h3.3a.7.7 0 0 1 .7.7v3.3a4 4 0 1 1-4-4m-5.5 4A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0m15.2-9h3.3a4 4 0 1 0-4-4v3.3a.7.7 0 0 0 .7.7M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 14.5h3.3a4 4 0 1 1-4 4v-3.3a.7.7 0 0 1 .7-.7m-2.2.7a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5z" clip-rule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m8 0V12H9.5A2.5 2.5 0 1 1 12 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 20H12v2.5A2.5 2.5 0 1 1 9.5 20M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11M20 12h2.5A2.5 2.5 0 1 0 20 9.5zM17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm3 3.3V20h2.5a2.5 2.5 0 1 1-2.5 2.5" clip-rule="evenodd"/>`,
-    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4m0 13a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zm2.2 7.5a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z" clip-rule="evenodd"/>`,
-    "duotone": `<g opacity=".08"><path fill="currentColor" d="M9.5 4a5.5 5.5 0 1 0 0 11h3.3a2.2 2.2 0 0 0 2.2-2.2V9.5A5.5 5.5 0 0 0 9.5 4M9.5 17a5.5 5.5 0 1 0 5.5 5.5v-3.3a2.2 2.2 0 0 0-2.2-2.2zM17 9.5a5.5 5.5 0 1 1 5.5 5.5h-3.3a2.2 2.2 0 0 1-2.2-2.2zM19.2 17a2.2 2.2 0 0 0-2.2 2.2v3.3a5.5 5.5 0 1 0 5.5-5.5z"/></g><path fill="currentColor" fill-rule="evenodd" d="M4 9.5a5.5 5.5 0 1 1 11 0v3.3a2.2 2.2 0 0 1-2.2 2.2H9.5A5.5 5.5 0 0 1 4 9.5m9 0v3.3a.2.2 0 0 1-.2.2H9.5A3.5 3.5 0 1 1 13 9.5M4 22.5A5.5 5.5 0 0 1 9.5 17h3.3a2.2 2.2 0 0 1 2.2 2.2v3.3a5.5 5.5 0 1 1-11 0M9.5 19h3.3c.11 0 .2.09.2.2v3.3A3.5 3.5 0 1 1 9.5 19M22.5 4A5.5 5.5 0 0 0 17 9.5v3.3a2.2 2.2 0 0 0 2.2 2.2h3.3a5.5 5.5 0 1 0 0-11m-3.3 9h3.3A3.5 3.5 0 1 0 19 9.5v3.3c0 .11.09.2.2.2M17 19.2a2.2 2.2 0 0 1 2.2-2.2h3.3a5.5 5.5 0 1 1-5.5 5.5zm2.2-.2h3.3a3.5 3.5 0 1 1-3.5 3.5v-3.3c0-.11.09-.2.2-.2" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="m14.832 22.544-5.376-5.375c-.608-.609-.608-1.73 0-2.338l5.376-5.375c.608-.608 1.728-.608 2.337 0l5.375 5.376c.608.608.608 1.728 0 2.337l-5.375 5.375c-.609.608-1.73.608-2.338 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 9.934a.7.7 0 0 0-.49.175l-5.4 5.4a.7.7 0 0 0-.176.491c0 .22.079.394.175.49l5.4 5.4c.097.097.27.176.491.176s.394-.079.49-.175l5.4-5.4a.7.7 0 0 0 .176-.491.7.7 0 0 0-.175-.49l-5.4-5.4A.7.7 0 0 0 16 9.933M16 8c.648 0 1.343.227 1.858.742l5.4 5.4c.515.515.742 1.21.742 1.858s-.227 1.343-.742 1.858l-5.4 5.4c-.515.515-1.21.742-1.858.742s-1.343-.227-1.858-.742l-5.4-5.4C8.227 17.343 8 16.648 8 16s.227-1.343.742-1.858l5.4-5.4C14.657 8.227 15.352 8 16 8" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "four-leaf-clover",
-    componentName: "FourLeafClover"
+    usageName: "four-pointed-star",
+    componentName: "FourPointedStar"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1274.prop($$props, "viewBox", 3, defaultViewBox), rest = $1274.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46098,17 +46099,17 @@ function FourLeafClover($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/FourPointedStar.svelte
+// src/icons/snowui/Goto.svelte
 var import_disclose_version1275 = require("svelte/internal/disclose-version");
 var $1275 = __toESM(require("svelte/internal/client"));
-function FourPointedStar($$anchor, $$props) {
+function Goto($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m14.832 22.544-5.376-5.375c-.608-.609-.608-1.73 0-2.338l5.376-5.375c.608-.608 1.728-.608 2.337 0l5.375 5.376c.608.608.608 1.728 0 2.337l-5.375 5.375c-.609.608-1.73.608-2.338 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 9.934a.7.7 0 0 0-.49.175l-5.4 5.4a.7.7 0 0 0-.176.491c0 .22.079.394.175.49l5.4 5.4c.097.097.27.176.491.176s.394-.079.49-.175l5.4-5.4a.7.7 0 0 0 .176-.491.7.7 0 0 0-.175-.49l-5.4-5.4A.7.7 0 0 0 16 9.933M16 8c.648 0 1.343.227 1.858.742l5.4 5.4c.515.515.742 1.21.742 1.858s-.227 1.343-.742 1.858l-5.4 5.4c-.515.515-1.21.742-1.858.742s-1.343-.227-1.858-.742l-5.4-5.4C8.227 17.343 8 16.648 8 16s.227-1.343.742-1.858l5.4-5.4C14.657 8.227 15.352 8 16 8" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M26.523 5.402a1 1 0 0 1 1 1v4.904a1 1 0 1 1-2 0v-2.49l-6.442 6.442a1 1 0 0 1-1.414-1.414l6.442-6.442h-2.49a1 1 0 0 1 0-2z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="m4.879 13.98 9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.687a1 1 0 0 0 0 1.414l9.402 9.402a1 1 0 0 0 1.414 0l9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.688a3 3 0 0 1-4.242 0l-9.402-9.402a3 3 0 0 1 0-4.243" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "four-pointed-star",
-    componentName: "FourPointedStar"
+    usageName: "goto",
+    componentName: "Goto"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1275.prop($$props, "viewBox", 3, defaultViewBox), rest = $1275.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46128,17 +46129,17 @@ function FourPointedStar($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Goto.svelte
+// src/icons/snowui/Help.svelte
 var import_disclose_version1276 = require("svelte/internal/disclose-version");
 var $1276 = __toESM(require("svelte/internal/client"));
-function Goto($$anchor, $$props) {
+function Help($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M26.523 5.402a1 1 0 0 1 1 1v4.904a1 1 0 1 1-2 0v-2.49l-6.442 6.442a1 1 0 0 1-1.414-1.414l6.442-6.442h-2.49a1 1 0 0 1 0-2z" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="m4.879 13.98 9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.687a1 1 0 0 0 0 1.414l9.402 9.402a1 1 0 0 0 1.414 0l9.687-9.687a1 1 0 0 1 1.414 1.414l-9.687 9.688a3 3 0 0 1-4.242 0l-9.402-9.402a3 3 0 0 1 0-4.243" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.284 27.049S18.986 28 16.5 28H5.976s-.395.005-.76-.143c0 0-.366-.149-.645-.428 0 0-.279-.28-.428-.645 0 0-.148-.365-.143-.746V15.5s0-2.486.952-4.783c0 0 .951-2.298 2.71-4.056 0 0 1.757-1.758 4.055-2.71 0 0 2.297-.951 4.783-.951 0 0 2.486 0 4.784.952 0 0 2.297.951 4.055 2.71 0 0 1.758 1.757 2.71 4.055 0 0 .951 2.297.951 4.783v.003s0 2.485-.951 4.78c0 0-.952 2.298-2.71 4.056 0 0-1.758 1.758-4.055 2.71M16.5 5s-2.089 0-4.018.8c0 0-1.93.799-3.407 2.275 0 0-1.476 1.477-2.276 3.407 0 0-.799 1.93-.799 4.018V26h10.5s2.089 0 4.018-.8c0 0 1.93-.799 3.407-2.275 0 0 1.476-1.477 2.276-3.407 0 0 .799-1.93.799-4.018 0 0 0-2.089-.8-4.018 0 0-.799-1.93-2.275-3.407 0 0-1.477-1.476-3.407-2.276 0 0-1.93-.799-4.018-.799" clip-rule="evenodd"/><path fill="currentColor" d="m17.647 9-.211 9.243h-2.059L15.173 9zm-1.24 13.232a1.37 1.37 0 0 1-.998-.41 1.36 1.36 0 0 1-.409-.997q0-.575.41-.984.414-.41.997-.41.569 0 .984.41.422.409.422.984 0 .39-.198.71a1.5 1.5 0 0 1-.512.511 1.34 1.34 0 0 1-.697.186"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "goto",
-    componentName: "Goto"
+    usageName: "help",
+    componentName: "Help"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1276.prop($$props, "viewBox", 3, defaultViewBox), rest = $1276.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46158,17 +46159,17 @@ function Goto($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Help.svelte
+// src/icons/snowui/HorizontalScreen.svelte
 var import_disclose_version1277 = require("svelte/internal/disclose-version");
 var $1277 = __toESM(require("svelte/internal/client"));
-function Help($$anchor, $$props) {
+function HorizontalScreen($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.284 27.049S18.986 28 16.5 28H5.976s-.395.005-.76-.143c0 0-.366-.149-.645-.428 0 0-.279-.28-.428-.645 0 0-.148-.365-.143-.746V15.5s0-2.486.952-4.783c0 0 .951-2.298 2.71-4.056 0 0 1.757-1.758 4.055-2.71 0 0 2.297-.951 4.783-.951 0 0 2.486 0 4.784.952 0 0 2.297.951 4.055 2.71 0 0 1.758 1.757 2.71 4.055 0 0 .951 2.297.951 4.783v.003s0 2.485-.951 4.78c0 0-.952 2.298-2.71 4.056 0 0-1.758 1.758-4.055 2.71M16.5 5s-2.089 0-4.018.8c0 0-1.93.799-3.407 2.275 0 0-1.476 1.477-2.276 3.407 0 0-.799 1.93-.799 4.018V26h10.5s2.089 0 4.018-.8c0 0 1.93-.799 3.407-2.275 0 0 1.476-1.477 2.276-3.407 0 0 .799-1.93.799-4.018 0 0 0-2.089-.8-4.018 0 0-.799-1.93-2.275-3.407 0 0-1.477-1.476-3.407-2.276 0 0-1.93-.799-4.018-.799" clip-rule="evenodd"/><path fill="currentColor" d="m17.647 9-.211 9.243h-2.059L15.173 9zm-1.24 13.232a1.37 1.37 0 0 1-.998-.41 1.36 1.36 0 0 1-.409-.997q0-.575.41-.984.414-.41.997-.41.569 0 .984.41.422.409.422.984 0 .39-.198.71a1.5 1.5 0 0 1-.512.511 1.34 1.34 0 0 1-.697.186"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M27 11H5v11h22zM5 9a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "help",
-    componentName: "Help"
+    usageName: "horizontal-screen",
+    componentName: "HorizontalScreen"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1277.prop($$props, "viewBox", 3, defaultViewBox), rest = $1277.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46188,17 +46189,22 @@ function Help($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/HorizontalScreen.svelte
+// src/icons/snowui/IconSet.svelte
 var import_disclose_version1278 = require("svelte/internal/disclose-version");
 var $1278 = __toESM(require("svelte/internal/client"));
-function HorizontalScreen($$anchor, $$props) {
+function IconSet($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M27 11H5v11h22zM5 9a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h22a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.364 3.363a.5.5 0 0 0 0 .707l3.364 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`,
+    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M19.5 5a.5.5 0 0 1 .5-.5h4A3.5 3.5 0 0 1 27.5 8v4a.5.5 0 0 1-1 0V8A2.5 2.5 0 0 0 24 5.5h-4a.5.5 0 0 1-.5-.5m-2.44 6.646 3.365 3.364a1.5 1.5 0 0 1 0 2.122l-3.364 3.364a1.5 1.5 0 0 1-2.122 0l-3.364-3.364a1.5 1.5 0 0 1 0-2.122l3.364-3.364a1.5 1.5 0 0 1 2.122 0m-.706.707a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.707zM12 27.5a.5.5 0 0 0 0-1H8A2.5 2.5 0 0 1 5.5 24v-4a.5.5 0 0 0-1 0v4A3.5 3.5 0 0 0 8 27.5zm-7-15a.5.5 0 0 1-.5-.5V8A3.5 3.5 0 0 1 8 4.5h4a.5.5 0 0 1 0 1H8A2.5 2.5 0 0 0 5.5 8v4a.5.5 0 0 1-.5.5M27.5 20a.5.5 0 0 0-1 0v4a2.5 2.5 0 0 1-2.5 2.5h-4a.5.5 0 0 0 0 1h4a3.5 3.5 0 0 0 3.5-3.5z" clip-rule="evenodd"/>`,
+    "light": `<path fill="currentColor" fill-rule="evenodd" d="M19.25 5a.75.75 0 0 1 .75-.75h4A3.75 3.75 0 0 1 27.75 8v4a.75.75 0 0 1-1.5 0V8A2.25 2.25 0 0 0 24 5.75h-4a.75.75 0 0 1-.75-.75m-1.836 6.293 3.364 3.364a2 2 0 0 1 0 2.828l-3.364 3.364a2 2 0 0 1-2.828 0l-3.364-3.364a2 2 0 0 1 0-2.828l3.364-3.364a2 2 0 0 1 2.828 0m-1.06 1.06a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .708l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 27.75a.75.75 0 0 0 0-1.5H8A2.25 2.25 0 0 1 5.75 24v-4a.75.75 0 0 0-1.5 0v4A3.75 3.75 0 0 0 8 27.75zm-7-15a.75.75 0 0 1-.75-.75V8A3.75 3.75 0 0 1 8 4.25h4a.75.75 0 0 1 0 1.5H8A2.25 2.25 0 0 0 5.75 8v4a.75.75 0 0 1-.75.75M27.75 20a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 24 26.25h-4a.75.75 0 0 0 0 1.5h4A3.75 3.75 0 0 0 27.75 24z" clip-rule="evenodd"/>`,
+    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M18.5 5A1.5 1.5 0 0 1 20 3.5h4A4.5 4.5 0 0 1 28.5 8v4a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 0 24 6.5h-4A1.5 1.5 0 0 1 18.5 5m-.025 5.232 3.364 3.364a3.5 3.5 0 0 1 0 4.95l-3.364 3.364a3.5 3.5 0 0 1-4.95 0l-3.364-3.364a3.5 3.5 0 0 1 0-4.95l3.364-3.364a3.5 3.5 0 0 1 4.95 0m-2.121 2.122a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 28.5a1.5 1.5 0 0 0 0-3H8A1.5 1.5 0 0 1 6.5 24v-4a1.5 1.5 0 0 0-3 0v4A4.5 4.5 0 0 0 8 28.5zm-7-15A1.5 1.5 0 0 1 3.5 12V8A4.5 4.5 0 0 1 8 3.5h4a1.5 1.5 0 0 1 0 3H8A1.5 1.5 0 0 0 6.5 8v4A1.5 1.5 0 0 1 5 13.5M28.5 20a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 0 0 3h4a4.5 4.5 0 0 0 4.5-4.5z" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" d="M16.707 12.707a1 1 0 0 0-1.414 0l-2.657 2.657a1 1 0 0 0 0 1.414l2.657 2.657a1 1 0 0 0 1.414 0l2.657-2.657a1 1 0 0 0 0-1.414z"/><path fill="currentColor" fill-rule="evenodd" d="M4 8a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm10.586 2.414a2 2 0 0 1 2.828 0l4.243 4.243a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1-2.828 0l-4.243-4.243a2 2 0 0 1 0-2.828z" clip-rule="evenodd"/>`,
+    "duotone": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.363 3.363a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "horizontal-screen",
-    componentName: "HorizontalScreen"
+    usageName: "icon-set",
+    componentName: "IconSet"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1278.prop($$props, "viewBox", 3, defaultViewBox), rest = $1278.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46218,22 +46224,17 @@ function HorizontalScreen($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSet.svelte
+// src/icons/snowui/IconSize16.svelte
 var import_disclose_version1279 = require("svelte/internal/disclose-version");
 var $1279 = __toESM(require("svelte/internal/client"));
-function IconSet($$anchor, $$props) {
+function IconSize16($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.364 3.363a.5.5 0 0 0 0 .707l3.364 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`,
-    "thin": `<path fill="currentColor" fill-rule="evenodd" d="M19.5 5a.5.5 0 0 1 .5-.5h4A3.5 3.5 0 0 1 27.5 8v4a.5.5 0 0 1-1 0V8A2.5 2.5 0 0 0 24 5.5h-4a.5.5 0 0 1-.5-.5m-2.44 6.646 3.365 3.364a1.5 1.5 0 0 1 0 2.122l-3.364 3.364a1.5 1.5 0 0 1-2.122 0l-3.364-3.364a1.5 1.5 0 0 1 0-2.122l3.364-3.364a1.5 1.5 0 0 1 2.122 0m-.706.707a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.707zM12 27.5a.5.5 0 0 0 0-1H8A2.5 2.5 0 0 1 5.5 24v-4a.5.5 0 0 0-1 0v4A3.5 3.5 0 0 0 8 27.5zm-7-15a.5.5 0 0 1-.5-.5V8A3.5 3.5 0 0 1 8 4.5h4a.5.5 0 0 1 0 1H8A2.5 2.5 0 0 0 5.5 8v4a.5.5 0 0 1-.5.5M27.5 20a.5.5 0 0 0-1 0v4a2.5 2.5 0 0 1-2.5 2.5h-4a.5.5 0 0 0 0 1h4a3.5 3.5 0 0 0 3.5-3.5z" clip-rule="evenodd"/>`,
-    "light": `<path fill="currentColor" fill-rule="evenodd" d="M19.25 5a.75.75 0 0 1 .75-.75h4A3.75 3.75 0 0 1 27.75 8v4a.75.75 0 0 1-1.5 0V8A2.25 2.25 0 0 0 24 5.75h-4a.75.75 0 0 1-.75-.75m-1.836 6.293 3.364 3.364a2 2 0 0 1 0 2.828l-3.364 3.364a2 2 0 0 1-2.828 0l-3.364-3.364a2 2 0 0 1 0-2.828l3.364-3.364a2 2 0 0 1 2.828 0m-1.06 1.06a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .708l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 27.75a.75.75 0 0 0 0-1.5H8A2.25 2.25 0 0 1 5.75 24v-4a.75.75 0 0 0-1.5 0v4A3.75 3.75 0 0 0 8 27.75zm-7-15a.75.75 0 0 1-.75-.75V8A3.75 3.75 0 0 1 8 4.25h4a.75.75 0 0 1 0 1.5H8A2.25 2.25 0 0 0 5.75 8v4a.75.75 0 0 1-.75.75M27.75 20a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 24 26.25h-4a.75.75 0 0 0 0 1.5h4A3.75 3.75 0 0 0 27.75 24z" clip-rule="evenodd"/>`,
-    "bold": `<path fill="currentColor" fill-rule="evenodd" d="M18.5 5A1.5 1.5 0 0 1 20 3.5h4A4.5 4.5 0 0 1 28.5 8v4a1.5 1.5 0 0 1-3 0V8A1.5 1.5 0 0 0 24 6.5h-4A1.5 1.5 0 0 1 18.5 5m-.025 5.232 3.364 3.364a3.5 3.5 0 0 1 0 4.95l-3.364 3.364a3.5 3.5 0 0 1-4.95 0l-3.364-3.364a3.5 3.5 0 0 1 0-4.95l3.364-3.364a3.5 3.5 0 0 1 4.95 0m-2.121 2.122a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708zM12 28.5a1.5 1.5 0 0 0 0-3H8A1.5 1.5 0 0 1 6.5 24v-4a1.5 1.5 0 0 0-3 0v4A4.5 4.5 0 0 0 8 28.5zm-7-15A1.5 1.5 0 0 1 3.5 12V8A4.5 4.5 0 0 1 8 3.5h4a1.5 1.5 0 0 1 0 3H8A1.5 1.5 0 0 0 6.5 8v4A1.5 1.5 0 0 1 5 13.5M28.5 20a1.5 1.5 0 0 0-3 0v4a1.5 1.5 0 0 1-1.5 1.5h-4a1.5 1.5 0 0 0 0 3h4a4.5 4.5 0 0 0 4.5-4.5z" clip-rule="evenodd"/>`,
-    "fill": `<path fill="currentColor" d="M16.707 12.707a1 1 0 0 0-1.414 0l-2.657 2.657a1 1 0 0 0 0 1.414l2.657 2.657a1 1 0 0 0 1.414 0l2.657-2.657a1 1 0 0 0 0-1.414z"/><path fill="currentColor" fill-rule="evenodd" d="M4 8a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4zm10.586 2.414a2 2 0 0 1 2.828 0l4.243 4.243a2 2 0 0 1 0 2.828l-4.243 4.243a2 2 0 0 1-2.828 0l-4.243-4.243a2 2 0 0 1 0-2.828z" clip-rule="evenodd"/>`,
-    "duotone": `<path fill="currentColor" fill-rule="evenodd" d="M19 5a1 1 0 0 1 1-1h4a4 4 0 0 1 4 4v4a1 1 0 1 1-2 0V8a2 2 0 0 0-2-2h-4a1 1 0 0 1-1-1m-6 22a1 1 0 0 1-1 1H8a4 4 0 0 1-4-4v-4a1 1 0 1 1 2 0v4a2 2 0 0 0 2 2h4a1 1 0 0 1 1 1M4 12a1 1 0 1 0 2 0V8a2 2 0 0 1 2-2h4a1 1 0 1 0 0-2H8a4 4 0 0 0-4 4zm23 7a1 1 0 0 1 1 1v4a4 4 0 0 1-4 4h-4a1 1 0 1 1 0-2h4a2 2 0 0 0 2-2v-4a1 1 0 0 1 1-1m-10.646-6.646a.5.5 0 0 0-.708 0l-3.363 3.364a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .708 0l3.364-3.364a.5.5 0 0 0 0-.708z" clip-rule="evenodd" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="m17.768 10.94 3.364 3.363a2.5 2.5 0 0 1 0 3.536l-3.364 3.364a2.5 2.5 0 0 1-3.536 0l-3.364-3.364a2.5 2.5 0 0 1 0-3.536l3.364-3.364a2.5 2.5 0 0 1 3.536 0m-1.415 1.414a.5.5 0 0 0-.707 0l-3.363 3.363a.5.5 0 0 0 0 .707l3.363 3.364a.5.5 0 0 0 .707 0l3.364-3.364a.5.5 0 0 0 0-.707z" clip-rule="evenodd"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M13.966 12v8.727h-1.057v-7.193h-.068q-.06.12-.307.273a2.7 2.7 0 0 1-.64.264q-.39.11-.894.11v-.885q.506 0 .878-.184.37-.183.618-.43.251-.247.379-.448.133-.2.153-.234zM16.263 17.966q.008-.41.123-.848.115-.44.388-.976.273-.537.75-1.244L19.484 12h1.16l-2.302 3.358q.154-.05.316-.085.165-.034.332-.034.793 0 1.415.366.627.366.984 1.002.363.634.363 1.444t-.358 1.44a2.6 2.6 0 0 1-.976.993 2.74 2.74 0 0 1-1.41.363 2.73 2.73 0 0 1-1.424-.371 2.66 2.66 0 0 1-.976-1.023q-.353-.651-.345-1.487m1.005.068q0 .555.222.98.221.426.614.67.392.242.903.242t.903-.238a1.7 1.7 0 0 0 .614-.665q.222-.426.222-.972 0-.554-.222-.976a1.66 1.66 0 0 0-.614-.66 1.7 1.7 0 0 0-.903-.239q-.51 0-.903.239a1.63 1.63 0 0 0-.614.656q-.221.418-.221.963"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-set",
-    componentName: "IconSet"
+    usageName: "icon-size-16",
+    componentName: "IconSize16"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1279.prop($$props, "viewBox", 3, defaultViewBox), rest = $1279.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46253,17 +46254,17 @@ function IconSet($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize16.svelte
+// src/icons/snowui/IconSize20.svelte
 var import_disclose_version1280 = require("svelte/internal/disclose-version");
 var $1280 = __toESM(require("svelte/internal/client"));
-function IconSize16($$anchor, $$props) {
+function IconSize20($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M13.966 12v8.727h-1.057v-7.193h-.068q-.06.12-.307.273a2.7 2.7 0 0 1-.64.264q-.39.11-.894.11v-.885q.506 0 .878-.184.37-.183.618-.43.251-.247.379-.448.133-.2.153-.234zM16.263 17.966q.008-.41.123-.848.115-.44.388-.976.273-.537.75-1.244L19.484 12h1.16l-2.302 3.358q.154-.05.316-.085.165-.034.332-.034.793 0 1.415.366.627.366.984 1.002.363.634.363 1.444t-.358 1.44a2.6 2.6 0 0 1-.976.993 2.74 2.74 0 0 1-1.41.363 2.73 2.73 0 0 1-1.424-.371 2.66 2.66 0 0 1-.976-1.023q-.353-.651-.345-1.487m1.005.068q0 .555.222.98.221.426.614.67.392.242.903.242t.903-.238a1.7 1.7 0 0 0 .614-.665q.222-.426.222-.972 0-.554-.222-.976a1.66 1.66 0 0 0-.614-.66 1.7 1.7 0 0 0-.903-.239q-.51 0-.903.239a1.63 1.63 0 0 0-.614.656q-.221.418-.221.963"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM19.112 20.966q-.963 0-1.64-.524-.678-.529-1.036-1.53-.357-1.005-.358-2.429 0-1.415.358-2.416.363-1.005 1.04-1.534.682-.533 1.636-.533.955 0 1.632.533.683.528 1.04 1.534.363 1.001.362 2.416 0 1.423-.358 2.429-.357 1.002-1.035 1.53-.678.525-1.64.524m0-.938q.955 0 1.483-.92.53-.921.529-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.079-.417q-.945 0-1.478.933-.533.928-.533 2.629 0 1.134.239 1.926.238.793.686 1.206.45.413 1.086.413"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-16",
-    componentName: "IconSize16"
+    usageName: "icon-size-20",
+    componentName: "IconSize20"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1280.prop($$props, "viewBox", 3, defaultViewBox), rest = $1280.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46283,17 +46284,17 @@ function IconSize16($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize20.svelte
+// src/icons/snowui/IconSize24.svelte
 var import_disclose_version1281 = require("svelte/internal/disclose-version");
 var $1281 = __toESM(require("svelte/internal/client"));
-function IconSize20($$anchor, $$props) {
+function IconSize24($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM19.112 20.966q-.963 0-1.64-.524-.678-.529-1.036-1.53-.357-1.005-.358-2.429 0-1.415.358-2.416.363-1.005 1.04-1.534.682-.533 1.636-.533.955 0 1.632.533.683.528 1.04 1.534.363 1.001.362 2.416 0 1.423-.358 2.429-.357 1.002-1.035 1.53-.678.525-1.64.524m0-.938q.955 0 1.483-.92.53-.921.529-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.079-.417q-.945 0-1.478.933-.533.928-.533 2.629 0 1.134.239 1.926.238.793.686 1.206.45.413 1.086.413"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM15.874 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.182v.938zm4.108 1.79v-5.455h1.005v5.455z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-20",
-    componentName: "IconSize20"
+    usageName: "icon-size-24",
+    componentName: "IconSize24"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1281.prop($$props, "viewBox", 3, defaultViewBox), rest = $1281.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46313,17 +46314,17 @@ function IconSize20($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize24.svelte
+// src/icons/snowui/IconSize28.svelte
 var import_disclose_version1282 = require("svelte/internal/disclose-version");
 var $1282 = __toESM(require("svelte/internal/client"));
-function IconSize24($$anchor, $$props) {
+function IconSize28($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM15.874 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.182v.938zm4.108 1.79v-5.455h1.005v5.455z"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM19.061 20.966q-.877 0-1.551-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.37-1.262a2.32 2.32 0 0 1 .822-1.81q.387-.321.865-.405v-.052a1.69 1.69 0 0 1-.997-.703 2.13 2.13 0 0 1-.367-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 19.061 12q.76 0 1.355.303.596.302.938.826.345.524.35 1.19a2.16 2.16 0 0 1-.38 1.24q-.37.54-.984.702v.052q.473.084.852.404.379.315.605.789.225.468.23 1.022-.004.708-.383 1.262-.375.55-1.044.865-.665.31-1.539.31m0-.938q.593 0 1.023-.191.43-.193.665-.541.234-.35.238-.819a1.57 1.57 0 0 0-.255-.873 1.74 1.74 0 0 0-.686-.597 2.15 2.15 0 0 0-.985-.217q-.558 0-.997.217-.434.218-.686.597a1.54 1.54 0 0 0-.243.873 1.43 1.43 0 0 0 .226.819q.235.349.669.54.434.193 1.031.192m0-4.142q.47 0 .831-.187.367-.188.575-.524.21-.338.213-.789a1.46 1.46 0 0 0-.208-.77 1.36 1.36 0 0 0-.567-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.856.183-.367.179-.567.511a1.4 1.4 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.21.336.575.524.367.187.844.187"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-24",
-    componentName: "IconSize24"
+    usageName: "icon-size-28",
+    componentName: "IconSize28"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1282.prop($$props, "viewBox", 3, defaultViewBox), rest = $1282.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46343,17 +46344,17 @@ function IconSize24($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize28.svelte
+// src/icons/snowui/IconSize32.svelte
 var import_disclose_version1283 = require("svelte/internal/disclose-version");
 var $1283 = __toESM(require("svelte/internal/client"));
-function IconSize28($$anchor, $$props) {
+function IconSize32($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 20.847v-.768l2.88-3.153q.508-.554.836-.963.328-.413.486-.775.162-.367.162-.768 0-.46-.222-.796a1.44 1.44 0 0 0-.596-.52 1.9 1.9 0 0 0-.853-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87H9.034q0-.766.354-1.347.354-.579.963-.903.614-.324 1.376-.324.768 0 1.36.324t.929.873q.336.55.336 1.224 0 .48-.174.941-.171.456-.597 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.057v.938zM19.061 20.966q-.877 0-1.551-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.37-1.262a2.32 2.32 0 0 1 .822-1.81q.387-.321.865-.405v-.052a1.69 1.69 0 0 1-.997-.703 2.13 2.13 0 0 1-.367-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 19.061 12q.76 0 1.355.303.596.302.938.826.345.524.35 1.19a2.16 2.16 0 0 1-.38 1.24q-.37.54-.984.702v.052q.473.084.852.404.379.315.605.789.225.468.23 1.022-.004.708-.383 1.262-.375.55-1.044.865-.665.31-1.539.31m0-.938q.593 0 1.023-.191.43-.193.665-.541.234-.35.238-.819a1.57 1.57 0 0 0-.255-.873 1.74 1.74 0 0 0-.686-.597 2.15 2.15 0 0 0-.985-.217q-.558 0-.997.217-.434.218-.686.597a1.54 1.54 0 0 0-.243.873 1.43 1.43 0 0 0 .226.819q.235.349.669.54.434.193 1.031.192m0-4.142q.47 0 .831-.187.367-.188.575-.524.21-.338.213-.789a1.46 1.46 0 0 0-.208-.77 1.36 1.36 0 0 0-.567-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.856.183-.367.179-.567.511a1.4 1.4 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.21.336.575.524.367.187.844.187"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 18.665h1.074q.047.443.302.75.26.302.674.46.412.153.916.153.545 0 .98-.183t.69-.545q.256-.367.256-.908 0-.473-.222-.878-.22-.41-.711-.66-.49-.252-1.3-.252h-.699v-.852l2.182-2.625v-.068H9.426v-.938h5.165v.767l-2.335 2.83v.068q.562.026 1.048.23.49.205.852.554.367.35.571.814.205.465.205 1.01 0 .745-.384 1.33-.379.579-1.052.912-.67.332-1.547.332-.775 0-1.428-.273a2.6 2.6 0 0 1-1.06-.788A2.2 2.2 0 0 1 9 18.665M16.672 20.847v-.768l2.88-3.153q.508-.554.835-.963.33-.413.486-.775.162-.367.162-.768 0-.46-.221-.796a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87h-1.006q0-.766.353-1.347.354-.579.963-.903Q18.636 12 19.4 12q.766 0 1.36.324.592.324.928.873.336.55.337 1.224 0 .48-.175.941-.17.456-.596 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.056v.938z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-28",
-    componentName: "IconSize28"
+    usageName: "icon-size-32",
+    componentName: "IconSize32"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1283.prop($$props, "viewBox", 3, defaultViewBox), rest = $1283.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46373,17 +46374,17 @@ function IconSize28($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize32.svelte
+// src/icons/snowui/IconSize40.svelte
 var import_disclose_version1284 = require("svelte/internal/disclose-version");
 var $1284 = __toESM(require("svelte/internal/client"));
-function IconSize32($$anchor, $$props) {
+function IconSize40($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 18.665h1.074q.047.443.302.75.26.302.674.46.412.153.916.153.545 0 .98-.183t.69-.545q.256-.367.256-.908 0-.473-.222-.878-.22-.41-.711-.66-.49-.252-1.3-.252h-.699v-.852l2.182-2.625v-.068H9.426v-.938h5.165v.767l-2.335 2.83v.068q.562.026 1.048.23.49.205.852.554.367.35.571.814.205.465.205 1.01 0 .745-.384 1.33-.379.579-1.052.912-.67.332-1.547.332-.775 0-1.428-.273a2.6 2.6 0 0 1-1.06-.788A2.2 2.2 0 0 1 9 18.665M16.672 20.847v-.768l2.88-3.153q.508-.554.835-.963.33-.413.486-.775.162-.367.162-.768 0-.46-.221-.796a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.208a1.44 1.44 0 0 0-.575.575q-.2.371-.2.87h-1.006q0-.766.353-1.347.354-.579.963-.903Q18.636 12 19.4 12q.766 0 1.36.324.592.324.928.873.336.55.337 1.224 0 .48-.175.941-.17.456-.596 1.019-.422.558-1.172 1.363l-1.96 2.097v.068h4.056v.938z"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.183v.938zm4.108 1.79v-5.455h1.005v5.455zM19.75 20.966q-.963 0-1.64-.524-.678-.529-1.036-1.53-.358-1.005-.358-2.429 0-1.415.358-2.416.363-1.005 1.04-1.534Q18.795 12 19.75 12t1.632.533q.682.528 1.04 1.534.363 1.001.362 2.416 0 1.423-.358 2.429-.357 1.002-1.035 1.53-.678.525-1.64.524m0-.938q.954 0 1.483-.92.528-.921.529-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.079-.417q-.945 0-1.479.933-.532.928-.532 2.629 0 1.134.238 1.926.24.793.687 1.206.45.413 1.086.413"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-32",
-    componentName: "IconSize32"
+    usageName: "icon-size-40",
+    componentName: "IconSize40"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1284.prop($$props, "viewBox", 3, defaultViewBox), rest = $1284.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46403,17 +46404,17 @@ function IconSize32($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize40.svelte
+// src/icons/snowui/IconSize48.svelte
 var import_disclose_version1285 = require("svelte/internal/disclose-version");
 var $1285 = __toESM(require("svelte/internal/client"));
-function IconSize40($$anchor, $$props) {
+function IconSize48($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.183v.938zm4.108 1.79v-5.455h1.005v5.455zM19.75 20.966q-.963 0-1.64-.524-.678-.529-1.036-1.53-.358-1.005-.358-2.429 0-1.415.358-2.416.363-1.005 1.04-1.534Q18.795 12 19.75 12t1.632.533q.682.528 1.04 1.534.363 1.001.362 2.416 0 1.423-.358 2.429-.357 1.002-1.035 1.53-.678.525-1.64.524m0-.938q.954 0 1.483-.92.528-.921.529-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.079-.417q-.945 0-1.479.933-.532.928-.532 2.629 0 1.134.238 1.926.24.793.687 1.206.45.413 1.086.413"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.183v.938zm4.108 1.79v-5.455h1.005v5.455zM19.7 20.966q-.879 0-1.552-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.37-1.262a2.32 2.32 0 0 1 .822-1.81q.387-.321.865-.405v-.052a1.69 1.69 0 0 1-.997-.703 2.13 2.13 0 0 1-.367-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 19.7 12q.759 0 1.355.303.596.302.938.826.345.524.35 1.19a2.16 2.16 0 0 1-.38 1.24q-.37.54-.985.702v.052q.474.084.853.404.379.315.605.789.225.468.23 1.022-.004.708-.383 1.262a2.54 2.54 0 0 1-1.045.865q-.664.31-1.538.31m0-.938q.591 0 1.022-.191.43-.193.665-.541.234-.35.238-.819a1.57 1.57 0 0 0-.255-.873 1.74 1.74 0 0 0-.687-.597 2.15 2.15 0 0 0-.984-.217q-.558 0-.997.217-.435.218-.686.597a1.54 1.54 0 0 0-.243.873q-.005.469.226.819.235.349.669.54.434.193 1.031.192m0-4.142q.468 0 .83-.187.366-.188.575-.524.21-.338.213-.789a1.45 1.45 0 0 0-.208-.77 1.36 1.36 0 0 0-.567-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.856.183a1.3 1.3 0 0 0-.567.511 1.4 1.4 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.21.336.575.524.367.187.844.187"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-40",
-    componentName: "IconSize40"
+    usageName: "icon-size-48",
+    componentName: "IconSize48"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1285.prop($$props, "viewBox", 3, defaultViewBox), rest = $1285.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46433,17 +46434,17 @@ function IconSize40($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize48.svelte
+// src/icons/snowui/IconSize80.svelte
 var import_disclose_version1286 = require("svelte/internal/disclose-version");
 var $1286 = __toESM(require("svelte/internal/client"));
-function IconSize48($$anchor, $$props) {
+function IconSize80($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M9 19.057v-.87l3.494-6.068h1.04l-3.41 5.932v.068h5.183v.938zm4.108 1.79v-5.455h1.005v5.455zM19.7 20.966q-.879 0-1.552-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.37-1.262a2.32 2.32 0 0 1 .822-1.81q.387-.321.865-.405v-.052a1.69 1.69 0 0 1-.997-.703 2.13 2.13 0 0 1-.367-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 19.7 12q.759 0 1.355.303.596.302.938.826.345.524.35 1.19a2.16 2.16 0 0 1-.38 1.24q-.37.54-.985.702v.052q.474.084.853.404.379.315.605.789.225.468.23 1.022-.004.708-.383 1.262a2.54 2.54 0 0 1-1.045.865q-.664.31-1.538.31m0-.938q.591 0 1.022-.191.43-.193.665-.541.234-.35.238-.819a1.57 1.57 0 0 0-.255-.873 1.74 1.74 0 0 0-.687-.597 2.15 2.15 0 0 0-.984-.217q-.558 0-.997.217-.435.218-.686.597a1.54 1.54 0 0 0-.243.873q-.005.469.226.819.235.349.669.54.434.193 1.031.192m0-4.142q.468 0 .83-.187.366-.188.575-.524.21-.338.213-.789a1.45 1.45 0 0 0-.208-.77 1.36 1.36 0 0 0-.567-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.856.183a1.3 1.3 0 0 0-.567.511 1.4 1.4 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.21.336.575.524.367.187.844.187"/>`
+    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M11.966 20.966q-.877 0-1.551-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.371-1.262a2.32 2.32 0 0 1 .822-1.81q.388-.321.866-.405v-.052a1.69 1.69 0 0 1-.998-.703 2.13 2.13 0 0 1-.366-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 11.966 12q.759 0 1.355.303.596.302.938.826.345.524.349 1.19-.005.694-.38 1.24-.37.54-.984.702v.052q.474.084.853.404.379.315.605.789.225.468.23 1.022-.004.708-.384 1.262a2.54 2.54 0 0 1-1.044.865q-.665.31-1.538.31m0-.938q.592 0 1.023-.191.43-.193.664-.541.235-.35.24-.819a1.57 1.57 0 0 0-.257-.873 1.74 1.74 0 0 0-.686-.597 2.15 2.15 0 0 0-.984-.217q-.558 0-.997.217-.435.218-.686.597a1.54 1.54 0 0 0-.243.873 1.43 1.43 0 0 0 .226.819q.234.349.669.54.435.193 1.03.192m0-4.142q.469 0 .83-.187.367-.188.576-.524.21-.338.213-.789a1.45 1.45 0 0 0-.209-.77 1.35 1.35 0 0 0-.566-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.857.183-.366.179-.566.511a1.42 1.42 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.209.336.575.524.367.187.844.187M19.412 20.966q-.964 0-1.641-.524-.678-.529-1.036-1.53-.357-1.005-.357-2.429 0-1.415.357-2.416.363-1.005 1.04-1.534.682-.533 1.637-.533.954 0 1.632.533.68.528 1.04 1.534.361 1.001.362 2.416 0 1.423-.358 2.429-.358 1.002-1.036 1.53-.677.525-1.64.524m0-.938q.954 0 1.483-.92.528-.921.528-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.078-.417q-.946 0-1.48.933-.532.928-.532 2.629 0 1.134.239 1.926.239.793.686 1.206.451.413 1.087.413"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-48",
-    componentName: "IconSize48"
+    usageName: "icon-size-80",
+    componentName: "IconSize80"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1286.prop($$props, "viewBox", 3, defaultViewBox), rest = $1286.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46463,17 +46464,17 @@ function IconSize48($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/IconSize80.svelte
+// src/icons/snowui/ImageLoading.svelte
 var import_disclose_version1287 = require("svelte/internal/disclose-version");
 var $1287 = __toESM(require("svelte/internal/client"));
-function IconSize80($$anchor, $$props) {
+function ImageLoading($$anchor, $$props) {
   const weights = {
-    "regular": `<g opacity=".08"><path fill="currentColor" d="M19.75 4a.75.75 0 0 0 0 1.5h4A2.25 2.25 0 0 1 26 7.75v4a.75.75 0 0 0 1.5 0v-4A3.75 3.75 0 0 0 23.75 4zM11.75 27.5a.75.75 0 0 0 0-1.5h-4a2.25 2.25 0 0 1-2.25-2.25v-4a.75.75 0 0 0-1.5 0v4a3.75 3.75 0 0 0 3.75 3.75zM4.75 12.5a.75.75 0 0 1-.75-.75v-4A3.75 3.75 0 0 1 7.75 4h4a.75.75 0 0 1 0 1.5h-4A2.25 2.25 0 0 0 5.5 7.75v4a.75.75 0 0 1-.75.75M27.5 19.75a.75.75 0 0 0-1.5 0v4A2.25 2.25 0 0 1 23.75 26h-4a.75.75 0 0 0 0 1.5h4a3.75 3.75 0 0 0 3.75-3.75z"/></g><path fill="currentColor" d="M11.966 20.966q-.877 0-1.551-.311a2.54 2.54 0 0 1-1.044-.865q-.375-.554-.371-1.262a2.32 2.32 0 0 1 .822-1.81q.388-.321.866-.405v-.052a1.69 1.69 0 0 1-.998-.703 2.13 2.13 0 0 1-.366-1.24q-.004-.665.337-1.189.341-.525.937-.826A3 3 0 0 1 11.966 12q.759 0 1.355.303.596.302.938.826.345.524.349 1.19-.005.694-.38 1.24-.37.54-.984.702v.052q.474.084.853.404.379.315.605.789.225.468.23 1.022-.004.708-.384 1.262a2.54 2.54 0 0 1-1.044.865q-.665.31-1.538.31m0-.938q.592 0 1.023-.191.43-.193.664-.541.235-.35.24-.819a1.57 1.57 0 0 0-.257-.873 1.74 1.74 0 0 0-.686-.597 2.15 2.15 0 0 0-.984-.217q-.558 0-.997.217-.435.218-.686.597a1.54 1.54 0 0 0-.243.873 1.43 1.43 0 0 0 .226.819q.234.349.669.54.435.193 1.03.192m0-4.142q.469 0 .83-.187.367-.188.576-.524.21-.338.213-.789a1.45 1.45 0 0 0-.209-.77 1.35 1.35 0 0 0-.566-.512 1.85 1.85 0 0 0-.844-.183q-.49 0-.857.183-.366.179-.566.511a1.42 1.42 0 0 0-.196.771 1.46 1.46 0 0 0 .2.789q.209.336.575.524.367.187.844.187M19.412 20.966q-.964 0-1.641-.524-.678-.529-1.036-1.53-.357-1.005-.357-2.429 0-1.415.357-2.416.363-1.005 1.04-1.534.682-.533 1.637-.533.954 0 1.632.533.68.528 1.04 1.534.361 1.001.362 2.416 0 1.423-.358 2.429-.358 1.002-1.036 1.53-.677.525-1.64.524m0-.938q.954 0 1.483-.92.528-.921.528-2.625 0-1.135-.243-1.93-.24-.798-.69-1.215a1.52 1.52 0 0 0-1.078-.417q-.946 0-1.48.933-.532.928-.532 2.629 0 1.134.239 1.926.239.793.686 1.206.451.413 1.087.413"/>`
+    "regular": `<g clip-path="url(#a)" data-figma-skip-parse="true"><foreignObject width="2417.06" height="2417.06" x="-1208.53" y="-1208.53" transform="matrix(-.00001 -.01541 .01532 -.00001 16 15.913)"><div style="background: "conic-gradient(from 90deg,transparent 0deg,#000 360deg)"; height: "100%"; width: "100%"; opacity: 0.2"/></foreignObject></g><path d="M1.5 16C1.5 8.22 7.63 1.87 15.324 1.516a.5.5 0 0 1 .046.998C8.207 2.843 2.5 8.756 2.5 16.001c0 7.455 6.044 13.5 13.5 13.5S29.5 23.456 29.5 16c0-7.119-5.51-12.951-12.497-13.464l-.334-.02-.1-.015a.5.5 0 0 1 .149-.984l.358.022C24.582 2.09 30.5 8.354 30.5 16c0 8.009-6.492 14.5-14.5 14.5S1.5 24.01 1.5 16" data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:1.0},&quot;position&quot;:1.0}],&quot;stopsVar&quot;:[],&quot;transform&quot;:{&quot;m00&quot;:-0.029455099254846573,&quot;m01&quot;:30.644948959350586,&quot;m02&quot;:0.69215440750122070,&quot;m10&quot;:-30.830017089843750,&quot;m11&quot;:-0.029632983729243279,&quot;m12&quot;:31.342819213867188},&quot;opacity&quot;:0.20000000298023224,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}"/><path fill="currentColor" d="M21.923 10H10.077c-.286 0-.56.115-.762.32a1.1 1.1 0 0 0-.315.77v9.82c0 .288.113.566.315.77s.476.32.762.32h11.846c.286 0 .56-.115.762-.32.202-.204.315-.482.315-.77v-9.82c0-.288-.113-.566-.315-.77a1.07 1.07 0 0 0-.762-.32m0 1.09v7.007l-1.755-1.777a1.08 1.08 0 0 0-.761-.32 1.07 1.07 0 0 0-.762.32L17.3 17.683l-2.961-3a1.07 1.07 0 0 0-1.523 0l-2.738 2.774v-6.366zM10.077 19l3.5-3.546 5.385 5.455h-8.885zm11.846 1.91h-1.438l-2.423-2.456 1.346-1.363 2.515 2.549zm-4.846-6.82a.83.83 0 0 1 .498-.755.8.8 0 0 1 .88.177.82.82 0 0 1 .176.892.8.8 0 0 1-.298.367.8.8 0 0 1-1.02-.102.82.82 0 0 1-.236-.578"/><defs><clipPath id="a"><path d="M1.5 16C1.5 8.22 7.63 1.87 15.324 1.516a.5.5 0 0 1 .046.998C8.207 2.843 2.5 8.756 2.5 16.001c0 7.455 6.044 13.5 13.5 13.5S29.5 23.456 29.5 16c0-7.119-5.51-12.951-12.497-13.464l-.334-.02-.1-.015a.5.5 0 0 1 .149-.984l.358.022C24.582 2.09 30.5 8.354 30.5 16c0 8.009-6.492 14.5-14.5 14.5S1.5 24.01 1.5 16"/></clipPath></defs>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "icon-size-80",
-    componentName: "IconSize80"
+    usageName: "image-loading",
+    componentName: "ImageLoading"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1287.prop($$props, "viewBox", 3, defaultViewBox), rest = $1287.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46493,17 +46494,17 @@ function IconSize80($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ImageLoading.svelte
+// src/icons/snowui/Line.svelte
 var import_disclose_version1288 = require("svelte/internal/disclose-version");
 var $1288 = __toESM(require("svelte/internal/client"));
-function ImageLoading($$anchor, $$props) {
+function Line($$anchor, $$props) {
   const weights = {
-    "regular": `<g clip-path="url(#a)" data-figma-skip-parse="true"><foreignObject width="2417.06" height="2417.06" x="-1208.53" y="-1208.53" transform="matrix(-.00001 -.01541 .01532 -.00001 16 15.913)"><div style="background: "conic-gradient(from 90deg,transparent 0deg,#000 360deg)"; height: "100%"; width: "100%"; opacity: 0.2"/></foreignObject></g><path d="M1.5 16C1.5 8.22 7.63 1.87 15.324 1.516a.5.5 0 0 1 .046.998C8.207 2.843 2.5 8.756 2.5 16.001c0 7.455 6.044 13.5 13.5 13.5S29.5 23.456 29.5 16c0-7.119-5.51-12.951-12.497-13.464l-.334-.02-.1-.015a.5.5 0 0 1 .149-.984l.358.022C24.582 2.09 30.5 8.354 30.5 16c0 8.009-6.492 14.5-14.5 14.5S1.5 24.01 1.5 16" data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_ANGULAR&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:1.0},&quot;position&quot;:1.0}],&quot;stopsVar&quot;:[],&quot;transform&quot;:{&quot;m00&quot;:-0.029455099254846573,&quot;m01&quot;:30.644948959350586,&quot;m02&quot;:0.69215440750122070,&quot;m10&quot;:-30.830017089843750,&quot;m11&quot;:-0.029632983729243279,&quot;m12&quot;:31.342819213867188},&quot;opacity&quot;:0.20000000298023224,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}"/><path fill="currentColor" d="M21.923 10H10.077c-.286 0-.56.115-.762.32a1.1 1.1 0 0 0-.315.77v9.82c0 .288.113.566.315.77s.476.32.762.32h11.846c.286 0 .56-.115.762-.32.202-.204.315-.482.315-.77v-9.82c0-.288-.113-.566-.315-.77a1.07 1.07 0 0 0-.762-.32m0 1.09v7.007l-1.755-1.777a1.08 1.08 0 0 0-.761-.32 1.07 1.07 0 0 0-.762.32L17.3 17.683l-2.961-3a1.07 1.07 0 0 0-1.523 0l-2.738 2.774v-6.366zM10.077 19l3.5-3.546 5.385 5.455h-8.885zm11.846 1.91h-1.438l-2.423-2.456 1.346-1.363 2.515 2.549zm-4.846-6.82a.83.83 0 0 1 .498-.755.8.8 0 0 1 .88.177.82.82 0 0 1 .176.892.8.8 0 0 1-.298.367.8.8 0 0 1-1.02-.102.82.82 0 0 1-.236-.578"/><defs><clipPath id="a"><path d="M1.5 16C1.5 8.22 7.63 1.87 15.324 1.516a.5.5 0 0 1 .046.998C8.207 2.843 2.5 8.756 2.5 16.001c0 7.455 6.044 13.5 13.5 13.5S29.5 23.456 29.5 16c0-7.119-5.51-12.951-12.497-13.464l-.334-.02-.1-.015a.5.5 0 0 1 .149-.984l.358.022C24.582 2.09 30.5 8.354 30.5 16c0 8.009-6.492 14.5-14.5 14.5S1.5 24.01 1.5 16"/></clipPath></defs>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 4c.552 0 1 .512 1 1.143v21.714c0 .631-.448 1.143-1 1.143s-1-.512-1-1.143V5.143C15 4.512 15.448 4 16 4" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "image-loading",
-    componentName: "ImageLoading"
+    usageName: "line",
+    componentName: "Line"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1288.prop($$props, "viewBox", 3, defaultViewBox), rest = $1288.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46523,17 +46524,17 @@ function ImageLoading($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Line.svelte
+// src/icons/snowui/Maximize.svelte
 var import_disclose_version1289 = require("svelte/internal/disclose-version");
 var $1289 = __toESM(require("svelte/internal/client"));
-function Line($$anchor, $$props) {
+function Maximize($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 4c.552 0 1 .512 1 1.143v21.714c0 .631-.448 1.143-1 1.143s-1-.512-1-1.143V5.143C15 4.512 15.448 4 16 4" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 9H9v14h14zM9 7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "line",
-    componentName: "Line"
+    usageName: "maximize",
+    componentName: "Maximize"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1289.prop($$props, "viewBox", 3, defaultViewBox), rest = $1289.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46553,17 +46554,17 @@ function Line($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Maximize.svelte
+// src/icons/snowui/Minimize.svelte
 var import_disclose_version1290 = require("svelte/internal/disclose-version");
 var $1290 = __toESM(require("svelte/internal/client"));
-function Maximize($$anchor, $$props) {
+function Minimize($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 9H9v14h14zM9 7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M6 16a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "maximize",
-    componentName: "Maximize"
+    usageName: "minimize",
+    componentName: "Minimize"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1290.prop($$props, "viewBox", 3, defaultViewBox), rest = $1290.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46583,17 +46584,17 @@ function Maximize($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Minimize.svelte
+// src/icons/snowui/PayWave.svelte
 var import_disclose_version1291 = require("svelte/internal/disclose-version");
 var $1291 = __toESM(require("svelte/internal/client"));
-function Minimize($$anchor, $$props) {
+function PayWave($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M6 16a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H7a1 1 0 0 1-1-1" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="m6.602 20.795-.005.006-.004.006c-.244.324-.792.42-1.22.136-.343-.227-.446-.732-.154-1.13.435-.52.752-1.128.96-1.721.216-.619.316-1.321.312-2.01a6.1 6.1 0 0 0-.335-2.007 5.6 5.6 0 0 0-.98-1.71c-.296-.397-.199-.903.142-1.133.425-.287.973-.198 1.221.124l.005.006.005.005c.549.678 1 1.432 1.269 2.17.283.87.464 1.711.469 2.536.005.867-.084 1.689-.424 2.497-.37.88-.73 1.555-1.261 2.225M10.575 22.406l.01-.015.01-.014a11.3 11.3 0 0 0 1.908-6.325 11.33 11.33 0 0 0-1.978-6.304c-.268-.398-.148-.87.304-1.175.304-.205.874-.133 1.212.292 1.398 2.075 2.242 4.584 2.257 7.178.015 2.682-.8 5.11-2.175 7.2-.318.41-.805.525-1.225.293-.456-.313-.539-.844-.323-1.13M17.705 6.137l.012.022.014.021a17.94 17.94 0 0 1 2.966 9.83 17.9 17.9 0 0 1-2.852 9.856c-.285.43-.767.55-1.255.338-.444-.271-.563-.72-.331-1.173 1.581-2.628 2.565-5.725 2.546-9.01-.018-3.272-.932-6.364-2.651-8.992-.233-.449-.118-.896.321-1.17.53-.236 1.045-.063 1.23.278M23.313 3.387l.008.015.01.014C25.624 7.13 26.973 11.374 27 15.98c.026 4.6-1.272 8.855-3.52 12.587-.286.424-.765.543-1.25.332-.443-.27-.563-.717-.334-1.169 2.166-3.46 3.333-7.468 3.308-11.74-.024-4.285-1.338-8.278-3.438-11.703-.263-.5-.078-.99.29-1.164.538-.256 1.07-.082 1.257.265"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "minimize",
-    componentName: "Minimize"
+    usageName: "pay-wave",
+    componentName: "PayWave"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1291.prop($$props, "viewBox", 3, defaultViewBox), rest = $1291.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46613,17 +46614,17 @@ function Minimize($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/PayWave.svelte
+// src/icons/snowui/RadioFalse.svelte
 var import_disclose_version1292 = require("svelte/internal/disclose-version");
 var $1292 = __toESM(require("svelte/internal/client"));
-function PayWave($$anchor, $$props) {
+function RadioFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m6.602 20.795-.005.006-.004.006c-.244.324-.792.42-1.22.136-.343-.227-.446-.732-.154-1.13.435-.52.752-1.128.96-1.721.216-.619.316-1.321.312-2.01a6.1 6.1 0 0 0-.335-2.007 5.6 5.6 0 0 0-.98-1.71c-.296-.397-.199-.903.142-1.133.425-.287.973-.198 1.221.124l.005.006.005.005c.549.678 1 1.432 1.269 2.17.283.87.464 1.711.469 2.536.005.867-.084 1.689-.424 2.497-.37.88-.73 1.555-1.261 2.225M10.575 22.406l.01-.015.01-.014a11.3 11.3 0 0 0 1.908-6.325 11.33 11.33 0 0 0-1.978-6.304c-.268-.398-.148-.87.304-1.175.304-.205.874-.133 1.212.292 1.398 2.075 2.242 4.584 2.257 7.178.015 2.682-.8 5.11-2.175 7.2-.318.41-.805.525-1.225.293-.456-.313-.539-.844-.323-1.13M17.705 6.137l.012.022.014.021a17.94 17.94 0 0 1 2.966 9.83 17.9 17.9 0 0 1-2.852 9.856c-.285.43-.767.55-1.255.338-.444-.271-.563-.72-.331-1.173 1.581-2.628 2.565-5.725 2.546-9.01-.018-3.272-.932-6.364-2.651-8.992-.233-.449-.118-.896.321-1.17.53-.236 1.045-.063 1.23.278M23.313 3.387l.008.015.01.014C25.624 7.13 26.973 11.374 27 15.98c.026 4.6-1.272 8.855-3.52 12.587-.286.424-.765.543-1.25.332-.443-.27-.563-.717-.334-1.169 2.166-3.46 3.333-7.468 3.308-11.74-.024-4.285-1.338-8.278-3.438-11.703-.263-.5-.078-.99.29-1.164.538-.256 1.07-.082 1.257.265"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "pay-wave",
-    componentName: "PayWave"
+    usageName: "radio-false",
+    componentName: "RadioFalse"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1292.prop($$props, "viewBox", 3, defaultViewBox), rest = $1292.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46643,17 +46644,17 @@ function PayWave($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/RadioFalse.svelte
+// src/icons/snowui/RadioTrue.svelte
 var import_disclose_version1293 = require("svelte/internal/disclose-version");
 var $1293 = __toESM(require("svelte/internal/client"));
-function RadioFalse($$anchor, $$props) {
+function RadioTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M23 16a7 7 0 1 1-14 0 7 7 0 0 1 14 0"/></g><defs><filter id="a" width="15" height="16" x="9" y="8.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40164" mode="overlay" result="effect2_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40164" result="effect3_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40164" mode="overlay" result="effect4_innerShadow_11899_40164"/></filter></defs>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "radio-false",
-    componentName: "RadioFalse"
+    usageName: "radio-true",
+    componentName: "RadioTrue"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1293.prop($$props, "viewBox", 3, defaultViewBox), rest = $1293.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46673,17 +46674,17 @@ function RadioFalse($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/RadioTrue.svelte
+// src/icons/snowui/RadioTrueAlt.svelte
 var import_disclose_version1294 = require("svelte/internal/disclose-version");
 var $1294 = __toESM(require("svelte/internal/client"));
-function RadioTrue($$anchor, $$props) {
+function RadioTrueAlt($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M16 28c6.627 0 12-5.373 12-12S22.627 4 16 4 4 9.373 4 16s5.373 12 12 12m0 2c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M23 16a7 7 0 1 1-14 0 7 7 0 0 1 14 0"/></g><defs><filter id="a" width="15" height="16" x="9" y="8.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40164" mode="overlay" result="effect2_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40164" result="effect3_innerShadow_11899_40164"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40164" mode="overlay" result="effect4_innerShadow_11899_40164"/></filter></defs>`
+    "regular": `<g filter="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M16 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12m0 8c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd"/></g><defs><filter id="a" width="29" height="30" x="2" y="1.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40170" mode="overlay" result="effect2_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40170" result="effect3_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40170" mode="overlay" result="effect4_innerShadow_11899_40170"/></filter></defs>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "radio-true",
-    componentName: "RadioTrue"
+    usageName: "radio-true-alt",
+    componentName: "RadioTrueAlt"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1294.prop($$props, "viewBox", 3, defaultViewBox), rest = $1294.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46703,17 +46704,17 @@ function RadioTrue($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/RadioTrueAlt.svelte
+// src/icons/snowui/Rating1.svelte
 var import_disclose_version1295 = require("svelte/internal/disclose-version");
 var $1295 = __toESM(require("svelte/internal/client"));
-function RadioTrueAlt($$anchor, $$props) {
+function Rating1($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)"><path fill="currentColor" fill-rule="evenodd" d="M16 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12m0 8c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14" clip-rule="evenodd"/></g><defs><filter id="a" width="29" height="30" x="2" y="1.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40170" mode="overlay" result="effect2_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40170" result="effect3_innerShadow_11899_40170"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40170" mode="overlay" result="effect4_innerShadow_11899_40170"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M17.05 12.273V21h-1.056v-7.193h-.069q-.06.12-.306.273-.247.15-.64.264a3.3 3.3 0 0 1-.894.11v-.886q.507 0 .877-.183.372-.183.618-.43.252-.247.38-.448l.153-.234z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "radio-true-alt",
-    componentName: "RadioTrueAlt"
+    usageName: "rating-1",
+    componentName: "Rating1"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1295.prop($$props, "viewBox", 3, defaultViewBox), rest = $1295.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46733,17 +46734,17 @@ function RadioTrueAlt($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rating1.svelte
+// src/icons/snowui/Rating2.svelte
 var import_disclose_version1296 = require("svelte/internal/disclose-version");
 var $1296 = __toESM(require("svelte/internal/client"));
-function Rating1($$anchor, $$props) {
+function Rating2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M17.05 12.273V21h-1.056v-7.193h-.069q-.06.12-.306.273-.247.15-.64.264a3.3 3.3 0 0 1-.894.11v-.886q.507 0 .877-.183.372-.183.618-.43.252-.247.38-.448l.153-.234z"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13.27 21v-.767l2.881-3.154q.508-.553.835-.963.33-.413.486-.775.162-.366.162-.767 0-.46-.221-.797a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.209a1.44 1.44 0 0 0-.575.575 1.8 1.8 0 0 0-.2.87h-1.006q0-.768.353-1.347.354-.58.963-.904a2.9 2.9 0 0 1 1.377-.324q.766 0 1.36.324.591.324.928.874t.337 1.223q0 .481-.175.941-.17.456-.596 1.019-.422.558-1.172 1.364l-1.96 2.096v.068h4.056V21z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rating-1",
-    componentName: "Rating1"
+    usageName: "rating-2",
+    componentName: "Rating2"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1296.prop($$props, "viewBox", 3, defaultViewBox), rest = $1296.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46763,17 +46764,17 @@ function Rating1($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rating2.svelte
+// src/icons/snowui/Rating3.svelte
 var import_disclose_version1297 = require("svelte/internal/disclose-version");
 var $1297 = __toESM(require("svelte/internal/client"));
-function Rating2($$anchor, $$props) {
+function Rating3($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13.27 21v-.767l2.881-3.154q.508-.553.835-.963.33-.413.486-.775.162-.366.162-.767 0-.46-.221-.797a1.44 1.44 0 0 0-.597-.52 1.9 1.9 0 0 0-.852-.183q-.503 0-.878.209a1.44 1.44 0 0 0-.575.575 1.8 1.8 0 0 0-.2.87h-1.006q0-.768.353-1.347.354-.58.963-.904a2.9 2.9 0 0 1 1.377-.324q.766 0 1.36.324.591.324.928.874t.337 1.223q0 .481-.175.941-.17.456-.596 1.019-.422.558-1.172 1.364l-1.96 2.096v.068h4.056V21z"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13 18.818h1.073q.047.444.303.75.26.303.673.46.414.154.916.154a2.5 2.5 0 0 0 .98-.183q.435-.183.69-.546.256-.366.256-.907 0-.474-.221-.878-.222-.41-.712-.66-.49-.252-1.3-.252h-.698v-.852l2.182-2.625v-.069h-3.716v-.937h5.164v.767l-2.335 2.83v.068q.563.026 1.049.23.489.204.852.554.366.35.57.814.205.465.205 1.01 0 .745-.383 1.33-.38.58-1.053.911-.668.333-1.547.332-.776 0-1.427-.272a2.6 2.6 0 0 1-1.061-.789 2.2 2.2 0 0 1-.46-1.24"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rating-2",
-    componentName: "Rating2"
+    usageName: "rating-3",
+    componentName: "Rating3"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1297.prop($$props, "viewBox", 3, defaultViewBox), rest = $1297.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46793,17 +46794,17 @@ function Rating2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rating3.svelte
+// src/icons/snowui/Rating4.svelte
 var import_disclose_version1298 = require("svelte/internal/disclose-version");
 var $1298 = __toESM(require("svelte/internal/client"));
-function Rating3($$anchor, $$props) {
+function Rating4($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M13 18.818h1.073q.047.444.303.75.26.303.673.46.414.154.916.154a2.5 2.5 0 0 0 .98-.183q.435-.183.69-.546.256-.366.256-.907 0-.474-.221-.878-.222-.41-.712-.66-.49-.252-1.3-.252h-.698v-.852l2.182-2.625v-.069h-3.716v-.937h5.164v.767l-2.335 2.83v.068q.563.026 1.049.23.489.204.852.554.366.35.57.814.205.465.205 1.01 0 .745-.383 1.33-.38.58-1.053.911-.668.333-1.547.332-.776 0-1.427-.272a2.6 2.6 0 0 1-1.061-.789 2.2 2.2 0 0 1-.46-1.24"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M12.85 19.21v-.869l3.494-6.068h1.04l-3.41 5.932v.068h5.182v.937zM16.956 21v-5.454h1.006V21z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rating-3",
-    componentName: "Rating3"
+    usageName: "rating-4",
+    componentName: "Rating4"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1298.prop($$props, "viewBox", 3, defaultViewBox), rest = $1298.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46823,17 +46824,17 @@ function Rating3($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rating4.svelte
+// src/icons/snowui/Rating5.svelte
 var import_disclose_version1299 = require("svelte/internal/disclose-version");
 var $1299 = __toESM(require("svelte/internal/client"));
-function Rating4($$anchor, $$props) {
+function Rating5($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M12.85 19.21v-.869l3.494-6.068h1.04l-3.41 5.932v.068h5.182v.937zM16.956 21v-5.454h1.006V21z"/>`
+    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M15.98 21.12q-.75 0-1.35-.299a2.5 2.5 0 0 1-.964-.818 2.23 2.23 0 0 1-.396-1.185h1.023q.06.593.537.98a1.8 1.8 0 0 0 1.15.384q.537 0 .955-.251.422-.252.66-.69a2.05 2.05 0 0 0 .243-1.002q0-.57-.251-1.019a1.85 1.85 0 0 0-.682-.711 1.93 1.93 0 0 0-.993-.265 2.7 2.7 0 0 0-.822.124 2.3 2.3 0 0 0-.695.32l-.989-.12.529-4.295h4.534v.937H14.82l-.307 2.574h.052q.268-.213.673-.353.405-.141.844-.141.801 0 1.427.384.63.378.989 1.04.362.66.362 1.508 0 .835-.375 1.491a2.74 2.74 0 0 1-1.023 1.031 2.9 2.9 0 0 1-1.483.375"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rating-4",
-    componentName: "Rating4"
+    usageName: "rating-5",
+    componentName: "Rating5"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1299.prop($$props, "viewBox", 3, defaultViewBox), rest = $1299.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46853,17 +46854,17 @@ function Rating4($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rating5.svelte
+// src/icons/snowui/Repost.svelte
 var import_disclose_version1300 = require("svelte/internal/disclose-version");
 var $1300 = __toESM(require("svelte/internal/client"));
-function Rating5($$anchor, $$props) {
+function Repost($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="m29.313 14.298-5.638 4.92 1.689 7.325a2 2 0 0 1-2.98 2.167l-6.389-3.875L9.62 28.71a2 2 0 0 1-2.98-2.167l1.686-7.318-5.639-4.927a2 2 0 0 1 1.14-3.508l7.432-.643 2.901-6.92a1.994 1.994 0 0 1 3.68 0l2.91 6.92 7.43.643a2 2 0 0 1 1.139 3.508z"/><path fill="#fff" d="M15.98 21.12q-.75 0-1.35-.299a2.5 2.5 0 0 1-.964-.818 2.23 2.23 0 0 1-.396-1.185h1.023q.06.593.537.98a1.8 1.8 0 0 0 1.15.384q.537 0 .955-.251.422-.252.66-.69a2.05 2.05 0 0 0 .243-1.002q0-.57-.251-1.019a1.85 1.85 0 0 0-.682-.711 1.93 1.93 0 0 0-.993-.265 2.7 2.7 0 0 0-.822.124 2.3 2.3 0 0 0-.695.32l-.989-.12.529-4.295h4.534v.937H14.82l-.307 2.574h.052q.268-.213.673-.353.405-.141.844-.141.801 0 1.427.384.63.378.989 1.04.362.66.362 1.508 0 .835-.375 1.491a2.74 2.74 0 0 1-1.023 1.031 2.9 2.9 0 0 1-1.483.375"/>`
+    "regular": `<path fill="currentColor" d="M10.286 6.843c.552 0 1 .456 1 1.017a1.01 1.01 0 0 1-1 1.019H10c-2.761 0-5 2.278-5 5.088v4.071c0 2.81 2.239 5.089 5 5.089h3.586l-1-1.018a1.03 1.03 0 0 1 0-1.44.99.99 0 0 1 1.414 0l2.707 2.756a1.03 1.03 0 0 1 0 1.44l-2.793 2.837a.99.99 0 0 1-1.414 0 1.03 1.03 0 0 1 0-1.438l1.086-1.102H10c-3.866 0-7-3.19-7-7.124v-4.071c0-3.934 3.134-7.124 7-7.124zm7.8-2.545a.99.99 0 0 1 1.414 0c.39.397.39 1.042 0 1.44l-1.086 1.1H22c3.866 0 7 3.19 7 7.124v4.071c0 3.935-3.134 7.124-7 7.124h-.286c-.552 0-1-.456-1-1.017a1.01 1.01 0 0 1 1-1.018H22c2.761 0 5-2.278 5-5.089v-4.071c0-2.81-2.239-5.088-5-5.088h-3.586l1 1.018a1.03 1.03 0 0 1 0 1.438.99.99 0 0 1-1.414 0l-2.707-2.755a1.03 1.03 0 0 1 0-1.438z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rating-5",
-    componentName: "Rating5"
+    usageName: "repost",
+    componentName: "Repost"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1300.prop($$props, "viewBox", 3, defaultViewBox), rest = $1300.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46883,17 +46884,17 @@ function Rating5($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Repost.svelte
+// src/icons/snowui/Rightbar.svelte
 var import_disclose_version1301 = require("svelte/internal/disclose-version");
 var $1301 = __toESM(require("svelte/internal/client"));
-function Repost($$anchor, $$props) {
+function Rightbar($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M10.286 6.843c.552 0 1 .456 1 1.017a1.01 1.01 0 0 1-1 1.019H10c-2.761 0-5 2.278-5 5.088v4.071c0 2.81 2.239 5.089 5 5.089h3.586l-1-1.018a1.03 1.03 0 0 1 0-1.44.99.99 0 0 1 1.414 0l2.707 2.756a1.03 1.03 0 0 1 0 1.44l-2.793 2.837a.99.99 0 0 1-1.414 0 1.03 1.03 0 0 1 0-1.438l1.086-1.102H10c-3.866 0-7-3.19-7-7.124v-4.071c0-3.934 3.134-7.124 7-7.124zm7.8-2.545a.99.99 0 0 1 1.414 0c.39.397.39 1.042 0 1.44l-1.086 1.1H22c3.866 0 7 3.19 7 7.124v4.071c0 3.935-3.134 7.124-7 7.124h-.286c-.552 0-1-.456-1-1.017a1.01 1.01 0 0 1 1-1.018H22c2.761 0 5-2.278 5-5.089v-4.071c0-2.81-2.239-5.088-5-5.088h-3.586l1 1.018a1.03 1.03 0 0 1 0 1.438.99.99 0 0 1-1.414 0l-2.707-2.755a1.03 1.03 0 0 1 0-1.438z"/>`
+    "regular": `<path fill="currentColor" d="M22 26a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6v20z" opacity=".08"/><path fill="currentColor" d="M20 6v20a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0"/><path fill="currentColor" d="M27 5s.828 0 1.414.586c0 0 .586.586.586 1.414v18s0 .828-.586 1.414c0 0-.586.586-1.414.586H5s-.828 0-1.414-.586c0 0-.586-.586-.586-1.414V7s0-.828.586-1.414C3.586 5.586 4.172 5 5 5zM5 7v18h22V7z"/><path fill="currentColor" d="M25 11h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2M25 15h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2M25 19h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "repost",
-    componentName: "Repost"
+    usageName: "rightbar",
+    componentName: "Rightbar"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1301.prop($$props, "viewBox", 3, defaultViewBox), rest = $1301.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46913,17 +46914,17 @@ function Repost($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Rightbar.svelte
+// src/icons/snowui/RightbarMode.svelte
 var import_disclose_version1302 = require("svelte/internal/disclose-version");
 var $1302 = __toESM(require("svelte/internal/client"));
-function Rightbar($$anchor, $$props) {
+function RightbarMode($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M22 26a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6v20z" opacity=".08"/><path fill="currentColor" d="M20 6v20a1 1 0 1 0 2 0V6a1 1 0 1 0-2 0"/><path fill="currentColor" d="M27 5s.828 0 1.414.586c0 0 .586.586.586 1.414v18s0 .828-.586 1.414c0 0-.586.586-1.414.586H5s-.828 0-1.414-.586c0 0-.586-.586-.586-1.414V7s0-.828.586-1.414C3.586 5.586 4.172 5 5 5zM5 7v18h22V7z"/><path fill="currentColor" d="M25 11h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2M25 15h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2M25 19h3a1 1 0 1 0 0-2h-3a1 1 0 1 0 0 2"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rightbar",
-    componentName: "Rightbar"
+    usageName: "rightbar-mode",
+    componentName: "RightbarMode"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1302.prop($$props, "viewBox", 3, defaultViewBox), rest = $1302.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46943,17 +46944,17 @@ function Rightbar($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/RightbarMode.svelte
+// src/icons/snowui/Round.svelte
 var import_disclose_version1303 = require("svelte/internal/disclose-version");
 var $1303 = __toESM(require("svelte/internal/client"));
-function RightbarMode($$anchor, $$props) {
+function Round($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M5 7h22v18H5zM3 7a2 2 0 0 1 2-2h22a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm18 2a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V11a2 2 0 0 0-2-2z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M25 16a9 9 0 1 1-18 0 9 9 0 0 1 18 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 24a8 8 0 1 0 0-16 8 8 0 0 0 0 16m0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rightbar-mode",
-    componentName: "RightbarMode"
+    usageName: "round",
+    componentName: "Round"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1303.prop($$props, "viewBox", 3, defaultViewBox), rest = $1303.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -46973,17 +46974,17 @@ function RightbarMode($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Round.svelte
+// src/icons/snowui/RoundedCorner.svelte
 var import_disclose_version1304 = require("svelte/internal/disclose-version");
 var $1304 = __toESM(require("svelte/internal/client"));
-function Round($$anchor, $$props) {
+function RoundedCorner($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M25 16a9 9 0 1 1-18 0 9 9 0 0 1 18 0" opacity=".08"/><path fill="currentColor" fill-rule="evenodd" d="M16 24a8 8 0 1 0 0-16 8 8 0 0 0 0 16m0 1a9 9 0 1 0 0-18 9 9 0 0 0 0 18" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 8a1 1 0 0 1 1 1v4c0 6.075-4.925 11-11 11H9a1 1 0 1 1 0-2h4a9 9 0 0 0 9-9V9a1 1 0 0 1 1-1" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "round",
-    componentName: "Round"
+    usageName: "rounded-corner",
+    componentName: "RoundedCorner"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1304.prop($$props, "viewBox", 3, defaultViewBox), rest = $1304.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47003,17 +47004,17 @@ function Round($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/RoundedCorner.svelte
+// src/icons/snowui/Search.svelte
 var import_disclose_version1305 = require("svelte/internal/disclose-version");
 var $1305 = __toESM(require("svelte/internal/client"));
-function RoundedCorner($$anchor, $$props) {
+function Search($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M23 8a1 1 0 0 1 1 1v4c0 6.075-4.925 11-11 11H9a1 1 0 1 1 0-2h4a9 9 0 0 0 9-9V9a1 1 0 0 1 1-1" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M28.7 28.713A1 1 0 0 1 28 29a1.04 1.04 0 0 1-.712-.287l-5.4-5.413a11.525 11.525 0 1 1 1.412-1.412l5.4 5.4a1 1 0 0 1 0 1.425M14.5 24A9.5 9.5 0 1 0 5 14.5a9.513 9.513 0 0 0 9.5 9.5"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "rounded-corner",
-    componentName: "RoundedCorner"
+    usageName: "search",
+    componentName: "Search"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1305.prop($$props, "viewBox", 3, defaultViewBox), rest = $1305.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47033,17 +47034,17 @@ function RoundedCorner($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Search.svelte
+// src/icons/snowui/Selected.svelte
 var import_disclose_version1306 = require("svelte/internal/disclose-version");
 var $1306 = __toESM(require("svelte/internal/client"));
-function Search($$anchor, $$props) {
+function Selected($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M28.7 28.713A1 1 0 0 1 28 29a1.04 1.04 0 0 1-.712-.287l-5.4-5.413a11.525 11.525 0 1 1 1.412-1.412l5.4 5.4a1 1 0 0 1 0 1.425M14.5 24A9.5 9.5 0 1 0 5 14.5a9.513 9.513 0 0 0 9.5 9.5"/>`
+    "regular": `<path fill="currentColor" d="M0 6.4a3.2 3.2 0 1 1 6.4 0v19.2a3.2 3.2 0 0 1-6.4 0z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "search",
-    componentName: "Search"
+    usageName: "selected",
+    componentName: "Selected"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1306.prop($$props, "viewBox", 3, defaultViewBox), rest = $1306.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47063,17 +47064,17 @@ function Search($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Selected.svelte
+// src/icons/snowui/SnowIcon.svelte
 var import_disclose_version1307 = require("svelte/internal/disclose-version");
 var $1307 = __toESM(require("svelte/internal/client"));
-function Selected($$anchor, $$props) {
+function SnowIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M0 6.4a3.2 3.2 0 1 1 6.4 0v19.2a3.2 3.2 0 0 1-6.4 0z"/>`
+    "regular": `<path fill="currentColor" d="M25.8 11.8a4.2 4.2 0 1 1 0 8.4H6.2a4.2 4.2 0 1 1 0-8.4z"/><path fill="currentColor" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="#fff" fill-opacity=".4" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="currentColor" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="#fff" fill-opacity=".2" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="currentColor" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-opacity=".3" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-rule="evenodd" d="M16 6.2a.56.56 0 0 0-.56.56v7.347c0 .17 0 .255-.034.294a.14.14 0 0 1-.117.049c-.051-.004-.111-.064-.231-.184L9.862 9.07a.56.56 0 0 0-.792.792l5.196 5.195c.12.12.18.18.184.231a.14.14 0 0 1-.05.118c-.038.033-.123.033-.293.033H6.76a.56.56 0 1 0 0 1.12h7.347c.17 0 .255 0 .294.034a.14.14 0 0 1 .049.117c-.005.052-.064.112-.184.232L9.07 22.138a.56.56 0 1 0 .792.792l5.196-5.195c.12-.12.18-.18.231-.184a.14.14 0 0 1 .117.048c.034.04.034.124.034.294v7.347a.56.56 0 1 0 1.12 0v-7.347c0-.17 0-.255.034-.294a.14.14 0 0 1 .117-.048c.051.004.111.064.231.184l5.196 5.195a.56.56 0 0 0 .792-.792l-5.196-5.195c-.12-.12-.18-.18-.184-.232a.14.14 0 0 1 .049-.117c.04-.034.124-.034.294-.034h7.347a.56.56 0 0 0 0-1.12h-7.347c-.17 0-.255 0-.294-.033a.14.14 0 0 1-.049-.118c.004-.051.064-.111.184-.231l5.196-5.195a.56.56 0 1 0-.792-.792l-5.196 5.195c-.12.12-.18.18-.231.184a.14.14 0 0 1-.117-.049c-.034-.04-.034-.124-.034-.293V6.76A.56.56 0 0 0 16 6.2" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "selected",
-    componentName: "Selected"
+    usageName: "snow-icon",
+    componentName: "SnowIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1307.prop($$props, "viewBox", 3, defaultViewBox), rest = $1307.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47093,17 +47094,17 @@ function Selected($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/SnowIcon.svelte
+// src/icons/snowui/StarFour.svelte
 var import_disclose_version1308 = require("svelte/internal/disclose-version");
 var $1308 = __toESM(require("svelte/internal/client"));
-function SnowIcon($$anchor, $$props) {
+function StarFour2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M25.8 11.8a4.2 4.2 0 1 1 0 8.4H6.2a4.2 4.2 0 1 1 0-8.4z"/><path fill="currentColor" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="#fff" fill-opacity=".4" d="M11.8 6.2a4.2 4.2 0 0 1 8.4 0v19.6a4.2 4.2 0 1 1-8.4 0z"/><path fill="currentColor" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="#fff" fill-opacity=".2" d="M25.9 19.96a4.2 4.2 0 0 1-5.94 5.94L6.1 12.04a4.2 4.2 0 0 1 5.94-5.94z"/><path fill="currentColor" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-opacity=".3" d="M19.96 6.1a4.2 4.2 0 0 1 5.94 5.94L12.04 25.9a4.2 4.2 0 1 1-5.94-5.94z"/><path fill="#fff" fill-rule="evenodd" d="M16 6.2a.56.56 0 0 0-.56.56v7.347c0 .17 0 .255-.034.294a.14.14 0 0 1-.117.049c-.051-.004-.111-.064-.231-.184L9.862 9.07a.56.56 0 0 0-.792.792l5.196 5.195c.12.12.18.18.184.231a.14.14 0 0 1-.05.118c-.038.033-.123.033-.293.033H6.76a.56.56 0 1 0 0 1.12h7.347c.17 0 .255 0 .294.034a.14.14 0 0 1 .049.117c-.005.052-.064.112-.184.232L9.07 22.138a.56.56 0 1 0 .792.792l5.196-5.195c.12-.12.18-.18.231-.184a.14.14 0 0 1 .117.048c.034.04.034.124.034.294v7.347a.56.56 0 1 0 1.12 0v-7.347c0-.17 0-.255.034-.294a.14.14 0 0 1 .117-.048c.051.004.111.064.231.184l5.196 5.195a.56.56 0 0 0 .792-.792l-5.196-5.195c-.12-.12-.18-.18-.184-.232a.14.14 0 0 1 .049-.117c.04-.034.124-.034.294-.034h7.347a.56.56 0 0 0 0-1.12h-7.347c-.17 0-.255 0-.294-.033a.14.14 0 0 1-.049-.118c.004-.051.064-.111.184-.231l5.196-5.195a.56.56 0 1 0-.792-.792l-5.196 5.195c-.12.12-.18.18-.231.184a.14.14 0 0 1-.117-.049c-.034-.04-.034-.124-.034-.293V6.76A.56.56 0 0 0 16 6.2" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M15.463 4.403c.157-.537.917-.537 1.074 0l1.127 3.851a8.96 8.96 0 0 0 6.082 6.082l3.851 1.127c.537.157.537.917 0 1.074l-3.851 1.127a8.96 8.96 0 0 0-6.082 6.082l-1.127 3.851c-.157.537-.917.537-1.074 0l-1.127-3.851a8.96 8.96 0 0 0-6.082-6.082l-3.851-1.127c-.537-.157-.537-.917 0-1.074l3.851-1.127a8.96 8.96 0 0 0 6.082-6.082z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "snow-icon",
-    componentName: "SnowIcon"
+    usageName: "star-four",
+    componentName: "StarFour"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1308.prop($$props, "viewBox", 3, defaultViewBox), rest = $1308.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47123,17 +47124,18 @@ function SnowIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/StarFour.svelte
+// src/icons/snowui/Stars.svelte
 var import_disclose_version1309 = require("svelte/internal/disclose-version");
 var $1309 = __toESM(require("svelte/internal/client"));
-function StarFour2($$anchor, $$props) {
+function Stars($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M15.463 4.403c.157-.537.917-.537 1.074 0l1.127 3.851a8.96 8.96 0 0 0 6.082 6.082l3.851 1.127c.537.157.537.917 0 1.074l-3.851 1.127a8.96 8.96 0 0 0-6.082 6.082l-1.127 3.851c-.157.537-.917.537-1.074 0l-1.127-3.851a8.96 8.96 0 0 0-6.082-6.082l-3.851-1.127c-.537-.157-.537-.917 0-1.074l3.851-1.127a8.96 8.96 0 0 0 6.082-6.082z"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m13.5 6.763-1.261 3.408a3.5 3.5 0 0 1-2.068 2.068L6.763 13.5l3.408 1.261a3.5 3.5 0 0 1 2.068 2.068l1.261 3.408 1.261-3.408a3.5 3.5 0 0 1 2.068-2.068l3.408-1.261-3.408-1.261a3.5 3.5 0 0 1-2.068-2.068zm1.407-1.961c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM23.5 20.322l-.46 1.242a2.5 2.5 0 0 1-1.476 1.477l-1.242.459 1.242.46a2.5 2.5 0 0 1 1.477 1.476l.459 1.242.46-1.242a2.5 2.5 0 0 1 1.476-1.477l1.241-.459-1.24-.46a2.5 2.5 0 0 1-1.478-1.476zm.938-1.787c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`,
+    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M14.907 4.802c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM24.438 18.535c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "star-four",
-    componentName: "StarFour"
+    usageName: "stars",
+    componentName: "Stars"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1309.prop($$props, "viewBox", 3, defaultViewBox), rest = $1309.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47153,18 +47155,17 @@ function StarFour2($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Stars.svelte
+// src/icons/snowui/StopAlt.svelte
 var import_disclose_version1310 = require("svelte/internal/disclose-version");
 var $1310 = __toESM(require("svelte/internal/client"));
-function Stars($$anchor, $$props) {
+function StopAlt($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m13.5 6.763-1.261 3.408a3.5 3.5 0 0 1-2.068 2.068L6.763 13.5l3.408 1.261a3.5 3.5 0 0 1 2.068 2.068l1.261 3.408 1.261-3.408a3.5 3.5 0 0 1 2.068-2.068l3.408-1.261-3.408-1.261a3.5 3.5 0 0 1-2.068-2.068zm1.407-1.961c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM23.5 20.322l-.46 1.242a2.5 2.5 0 0 1-1.476 1.477l-1.242.459 1.242.46a2.5 2.5 0 0 1 1.477 1.476l.459 1.242.46-1.242a2.5 2.5 0 0 1 1.476-1.477l1.241-.459-1.24-.46a2.5 2.5 0 0 1-1.478-1.476zm.938-1.787c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`,
-    "fill": `<path fill="currentColor" fill-rule="evenodd" d="M14.907 4.802c-.483-1.306-2.33-1.306-2.814 0l-1.73 4.675a1.5 1.5 0 0 1-.886.886l-4.675 1.73c-1.306.483-1.306 2.33 0 2.814l4.675 1.73a1.5 1.5 0 0 1 .886.886l1.73 4.675c.483 1.306 2.33 1.306 2.814 0l1.73-4.675a1.5 1.5 0 0 1 .886-.886l4.675-1.73c1.306-.483 1.306-2.33 0-2.814l-4.675-1.73a1.5 1.5 0 0 1-.886-.886zM24.438 18.535c-.322-.871-1.554-.871-1.876 0l-.928 2.508a1 1 0 0 1-.591.59l-2.509.93c-.87.321-.87 1.553 0 1.875l2.509.928a1 1 0 0 1 .59.59l.929 2.51c.322.87 1.553.87 1.876 0l.928-2.51a1 1 0 0 1 .59-.59l2.51-.928c.87-.322.87-1.554 0-1.876l-2.51-.928a1 1 0 0 1-.59-.59z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M10 6h12a4 4 0 0 1 4 4v1.2c.716.365 1.386.807 2 1.314V10a6 6 0 0 0-6-6H10a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h2.514a11 11 0 0 1-1.315-2H10a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4"/><path fill="currentColor" d="M21 12a9 9 0 1 0 9 9 9.02 9.02 0 0 0-9-9m3.262 11.276a.7.7 0 0 1 0 .986.71.71 0 0 1-.986 0L21 21.979l-2.276 2.284a.71.71 0 0 1-.986 0 .7.7 0 0 1 0-.986L20.022 21l-2.284-2.276a.7.7 0 0 1 .986-.986L21 20.022l2.276-2.284a.7.7 0 0 1 .986.986L21.979 21z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "stars",
-    componentName: "Stars"
+    usageName: "stop-alt",
+    componentName: "StopAlt"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1310.prop($$props, "viewBox", 3, defaultViewBox), rest = $1310.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47184,17 +47185,17 @@ function Stars($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/StopAlt.svelte
+// src/icons/snowui/StopSecondary.svelte
 var import_disclose_version1311 = require("svelte/internal/disclose-version");
 var $1311 = __toESM(require("svelte/internal/client"));
-function StopAlt($$anchor, $$props) {
+function StopSecondary($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M10 6h12a4 4 0 0 1 4 4v1.2c.716.365 1.386.807 2 1.314V10a6 6 0 0 0-6-6H10a6 6 0 0 0-6 6v12a6 6 0 0 0 6 6h2.514a11 11 0 0 1-1.315-2H10a4 4 0 0 1-4-4V10a4 4 0 0 1 4-4"/><path fill="currentColor" d="M21 12a9 9 0 1 0 9 9 9.02 9.02 0 0 0-9-9m3.262 11.276a.7.7 0 0 1 0 .986.71.71 0 0 1-.986 0L21 21.979l-2.276 2.284a.71.71 0 0 1-.986 0 .7.7 0 0 1 0-.986L20.022 21l-2.284-2.276a.7.7 0 0 1 .986-.986L21 20.022l2.276-2.284a.7.7 0 0 1 .986.986L21.979 21z"/>`
+    "regular": `<path fill="currentColor" d="M8 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "stop-alt",
-    componentName: "StopAlt"
+    usageName: "stop-secondary",
+    componentName: "StopSecondary"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1311.prop($$props, "viewBox", 3, defaultViewBox), rest = $1311.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47214,17 +47215,17 @@ function StopAlt($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/StopSecondary.svelte
+// src/icons/snowui/SwitchFalse.svelte
 var import_disclose_version1312 = require("svelte/internal/disclose-version");
 var $1312 = __toESM(require("svelte/internal/client"));
-function StopSecondary($$anchor, $$props) {
+function SwitchFalse($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M8 10a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z"/>`
+    "regular": `<g filter="url(#a)" opacity=".2"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M16 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40168" mode="overlay" result="effect2_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40168" result="effect3_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40168" mode="overlay" result="effect4_innerShadow_11899_40168"/></filter><filter id="b" width="20" height="20" x="0" y="8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_11899_40168"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_11899_40168" result="shape"/></filter></defs>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "stop-secondary",
-    componentName: "StopSecondary"
+    usageName: "switch-false",
+    componentName: "SwitchFalse"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1312.prop($$props, "viewBox", 3, defaultViewBox), rest = $1312.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47244,17 +47245,17 @@ function StopSecondary($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/SwitchFalse.svelte
+// src/icons/snowui/SwitchPoint.svelte
 var import_disclose_version1313 = require("svelte/internal/disclose-version");
 var $1313 = __toESM(require("svelte/internal/client"));
-function SwitchFalse($$anchor, $$props) {
+function SwitchPoint($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#a)" opacity=".2"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M16 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40168" mode="overlay" result="effect2_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40168" result="effect3_innerShadow_11899_40168"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40168" mode="overlay" result="effect4_innerShadow_11899_40168"/></filter><filter id="b" width="20" height="20" x="0" y="8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_11899_40168"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_11899_40168" result="shape"/></filter></defs>`
+    "regular": `<path fill="currentColor" d="M21 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0M31 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0" opacity=".2"/><path fill="currentColor" d="M1 16a3 3 0 0 1 3-3h4a3 3 0 1 1 0 6H4a3 3 0 0 1-3-3"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "switch-false",
-    componentName: "SwitchFalse"
+    usageName: "switch-point",
+    componentName: "SwitchPoint"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1313.prop($$props, "viewBox", 3, defaultViewBox), rest = $1313.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47274,17 +47275,17 @@ function SwitchFalse($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/SwitchPoint.svelte
+// src/icons/snowui/SwitchTrue.svelte
 var import_disclose_version1314 = require("svelte/internal/disclose-version");
 var $1314 = __toESM(require("svelte/internal/client"));
-function SwitchPoint($$anchor, $$props) {
+function SwitchTrue($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M21 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0M31 16a3 3 0 1 1-6 0 3 3 0 0 1 6 0" opacity=".2"/><path fill="currentColor" d="M1 16a3 3 0 0 1 3-3h4a3 3 0 1 1 0 6H4a3 3 0 0 1-3-3"/>`
+    "regular": `<path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M28 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40169" mode="overlay" result="effect2_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40169" result="effect3_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40169" mode="overlay" result="effect4_innerShadow_11899_40169"/></filter><filter id="b" width="20" height="20" x="12" y="8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_11899_40169"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_11899_40169" result="shape"/></filter></defs>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "switch-point",
-    componentName: "SwitchPoint"
+    usageName: "switch-true",
+    componentName: "SwitchTrue"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1314.prop($$props, "viewBox", 3, defaultViewBox), rest = $1314.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47304,17 +47305,17 @@ function SwitchPoint($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/SwitchTrue.svelte
+// src/icons/snowui/TextA.svelte
 var import_disclose_version1315 = require("svelte/internal/disclose-version");
 var $1315 = __toESM(require("svelte/internal/client"));
-function SwitchTrue($$anchor, $$props) {
+function TextA($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8" opacity=".2"/><g filter="url(#a)"><path fill="currentColor" d="M2 16a8 8 0 0 1 8-8h12a8 8 0 1 1 0 16H10a8 8 0 0 1-8-8"/></g><g filter="url(#b)"><path fill="#fff" d="M28 16a6 6 0 1 1-12 0 6 6 0 0 1 12 0"/></g><defs><filter id="a" width="29" height="18" x="2" y="7.5" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="shape" result="effect1_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="1" dy="1.5"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/><feBlend in2="effect1_innerShadow_11899_40169" mode="overlay" result="effect2_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/><feBlend in2="effect2_innerShadow_11899_40169" result="effect3_innerShadow_11899_40169"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="-.5"/><feGaussianBlur stdDeviation=".5"/><feComposite in2="hardAlpha" k2="-1" k3="1" operator="arithmetic"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.3 0"/><feBlend in2="effect3_innerShadow_11899_40169" mode="overlay" result="effect4_innerShadow_11899_40169"/></filter><filter id="b" width="20" height="20" x="12" y="8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dy="2"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_11899_40169"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_11899_40169" result="shape"/></filter></defs>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m6.116 21.532 9-17a1 1 0 0 1 1.768 0l9 17a1 1 0 0 1 .116.459V22a1 1 0 0 1-.99 1H25a1 1 0 0 1-.884-.533L21.751 18H10.249l-2.365 4.468a1 1 0 0 1-.881.532H7a1 1 0 0 1-1-.995V22a1 1 0 0 1 .116-.468M20.692 16 16 7.137 11.308 16zM5 26a1 1 0 1 0 0 2h22a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "switch-true",
-    componentName: "SwitchTrue"
+    usageName: "text-a",
+    componentName: "TextA"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1315.prop($$props, "viewBox", 3, defaultViewBox), rest = $1315.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47334,17 +47335,17 @@ function SwitchTrue($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/TextA.svelte
+// src/icons/snowui/ThreeDots.svelte
 var import_disclose_version1316 = require("svelte/internal/disclose-version");
 var $1316 = __toESM(require("svelte/internal/client"));
-function TextA($$anchor, $$props) {
+function ThreeDots($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="m6.116 21.532 9-17a1 1 0 0 1 1.768 0l9 17a1 1 0 0 1 .116.459V22a1 1 0 0 1-.99 1H25a1 1 0 0 1-.884-.533L21.751 18H10.249l-2.365 4.468a1 1 0 0 1-.881.532H7a1 1 0 0 1-1-.995V22a1 1 0 0 1 .116-.468M20.692 16 16 7.137 11.308 16zM5 26a1 1 0 1 0 0 2h22a1 1 0 1 0 0-2z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M8 14a2 2 0 1 1 0 4 2 2 0 0 1 0-4M16 14a2 2 0 1 1 0 4 2 2 0 0 1 0-4M26 16a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "text-a",
-    componentName: "TextA"
+    usageName: "three-dots",
+    componentName: "ThreeDots"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1316.prop($$props, "viewBox", 3, defaultViewBox), rest = $1316.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47364,17 +47365,17 @@ function TextA($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/ThreeDots.svelte
+// src/icons/snowui/Variables.svelte
 var import_disclose_version1317 = require("svelte/internal/disclose-version");
 var $1317 = __toESM(require("svelte/internal/client"));
-function ThreeDots($$anchor, $$props) {
+function Variables($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M8 14a2 2 0 1 1 0 4 2 2 0 0 1 0-4M16 14a2 2 0 1 1 0 4 2 2 0 0 1 0-4M26 16a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>`
+    "regular": `<path fill="currentColor" d="M21.432 26.78 29 22.41a2 2 0 0 0 1-1.731v-9.317a2 2 0 0 0-1-1.733l-7.57-4.37a1 1 0 0 0-1 1.733l6.57 3.792a2 2 0 0 1 1 1.732v7.008a2 2 0 0 1-1 1.732l-6.57 3.793a1 1 0 0 0 1 1.732M11.5 19a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/><path fill="currentColor" fill-rule="evenodd" d="M12.5 5.577a2 2 0 0 0-2 0l-7.96 4.596a2 2 0 0 0-1 1.732v9.19a2 2 0 0 0 1 1.732l7.96 4.596a2 2 0 0 0 2 0l7.96-4.596a2 2 0 0 0 1-1.732v-9.19a2 2 0 0 0-1-1.732zm6.96 6.328L11.5 7.309l-7.96 4.596v9.19l7.96 4.596 7.96-4.596z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "three-dots",
-    componentName: "ThreeDots"
+    usageName: "variables",
+    componentName: "Variables"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1317.prop($$props, "viewBox", 3, defaultViewBox), rest = $1317.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47394,17 +47395,17 @@ function ThreeDots($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Variables.svelte
+// src/icons/snowui/VerticalScreen.svelte
 var import_disclose_version1318 = require("svelte/internal/disclose-version");
 var $1318 = __toESM(require("svelte/internal/client"));
-function Variables($$anchor, $$props) {
+function VerticalScreen($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M21.432 26.78 29 22.41a2 2 0 0 0 1-1.731v-9.317a2 2 0 0 0-1-1.733l-7.57-4.37a1 1 0 0 0-1 1.733l6.57 3.792a2 2 0 0 1 1 1.732v7.008a2 2 0 0 1-1 1.732l-6.57 3.793a1 1 0 0 0 1 1.732M11.5 19a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/><path fill="currentColor" fill-rule="evenodd" d="M12.5 5.577a2 2 0 0 0-2 0l-7.96 4.596a2 2 0 0 0-1 1.732v9.19a2 2 0 0 0 1 1.732l7.96 4.596a2 2 0 0 0 2 0l7.96-4.596a2 2 0 0 0 1-1.732v-9.19a2 2 0 0 0-1-1.732zm6.96 6.328L11.5 7.309l-7.96 4.596v9.19l7.96 4.596 7.96-4.596z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.5 27.5v-22h-11v22zm2-22a2 2 0 0 0-2-2h-11a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "variables",
-    componentName: "Variables"
+    usageName: "vertical-screen",
+    componentName: "VerticalScreen"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1318.prop($$props, "viewBox", 3, defaultViewBox), rest = $1318.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47424,17 +47425,17 @@ function Variables($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/VerticalScreen.svelte
+// src/icons/snowui/Windowed.svelte
 var import_disclose_version1319 = require("svelte/internal/disclose-version");
 var $1319 = __toESM(require("svelte/internal/client"));
-function VerticalScreen($$anchor, $$props) {
+function Windowed($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" fill-rule="evenodd" d="M21.5 27.5v-22h-11v22zm2-22a2 2 0 0 0-2-2h-11a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M12 7a1 1 0 1 0 0 2h8a3 3 0 0 1 3 3v7.5a1 1 0 1 0 2 0V12a5 5 0 0 0-5-5z"/><path fill="currentColor" fill-rule="evenodd" d="M7 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2 0h10v10H9z" clip-rule="evenodd"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "vertical-screen",
-    componentName: "VerticalScreen"
+    usageName: "windowed",
+    componentName: "Windowed"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1319.prop($$props, "viewBox", 3, defaultViewBox), rest = $1319.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47454,17 +47455,22 @@ function VerticalScreen($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/Windowed.svelte
+// src/icons/snowui/XCircle.svelte
 var import_disclose_version1320 = require("svelte/internal/disclose-version");
 var $1320 = __toESM(require("svelte/internal/client"));
-function Windowed($$anchor, $$props) {
+function XCircle2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M12 7a1 1 0 1 0 0 2h8a3 3 0 0 1 3 3v7.5a1 1 0 1 0 2 0V12a5 5 0 0 0-5-5z"/><path fill="currentColor" fill-rule="evenodd" d="M7 13a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2zm2 0h10v10H9z" clip-rule="evenodd"/>`
+    "regular": `<path fill="currentColor" d="M20.708 12.708 17.414 16l3.293 3.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415M29 16A13 13 0 1 1 16 3a13.014 13.014 0 0 1 13 13m-2 0a11 11 0 1 0-11 11 11.01 11.01 0 0 0 11-11"/>`,
+    "thin": `<path fill="currentColor" d="M20.354 12.354 16.708 16l3.646 3.646a.5.5 0 1 1-.708.708L16 16.708l-3.646 3.646a.5.5 0 1 1-.708-.708L15.292 16l-3.646-3.646a.5.5 0 0 1 .708-.708L16 15.292l3.646-3.646A.502.502 0 0 1 20.5 12a.5.5 0 0 1-.146.354M28.5 16A12.5 12.5 0 1 1 16 3.5 12.514 12.514 0 0 1 28.5 16m-1 0A11.5 11.5 0 1 0 16 27.5 11.513 11.513 0 0 0 27.5 16"/>`,
+    "light": `<path fill="currentColor" d="M20.53 12.53 17.06 16l3.47 3.47a.75.75 0 1 1-1.06 1.06L16 17.06l-3.47 3.47a.75.75 0 0 1-1.06-1.06L14.94 16l-3.47-3.47a.75.75 0 0 1 1.06-1.06L16 14.94l3.47-3.47a.75.75 0 0 1 1.06 1.06M28.75 16A12.75 12.75 0 1 1 16 3.25 12.765 12.765 0 0 1 28.75 16m-1.5 0A11.25 11.25 0 1 0 16 27.25 11.26 11.26 0 0 0 27.25 16"/>`,
+    "bold": `<path fill="currentColor" d="M21.061 13.061 18.125 16l2.94 2.939a1.503 1.503 0 0 1-2.125 2.125L16 18.125l-2.939 2.94a1.503 1.503 0 0 1-2.125-2.125L13.875 16l-2.936-2.939A1.5 1.5 0 0 1 12 10.496c.399 0 .781.159 1.063.44L16 13.875l2.939-2.94a1.502 1.502 0 1 1 2.125 2.125zM29.5 16A13.5 13.5 0 1 1 16 2.5 13.515 13.515 0 0 1 29.5 16m-3 0A10.5 10.5 0 1 0 16 26.5 10.51 10.51 0 0 0 26.5 16"/>`,
+    "fill": `<path fill="currentColor" d="M16 3a13 13 0 1 0 13 13A13.013 13.013 0 0 0 16 3m4.708 16.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415L17.414 16z"/>`,
+    "duotone": `<path fill="currentColor" d="M28 16a12 12 0 1 1-23.999 0A12 12 0 0 1 28 16" opacity=".08"/><path fill="currentColor" d="M20.708 12.708 17.414 16l3.293 3.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415M29 16A13 13 0 1 1 16 3a13.014 13.014 0 0 1 13 13m-2 0a11 11 0 1 0-11 11 11.01 11.01 0 0 0 11-11"/>`
   };
   const meta = {
     collection: "snowui",
-    usageName: "windowed",
-    componentName: "Windowed"
+    usageName: "x-circle",
+    componentName: "XCircle"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1320.prop($$props, "viewBox", 3, defaultViewBox), rest = $1320.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47484,22 +47490,17 @@ function Windowed($$anchor, $$props) {
   ));
 }
 
-// src/icons/snowui/XCircle.svelte
+// src/icons/special/DefaultIcon.svelte
 var import_disclose_version1321 = require("svelte/internal/disclose-version");
 var $1321 = __toESM(require("svelte/internal/client"));
-function XCircle2($$anchor, $$props) {
+function DefaultIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill="currentColor" d="M20.708 12.708 17.414 16l3.293 3.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415M29 16A13 13 0 1 1 16 3a13.014 13.014 0 0 1 13 13m-2 0a11 11 0 1 0-11 11 11.01 11.01 0 0 0 11-11"/>`,
-    "thin": `<path fill="currentColor" d="M20.354 12.354 16.708 16l3.646 3.646a.5.5 0 1 1-.708.708L16 16.708l-3.646 3.646a.5.5 0 1 1-.708-.708L15.292 16l-3.646-3.646a.5.5 0 0 1 .708-.708L16 15.292l3.646-3.646A.502.502 0 0 1 20.5 12a.5.5 0 0 1-.146.354M28.5 16A12.5 12.5 0 1 1 16 3.5 12.514 12.514 0 0 1 28.5 16m-1 0A11.5 11.5 0 1 0 16 27.5 11.513 11.513 0 0 0 27.5 16"/>`,
-    "light": `<path fill="currentColor" d="M20.53 12.53 17.06 16l3.47 3.47a.75.75 0 1 1-1.06 1.06L16 17.06l-3.47 3.47a.75.75 0 0 1-1.06-1.06L14.94 16l-3.47-3.47a.75.75 0 0 1 1.06-1.06L16 14.94l3.47-3.47a.75.75 0 0 1 1.06 1.06M28.75 16A12.75 12.75 0 1 1 16 3.25 12.765 12.765 0 0 1 28.75 16m-1.5 0A11.25 11.25 0 1 0 16 27.25 11.26 11.26 0 0 0 27.25 16"/>`,
-    "bold": `<path fill="currentColor" d="M21.061 13.061 18.125 16l2.94 2.939a1.503 1.503 0 0 1-2.125 2.125L16 18.125l-2.939 2.94a1.503 1.503 0 0 1-2.125-2.125L13.875 16l-2.936-2.939A1.5 1.5 0 0 1 12 10.496c.399 0 .781.159 1.063.44L16 13.875l2.939-2.94a1.502 1.502 0 1 1 2.125 2.125zM29.5 16A13.5 13.5 0 1 1 16 2.5 13.515 13.515 0 0 1 29.5 16m-3 0A10.5 10.5 0 1 0 16 26.5 10.51 10.51 0 0 0 26.5 16"/>`,
-    "fill": `<path fill="currentColor" d="M16 3a13 13 0 1 0 13 13A13.013 13.013 0 0 0 16 3m4.708 16.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415L17.414 16z"/>`,
-    "duotone": `<path fill="currentColor" d="M28 16a12 12 0 1 1-23.999 0A12 12 0 0 1 28 16" opacity=".08"/><path fill="currentColor" d="M20.708 12.708 17.414 16l3.293 3.293a1 1 0 0 1-1.415 1.415L16 17.414l-3.293 3.293a1 1 0 0 1-1.415-1.415L14.587 16l-3.293-3.293a1 1 0 1 1 1.415-1.415L16 14.587l3.293-3.293a1 1 0 0 1 1.415 1.415M29 16A13 13 0 1 1 16 3a13.014 13.014 0 0 1 13 13m-2 0a11 11 0 1 0-11 11 11.01 11.01 0 0 0 11-11"/>`
+    "regular": `<path d="M0 16C0 12.2801 0 10.4202 0.40889 8.89417C1.5185 4.75307 4.75307 1.5185 8.89417 0.40889C10.4202 0 12.2801 0 16 0C19.7199 0 21.5798 0 23.1058 0.40889C27.2469 1.5185 30.4815 4.75307 31.5911 8.89417C32 10.4202 32 12.2801 32 16C32 19.7199 32 21.5798 31.5911 23.1058C30.4815 27.2469 27.2469 30.4815 23.1058 31.5911C21.5798 32 19.7199 32 16 32C12.2801 32 10.4202 32 8.89417 31.5911C4.75307 30.4815 1.5185 27.2469 0.40889 23.1058C0 21.5798 0 19.7199 0 16Z" fill="currentColor" fill-opacity="0.04"/> <path d="M16 31.5V32C15.8478 32 15.6988 31.9981 15.5527 31.998V31.5C15.6987 31.5 15.8479 31.5 16 31.5ZM16.4473 31.5V31.998C16.3012 31.9981 16.1522 32 16 32V31.5C16.1521 31.5 16.3013 31.5 16.4473 31.5ZM14.6631 31.499L14.6621 31.9961C14.3498 31.9955 14.0528 31.9951 13.7695 31.9932L13.7734 31.4951C14.0554 31.4971 14.3516 31.4984 14.6631 31.499ZM18.2285 31.7451L18.2295 31.9932C17.9463 31.9951 17.6492 31.9955 17.3369 31.9961V31.499C17.6484 31.4984 17.9446 31.4971 18.2266 31.4951L18.2285 31.7451ZM12.8857 31.4854L12.8809 31.7344L12.8818 31.7354L12.8809 31.7803L12.877 31.9834C12.5619 31.9782 12.2659 31.9706 11.9863 31.9609L12.0029 31.4639C12.279 31.4734 12.5727 31.4801 12.8857 31.4854ZM20.0127 31.9609C19.7332 31.9706 19.4372 31.9782 19.1221 31.9834L19.1191 31.7803L19.1182 31.7354L19.1143 31.4854C19.4273 31.4801 19.721 31.4734 19.9971 31.4639L20.0127 31.9609ZM10.2676 31.3418C10.5338 31.3743 10.8193 31.4002 11.1289 31.4209L11.0957 31.916C10.7785 31.8948 10.4841 31.8697 10.207 31.8359L10.2676 31.3418ZM21.792 31.8359C21.5149 31.8697 21.2205 31.8948 20.9033 31.916L20.8711 31.4209C21.1807 31.4002 21.4662 31.3743 21.7324 31.3418L21.792 31.8359ZM9.02344 31.1084C9.15558 31.1438 9.29101 31.1757 9.43066 31.2051L9.32812 31.6934C9.17998 31.6622 9.03539 31.6289 8.89417 31.5911C8.72489 31.5458 8.55777 31.4948 8.3916 31.4424L8.4668 31.2061L8.54199 30.9678C8.70099 31.0179 8.86144 31.065 9.02344 31.1084ZM23.5332 31.2061L23.6074 31.4424C23.4415 31.4947 23.2748 31.5458 23.1058 31.5911C22.9643 31.629 22.8194 31.6622 22.6709 31.6934L22.5693 31.2051C22.709 31.1757 22.8444 31.1438 22.9766 31.1084C23.1386 31.065 23.299 31.0179 23.458 30.9678L23.5332 31.2061ZM6.68945 30.2012C6.98506 30.3551 7.28839 30.4965 7.59863 30.625L7.40723 31.0859C7.08344 30.9519 6.7675 30.8032 6.45898 30.6426L6.68945 30.2012ZM25.54 30.6426C25.2315 30.8032 24.9156 30.9519 24.5918 31.0859L24.4014 30.625C24.7116 30.4965 25.0149 30.3551 25.3105 30.2012L25.54 30.6426ZM4.99902 29.124C5.26395 29.3274 5.53867 29.5191 5.82129 29.6992L5.55176 30.1191C5.25699 29.9313 4.97065 29.7316 4.69434 29.5195L4.99902 29.124ZM27.3047 29.5195C27.0283 29.7316 26.7421 29.9313 26.4473 30.1191L26.1787 29.6992C26.4613 29.5191 26.736 29.3274 27.001 29.124L27.3047 29.5195ZM3.52148 27.7695C3.7474 28.016 3.98396 28.2526 4.23047 28.4785L3.89355 28.8457C3.63615 28.6098 3.3892 28.3629 3.15332 28.1055L3.52148 27.7695ZM28.8457 28.1055C28.6098 28.3629 28.3629 28.6098 28.1055 28.8457L27.7695 28.4785C28.016 28.2526 28.2526 28.016 28.4785 27.7695L28.8457 28.1055ZM2.30078 26.1787C2.48087 26.4613 2.67264 26.736 2.87598 27.001L2.47949 27.3047C2.26742 27.0284 2.06773 26.7421 1.87988 26.4473L2.08984 26.3135L2.30078 26.1787ZM30.1191 26.4473C29.9313 26.7421 29.7316 27.0283 29.5195 27.3047L29.124 27.001C29.3274 26.736 29.5191 26.4613 29.6992 26.1787L30.1191 26.4473ZM1.375 24.4014C1.50346 24.7116 1.64494 25.0149 1.79883 25.3105L1.35645 25.54C1.19586 25.2315 1.04713 24.9156 0.913086 24.5918L1.14453 24.4971L1.375 24.4014ZM30.625 24.4014L31.0859 24.5918C30.9519 24.9156 30.8032 25.2315 30.6426 25.54L30.2012 25.3105C30.3551 25.0149 30.4965 24.7116 30.625 24.4014ZM0.891602 22.9766C0.935009 23.1386 0.98212 23.299 1.03223 23.458L0.793945 23.5332L0.556641 23.6074C0.504401 23.4416 0.454143 23.2747 0.40889 23.1058C0.370959 22.9643 0.336883 22.8194 0.305664 22.6709L0.794922 22.5693C0.824293 22.709 0.856194 22.8444 0.891602 22.9766ZM31.6934 22.6709C31.6622 22.8194 31.629 22.9643 31.5911 23.1058C31.5458 23.2748 31.4947 23.4415 31.4424 23.6074L31.2061 23.5332L30.9678 23.458C31.0179 23.299 31.065 23.1386 31.1084 22.9766C31.1438 22.8444 31.1757 22.709 31.2051 22.5693L31.6934 22.6709ZM0.579102 20.8711C0.599782 21.1807 0.625746 21.4662 0.658203 21.7324L0.163086 21.792C0.129313 21.5149 0.104176 21.2205 0.0830078 20.9033L0.579102 20.8711ZM31.916 20.9033C31.8948 21.2205 31.8697 21.5149 31.8359 21.792L31.3418 21.7324C31.3743 21.4662 31.4002 21.1807 31.4209 20.8711L31.916 20.9033ZM0.536133 19.9971L0.0380859 20.0127C0.0283946 19.7332 0.0208659 19.4371 0.015625 19.1221L0.514648 19.1143C0.519858 19.4273 0.526552 19.721 0.536133 19.9971ZM31.9834 19.1221C31.9782 19.4372 31.9706 19.7332 31.9609 20.0127L31.4639 19.9971C31.4734 19.721 31.4801 19.4273 31.4854 19.1143L31.9834 19.1221ZM0.504883 18.2266L0.254883 18.2285L0.00585938 18.2295C0.00391467 17.9463 0.00356611 17.6492 0.00292969 17.3369H0.500977C0.501613 17.6484 0.502946 17.9446 0.504883 18.2266ZM31.9961 17.3369C31.9955 17.6492 31.9951 17.9463 31.9932 18.2295L31.7451 18.2285L31.4951 18.2266C31.4971 17.9446 31.4984 17.6484 31.499 17.3369H31.9961ZM0 16C0 15.8478 0.000948575 15.6988 0.000976562 15.5527H0.5V16.4473H0.000976562C0.000948575 16.3012 0 16.1522 0 16ZM31.999 16.4473H31.5V15.5527H31.999C31.9991 15.6988 32 15.8478 32 16C32 16.1522 31.9991 16.3012 31.999 16.4473ZM0.504883 13.7734C0.502946 14.0554 0.501613 14.3516 0.500977 14.6631L0.00292969 14.6621C0.00356717 14.3498 0.00391255 14.0528 0.00585938 13.7695L0.504883 13.7734ZM31.9961 14.6621L31.499 14.6631C31.4984 14.3516 31.4971 14.0554 31.4951 13.7734L31.9932 13.7695C31.9951 14.0528 31.9955 14.3498 31.9961 14.6621ZM0.536133 12.0029C0.526552 12.279 0.519858 12.5727 0.514648 12.8857L0.264648 12.8809L0.015625 12.877C0.0208705 12.5619 0.0283873 12.2659 0.0380859 11.9863L0.536133 12.0029ZM31.9609 11.9863C31.9706 12.2659 31.9782 12.5619 31.9834 12.877L31.7354 12.8818L31.7344 12.8809L31.4854 12.8857C31.4801 12.5727 31.4734 12.279 31.4639 12.0029L31.9609 11.9863ZM0.658203 10.2676C0.625746 10.5338 0.599782 10.8193 0.579102 11.1289L0.0830078 11.0957C0.10419 10.7786 0.129293 10.4841 0.163086 10.207L0.658203 10.2676ZM31.8359 10.207C31.8697 10.4841 31.8948 10.7785 31.916 11.0957L31.4209 11.1289C31.4002 10.8193 31.3743 10.5338 31.3418 10.2676L31.8359 10.207ZM1.03223 8.54199C0.98212 8.70099 0.935009 8.86144 0.891602 9.02344C0.856194 9.15558 0.824293 9.29101 0.794922 9.43066L0.305664 9.32812C0.315811 9.27987 0.326082 9.232 0.336914 9.18457L0.40889 8.89417C0.454224 8.72498 0.504296 8.55768 0.556641 8.3916L1.03223 8.54199ZM31.4424 8.3916C31.4948 8.55777 31.5458 8.72489 31.5911 8.89417C31.6289 9.03539 31.6622 9.17998 31.6934 9.32812L31.2051 9.43066C31.1757 9.29101 31.1438 9.15558 31.1084 9.02344C31.065 8.86144 31.0179 8.70099 30.9678 8.54199L31.4424 8.3916ZM1.79883 6.68945C1.64494 6.98506 1.50346 7.28839 1.375 7.59863L0.913086 7.40723C1.04715 7.08346 1.19585 6.76748 1.35645 6.45898L1.79883 6.68945ZM30.6426 6.45898C30.8032 6.7675 30.9519 7.08344 31.0859 7.40723L30.625 7.59863C30.4965 7.28839 30.3551 6.98506 30.2012 6.68945L30.6426 6.45898ZM2.47949 4.69434L2.87598 4.99902C2.67264 5.26395 2.48087 5.53867 2.30078 5.82129L1.87988 5.55176C2.06774 5.257 2.26741 4.97064 2.47949 4.69434ZM29.5195 4.69434C29.7316 4.97065 29.9313 5.25699 30.1191 5.55176L29.6992 5.82129C29.5191 5.53867 29.3274 5.26395 29.124 4.99902L29.5195 4.69434ZM4.23047 3.52148C3.98396 3.7474 3.7474 3.98396 3.52148 4.23047L3.15332 3.89355C3.38921 3.63616 3.63616 3.38921 3.89355 3.15332L4.23047 3.52148ZM28.1055 3.15332C28.3629 3.3892 28.6098 3.63615 28.8457 3.89355L28.4785 4.23047C28.2526 3.98396 28.016 3.7474 27.7695 3.52148L28.1055 3.15332ZM5.82129 2.30078C5.53867 2.48087 5.26395 2.67264 4.99902 2.87598L4.69434 2.47949C4.97064 2.26741 5.257 2.06774 5.55176 1.87988L5.82129 2.30078ZM26.4473 1.87988C26.7421 2.06773 27.0284 2.26742 27.3047 2.47949L27.001 2.87598C26.736 2.67264 26.4613 2.48087 26.1787 2.30078L26.4473 1.87988ZM7.59863 1.375C7.28839 1.50346 6.98506 1.64494 6.68945 1.79883L6.45898 1.35645C6.76748 1.19585 7.08346 1.04715 7.40723 0.913086L7.59863 1.375ZM24.5918 0.913086C24.9156 1.04713 25.2315 1.19586 25.54 1.35645L25.3105 1.79883C25.0149 1.64494 24.7116 1.50346 24.4014 1.375L24.5918 0.913086ZM9.43066 0.794922C9.29101 0.824293 9.15558 0.856194 9.02344 0.891602C8.86144 0.935009 8.70099 0.98212 8.54199 1.03223L8.3916 0.556641C8.43066 0.544331 8.46956 0.531457 8.50879 0.519531L8.89417 0.40889C9.03545 0.371039 9.17991 0.336831 9.32812 0.305664L9.43066 0.794922ZM22.6709 0.305664C22.8194 0.336883 22.9643 0.370959 23.1058 0.40889C23.2747 0.454143 23.4416 0.504401 23.6074 0.556641L23.458 1.03223C23.299 0.98212 23.1386 0.935009 22.9766 0.891602C22.8444 0.856194 22.709 0.824293 22.5693 0.794922L22.6709 0.305664ZM11.1289 0.579102C10.8193 0.599782 10.5338 0.625746 10.2676 0.658203L10.2227 0.286133L10.207 0.163086C10.4841 0.129293 10.7786 0.10419 11.0957 0.0830078L11.1289 0.579102ZM20.9033 0.0830078C21.2205 0.104176 21.5149 0.129313 21.792 0.163086L21.7783 0.286133L21.7324 0.658203C21.4662 0.625746 21.1807 0.599782 20.8711 0.579102L20.9033 0.0830078ZM12.8809 0.254883L12.8857 0.514648C12.5727 0.519858 12.279 0.526552 12.0029 0.536133L11.9863 0.0380859C12.2659 0.0283873 12.5619 0.0208705 12.877 0.015625L12.8809 0.254883ZM19.1221 0.015625C19.4371 0.0208659 19.7332 0.0283946 20.0127 0.0380859L19.9971 0.536133C19.721 0.526552 19.4273 0.519858 19.1143 0.514648L19.1191 0.254883L19.1221 0.015625ZM14.6631 0.500977C14.3516 0.501613 14.0554 0.502946 13.7734 0.504883L13.7695 0.00585938C14.0528 0.00391255 14.3498 0.00356717 14.6621 0.00292969L14.6631 0.500977ZM18.2295 0.00585938L18.2266 0.504883C17.9446 0.502946 17.6484 0.501613 17.3369 0.500977V0.00292969C17.6492 0.00356611 17.9463 0.00391467 18.2295 0.00585938ZM16.4473 0.000976562V0.5H15.5527V0.000976562C15.6988 0.000948575 15.8478 0 16 0C16.1522 0 16.3012 0.000948575 16.4473 0.000976562Z" fill="currentColor" fill-opacity="0.8"/>`
   };
   const meta = {
-    collection: "snowui",
-    usageName: "x-circle",
-    componentName: "XCircle"
+    collection: "special",
+    usageName: "default-icon",
+    componentName: "DefaultIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1321.prop($$props, "viewBox", 3, defaultViewBox), rest = $1321.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47519,17 +47520,17 @@ function XCircle2($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/DefaultIcon.svelte
+// src/icons/special/DocxIcon.svelte
 var import_disclose_version1322 = require("svelte/internal/disclose-version");
 var $1322 = __toESM(require("svelte/internal/client"));
-function DefaultIcon($$anchor, $$props) {
+function DocxIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path d="M0 16C0 12.2801 0 10.4202 0.40889 8.89417C1.5185 4.75307 4.75307 1.5185 8.89417 0.40889C10.4202 0 12.2801 0 16 0C19.7199 0 21.5798 0 23.1058 0.40889C27.2469 1.5185 30.4815 4.75307 31.5911 8.89417C32 10.4202 32 12.2801 32 16C32 19.7199 32 21.5798 31.5911 23.1058C30.4815 27.2469 27.2469 30.4815 23.1058 31.5911C21.5798 32 19.7199 32 16 32C12.2801 32 10.4202 32 8.89417 31.5911C4.75307 30.4815 1.5185 27.2469 0.40889 23.1058C0 21.5798 0 19.7199 0 16Z" fill="currentColor" fill-opacity="0.04"/> <path d="M16 31.5V32C15.8478 32 15.6988 31.9981 15.5527 31.998V31.5C15.6987 31.5 15.8479 31.5 16 31.5ZM16.4473 31.5V31.998C16.3012 31.9981 16.1522 32 16 32V31.5C16.1521 31.5 16.3013 31.5 16.4473 31.5ZM14.6631 31.499L14.6621 31.9961C14.3498 31.9955 14.0528 31.9951 13.7695 31.9932L13.7734 31.4951C14.0554 31.4971 14.3516 31.4984 14.6631 31.499ZM18.2285 31.7451L18.2295 31.9932C17.9463 31.9951 17.6492 31.9955 17.3369 31.9961V31.499C17.6484 31.4984 17.9446 31.4971 18.2266 31.4951L18.2285 31.7451ZM12.8857 31.4854L12.8809 31.7344L12.8818 31.7354L12.8809 31.7803L12.877 31.9834C12.5619 31.9782 12.2659 31.9706 11.9863 31.9609L12.0029 31.4639C12.279 31.4734 12.5727 31.4801 12.8857 31.4854ZM20.0127 31.9609C19.7332 31.9706 19.4372 31.9782 19.1221 31.9834L19.1191 31.7803L19.1182 31.7354L19.1143 31.4854C19.4273 31.4801 19.721 31.4734 19.9971 31.4639L20.0127 31.9609ZM10.2676 31.3418C10.5338 31.3743 10.8193 31.4002 11.1289 31.4209L11.0957 31.916C10.7785 31.8948 10.4841 31.8697 10.207 31.8359L10.2676 31.3418ZM21.792 31.8359C21.5149 31.8697 21.2205 31.8948 20.9033 31.916L20.8711 31.4209C21.1807 31.4002 21.4662 31.3743 21.7324 31.3418L21.792 31.8359ZM9.02344 31.1084C9.15558 31.1438 9.29101 31.1757 9.43066 31.2051L9.32812 31.6934C9.17998 31.6622 9.03539 31.6289 8.89417 31.5911C8.72489 31.5458 8.55777 31.4948 8.3916 31.4424L8.4668 31.2061L8.54199 30.9678C8.70099 31.0179 8.86144 31.065 9.02344 31.1084ZM23.5332 31.2061L23.6074 31.4424C23.4415 31.4947 23.2748 31.5458 23.1058 31.5911C22.9643 31.629 22.8194 31.6622 22.6709 31.6934L22.5693 31.2051C22.709 31.1757 22.8444 31.1438 22.9766 31.1084C23.1386 31.065 23.299 31.0179 23.458 30.9678L23.5332 31.2061ZM6.68945 30.2012C6.98506 30.3551 7.28839 30.4965 7.59863 30.625L7.40723 31.0859C7.08344 30.9519 6.7675 30.8032 6.45898 30.6426L6.68945 30.2012ZM25.54 30.6426C25.2315 30.8032 24.9156 30.9519 24.5918 31.0859L24.4014 30.625C24.7116 30.4965 25.0149 30.3551 25.3105 30.2012L25.54 30.6426ZM4.99902 29.124C5.26395 29.3274 5.53867 29.5191 5.82129 29.6992L5.55176 30.1191C5.25699 29.9313 4.97065 29.7316 4.69434 29.5195L4.99902 29.124ZM27.3047 29.5195C27.0283 29.7316 26.7421 29.9313 26.4473 30.1191L26.1787 29.6992C26.4613 29.5191 26.736 29.3274 27.001 29.124L27.3047 29.5195ZM3.52148 27.7695C3.7474 28.016 3.98396 28.2526 4.23047 28.4785L3.89355 28.8457C3.63615 28.6098 3.3892 28.3629 3.15332 28.1055L3.52148 27.7695ZM28.8457 28.1055C28.6098 28.3629 28.3629 28.6098 28.1055 28.8457L27.7695 28.4785C28.016 28.2526 28.2526 28.016 28.4785 27.7695L28.8457 28.1055ZM2.30078 26.1787C2.48087 26.4613 2.67264 26.736 2.87598 27.001L2.47949 27.3047C2.26742 27.0284 2.06773 26.7421 1.87988 26.4473L2.08984 26.3135L2.30078 26.1787ZM30.1191 26.4473C29.9313 26.7421 29.7316 27.0283 29.5195 27.3047L29.124 27.001C29.3274 26.736 29.5191 26.4613 29.6992 26.1787L30.1191 26.4473ZM1.375 24.4014C1.50346 24.7116 1.64494 25.0149 1.79883 25.3105L1.35645 25.54C1.19586 25.2315 1.04713 24.9156 0.913086 24.5918L1.14453 24.4971L1.375 24.4014ZM30.625 24.4014L31.0859 24.5918C30.9519 24.9156 30.8032 25.2315 30.6426 25.54L30.2012 25.3105C30.3551 25.0149 30.4965 24.7116 30.625 24.4014ZM0.891602 22.9766C0.935009 23.1386 0.98212 23.299 1.03223 23.458L0.793945 23.5332L0.556641 23.6074C0.504401 23.4416 0.454143 23.2747 0.40889 23.1058C0.370959 22.9643 0.336883 22.8194 0.305664 22.6709L0.794922 22.5693C0.824293 22.709 0.856194 22.8444 0.891602 22.9766ZM31.6934 22.6709C31.6622 22.8194 31.629 22.9643 31.5911 23.1058C31.5458 23.2748 31.4947 23.4415 31.4424 23.6074L31.2061 23.5332L30.9678 23.458C31.0179 23.299 31.065 23.1386 31.1084 22.9766C31.1438 22.8444 31.1757 22.709 31.2051 22.5693L31.6934 22.6709ZM0.579102 20.8711C0.599782 21.1807 0.625746 21.4662 0.658203 21.7324L0.163086 21.792C0.129313 21.5149 0.104176 21.2205 0.0830078 20.9033L0.579102 20.8711ZM31.916 20.9033C31.8948 21.2205 31.8697 21.5149 31.8359 21.792L31.3418 21.7324C31.3743 21.4662 31.4002 21.1807 31.4209 20.8711L31.916 20.9033ZM0.536133 19.9971L0.0380859 20.0127C0.0283946 19.7332 0.0208659 19.4371 0.015625 19.1221L0.514648 19.1143C0.519858 19.4273 0.526552 19.721 0.536133 19.9971ZM31.9834 19.1221C31.9782 19.4372 31.9706 19.7332 31.9609 20.0127L31.4639 19.9971C31.4734 19.721 31.4801 19.4273 31.4854 19.1143L31.9834 19.1221ZM0.504883 18.2266L0.254883 18.2285L0.00585938 18.2295C0.00391467 17.9463 0.00356611 17.6492 0.00292969 17.3369H0.500977C0.501613 17.6484 0.502946 17.9446 0.504883 18.2266ZM31.9961 17.3369C31.9955 17.6492 31.9951 17.9463 31.9932 18.2295L31.7451 18.2285L31.4951 18.2266C31.4971 17.9446 31.4984 17.6484 31.499 17.3369H31.9961ZM0 16C0 15.8478 0.000948575 15.6988 0.000976562 15.5527H0.5V16.4473H0.000976562C0.000948575 16.3012 0 16.1522 0 16ZM31.999 16.4473H31.5V15.5527H31.999C31.9991 15.6988 32 15.8478 32 16C32 16.1522 31.9991 16.3012 31.999 16.4473ZM0.504883 13.7734C0.502946 14.0554 0.501613 14.3516 0.500977 14.6631L0.00292969 14.6621C0.00356717 14.3498 0.00391255 14.0528 0.00585938 13.7695L0.504883 13.7734ZM31.9961 14.6621L31.499 14.6631C31.4984 14.3516 31.4971 14.0554 31.4951 13.7734L31.9932 13.7695C31.9951 14.0528 31.9955 14.3498 31.9961 14.6621ZM0.536133 12.0029C0.526552 12.279 0.519858 12.5727 0.514648 12.8857L0.264648 12.8809L0.015625 12.877C0.0208705 12.5619 0.0283873 12.2659 0.0380859 11.9863L0.536133 12.0029ZM31.9609 11.9863C31.9706 12.2659 31.9782 12.5619 31.9834 12.877L31.7354 12.8818L31.7344 12.8809L31.4854 12.8857C31.4801 12.5727 31.4734 12.279 31.4639 12.0029L31.9609 11.9863ZM0.658203 10.2676C0.625746 10.5338 0.599782 10.8193 0.579102 11.1289L0.0830078 11.0957C0.10419 10.7786 0.129293 10.4841 0.163086 10.207L0.658203 10.2676ZM31.8359 10.207C31.8697 10.4841 31.8948 10.7785 31.916 11.0957L31.4209 11.1289C31.4002 10.8193 31.3743 10.5338 31.3418 10.2676L31.8359 10.207ZM1.03223 8.54199C0.98212 8.70099 0.935009 8.86144 0.891602 9.02344C0.856194 9.15558 0.824293 9.29101 0.794922 9.43066L0.305664 9.32812C0.315811 9.27987 0.326082 9.232 0.336914 9.18457L0.40889 8.89417C0.454224 8.72498 0.504296 8.55768 0.556641 8.3916L1.03223 8.54199ZM31.4424 8.3916C31.4948 8.55777 31.5458 8.72489 31.5911 8.89417C31.6289 9.03539 31.6622 9.17998 31.6934 9.32812L31.2051 9.43066C31.1757 9.29101 31.1438 9.15558 31.1084 9.02344C31.065 8.86144 31.0179 8.70099 30.9678 8.54199L31.4424 8.3916ZM1.79883 6.68945C1.64494 6.98506 1.50346 7.28839 1.375 7.59863L0.913086 7.40723C1.04715 7.08346 1.19585 6.76748 1.35645 6.45898L1.79883 6.68945ZM30.6426 6.45898C30.8032 6.7675 30.9519 7.08344 31.0859 7.40723L30.625 7.59863C30.4965 7.28839 30.3551 6.98506 30.2012 6.68945L30.6426 6.45898ZM2.47949 4.69434L2.87598 4.99902C2.67264 5.26395 2.48087 5.53867 2.30078 5.82129L1.87988 5.55176C2.06774 5.257 2.26741 4.97064 2.47949 4.69434ZM29.5195 4.69434C29.7316 4.97065 29.9313 5.25699 30.1191 5.55176L29.6992 5.82129C29.5191 5.53867 29.3274 5.26395 29.124 4.99902L29.5195 4.69434ZM4.23047 3.52148C3.98396 3.7474 3.7474 3.98396 3.52148 4.23047L3.15332 3.89355C3.38921 3.63616 3.63616 3.38921 3.89355 3.15332L4.23047 3.52148ZM28.1055 3.15332C28.3629 3.3892 28.6098 3.63615 28.8457 3.89355L28.4785 4.23047C28.2526 3.98396 28.016 3.7474 27.7695 3.52148L28.1055 3.15332ZM5.82129 2.30078C5.53867 2.48087 5.26395 2.67264 4.99902 2.87598L4.69434 2.47949C4.97064 2.26741 5.257 2.06774 5.55176 1.87988L5.82129 2.30078ZM26.4473 1.87988C26.7421 2.06773 27.0284 2.26742 27.3047 2.47949L27.001 2.87598C26.736 2.67264 26.4613 2.48087 26.1787 2.30078L26.4473 1.87988ZM7.59863 1.375C7.28839 1.50346 6.98506 1.64494 6.68945 1.79883L6.45898 1.35645C6.76748 1.19585 7.08346 1.04715 7.40723 0.913086L7.59863 1.375ZM24.5918 0.913086C24.9156 1.04713 25.2315 1.19586 25.54 1.35645L25.3105 1.79883C25.0149 1.64494 24.7116 1.50346 24.4014 1.375L24.5918 0.913086ZM9.43066 0.794922C9.29101 0.824293 9.15558 0.856194 9.02344 0.891602C8.86144 0.935009 8.70099 0.98212 8.54199 1.03223L8.3916 0.556641C8.43066 0.544331 8.46956 0.531457 8.50879 0.519531L8.89417 0.40889C9.03545 0.371039 9.17991 0.336831 9.32812 0.305664L9.43066 0.794922ZM22.6709 0.305664C22.8194 0.336883 22.9643 0.370959 23.1058 0.40889C23.2747 0.454143 23.4416 0.504401 23.6074 0.556641L23.458 1.03223C23.299 0.98212 23.1386 0.935009 22.9766 0.891602C22.8444 0.856194 22.709 0.824293 22.5693 0.794922L22.6709 0.305664ZM11.1289 0.579102C10.8193 0.599782 10.5338 0.625746 10.2676 0.658203L10.2227 0.286133L10.207 0.163086C10.4841 0.129293 10.7786 0.10419 11.0957 0.0830078L11.1289 0.579102ZM20.9033 0.0830078C21.2205 0.104176 21.5149 0.129313 21.792 0.163086L21.7783 0.286133L21.7324 0.658203C21.4662 0.625746 21.1807 0.599782 20.8711 0.579102L20.9033 0.0830078ZM12.8809 0.254883L12.8857 0.514648C12.5727 0.519858 12.279 0.526552 12.0029 0.536133L11.9863 0.0380859C12.2659 0.0283873 12.5619 0.0208705 12.877 0.015625L12.8809 0.254883ZM19.1221 0.015625C19.4371 0.0208659 19.7332 0.0283946 20.0127 0.0380859L19.9971 0.536133C19.721 0.526552 19.4273 0.519858 19.1143 0.514648L19.1191 0.254883L19.1221 0.015625ZM14.6631 0.500977C14.3516 0.501613 14.0554 0.502946 13.7734 0.504883L13.7695 0.00585938C14.0528 0.00391255 14.3498 0.00356717 14.6621 0.00292969L14.6631 0.500977ZM18.2295 0.00585938L18.2266 0.504883C17.9446 0.502946 17.6484 0.501613 17.3369 0.500977V0.00292969C17.6492 0.00356611 17.9463 0.00391467 18.2295 0.00585938ZM16.4473 0.000976562V0.5H15.5527V0.000976562C15.6988 0.000948575 15.8478 0 16 0C16.1522 0 16.3012 0.000948575 16.4473 0.000976562Z" fill="currentColor" fill-opacity="0.8"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 13.125C20.5 12.6418 20.8918 12.25 21.375 12.25H27.125C27.6082 12.25 28 12.6418 28 13.125C28 13.6082 27.6082 14 27.125 14H21.375C20.8918 14 20.5 13.6082 20.5 13.125Z" fill="#6BB3EC"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 17.125C20.5 16.6418 20.8918 16.25 21.375 16.25H27.125C27.6082 16.25 28 16.6418 28 17.125C28 17.6082 27.6082 18 27.125 18H21.375C20.8918 18 20.5 17.6082 20.5 17.125Z" fill="#508FD6"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.125C20.5 20.6418 20.8918 20.25 21.375 20.25H27.125C27.6082 20.25 28 20.6418 28 21.125C28 21.6082 27.6082 22 27.125 22H21.375C20.8918 22 20.5 21.6082 20.5 21.125Z" fill="#3770C3"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3770C3"/> <path d="M5.46191 21.5215L3.5 11.5H5.20215L6.43262 18.3838L7.93652 11.5H9.91211L11.3545 18.5L12.6191 11.5H14.2871L12.291 21.5215H10.5273L8.88672 14.0293L7.25977 21.5215H5.46191Z" fill="white"/>`
   };
   const meta = {
     collection: "special",
-    usageName: "default-icon",
-    componentName: "DefaultIcon"
+    usageName: "docx-icon",
+    componentName: "DocxIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1322.prop($$props, "viewBox", 3, defaultViewBox), rest = $1322.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47549,17 +47550,17 @@ function DefaultIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/DocxIcon.svelte
+// src/icons/special/FormIcon.svelte
 var import_disclose_version1323 = require("svelte/internal/disclose-version");
 var $1323 = __toESM(require("svelte/internal/client"));
-function DocxIcon($$anchor, $$props) {
+function FormIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 13.125C20.5 12.6418 20.8918 12.25 21.375 12.25H27.125C27.6082 12.25 28 12.6418 28 13.125C28 13.6082 27.6082 14 27.125 14H21.375C20.8918 14 20.5 13.6082 20.5 13.125Z" fill="#6BB3EC"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 17.125C20.5 16.6418 20.8918 16.25 21.375 16.25H27.125C27.6082 16.25 28 16.6418 28 17.125C28 17.6082 27.6082 18 27.125 18H21.375C20.8918 18 20.5 17.6082 20.5 17.125Z" fill="#508FD6"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.125C20.5 20.6418 20.8918 20.25 21.375 20.25H27.125C27.6082 20.25 28 20.6418 28 21.125C28 21.6082 27.6082 22 27.125 22H21.375C20.8918 22 20.5 21.6082 20.5 21.125Z" fill="#3770C3"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3770C3"/> <path d="M5.46191 21.5215L3.5 11.5H5.20215L6.43262 18.3838L7.93652 11.5H9.91211L11.3545 18.5L12.6191 11.5H14.2871L12.291 21.5215H10.5273L8.88672 14.0293L7.25977 21.5215H5.46191Z" fill="white"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 14H20V12H25C26.6569 12 28 13.3431 28 15C28 16.6569 26.6569 18 25 18H20V16H25C25.5523 16 26 15.5523 26 15C26 14.4477 25.5523 14 25 14Z" fill="#4EA7AF"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 22H20V20H25C26.6569 20 28 21.3431 28 23C28 24.6569 26.6569 26 25 26H20V24H25C25.5523 24 26 23.5523 26 23C26 22.4477 25.5523 22 25 22Z" fill="#3D9298"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3D9298"/> <path d="M6.5 21.5215V11.5H12V13.5H8.5V15.5H12V17.5H8.5L8.52344 21.5215H6.5Z" fill="white"/>`
   };
   const meta = {
     collection: "special",
-    usageName: "docx-icon",
-    componentName: "DocxIcon"
+    usageName: "form-icon",
+    componentName: "FormIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1323.prop($$props, "viewBox", 3, defaultViewBox), rest = $1323.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47579,17 +47580,17 @@ function DocxIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/FormIcon.svelte
+// src/icons/special/Notepad.svelte
 var import_disclose_version1324 = require("svelte/internal/disclose-version");
 var $1324 = __toESM(require("svelte/internal/client"));
-function FormIcon($$anchor, $$props) {
+function Notepad2($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 14H20V12H25C26.6569 12 28 13.3431 28 15C28 16.6569 26.6569 18 25 18H20V16H25C25.5523 16 26 15.5523 26 15C26 14.4477 25.5523 14 25 14Z" fill="#4EA7AF"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M25 22H20V20H25C26.6569 20 28 21.3431 28 23C28 24.6569 26.6569 26 25 26H20V24H25C25.5523 24 26 23.5523 26 23C26 22.4477 25.5523 22 25 22Z" fill="#3D9298"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3D9298"/> <path d="M6.5 21.5215V11.5H12V13.5H8.5V15.5H12V17.5H8.5L8.52344 21.5215H6.5Z" fill="white"/>`
+    "regular": `<path d="M6 5C6 3.89543 6.89543 3 8 3H20L26 9V27C26 28.1046 25.1046 29 24 29H8C6.89543 29 6 28.1046 6 27V5Z" fill="url(#paint0_linear_11899_40038)"/> <path d="M26 9L20 3V7C20 8.10457 20.8954 9 22 9H26Z" fill="#DCCFE8"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13C9.22386 13 9 13.2239 9 13.5C9 13.7761 9.22386 14 9.5 14H22.5C22.7761 14 23 13.7761 23 13.5C23 13.2239 22.7761 13 22.5 13H9.5ZM9.5 16C9.22386 16 9 16.2239 9 16.5C9 16.7761 9.22386 17 9.5 17H22.5C22.7761 17 23 16.7761 23 16.5C23 16.2239 22.7761 16 22.5 16H9.5ZM9 19.5C9 19.2239 9.22386 19 9.5 19H22.5C22.7761 19 23 19.2239 23 19.5C23 19.7761 22.7761 20 22.5 20H9.5C9.22386 20 9 19.7761 9 19.5ZM9.5 22C9.22386 22 9 22.2239 9 22.5C9 22.7761 9.22386 23 9.5 23H22.5C22.7761 23 23 22.7761 23 22.5C23 22.2239 22.7761 22 22.5 22H9.5Z" fill="#A1A2CD"/> <path d="M24.8493 12.7071C25.2398 12.3166 25.873 12.3166 26.2635 12.7071L29.0919 15.5355C29.4825 15.9261 29.4825 16.5592 29.0919 16.9497L16.364 29.6777L12.1214 25.435L24.8493 12.7071Z" fill="url(#paint1_linear_11899_40038)"/> <path d="M12.1213 29.6782V25.4355L16.364 29.6782H12.1213Z" fill="url(#paint2_linear_11899_40038)"/> <path d="M12.1213 29.6779V28.2637L13.5356 29.6779H12.1213Z" fill="#1C1C1C"/> <rect x="23.4351" y="14.1211" width="6" height="3" transform="rotate(45 23.4351 14.1211)" fill="url(#paint3_linear_11899_40038)"/> <defs> <linearGradient id="paint0_linear_11899_40038" x1="16" y1="3" x2="16" y2="31" gradientUnits="userSpaceOnUse"> <stop stop-color="#F1ECF7"/> <stop offset="1" stop-color="#E8DEF2"/> </linearGradient> <linearGradient id="paint1_linear_11899_40038" x1="27.6777" y1="14.1213" x2="14.2427" y2="27.5563" gradientUnits="userSpaceOnUse"> <stop stop-color="#FF6659"/> <stop offset="1" stop-color="#FF8749"/> </linearGradient> <linearGradient id="paint2_linear_11899_40038" x1="14.2427" y1="27.5569" x2="12.1213" y2="29.6782" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFBA9F"/> <stop offset="1" stop-color="#DE8893"/> </linearGradient> <linearGradient id="paint3_linear_11899_40038" x1="23.7487" y1="15.05" x2="30.8198" y2="15.05" gradientUnits="userSpaceOnUse"> <stop stop-color="#E3DBEF"/> <stop offset="0.807292" stop-color="#F6F1FE"/> <stop offset="1" stop-color="#EADEFC"/> </linearGradient> </defs>`
   };
   const meta = {
     collection: "special",
-    usageName: "form-icon",
-    componentName: "FormIcon"
+    usageName: "notepad",
+    componentName: "Notepad"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1324.prop($$props, "viewBox", 3, defaultViewBox), rest = $1324.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47609,17 +47610,17 @@ function FormIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/Notepad.svelte
+// src/icons/special/OnenoteIcon.svelte
 var import_disclose_version1325 = require("svelte/internal/disclose-version");
 var $1325 = __toESM(require("svelte/internal/client"));
-function Notepad2($$anchor, $$props) {
+function OnenoteIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path d="M6 5C6 3.89543 6.89543 3 8 3H20L26 9V27C26 28.1046 25.1046 29 24 29H8C6.89543 29 6 28.1046 6 27V5Z" fill="url(#paint0_linear_11899_40038)"/> <path d="M26 9L20 3V7C20 8.10457 20.8954 9 22 9H26Z" fill="#DCCFE8"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13C9.22386 13 9 13.2239 9 13.5C9 13.7761 9.22386 14 9.5 14H22.5C22.7761 14 23 13.7761 23 13.5C23 13.2239 22.7761 13 22.5 13H9.5ZM9.5 16C9.22386 16 9 16.2239 9 16.5C9 16.7761 9.22386 17 9.5 17H22.5C22.7761 17 23 16.7761 23 16.5C23 16.2239 22.7761 16 22.5 16H9.5ZM9 19.5C9 19.2239 9.22386 19 9.5 19H22.5C22.7761 19 23 19.2239 23 19.5C23 19.7761 22.7761 20 22.5 20H9.5C9.22386 20 9 19.7761 9 19.5ZM9.5 22C9.22386 22 9 22.2239 9 22.5C9 22.7761 9.22386 23 9.5 23H22.5C22.7761 23 23 22.7761 23 22.5C23 22.2239 22.7761 22 22.5 22H9.5Z" fill="#A1A2CD"/> <path d="M24.8493 12.7071C25.2398 12.3166 25.873 12.3166 26.2635 12.7071L29.0919 15.5355C29.4825 15.9261 29.4825 16.5592 29.0919 16.9497L16.364 29.6777L12.1214 25.435L24.8493 12.7071Z" fill="url(#paint1_linear_11899_40038)"/> <path d="M12.1213 29.6782V25.4355L16.364 29.6782H12.1213Z" fill="url(#paint2_linear_11899_40038)"/> <path d="M12.1213 29.6779V28.2637L13.5356 29.6779H12.1213Z" fill="#1C1C1C"/> <rect x="23.4351" y="14.1211" width="6" height="3" transform="rotate(45 23.4351 14.1211)" fill="url(#paint3_linear_11899_40038)"/> <defs> <linearGradient id="paint0_linear_11899_40038" x1="16" y1="3" x2="16" y2="31" gradientUnits="userSpaceOnUse"> <stop stop-color="#F1ECF7"/> <stop offset="1" stop-color="#E8DEF2"/> </linearGradient> <linearGradient id="paint1_linear_11899_40038" x1="27.6777" y1="14.1213" x2="14.2427" y2="27.5563" gradientUnits="userSpaceOnUse"> <stop stop-color="#FF6659"/> <stop offset="1" stop-color="#FF8749"/> </linearGradient> <linearGradient id="paint2_linear_11899_40038" x1="14.2427" y1="27.5569" x2="12.1213" y2="29.6782" gradientUnits="userSpaceOnUse"> <stop stop-color="#FFBA9F"/> <stop offset="1" stop-color="#DE8893"/> </linearGradient> <linearGradient id="paint3_linear_11899_40038" x1="23.7487" y1="15.05" x2="30.8198" y2="15.05" gradientUnits="userSpaceOnUse"> <stop stop-color="#E3DBEF"/> <stop offset="0.807292" stop-color="#F6F1FE"/> <stop offset="1" stop-color="#EADEFC"/> </linearGradient> </defs>`
+    "regular": `<path d="M28 3.5C28 2.67157 28.6716 2 29.5 2H30.5C31.3284 2 32 2.67157 32 3.5V8.5C32 9.32843 31.3284 10 30.5 10H29.5C28.6716 10 28 9.32843 28 8.5V3.5Z" fill="#AE4BD5"/> <path d="M28 13.5C28 12.6716 28.6716 12 29.5 12H30.5C31.3284 12 32 12.6716 32 13.5V18.5C32 19.3284 31.3284 20 30.5 20H29.5C28.6716 20 28 19.3284 28 18.5V13.5Z" fill="#9332BF"/> <path d="M28 23.5C28 22.6716 28.6716 22 29.5 22H30.5C31.3284 22 32 22.6716 32 23.5V28.5C32 29.3284 31.3284 30 30.5 30H29.5C28.6716 30 28 29.3284 28 28.5V23.5Z" fill="#7719AA"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 29.2064V2.79365C7.5 1.25076 8.73122 0 10.25 0H26.75C28.2688 0 29.5 1.25076 29.5 2.79365V29.2064C29.5 30.7492 28.2688 32 26.75 32H10.25C8.73122 32 7.5 30.7492 7.5 29.2064ZM9.25 2.79365V29.2064C9.25 29.7674 9.69772 30.2222 10.25 30.2222H26.75C27.3023 30.2222 27.75 29.7674 27.75 29.2064V2.79365C27.75 2.2326 27.3023 1.77778 26.75 1.77778H10.25C9.69772 1.77778 9.25 2.2326 9.25 2.79365Z" fill="#9D9C9B"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#7719AA"/> <path d="M4 21.5V12H5.75L12.25 18.5V12H14V21.5H12.25L5.75 15V21.5H4Z" fill="white"/>`
   };
   const meta = {
     collection: "special",
-    usageName: "notepad",
-    componentName: "Notepad"
+    usageName: "onenote-icon",
+    componentName: "OnenoteIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1325.prop($$props, "viewBox", 3, defaultViewBox), rest = $1325.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47639,17 +47640,17 @@ function Notepad2($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/OnenoteIcon.svelte
+// src/icons/special/PptIcon.svelte
 var import_disclose_version1326 = require("svelte/internal/disclose-version");
 var $1326 = __toESM(require("svelte/internal/client"));
-function OnenoteIcon($$anchor, $$props) {
+function PptIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path d="M28 3.5C28 2.67157 28.6716 2 29.5 2H30.5C31.3284 2 32 2.67157 32 3.5V8.5C32 9.32843 31.3284 10 30.5 10H29.5C28.6716 10 28 9.32843 28 8.5V3.5Z" fill="#AE4BD5"/> <path d="M28 13.5C28 12.6716 28.6716 12 29.5 12H30.5C31.3284 12 32 12.6716 32 13.5V18.5C32 19.3284 31.3284 20 30.5 20H29.5C28.6716 20 28 19.3284 28 18.5V13.5Z" fill="#9332BF"/> <path d="M28 23.5C28 22.6716 28.6716 22 29.5 22H30.5C31.3284 22 32 22.6716 32 23.5V28.5C32 29.3284 31.3284 30 30.5 30H29.5C28.6716 30 28 29.3284 28 28.5V23.5Z" fill="#7719AA"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 29.2064V2.79365C7.5 1.25076 8.73122 0 10.25 0H26.75C28.2688 0 29.5 1.25076 29.5 2.79365V29.2064C29.5 30.7492 28.2688 32 26.75 32H10.25C8.73122 32 7.5 30.7492 7.5 29.2064ZM9.25 2.79365V29.2064C9.25 29.7674 9.69772 30.2222 10.25 30.2222H26.75C27.3023 30.2222 27.75 29.7674 27.75 29.2064V2.79365C27.75 2.2326 27.3023 1.77778 26.75 1.77778H10.25C9.69772 1.77778 9.25 2.2326 9.25 2.79365Z" fill="#9D9C9B"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#7719AA"/> <path d="M4 21.5V12H5.75L12.25 18.5V12H14V21.5H12.25L5.75 15V21.5H4Z" fill="white"/>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path d="M20 24C24 24 26 22 26 18H22V14H20V18V24Z" fill="#E48762"/> <path d="M24 16V12C25.5 12 28 14.5 28 16H24Z" fill="#F9D4C4"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#C25B33"/> <path d="M6 21.5215V11.5H8.66602C9.65951 11.5 10.3089 11.5479 10.6143 11.6436C11.1019 11.7985 11.5029 12.1289 11.8174 12.6348C12.1364 13.1406 12.2959 13.7923 12.2959 14.5898C12.2959 15.3145 12.1592 15.9229 11.8857 16.415C11.6123 16.9027 11.2705 17.2467 10.8604 17.4473C10.4502 17.6432 9.74382 17.7412 8.74121 17.7412H7.6543V21.5215H6ZM7.6543 13.1953V16.0391H8.57031C9.18555 16.0391 9.60254 15.9958 9.82129 15.9092C10.0446 15.8226 10.2269 15.6676 10.3682 15.4443C10.5094 15.2165 10.5801 14.9385 10.5801 14.6104C10.5801 14.2777 10.5072 13.9974 10.3613 13.7695C10.2155 13.5417 10.0355 13.389 9.82129 13.3115C9.6071 13.234 9.15365 13.1953 8.46094 13.1953H7.6543Z" fill="white"/>`
   };
   const meta = {
     collection: "special",
-    usageName: "onenote-icon",
-    componentName: "OnenoteIcon"
+    usageName: "ppt-icon",
+    componentName: "PptIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1326.prop($$props, "viewBox", 3, defaultViewBox), rest = $1326.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47669,19 +47670,19 @@ function OnenoteIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/PptIcon.svelte
+// src/icons/special/RoundAlt.svelte
 var import_disclose_version1327 = require("svelte/internal/disclose-version");
 var $1327 = __toESM(require("svelte/internal/client"));
-function PptIcon($$anchor, $$props) {
+function RoundAlt($$anchor, $$props) {
   const weights = {
-    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path d="M20 24C24 24 26 22 26 18H22V14H20V18V24Z" fill="#E48762"/> <path d="M24 16V12C25.5 12 28 14.5 28 16H24Z" fill="#F9D4C4"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#C25B33"/> <path d="M6 21.5215V11.5H8.66602C9.65951 11.5 10.3089 11.5479 10.6143 11.6436C11.1019 11.7985 11.5029 12.1289 11.8174 12.6348C12.1364 13.1406 12.2959 13.7923 12.2959 14.5898C12.2959 15.3145 12.1592 15.9229 11.8857 16.415C11.6123 16.9027 11.2705 17.2467 10.8604 17.4473C10.4502 17.6432 9.74382 17.7412 8.74121 17.7412H7.6543V21.5215H6ZM7.6543 13.1953V16.0391H8.57031C9.18555 16.0391 9.60254 15.9958 9.82129 15.9092C10.0446 15.8226 10.2269 15.6676 10.3682 15.4443C10.5094 15.2165 10.5801 14.9385 10.5801 14.6104C10.5801 14.2777 10.5072 13.9974 10.3613 13.7695C10.2155 13.5417 10.0355 13.389 9.82129 13.3115C9.6071 13.234 9.15365 13.1953 8.46094 13.1953H7.6543Z" fill="white"/>`
+    "regular": `<g filter="url(#filter0_d_11899_40029)"> <circle cx="22" cy="20" r="14" fill="white"/> </g> <defs> <filter id="filter0_d_11899_40029" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="2"/> <feGaussianBlur stdDeviation="4"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11899_40029"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11899_40029" result="shape"/> </filter> </defs>`
   };
   const meta = {
     collection: "special",
-    usageName: "ppt-icon",
-    componentName: "PptIcon"
+    usageName: "round-alt",
+    componentName: "RoundAlt"
   };
-  const defaultViewBox = "0 0 32 32";
+  const defaultViewBox = "0 0 44 44";
   let viewBox = $1327.prop($$props, "viewBox", 3, defaultViewBox), rest = $1327.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
   IconBase($$anchor, $1327.spread_props(
     {
@@ -47699,19 +47700,19 @@ function PptIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/RoundAlt.svelte
+// src/icons/special/SearchIcon.svelte
 var import_disclose_version1328 = require("svelte/internal/disclose-version");
 var $1328 = __toESM(require("svelte/internal/client"));
-function RoundAlt($$anchor, $$props) {
+function SearchIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<g filter="url(#filter0_d_11899_40029)"> <circle cx="22" cy="20" r="14" fill="white"/> </g> <defs> <filter id="filter0_d_11899_40029" x="0" y="0" width="44" height="44" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/> <feOffset dy="2"/> <feGaussianBlur stdDeviation="4"/> <feComposite in2="hardAlpha" operator="out"/> <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/> <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_11899_40029"/> <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_11899_40029" result="shape"/> </filter> </defs>`
+    "regular": `<path d="M28.0712 14.4C28.0712 20.1437 23.4149 24.7999 17.6712 24.7999C11.9275 24.7999 7.27124 20.1437 7.27124 14.4C7.27124 8.65622 11.9275 4 17.6712 4C23.4149 4 28.0712 8.65622 28.0712 14.4Z" fill="url(#paint0_radial_11899_40037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6712 23.2999C22.5865 23.2999 26.5712 19.3153 26.5712 14.4C26.5712 9.48465 22.5865 5.5 17.6712 5.5C12.7559 5.5 8.77124 9.48465 8.77124 14.4C8.77124 19.3153 12.7559 23.2999 17.6712 23.2999ZM17.6712 24.7999C23.4149 24.7999 28.0712 20.1437 28.0712 14.4C28.0712 8.65622 23.4149 4 17.6712 4C11.9275 4 7.27124 8.65622 7.27124 14.4C7.27124 20.1437 11.9275 24.7999 17.6712 24.7999Z" fill="currentColor"/> <g filter="url(#filter0_f_11899_40037)"> <ellipse cx="22.3733" cy="10.302" rx="2" ry="1.5" transform="rotate(45 22.3733 10.302)" fill="url(#paint1_linear_11899_40037)"/> </g> <path d="M11.567 20.9177C12.7386 22.0893 12.7386 23.9888 11.567 25.1604L8.3639 28.3635C7.19233 29.5351 5.29283 29.5351 4.12126 28.3635V28.3635C2.94968 27.1919 2.94968 25.2925 4.12126 24.1209L7.32439 20.9177C8.49596 19.7462 10.3955 19.7462 11.567 20.9177V20.9177Z" fill="url(#paint2_linear_11899_40037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30324 27.3029L10.5064 24.0997C11.0922 23.5139 11.0922 22.5642 10.5064 21.9784C9.92059 21.3926 8.97084 21.3926 8.38505 21.9784L5.18192 25.1815C4.59613 25.7673 4.59613 26.7171 5.18192 27.3029C5.7677 27.8886 6.71745 27.8886 7.30324 27.3029ZM11.567 25.1604C12.7386 23.9888 12.7386 22.0893 11.567 20.9177C10.3955 19.7462 8.49596 19.7462 7.32439 20.9177L4.12126 24.1209C2.94968 25.2925 2.94968 27.1919 4.12126 28.3635C5.29283 29.5351 7.19233 29.5351 8.3639 28.3635L11.567 25.1604Z" fill="currentColor"/> <defs> <filter id="filter0_f_11899_40037" x="19.6055" y="7.53418" width="5.53571" height="5.53613" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_11899_40037"/> </filter> <radialGradient id="paint0_radial_11899_40037" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.6712 14.4) rotate(90) scale(10.4)"> <stop offset="0.583333" stop-color="#83D0FC"/> <stop offset="1" stop-color="#D6F0FF"/> </radialGradient> <linearGradient id="paint1_linear_11899_40037" x1="22.3733" y1="8.80202" x2="22.3733" y2="11.802" gradientUnits="userSpaceOnUse"> <stop stop-color="white"/> <stop offset="1" stop-color="white" stop-opacity="0"/> </linearGradient> <linearGradient id="paint2_linear_11899_40037" x1="9.96547" y1="26.762" x2="5.72283" y2="22.5193" gradientUnits="userSpaceOnUse"> <stop offset="0.598958" stop-color="#B5B7F9"/> <stop offset="1" stop-color="#EBEBFF"/> </linearGradient> </defs>`
   };
   const meta = {
     collection: "special",
-    usageName: "round-alt",
-    componentName: "RoundAlt"
+    usageName: "search-icon",
+    componentName: "SearchIcon"
   };
-  const defaultViewBox = "0 0 44 44";
+  const defaultViewBox = "0 0 32 32";
   let viewBox = $1328.prop($$props, "viewBox", 3, defaultViewBox), rest = $1328.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
   IconBase($$anchor, $1328.spread_props(
     {
@@ -47729,17 +47730,17 @@ function RoundAlt($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/SearchIcon.svelte
+// src/icons/special/TxtIcon.svelte
 var import_disclose_version1329 = require("svelte/internal/disclose-version");
 var $1329 = __toESM(require("svelte/internal/client"));
-function SearchIcon($$anchor, $$props) {
+function TxtIcon($$anchor, $$props) {
   const weights = {
-    "regular": `<path d="M28.0712 14.4C28.0712 20.1437 23.4149 24.7999 17.6712 24.7999C11.9275 24.7999 7.27124 20.1437 7.27124 14.4C7.27124 8.65622 11.9275 4 17.6712 4C23.4149 4 28.0712 8.65622 28.0712 14.4Z" fill="url(#paint0_radial_11899_40037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M17.6712 23.2999C22.5865 23.2999 26.5712 19.3153 26.5712 14.4C26.5712 9.48465 22.5865 5.5 17.6712 5.5C12.7559 5.5 8.77124 9.48465 8.77124 14.4C8.77124 19.3153 12.7559 23.2999 17.6712 23.2999ZM17.6712 24.7999C23.4149 24.7999 28.0712 20.1437 28.0712 14.4C28.0712 8.65622 23.4149 4 17.6712 4C11.9275 4 7.27124 8.65622 7.27124 14.4C7.27124 20.1437 11.9275 24.7999 17.6712 24.7999Z" fill="currentColor"/> <g filter="url(#filter0_f_11899_40037)"> <ellipse cx="22.3733" cy="10.302" rx="2" ry="1.5" transform="rotate(45 22.3733 10.302)" fill="url(#paint1_linear_11899_40037)"/> </g> <path d="M11.567 20.9177C12.7386 22.0893 12.7386 23.9888 11.567 25.1604L8.3639 28.3635C7.19233 29.5351 5.29283 29.5351 4.12126 28.3635V28.3635C2.94968 27.1919 2.94968 25.2925 4.12126 24.1209L7.32439 20.9177C8.49596 19.7462 10.3955 19.7462 11.567 20.9177V20.9177Z" fill="url(#paint2_linear_11899_40037)"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M7.30324 27.3029L10.5064 24.0997C11.0922 23.5139 11.0922 22.5642 10.5064 21.9784C9.92059 21.3926 8.97084 21.3926 8.38505 21.9784L5.18192 25.1815C4.59613 25.7673 4.59613 26.7171 5.18192 27.3029C5.7677 27.8886 6.71745 27.8886 7.30324 27.3029ZM11.567 25.1604C12.7386 23.9888 12.7386 22.0893 11.567 20.9177C10.3955 19.7462 8.49596 19.7462 7.32439 20.9177L4.12126 24.1209C2.94968 25.2925 2.94968 27.1919 4.12126 28.3635C5.29283 29.5351 7.19233 29.5351 8.3639 28.3635L11.567 25.1604Z" fill="currentColor"/> <defs> <filter id="filter0_f_11899_40037" x="19.6055" y="7.53418" width="5.53571" height="5.53613" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"> <feFlood flood-opacity="0" result="BackgroundImageFix"/> <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/> <feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_11899_40037"/> </filter> <radialGradient id="paint0_radial_11899_40037" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(17.6712 14.4) rotate(90) scale(10.4)"> <stop offset="0.583333" stop-color="#83D0FC"/> <stop offset="1" stop-color="#D6F0FF"/> </radialGradient> <linearGradient id="paint1_linear_11899_40037" x1="22.3733" y1="8.80202" x2="22.3733" y2="11.802" gradientUnits="userSpaceOnUse"> <stop stop-color="white"/> <stop offset="1" stop-color="white" stop-opacity="0"/> </linearGradient> <linearGradient id="paint2_linear_11899_40037" x1="9.96547" y1="26.762" x2="5.72283" y2="22.5193" gradientUnits="userSpaceOnUse"> <stop offset="0.598958" stop-color="#B5B7F9"/> <stop offset="1" stop-color="#EBEBFF"/> </linearGradient> </defs>`
+    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.79365V29.2064C4 30.7492 5.23122 32 6.75 32H25.25C26.7688 32 28 30.7492 28 29.2064V7.35127C28 6.60502 27.7061 5.88979 27.1838 5.36503L22.6478 0.807413C22.133 0.29013 21.4381 0 20.714 0H6.75C5.23122 0 4 1.25076 4 2.79365ZM5.75 29.2064V2.79365C5.75 2.2326 6.19772 1.77778 6.75 1.77778H20.375V7.87302C20.375 8.92499 21.2145 9.77778 22.25 9.77778H26.25V29.2064C26.25 29.7674 25.8023 30.2222 25.25 30.2222H6.75C6.19772 30.2222 5.75 29.7674 5.75 29.2064ZM26.25 8V7.35127C26.25 7.07991 26.1431 6.81982 25.9532 6.629L22.125 2.78254V7.87302C22.125 7.94315 22.181 8 22.25 8H26.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13C8 12.25 8.25 12 9 12H23C23.75 12 24 12.25 24 13C24 13.75 23.75 14 23 14H9C8.25 14 8 13.75 8 13Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17C8 16.25 8.25 16 9 16H23C23.75 16 24 16.25 24 17C24 17.75 23.75 18 23 18H9C8.25 18 8 17.75 8 17Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8 20.25 8.25 20 9 20H23C23.75 20 24 20.25 24 21C24 21.75 23.75 22 23 22H9C8.25 22 8 21.75 8 21Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 25C8 24.25 8.25 24 9 24H23C23.75 24 24 24.25 24 25C24 25.75 23.75 26 23 26H9C8.25 26 8 25.75 8 25Z" fill="#C9C7C5"/>`
   };
   const meta = {
     collection: "special",
-    usageName: "search-icon",
-    componentName: "SearchIcon"
+    usageName: "txt-icon",
+    componentName: "TxtIcon"
   };
   const defaultViewBox = "0 0 32 32";
   let viewBox = $1329.prop($$props, "viewBox", 3, defaultViewBox), rest = $1329.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
@@ -47759,39 +47760,9 @@ function SearchIcon($$anchor, $$props) {
   ));
 }
 
-// src/icons/special/TxtIcon.svelte
+// src/icons/special/XlsxIcon.svelte
 var import_disclose_version1330 = require("svelte/internal/disclose-version");
 var $1330 = __toESM(require("svelte/internal/client"));
-function TxtIcon($$anchor, $$props) {
-  const weights = {
-    "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M4 2.79365V29.2064C4 30.7492 5.23122 32 6.75 32H25.25C26.7688 32 28 30.7492 28 29.2064V7.35127C28 6.60502 27.7061 5.88979 27.1838 5.36503L22.6478 0.807413C22.133 0.29013 21.4381 0 20.714 0H6.75C5.23122 0 4 1.25076 4 2.79365ZM5.75 29.2064V2.79365C5.75 2.2326 6.19772 1.77778 6.75 1.77778H20.375V7.87302C20.375 8.92499 21.2145 9.77778 22.25 9.77778H26.25V29.2064C26.25 29.7674 25.8023 30.2222 25.25 30.2222H6.75C6.19772 30.2222 5.75 29.7674 5.75 29.2064ZM26.25 8V7.35127C26.25 7.07991 26.1431 6.81982 25.9532 6.629L22.125 2.78254V7.87302C22.125 7.94315 22.181 8 22.25 8H26.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13C8 12.25 8.25 12 9 12H23C23.75 12 24 12.25 24 13C24 13.75 23.75 14 23 14H9C8.25 14 8 13.75 8 13Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 17C8 16.25 8.25 16 9 16H23C23.75 16 24 16.25 24 17C24 17.75 23.75 18 23 18H9C8.25 18 8 17.75 8 17Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 21C8 20.25 8.25 20 9 20H23C23.75 20 24 20.25 24 21C24 21.75 23.75 22 23 22H9C8.25 22 8 21.75 8 21Z" fill="#C9C7C5"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M8 25C8 24.25 8.25 24 9 24H23C23.75 24 24 24.25 24 25C24 25.75 23.75 26 23 26H9C8.25 26 8 25.75 8 25Z" fill="#C9C7C5"/>`
-  };
-  const meta = {
-    collection: "special",
-    usageName: "txt-icon",
-    componentName: "TxtIcon"
-  };
-  const defaultViewBox = "0 0 32 32";
-  let viewBox = $1330.prop($$props, "viewBox", 3, defaultViewBox), rest = $1330.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
-  IconBase($$anchor, $1330.spread_props(
-    {
-      get meta() {
-        return meta;
-      },
-      get viewBox() {
-        return viewBox();
-      },
-      get weights() {
-        return weights;
-      }
-    },
-    () => rest
-  ));
-}
-
-// src/icons/special/XlsxIcon.svelte
-var import_disclose_version1331 = require("svelte/internal/disclose-version");
-var $1331 = __toESM(require("svelte/internal/client"));
 function XlsxIcon($$anchor, $$props) {
   const weights = {
     "regular": `<path fill-rule="evenodd" clip-rule="evenodd" d="M8 2.79365V29.2064C8 30.7492 9.23122 32 10.75 32H29.25C30.7688 32 32 30.7492 32 29.2064V7.35127C32 6.60502 31.7061 5.88979 31.1838 5.36503L26.6478 0.807413C26.133 0.29013 25.4381 0 24.714 0H10.75C9.23122 0 8 1.25076 8 2.79365ZM9.75 29.2064V2.79365C9.75 2.2326 10.1977 1.77778 10.75 1.77778H24.375V7.87302C24.375 8.92499 25.2145 9.77778 26.25 9.77778H30.25V29.2064C30.25 29.7674 29.8023 30.2222 29.25 30.2222H10.75C10.1977 30.2222 9.75 29.7674 9.75 29.2064ZM30.25 8V7.35127C30.25 7.07991 30.1431 6.81982 29.9532 6.629L26.125 2.78254V7.87302C26.125 7.94315 26.181 8 26.25 8H30.25Z" fill="#9D9C9B"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 13.125C20.5 12.6418 20.8918 12.25 21.375 12.25H27.125C27.6082 12.25 28 12.6418 28 13.125C28 13.6082 27.6082 14 27.125 14H21.375C20.8918 14 20.5 13.6082 20.5 13.125Z" fill="#69C997"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 17.125C20.5 16.6418 20.8918 16.25 21.375 16.25H27.125C27.6082 16.25 28 16.6418 28 17.125C28 17.6082 27.6082 18 27.125 18H21.375C20.8918 18 20.5 17.6082 20.5 17.125Z" fill="#54AD7D"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5 21.125C20.5 20.6418 20.8918 20.25 21.375 20.25H27.125C27.6082 20.25 28 20.6418 28 21.125C28 21.6082 27.6082 22 27.125 22H21.375C20.8918 22 20.5 21.6082 20.5 21.125Z" fill="#2B593D"/> <path d="M0 9.25C0 8.42157 0.671573 7.75 1.5 7.75H16.5C17.3284 7.75 18 8.42157 18 9.25V24.25C18 25.0784 17.3284 25.75 16.5 25.75H1.5C0.671573 25.75 0 25.0784 0 24.25V9.25Z" fill="#3D8A58"/> <path d="M5 21.7715L7.80957 16.542L5.25977 11.75H7.20117L8.84863 14.9697L10.4619 11.75H12.3828L9.83301 16.6172L12.6426 21.7715H10.6396L8.81445 18.3057L6.98926 21.7715H5Z" fill="white"/>`
@@ -47802,8 +47773,8 @@ function XlsxIcon($$anchor, $$props) {
     componentName: "XlsxIcon"
   };
   const defaultViewBox = "0 0 32 32";
-  let viewBox = $1331.prop($$props, "viewBox", 3, defaultViewBox), rest = $1331.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
-  IconBase($$anchor, $1331.spread_props(
+  let viewBox = $1330.prop($$props, "viewBox", 3, defaultViewBox), rest = $1330.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
+  IconBase($$anchor, $1330.spread_props(
     {
       get meta() {
         return meta;
@@ -47834,7 +47805,6 @@ function _ensure() {
       "arrow-line-right": ArrowLineRight2,
       "arrow-line-up": ArrowLineUp2,
       "arrow-line-up-down": ArrowLineUpDown,
-      "arrow-right": ArrowRight2,
       "arrow-rise": ArrowRise,
       "arrows-down": ArrowsDown,
       "arrows-down-up": ArrowsDownUp2,
@@ -49261,7 +49231,7 @@ function _ensure() {
     "arrow-line-up-down": ArrowLineUpDown,
     "arrow-line-up-left": ArrowLineUpLeft,
     "arrow-line-up-right": ArrowLineUpRight,
-    "arrow-right": ArrowRight2,
+    "arrow-right": ArrowRight,
     "arrow-rise": ArrowRise,
     "arrow-square-down": ArrowSquareDown,
     "arrow-square-down-left": ArrowSquareDownLeft,
@@ -50523,11 +50493,11 @@ var iconsByDefault = new Proxy({}, {
 });
 
 // src/lib/IconBase.svelte
-var root_3 = $1332.from_svg(`<svg><!></svg>`);
+var root_3 = $1331.from_svg(`<svg><!></svg>`);
 function IconBase($$anchor, $$props) {
-  $1332.push($$props, true);
+  $1331.push($$props, true);
   const ctx = (0, import_svelte.getContext)(RESOURCE_ICON_CONTEXT_KEY);
-  let color = $1332.prop($$props, "color", 3, "currentColor"), className = $1332.prop($$props, "class", 3, ""), viewBox = $1332.prop($$props, "viewBox", 3, "0 0 256 256"), bypassSwitch = $1332.prop($$props, "bypassSwitch", 3, false), restProps = $1332.rest_props($$props, [
+  let color = $1331.prop($$props, "color", 3, "currentColor"), className = $1331.prop($$props, "class", 3, ""), viewBox = $1331.prop($$props, "viewBox", 3, "0 0 256 256"), bypassSwitch = $1331.prop($$props, "bypassSwitch", 3, false), restProps = $1331.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -50540,39 +50510,39 @@ function IconBase($$anchor, $$props) {
     "viewBox",
     "bypassSwitch"
   ]);
-  let size = $1332.derived(() => $$props.size ?? ctx?.size ?? 32);
-  let weight = $1332.derived(() => $$props.weight ?? ctx?.weight ?? "regular");
-  $1332.user_effect(() => {
+  let size = $1331.derived(() => $$props.size ?? ctx?.size ?? 32);
+  let weight = $1331.derived(() => $$props.weight ?? ctx?.weight ?? "regular");
+  $1331.user_effect(() => {
     if ($$props.size !== void 0 && ctx?.registerChildSize) {
       ctx.registerChildSize($$props.size);
     }
   });
-  let switched = $1332.derived(() => {
+  let switched = $1331.derived(() => {
     if (bypassSwitch() || !$$props.meta || !ctx?.replace) return null;
     return resolveSwitch($$props.meta, ctx.replace, iconsByCollection);
   });
-  let SwitchedComponent = $1332.derived(() => {
-    if (!$1332.get(switched)) return null;
-    const c = iconsByCollection[$1332.get(switched).collection]?.[$1332.get(switched).iconName];
+  let SwitchedComponent = $1331.derived(() => {
+    if (!$1331.get(switched)) return null;
+    const c = iconsByCollection[$1331.get(switched).collection]?.[$1331.get(switched).iconName];
     return c ?? null;
   });
-  let content = $1332.derived(() => $$props.weights && $$props.weights[$1332.get(weight)] || $$props.weights?.regular || "");
-  let hasContent = $1332.derived(() => !!$1332.get(content));
-  var fragment = $1332.comment();
-  var node = $1332.first_child(fragment);
+  let content = $1331.derived(() => $$props.weights && $$props.weights[$1331.get(weight)] || $$props.weights?.regular || "");
+  let hasContent = $1331.derived(() => !!$1331.get(content));
+  var fragment = $1331.comment();
+  var node = $1331.first_child(fragment);
   {
     var consequent = ($$anchor2) => {
-      var fragment_1 = $1332.comment();
-      var node_1 = $1332.first_child(fragment_1);
-      $1332.component(node_1, () => $1332.get(SwitchedComponent), ($$anchor3, SwitchedComponent_1) => {
-        SwitchedComponent_1($$anchor3, $1332.spread_props(
+      var fragment_1 = $1331.comment();
+      var node_1 = $1331.first_child(fragment_1);
+      $1331.component(node_1, () => $1331.get(SwitchedComponent), ($$anchor3, SwitchedComponent_1) => {
+        SwitchedComponent_1($$anchor3, $1331.spread_props(
           {
             bypassSwitch: true,
             get weight() {
-              return $1332.get(weight);
+              return $1331.get(weight);
             },
             get size() {
-              return $1332.get(size);
+              return $1331.get(size);
             },
             get color() {
               return color();
@@ -50584,45 +50554,45 @@ function IconBase($$anchor, $$props) {
           () => restProps
         ));
       });
-      $1332.append($$anchor2, fragment_1);
+      $1331.append($$anchor2, fragment_1);
     };
     var alternate = ($$anchor2) => {
-      var fragment_2 = $1332.comment();
-      var node_2 = $1332.first_child(fragment_2);
+      var fragment_2 = $1331.comment();
+      var node_2 = $1331.first_child(fragment_2);
       {
         var consequent_1 = ($$anchor3) => {
           var svg = root_3();
-          $1332.attribute_effect(svg, () => ({
-            width: $1332.get(size),
-            height: $1332.get(size),
+          $1331.attribute_effect(svg, () => ({
+            width: $1331.get(size),
+            height: $1331.get(size),
             viewBox: viewBox(),
             fill: color(),
             xmlns: "http://www.w3.org/2000/svg",
             class: className(),
             ...restProps
           }));
-          var node_3 = $1332.child(svg);
-          $1332.html(node_3, () => $1332.get(content), true);
-          $1332.reset(svg);
-          $1332.append($$anchor3, svg);
+          var node_3 = $1331.child(svg);
+          $1331.html(node_3, () => $1331.get(content), true);
+          $1331.reset(svg);
+          $1331.append($$anchor3, svg);
         };
-        $1332.if(
+        $1331.if(
           node_2,
           ($$render) => {
-            if ($1332.get(hasContent)) $$render(consequent_1);
+            if ($1331.get(hasContent)) $$render(consequent_1);
           },
           true
         );
       }
-      $1332.append($$anchor2, fragment_2);
+      $1331.append($$anchor2, fragment_2);
     };
-    $1332.if(node, ($$render) => {
-      if ($1332.get(SwitchedComponent)) $$render(consequent);
+    $1331.if(node, ($$render) => {
+      if ($1331.get(SwitchedComponent)) $$render(consequent);
       else $$render(alternate, false);
     });
   }
-  $1332.append($$anchor, fragment);
-  $1332.pop();
+  $1331.append($$anchor, fragment);
+  $1331.pop();
 }
 
 // src/icons/snowui/Add.svelte
@@ -50632,8 +50602,8 @@ function Add($$anchor, $$props) {
   };
   const meta = { collection: "snowui", usageName: "add", componentName: "Add" };
   const defaultViewBox = "0 0 32 32";
-  let viewBox = $1333.prop($$props, "viewBox", 3, defaultViewBox), rest = $1333.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
-  IconBase($$anchor, $1333.spread_props(
+  let viewBox = $1332.prop($$props, "viewBox", 3, defaultViewBox), rest = $1332.rest_props($$props, ["$$slots", "$$events", "$$legacy", "viewBox"]);
+  IconBase($$anchor, $1332.spread_props(
     {
       get meta() {
         return meta;
@@ -50660,7 +50630,6 @@ __export(snowui_exports, {
   ArrowLineRight: () => ArrowLineRight2,
   ArrowLineUp: () => ArrowLineUp2,
   ArrowLineUpDown: () => ArrowLineUpDown,
-  ArrowRight: () => ArrowRight2,
   ArrowRise: () => ArrowRise,
   ArrowsDown: () => ArrowsDown,
   ArrowsDownUp: () => ArrowsDownUp2,
@@ -51997,8 +51966,8 @@ __export(special_exports, {
 });
 
 // src/avatars/Avatar3d01.svelte
-var import_disclose_version1334 = require("svelte/internal/disclose-version");
-var $1334 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1333 = require("svelte/internal/disclose-version");
+var $1333 = __toESM(require("svelte/internal/client"));
 var import_avatar_3d_01_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-32.jpg"));
 var import_avatar_3d_01_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-12.jpg"));
 var import_avatar_3d_01_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-16.jpg"));
@@ -52026,7 +51995,7 @@ var import_avatar_3d_01_384 = __toESM(require("@snowui-design-system/resource-ba
 var import_avatar_3d_01_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-512.jpg"));
 var import_avatar_3d_01_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-768.jpg"));
 var import_avatar_3d_01_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-01-1536.jpg"));
-var root = $1334.from_html(`<img/>`);
+var root = $1333.from_html(`<img/>`);
 function Avatar3d01($$anchor, $$props) {
   const Avatar3d01SizeMap = {
     12: import_avatar_3d_01_12.default,
@@ -52100,7 +52069,7 @@ function Avatar3d01($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1334.prop($$props, "size", 3, 32), alt = $1334.prop($$props, "alt", 3, "Avatar3d01"), className = $1334.prop($$props, "class", 3, ""), rest = $1334.rest_props($$props, [
+  let size = $1333.prop($$props, "size", 3, 32), alt = $1333.prop($$props, "alt", 3, "Avatar3d01"), className = $1333.prop($$props, "class", 3, ""), rest = $1333.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52110,26 +52079,26 @@ function Avatar3d01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1334.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1334.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1334.derived(() => findClosestSize($1334.get(resolvedWidth), Avatar3d01AvailableSizes));
-  let imageSrc = $1334.derived(() => Avatar3d01SizeMap[$1334.get(closestSize)] ?? import_avatar_3d_01_32.default);
+  let resolvedWidth = $1333.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1333.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1333.derived(() => findClosestSize($1333.get(resolvedWidth), Avatar3d01AvailableSizes));
+  let imageSrc = $1333.derived(() => Avatar3d01SizeMap[$1333.get(closestSize)] ?? import_avatar_3d_01_32.default);
   var img = root();
-  $1334.attribute_effect(img, () => ({
-    src: $1334.get(imageSrc),
+  $1333.attribute_effect(img, () => ({
+    src: $1333.get(imageSrc),
     alt: alt(),
-    width: $1334.get(resolvedWidth),
-    height: $1334.get(resolvedHeight),
+    width: $1333.get(resolvedWidth),
+    height: $1333.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1334.replay_events(img);
-  $1334.append($$anchor, img);
+  $1333.replay_events(img);
+  $1333.append($$anchor, img);
 }
 
 // src/avatars/Avatar3d02.svelte
-var import_disclose_version1335 = require("svelte/internal/disclose-version");
-var $1335 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1334 = require("svelte/internal/disclose-version");
+var $1334 = __toESM(require("svelte/internal/client"));
 var import_avatar_3d_02_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-32.jpg"));
 var import_avatar_3d_02_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-12.jpg"));
 var import_avatar_3d_02_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-16.jpg"));
@@ -52157,7 +52126,7 @@ var import_avatar_3d_02_384 = __toESM(require("@snowui-design-system/resource-ba
 var import_avatar_3d_02_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-512.jpg"));
 var import_avatar_3d_02_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-768.jpg"));
 var import_avatar_3d_02_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-02-1536.jpg"));
-var root2 = $1335.from_html(`<img/>`);
+var root2 = $1334.from_html(`<img/>`);
 function Avatar3d02($$anchor, $$props) {
   const Avatar3d02SizeMap = {
     12: import_avatar_3d_02_12.default,
@@ -52231,7 +52200,7 @@ function Avatar3d02($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1335.prop($$props, "size", 3, 32), alt = $1335.prop($$props, "alt", 3, "Avatar3d02"), className = $1335.prop($$props, "class", 3, ""), rest = $1335.rest_props($$props, [
+  let size = $1334.prop($$props, "size", 3, 32), alt = $1334.prop($$props, "alt", 3, "Avatar3d02"), className = $1334.prop($$props, "class", 3, ""), rest = $1334.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52241,26 +52210,26 @@ function Avatar3d02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1335.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1335.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1335.derived(() => findClosestSize($1335.get(resolvedWidth), Avatar3d02AvailableSizes));
-  let imageSrc = $1335.derived(() => Avatar3d02SizeMap[$1335.get(closestSize)] ?? import_avatar_3d_02_32.default);
+  let resolvedWidth = $1334.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1334.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1334.derived(() => findClosestSize($1334.get(resolvedWidth), Avatar3d02AvailableSizes));
+  let imageSrc = $1334.derived(() => Avatar3d02SizeMap[$1334.get(closestSize)] ?? import_avatar_3d_02_32.default);
   var img = root2();
-  $1335.attribute_effect(img, () => ({
-    src: $1335.get(imageSrc),
+  $1334.attribute_effect(img, () => ({
+    src: $1334.get(imageSrc),
     alt: alt(),
-    width: $1335.get(resolvedWidth),
-    height: $1335.get(resolvedHeight),
+    width: $1334.get(resolvedWidth),
+    height: $1334.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1335.replay_events(img);
-  $1335.append($$anchor, img);
+  $1334.replay_events(img);
+  $1334.append($$anchor, img);
 }
 
 // src/avatars/Avatar3d03.svelte
-var import_disclose_version1336 = require("svelte/internal/disclose-version");
-var $1336 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1335 = require("svelte/internal/disclose-version");
+var $1335 = __toESM(require("svelte/internal/client"));
 var import_avatar_3d_03_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-32.jpg"));
 var import_avatar_3d_03_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-12.jpg"));
 var import_avatar_3d_03_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-16.jpg"));
@@ -52288,7 +52257,7 @@ var import_avatar_3d_03_384 = __toESM(require("@snowui-design-system/resource-ba
 var import_avatar_3d_03_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-512.jpg"));
 var import_avatar_3d_03_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-768.jpg"));
 var import_avatar_3d_03_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-03-1536.jpg"));
-var root3 = $1336.from_html(`<img/>`);
+var root3 = $1335.from_html(`<img/>`);
 function Avatar3d03($$anchor, $$props) {
   const Avatar3d03SizeMap = {
     12: import_avatar_3d_03_12.default,
@@ -52362,7 +52331,7 @@ function Avatar3d03($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1336.prop($$props, "size", 3, 32), alt = $1336.prop($$props, "alt", 3, "Avatar3d03"), className = $1336.prop($$props, "class", 3, ""), rest = $1336.rest_props($$props, [
+  let size = $1335.prop($$props, "size", 3, 32), alt = $1335.prop($$props, "alt", 3, "Avatar3d03"), className = $1335.prop($$props, "class", 3, ""), rest = $1335.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52372,26 +52341,26 @@ function Avatar3d03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1336.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1336.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1336.derived(() => findClosestSize($1336.get(resolvedWidth), Avatar3d03AvailableSizes));
-  let imageSrc = $1336.derived(() => Avatar3d03SizeMap[$1336.get(closestSize)] ?? import_avatar_3d_03_32.default);
+  let resolvedWidth = $1335.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1335.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1335.derived(() => findClosestSize($1335.get(resolvedWidth), Avatar3d03AvailableSizes));
+  let imageSrc = $1335.derived(() => Avatar3d03SizeMap[$1335.get(closestSize)] ?? import_avatar_3d_03_32.default);
   var img = root3();
-  $1336.attribute_effect(img, () => ({
-    src: $1336.get(imageSrc),
+  $1335.attribute_effect(img, () => ({
+    src: $1335.get(imageSrc),
     alt: alt(),
-    width: $1336.get(resolvedWidth),
-    height: $1336.get(resolvedHeight),
+    width: $1335.get(resolvedWidth),
+    height: $1335.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1336.replay_events(img);
-  $1336.append($$anchor, img);
+  $1335.replay_events(img);
+  $1335.append($$anchor, img);
 }
 
 // src/avatars/Avatar3d04.svelte
-var import_disclose_version1337 = require("svelte/internal/disclose-version");
-var $1337 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1336 = require("svelte/internal/disclose-version");
+var $1336 = __toESM(require("svelte/internal/client"));
 var import_avatar_3d_04_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-32.jpg"));
 var import_avatar_3d_04_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-12.jpg"));
 var import_avatar_3d_04_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-16.jpg"));
@@ -52419,7 +52388,7 @@ var import_avatar_3d_04_384 = __toESM(require("@snowui-design-system/resource-ba
 var import_avatar_3d_04_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-512.jpg"));
 var import_avatar_3d_04_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-768.jpg"));
 var import_avatar_3d_04_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-3d-04-1536.jpg"));
-var root4 = $1337.from_html(`<img/>`);
+var root4 = $1336.from_html(`<img/>`);
 function Avatar3d04($$anchor, $$props) {
   const Avatar3d04SizeMap = {
     12: import_avatar_3d_04_12.default,
@@ -52493,7 +52462,7 @@ function Avatar3d04($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1337.prop($$props, "size", 3, 32), alt = $1337.prop($$props, "alt", 3, "Avatar3d04"), className = $1337.prop($$props, "class", 3, ""), rest = $1337.rest_props($$props, [
+  let size = $1336.prop($$props, "size", 3, 32), alt = $1336.prop($$props, "alt", 3, "Avatar3d04"), className = $1336.prop($$props, "class", 3, ""), rest = $1336.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52503,26 +52472,26 @@ function Avatar3d04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1337.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1337.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1337.derived(() => findClosestSize($1337.get(resolvedWidth), Avatar3d04AvailableSizes));
-  let imageSrc = $1337.derived(() => Avatar3d04SizeMap[$1337.get(closestSize)] ?? import_avatar_3d_04_32.default);
+  let resolvedWidth = $1336.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1336.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1336.derived(() => findClosestSize($1336.get(resolvedWidth), Avatar3d04AvailableSizes));
+  let imageSrc = $1336.derived(() => Avatar3d04SizeMap[$1336.get(closestSize)] ?? import_avatar_3d_04_32.default);
   var img = root4();
-  $1337.attribute_effect(img, () => ({
-    src: $1337.get(imageSrc),
+  $1336.attribute_effect(img, () => ({
+    src: $1336.get(imageSrc),
     alt: alt(),
-    width: $1337.get(resolvedWidth),
-    height: $1337.get(resolvedHeight),
+    width: $1336.get(resolvedWidth),
+    height: $1336.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1337.replay_events(img);
-  $1337.append($$anchor, img);
+  $1336.replay_events(img);
+  $1336.append($$anchor, img);
 }
 
 // src/avatars/AvatarAbstract01.svelte
-var import_disclose_version1338 = require("svelte/internal/disclose-version");
-var $1338 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1337 = require("svelte/internal/disclose-version");
+var $1337 = __toESM(require("svelte/internal/client"));
 var import_avatar_abstract_01_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-32.jpg"));
 var import_avatar_abstract_01_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-12.jpg"));
 var import_avatar_abstract_01_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-16.jpg"));
@@ -52550,7 +52519,7 @@ var import_avatar_abstract_01_384 = __toESM(require("@snowui-design-system/resou
 var import_avatar_abstract_01_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-512.jpg"));
 var import_avatar_abstract_01_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-768.jpg"));
 var import_avatar_abstract_01_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-01-1536.jpg"));
-var root5 = $1338.from_html(`<img/>`);
+var root5 = $1337.from_html(`<img/>`);
 function AvatarAbstract01($$anchor, $$props) {
   const AvatarAbstract01SizeMap = {
     12: import_avatar_abstract_01_12.default,
@@ -52624,7 +52593,7 @@ function AvatarAbstract01($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1338.prop($$props, "size", 3, 32), alt = $1338.prop($$props, "alt", 3, "AvatarAbstract01"), className = $1338.prop($$props, "class", 3, ""), rest = $1338.rest_props($$props, [
+  let size = $1337.prop($$props, "size", 3, 32), alt = $1337.prop($$props, "alt", 3, "AvatarAbstract01"), className = $1337.prop($$props, "class", 3, ""), rest = $1337.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52634,26 +52603,26 @@ function AvatarAbstract01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1338.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1338.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1338.derived(() => findClosestSize($1338.get(resolvedWidth), AvatarAbstract01AvailableSizes));
-  let imageSrc = $1338.derived(() => AvatarAbstract01SizeMap[$1338.get(closestSize)] ?? import_avatar_abstract_01_32.default);
+  let resolvedWidth = $1337.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1337.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1337.derived(() => findClosestSize($1337.get(resolvedWidth), AvatarAbstract01AvailableSizes));
+  let imageSrc = $1337.derived(() => AvatarAbstract01SizeMap[$1337.get(closestSize)] ?? import_avatar_abstract_01_32.default);
   var img = root5();
-  $1338.attribute_effect(img, () => ({
-    src: $1338.get(imageSrc),
+  $1337.attribute_effect(img, () => ({
+    src: $1337.get(imageSrc),
     alt: alt(),
-    width: $1338.get(resolvedWidth),
-    height: $1338.get(resolvedHeight),
+    width: $1337.get(resolvedWidth),
+    height: $1337.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1338.replay_events(img);
-  $1338.append($$anchor, img);
+  $1337.replay_events(img);
+  $1337.append($$anchor, img);
 }
 
 // src/avatars/AvatarAbstract02.svelte
-var import_disclose_version1339 = require("svelte/internal/disclose-version");
-var $1339 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1338 = require("svelte/internal/disclose-version");
+var $1338 = __toESM(require("svelte/internal/client"));
 var import_avatar_abstract_02_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-32.jpg"));
 var import_avatar_abstract_02_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-12.jpg"));
 var import_avatar_abstract_02_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-16.jpg"));
@@ -52681,7 +52650,7 @@ var import_avatar_abstract_02_384 = __toESM(require("@snowui-design-system/resou
 var import_avatar_abstract_02_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-512.jpg"));
 var import_avatar_abstract_02_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-768.jpg"));
 var import_avatar_abstract_02_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-02-1536.jpg"));
-var root6 = $1339.from_html(`<img/>`);
+var root6 = $1338.from_html(`<img/>`);
 function AvatarAbstract02($$anchor, $$props) {
   const AvatarAbstract02SizeMap = {
     12: import_avatar_abstract_02_12.default,
@@ -52755,7 +52724,7 @@ function AvatarAbstract02($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1339.prop($$props, "size", 3, 32), alt = $1339.prop($$props, "alt", 3, "AvatarAbstract02"), className = $1339.prop($$props, "class", 3, ""), rest = $1339.rest_props($$props, [
+  let size = $1338.prop($$props, "size", 3, 32), alt = $1338.prop($$props, "alt", 3, "AvatarAbstract02"), className = $1338.prop($$props, "class", 3, ""), rest = $1338.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52765,26 +52734,26 @@ function AvatarAbstract02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1339.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1339.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1339.derived(() => findClosestSize($1339.get(resolvedWidth), AvatarAbstract02AvailableSizes));
-  let imageSrc = $1339.derived(() => AvatarAbstract02SizeMap[$1339.get(closestSize)] ?? import_avatar_abstract_02_32.default);
+  let resolvedWidth = $1338.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1338.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1338.derived(() => findClosestSize($1338.get(resolvedWidth), AvatarAbstract02AvailableSizes));
+  let imageSrc = $1338.derived(() => AvatarAbstract02SizeMap[$1338.get(closestSize)] ?? import_avatar_abstract_02_32.default);
   var img = root6();
-  $1339.attribute_effect(img, () => ({
-    src: $1339.get(imageSrc),
+  $1338.attribute_effect(img, () => ({
+    src: $1338.get(imageSrc),
     alt: alt(),
-    width: $1339.get(resolvedWidth),
-    height: $1339.get(resolvedHeight),
+    width: $1338.get(resolvedWidth),
+    height: $1338.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1339.replay_events(img);
-  $1339.append($$anchor, img);
+  $1338.replay_events(img);
+  $1338.append($$anchor, img);
 }
 
 // src/avatars/AvatarAbstract03.svelte
-var import_disclose_version1340 = require("svelte/internal/disclose-version");
-var $1340 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1339 = require("svelte/internal/disclose-version");
+var $1339 = __toESM(require("svelte/internal/client"));
 var import_avatar_abstract_03_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-32.jpg"));
 var import_avatar_abstract_03_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-12.jpg"));
 var import_avatar_abstract_03_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-16.jpg"));
@@ -52812,7 +52781,7 @@ var import_avatar_abstract_03_384 = __toESM(require("@snowui-design-system/resou
 var import_avatar_abstract_03_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-512.jpg"));
 var import_avatar_abstract_03_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-768.jpg"));
 var import_avatar_abstract_03_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-03-1536.jpg"));
-var root7 = $1340.from_html(`<img/>`);
+var root7 = $1339.from_html(`<img/>`);
 function AvatarAbstract03($$anchor, $$props) {
   const AvatarAbstract03SizeMap = {
     12: import_avatar_abstract_03_12.default,
@@ -52886,7 +52855,7 @@ function AvatarAbstract03($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1340.prop($$props, "size", 3, 32), alt = $1340.prop($$props, "alt", 3, "AvatarAbstract03"), className = $1340.prop($$props, "class", 3, ""), rest = $1340.rest_props($$props, [
+  let size = $1339.prop($$props, "size", 3, 32), alt = $1339.prop($$props, "alt", 3, "AvatarAbstract03"), className = $1339.prop($$props, "class", 3, ""), rest = $1339.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -52896,26 +52865,26 @@ function AvatarAbstract03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1340.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1340.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1340.derived(() => findClosestSize($1340.get(resolvedWidth), AvatarAbstract03AvailableSizes));
-  let imageSrc = $1340.derived(() => AvatarAbstract03SizeMap[$1340.get(closestSize)] ?? import_avatar_abstract_03_32.default);
+  let resolvedWidth = $1339.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1339.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1339.derived(() => findClosestSize($1339.get(resolvedWidth), AvatarAbstract03AvailableSizes));
+  let imageSrc = $1339.derived(() => AvatarAbstract03SizeMap[$1339.get(closestSize)] ?? import_avatar_abstract_03_32.default);
   var img = root7();
-  $1340.attribute_effect(img, () => ({
-    src: $1340.get(imageSrc),
+  $1339.attribute_effect(img, () => ({
+    src: $1339.get(imageSrc),
     alt: alt(),
-    width: $1340.get(resolvedWidth),
-    height: $1340.get(resolvedHeight),
+    width: $1339.get(resolvedWidth),
+    height: $1339.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1340.replay_events(img);
-  $1340.append($$anchor, img);
+  $1339.replay_events(img);
+  $1339.append($$anchor, img);
 }
 
 // src/avatars/AvatarAbstract04.svelte
-var import_disclose_version1341 = require("svelte/internal/disclose-version");
-var $1341 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1340 = require("svelte/internal/disclose-version");
+var $1340 = __toESM(require("svelte/internal/client"));
 var import_avatar_abstract_04_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-32.jpg"));
 var import_avatar_abstract_04_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-12.jpg"));
 var import_avatar_abstract_04_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-16.jpg"));
@@ -52943,7 +52912,7 @@ var import_avatar_abstract_04_384 = __toESM(require("@snowui-design-system/resou
 var import_avatar_abstract_04_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-512.jpg"));
 var import_avatar_abstract_04_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-768.jpg"));
 var import_avatar_abstract_04_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-abstract-04-1536.jpg"));
-var root8 = $1341.from_html(`<img/>`);
+var root8 = $1340.from_html(`<img/>`);
 function AvatarAbstract04($$anchor, $$props) {
   const AvatarAbstract04SizeMap = {
     12: import_avatar_abstract_04_12.default,
@@ -53017,7 +52986,7 @@ function AvatarAbstract04($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1341.prop($$props, "size", 3, 32), alt = $1341.prop($$props, "alt", 3, "AvatarAbstract04"), className = $1341.prop($$props, "class", 3, ""), rest = $1341.rest_props($$props, [
+  let size = $1340.prop($$props, "size", 3, 32), alt = $1340.prop($$props, "alt", 3, "AvatarAbstract04"), className = $1340.prop($$props, "class", 3, ""), rest = $1340.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53027,26 +52996,26 @@ function AvatarAbstract04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1341.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1341.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1341.derived(() => findClosestSize($1341.get(resolvedWidth), AvatarAbstract04AvailableSizes));
-  let imageSrc = $1341.derived(() => AvatarAbstract04SizeMap[$1341.get(closestSize)] ?? import_avatar_abstract_04_32.default);
+  let resolvedWidth = $1340.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1340.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1340.derived(() => findClosestSize($1340.get(resolvedWidth), AvatarAbstract04AvailableSizes));
+  let imageSrc = $1340.derived(() => AvatarAbstract04SizeMap[$1340.get(closestSize)] ?? import_avatar_abstract_04_32.default);
   var img = root8();
-  $1341.attribute_effect(img, () => ({
-    src: $1341.get(imageSrc),
+  $1340.attribute_effect(img, () => ({
+    src: $1340.get(imageSrc),
     alt: alt(),
-    width: $1341.get(resolvedWidth),
-    height: $1341.get(resolvedHeight),
+    width: $1340.get(resolvedWidth),
+    height: $1340.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1341.replay_events(img);
-  $1341.append($$anchor, img);
+  $1340.replay_events(img);
+  $1340.append($$anchor, img);
 }
 
 // src/avatars/AvatarByewind.svelte
-var import_disclose_version1342 = require("svelte/internal/disclose-version");
-var $1342 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1341 = require("svelte/internal/disclose-version");
+var $1341 = __toESM(require("svelte/internal/client"));
 var import_avatar_byewind_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-32.jpg"));
 var import_avatar_byewind_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-12.jpg"));
 var import_avatar_byewind_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-16.jpg"));
@@ -53074,7 +53043,7 @@ var import_avatar_byewind_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_byewind_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-512.jpg"));
 var import_avatar_byewind_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-768.jpg"));
 var import_avatar_byewind_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-byewind-1536.jpg"));
-var root9 = $1342.from_html(`<img/>`);
+var root9 = $1341.from_html(`<img/>`);
 function AvatarByewind($$anchor, $$props) {
   const AvatarByewindSizeMap = {
     12: import_avatar_byewind_12.default,
@@ -53148,7 +53117,7 @@ function AvatarByewind($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1342.prop($$props, "size", 3, 32), alt = $1342.prop($$props, "alt", 3, "AvatarByewind"), className = $1342.prop($$props, "class", 3, ""), rest = $1342.rest_props($$props, [
+  let size = $1341.prop($$props, "size", 3, 32), alt = $1341.prop($$props, "alt", 3, "AvatarByewind"), className = $1341.prop($$props, "class", 3, ""), rest = $1341.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53158,26 +53127,26 @@ function AvatarByewind($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1342.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1342.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1342.derived(() => findClosestSize($1342.get(resolvedWidth), AvatarByewindAvailableSizes));
-  let imageSrc = $1342.derived(() => AvatarByewindSizeMap[$1342.get(closestSize)] ?? import_avatar_byewind_32.default);
+  let resolvedWidth = $1341.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1341.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1341.derived(() => findClosestSize($1341.get(resolvedWidth), AvatarByewindAvailableSizes));
+  let imageSrc = $1341.derived(() => AvatarByewindSizeMap[$1341.get(closestSize)] ?? import_avatar_byewind_32.default);
   var img = root9();
-  $1342.attribute_effect(img, () => ({
-    src: $1342.get(imageSrc),
+  $1341.attribute_effect(img, () => ({
+    src: $1341.get(imageSrc),
     alt: alt(),
-    width: $1342.get(resolvedWidth),
-    height: $1342.get(resolvedHeight),
+    width: $1341.get(resolvedWidth),
+    height: $1341.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1342.replay_events(img);
-  $1342.append($$anchor, img);
+  $1341.replay_events(img);
+  $1341.append($$anchor, img);
 }
 
 // src/avatars/AvatarDefault.svelte
-var import_disclose_version1343 = require("svelte/internal/disclose-version");
-var $1343 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1342 = require("svelte/internal/disclose-version");
+var $1342 = __toESM(require("svelte/internal/client"));
 var import_avatar_default_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-32.jpg"));
 var import_avatar_default_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-12.jpg"));
 var import_avatar_default_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-16.jpg"));
@@ -53205,7 +53174,7 @@ var import_avatar_default_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_default_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-512.jpg"));
 var import_avatar_default_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-768.jpg"));
 var import_avatar_default_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-default-1536.jpg"));
-var root10 = $1343.from_html(`<img/>`);
+var root10 = $1342.from_html(`<img/>`);
 function AvatarDefault($$anchor, $$props) {
   const AvatarDefaultSizeMap = {
     12: import_avatar_default_12.default,
@@ -53279,7 +53248,7 @@ function AvatarDefault($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1343.prop($$props, "size", 3, 32), alt = $1343.prop($$props, "alt", 3, "AvatarDefault"), className = $1343.prop($$props, "class", 3, ""), rest = $1343.rest_props($$props, [
+  let size = $1342.prop($$props, "size", 3, 32), alt = $1342.prop($$props, "alt", 3, "AvatarDefault"), className = $1342.prop($$props, "class", 3, ""), rest = $1342.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53289,26 +53258,26 @@ function AvatarDefault($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1343.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1343.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1343.derived(() => findClosestSize($1343.get(resolvedWidth), AvatarDefaultAvailableSizes));
-  let imageSrc = $1343.derived(() => AvatarDefaultSizeMap[$1343.get(closestSize)] ?? import_avatar_default_32.default);
+  let resolvedWidth = $1342.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1342.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1342.derived(() => findClosestSize($1342.get(resolvedWidth), AvatarDefaultAvailableSizes));
+  let imageSrc = $1342.derived(() => AvatarDefaultSizeMap[$1342.get(closestSize)] ?? import_avatar_default_32.default);
   var img = root10();
-  $1343.attribute_effect(img, () => ({
-    src: $1343.get(imageSrc),
+  $1342.attribute_effect(img, () => ({
+    src: $1342.get(imageSrc),
     alt: alt(),
-    width: $1343.get(resolvedWidth),
-    height: $1343.get(resolvedHeight),
+    width: $1342.get(resolvedWidth),
+    height: $1342.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1343.replay_events(img);
-  $1343.append($$anchor, img);
+  $1342.replay_events(img);
+  $1342.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale01.svelte
-var import_disclose_version1344 = require("svelte/internal/disclose-version");
-var $1344 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1343 = require("svelte/internal/disclose-version");
+var $1343 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_01_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-32.jpg"));
 var import_avatar_female_01_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-12.jpg"));
 var import_avatar_female_01_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-16.jpg"));
@@ -53336,7 +53305,7 @@ var import_avatar_female_01_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_01_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-512.jpg"));
 var import_avatar_female_01_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-768.jpg"));
 var import_avatar_female_01_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-01-1536.jpg"));
-var root11 = $1344.from_html(`<img/>`);
+var root11 = $1343.from_html(`<img/>`);
 function AvatarFemale01($$anchor, $$props) {
   const AvatarFemale01SizeMap = {
     12: import_avatar_female_01_12.default,
@@ -53410,7 +53379,7 @@ function AvatarFemale01($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1344.prop($$props, "size", 3, 32), alt = $1344.prop($$props, "alt", 3, "AvatarFemale01"), className = $1344.prop($$props, "class", 3, ""), rest = $1344.rest_props($$props, [
+  let size = $1343.prop($$props, "size", 3, 32), alt = $1343.prop($$props, "alt", 3, "AvatarFemale01"), className = $1343.prop($$props, "class", 3, ""), rest = $1343.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53420,26 +53389,26 @@ function AvatarFemale01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1344.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1344.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1344.derived(() => findClosestSize($1344.get(resolvedWidth), AvatarFemale01AvailableSizes));
-  let imageSrc = $1344.derived(() => AvatarFemale01SizeMap[$1344.get(closestSize)] ?? import_avatar_female_01_32.default);
+  let resolvedWidth = $1343.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1343.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1343.derived(() => findClosestSize($1343.get(resolvedWidth), AvatarFemale01AvailableSizes));
+  let imageSrc = $1343.derived(() => AvatarFemale01SizeMap[$1343.get(closestSize)] ?? import_avatar_female_01_32.default);
   var img = root11();
-  $1344.attribute_effect(img, () => ({
-    src: $1344.get(imageSrc),
+  $1343.attribute_effect(img, () => ({
+    src: $1343.get(imageSrc),
     alt: alt(),
-    width: $1344.get(resolvedWidth),
-    height: $1344.get(resolvedHeight),
+    width: $1343.get(resolvedWidth),
+    height: $1343.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1344.replay_events(img);
-  $1344.append($$anchor, img);
+  $1343.replay_events(img);
+  $1343.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale02.svelte
-var import_disclose_version1345 = require("svelte/internal/disclose-version");
-var $1345 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1344 = require("svelte/internal/disclose-version");
+var $1344 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_02_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-32.jpg"));
 var import_avatar_female_02_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-12.jpg"));
 var import_avatar_female_02_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-16.jpg"));
@@ -53467,7 +53436,7 @@ var import_avatar_female_02_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_02_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-512.jpg"));
 var import_avatar_female_02_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-768.jpg"));
 var import_avatar_female_02_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-02-1536.jpg"));
-var root12 = $1345.from_html(`<img/>`);
+var root12 = $1344.from_html(`<img/>`);
 function AvatarFemale02($$anchor, $$props) {
   const AvatarFemale02SizeMap = {
     12: import_avatar_female_02_12.default,
@@ -53541,7 +53510,7 @@ function AvatarFemale02($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1345.prop($$props, "size", 3, 32), alt = $1345.prop($$props, "alt", 3, "AvatarFemale02"), className = $1345.prop($$props, "class", 3, ""), rest = $1345.rest_props($$props, [
+  let size = $1344.prop($$props, "size", 3, 32), alt = $1344.prop($$props, "alt", 3, "AvatarFemale02"), className = $1344.prop($$props, "class", 3, ""), rest = $1344.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53551,26 +53520,26 @@ function AvatarFemale02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1345.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1345.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1345.derived(() => findClosestSize($1345.get(resolvedWidth), AvatarFemale02AvailableSizes));
-  let imageSrc = $1345.derived(() => AvatarFemale02SizeMap[$1345.get(closestSize)] ?? import_avatar_female_02_32.default);
+  let resolvedWidth = $1344.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1344.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1344.derived(() => findClosestSize($1344.get(resolvedWidth), AvatarFemale02AvailableSizes));
+  let imageSrc = $1344.derived(() => AvatarFemale02SizeMap[$1344.get(closestSize)] ?? import_avatar_female_02_32.default);
   var img = root12();
-  $1345.attribute_effect(img, () => ({
-    src: $1345.get(imageSrc),
+  $1344.attribute_effect(img, () => ({
+    src: $1344.get(imageSrc),
     alt: alt(),
-    width: $1345.get(resolvedWidth),
-    height: $1345.get(resolvedHeight),
+    width: $1344.get(resolvedWidth),
+    height: $1344.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1345.replay_events(img);
-  $1345.append($$anchor, img);
+  $1344.replay_events(img);
+  $1344.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale03.svelte
-var import_disclose_version1346 = require("svelte/internal/disclose-version");
-var $1346 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1345 = require("svelte/internal/disclose-version");
+var $1345 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_03_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-32.jpg"));
 var import_avatar_female_03_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-12.jpg"));
 var import_avatar_female_03_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-16.jpg"));
@@ -53598,7 +53567,7 @@ var import_avatar_female_03_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_03_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-512.jpg"));
 var import_avatar_female_03_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-768.jpg"));
 var import_avatar_female_03_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-03-1536.jpg"));
-var root13 = $1346.from_html(`<img/>`);
+var root13 = $1345.from_html(`<img/>`);
 function AvatarFemale03($$anchor, $$props) {
   const AvatarFemale03SizeMap = {
     12: import_avatar_female_03_12.default,
@@ -53672,7 +53641,7 @@ function AvatarFemale03($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1346.prop($$props, "size", 3, 32), alt = $1346.prop($$props, "alt", 3, "AvatarFemale03"), className = $1346.prop($$props, "class", 3, ""), rest = $1346.rest_props($$props, [
+  let size = $1345.prop($$props, "size", 3, 32), alt = $1345.prop($$props, "alt", 3, "AvatarFemale03"), className = $1345.prop($$props, "class", 3, ""), rest = $1345.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53682,26 +53651,26 @@ function AvatarFemale03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1346.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1346.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1346.derived(() => findClosestSize($1346.get(resolvedWidth), AvatarFemale03AvailableSizes));
-  let imageSrc = $1346.derived(() => AvatarFemale03SizeMap[$1346.get(closestSize)] ?? import_avatar_female_03_32.default);
+  let resolvedWidth = $1345.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1345.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1345.derived(() => findClosestSize($1345.get(resolvedWidth), AvatarFemale03AvailableSizes));
+  let imageSrc = $1345.derived(() => AvatarFemale03SizeMap[$1345.get(closestSize)] ?? import_avatar_female_03_32.default);
   var img = root13();
-  $1346.attribute_effect(img, () => ({
-    src: $1346.get(imageSrc),
+  $1345.attribute_effect(img, () => ({
+    src: $1345.get(imageSrc),
     alt: alt(),
-    width: $1346.get(resolvedWidth),
-    height: $1346.get(resolvedHeight),
+    width: $1345.get(resolvedWidth),
+    height: $1345.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1346.replay_events(img);
-  $1346.append($$anchor, img);
+  $1345.replay_events(img);
+  $1345.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale04.svelte
-var import_disclose_version1347 = require("svelte/internal/disclose-version");
-var $1347 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1346 = require("svelte/internal/disclose-version");
+var $1346 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_04_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-32.jpg"));
 var import_avatar_female_04_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-12.jpg"));
 var import_avatar_female_04_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-16.jpg"));
@@ -53729,7 +53698,7 @@ var import_avatar_female_04_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_04_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-512.jpg"));
 var import_avatar_female_04_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-768.jpg"));
 var import_avatar_female_04_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-04-1536.jpg"));
-var root14 = $1347.from_html(`<img/>`);
+var root14 = $1346.from_html(`<img/>`);
 function AvatarFemale04($$anchor, $$props) {
   const AvatarFemale04SizeMap = {
     12: import_avatar_female_04_12.default,
@@ -53803,7 +53772,7 @@ function AvatarFemale04($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1347.prop($$props, "size", 3, 32), alt = $1347.prop($$props, "alt", 3, "AvatarFemale04"), className = $1347.prop($$props, "class", 3, ""), rest = $1347.rest_props($$props, [
+  let size = $1346.prop($$props, "size", 3, 32), alt = $1346.prop($$props, "alt", 3, "AvatarFemale04"), className = $1346.prop($$props, "class", 3, ""), rest = $1346.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53813,26 +53782,26 @@ function AvatarFemale04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1347.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1347.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1347.derived(() => findClosestSize($1347.get(resolvedWidth), AvatarFemale04AvailableSizes));
-  let imageSrc = $1347.derived(() => AvatarFemale04SizeMap[$1347.get(closestSize)] ?? import_avatar_female_04_32.default);
+  let resolvedWidth = $1346.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1346.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1346.derived(() => findClosestSize($1346.get(resolvedWidth), AvatarFemale04AvailableSizes));
+  let imageSrc = $1346.derived(() => AvatarFemale04SizeMap[$1346.get(closestSize)] ?? import_avatar_female_04_32.default);
   var img = root14();
-  $1347.attribute_effect(img, () => ({
-    src: $1347.get(imageSrc),
+  $1346.attribute_effect(img, () => ({
+    src: $1346.get(imageSrc),
     alt: alt(),
-    width: $1347.get(resolvedWidth),
-    height: $1347.get(resolvedHeight),
+    width: $1346.get(resolvedWidth),
+    height: $1346.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1347.replay_events(img);
-  $1347.append($$anchor, img);
+  $1346.replay_events(img);
+  $1346.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale05.svelte
-var import_disclose_version1348 = require("svelte/internal/disclose-version");
-var $1348 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1347 = require("svelte/internal/disclose-version");
+var $1347 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_05_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-32.jpg"));
 var import_avatar_female_05_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-12.jpg"));
 var import_avatar_female_05_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-16.jpg"));
@@ -53860,7 +53829,7 @@ var import_avatar_female_05_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_05_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-512.jpg"));
 var import_avatar_female_05_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-768.jpg"));
 var import_avatar_female_05_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-05-1536.jpg"));
-var root15 = $1348.from_html(`<img/>`);
+var root15 = $1347.from_html(`<img/>`);
 function AvatarFemale05($$anchor, $$props) {
   const AvatarFemale05SizeMap = {
     12: import_avatar_female_05_12.default,
@@ -53934,7 +53903,7 @@ function AvatarFemale05($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1348.prop($$props, "size", 3, 32), alt = $1348.prop($$props, "alt", 3, "AvatarFemale05"), className = $1348.prop($$props, "class", 3, ""), rest = $1348.rest_props($$props, [
+  let size = $1347.prop($$props, "size", 3, 32), alt = $1347.prop($$props, "alt", 3, "AvatarFemale05"), className = $1347.prop($$props, "class", 3, ""), rest = $1347.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -53944,26 +53913,26 @@ function AvatarFemale05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1348.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1348.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1348.derived(() => findClosestSize($1348.get(resolvedWidth), AvatarFemale05AvailableSizes));
-  let imageSrc = $1348.derived(() => AvatarFemale05SizeMap[$1348.get(closestSize)] ?? import_avatar_female_05_32.default);
+  let resolvedWidth = $1347.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1347.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1347.derived(() => findClosestSize($1347.get(resolvedWidth), AvatarFemale05AvailableSizes));
+  let imageSrc = $1347.derived(() => AvatarFemale05SizeMap[$1347.get(closestSize)] ?? import_avatar_female_05_32.default);
   var img = root15();
-  $1348.attribute_effect(img, () => ({
-    src: $1348.get(imageSrc),
+  $1347.attribute_effect(img, () => ({
+    src: $1347.get(imageSrc),
     alt: alt(),
-    width: $1348.get(resolvedWidth),
-    height: $1348.get(resolvedHeight),
+    width: $1347.get(resolvedWidth),
+    height: $1347.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1348.replay_events(img);
-  $1348.append($$anchor, img);
+  $1347.replay_events(img);
+  $1347.append($$anchor, img);
 }
 
 // src/avatars/AvatarFemale06.svelte
-var import_disclose_version1349 = require("svelte/internal/disclose-version");
-var $1349 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1348 = require("svelte/internal/disclose-version");
+var $1348 = __toESM(require("svelte/internal/client"));
 var import_avatar_female_06_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-32.jpg"));
 var import_avatar_female_06_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-12.jpg"));
 var import_avatar_female_06_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-16.jpg"));
@@ -53991,7 +53960,7 @@ var import_avatar_female_06_384 = __toESM(require("@snowui-design-system/resourc
 var import_avatar_female_06_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-512.jpg"));
 var import_avatar_female_06_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-768.jpg"));
 var import_avatar_female_06_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-female-06-1536.jpg"));
-var root16 = $1349.from_html(`<img/>`);
+var root16 = $1348.from_html(`<img/>`);
 function AvatarFemale06($$anchor, $$props) {
   const AvatarFemale06SizeMap = {
     12: import_avatar_female_06_12.default,
@@ -54065,7 +54034,7 @@ function AvatarFemale06($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1349.prop($$props, "size", 3, 32), alt = $1349.prop($$props, "alt", 3, "AvatarFemale06"), className = $1349.prop($$props, "class", 3, ""), rest = $1349.rest_props($$props, [
+  let size = $1348.prop($$props, "size", 3, 32), alt = $1348.prop($$props, "alt", 3, "AvatarFemale06"), className = $1348.prop($$props, "class", 3, ""), rest = $1348.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54075,26 +54044,26 @@ function AvatarFemale06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1349.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1349.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1349.derived(() => findClosestSize($1349.get(resolvedWidth), AvatarFemale06AvailableSizes));
-  let imageSrc = $1349.derived(() => AvatarFemale06SizeMap[$1349.get(closestSize)] ?? import_avatar_female_06_32.default);
+  let resolvedWidth = $1348.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1348.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1348.derived(() => findClosestSize($1348.get(resolvedWidth), AvatarFemale06AvailableSizes));
+  let imageSrc = $1348.derived(() => AvatarFemale06SizeMap[$1348.get(closestSize)] ?? import_avatar_female_06_32.default);
   var img = root16();
-  $1349.attribute_effect(img, () => ({
-    src: $1349.get(imageSrc),
+  $1348.attribute_effect(img, () => ({
+    src: $1348.get(imageSrc),
     alt: alt(),
-    width: $1349.get(resolvedWidth),
-    height: $1349.get(resolvedHeight),
+    width: $1348.get(resolvedWidth),
+    height: $1348.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1349.replay_events(img);
-  $1349.append($$anchor, img);
+  $1348.replay_events(img);
+  $1348.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale01.svelte
-var import_disclose_version1350 = require("svelte/internal/disclose-version");
-var $1350 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1349 = require("svelte/internal/disclose-version");
+var $1349 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_01_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-32.jpg"));
 var import_avatar_male_01_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-12.jpg"));
 var import_avatar_male_01_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-16.jpg"));
@@ -54122,7 +54091,7 @@ var import_avatar_male_01_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_01_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-512.jpg"));
 var import_avatar_male_01_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-768.jpg"));
 var import_avatar_male_01_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-01-1536.jpg"));
-var root17 = $1350.from_html(`<img/>`);
+var root17 = $1349.from_html(`<img/>`);
 function AvatarMale01($$anchor, $$props) {
   const AvatarMale01SizeMap = {
     12: import_avatar_male_01_12.default,
@@ -54196,7 +54165,7 @@ function AvatarMale01($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1350.prop($$props, "size", 3, 32), alt = $1350.prop($$props, "alt", 3, "AvatarMale01"), className = $1350.prop($$props, "class", 3, ""), rest = $1350.rest_props($$props, [
+  let size = $1349.prop($$props, "size", 3, 32), alt = $1349.prop($$props, "alt", 3, "AvatarMale01"), className = $1349.prop($$props, "class", 3, ""), rest = $1349.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54206,26 +54175,26 @@ function AvatarMale01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1350.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1350.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1350.derived(() => findClosestSize($1350.get(resolvedWidth), AvatarMale01AvailableSizes));
-  let imageSrc = $1350.derived(() => AvatarMale01SizeMap[$1350.get(closestSize)] ?? import_avatar_male_01_32.default);
+  let resolvedWidth = $1349.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1349.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1349.derived(() => findClosestSize($1349.get(resolvedWidth), AvatarMale01AvailableSizes));
+  let imageSrc = $1349.derived(() => AvatarMale01SizeMap[$1349.get(closestSize)] ?? import_avatar_male_01_32.default);
   var img = root17();
-  $1350.attribute_effect(img, () => ({
-    src: $1350.get(imageSrc),
+  $1349.attribute_effect(img, () => ({
+    src: $1349.get(imageSrc),
     alt: alt(),
-    width: $1350.get(resolvedWidth),
-    height: $1350.get(resolvedHeight),
+    width: $1349.get(resolvedWidth),
+    height: $1349.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1350.replay_events(img);
-  $1350.append($$anchor, img);
+  $1349.replay_events(img);
+  $1349.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale02.svelte
-var import_disclose_version1351 = require("svelte/internal/disclose-version");
-var $1351 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1350 = require("svelte/internal/disclose-version");
+var $1350 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_02_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-32.jpg"));
 var import_avatar_male_02_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-12.jpg"));
 var import_avatar_male_02_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-16.jpg"));
@@ -54253,7 +54222,7 @@ var import_avatar_male_02_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_02_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-512.jpg"));
 var import_avatar_male_02_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-768.jpg"));
 var import_avatar_male_02_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-02-1536.jpg"));
-var root18 = $1351.from_html(`<img/>`);
+var root18 = $1350.from_html(`<img/>`);
 function AvatarMale02($$anchor, $$props) {
   const AvatarMale02SizeMap = {
     12: import_avatar_male_02_12.default,
@@ -54327,7 +54296,7 @@ function AvatarMale02($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1351.prop($$props, "size", 3, 32), alt = $1351.prop($$props, "alt", 3, "AvatarMale02"), className = $1351.prop($$props, "class", 3, ""), rest = $1351.rest_props($$props, [
+  let size = $1350.prop($$props, "size", 3, 32), alt = $1350.prop($$props, "alt", 3, "AvatarMale02"), className = $1350.prop($$props, "class", 3, ""), rest = $1350.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54337,26 +54306,26 @@ function AvatarMale02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1351.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1351.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1351.derived(() => findClosestSize($1351.get(resolvedWidth), AvatarMale02AvailableSizes));
-  let imageSrc = $1351.derived(() => AvatarMale02SizeMap[$1351.get(closestSize)] ?? import_avatar_male_02_32.default);
+  let resolvedWidth = $1350.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1350.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1350.derived(() => findClosestSize($1350.get(resolvedWidth), AvatarMale02AvailableSizes));
+  let imageSrc = $1350.derived(() => AvatarMale02SizeMap[$1350.get(closestSize)] ?? import_avatar_male_02_32.default);
   var img = root18();
-  $1351.attribute_effect(img, () => ({
-    src: $1351.get(imageSrc),
+  $1350.attribute_effect(img, () => ({
+    src: $1350.get(imageSrc),
     alt: alt(),
-    width: $1351.get(resolvedWidth),
-    height: $1351.get(resolvedHeight),
+    width: $1350.get(resolvedWidth),
+    height: $1350.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1351.replay_events(img);
-  $1351.append($$anchor, img);
+  $1350.replay_events(img);
+  $1350.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale03.svelte
-var import_disclose_version1352 = require("svelte/internal/disclose-version");
-var $1352 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1351 = require("svelte/internal/disclose-version");
+var $1351 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_03_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-32.jpg"));
 var import_avatar_male_03_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-12.jpg"));
 var import_avatar_male_03_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-16.jpg"));
@@ -54384,7 +54353,7 @@ var import_avatar_male_03_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_03_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-512.jpg"));
 var import_avatar_male_03_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-768.jpg"));
 var import_avatar_male_03_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-03-1536.jpg"));
-var root19 = $1352.from_html(`<img/>`);
+var root19 = $1351.from_html(`<img/>`);
 function AvatarMale03($$anchor, $$props) {
   const AvatarMale03SizeMap = {
     12: import_avatar_male_03_12.default,
@@ -54458,7 +54427,7 @@ function AvatarMale03($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1352.prop($$props, "size", 3, 32), alt = $1352.prop($$props, "alt", 3, "AvatarMale03"), className = $1352.prop($$props, "class", 3, ""), rest = $1352.rest_props($$props, [
+  let size = $1351.prop($$props, "size", 3, 32), alt = $1351.prop($$props, "alt", 3, "AvatarMale03"), className = $1351.prop($$props, "class", 3, ""), rest = $1351.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54468,26 +54437,26 @@ function AvatarMale03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1352.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1352.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1352.derived(() => findClosestSize($1352.get(resolvedWidth), AvatarMale03AvailableSizes));
-  let imageSrc = $1352.derived(() => AvatarMale03SizeMap[$1352.get(closestSize)] ?? import_avatar_male_03_32.default);
+  let resolvedWidth = $1351.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1351.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1351.derived(() => findClosestSize($1351.get(resolvedWidth), AvatarMale03AvailableSizes));
+  let imageSrc = $1351.derived(() => AvatarMale03SizeMap[$1351.get(closestSize)] ?? import_avatar_male_03_32.default);
   var img = root19();
-  $1352.attribute_effect(img, () => ({
-    src: $1352.get(imageSrc),
+  $1351.attribute_effect(img, () => ({
+    src: $1351.get(imageSrc),
     alt: alt(),
-    width: $1352.get(resolvedWidth),
-    height: $1352.get(resolvedHeight),
+    width: $1351.get(resolvedWidth),
+    height: $1351.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1352.replay_events(img);
-  $1352.append($$anchor, img);
+  $1351.replay_events(img);
+  $1351.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale04.svelte
-var import_disclose_version1353 = require("svelte/internal/disclose-version");
-var $1353 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1352 = require("svelte/internal/disclose-version");
+var $1352 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_04_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-32.jpg"));
 var import_avatar_male_04_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-12.jpg"));
 var import_avatar_male_04_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-16.jpg"));
@@ -54515,7 +54484,7 @@ var import_avatar_male_04_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_04_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-512.jpg"));
 var import_avatar_male_04_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-768.jpg"));
 var import_avatar_male_04_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-04-1536.jpg"));
-var root20 = $1353.from_html(`<img/>`);
+var root20 = $1352.from_html(`<img/>`);
 function AvatarMale04($$anchor, $$props) {
   const AvatarMale04SizeMap = {
     12: import_avatar_male_04_12.default,
@@ -54589,7 +54558,7 @@ function AvatarMale04($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1353.prop($$props, "size", 3, 32), alt = $1353.prop($$props, "alt", 3, "AvatarMale04"), className = $1353.prop($$props, "class", 3, ""), rest = $1353.rest_props($$props, [
+  let size = $1352.prop($$props, "size", 3, 32), alt = $1352.prop($$props, "alt", 3, "AvatarMale04"), className = $1352.prop($$props, "class", 3, ""), rest = $1352.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54599,26 +54568,26 @@ function AvatarMale04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1353.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1353.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1353.derived(() => findClosestSize($1353.get(resolvedWidth), AvatarMale04AvailableSizes));
-  let imageSrc = $1353.derived(() => AvatarMale04SizeMap[$1353.get(closestSize)] ?? import_avatar_male_04_32.default);
+  let resolvedWidth = $1352.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1352.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1352.derived(() => findClosestSize($1352.get(resolvedWidth), AvatarMale04AvailableSizes));
+  let imageSrc = $1352.derived(() => AvatarMale04SizeMap[$1352.get(closestSize)] ?? import_avatar_male_04_32.default);
   var img = root20();
-  $1353.attribute_effect(img, () => ({
-    src: $1353.get(imageSrc),
+  $1352.attribute_effect(img, () => ({
+    src: $1352.get(imageSrc),
     alt: alt(),
-    width: $1353.get(resolvedWidth),
-    height: $1353.get(resolvedHeight),
+    width: $1352.get(resolvedWidth),
+    height: $1352.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1353.replay_events(img);
-  $1353.append($$anchor, img);
+  $1352.replay_events(img);
+  $1352.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale05.svelte
-var import_disclose_version1354 = require("svelte/internal/disclose-version");
-var $1354 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1353 = require("svelte/internal/disclose-version");
+var $1353 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_05_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-32.jpg"));
 var import_avatar_male_05_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-12.jpg"));
 var import_avatar_male_05_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-16.jpg"));
@@ -54646,7 +54615,7 @@ var import_avatar_male_05_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_05_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-512.jpg"));
 var import_avatar_male_05_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-768.jpg"));
 var import_avatar_male_05_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-05-1536.jpg"));
-var root21 = $1354.from_html(`<img/>`);
+var root21 = $1353.from_html(`<img/>`);
 function AvatarMale05($$anchor, $$props) {
   const AvatarMale05SizeMap = {
     12: import_avatar_male_05_12.default,
@@ -54720,7 +54689,7 @@ function AvatarMale05($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1354.prop($$props, "size", 3, 32), alt = $1354.prop($$props, "alt", 3, "AvatarMale05"), className = $1354.prop($$props, "class", 3, ""), rest = $1354.rest_props($$props, [
+  let size = $1353.prop($$props, "size", 3, 32), alt = $1353.prop($$props, "alt", 3, "AvatarMale05"), className = $1353.prop($$props, "class", 3, ""), rest = $1353.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54730,26 +54699,26 @@ function AvatarMale05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1354.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1354.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1354.derived(() => findClosestSize($1354.get(resolvedWidth), AvatarMale05AvailableSizes));
-  let imageSrc = $1354.derived(() => AvatarMale05SizeMap[$1354.get(closestSize)] ?? import_avatar_male_05_32.default);
+  let resolvedWidth = $1353.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1353.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1353.derived(() => findClosestSize($1353.get(resolvedWidth), AvatarMale05AvailableSizes));
+  let imageSrc = $1353.derived(() => AvatarMale05SizeMap[$1353.get(closestSize)] ?? import_avatar_male_05_32.default);
   var img = root21();
-  $1354.attribute_effect(img, () => ({
-    src: $1354.get(imageSrc),
+  $1353.attribute_effect(img, () => ({
+    src: $1353.get(imageSrc),
     alt: alt(),
-    width: $1354.get(resolvedWidth),
-    height: $1354.get(resolvedHeight),
+    width: $1353.get(resolvedWidth),
+    height: $1353.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1354.replay_events(img);
-  $1354.append($$anchor, img);
+  $1353.replay_events(img);
+  $1353.append($$anchor, img);
 }
 
 // src/avatars/AvatarMale06.svelte
-var import_disclose_version1355 = require("svelte/internal/disclose-version");
-var $1355 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1354 = require("svelte/internal/disclose-version");
+var $1354 = __toESM(require("svelte/internal/client"));
 var import_avatar_male_06_32 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-32.jpg"));
 var import_avatar_male_06_12 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-12.jpg"));
 var import_avatar_male_06_16 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-16.jpg"));
@@ -54777,7 +54746,7 @@ var import_avatar_male_06_384 = __toESM(require("@snowui-design-system/resource-
 var import_avatar_male_06_512 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-512.jpg"));
 var import_avatar_male_06_768 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-768.jpg"));
 var import_avatar_male_06_1536 = __toESM(require("@snowui-design-system/resource-base/assets/avatars/avatar-male-06-1536.jpg"));
-var root22 = $1355.from_html(`<img/>`);
+var root22 = $1354.from_html(`<img/>`);
 function AvatarMale06($$anchor, $$props) {
   const AvatarMale06SizeMap = {
     12: import_avatar_male_06_12.default,
@@ -54851,7 +54820,7 @@ function AvatarMale06($$anchor, $$props) {
     }
     return closest;
   };
-  let size = $1355.prop($$props, "size", 3, 32), alt = $1355.prop($$props, "alt", 3, "AvatarMale06"), className = $1355.prop($$props, "class", 3, ""), rest = $1355.rest_props($$props, [
+  let size = $1354.prop($$props, "size", 3, 32), alt = $1354.prop($$props, "alt", 3, "AvatarMale06"), className = $1354.prop($$props, "class", 3, ""), rest = $1354.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54861,31 +54830,31 @@ function AvatarMale06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1355.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1355.derived(() => size() ?? $$props.height ?? 32);
-  let closestSize = $1355.derived(() => findClosestSize($1355.get(resolvedWidth), AvatarMale06AvailableSizes));
-  let imageSrc = $1355.derived(() => AvatarMale06SizeMap[$1355.get(closestSize)] ?? import_avatar_male_06_32.default);
+  let resolvedWidth = $1354.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1354.derived(() => size() ?? $$props.height ?? 32);
+  let closestSize = $1354.derived(() => findClosestSize($1354.get(resolvedWidth), AvatarMale06AvailableSizes));
+  let imageSrc = $1354.derived(() => AvatarMale06SizeMap[$1354.get(closestSize)] ?? import_avatar_male_06_32.default);
   var img = root22();
-  $1355.attribute_effect(img, () => ({
-    src: $1355.get(imageSrc),
+  $1354.attribute_effect(img, () => ({
+    src: $1354.get(imageSrc),
     alt: alt(),
-    width: $1355.get(resolvedWidth),
-    height: $1355.get(resolvedHeight),
+    width: $1354.get(resolvedWidth),
+    height: $1354.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1355.replay_events(img);
-  $1355.append($$anchor, img);
+  $1354.replay_events(img);
+  $1354.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric01.svelte
-var import_disclose_version1356 = require("svelte/internal/disclose-version");
-var $1356 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1355 = require("svelte/internal/disclose-version");
+var $1355 = __toESM(require("svelte/internal/client"));
 var import_geometric_01_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-01-1024.jpg"));
 var import_geometric_01_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-01-320.jpg"));
 var import_geometric_01_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-01-640.jpg"));
 var import_geometric_01_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-01-1920.jpg"));
-var root23 = $1356.from_html(`<img/>`);
+var root23 = $1355.from_html(`<img/>`);
 function Geometric01($$anchor, $$props) {
   const Geometric01WidthMap = {
     320: import_geometric_01_320.default,
@@ -54908,7 +54877,7 @@ function Geometric01($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1356.prop($$props, "height", 3, 128), alt = $1356.prop($$props, "alt", 3, "Geometric01"), className = $1356.prop($$props, "class", 3, ""), rest = $1356.rest_props($$props, [
+  let height = $1355.prop($$props, "height", 3, 128), alt = $1355.prop($$props, "alt", 3, "Geometric01"), className = $1355.prop($$props, "class", 3, ""), rest = $1355.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54917,32 +54886,32 @@ function Geometric01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1356.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1356.derived(() => height() ?? 128);
-  let sourceWidth = $1356.derived(() => $1356.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1356.derived(() => findClosestWidth($1356.get(sourceWidth), Geometric01AvailableWidths));
-  let imageSrc = $1356.derived(() => Geometric01WidthMap[$1356.get(closestWidth)] ?? import_geometric_01_1024.default);
+  let resolvedWidth = $1355.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1355.derived(() => height() ?? 128);
+  let sourceWidth = $1355.derived(() => $1355.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1355.derived(() => findClosestWidth($1355.get(sourceWidth), Geometric01AvailableWidths));
+  let imageSrc = $1355.derived(() => Geometric01WidthMap[$1355.get(closestWidth)] ?? import_geometric_01_1024.default);
   var img = root23();
-  $1356.attribute_effect(img, () => ({
-    src: $1356.get(imageSrc),
+  $1355.attribute_effect(img, () => ({
+    src: $1355.get(imageSrc),
     alt: alt(),
-    width: $1356.get(resolvedWidth) ?? void 0,
-    height: $1356.get(resolvedHeight),
+    width: $1355.get(resolvedWidth) ?? void 0,
+    height: $1355.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1356.replay_events(img);
-  $1356.append($$anchor, img);
+  $1355.replay_events(img);
+  $1355.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric02.svelte
-var import_disclose_version1357 = require("svelte/internal/disclose-version");
-var $1357 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1356 = require("svelte/internal/disclose-version");
+var $1356 = __toESM(require("svelte/internal/client"));
 var import_geometric_02_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-02-1024.jpg"));
 var import_geometric_02_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-02-320.jpg"));
 var import_geometric_02_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-02-640.jpg"));
 var import_geometric_02_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-02-1920.jpg"));
-var root24 = $1357.from_html(`<img/>`);
+var root24 = $1356.from_html(`<img/>`);
 function Geometric02($$anchor, $$props) {
   const Geometric02WidthMap = {
     320: import_geometric_02_320.default,
@@ -54965,7 +54934,7 @@ function Geometric02($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1357.prop($$props, "height", 3, 128), alt = $1357.prop($$props, "alt", 3, "Geometric02"), className = $1357.prop($$props, "class", 3, ""), rest = $1357.rest_props($$props, [
+  let height = $1356.prop($$props, "height", 3, 128), alt = $1356.prop($$props, "alt", 3, "Geometric02"), className = $1356.prop($$props, "class", 3, ""), rest = $1356.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -54974,32 +54943,32 @@ function Geometric02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1357.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1357.derived(() => height() ?? 128);
-  let sourceWidth = $1357.derived(() => $1357.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1357.derived(() => findClosestWidth($1357.get(sourceWidth), Geometric02AvailableWidths));
-  let imageSrc = $1357.derived(() => Geometric02WidthMap[$1357.get(closestWidth)] ?? import_geometric_02_1024.default);
+  let resolvedWidth = $1356.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1356.derived(() => height() ?? 128);
+  let sourceWidth = $1356.derived(() => $1356.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1356.derived(() => findClosestWidth($1356.get(sourceWidth), Geometric02AvailableWidths));
+  let imageSrc = $1356.derived(() => Geometric02WidthMap[$1356.get(closestWidth)] ?? import_geometric_02_1024.default);
   var img = root24();
-  $1357.attribute_effect(img, () => ({
-    src: $1357.get(imageSrc),
+  $1356.attribute_effect(img, () => ({
+    src: $1356.get(imageSrc),
     alt: alt(),
-    width: $1357.get(resolvedWidth) ?? void 0,
-    height: $1357.get(resolvedHeight),
+    width: $1356.get(resolvedWidth) ?? void 0,
+    height: $1356.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1357.replay_events(img);
-  $1357.append($$anchor, img);
+  $1356.replay_events(img);
+  $1356.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric03.svelte
-var import_disclose_version1358 = require("svelte/internal/disclose-version");
-var $1358 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1357 = require("svelte/internal/disclose-version");
+var $1357 = __toESM(require("svelte/internal/client"));
 var import_geometric_03_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-03-1024.jpg"));
 var import_geometric_03_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-03-320.jpg"));
 var import_geometric_03_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-03-640.jpg"));
 var import_geometric_03_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-03-1920.jpg"));
-var root25 = $1358.from_html(`<img/>`);
+var root25 = $1357.from_html(`<img/>`);
 function Geometric03($$anchor, $$props) {
   const Geometric03WidthMap = {
     320: import_geometric_03_320.default,
@@ -55022,7 +54991,7 @@ function Geometric03($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1358.prop($$props, "height", 3, 128), alt = $1358.prop($$props, "alt", 3, "Geometric03"), className = $1358.prop($$props, "class", 3, ""), rest = $1358.rest_props($$props, [
+  let height = $1357.prop($$props, "height", 3, 128), alt = $1357.prop($$props, "alt", 3, "Geometric03"), className = $1357.prop($$props, "class", 3, ""), rest = $1357.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55031,32 +55000,32 @@ function Geometric03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1358.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1358.derived(() => height() ?? 128);
-  let sourceWidth = $1358.derived(() => $1358.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1358.derived(() => findClosestWidth($1358.get(sourceWidth), Geometric03AvailableWidths));
-  let imageSrc = $1358.derived(() => Geometric03WidthMap[$1358.get(closestWidth)] ?? import_geometric_03_1024.default);
+  let resolvedWidth = $1357.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1357.derived(() => height() ?? 128);
+  let sourceWidth = $1357.derived(() => $1357.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1357.derived(() => findClosestWidth($1357.get(sourceWidth), Geometric03AvailableWidths));
+  let imageSrc = $1357.derived(() => Geometric03WidthMap[$1357.get(closestWidth)] ?? import_geometric_03_1024.default);
   var img = root25();
-  $1358.attribute_effect(img, () => ({
-    src: $1358.get(imageSrc),
+  $1357.attribute_effect(img, () => ({
+    src: $1357.get(imageSrc),
     alt: alt(),
-    width: $1358.get(resolvedWidth) ?? void 0,
-    height: $1358.get(resolvedHeight),
+    width: $1357.get(resolvedWidth) ?? void 0,
+    height: $1357.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1358.replay_events(img);
-  $1358.append($$anchor, img);
+  $1357.replay_events(img);
+  $1357.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric04.svelte
-var import_disclose_version1359 = require("svelte/internal/disclose-version");
-var $1359 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1358 = require("svelte/internal/disclose-version");
+var $1358 = __toESM(require("svelte/internal/client"));
 var import_geometric_04_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-04-1024.jpg"));
 var import_geometric_04_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-04-320.jpg"));
 var import_geometric_04_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-04-640.jpg"));
 var import_geometric_04_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-04-1920.jpg"));
-var root26 = $1359.from_html(`<img/>`);
+var root26 = $1358.from_html(`<img/>`);
 function Geometric04($$anchor, $$props) {
   const Geometric04WidthMap = {
     320: import_geometric_04_320.default,
@@ -55079,7 +55048,7 @@ function Geometric04($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1359.prop($$props, "height", 3, 128), alt = $1359.prop($$props, "alt", 3, "Geometric04"), className = $1359.prop($$props, "class", 3, ""), rest = $1359.rest_props($$props, [
+  let height = $1358.prop($$props, "height", 3, 128), alt = $1358.prop($$props, "alt", 3, "Geometric04"), className = $1358.prop($$props, "class", 3, ""), rest = $1358.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55088,32 +55057,32 @@ function Geometric04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1359.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1359.derived(() => height() ?? 128);
-  let sourceWidth = $1359.derived(() => $1359.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1359.derived(() => findClosestWidth($1359.get(sourceWidth), Geometric04AvailableWidths));
-  let imageSrc = $1359.derived(() => Geometric04WidthMap[$1359.get(closestWidth)] ?? import_geometric_04_1024.default);
+  let resolvedWidth = $1358.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1358.derived(() => height() ?? 128);
+  let sourceWidth = $1358.derived(() => $1358.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1358.derived(() => findClosestWidth($1358.get(sourceWidth), Geometric04AvailableWidths));
+  let imageSrc = $1358.derived(() => Geometric04WidthMap[$1358.get(closestWidth)] ?? import_geometric_04_1024.default);
   var img = root26();
-  $1359.attribute_effect(img, () => ({
-    src: $1359.get(imageSrc),
+  $1358.attribute_effect(img, () => ({
+    src: $1358.get(imageSrc),
     alt: alt(),
-    width: $1359.get(resolvedWidth) ?? void 0,
-    height: $1359.get(resolvedHeight),
+    width: $1358.get(resolvedWidth) ?? void 0,
+    height: $1358.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1359.replay_events(img);
-  $1359.append($$anchor, img);
+  $1358.replay_events(img);
+  $1358.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric05.svelte
-var import_disclose_version1360 = require("svelte/internal/disclose-version");
-var $1360 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1359 = require("svelte/internal/disclose-version");
+var $1359 = __toESM(require("svelte/internal/client"));
 var import_geometric_05_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-05-1024.jpg"));
 var import_geometric_05_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-05-320.jpg"));
 var import_geometric_05_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-05-640.jpg"));
 var import_geometric_05_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-05-1920.jpg"));
-var root27 = $1360.from_html(`<img/>`);
+var root27 = $1359.from_html(`<img/>`);
 function Geometric05($$anchor, $$props) {
   const Geometric05WidthMap = {
     320: import_geometric_05_320.default,
@@ -55136,7 +55105,7 @@ function Geometric05($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1360.prop($$props, "height", 3, 128), alt = $1360.prop($$props, "alt", 3, "Geometric05"), className = $1360.prop($$props, "class", 3, ""), rest = $1360.rest_props($$props, [
+  let height = $1359.prop($$props, "height", 3, 128), alt = $1359.prop($$props, "alt", 3, "Geometric05"), className = $1359.prop($$props, "class", 3, ""), rest = $1359.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55145,32 +55114,32 @@ function Geometric05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1360.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1360.derived(() => height() ?? 128);
-  let sourceWidth = $1360.derived(() => $1360.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1360.derived(() => findClosestWidth($1360.get(sourceWidth), Geometric05AvailableWidths));
-  let imageSrc = $1360.derived(() => Geometric05WidthMap[$1360.get(closestWidth)] ?? import_geometric_05_1024.default);
+  let resolvedWidth = $1359.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1359.derived(() => height() ?? 128);
+  let sourceWidth = $1359.derived(() => $1359.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1359.derived(() => findClosestWidth($1359.get(sourceWidth), Geometric05AvailableWidths));
+  let imageSrc = $1359.derived(() => Geometric05WidthMap[$1359.get(closestWidth)] ?? import_geometric_05_1024.default);
   var img = root27();
-  $1360.attribute_effect(img, () => ({
-    src: $1360.get(imageSrc),
+  $1359.attribute_effect(img, () => ({
+    src: $1359.get(imageSrc),
     alt: alt(),
-    width: $1360.get(resolvedWidth) ?? void 0,
-    height: $1360.get(resolvedHeight),
+    width: $1359.get(resolvedWidth) ?? void 0,
+    height: $1359.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1360.replay_events(img);
-  $1360.append($$anchor, img);
+  $1359.replay_events(img);
+  $1359.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric06.svelte
-var import_disclose_version1361 = require("svelte/internal/disclose-version");
-var $1361 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1360 = require("svelte/internal/disclose-version");
+var $1360 = __toESM(require("svelte/internal/client"));
 var import_geometric_06_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-06-1024.jpg"));
 var import_geometric_06_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-06-320.jpg"));
 var import_geometric_06_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-06-640.jpg"));
 var import_geometric_06_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-06-1920.jpg"));
-var root28 = $1361.from_html(`<img/>`);
+var root28 = $1360.from_html(`<img/>`);
 function Geometric06($$anchor, $$props) {
   const Geometric06WidthMap = {
     320: import_geometric_06_320.default,
@@ -55193,7 +55162,7 @@ function Geometric06($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1361.prop($$props, "height", 3, 128), alt = $1361.prop($$props, "alt", 3, "Geometric06"), className = $1361.prop($$props, "class", 3, ""), rest = $1361.rest_props($$props, [
+  let height = $1360.prop($$props, "height", 3, 128), alt = $1360.prop($$props, "alt", 3, "Geometric06"), className = $1360.prop($$props, "class", 3, ""), rest = $1360.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55202,32 +55171,32 @@ function Geometric06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1361.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1361.derived(() => height() ?? 128);
-  let sourceWidth = $1361.derived(() => $1361.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1361.derived(() => findClosestWidth($1361.get(sourceWidth), Geometric06AvailableWidths));
-  let imageSrc = $1361.derived(() => Geometric06WidthMap[$1361.get(closestWidth)] ?? import_geometric_06_1024.default);
+  let resolvedWidth = $1360.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1360.derived(() => height() ?? 128);
+  let sourceWidth = $1360.derived(() => $1360.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1360.derived(() => findClosestWidth($1360.get(sourceWidth), Geometric06AvailableWidths));
+  let imageSrc = $1360.derived(() => Geometric06WidthMap[$1360.get(closestWidth)] ?? import_geometric_06_1024.default);
   var img = root28();
-  $1361.attribute_effect(img, () => ({
-    src: $1361.get(imageSrc),
+  $1360.attribute_effect(img, () => ({
+    src: $1360.get(imageSrc),
     alt: alt(),
-    width: $1361.get(resolvedWidth) ?? void 0,
-    height: $1361.get(resolvedHeight),
+    width: $1360.get(resolvedWidth) ?? void 0,
+    height: $1360.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1361.replay_events(img);
-  $1361.append($$anchor, img);
+  $1360.replay_events(img);
+  $1360.append($$anchor, img);
 }
 
 // src/backgrounds/Geometric07.svelte
-var import_disclose_version1362 = require("svelte/internal/disclose-version");
-var $1362 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1361 = require("svelte/internal/disclose-version");
+var $1361 = __toESM(require("svelte/internal/client"));
 var import_geometric_07_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-07-1024.jpg"));
 var import_geometric_07_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-07-320.jpg"));
 var import_geometric_07_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-07-640.jpg"));
 var import_geometric_07_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/geometric-07-1920.jpg"));
-var root29 = $1362.from_html(`<img/>`);
+var root29 = $1361.from_html(`<img/>`);
 function Geometric07($$anchor, $$props) {
   const Geometric07WidthMap = {
     320: import_geometric_07_320.default,
@@ -55250,7 +55219,7 @@ function Geometric07($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1362.prop($$props, "height", 3, 128), alt = $1362.prop($$props, "alt", 3, "Geometric07"), className = $1362.prop($$props, "class", 3, ""), rest = $1362.rest_props($$props, [
+  let height = $1361.prop($$props, "height", 3, 128), alt = $1361.prop($$props, "alt", 3, "Geometric07"), className = $1361.prop($$props, "class", 3, ""), rest = $1361.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55259,32 +55228,32 @@ function Geometric07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1362.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1362.derived(() => height() ?? 128);
-  let sourceWidth = $1362.derived(() => $1362.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1362.derived(() => findClosestWidth($1362.get(sourceWidth), Geometric07AvailableWidths));
-  let imageSrc = $1362.derived(() => Geometric07WidthMap[$1362.get(closestWidth)] ?? import_geometric_07_1024.default);
+  let resolvedWidth = $1361.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1361.derived(() => height() ?? 128);
+  let sourceWidth = $1361.derived(() => $1361.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1361.derived(() => findClosestWidth($1361.get(sourceWidth), Geometric07AvailableWidths));
+  let imageSrc = $1361.derived(() => Geometric07WidthMap[$1361.get(closestWidth)] ?? import_geometric_07_1024.default);
   var img = root29();
-  $1362.attribute_effect(img, () => ({
-    src: $1362.get(imageSrc),
+  $1361.attribute_effect(img, () => ({
+    src: $1361.get(imageSrc),
     alt: alt(),
-    width: $1362.get(resolvedWidth) ?? void 0,
-    height: $1362.get(resolvedHeight),
+    width: $1361.get(resolvedWidth) ?? void 0,
+    height: $1361.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1362.replay_events(img);
-  $1362.append($$anchor, img);
+  $1361.replay_events(img);
+  $1361.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient01.svelte
-var import_disclose_version1363 = require("svelte/internal/disclose-version");
-var $1363 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1362 = require("svelte/internal/disclose-version");
+var $1362 = __toESM(require("svelte/internal/client"));
 var import_gradient_01_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-01-1024.jpg"));
 var import_gradient_01_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-01-320.jpg"));
 var import_gradient_01_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-01-640.jpg"));
 var import_gradient_01_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-01-1920.jpg"));
-var root30 = $1363.from_html(`<img/>`);
+var root30 = $1362.from_html(`<img/>`);
 function Gradient01($$anchor, $$props) {
   const Gradient01WidthMap = {
     320: import_gradient_01_320.default,
@@ -55307,7 +55276,7 @@ function Gradient01($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1363.prop($$props, "height", 3, 128), alt = $1363.prop($$props, "alt", 3, "Gradient01"), className = $1363.prop($$props, "class", 3, ""), rest = $1363.rest_props($$props, [
+  let height = $1362.prop($$props, "height", 3, 128), alt = $1362.prop($$props, "alt", 3, "Gradient01"), className = $1362.prop($$props, "class", 3, ""), rest = $1362.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55316,32 +55285,32 @@ function Gradient01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1363.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1363.derived(() => height() ?? 128);
-  let sourceWidth = $1363.derived(() => $1363.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1363.derived(() => findClosestWidth($1363.get(sourceWidth), Gradient01AvailableWidths));
-  let imageSrc = $1363.derived(() => Gradient01WidthMap[$1363.get(closestWidth)] ?? import_gradient_01_1024.default);
+  let resolvedWidth = $1362.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1362.derived(() => height() ?? 128);
+  let sourceWidth = $1362.derived(() => $1362.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1362.derived(() => findClosestWidth($1362.get(sourceWidth), Gradient01AvailableWidths));
+  let imageSrc = $1362.derived(() => Gradient01WidthMap[$1362.get(closestWidth)] ?? import_gradient_01_1024.default);
   var img = root30();
-  $1363.attribute_effect(img, () => ({
-    src: $1363.get(imageSrc),
+  $1362.attribute_effect(img, () => ({
+    src: $1362.get(imageSrc),
     alt: alt(),
-    width: $1363.get(resolvedWidth) ?? void 0,
-    height: $1363.get(resolvedHeight),
+    width: $1362.get(resolvedWidth) ?? void 0,
+    height: $1362.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1363.replay_events(img);
-  $1363.append($$anchor, img);
+  $1362.replay_events(img);
+  $1362.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient02.svelte
-var import_disclose_version1364 = require("svelte/internal/disclose-version");
-var $1364 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1363 = require("svelte/internal/disclose-version");
+var $1363 = __toESM(require("svelte/internal/client"));
 var import_gradient_02_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-02-1024.jpg"));
 var import_gradient_02_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-02-320.jpg"));
 var import_gradient_02_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-02-640.jpg"));
 var import_gradient_02_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-02-1920.jpg"));
-var root31 = $1364.from_html(`<img/>`);
+var root31 = $1363.from_html(`<img/>`);
 function Gradient02($$anchor, $$props) {
   const Gradient02WidthMap = {
     320: import_gradient_02_320.default,
@@ -55364,7 +55333,7 @@ function Gradient02($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1364.prop($$props, "height", 3, 128), alt = $1364.prop($$props, "alt", 3, "Gradient02"), className = $1364.prop($$props, "class", 3, ""), rest = $1364.rest_props($$props, [
+  let height = $1363.prop($$props, "height", 3, 128), alt = $1363.prop($$props, "alt", 3, "Gradient02"), className = $1363.prop($$props, "class", 3, ""), rest = $1363.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55373,32 +55342,32 @@ function Gradient02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1364.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1364.derived(() => height() ?? 128);
-  let sourceWidth = $1364.derived(() => $1364.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1364.derived(() => findClosestWidth($1364.get(sourceWidth), Gradient02AvailableWidths));
-  let imageSrc = $1364.derived(() => Gradient02WidthMap[$1364.get(closestWidth)] ?? import_gradient_02_1024.default);
+  let resolvedWidth = $1363.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1363.derived(() => height() ?? 128);
+  let sourceWidth = $1363.derived(() => $1363.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1363.derived(() => findClosestWidth($1363.get(sourceWidth), Gradient02AvailableWidths));
+  let imageSrc = $1363.derived(() => Gradient02WidthMap[$1363.get(closestWidth)] ?? import_gradient_02_1024.default);
   var img = root31();
-  $1364.attribute_effect(img, () => ({
-    src: $1364.get(imageSrc),
+  $1363.attribute_effect(img, () => ({
+    src: $1363.get(imageSrc),
     alt: alt(),
-    width: $1364.get(resolvedWidth) ?? void 0,
-    height: $1364.get(resolvedHeight),
+    width: $1363.get(resolvedWidth) ?? void 0,
+    height: $1363.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1364.replay_events(img);
-  $1364.append($$anchor, img);
+  $1363.replay_events(img);
+  $1363.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient03.svelte
-var import_disclose_version1365 = require("svelte/internal/disclose-version");
-var $1365 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1364 = require("svelte/internal/disclose-version");
+var $1364 = __toESM(require("svelte/internal/client"));
 var import_gradient_03_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-03-1024.jpg"));
 var import_gradient_03_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-03-320.jpg"));
 var import_gradient_03_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-03-640.jpg"));
 var import_gradient_03_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-03-1920.jpg"));
-var root32 = $1365.from_html(`<img/>`);
+var root32 = $1364.from_html(`<img/>`);
 function Gradient03($$anchor, $$props) {
   const Gradient03WidthMap = {
     320: import_gradient_03_320.default,
@@ -55421,7 +55390,7 @@ function Gradient03($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1365.prop($$props, "height", 3, 128), alt = $1365.prop($$props, "alt", 3, "Gradient03"), className = $1365.prop($$props, "class", 3, ""), rest = $1365.rest_props($$props, [
+  let height = $1364.prop($$props, "height", 3, 128), alt = $1364.prop($$props, "alt", 3, "Gradient03"), className = $1364.prop($$props, "class", 3, ""), rest = $1364.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55430,32 +55399,32 @@ function Gradient03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1365.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1365.derived(() => height() ?? 128);
-  let sourceWidth = $1365.derived(() => $1365.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1365.derived(() => findClosestWidth($1365.get(sourceWidth), Gradient03AvailableWidths));
-  let imageSrc = $1365.derived(() => Gradient03WidthMap[$1365.get(closestWidth)] ?? import_gradient_03_1024.default);
+  let resolvedWidth = $1364.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1364.derived(() => height() ?? 128);
+  let sourceWidth = $1364.derived(() => $1364.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1364.derived(() => findClosestWidth($1364.get(sourceWidth), Gradient03AvailableWidths));
+  let imageSrc = $1364.derived(() => Gradient03WidthMap[$1364.get(closestWidth)] ?? import_gradient_03_1024.default);
   var img = root32();
-  $1365.attribute_effect(img, () => ({
-    src: $1365.get(imageSrc),
+  $1364.attribute_effect(img, () => ({
+    src: $1364.get(imageSrc),
     alt: alt(),
-    width: $1365.get(resolvedWidth) ?? void 0,
-    height: $1365.get(resolvedHeight),
+    width: $1364.get(resolvedWidth) ?? void 0,
+    height: $1364.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1365.replay_events(img);
-  $1365.append($$anchor, img);
+  $1364.replay_events(img);
+  $1364.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient04.svelte
-var import_disclose_version1366 = require("svelte/internal/disclose-version");
-var $1366 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1365 = require("svelte/internal/disclose-version");
+var $1365 = __toESM(require("svelte/internal/client"));
 var import_gradient_04_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-04-1024.jpg"));
 var import_gradient_04_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-04-320.jpg"));
 var import_gradient_04_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-04-640.jpg"));
 var import_gradient_04_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-04-1920.jpg"));
-var root33 = $1366.from_html(`<img/>`);
+var root33 = $1365.from_html(`<img/>`);
 function Gradient04($$anchor, $$props) {
   const Gradient04WidthMap = {
     320: import_gradient_04_320.default,
@@ -55478,7 +55447,7 @@ function Gradient04($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1366.prop($$props, "height", 3, 128), alt = $1366.prop($$props, "alt", 3, "Gradient04"), className = $1366.prop($$props, "class", 3, ""), rest = $1366.rest_props($$props, [
+  let height = $1365.prop($$props, "height", 3, 128), alt = $1365.prop($$props, "alt", 3, "Gradient04"), className = $1365.prop($$props, "class", 3, ""), rest = $1365.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55487,32 +55456,32 @@ function Gradient04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1366.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1366.derived(() => height() ?? 128);
-  let sourceWidth = $1366.derived(() => $1366.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1366.derived(() => findClosestWidth($1366.get(sourceWidth), Gradient04AvailableWidths));
-  let imageSrc = $1366.derived(() => Gradient04WidthMap[$1366.get(closestWidth)] ?? import_gradient_04_1024.default);
+  let resolvedWidth = $1365.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1365.derived(() => height() ?? 128);
+  let sourceWidth = $1365.derived(() => $1365.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1365.derived(() => findClosestWidth($1365.get(sourceWidth), Gradient04AvailableWidths));
+  let imageSrc = $1365.derived(() => Gradient04WidthMap[$1365.get(closestWidth)] ?? import_gradient_04_1024.default);
   var img = root33();
-  $1366.attribute_effect(img, () => ({
-    src: $1366.get(imageSrc),
+  $1365.attribute_effect(img, () => ({
+    src: $1365.get(imageSrc),
     alt: alt(),
-    width: $1366.get(resolvedWidth) ?? void 0,
-    height: $1366.get(resolvedHeight),
+    width: $1365.get(resolvedWidth) ?? void 0,
+    height: $1365.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1366.replay_events(img);
-  $1366.append($$anchor, img);
+  $1365.replay_events(img);
+  $1365.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient05.svelte
-var import_disclose_version1367 = require("svelte/internal/disclose-version");
-var $1367 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1366 = require("svelte/internal/disclose-version");
+var $1366 = __toESM(require("svelte/internal/client"));
 var import_gradient_05_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-05-1024.jpg"));
 var import_gradient_05_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-05-320.jpg"));
 var import_gradient_05_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-05-640.jpg"));
 var import_gradient_05_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-05-1920.jpg"));
-var root34 = $1367.from_html(`<img/>`);
+var root34 = $1366.from_html(`<img/>`);
 function Gradient05($$anchor, $$props) {
   const Gradient05WidthMap = {
     320: import_gradient_05_320.default,
@@ -55535,7 +55504,7 @@ function Gradient05($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1367.prop($$props, "height", 3, 128), alt = $1367.prop($$props, "alt", 3, "Gradient05"), className = $1367.prop($$props, "class", 3, ""), rest = $1367.rest_props($$props, [
+  let height = $1366.prop($$props, "height", 3, 128), alt = $1366.prop($$props, "alt", 3, "Gradient05"), className = $1366.prop($$props, "class", 3, ""), rest = $1366.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55544,32 +55513,32 @@ function Gradient05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1367.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1367.derived(() => height() ?? 128);
-  let sourceWidth = $1367.derived(() => $1367.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1367.derived(() => findClosestWidth($1367.get(sourceWidth), Gradient05AvailableWidths));
-  let imageSrc = $1367.derived(() => Gradient05WidthMap[$1367.get(closestWidth)] ?? import_gradient_05_1024.default);
+  let resolvedWidth = $1366.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1366.derived(() => height() ?? 128);
+  let sourceWidth = $1366.derived(() => $1366.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1366.derived(() => findClosestWidth($1366.get(sourceWidth), Gradient05AvailableWidths));
+  let imageSrc = $1366.derived(() => Gradient05WidthMap[$1366.get(closestWidth)] ?? import_gradient_05_1024.default);
   var img = root34();
-  $1367.attribute_effect(img, () => ({
-    src: $1367.get(imageSrc),
+  $1366.attribute_effect(img, () => ({
+    src: $1366.get(imageSrc),
     alt: alt(),
-    width: $1367.get(resolvedWidth) ?? void 0,
-    height: $1367.get(resolvedHeight),
+    width: $1366.get(resolvedWidth) ?? void 0,
+    height: $1366.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1367.replay_events(img);
-  $1367.append($$anchor, img);
+  $1366.replay_events(img);
+  $1366.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient06.svelte
-var import_disclose_version1368 = require("svelte/internal/disclose-version");
-var $1368 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1367 = require("svelte/internal/disclose-version");
+var $1367 = __toESM(require("svelte/internal/client"));
 var import_gradient_06_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-06-1024.jpg"));
 var import_gradient_06_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-06-320.jpg"));
 var import_gradient_06_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-06-640.jpg"));
 var import_gradient_06_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-06-1920.jpg"));
-var root35 = $1368.from_html(`<img/>`);
+var root35 = $1367.from_html(`<img/>`);
 function Gradient06($$anchor, $$props) {
   const Gradient06WidthMap = {
     320: import_gradient_06_320.default,
@@ -55592,7 +55561,7 @@ function Gradient06($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1368.prop($$props, "height", 3, 128), alt = $1368.prop($$props, "alt", 3, "Gradient06"), className = $1368.prop($$props, "class", 3, ""), rest = $1368.rest_props($$props, [
+  let height = $1367.prop($$props, "height", 3, 128), alt = $1367.prop($$props, "alt", 3, "Gradient06"), className = $1367.prop($$props, "class", 3, ""), rest = $1367.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55601,32 +55570,32 @@ function Gradient06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1368.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1368.derived(() => height() ?? 128);
-  let sourceWidth = $1368.derived(() => $1368.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1368.derived(() => findClosestWidth($1368.get(sourceWidth), Gradient06AvailableWidths));
-  let imageSrc = $1368.derived(() => Gradient06WidthMap[$1368.get(closestWidth)] ?? import_gradient_06_1024.default);
+  let resolvedWidth = $1367.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1367.derived(() => height() ?? 128);
+  let sourceWidth = $1367.derived(() => $1367.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1367.derived(() => findClosestWidth($1367.get(sourceWidth), Gradient06AvailableWidths));
+  let imageSrc = $1367.derived(() => Gradient06WidthMap[$1367.get(closestWidth)] ?? import_gradient_06_1024.default);
   var img = root35();
-  $1368.attribute_effect(img, () => ({
-    src: $1368.get(imageSrc),
+  $1367.attribute_effect(img, () => ({
+    src: $1367.get(imageSrc),
     alt: alt(),
-    width: $1368.get(resolvedWidth) ?? void 0,
-    height: $1368.get(resolvedHeight),
+    width: $1367.get(resolvedWidth) ?? void 0,
+    height: $1367.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1368.replay_events(img);
-  $1368.append($$anchor, img);
+  $1367.replay_events(img);
+  $1367.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient07.svelte
-var import_disclose_version1369 = require("svelte/internal/disclose-version");
-var $1369 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1368 = require("svelte/internal/disclose-version");
+var $1368 = __toESM(require("svelte/internal/client"));
 var import_gradient_07_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-07-1024.jpg"));
 var import_gradient_07_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-07-320.jpg"));
 var import_gradient_07_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-07-640.jpg"));
 var import_gradient_07_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-07-1920.jpg"));
-var root36 = $1369.from_html(`<img/>`);
+var root36 = $1368.from_html(`<img/>`);
 function Gradient07($$anchor, $$props) {
   const Gradient07WidthMap = {
     320: import_gradient_07_320.default,
@@ -55649,7 +55618,7 @@ function Gradient07($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1369.prop($$props, "height", 3, 128), alt = $1369.prop($$props, "alt", 3, "Gradient07"), className = $1369.prop($$props, "class", 3, ""), rest = $1369.rest_props($$props, [
+  let height = $1368.prop($$props, "height", 3, 128), alt = $1368.prop($$props, "alt", 3, "Gradient07"), className = $1368.prop($$props, "class", 3, ""), rest = $1368.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55658,32 +55627,32 @@ function Gradient07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1369.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1369.derived(() => height() ?? 128);
-  let sourceWidth = $1369.derived(() => $1369.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1369.derived(() => findClosestWidth($1369.get(sourceWidth), Gradient07AvailableWidths));
-  let imageSrc = $1369.derived(() => Gradient07WidthMap[$1369.get(closestWidth)] ?? import_gradient_07_1024.default);
+  let resolvedWidth = $1368.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1368.derived(() => height() ?? 128);
+  let sourceWidth = $1368.derived(() => $1368.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1368.derived(() => findClosestWidth($1368.get(sourceWidth), Gradient07AvailableWidths));
+  let imageSrc = $1368.derived(() => Gradient07WidthMap[$1368.get(closestWidth)] ?? import_gradient_07_1024.default);
   var img = root36();
-  $1369.attribute_effect(img, () => ({
-    src: $1369.get(imageSrc),
+  $1368.attribute_effect(img, () => ({
+    src: $1368.get(imageSrc),
     alt: alt(),
-    width: $1369.get(resolvedWidth) ?? void 0,
-    height: $1369.get(resolvedHeight),
+    width: $1368.get(resolvedWidth) ?? void 0,
+    height: $1368.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1369.replay_events(img);
-  $1369.append($$anchor, img);
+  $1368.replay_events(img);
+  $1368.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient08.svelte
-var import_disclose_version1370 = require("svelte/internal/disclose-version");
-var $1370 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1369 = require("svelte/internal/disclose-version");
+var $1369 = __toESM(require("svelte/internal/client"));
 var import_gradient_08_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-08-1024.jpg"));
 var import_gradient_08_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-08-320.jpg"));
 var import_gradient_08_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-08-640.jpg"));
 var import_gradient_08_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-08-1920.jpg"));
-var root37 = $1370.from_html(`<img/>`);
+var root37 = $1369.from_html(`<img/>`);
 function Gradient08($$anchor, $$props) {
   const Gradient08WidthMap = {
     320: import_gradient_08_320.default,
@@ -55706,7 +55675,7 @@ function Gradient08($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1370.prop($$props, "height", 3, 128), alt = $1370.prop($$props, "alt", 3, "Gradient08"), className = $1370.prop($$props, "class", 3, ""), rest = $1370.rest_props($$props, [
+  let height = $1369.prop($$props, "height", 3, 128), alt = $1369.prop($$props, "alt", 3, "Gradient08"), className = $1369.prop($$props, "class", 3, ""), rest = $1369.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55715,32 +55684,32 @@ function Gradient08($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1370.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1370.derived(() => height() ?? 128);
-  let sourceWidth = $1370.derived(() => $1370.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1370.derived(() => findClosestWidth($1370.get(sourceWidth), Gradient08AvailableWidths));
-  let imageSrc = $1370.derived(() => Gradient08WidthMap[$1370.get(closestWidth)] ?? import_gradient_08_1024.default);
+  let resolvedWidth = $1369.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1369.derived(() => height() ?? 128);
+  let sourceWidth = $1369.derived(() => $1369.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1369.derived(() => findClosestWidth($1369.get(sourceWidth), Gradient08AvailableWidths));
+  let imageSrc = $1369.derived(() => Gradient08WidthMap[$1369.get(closestWidth)] ?? import_gradient_08_1024.default);
   var img = root37();
-  $1370.attribute_effect(img, () => ({
-    src: $1370.get(imageSrc),
+  $1369.attribute_effect(img, () => ({
+    src: $1369.get(imageSrc),
     alt: alt(),
-    width: $1370.get(resolvedWidth) ?? void 0,
-    height: $1370.get(resolvedHeight),
+    width: $1369.get(resolvedWidth) ?? void 0,
+    height: $1369.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1370.replay_events(img);
-  $1370.append($$anchor, img);
+  $1369.replay_events(img);
+  $1369.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient09.svelte
-var import_disclose_version1371 = require("svelte/internal/disclose-version");
-var $1371 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1370 = require("svelte/internal/disclose-version");
+var $1370 = __toESM(require("svelte/internal/client"));
 var import_gradient_09_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-09-1024.jpg"));
 var import_gradient_09_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-09-320.jpg"));
 var import_gradient_09_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-09-640.jpg"));
 var import_gradient_09_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-09-1920.jpg"));
-var root38 = $1371.from_html(`<img/>`);
+var root38 = $1370.from_html(`<img/>`);
 function Gradient09($$anchor, $$props) {
   const Gradient09WidthMap = {
     320: import_gradient_09_320.default,
@@ -55763,7 +55732,7 @@ function Gradient09($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1371.prop($$props, "height", 3, 128), alt = $1371.prop($$props, "alt", 3, "Gradient09"), className = $1371.prop($$props, "class", 3, ""), rest = $1371.rest_props($$props, [
+  let height = $1370.prop($$props, "height", 3, 128), alt = $1370.prop($$props, "alt", 3, "Gradient09"), className = $1370.prop($$props, "class", 3, ""), rest = $1370.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55772,32 +55741,32 @@ function Gradient09($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1371.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1371.derived(() => height() ?? 128);
-  let sourceWidth = $1371.derived(() => $1371.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1371.derived(() => findClosestWidth($1371.get(sourceWidth), Gradient09AvailableWidths));
-  let imageSrc = $1371.derived(() => Gradient09WidthMap[$1371.get(closestWidth)] ?? import_gradient_09_1024.default);
+  let resolvedWidth = $1370.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1370.derived(() => height() ?? 128);
+  let sourceWidth = $1370.derived(() => $1370.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1370.derived(() => findClosestWidth($1370.get(sourceWidth), Gradient09AvailableWidths));
+  let imageSrc = $1370.derived(() => Gradient09WidthMap[$1370.get(closestWidth)] ?? import_gradient_09_1024.default);
   var img = root38();
-  $1371.attribute_effect(img, () => ({
-    src: $1371.get(imageSrc),
+  $1370.attribute_effect(img, () => ({
+    src: $1370.get(imageSrc),
     alt: alt(),
-    width: $1371.get(resolvedWidth) ?? void 0,
-    height: $1371.get(resolvedHeight),
+    width: $1370.get(resolvedWidth) ?? void 0,
+    height: $1370.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1371.replay_events(img);
-  $1371.append($$anchor, img);
+  $1370.replay_events(img);
+  $1370.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient10.svelte
-var import_disclose_version1372 = require("svelte/internal/disclose-version");
-var $1372 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1371 = require("svelte/internal/disclose-version");
+var $1371 = __toESM(require("svelte/internal/client"));
 var import_gradient_10_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-10-1024.jpg"));
 var import_gradient_10_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-10-320.jpg"));
 var import_gradient_10_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-10-640.jpg"));
 var import_gradient_10_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-10-1920.jpg"));
-var root39 = $1372.from_html(`<img/>`);
+var root39 = $1371.from_html(`<img/>`);
 function Gradient10($$anchor, $$props) {
   const Gradient10WidthMap = {
     320: import_gradient_10_320.default,
@@ -55820,7 +55789,7 @@ function Gradient10($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1372.prop($$props, "height", 3, 128), alt = $1372.prop($$props, "alt", 3, "Gradient10"), className = $1372.prop($$props, "class", 3, ""), rest = $1372.rest_props($$props, [
+  let height = $1371.prop($$props, "height", 3, 128), alt = $1371.prop($$props, "alt", 3, "Gradient10"), className = $1371.prop($$props, "class", 3, ""), rest = $1371.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55829,32 +55798,32 @@ function Gradient10($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1372.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1372.derived(() => height() ?? 128);
-  let sourceWidth = $1372.derived(() => $1372.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1372.derived(() => findClosestWidth($1372.get(sourceWidth), Gradient10AvailableWidths));
-  let imageSrc = $1372.derived(() => Gradient10WidthMap[$1372.get(closestWidth)] ?? import_gradient_10_1024.default);
+  let resolvedWidth = $1371.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1371.derived(() => height() ?? 128);
+  let sourceWidth = $1371.derived(() => $1371.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1371.derived(() => findClosestWidth($1371.get(sourceWidth), Gradient10AvailableWidths));
+  let imageSrc = $1371.derived(() => Gradient10WidthMap[$1371.get(closestWidth)] ?? import_gradient_10_1024.default);
   var img = root39();
-  $1372.attribute_effect(img, () => ({
-    src: $1372.get(imageSrc),
+  $1371.attribute_effect(img, () => ({
+    src: $1371.get(imageSrc),
     alt: alt(),
-    width: $1372.get(resolvedWidth) ?? void 0,
-    height: $1372.get(resolvedHeight),
+    width: $1371.get(resolvedWidth) ?? void 0,
+    height: $1371.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1372.replay_events(img);
-  $1372.append($$anchor, img);
+  $1371.replay_events(img);
+  $1371.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient11.svelte
-var import_disclose_version1373 = require("svelte/internal/disclose-version");
-var $1373 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1372 = require("svelte/internal/disclose-version");
+var $1372 = __toESM(require("svelte/internal/client"));
 var import_gradient_11_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-11-1024.jpg"));
 var import_gradient_11_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-11-320.jpg"));
 var import_gradient_11_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-11-640.jpg"));
 var import_gradient_11_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-11-1920.jpg"));
-var root40 = $1373.from_html(`<img/>`);
+var root40 = $1372.from_html(`<img/>`);
 function Gradient11($$anchor, $$props) {
   const Gradient11WidthMap = {
     320: import_gradient_11_320.default,
@@ -55877,7 +55846,7 @@ function Gradient11($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1373.prop($$props, "height", 3, 128), alt = $1373.prop($$props, "alt", 3, "Gradient11"), className = $1373.prop($$props, "class", 3, ""), rest = $1373.rest_props($$props, [
+  let height = $1372.prop($$props, "height", 3, 128), alt = $1372.prop($$props, "alt", 3, "Gradient11"), className = $1372.prop($$props, "class", 3, ""), rest = $1372.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55886,32 +55855,32 @@ function Gradient11($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1373.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1373.derived(() => height() ?? 128);
-  let sourceWidth = $1373.derived(() => $1373.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1373.derived(() => findClosestWidth($1373.get(sourceWidth), Gradient11AvailableWidths));
-  let imageSrc = $1373.derived(() => Gradient11WidthMap[$1373.get(closestWidth)] ?? import_gradient_11_1024.default);
+  let resolvedWidth = $1372.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1372.derived(() => height() ?? 128);
+  let sourceWidth = $1372.derived(() => $1372.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1372.derived(() => findClosestWidth($1372.get(sourceWidth), Gradient11AvailableWidths));
+  let imageSrc = $1372.derived(() => Gradient11WidthMap[$1372.get(closestWidth)] ?? import_gradient_11_1024.default);
   var img = root40();
-  $1373.attribute_effect(img, () => ({
-    src: $1373.get(imageSrc),
+  $1372.attribute_effect(img, () => ({
+    src: $1372.get(imageSrc),
     alt: alt(),
-    width: $1373.get(resolvedWidth) ?? void 0,
-    height: $1373.get(resolvedHeight),
+    width: $1372.get(resolvedWidth) ?? void 0,
+    height: $1372.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1373.replay_events(img);
-  $1373.append($$anchor, img);
+  $1372.replay_events(img);
+  $1372.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient12.svelte
-var import_disclose_version1374 = require("svelte/internal/disclose-version");
-var $1374 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1373 = require("svelte/internal/disclose-version");
+var $1373 = __toESM(require("svelte/internal/client"));
 var import_gradient_12_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-12-1024.jpg"));
 var import_gradient_12_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-12-320.jpg"));
 var import_gradient_12_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-12-640.jpg"));
 var import_gradient_12_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-12-1920.jpg"));
-var root41 = $1374.from_html(`<img/>`);
+var root41 = $1373.from_html(`<img/>`);
 function Gradient12($$anchor, $$props) {
   const Gradient12WidthMap = {
     320: import_gradient_12_320.default,
@@ -55934,7 +55903,7 @@ function Gradient12($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1374.prop($$props, "height", 3, 128), alt = $1374.prop($$props, "alt", 3, "Gradient12"), className = $1374.prop($$props, "class", 3, ""), rest = $1374.rest_props($$props, [
+  let height = $1373.prop($$props, "height", 3, 128), alt = $1373.prop($$props, "alt", 3, "Gradient12"), className = $1373.prop($$props, "class", 3, ""), rest = $1373.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -55943,32 +55912,32 @@ function Gradient12($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1374.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1374.derived(() => height() ?? 128);
-  let sourceWidth = $1374.derived(() => $1374.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1374.derived(() => findClosestWidth($1374.get(sourceWidth), Gradient12AvailableWidths));
-  let imageSrc = $1374.derived(() => Gradient12WidthMap[$1374.get(closestWidth)] ?? import_gradient_12_1024.default);
+  let resolvedWidth = $1373.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1373.derived(() => height() ?? 128);
+  let sourceWidth = $1373.derived(() => $1373.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1373.derived(() => findClosestWidth($1373.get(sourceWidth), Gradient12AvailableWidths));
+  let imageSrc = $1373.derived(() => Gradient12WidthMap[$1373.get(closestWidth)] ?? import_gradient_12_1024.default);
   var img = root41();
-  $1374.attribute_effect(img, () => ({
-    src: $1374.get(imageSrc),
+  $1373.attribute_effect(img, () => ({
+    src: $1373.get(imageSrc),
     alt: alt(),
-    width: $1374.get(resolvedWidth) ?? void 0,
-    height: $1374.get(resolvedHeight),
+    width: $1373.get(resolvedWidth) ?? void 0,
+    height: $1373.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1374.replay_events(img);
-  $1374.append($$anchor, img);
+  $1373.replay_events(img);
+  $1373.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient13.svelte
-var import_disclose_version1375 = require("svelte/internal/disclose-version");
-var $1375 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1374 = require("svelte/internal/disclose-version");
+var $1374 = __toESM(require("svelte/internal/client"));
 var import_gradient_13_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-13-1024.jpg"));
 var import_gradient_13_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-13-320.jpg"));
 var import_gradient_13_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-13-640.jpg"));
 var import_gradient_13_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-13-1920.jpg"));
-var root42 = $1375.from_html(`<img/>`);
+var root42 = $1374.from_html(`<img/>`);
 function Gradient13($$anchor, $$props) {
   const Gradient13WidthMap = {
     320: import_gradient_13_320.default,
@@ -55991,7 +55960,7 @@ function Gradient13($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1375.prop($$props, "height", 3, 128), alt = $1375.prop($$props, "alt", 3, "Gradient13"), className = $1375.prop($$props, "class", 3, ""), rest = $1375.rest_props($$props, [
+  let height = $1374.prop($$props, "height", 3, 128), alt = $1374.prop($$props, "alt", 3, "Gradient13"), className = $1374.prop($$props, "class", 3, ""), rest = $1374.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56000,32 +55969,32 @@ function Gradient13($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1375.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1375.derived(() => height() ?? 128);
-  let sourceWidth = $1375.derived(() => $1375.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1375.derived(() => findClosestWidth($1375.get(sourceWidth), Gradient13AvailableWidths));
-  let imageSrc = $1375.derived(() => Gradient13WidthMap[$1375.get(closestWidth)] ?? import_gradient_13_1024.default);
+  let resolvedWidth = $1374.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1374.derived(() => height() ?? 128);
+  let sourceWidth = $1374.derived(() => $1374.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1374.derived(() => findClosestWidth($1374.get(sourceWidth), Gradient13AvailableWidths));
+  let imageSrc = $1374.derived(() => Gradient13WidthMap[$1374.get(closestWidth)] ?? import_gradient_13_1024.default);
   var img = root42();
-  $1375.attribute_effect(img, () => ({
-    src: $1375.get(imageSrc),
+  $1374.attribute_effect(img, () => ({
+    src: $1374.get(imageSrc),
     alt: alt(),
-    width: $1375.get(resolvedWidth) ?? void 0,
-    height: $1375.get(resolvedHeight),
+    width: $1374.get(resolvedWidth) ?? void 0,
+    height: $1374.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1375.replay_events(img);
-  $1375.append($$anchor, img);
+  $1374.replay_events(img);
+  $1374.append($$anchor, img);
 }
 
 // src/backgrounds/Gradient14.svelte
-var import_disclose_version1376 = require("svelte/internal/disclose-version");
-var $1376 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1375 = require("svelte/internal/disclose-version");
+var $1375 = __toESM(require("svelte/internal/client"));
 var import_gradient_14_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-14-1024.jpg"));
 var import_gradient_14_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-14-320.jpg"));
 var import_gradient_14_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-14-640.jpg"));
 var import_gradient_14_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/gradient-14-1920.jpg"));
-var root43 = $1376.from_html(`<img/>`);
+var root43 = $1375.from_html(`<img/>`);
 function Gradient14($$anchor, $$props) {
   const Gradient14WidthMap = {
     320: import_gradient_14_320.default,
@@ -56048,7 +56017,7 @@ function Gradient14($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1376.prop($$props, "height", 3, 128), alt = $1376.prop($$props, "alt", 3, "Gradient14"), className = $1376.prop($$props, "class", 3, ""), rest = $1376.rest_props($$props, [
+  let height = $1375.prop($$props, "height", 3, 128), alt = $1375.prop($$props, "alt", 3, "Gradient14"), className = $1375.prop($$props, "class", 3, ""), rest = $1375.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56057,32 +56026,32 @@ function Gradient14($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1376.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1376.derived(() => height() ?? 128);
-  let sourceWidth = $1376.derived(() => $1376.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1376.derived(() => findClosestWidth($1376.get(sourceWidth), Gradient14AvailableWidths));
-  let imageSrc = $1376.derived(() => Gradient14WidthMap[$1376.get(closestWidth)] ?? import_gradient_14_1024.default);
+  let resolvedWidth = $1375.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1375.derived(() => height() ?? 128);
+  let sourceWidth = $1375.derived(() => $1375.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1375.derived(() => findClosestWidth($1375.get(sourceWidth), Gradient14AvailableWidths));
+  let imageSrc = $1375.derived(() => Gradient14WidthMap[$1375.get(closestWidth)] ?? import_gradient_14_1024.default);
   var img = root43();
-  $1376.attribute_effect(img, () => ({
-    src: $1376.get(imageSrc),
+  $1375.attribute_effect(img, () => ({
+    src: $1375.get(imageSrc),
     alt: alt(),
-    width: $1376.get(resolvedWidth) ?? void 0,
-    height: $1376.get(resolvedHeight),
+    width: $1375.get(resolvedWidth) ?? void 0,
+    height: $1375.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1376.replay_events(img);
-  $1376.append($$anchor, img);
+  $1375.replay_events(img);
+  $1375.append($$anchor, img);
 }
 
 // src/backgrounds/Minimal01.svelte
-var import_disclose_version1377 = require("svelte/internal/disclose-version");
-var $1377 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1376 = require("svelte/internal/disclose-version");
+var $1376 = __toESM(require("svelte/internal/client"));
 var import_minimal_01_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-01-1024.jpg"));
 var import_minimal_01_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-01-320.jpg"));
 var import_minimal_01_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-01-640.jpg"));
 var import_minimal_01_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-01-1920.jpg"));
-var root44 = $1377.from_html(`<img/>`);
+var root44 = $1376.from_html(`<img/>`);
 function Minimal01($$anchor, $$props) {
   const Minimal01WidthMap = {
     320: import_minimal_01_320.default,
@@ -56105,7 +56074,7 @@ function Minimal01($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1377.prop($$props, "height", 3, 128), alt = $1377.prop($$props, "alt", 3, "Minimal01"), className = $1377.prop($$props, "class", 3, ""), rest = $1377.rest_props($$props, [
+  let height = $1376.prop($$props, "height", 3, 128), alt = $1376.prop($$props, "alt", 3, "Minimal01"), className = $1376.prop($$props, "class", 3, ""), rest = $1376.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56114,32 +56083,32 @@ function Minimal01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1377.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1377.derived(() => height() ?? 128);
-  let sourceWidth = $1377.derived(() => $1377.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1377.derived(() => findClosestWidth($1377.get(sourceWidth), Minimal01AvailableWidths));
-  let imageSrc = $1377.derived(() => Minimal01WidthMap[$1377.get(closestWidth)] ?? import_minimal_01_1024.default);
+  let resolvedWidth = $1376.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1376.derived(() => height() ?? 128);
+  let sourceWidth = $1376.derived(() => $1376.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1376.derived(() => findClosestWidth($1376.get(sourceWidth), Minimal01AvailableWidths));
+  let imageSrc = $1376.derived(() => Minimal01WidthMap[$1376.get(closestWidth)] ?? import_minimal_01_1024.default);
   var img = root44();
-  $1377.attribute_effect(img, () => ({
-    src: $1377.get(imageSrc),
+  $1376.attribute_effect(img, () => ({
+    src: $1376.get(imageSrc),
     alt: alt(),
-    width: $1377.get(resolvedWidth) ?? void 0,
-    height: $1377.get(resolvedHeight),
+    width: $1376.get(resolvedWidth) ?? void 0,
+    height: $1376.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1377.replay_events(img);
-  $1377.append($$anchor, img);
+  $1376.replay_events(img);
+  $1376.append($$anchor, img);
 }
 
 // src/backgrounds/Minimal02.svelte
-var import_disclose_version1378 = require("svelte/internal/disclose-version");
-var $1378 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1377 = require("svelte/internal/disclose-version");
+var $1377 = __toESM(require("svelte/internal/client"));
 var import_minimal_02_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-02-1024.jpg"));
 var import_minimal_02_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-02-320.jpg"));
 var import_minimal_02_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-02-640.jpg"));
 var import_minimal_02_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-02-1920.jpg"));
-var root45 = $1378.from_html(`<img/>`);
+var root45 = $1377.from_html(`<img/>`);
 function Minimal02($$anchor, $$props) {
   const Minimal02WidthMap = {
     320: import_minimal_02_320.default,
@@ -56162,7 +56131,7 @@ function Minimal02($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1378.prop($$props, "height", 3, 128), alt = $1378.prop($$props, "alt", 3, "Minimal02"), className = $1378.prop($$props, "class", 3, ""), rest = $1378.rest_props($$props, [
+  let height = $1377.prop($$props, "height", 3, 128), alt = $1377.prop($$props, "alt", 3, "Minimal02"), className = $1377.prop($$props, "class", 3, ""), rest = $1377.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56171,32 +56140,32 @@ function Minimal02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1378.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1378.derived(() => height() ?? 128);
-  let sourceWidth = $1378.derived(() => $1378.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1378.derived(() => findClosestWidth($1378.get(sourceWidth), Minimal02AvailableWidths));
-  let imageSrc = $1378.derived(() => Minimal02WidthMap[$1378.get(closestWidth)] ?? import_minimal_02_1024.default);
+  let resolvedWidth = $1377.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1377.derived(() => height() ?? 128);
+  let sourceWidth = $1377.derived(() => $1377.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1377.derived(() => findClosestWidth($1377.get(sourceWidth), Minimal02AvailableWidths));
+  let imageSrc = $1377.derived(() => Minimal02WidthMap[$1377.get(closestWidth)] ?? import_minimal_02_1024.default);
   var img = root45();
-  $1378.attribute_effect(img, () => ({
-    src: $1378.get(imageSrc),
+  $1377.attribute_effect(img, () => ({
+    src: $1377.get(imageSrc),
     alt: alt(),
-    width: $1378.get(resolvedWidth) ?? void 0,
-    height: $1378.get(resolvedHeight),
+    width: $1377.get(resolvedWidth) ?? void 0,
+    height: $1377.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1378.replay_events(img);
-  $1378.append($$anchor, img);
+  $1377.replay_events(img);
+  $1377.append($$anchor, img);
 }
 
 // src/backgrounds/Minimal03.svelte
-var import_disclose_version1379 = require("svelte/internal/disclose-version");
-var $1379 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1378 = require("svelte/internal/disclose-version");
+var $1378 = __toESM(require("svelte/internal/client"));
 var import_minimal_03_1024 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-03-1024.jpg"));
 var import_minimal_03_320 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-03-320.jpg"));
 var import_minimal_03_640 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-03-640.jpg"));
 var import_minimal_03_1920 = __toESM(require("@snowui-design-system/resource-base/assets/backgrounds/minimal-03-1920.jpg"));
-var root46 = $1379.from_html(`<img/>`);
+var root46 = $1378.from_html(`<img/>`);
 function Minimal03($$anchor, $$props) {
   const Minimal03WidthMap = {
     320: import_minimal_03_320.default,
@@ -56219,7 +56188,7 @@ function Minimal03($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1379.prop($$props, "height", 3, 128), alt = $1379.prop($$props, "alt", 3, "Minimal03"), className = $1379.prop($$props, "class", 3, ""), rest = $1379.rest_props($$props, [
+  let height = $1378.prop($$props, "height", 3, 128), alt = $1378.prop($$props, "alt", 3, "Minimal03"), className = $1378.prop($$props, "class", 3, ""), rest = $1378.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56228,16 +56197,48 @@ function Minimal03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1379.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1379.derived(() => height() ?? 128);
-  let sourceWidth = $1379.derived(() => $1379.get(resolvedWidth) ?? 1024);
-  let closestWidth = $1379.derived(() => findClosestWidth($1379.get(sourceWidth), Minimal03AvailableWidths));
-  let imageSrc = $1379.derived(() => Minimal03WidthMap[$1379.get(closestWidth)] ?? import_minimal_03_1024.default);
+  let resolvedWidth = $1378.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1378.derived(() => height() ?? 128);
+  let sourceWidth = $1378.derived(() => $1378.get(resolvedWidth) ?? 1024);
+  let closestWidth = $1378.derived(() => findClosestWidth($1378.get(sourceWidth), Minimal03AvailableWidths));
+  let imageSrc = $1378.derived(() => Minimal03WidthMap[$1378.get(closestWidth)] ?? import_minimal_03_1024.default);
   var img = root46();
+  $1378.attribute_effect(img, () => ({
+    src: $1378.get(imageSrc),
+    alt: alt(),
+    width: $1378.get(resolvedWidth) ?? void 0,
+    height: $1378.get(resolvedHeight),
+    class: className(),
+    ...rest
+  }));
+  $1378.replay_events(img);
+  $1378.append($$anchor, img);
+}
+
+// src/cursors/CursorsBeachball.svelte
+var import_disclose_version1379 = require("svelte/internal/disclose-version");
+var $1379 = __toESM(require("svelte/internal/client"));
+var import_cursors_beachball = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-beachball.svg"));
+var root47 = $1379.from_html(`<img/>`);
+function CursorsBeachball($$anchor, $$props) {
+  let size = $1379.prop($$props, "size", 3, 32), alt = $1379.prop($$props, "alt", 3, "CursorsBeachball"), className = $1379.prop($$props, "class", 3, ""), rest = $1379.rest_props($$props, [
+    "$$slots",
+    "$$events",
+    "$$legacy",
+    "size",
+    "width",
+    "height",
+    "alt",
+    "class"
+  ]);
+  let resolvedWidth = $1379.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1379.derived(() => size() ?? $$props.height ?? 32);
+  let imageSrc = $1379.derived(() => import_cursors_beachball.default);
+  var img = root47();
   $1379.attribute_effect(img, () => ({
     src: $1379.get(imageSrc),
     alt: alt(),
-    width: $1379.get(resolvedWidth) ?? void 0,
+    width: $1379.get(resolvedWidth),
     height: $1379.get(resolvedHeight),
     class: className(),
     ...rest
@@ -56246,13 +56247,13 @@ function Minimal03($$anchor, $$props) {
   $1379.append($$anchor, img);
 }
 
-// src/cursors/CursorsBeachball.svelte
+// src/cursors/CursorsCross.svelte
 var import_disclose_version1380 = require("svelte/internal/disclose-version");
 var $1380 = __toESM(require("svelte/internal/client"));
-var import_cursors_beachball = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-beachball.svg"));
-var root47 = $1380.from_html(`<img/>`);
-function CursorsBeachball($$anchor, $$props) {
-  let size = $1380.prop($$props, "size", 3, 32), alt = $1380.prop($$props, "alt", 3, "CursorsBeachball"), className = $1380.prop($$props, "class", 3, ""), rest = $1380.rest_props($$props, [
+var import_cursors_cross = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-cross.svg"));
+var root48 = $1380.from_html(`<img/>`);
+function CursorsCross($$anchor, $$props) {
+  let size = $1380.prop($$props, "size", 3, 32), alt = $1380.prop($$props, "alt", 3, "CursorsCross"), className = $1380.prop($$props, "class", 3, ""), rest = $1380.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56264,8 +56265,8 @@ function CursorsBeachball($$anchor, $$props) {
   ]);
   let resolvedWidth = $1380.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1380.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1380.derived(() => import_cursors_beachball.default);
-  var img = root47();
+  let imageSrc = $1380.derived(() => import_cursors_cross.default);
+  var img = root48();
   $1380.attribute_effect(img, () => ({
     src: $1380.get(imageSrc),
     alt: alt(),
@@ -56278,13 +56279,13 @@ function CursorsBeachball($$anchor, $$props) {
   $1380.append($$anchor, img);
 }
 
-// src/cursors/CursorsCross.svelte
+// src/cursors/CursorsDefault.svelte
 var import_disclose_version1381 = require("svelte/internal/disclose-version");
 var $1381 = __toESM(require("svelte/internal/client"));
-var import_cursors_cross = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-cross.svg"));
-var root48 = $1381.from_html(`<img/>`);
-function CursorsCross($$anchor, $$props) {
-  let size = $1381.prop($$props, "size", 3, 32), alt = $1381.prop($$props, "alt", 3, "CursorsCross"), className = $1381.prop($$props, "class", 3, ""), rest = $1381.rest_props($$props, [
+var import_cursors_default = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-default.svg"));
+var root49 = $1381.from_html(`<img/>`);
+function CursorsDefault($$anchor, $$props) {
+  let size = $1381.prop($$props, "size", 3, 32), alt = $1381.prop($$props, "alt", 3, "CursorsDefault"), className = $1381.prop($$props, "class", 3, ""), rest = $1381.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56296,8 +56297,8 @@ function CursorsCross($$anchor, $$props) {
   ]);
   let resolvedWidth = $1381.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1381.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1381.derived(() => import_cursors_cross.default);
-  var img = root48();
+  let imageSrc = $1381.derived(() => import_cursors_default.default);
+  var img = root49();
   $1381.attribute_effect(img, () => ({
     src: $1381.get(imageSrc),
     alt: alt(),
@@ -56310,13 +56311,13 @@ function CursorsCross($$anchor, $$props) {
   $1381.append($$anchor, img);
 }
 
-// src/cursors/CursorsDefault.svelte
+// src/cursors/CursorsHandGrabbing.svelte
 var import_disclose_version1382 = require("svelte/internal/disclose-version");
 var $1382 = __toESM(require("svelte/internal/client"));
-var import_cursors_default = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-default.svg"));
-var root49 = $1382.from_html(`<img/>`);
-function CursorsDefault($$anchor, $$props) {
-  let size = $1382.prop($$props, "size", 3, 32), alt = $1382.prop($$props, "alt", 3, "CursorsDefault"), className = $1382.prop($$props, "class", 3, ""), rest = $1382.rest_props($$props, [
+var import_cursors_hand_grabbing = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-grabbing.svg"));
+var root50 = $1382.from_html(`<img/>`);
+function CursorsHandGrabbing($$anchor, $$props) {
+  let size = $1382.prop($$props, "size", 3, 32), alt = $1382.prop($$props, "alt", 3, "CursorsHandGrabbing"), className = $1382.prop($$props, "class", 3, ""), rest = $1382.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56328,8 +56329,8 @@ function CursorsDefault($$anchor, $$props) {
   ]);
   let resolvedWidth = $1382.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1382.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1382.derived(() => import_cursors_default.default);
-  var img = root49();
+  let imageSrc = $1382.derived(() => import_cursors_hand_grabbing.default);
+  var img = root50();
   $1382.attribute_effect(img, () => ({
     src: $1382.get(imageSrc),
     alt: alt(),
@@ -56342,13 +56343,13 @@ function CursorsDefault($$anchor, $$props) {
   $1382.append($$anchor, img);
 }
 
-// src/cursors/CursorsHandGrabbing.svelte
+// src/cursors/CursorsHandOpen.svelte
 var import_disclose_version1383 = require("svelte/internal/disclose-version");
 var $1383 = __toESM(require("svelte/internal/client"));
-var import_cursors_hand_grabbing = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-grabbing.svg"));
-var root50 = $1383.from_html(`<img/>`);
-function CursorsHandGrabbing($$anchor, $$props) {
-  let size = $1383.prop($$props, "size", 3, 32), alt = $1383.prop($$props, "alt", 3, "CursorsHandGrabbing"), className = $1383.prop($$props, "class", 3, ""), rest = $1383.rest_props($$props, [
+var import_cursors_hand_open = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-open.svg"));
+var root51 = $1383.from_html(`<img/>`);
+function CursorsHandOpen($$anchor, $$props) {
+  let size = $1383.prop($$props, "size", 3, 32), alt = $1383.prop($$props, "alt", 3, "CursorsHandOpen"), className = $1383.prop($$props, "class", 3, ""), rest = $1383.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56360,8 +56361,8 @@ function CursorsHandGrabbing($$anchor, $$props) {
   ]);
   let resolvedWidth = $1383.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1383.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1383.derived(() => import_cursors_hand_grabbing.default);
-  var img = root50();
+  let imageSrc = $1383.derived(() => import_cursors_hand_open.default);
+  var img = root51();
   $1383.attribute_effect(img, () => ({
     src: $1383.get(imageSrc),
     alt: alt(),
@@ -56374,13 +56375,13 @@ function CursorsHandGrabbing($$anchor, $$props) {
   $1383.append($$anchor, img);
 }
 
-// src/cursors/CursorsHandOpen.svelte
+// src/cursors/CursorsHandPointing.svelte
 var import_disclose_version1384 = require("svelte/internal/disclose-version");
 var $1384 = __toESM(require("svelte/internal/client"));
-var import_cursors_hand_open = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-open.svg"));
-var root51 = $1384.from_html(`<img/>`);
-function CursorsHandOpen($$anchor, $$props) {
-  let size = $1384.prop($$props, "size", 3, 32), alt = $1384.prop($$props, "alt", 3, "CursorsHandOpen"), className = $1384.prop($$props, "class", 3, ""), rest = $1384.rest_props($$props, [
+var import_cursors_hand_pointing = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-pointing.svg"));
+var root52 = $1384.from_html(`<img/>`);
+function CursorsHandPointing($$anchor, $$props) {
+  let size = $1384.prop($$props, "size", 3, 32), alt = $1384.prop($$props, "alt", 3, "CursorsHandPointing"), className = $1384.prop($$props, "class", 3, ""), rest = $1384.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56392,8 +56393,8 @@ function CursorsHandOpen($$anchor, $$props) {
   ]);
   let resolvedWidth = $1384.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1384.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1384.derived(() => import_cursors_hand_open.default);
-  var img = root51();
+  let imageSrc = $1384.derived(() => import_cursors_hand_pointing.default);
+  var img = root52();
   $1384.attribute_effect(img, () => ({
     src: $1384.get(imageSrc),
     alt: alt(),
@@ -56406,13 +56407,13 @@ function CursorsHandOpen($$anchor, $$props) {
   $1384.append($$anchor, img);
 }
 
-// src/cursors/CursorsHandPointing.svelte
+// src/cursors/CursorsMenu.svelte
 var import_disclose_version1385 = require("svelte/internal/disclose-version");
 var $1385 = __toESM(require("svelte/internal/client"));
-var import_cursors_hand_pointing = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-hand-pointing.svg"));
-var root52 = $1385.from_html(`<img/>`);
-function CursorsHandPointing($$anchor, $$props) {
-  let size = $1385.prop($$props, "size", 3, 32), alt = $1385.prop($$props, "alt", 3, "CursorsHandPointing"), className = $1385.prop($$props, "class", 3, ""), rest = $1385.rest_props($$props, [
+var import_cursors_menu = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-menu.svg"));
+var root53 = $1385.from_html(`<img/>`);
+function CursorsMenu($$anchor, $$props) {
+  let size = $1385.prop($$props, "size", 3, 32), alt = $1385.prop($$props, "alt", 3, "CursorsMenu"), className = $1385.prop($$props, "class", 3, ""), rest = $1385.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56424,8 +56425,8 @@ function CursorsHandPointing($$anchor, $$props) {
   ]);
   let resolvedWidth = $1385.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1385.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1385.derived(() => import_cursors_hand_pointing.default);
-  var img = root52();
+  let imageSrc = $1385.derived(() => import_cursors_menu.default);
+  var img = root53();
   $1385.attribute_effect(img, () => ({
     src: $1385.get(imageSrc),
     alt: alt(),
@@ -56438,13 +56439,13 @@ function CursorsHandPointing($$anchor, $$props) {
   $1385.append($$anchor, img);
 }
 
-// src/cursors/CursorsMenu.svelte
+// src/cursors/CursorsMove.svelte
 var import_disclose_version1386 = require("svelte/internal/disclose-version");
 var $1386 = __toESM(require("svelte/internal/client"));
-var import_cursors_menu = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-menu.svg"));
-var root53 = $1386.from_html(`<img/>`);
-function CursorsMenu($$anchor, $$props) {
-  let size = $1386.prop($$props, "size", 3, 32), alt = $1386.prop($$props, "alt", 3, "CursorsMenu"), className = $1386.prop($$props, "class", 3, ""), rest = $1386.rest_props($$props, [
+var import_cursors_move = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-move.svg"));
+var root54 = $1386.from_html(`<img/>`);
+function CursorsMove($$anchor, $$props) {
+  let size = $1386.prop($$props, "size", 3, 32), alt = $1386.prop($$props, "alt", 3, "CursorsMove"), className = $1386.prop($$props, "class", 3, ""), rest = $1386.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56456,8 +56457,8 @@ function CursorsMenu($$anchor, $$props) {
   ]);
   let resolvedWidth = $1386.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1386.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1386.derived(() => import_cursors_menu.default);
-  var img = root53();
+  let imageSrc = $1386.derived(() => import_cursors_move.default);
+  var img = root54();
   $1386.attribute_effect(img, () => ({
     src: $1386.get(imageSrc),
     alt: alt(),
@@ -56470,13 +56471,13 @@ function CursorsMenu($$anchor, $$props) {
   $1386.append($$anchor, img);
 }
 
-// src/cursors/CursorsMove.svelte
+// src/cursors/CursorsResizeDown.svelte
 var import_disclose_version1387 = require("svelte/internal/disclose-version");
 var $1387 = __toESM(require("svelte/internal/client"));
-var import_cursors_move = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-move.svg"));
-var root54 = $1387.from_html(`<img/>`);
-function CursorsMove($$anchor, $$props) {
-  let size = $1387.prop($$props, "size", 3, 32), alt = $1387.prop($$props, "alt", 3, "CursorsMove"), className = $1387.prop($$props, "class", 3, ""), rest = $1387.rest_props($$props, [
+var import_cursors_resize_down = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-down.svg"));
+var root55 = $1387.from_html(`<img/>`);
+function CursorsResizeDown($$anchor, $$props) {
+  let size = $1387.prop($$props, "size", 3, 32), alt = $1387.prop($$props, "alt", 3, "CursorsResizeDown"), className = $1387.prop($$props, "class", 3, ""), rest = $1387.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56488,8 +56489,8 @@ function CursorsMove($$anchor, $$props) {
   ]);
   let resolvedWidth = $1387.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1387.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1387.derived(() => import_cursors_move.default);
-  var img = root54();
+  let imageSrc = $1387.derived(() => import_cursors_resize_down.default);
+  var img = root55();
   $1387.attribute_effect(img, () => ({
     src: $1387.get(imageSrc),
     alt: alt(),
@@ -56502,13 +56503,13 @@ function CursorsMove($$anchor, $$props) {
   $1387.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeDown.svelte
+// src/cursors/CursorsResizeLeftRight.svelte
 var import_disclose_version1388 = require("svelte/internal/disclose-version");
 var $1388 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_down = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-down.svg"));
-var root55 = $1388.from_html(`<img/>`);
-function CursorsResizeDown($$anchor, $$props) {
-  let size = $1388.prop($$props, "size", 3, 32), alt = $1388.prop($$props, "alt", 3, "CursorsResizeDown"), className = $1388.prop($$props, "class", 3, ""), rest = $1388.rest_props($$props, [
+var import_cursors_resize_left_right = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-left-right.svg"));
+var root56 = $1388.from_html(`<img/>`);
+function CursorsResizeLeftRight($$anchor, $$props) {
+  let size = $1388.prop($$props, "size", 3, 32), alt = $1388.prop($$props, "alt", 3, "CursorsResizeLeftRight"), className = $1388.prop($$props, "class", 3, ""), rest = $1388.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56520,8 +56521,8 @@ function CursorsResizeDown($$anchor, $$props) {
   ]);
   let resolvedWidth = $1388.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1388.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1388.derived(() => import_cursors_resize_down.default);
-  var img = root55();
+  let imageSrc = $1388.derived(() => import_cursors_resize_left_right.default);
+  var img = root56();
   $1388.attribute_effect(img, () => ({
     src: $1388.get(imageSrc),
     alt: alt(),
@@ -56534,13 +56535,13 @@ function CursorsResizeDown($$anchor, $$props) {
   $1388.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeLeftRight.svelte
+// src/cursors/CursorsResizeLeft.svelte
 var import_disclose_version1389 = require("svelte/internal/disclose-version");
 var $1389 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_left_right = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-left-right.svg"));
-var root56 = $1389.from_html(`<img/>`);
-function CursorsResizeLeftRight($$anchor, $$props) {
-  let size = $1389.prop($$props, "size", 3, 32), alt = $1389.prop($$props, "alt", 3, "CursorsResizeLeftRight"), className = $1389.prop($$props, "class", 3, ""), rest = $1389.rest_props($$props, [
+var import_cursors_resize_left = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-left.svg"));
+var root57 = $1389.from_html(`<img/>`);
+function CursorsResizeLeft($$anchor, $$props) {
+  let size = $1389.prop($$props, "size", 3, 32), alt = $1389.prop($$props, "alt", 3, "CursorsResizeLeft"), className = $1389.prop($$props, "class", 3, ""), rest = $1389.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56552,8 +56553,8 @@ function CursorsResizeLeftRight($$anchor, $$props) {
   ]);
   let resolvedWidth = $1389.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1389.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1389.derived(() => import_cursors_resize_left_right.default);
-  var img = root56();
+  let imageSrc = $1389.derived(() => import_cursors_resize_left.default);
+  var img = root57();
   $1389.attribute_effect(img, () => ({
     src: $1389.get(imageSrc),
     alt: alt(),
@@ -56566,13 +56567,13 @@ function CursorsResizeLeftRight($$anchor, $$props) {
   $1389.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeLeft.svelte
+// src/cursors/CursorsResizeNorthEastSouthWest.svelte
 var import_disclose_version1390 = require("svelte/internal/disclose-version");
 var $1390 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_left = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-left.svg"));
-var root57 = $1390.from_html(`<img/>`);
-function CursorsResizeLeft($$anchor, $$props) {
-  let size = $1390.prop($$props, "size", 3, 32), alt = $1390.prop($$props, "alt", 3, "CursorsResizeLeft"), className = $1390.prop($$props, "class", 3, ""), rest = $1390.rest_props($$props, [
+var import_cursors_resize_north_east_south_west = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-east-south-west.svg"));
+var root58 = $1390.from_html(`<img/>`);
+function CursorsResizeNorthEastSouthWest($$anchor, $$props) {
+  let size = $1390.prop($$props, "size", 3, 32), alt = $1390.prop($$props, "alt", 3, "CursorsResizeNorthEastSouthWest"), className = $1390.prop($$props, "class", 3, ""), rest = $1390.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56584,8 +56585,8 @@ function CursorsResizeLeft($$anchor, $$props) {
   ]);
   let resolvedWidth = $1390.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1390.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1390.derived(() => import_cursors_resize_left.default);
-  var img = root57();
+  let imageSrc = $1390.derived(() => import_cursors_resize_north_east_south_west.default);
+  var img = root58();
   $1390.attribute_effect(img, () => ({
     src: $1390.get(imageSrc),
     alt: alt(),
@@ -56598,13 +56599,13 @@ function CursorsResizeLeft($$anchor, $$props) {
   $1390.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeNorthEastSouthWest.svelte
+// src/cursors/CursorsResizeNorthSouth.svelte
 var import_disclose_version1391 = require("svelte/internal/disclose-version");
 var $1391 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_north_east_south_west = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-east-south-west.svg"));
-var root58 = $1391.from_html(`<img/>`);
-function CursorsResizeNorthEastSouthWest($$anchor, $$props) {
-  let size = $1391.prop($$props, "size", 3, 32), alt = $1391.prop($$props, "alt", 3, "CursorsResizeNorthEastSouthWest"), className = $1391.prop($$props, "class", 3, ""), rest = $1391.rest_props($$props, [
+var import_cursors_resize_north_south = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-south.svg"));
+var root59 = $1391.from_html(`<img/>`);
+function CursorsResizeNorthSouth($$anchor, $$props) {
+  let size = $1391.prop($$props, "size", 3, 32), alt = $1391.prop($$props, "alt", 3, "CursorsResizeNorthSouth"), className = $1391.prop($$props, "class", 3, ""), rest = $1391.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56616,8 +56617,8 @@ function CursorsResizeNorthEastSouthWest($$anchor, $$props) {
   ]);
   let resolvedWidth = $1391.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1391.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1391.derived(() => import_cursors_resize_north_east_south_west.default);
-  var img = root58();
+  let imageSrc = $1391.derived(() => import_cursors_resize_north_south.default);
+  var img = root59();
   $1391.attribute_effect(img, () => ({
     src: $1391.get(imageSrc),
     alt: alt(),
@@ -56630,13 +56631,13 @@ function CursorsResizeNorthEastSouthWest($$anchor, $$props) {
   $1391.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeNorthSouth.svelte
+// src/cursors/CursorsResizeNorthWestSouthEast.svelte
 var import_disclose_version1392 = require("svelte/internal/disclose-version");
 var $1392 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_north_south = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-south.svg"));
-var root59 = $1392.from_html(`<img/>`);
-function CursorsResizeNorthSouth($$anchor, $$props) {
-  let size = $1392.prop($$props, "size", 3, 32), alt = $1392.prop($$props, "alt", 3, "CursorsResizeNorthSouth"), className = $1392.prop($$props, "class", 3, ""), rest = $1392.rest_props($$props, [
+var import_cursors_resize_north_west_south_east = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-west-south-east.svg"));
+var root60 = $1392.from_html(`<img/>`);
+function CursorsResizeNorthWestSouthEast($$anchor, $$props) {
+  let size = $1392.prop($$props, "size", 3, 32), alt = $1392.prop($$props, "alt", 3, "CursorsResizeNorthWestSouthEast"), className = $1392.prop($$props, "class", 3, ""), rest = $1392.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56648,8 +56649,8 @@ function CursorsResizeNorthSouth($$anchor, $$props) {
   ]);
   let resolvedWidth = $1392.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1392.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1392.derived(() => import_cursors_resize_north_south.default);
-  var img = root59();
+  let imageSrc = $1392.derived(() => import_cursors_resize_north_west_south_east.default);
+  var img = root60();
   $1392.attribute_effect(img, () => ({
     src: $1392.get(imageSrc),
     alt: alt(),
@@ -56662,13 +56663,13 @@ function CursorsResizeNorthSouth($$anchor, $$props) {
   $1392.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeNorthWestSouthEast.svelte
+// src/cursors/CursorsResizeRight.svelte
 var import_disclose_version1393 = require("svelte/internal/disclose-version");
 var $1393 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_north_west_south_east = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-north-west-south-east.svg"));
-var root60 = $1393.from_html(`<img/>`);
-function CursorsResizeNorthWestSouthEast($$anchor, $$props) {
-  let size = $1393.prop($$props, "size", 3, 32), alt = $1393.prop($$props, "alt", 3, "CursorsResizeNorthWestSouthEast"), className = $1393.prop($$props, "class", 3, ""), rest = $1393.rest_props($$props, [
+var import_cursors_resize_right = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-right.svg"));
+var root61 = $1393.from_html(`<img/>`);
+function CursorsResizeRight($$anchor, $$props) {
+  let size = $1393.prop($$props, "size", 3, 32), alt = $1393.prop($$props, "alt", 3, "CursorsResizeRight"), className = $1393.prop($$props, "class", 3, ""), rest = $1393.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56680,8 +56681,8 @@ function CursorsResizeNorthWestSouthEast($$anchor, $$props) {
   ]);
   let resolvedWidth = $1393.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1393.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1393.derived(() => import_cursors_resize_north_west_south_east.default);
-  var img = root60();
+  let imageSrc = $1393.derived(() => import_cursors_resize_right.default);
+  var img = root61();
   $1393.attribute_effect(img, () => ({
     src: $1393.get(imageSrc),
     alt: alt(),
@@ -56694,13 +56695,13 @@ function CursorsResizeNorthWestSouthEast($$anchor, $$props) {
   $1393.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeRight.svelte
+// src/cursors/CursorsResizeUpDown.svelte
 var import_disclose_version1394 = require("svelte/internal/disclose-version");
 var $1394 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_right = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-right.svg"));
-var root61 = $1394.from_html(`<img/>`);
-function CursorsResizeRight($$anchor, $$props) {
-  let size = $1394.prop($$props, "size", 3, 32), alt = $1394.prop($$props, "alt", 3, "CursorsResizeRight"), className = $1394.prop($$props, "class", 3, ""), rest = $1394.rest_props($$props, [
+var import_cursors_resize_up_down = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-up-down.svg"));
+var root62 = $1394.from_html(`<img/>`);
+function CursorsResizeUpDown($$anchor, $$props) {
+  let size = $1394.prop($$props, "size", 3, 32), alt = $1394.prop($$props, "alt", 3, "CursorsResizeUpDown"), className = $1394.prop($$props, "class", 3, ""), rest = $1394.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56712,8 +56713,8 @@ function CursorsResizeRight($$anchor, $$props) {
   ]);
   let resolvedWidth = $1394.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1394.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1394.derived(() => import_cursors_resize_right.default);
-  var img = root61();
+  let imageSrc = $1394.derived(() => import_cursors_resize_up_down.default);
+  var img = root62();
   $1394.attribute_effect(img, () => ({
     src: $1394.get(imageSrc),
     alt: alt(),
@@ -56726,13 +56727,13 @@ function CursorsResizeRight($$anchor, $$props) {
   $1394.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeUpDown.svelte
+// src/cursors/CursorsResizeUp.svelte
 var import_disclose_version1395 = require("svelte/internal/disclose-version");
 var $1395 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_up_down = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-up-down.svg"));
-var root62 = $1395.from_html(`<img/>`);
-function CursorsResizeUpDown($$anchor, $$props) {
-  let size = $1395.prop($$props, "size", 3, 32), alt = $1395.prop($$props, "alt", 3, "CursorsResizeUpDown"), className = $1395.prop($$props, "class", 3, ""), rest = $1395.rest_props($$props, [
+var import_cursors_resize_up = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-up.svg"));
+var root63 = $1395.from_html(`<img/>`);
+function CursorsResizeUp($$anchor, $$props) {
+  let size = $1395.prop($$props, "size", 3, 32), alt = $1395.prop($$props, "alt", 3, "CursorsResizeUp"), className = $1395.prop($$props, "class", 3, ""), rest = $1395.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56744,8 +56745,8 @@ function CursorsResizeUpDown($$anchor, $$props) {
   ]);
   let resolvedWidth = $1395.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1395.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1395.derived(() => import_cursors_resize_up_down.default);
-  var img = root62();
+  let imageSrc = $1395.derived(() => import_cursors_resize_up.default);
+  var img = root63();
   $1395.attribute_effect(img, () => ({
     src: $1395.get(imageSrc),
     alt: alt(),
@@ -56758,13 +56759,13 @@ function CursorsResizeUpDown($$anchor, $$props) {
   $1395.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeUp.svelte
+// src/cursors/CursorsResizeWestEast.svelte
 var import_disclose_version1396 = require("svelte/internal/disclose-version");
 var $1396 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_up = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-up.svg"));
-var root63 = $1396.from_html(`<img/>`);
-function CursorsResizeUp($$anchor, $$props) {
-  let size = $1396.prop($$props, "size", 3, 32), alt = $1396.prop($$props, "alt", 3, "CursorsResizeUp"), className = $1396.prop($$props, "class", 3, ""), rest = $1396.rest_props($$props, [
+var import_cursors_resize_west_east = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-west-east.svg"));
+var root64 = $1396.from_html(`<img/>`);
+function CursorsResizeWestEast($$anchor, $$props) {
+  let size = $1396.prop($$props, "size", 3, 32), alt = $1396.prop($$props, "alt", 3, "CursorsResizeWestEast"), className = $1396.prop($$props, "class", 3, ""), rest = $1396.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56776,8 +56777,8 @@ function CursorsResizeUp($$anchor, $$props) {
   ]);
   let resolvedWidth = $1396.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1396.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1396.derived(() => import_cursors_resize_up.default);
-  var img = root63();
+  let imageSrc = $1396.derived(() => import_cursors_resize_west_east.default);
+  var img = root64();
   $1396.attribute_effect(img, () => ({
     src: $1396.get(imageSrc),
     alt: alt(),
@@ -56790,13 +56791,13 @@ function CursorsResizeUp($$anchor, $$props) {
   $1396.append($$anchor, img);
 }
 
-// src/cursors/CursorsResizeWestEast.svelte
+// src/cursors/CursorsTextCursor.svelte
 var import_disclose_version1397 = require("svelte/internal/disclose-version");
 var $1397 = __toESM(require("svelte/internal/client"));
-var import_cursors_resize_west_east = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-resize-west-east.svg"));
-var root64 = $1397.from_html(`<img/>`);
-function CursorsResizeWestEast($$anchor, $$props) {
-  let size = $1397.prop($$props, "size", 3, 32), alt = $1397.prop($$props, "alt", 3, "CursorsResizeWestEast"), className = $1397.prop($$props, "class", 3, ""), rest = $1397.rest_props($$props, [
+var import_cursors_text_cursor = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-text-cursor.svg"));
+var root65 = $1397.from_html(`<img/>`);
+function CursorsTextCursor($$anchor, $$props) {
+  let size = $1397.prop($$props, "size", 3, 32), alt = $1397.prop($$props, "alt", 3, "CursorsTextCursor"), className = $1397.prop($$props, "class", 3, ""), rest = $1397.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56808,8 +56809,8 @@ function CursorsResizeWestEast($$anchor, $$props) {
   ]);
   let resolvedWidth = $1397.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1397.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1397.derived(() => import_cursors_resize_west_east.default);
-  var img = root64();
+  let imageSrc = $1397.derived(() => import_cursors_text_cursor.default);
+  var img = root65();
   $1397.attribute_effect(img, () => ({
     src: $1397.get(imageSrc),
     alt: alt(),
@@ -56822,13 +56823,13 @@ function CursorsResizeWestEast($$anchor, $$props) {
   $1397.append($$anchor, img);
 }
 
-// src/cursors/CursorsTextCursor.svelte
+// src/cursors/CursorsZoomIn.svelte
 var import_disclose_version1398 = require("svelte/internal/disclose-version");
 var $1398 = __toESM(require("svelte/internal/client"));
-var import_cursors_text_cursor = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-text-cursor.svg"));
-var root65 = $1398.from_html(`<img/>`);
-function CursorsTextCursor($$anchor, $$props) {
-  let size = $1398.prop($$props, "size", 3, 32), alt = $1398.prop($$props, "alt", 3, "CursorsTextCursor"), className = $1398.prop($$props, "class", 3, ""), rest = $1398.rest_props($$props, [
+var import_cursors_zoom_in = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-zoom-in.svg"));
+var root66 = $1398.from_html(`<img/>`);
+function CursorsZoomIn($$anchor, $$props) {
+  let size = $1398.prop($$props, "size", 3, 32), alt = $1398.prop($$props, "alt", 3, "CursorsZoomIn"), className = $1398.prop($$props, "class", 3, ""), rest = $1398.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56840,8 +56841,8 @@ function CursorsTextCursor($$anchor, $$props) {
   ]);
   let resolvedWidth = $1398.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1398.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1398.derived(() => import_cursors_text_cursor.default);
-  var img = root65();
+  let imageSrc = $1398.derived(() => import_cursors_zoom_in.default);
+  var img = root66();
   $1398.attribute_effect(img, () => ({
     src: $1398.get(imageSrc),
     alt: alt(),
@@ -56854,13 +56855,13 @@ function CursorsTextCursor($$anchor, $$props) {
   $1398.append($$anchor, img);
 }
 
-// src/cursors/CursorsZoomIn.svelte
+// src/cursors/CursorsZoomOut.svelte
 var import_disclose_version1399 = require("svelte/internal/disclose-version");
 var $1399 = __toESM(require("svelte/internal/client"));
-var import_cursors_zoom_in = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-zoom-in.svg"));
-var root66 = $1399.from_html(`<img/>`);
-function CursorsZoomIn($$anchor, $$props) {
-  let size = $1399.prop($$props, "size", 3, 32), alt = $1399.prop($$props, "alt", 3, "CursorsZoomIn"), className = $1399.prop($$props, "class", 3, ""), rest = $1399.rest_props($$props, [
+var import_cursors_zoom_out = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-zoom-out.svg"));
+var root67 = $1399.from_html(`<img/>`);
+function CursorsZoomOut($$anchor, $$props) {
+  let size = $1399.prop($$props, "size", 3, 32), alt = $1399.prop($$props, "alt", 3, "CursorsZoomOut"), className = $1399.prop($$props, "class", 3, ""), rest = $1399.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56872,8 +56873,8 @@ function CursorsZoomIn($$anchor, $$props) {
   ]);
   let resolvedWidth = $1399.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1399.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1399.derived(() => import_cursors_zoom_in.default);
-  var img = root66();
+  let imageSrc = $1399.derived(() => import_cursors_zoom_out.default);
+  var img = root67();
   $1399.attribute_effect(img, () => ({
     src: $1399.get(imageSrc),
     alt: alt(),
@@ -56886,13 +56887,13 @@ function CursorsZoomIn($$anchor, $$props) {
   $1399.append($$anchor, img);
 }
 
-// src/cursors/CursorsZoomOut.svelte
+// src/emoji/BombEmoji.svelte
 var import_disclose_version1400 = require("svelte/internal/disclose-version");
 var $1400 = __toESM(require("svelte/internal/client"));
-var import_cursors_zoom_out = __toESM(require("@snowui-design-system/resource-base/assets/cursors/cursors-zoom-out.svg"));
-var root67 = $1400.from_html(`<img/>`);
-function CursorsZoomOut($$anchor, $$props) {
-  let size = $1400.prop($$props, "size", 3, 32), alt = $1400.prop($$props, "alt", 3, "CursorsZoomOut"), className = $1400.prop($$props, "class", 3, ""), rest = $1400.rest_props($$props, [
+var import_bomb_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/bomb-emoji.svg"));
+var root68 = $1400.from_html(`<img/>`);
+function BombEmoji($$anchor, $$props) {
+  let size = $1400.prop($$props, "size", 3, 32), alt = $1400.prop($$props, "alt", 3, "BombEmoji"), className = $1400.prop($$props, "class", 3, ""), rest = $1400.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56904,8 +56905,8 @@ function CursorsZoomOut($$anchor, $$props) {
   ]);
   let resolvedWidth = $1400.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1400.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1400.derived(() => import_cursors_zoom_out.default);
-  var img = root67();
+  let imageSrc = $1400.derived(() => import_bomb_emoji.default);
+  var img = root68();
   $1400.attribute_effect(img, () => ({
     src: $1400.get(imageSrc),
     alt: alt(),
@@ -56918,13 +56919,13 @@ function CursorsZoomOut($$anchor, $$props) {
   $1400.append($$anchor, img);
 }
 
-// src/emoji/BombEmoji.svelte
+// src/emoji/FaceBlowingKiss.svelte
 var import_disclose_version1401 = require("svelte/internal/disclose-version");
 var $1401 = __toESM(require("svelte/internal/client"));
-var import_bomb_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/bomb-emoji.svg"));
-var root68 = $1401.from_html(`<img/>`);
-function BombEmoji($$anchor, $$props) {
-  let size = $1401.prop($$props, "size", 3, 32), alt = $1401.prop($$props, "alt", 3, "BombEmoji"), className = $1401.prop($$props, "class", 3, ""), rest = $1401.rest_props($$props, [
+var import_face_blowing_kiss = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-blowing-kiss.svg"));
+var root69 = $1401.from_html(`<img/>`);
+function FaceBlowingKiss($$anchor, $$props) {
+  let size = $1401.prop($$props, "size", 3, 32), alt = $1401.prop($$props, "alt", 3, "FaceBlowingKiss"), className = $1401.prop($$props, "class", 3, ""), rest = $1401.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56936,8 +56937,8 @@ function BombEmoji($$anchor, $$props) {
   ]);
   let resolvedWidth = $1401.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1401.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1401.derived(() => import_bomb_emoji.default);
-  var img = root68();
+  let imageSrc = $1401.derived(() => import_face_blowing_kiss.default);
+  var img = root69();
   $1401.attribute_effect(img, () => ({
     src: $1401.get(imageSrc),
     alt: alt(),
@@ -56950,13 +56951,13 @@ function BombEmoji($$anchor, $$props) {
   $1401.append($$anchor, img);
 }
 
-// src/emoji/FaceBlowingKiss.svelte
+// src/emoji/FaceSteamFromNose.svelte
 var import_disclose_version1402 = require("svelte/internal/disclose-version");
 var $1402 = __toESM(require("svelte/internal/client"));
-var import_face_blowing_kiss = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-blowing-kiss.svg"));
-var root69 = $1402.from_html(`<img/>`);
-function FaceBlowingKiss($$anchor, $$props) {
-  let size = $1402.prop($$props, "size", 3, 32), alt = $1402.prop($$props, "alt", 3, "FaceBlowingKiss"), className = $1402.prop($$props, "class", 3, ""), rest = $1402.rest_props($$props, [
+var import_face_steam_from_nose = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-steam-from-nose.svg"));
+var root70 = $1402.from_html(`<img/>`);
+function FaceSteamFromNose($$anchor, $$props) {
+  let size = $1402.prop($$props, "size", 3, 32), alt = $1402.prop($$props, "alt", 3, "FaceSteamFromNose"), className = $1402.prop($$props, "class", 3, ""), rest = $1402.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -56968,8 +56969,8 @@ function FaceBlowingKiss($$anchor, $$props) {
   ]);
   let resolvedWidth = $1402.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1402.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1402.derived(() => import_face_blowing_kiss.default);
-  var img = root69();
+  let imageSrc = $1402.derived(() => import_face_steam_from_nose.default);
+  var img = root70();
   $1402.attribute_effect(img, () => ({
     src: $1402.get(imageSrc),
     alt: alt(),
@@ -56982,13 +56983,13 @@ function FaceBlowingKiss($$anchor, $$props) {
   $1402.append($$anchor, img);
 }
 
-// src/emoji/FaceSteamFromNose.svelte
+// src/emoji/FaceTearsJoy.svelte
 var import_disclose_version1403 = require("svelte/internal/disclose-version");
 var $1403 = __toESM(require("svelte/internal/client"));
-var import_face_steam_from_nose = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-steam-from-nose.svg"));
-var root70 = $1403.from_html(`<img/>`);
-function FaceSteamFromNose($$anchor, $$props) {
-  let size = $1403.prop($$props, "size", 3, 32), alt = $1403.prop($$props, "alt", 3, "FaceSteamFromNose"), className = $1403.prop($$props, "class", 3, ""), rest = $1403.rest_props($$props, [
+var import_face_tears_joy = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-tears-joy.svg"));
+var root71 = $1403.from_html(`<img/>`);
+function FaceTearsJoy($$anchor, $$props) {
+  let size = $1403.prop($$props, "size", 3, 32), alt = $1403.prop($$props, "alt", 3, "FaceTearsJoy"), className = $1403.prop($$props, "class", 3, ""), rest = $1403.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57000,8 +57001,8 @@ function FaceSteamFromNose($$anchor, $$props) {
   ]);
   let resolvedWidth = $1403.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1403.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1403.derived(() => import_face_steam_from_nose.default);
-  var img = root70();
+  let imageSrc = $1403.derived(() => import_face_tears_joy.default);
+  var img = root71();
   $1403.attribute_effect(img, () => ({
     src: $1403.get(imageSrc),
     alt: alt(),
@@ -57014,13 +57015,13 @@ function FaceSteamFromNose($$anchor, $$props) {
   $1403.append($$anchor, img);
 }
 
-// src/emoji/FaceTearsJoy.svelte
+// src/emoji/GrinningCat.svelte
 var import_disclose_version1404 = require("svelte/internal/disclose-version");
 var $1404 = __toESM(require("svelte/internal/client"));
-var import_face_tears_joy = __toESM(require("@snowui-design-system/resource-base/assets/emoji/face-tears-joy.svg"));
-var root71 = $1404.from_html(`<img/>`);
-function FaceTearsJoy($$anchor, $$props) {
-  let size = $1404.prop($$props, "size", 3, 32), alt = $1404.prop($$props, "alt", 3, "FaceTearsJoy"), className = $1404.prop($$props, "class", 3, ""), rest = $1404.rest_props($$props, [
+var import_grinning_cat = __toESM(require("@snowui-design-system/resource-base/assets/emoji/grinning-cat.svg"));
+var root72 = $1404.from_html(`<img/>`);
+function GrinningCat($$anchor, $$props) {
+  let size = $1404.prop($$props, "size", 3, 32), alt = $1404.prop($$props, "alt", 3, "GrinningCat"), className = $1404.prop($$props, "class", 3, ""), rest = $1404.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57032,8 +57033,8 @@ function FaceTearsJoy($$anchor, $$props) {
   ]);
   let resolvedWidth = $1404.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1404.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1404.derived(() => import_face_tears_joy.default);
-  var img = root71();
+  let imageSrc = $1404.derived(() => import_grinning_cat.default);
+  var img = root72();
   $1404.attribute_effect(img, () => ({
     src: $1404.get(imageSrc),
     alt: alt(),
@@ -57046,13 +57047,13 @@ function FaceTearsJoy($$anchor, $$props) {
   $1404.append($$anchor, img);
 }
 
-// src/emoji/GrinningCat.svelte
+// src/emoji/GrinningFaceSweat.svelte
 var import_disclose_version1405 = require("svelte/internal/disclose-version");
 var $1405 = __toESM(require("svelte/internal/client"));
-var import_grinning_cat = __toESM(require("@snowui-design-system/resource-base/assets/emoji/grinning-cat.svg"));
-var root72 = $1405.from_html(`<img/>`);
-function GrinningCat($$anchor, $$props) {
-  let size = $1405.prop($$props, "size", 3, 32), alt = $1405.prop($$props, "alt", 3, "GrinningCat"), className = $1405.prop($$props, "class", 3, ""), rest = $1405.rest_props($$props, [
+var import_grinning_face_sweat = __toESM(require("@snowui-design-system/resource-base/assets/emoji/grinning-face-sweat.svg"));
+var root73 = $1405.from_html(`<img/>`);
+function GrinningFaceSweat($$anchor, $$props) {
+  let size = $1405.prop($$props, "size", 3, 32), alt = $1405.prop($$props, "alt", 3, "GrinningFaceSweat"), className = $1405.prop($$props, "class", 3, ""), rest = $1405.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57064,8 +57065,8 @@ function GrinningCat($$anchor, $$props) {
   ]);
   let resolvedWidth = $1405.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1405.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1405.derived(() => import_grinning_cat.default);
-  var img = root72();
+  let imageSrc = $1405.derived(() => import_grinning_face_sweat.default);
+  var img = root73();
   $1405.attribute_effect(img, () => ({
     src: $1405.get(imageSrc),
     alt: alt(),
@@ -57078,13 +57079,13 @@ function GrinningCat($$anchor, $$props) {
   $1405.append($$anchor, img);
 }
 
-// src/emoji/GrinningFaceSweat.svelte
+// src/emoji/HeartArrow.svelte
 var import_disclose_version1406 = require("svelte/internal/disclose-version");
 var $1406 = __toESM(require("svelte/internal/client"));
-var import_grinning_face_sweat = __toESM(require("@snowui-design-system/resource-base/assets/emoji/grinning-face-sweat.svg"));
-var root73 = $1406.from_html(`<img/>`);
-function GrinningFaceSweat($$anchor, $$props) {
-  let size = $1406.prop($$props, "size", 3, 32), alt = $1406.prop($$props, "alt", 3, "GrinningFaceSweat"), className = $1406.prop($$props, "class", 3, ""), rest = $1406.rest_props($$props, [
+var import_heart_arrow = __toESM(require("@snowui-design-system/resource-base/assets/emoji/heart-arrow.svg"));
+var root74 = $1406.from_html(`<img/>`);
+function HeartArrow($$anchor, $$props) {
+  let size = $1406.prop($$props, "size", 3, 32), alt = $1406.prop($$props, "alt", 3, "HeartArrow"), className = $1406.prop($$props, "class", 3, ""), rest = $1406.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57096,8 +57097,8 @@ function GrinningFaceSweat($$anchor, $$props) {
   ]);
   let resolvedWidth = $1406.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1406.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1406.derived(() => import_grinning_face_sweat.default);
-  var img = root73();
+  let imageSrc = $1406.derived(() => import_heart_arrow.default);
+  var img = root74();
   $1406.attribute_effect(img, () => ({
     src: $1406.get(imageSrc),
     alt: alt(),
@@ -57110,13 +57111,13 @@ function GrinningFaceSweat($$anchor, $$props) {
   $1406.append($$anchor, img);
 }
 
-// src/emoji/HeartArrow.svelte
+// src/emoji/HundredPoints.svelte
 var import_disclose_version1407 = require("svelte/internal/disclose-version");
 var $1407 = __toESM(require("svelte/internal/client"));
-var import_heart_arrow = __toESM(require("@snowui-design-system/resource-base/assets/emoji/heart-arrow.svg"));
-var root74 = $1407.from_html(`<img/>`);
-function HeartArrow($$anchor, $$props) {
-  let size = $1407.prop($$props, "size", 3, 32), alt = $1407.prop($$props, "alt", 3, "HeartArrow"), className = $1407.prop($$props, "class", 3, ""), rest = $1407.rest_props($$props, [
+var import_hundred_points = __toESM(require("@snowui-design-system/resource-base/assets/emoji/hundred-points.svg"));
+var root75 = $1407.from_html(`<img/>`);
+function HundredPoints($$anchor, $$props) {
+  let size = $1407.prop($$props, "size", 3, 32), alt = $1407.prop($$props, "alt", 3, "HundredPoints"), className = $1407.prop($$props, "class", 3, ""), rest = $1407.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57128,8 +57129,8 @@ function HeartArrow($$anchor, $$props) {
   ]);
   let resolvedWidth = $1407.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1407.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1407.derived(() => import_heart_arrow.default);
-  var img = root74();
+  let imageSrc = $1407.derived(() => import_hundred_points.default);
+  var img = root75();
   $1407.attribute_effect(img, () => ({
     src: $1407.get(imageSrc),
     alt: alt(),
@@ -57142,13 +57143,13 @@ function HeartArrow($$anchor, $$props) {
   $1407.append($$anchor, img);
 }
 
-// src/emoji/HundredPoints.svelte
+// src/emoji/LoudlyCryingFace.svelte
 var import_disclose_version1408 = require("svelte/internal/disclose-version");
 var $1408 = __toESM(require("svelte/internal/client"));
-var import_hundred_points = __toESM(require("@snowui-design-system/resource-base/assets/emoji/hundred-points.svg"));
-var root75 = $1408.from_html(`<img/>`);
-function HundredPoints($$anchor, $$props) {
-  let size = $1408.prop($$props, "size", 3, 32), alt = $1408.prop($$props, "alt", 3, "HundredPoints"), className = $1408.prop($$props, "class", 3, ""), rest = $1408.rest_props($$props, [
+var import_loudly_crying_face = __toESM(require("@snowui-design-system/resource-base/assets/emoji/loudly-crying-face.svg"));
+var root76 = $1408.from_html(`<img/>`);
+function LoudlyCryingFace($$anchor, $$props) {
+  let size = $1408.prop($$props, "size", 3, 32), alt = $1408.prop($$props, "alt", 3, "LoudlyCryingFace"), className = $1408.prop($$props, "class", 3, ""), rest = $1408.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57160,8 +57161,8 @@ function HundredPoints($$anchor, $$props) {
   ]);
   let resolvedWidth = $1408.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1408.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1408.derived(() => import_hundred_points.default);
-  var img = root75();
+  let imageSrc = $1408.derived(() => import_loudly_crying_face.default);
+  var img = root76();
   $1408.attribute_effect(img, () => ({
     src: $1408.get(imageSrc),
     alt: alt(),
@@ -57174,13 +57175,13 @@ function HundredPoints($$anchor, $$props) {
   $1408.append($$anchor, img);
 }
 
-// src/emoji/LoudlyCryingFace.svelte
+// src/emoji/RedHeart.svelte
 var import_disclose_version1409 = require("svelte/internal/disclose-version");
 var $1409 = __toESM(require("svelte/internal/client"));
-var import_loudly_crying_face = __toESM(require("@snowui-design-system/resource-base/assets/emoji/loudly-crying-face.svg"));
-var root76 = $1409.from_html(`<img/>`);
-function LoudlyCryingFace($$anchor, $$props) {
-  let size = $1409.prop($$props, "size", 3, 32), alt = $1409.prop($$props, "alt", 3, "LoudlyCryingFace"), className = $1409.prop($$props, "class", 3, ""), rest = $1409.rest_props($$props, [
+var import_red_heart = __toESM(require("@snowui-design-system/resource-base/assets/emoji/red-heart.svg"));
+var root77 = $1409.from_html(`<img/>`);
+function RedHeart($$anchor, $$props) {
+  let size = $1409.prop($$props, "size", 3, 32), alt = $1409.prop($$props, "alt", 3, "RedHeart"), className = $1409.prop($$props, "class", 3, ""), rest = $1409.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57192,8 +57193,8 @@ function LoudlyCryingFace($$anchor, $$props) {
   ]);
   let resolvedWidth = $1409.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1409.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1409.derived(() => import_loudly_crying_face.default);
-  var img = root76();
+  let imageSrc = $1409.derived(() => import_red_heart.default);
+  var img = root77();
   $1409.attribute_effect(img, () => ({
     src: $1409.get(imageSrc),
     alt: alt(),
@@ -57206,13 +57207,13 @@ function LoudlyCryingFace($$anchor, $$props) {
   $1409.append($$anchor, img);
 }
 
-// src/emoji/RedHeart.svelte
+// src/emoji/RobotEmoji.svelte
 var import_disclose_version1410 = require("svelte/internal/disclose-version");
 var $1410 = __toESM(require("svelte/internal/client"));
-var import_red_heart = __toESM(require("@snowui-design-system/resource-base/assets/emoji/red-heart.svg"));
-var root77 = $1410.from_html(`<img/>`);
-function RedHeart($$anchor, $$props) {
-  let size = $1410.prop($$props, "size", 3, 32), alt = $1410.prop($$props, "alt", 3, "RedHeart"), className = $1410.prop($$props, "class", 3, ""), rest = $1410.rest_props($$props, [
+var import_robot_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/robot-emoji.svg"));
+var root78 = $1410.from_html(`<img/>`);
+function RobotEmoji($$anchor, $$props) {
+  let size = $1410.prop($$props, "size", 3, 32), alt = $1410.prop($$props, "alt", 3, "RobotEmoji"), className = $1410.prop($$props, "class", 3, ""), rest = $1410.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57224,8 +57225,8 @@ function RedHeart($$anchor, $$props) {
   ]);
   let resolvedWidth = $1410.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1410.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1410.derived(() => import_red_heart.default);
-  var img = root77();
+  let imageSrc = $1410.derived(() => import_robot_emoji.default);
+  var img = root78();
   $1410.attribute_effect(img, () => ({
     src: $1410.get(imageSrc),
     alt: alt(),
@@ -57238,13 +57239,13 @@ function RedHeart($$anchor, $$props) {
   $1410.append($$anchor, img);
 }
 
-// src/emoji/RobotEmoji.svelte
+// src/emoji/SeeMonkey.svelte
 var import_disclose_version1411 = require("svelte/internal/disclose-version");
 var $1411 = __toESM(require("svelte/internal/client"));
-var import_robot_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/robot-emoji.svg"));
-var root78 = $1411.from_html(`<img/>`);
-function RobotEmoji($$anchor, $$props) {
-  let size = $1411.prop($$props, "size", 3, 32), alt = $1411.prop($$props, "alt", 3, "RobotEmoji"), className = $1411.prop($$props, "class", 3, ""), rest = $1411.rest_props($$props, [
+var import_see_monkey = __toESM(require("@snowui-design-system/resource-base/assets/emoji/see-monkey.svg"));
+var root79 = $1411.from_html(`<img/>`);
+function SeeMonkey($$anchor, $$props) {
+  let size = $1411.prop($$props, "size", 3, 32), alt = $1411.prop($$props, "alt", 3, "SeeMonkey"), className = $1411.prop($$props, "class", 3, ""), rest = $1411.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57256,8 +57257,8 @@ function RobotEmoji($$anchor, $$props) {
   ]);
   let resolvedWidth = $1411.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1411.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1411.derived(() => import_robot_emoji.default);
-  var img = root78();
+  let imageSrc = $1411.derived(() => import_see_monkey.default);
+  var img = root79();
   $1411.attribute_effect(img, () => ({
     src: $1411.get(imageSrc),
     alt: alt(),
@@ -57270,13 +57271,13 @@ function RobotEmoji($$anchor, $$props) {
   $1411.append($$anchor, img);
 }
 
-// src/emoji/SeeMonkey.svelte
+// src/emoji/SkullCrossbones.svelte
 var import_disclose_version1412 = require("svelte/internal/disclose-version");
 var $1412 = __toESM(require("svelte/internal/client"));
-var import_see_monkey = __toESM(require("@snowui-design-system/resource-base/assets/emoji/see-monkey.svg"));
-var root79 = $1412.from_html(`<img/>`);
-function SeeMonkey($$anchor, $$props) {
-  let size = $1412.prop($$props, "size", 3, 32), alt = $1412.prop($$props, "alt", 3, "SeeMonkey"), className = $1412.prop($$props, "class", 3, ""), rest = $1412.rest_props($$props, [
+var import_skull_crossbones = __toESM(require("@snowui-design-system/resource-base/assets/emoji/skull-crossbones.svg"));
+var root80 = $1412.from_html(`<img/>`);
+function SkullCrossbones($$anchor, $$props) {
+  let size = $1412.prop($$props, "size", 3, 32), alt = $1412.prop($$props, "alt", 3, "SkullCrossbones"), className = $1412.prop($$props, "class", 3, ""), rest = $1412.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57288,8 +57289,8 @@ function SeeMonkey($$anchor, $$props) {
   ]);
   let resolvedWidth = $1412.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1412.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1412.derived(() => import_see_monkey.default);
-  var img = root79();
+  let imageSrc = $1412.derived(() => import_skull_crossbones.default);
+  var img = root80();
   $1412.attribute_effect(img, () => ({
     src: $1412.get(imageSrc),
     alt: alt(),
@@ -57302,13 +57303,13 @@ function SeeMonkey($$anchor, $$props) {
   $1412.append($$anchor, img);
 }
 
-// src/emoji/SkullCrossbones.svelte
+// src/emoji/SmilingFaceHearts.svelte
 var import_disclose_version1413 = require("svelte/internal/disclose-version");
 var $1413 = __toESM(require("svelte/internal/client"));
-var import_skull_crossbones = __toESM(require("@snowui-design-system/resource-base/assets/emoji/skull-crossbones.svg"));
-var root80 = $1413.from_html(`<img/>`);
-function SkullCrossbones($$anchor, $$props) {
-  let size = $1413.prop($$props, "size", 3, 32), alt = $1413.prop($$props, "alt", 3, "SkullCrossbones"), className = $1413.prop($$props, "class", 3, ""), rest = $1413.rest_props($$props, [
+var import_smiling_face_hearts = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-hearts.svg"));
+var root81 = $1413.from_html(`<img/>`);
+function SmilingFaceHearts($$anchor, $$props) {
+  let size = $1413.prop($$props, "size", 3, 32), alt = $1413.prop($$props, "alt", 3, "SmilingFaceHearts"), className = $1413.prop($$props, "class", 3, ""), rest = $1413.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57320,8 +57321,8 @@ function SkullCrossbones($$anchor, $$props) {
   ]);
   let resolvedWidth = $1413.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1413.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1413.derived(() => import_skull_crossbones.default);
-  var img = root80();
+  let imageSrc = $1413.derived(() => import_smiling_face_hearts.default);
+  var img = root81();
   $1413.attribute_effect(img, () => ({
     src: $1413.get(imageSrc),
     alt: alt(),
@@ -57334,13 +57335,13 @@ function SkullCrossbones($$anchor, $$props) {
   $1413.append($$anchor, img);
 }
 
-// src/emoji/SmilingFaceHearts.svelte
+// src/emoji/SmilingFaceHorns.svelte
 var import_disclose_version1414 = require("svelte/internal/disclose-version");
 var $1414 = __toESM(require("svelte/internal/client"));
-var import_smiling_face_hearts = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-hearts.svg"));
-var root81 = $1414.from_html(`<img/>`);
-function SmilingFaceHearts($$anchor, $$props) {
-  let size = $1414.prop($$props, "size", 3, 32), alt = $1414.prop($$props, "alt", 3, "SmilingFaceHearts"), className = $1414.prop($$props, "class", 3, ""), rest = $1414.rest_props($$props, [
+var import_smiling_face_horns = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-horns.svg"));
+var root82 = $1414.from_html(`<img/>`);
+function SmilingFaceHorns($$anchor, $$props) {
+  let size = $1414.prop($$props, "size", 3, 32), alt = $1414.prop($$props, "alt", 3, "SmilingFaceHorns"), className = $1414.prop($$props, "class", 3, ""), rest = $1414.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57352,8 +57353,8 @@ function SmilingFaceHearts($$anchor, $$props) {
   ]);
   let resolvedWidth = $1414.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1414.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1414.derived(() => import_smiling_face_hearts.default);
-  var img = root81();
+  let imageSrc = $1414.derived(() => import_smiling_face_horns.default);
+  var img = root82();
   $1414.attribute_effect(img, () => ({
     src: $1414.get(imageSrc),
     alt: alt(),
@@ -57366,13 +57367,13 @@ function SmilingFaceHearts($$anchor, $$props) {
   $1414.append($$anchor, img);
 }
 
-// src/emoji/SmilingFaceHorns.svelte
+// src/emoji/SmilingFaceSunglasses.svelte
 var import_disclose_version1415 = require("svelte/internal/disclose-version");
 var $1415 = __toESM(require("svelte/internal/client"));
-var import_smiling_face_horns = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-horns.svg"));
-var root82 = $1415.from_html(`<img/>`);
-function SmilingFaceHorns($$anchor, $$props) {
-  let size = $1415.prop($$props, "size", 3, 32), alt = $1415.prop($$props, "alt", 3, "SmilingFaceHorns"), className = $1415.prop($$props, "class", 3, ""), rest = $1415.rest_props($$props, [
+var import_smiling_face_sunglasses = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-sunglasses.svg"));
+var root83 = $1415.from_html(`<img/>`);
+function SmilingFaceSunglasses($$anchor, $$props) {
+  let size = $1415.prop($$props, "size", 3, 32), alt = $1415.prop($$props, "alt", 3, "SmilingFaceSunglasses"), className = $1415.prop($$props, "class", 3, ""), rest = $1415.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57384,8 +57385,8 @@ function SmilingFaceHorns($$anchor, $$props) {
   ]);
   let resolvedWidth = $1415.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1415.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1415.derived(() => import_smiling_face_horns.default);
-  var img = root82();
+  let imageSrc = $1415.derived(() => import_smiling_face_sunglasses.default);
+  var img = root83();
   $1415.attribute_effect(img, () => ({
     src: $1415.get(imageSrc),
     alt: alt(),
@@ -57398,13 +57399,13 @@ function SmilingFaceHorns($$anchor, $$props) {
   $1415.append($$anchor, img);
 }
 
-// src/emoji/SmilingFaceSunglasses.svelte
+// src/emoji/SnowflakeEmoji.svelte
 var import_disclose_version1416 = require("svelte/internal/disclose-version");
 var $1416 = __toESM(require("svelte/internal/client"));
-var import_smiling_face_sunglasses = __toESM(require("@snowui-design-system/resource-base/assets/emoji/smiling-face-sunglasses.svg"));
-var root83 = $1416.from_html(`<img/>`);
-function SmilingFaceSunglasses($$anchor, $$props) {
-  let size = $1416.prop($$props, "size", 3, 32), alt = $1416.prop($$props, "alt", 3, "SmilingFaceSunglasses"), className = $1416.prop($$props, "class", 3, ""), rest = $1416.rest_props($$props, [
+var import_snowflake_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/snowflake-emoji.svg"));
+var root84 = $1416.from_html(`<img/>`);
+function SnowflakeEmoji($$anchor, $$props) {
+  let size = $1416.prop($$props, "size", 3, 32), alt = $1416.prop($$props, "alt", 3, "SnowflakeEmoji"), className = $1416.prop($$props, "class", 3, ""), rest = $1416.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57416,8 +57417,8 @@ function SmilingFaceSunglasses($$anchor, $$props) {
   ]);
   let resolvedWidth = $1416.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1416.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1416.derived(() => import_smiling_face_sunglasses.default);
-  var img = root83();
+  let imageSrc = $1416.derived(() => import_snowflake_emoji.default);
+  var img = root84();
   $1416.attribute_effect(img, () => ({
     src: $1416.get(imageSrc),
     alt: alt(),
@@ -57430,13 +57431,13 @@ function SmilingFaceSunglasses($$anchor, $$props) {
   $1416.append($$anchor, img);
 }
 
-// src/emoji/SnowflakeEmoji.svelte
+// src/emoji/Snowman.svelte
 var import_disclose_version1417 = require("svelte/internal/disclose-version");
 var $1417 = __toESM(require("svelte/internal/client"));
-var import_snowflake_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/snowflake-emoji.svg"));
-var root84 = $1417.from_html(`<img/>`);
-function SnowflakeEmoji($$anchor, $$props) {
-  let size = $1417.prop($$props, "size", 3, 32), alt = $1417.prop($$props, "alt", 3, "SnowflakeEmoji"), className = $1417.prop($$props, "class", 3, ""), rest = $1417.rest_props($$props, [
+var import_snowman = __toESM(require("@snowui-design-system/resource-base/assets/emoji/snowman.svg"));
+var root85 = $1417.from_html(`<img/>`);
+function Snowman($$anchor, $$props) {
+  let size = $1417.prop($$props, "size", 3, 32), alt = $1417.prop($$props, "alt", 3, "Snowman"), className = $1417.prop($$props, "class", 3, ""), rest = $1417.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57448,8 +57449,8 @@ function SnowflakeEmoji($$anchor, $$props) {
   ]);
   let resolvedWidth = $1417.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1417.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1417.derived(() => import_snowflake_emoji.default);
-  var img = root84();
+  let imageSrc = $1417.derived(() => import_snowman.default);
+  var img = root85();
   $1417.attribute_effect(img, () => ({
     src: $1417.get(imageSrc),
     alt: alt(),
@@ -57462,13 +57463,13 @@ function SnowflakeEmoji($$anchor, $$props) {
   $1417.append($$anchor, img);
 }
 
-// src/emoji/Snowman.svelte
+// src/emoji/UmbrellaEmoji.svelte
 var import_disclose_version1418 = require("svelte/internal/disclose-version");
 var $1418 = __toESM(require("svelte/internal/client"));
-var import_snowman = __toESM(require("@snowui-design-system/resource-base/assets/emoji/snowman.svg"));
-var root85 = $1418.from_html(`<img/>`);
-function Snowman($$anchor, $$props) {
-  let size = $1418.prop($$props, "size", 3, 32), alt = $1418.prop($$props, "alt", 3, "Snowman"), className = $1418.prop($$props, "class", 3, ""), rest = $1418.rest_props($$props, [
+var import_umbrella_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/umbrella-emoji.svg"));
+var root86 = $1418.from_html(`<img/>`);
+function UmbrellaEmoji($$anchor, $$props) {
+  let size = $1418.prop($$props, "size", 3, 32), alt = $1418.prop($$props, "alt", 3, "UmbrellaEmoji"), className = $1418.prop($$props, "class", 3, ""), rest = $1418.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57480,8 +57481,8 @@ function Snowman($$anchor, $$props) {
   ]);
   let resolvedWidth = $1418.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1418.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1418.derived(() => import_snowman.default);
-  var img = root85();
+  let imageSrc = $1418.derived(() => import_umbrella_emoji.default);
+  var img = root86();
   $1418.attribute_effect(img, () => ({
     src: $1418.get(imageSrc),
     alt: alt(),
@@ -57494,13 +57495,13 @@ function Snowman($$anchor, $$props) {
   $1418.append($$anchor, img);
 }
 
-// src/emoji/UmbrellaEmoji.svelte
+// src/emoji/WinkingFaceTongue.svelte
 var import_disclose_version1419 = require("svelte/internal/disclose-version");
 var $1419 = __toESM(require("svelte/internal/client"));
-var import_umbrella_emoji = __toESM(require("@snowui-design-system/resource-base/assets/emoji/umbrella-emoji.svg"));
-var root86 = $1419.from_html(`<img/>`);
-function UmbrellaEmoji($$anchor, $$props) {
-  let size = $1419.prop($$props, "size", 3, 32), alt = $1419.prop($$props, "alt", 3, "UmbrellaEmoji"), className = $1419.prop($$props, "class", 3, ""), rest = $1419.rest_props($$props, [
+var import_winking_face_tongue = __toESM(require("@snowui-design-system/resource-base/assets/emoji/winking-face-tongue.svg"));
+var root87 = $1419.from_html(`<img/>`);
+function WinkingFaceTongue($$anchor, $$props) {
+  let size = $1419.prop($$props, "size", 3, 32), alt = $1419.prop($$props, "alt", 3, "WinkingFaceTongue"), className = $1419.prop($$props, "class", 3, ""), rest = $1419.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57512,8 +57513,8 @@ function UmbrellaEmoji($$anchor, $$props) {
   ]);
   let resolvedWidth = $1419.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1419.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1419.derived(() => import_umbrella_emoji.default);
-  var img = root86();
+  let imageSrc = $1419.derived(() => import_winking_face_tongue.default);
+  var img = root87();
   $1419.attribute_effect(img, () => ({
     src: $1419.get(imageSrc),
     alt: alt(),
@@ -57526,13 +57527,13 @@ function UmbrellaEmoji($$anchor, $$props) {
   $1419.append($$anchor, img);
 }
 
-// src/emoji/WinkingFaceTongue.svelte
+// src/emoji/WinkingFace.svelte
 var import_disclose_version1420 = require("svelte/internal/disclose-version");
 var $1420 = __toESM(require("svelte/internal/client"));
-var import_winking_face_tongue = __toESM(require("@snowui-design-system/resource-base/assets/emoji/winking-face-tongue.svg"));
-var root87 = $1420.from_html(`<img/>`);
-function WinkingFaceTongue($$anchor, $$props) {
-  let size = $1420.prop($$props, "size", 3, 32), alt = $1420.prop($$props, "alt", 3, "WinkingFaceTongue"), className = $1420.prop($$props, "class", 3, ""), rest = $1420.rest_props($$props, [
+var import_winking_face = __toESM(require("@snowui-design-system/resource-base/assets/emoji/winking-face.svg"));
+var root88 = $1420.from_html(`<img/>`);
+function WinkingFace($$anchor, $$props) {
+  let size = $1420.prop($$props, "size", 3, 32), alt = $1420.prop($$props, "alt", 3, "WinkingFace"), className = $1420.prop($$props, "class", 3, ""), rest = $1420.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57544,8 +57545,8 @@ function WinkingFaceTongue($$anchor, $$props) {
   ]);
   let resolvedWidth = $1420.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1420.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1420.derived(() => import_winking_face_tongue.default);
-  var img = root87();
+  let imageSrc = $1420.derived(() => import_winking_face.default);
+  var img = root88();
   $1420.attribute_effect(img, () => ({
     src: $1420.get(imageSrc),
     alt: alt(),
@@ -57558,30 +57559,29 @@ function WinkingFaceTongue($$anchor, $$props) {
   $1420.append($$anchor, img);
 }
 
-// src/emoji/WinkingFace.svelte
+// src/illustrations/Humanoid.svelte
 var import_disclose_version1421 = require("svelte/internal/disclose-version");
 var $1421 = __toESM(require("svelte/internal/client"));
-var import_winking_face = __toESM(require("@snowui-design-system/resource-base/assets/emoji/winking-face.svg"));
-var root88 = $1421.from_html(`<img/>`);
-function WinkingFace($$anchor, $$props) {
-  let size = $1421.prop($$props, "size", 3, 32), alt = $1421.prop($$props, "alt", 3, "WinkingFace"), className = $1421.prop($$props, "class", 3, ""), rest = $1421.rest_props($$props, [
+var import_humanoid = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/humanoid.svg"));
+var root89 = $1421.from_html(`<img/>`);
+function Humanoid($$anchor, $$props) {
+  let height = $1421.prop($$props, "height", 3, 128), alt = $1421.prop($$props, "alt", 3, "Humanoid"), className = $1421.prop($$props, "class", 3, ""), rest = $1421.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
-    "size",
     "width",
     "height",
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1421.derived(() => size() ?? $$props.width ?? 32);
-  let resolvedHeight = $1421.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1421.derived(() => import_winking_face.default);
-  var img = root88();
+  let resolvedWidth = $1421.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1421.derived(() => height() ?? 128);
+  let imageSrc = $1421.derived(() => import_humanoid.default);
+  var img = root89();
   $1421.attribute_effect(img, () => ({
     src: $1421.get(imageSrc),
     alt: alt(),
-    width: $1421.get(resolvedWidth),
+    width: $1421.get(resolvedWidth) ?? void 0,
     height: $1421.get(resolvedHeight),
     class: className(),
     ...rest
@@ -57590,45 +57590,14 @@ function WinkingFace($$anchor, $$props) {
   $1421.append($$anchor, img);
 }
 
-// src/illustrations/Humanoid.svelte
+// src/illustrations/Illustration01.svelte
 var import_disclose_version1422 = require("svelte/internal/disclose-version");
 var $1422 = __toESM(require("svelte/internal/client"));
-var import_humanoid = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/humanoid.svg"));
-var root89 = $1422.from_html(`<img/>`);
-function Humanoid($$anchor, $$props) {
-  let height = $1422.prop($$props, "height", 3, 128), alt = $1422.prop($$props, "alt", 3, "Humanoid"), className = $1422.prop($$props, "class", 3, ""), rest = $1422.rest_props($$props, [
-    "$$slots",
-    "$$events",
-    "$$legacy",
-    "width",
-    "height",
-    "alt",
-    "class"
-  ]);
-  let resolvedWidth = $1422.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1422.derived(() => height() ?? 128);
-  let imageSrc = $1422.derived(() => import_humanoid.default);
-  var img = root89();
-  $1422.attribute_effect(img, () => ({
-    src: $1422.get(imageSrc),
-    alt: alt(),
-    width: $1422.get(resolvedWidth) ?? void 0,
-    height: $1422.get(resolvedHeight),
-    class: className(),
-    ...rest
-  }));
-  $1422.replay_events(img);
-  $1422.append($$anchor, img);
-}
-
-// src/illustrations/Illustration01.svelte
-var import_disclose_version1423 = require("svelte/internal/disclose-version");
-var $1423 = __toESM(require("svelte/internal/client"));
 var import_illustration_01_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-01-320.png"));
 var import_illustration_01_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-01-160.png"));
 var import_illustration_01_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-01-640.png"));
 var import_illustration_01_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-01-1024.png"));
-var root90 = $1423.from_html(`<img/>`);
+var root90 = $1422.from_html(`<img/>`);
 function Illustration01($$anchor, $$props) {
   const Illustration01WidthMap = {
     160: import_illustration_01_160.default,
@@ -57651,7 +57620,7 @@ function Illustration01($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1423.prop($$props, "height", 3, 128), alt = $1423.prop($$props, "alt", 3, "Illustration01"), className = $1423.prop($$props, "class", 3, ""), rest = $1423.rest_props($$props, [
+  let height = $1422.prop($$props, "height", 3, 128), alt = $1422.prop($$props, "alt", 3, "Illustration01"), className = $1422.prop($$props, "class", 3, ""), rest = $1422.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57660,32 +57629,32 @@ function Illustration01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1423.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1423.derived(() => height() ?? 128);
-  let sourceWidth = $1423.derived(() => $1423.get(resolvedWidth) ?? 320);
-  let closestWidth = $1423.derived(() => findClosestWidth($1423.get(sourceWidth), Illustration01AvailableWidths));
-  let imageSrc = $1423.derived(() => Illustration01WidthMap[$1423.get(closestWidth)] ?? import_illustration_01_320.default);
+  let resolvedWidth = $1422.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1422.derived(() => height() ?? 128);
+  let sourceWidth = $1422.derived(() => $1422.get(resolvedWidth) ?? 320);
+  let closestWidth = $1422.derived(() => findClosestWidth($1422.get(sourceWidth), Illustration01AvailableWidths));
+  let imageSrc = $1422.derived(() => Illustration01WidthMap[$1422.get(closestWidth)] ?? import_illustration_01_320.default);
   var img = root90();
-  $1423.attribute_effect(img, () => ({
-    src: $1423.get(imageSrc),
+  $1422.attribute_effect(img, () => ({
+    src: $1422.get(imageSrc),
     alt: alt(),
-    width: $1423.get(resolvedWidth) ?? void 0,
-    height: $1423.get(resolvedHeight),
+    width: $1422.get(resolvedWidth) ?? void 0,
+    height: $1422.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1423.replay_events(img);
-  $1423.append($$anchor, img);
+  $1422.replay_events(img);
+  $1422.append($$anchor, img);
 }
 
 // src/illustrations/Illustration02.svelte
-var import_disclose_version1424 = require("svelte/internal/disclose-version");
-var $1424 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1423 = require("svelte/internal/disclose-version");
+var $1423 = __toESM(require("svelte/internal/client"));
 var import_illustration_02_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-02-320.png"));
 var import_illustration_02_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-02-160.png"));
 var import_illustration_02_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-02-640.png"));
 var import_illustration_02_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-02-1024.png"));
-var root91 = $1424.from_html(`<img/>`);
+var root91 = $1423.from_html(`<img/>`);
 function Illustration02($$anchor, $$props) {
   const Illustration02WidthMap = {
     160: import_illustration_02_160.default,
@@ -57708,7 +57677,7 @@ function Illustration02($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1424.prop($$props, "height", 3, 128), alt = $1424.prop($$props, "alt", 3, "Illustration02"), className = $1424.prop($$props, "class", 3, ""), rest = $1424.rest_props($$props, [
+  let height = $1423.prop($$props, "height", 3, 128), alt = $1423.prop($$props, "alt", 3, "Illustration02"), className = $1423.prop($$props, "class", 3, ""), rest = $1423.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57717,32 +57686,32 @@ function Illustration02($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1424.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1424.derived(() => height() ?? 128);
-  let sourceWidth = $1424.derived(() => $1424.get(resolvedWidth) ?? 320);
-  let closestWidth = $1424.derived(() => findClosestWidth($1424.get(sourceWidth), Illustration02AvailableWidths));
-  let imageSrc = $1424.derived(() => Illustration02WidthMap[$1424.get(closestWidth)] ?? import_illustration_02_320.default);
+  let resolvedWidth = $1423.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1423.derived(() => height() ?? 128);
+  let sourceWidth = $1423.derived(() => $1423.get(resolvedWidth) ?? 320);
+  let closestWidth = $1423.derived(() => findClosestWidth($1423.get(sourceWidth), Illustration02AvailableWidths));
+  let imageSrc = $1423.derived(() => Illustration02WidthMap[$1423.get(closestWidth)] ?? import_illustration_02_320.default);
   var img = root91();
-  $1424.attribute_effect(img, () => ({
-    src: $1424.get(imageSrc),
+  $1423.attribute_effect(img, () => ({
+    src: $1423.get(imageSrc),
     alt: alt(),
-    width: $1424.get(resolvedWidth) ?? void 0,
-    height: $1424.get(resolvedHeight),
+    width: $1423.get(resolvedWidth) ?? void 0,
+    height: $1423.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1424.replay_events(img);
-  $1424.append($$anchor, img);
+  $1423.replay_events(img);
+  $1423.append($$anchor, img);
 }
 
 // src/illustrations/Illustration03.svelte
-var import_disclose_version1425 = require("svelte/internal/disclose-version");
-var $1425 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1424 = require("svelte/internal/disclose-version");
+var $1424 = __toESM(require("svelte/internal/client"));
 var import_illustration_03_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-03-320.png"));
 var import_illustration_03_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-03-160.png"));
 var import_illustration_03_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-03-640.png"));
 var import_illustration_03_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-03-1024.png"));
-var root92 = $1425.from_html(`<img/>`);
+var root92 = $1424.from_html(`<img/>`);
 function Illustration03($$anchor, $$props) {
   const Illustration03WidthMap = {
     160: import_illustration_03_160.default,
@@ -57765,7 +57734,7 @@ function Illustration03($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1425.prop($$props, "height", 3, 128), alt = $1425.prop($$props, "alt", 3, "Illustration03"), className = $1425.prop($$props, "class", 3, ""), rest = $1425.rest_props($$props, [
+  let height = $1424.prop($$props, "height", 3, 128), alt = $1424.prop($$props, "alt", 3, "Illustration03"), className = $1424.prop($$props, "class", 3, ""), rest = $1424.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57774,32 +57743,32 @@ function Illustration03($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1425.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1425.derived(() => height() ?? 128);
-  let sourceWidth = $1425.derived(() => $1425.get(resolvedWidth) ?? 320);
-  let closestWidth = $1425.derived(() => findClosestWidth($1425.get(sourceWidth), Illustration03AvailableWidths));
-  let imageSrc = $1425.derived(() => Illustration03WidthMap[$1425.get(closestWidth)] ?? import_illustration_03_320.default);
+  let resolvedWidth = $1424.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1424.derived(() => height() ?? 128);
+  let sourceWidth = $1424.derived(() => $1424.get(resolvedWidth) ?? 320);
+  let closestWidth = $1424.derived(() => findClosestWidth($1424.get(sourceWidth), Illustration03AvailableWidths));
+  let imageSrc = $1424.derived(() => Illustration03WidthMap[$1424.get(closestWidth)] ?? import_illustration_03_320.default);
   var img = root92();
-  $1425.attribute_effect(img, () => ({
-    src: $1425.get(imageSrc),
+  $1424.attribute_effect(img, () => ({
+    src: $1424.get(imageSrc),
     alt: alt(),
-    width: $1425.get(resolvedWidth) ?? void 0,
-    height: $1425.get(resolvedHeight),
+    width: $1424.get(resolvedWidth) ?? void 0,
+    height: $1424.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1425.replay_events(img);
-  $1425.append($$anchor, img);
+  $1424.replay_events(img);
+  $1424.append($$anchor, img);
 }
 
 // src/illustrations/Illustration04.svelte
-var import_disclose_version1426 = require("svelte/internal/disclose-version");
-var $1426 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1425 = require("svelte/internal/disclose-version");
+var $1425 = __toESM(require("svelte/internal/client"));
 var import_illustration_04_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-04-320.png"));
 var import_illustration_04_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-04-160.png"));
 var import_illustration_04_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-04-640.png"));
 var import_illustration_04_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-04-1024.png"));
-var root93 = $1426.from_html(`<img/>`);
+var root93 = $1425.from_html(`<img/>`);
 function Illustration04($$anchor, $$props) {
   const Illustration04WidthMap = {
     160: import_illustration_04_160.default,
@@ -57822,7 +57791,7 @@ function Illustration04($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1426.prop($$props, "height", 3, 128), alt = $1426.prop($$props, "alt", 3, "Illustration04"), className = $1426.prop($$props, "class", 3, ""), rest = $1426.rest_props($$props, [
+  let height = $1425.prop($$props, "height", 3, 128), alt = $1425.prop($$props, "alt", 3, "Illustration04"), className = $1425.prop($$props, "class", 3, ""), rest = $1425.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57831,32 +57800,32 @@ function Illustration04($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1426.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1426.derived(() => height() ?? 128);
-  let sourceWidth = $1426.derived(() => $1426.get(resolvedWidth) ?? 320);
-  let closestWidth = $1426.derived(() => findClosestWidth($1426.get(sourceWidth), Illustration04AvailableWidths));
-  let imageSrc = $1426.derived(() => Illustration04WidthMap[$1426.get(closestWidth)] ?? import_illustration_04_320.default);
+  let resolvedWidth = $1425.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1425.derived(() => height() ?? 128);
+  let sourceWidth = $1425.derived(() => $1425.get(resolvedWidth) ?? 320);
+  let closestWidth = $1425.derived(() => findClosestWidth($1425.get(sourceWidth), Illustration04AvailableWidths));
+  let imageSrc = $1425.derived(() => Illustration04WidthMap[$1425.get(closestWidth)] ?? import_illustration_04_320.default);
   var img = root93();
-  $1426.attribute_effect(img, () => ({
-    src: $1426.get(imageSrc),
+  $1425.attribute_effect(img, () => ({
+    src: $1425.get(imageSrc),
     alt: alt(),
-    width: $1426.get(resolvedWidth) ?? void 0,
-    height: $1426.get(resolvedHeight),
+    width: $1425.get(resolvedWidth) ?? void 0,
+    height: $1425.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1426.replay_events(img);
-  $1426.append($$anchor, img);
+  $1425.replay_events(img);
+  $1425.append($$anchor, img);
 }
 
 // src/illustrations/Illustration05.svelte
-var import_disclose_version1427 = require("svelte/internal/disclose-version");
-var $1427 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1426 = require("svelte/internal/disclose-version");
+var $1426 = __toESM(require("svelte/internal/client"));
 var import_illustration_05_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-05-320.png"));
 var import_illustration_05_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-05-160.png"));
 var import_illustration_05_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-05-640.png"));
 var import_illustration_05_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-05-1024.png"));
-var root94 = $1427.from_html(`<img/>`);
+var root94 = $1426.from_html(`<img/>`);
 function Illustration05($$anchor, $$props) {
   const Illustration05WidthMap = {
     160: import_illustration_05_160.default,
@@ -57879,7 +57848,7 @@ function Illustration05($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1427.prop($$props, "height", 3, 128), alt = $1427.prop($$props, "alt", 3, "Illustration05"), className = $1427.prop($$props, "class", 3, ""), rest = $1427.rest_props($$props, [
+  let height = $1426.prop($$props, "height", 3, 128), alt = $1426.prop($$props, "alt", 3, "Illustration05"), className = $1426.prop($$props, "class", 3, ""), rest = $1426.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57888,32 +57857,32 @@ function Illustration05($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1427.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1427.derived(() => height() ?? 128);
-  let sourceWidth = $1427.derived(() => $1427.get(resolvedWidth) ?? 320);
-  let closestWidth = $1427.derived(() => findClosestWidth($1427.get(sourceWidth), Illustration05AvailableWidths));
-  let imageSrc = $1427.derived(() => Illustration05WidthMap[$1427.get(closestWidth)] ?? import_illustration_05_320.default);
+  let resolvedWidth = $1426.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1426.derived(() => height() ?? 128);
+  let sourceWidth = $1426.derived(() => $1426.get(resolvedWidth) ?? 320);
+  let closestWidth = $1426.derived(() => findClosestWidth($1426.get(sourceWidth), Illustration05AvailableWidths));
+  let imageSrc = $1426.derived(() => Illustration05WidthMap[$1426.get(closestWidth)] ?? import_illustration_05_320.default);
   var img = root94();
-  $1427.attribute_effect(img, () => ({
-    src: $1427.get(imageSrc),
+  $1426.attribute_effect(img, () => ({
+    src: $1426.get(imageSrc),
     alt: alt(),
-    width: $1427.get(resolvedWidth) ?? void 0,
-    height: $1427.get(resolvedHeight),
+    width: $1426.get(resolvedWidth) ?? void 0,
+    height: $1426.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1427.replay_events(img);
-  $1427.append($$anchor, img);
+  $1426.replay_events(img);
+  $1426.append($$anchor, img);
 }
 
 // src/illustrations/Illustration06.svelte
-var import_disclose_version1428 = require("svelte/internal/disclose-version");
-var $1428 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1427 = require("svelte/internal/disclose-version");
+var $1427 = __toESM(require("svelte/internal/client"));
 var import_illustration_06_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-06-320.png"));
 var import_illustration_06_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-06-160.png"));
 var import_illustration_06_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-06-640.png"));
 var import_illustration_06_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-06-1024.png"));
-var root95 = $1428.from_html(`<img/>`);
+var root95 = $1427.from_html(`<img/>`);
 function Illustration06($$anchor, $$props) {
   const Illustration06WidthMap = {
     160: import_illustration_06_160.default,
@@ -57936,7 +57905,7 @@ function Illustration06($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1428.prop($$props, "height", 3, 128), alt = $1428.prop($$props, "alt", 3, "Illustration06"), className = $1428.prop($$props, "class", 3, ""), rest = $1428.rest_props($$props, [
+  let height = $1427.prop($$props, "height", 3, 128), alt = $1427.prop($$props, "alt", 3, "Illustration06"), className = $1427.prop($$props, "class", 3, ""), rest = $1427.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -57945,32 +57914,32 @@ function Illustration06($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1428.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1428.derived(() => height() ?? 128);
-  let sourceWidth = $1428.derived(() => $1428.get(resolvedWidth) ?? 320);
-  let closestWidth = $1428.derived(() => findClosestWidth($1428.get(sourceWidth), Illustration06AvailableWidths));
-  let imageSrc = $1428.derived(() => Illustration06WidthMap[$1428.get(closestWidth)] ?? import_illustration_06_320.default);
+  let resolvedWidth = $1427.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1427.derived(() => height() ?? 128);
+  let sourceWidth = $1427.derived(() => $1427.get(resolvedWidth) ?? 320);
+  let closestWidth = $1427.derived(() => findClosestWidth($1427.get(sourceWidth), Illustration06AvailableWidths));
+  let imageSrc = $1427.derived(() => Illustration06WidthMap[$1427.get(closestWidth)] ?? import_illustration_06_320.default);
   var img = root95();
-  $1428.attribute_effect(img, () => ({
-    src: $1428.get(imageSrc),
+  $1427.attribute_effect(img, () => ({
+    src: $1427.get(imageSrc),
     alt: alt(),
-    width: $1428.get(resolvedWidth) ?? void 0,
-    height: $1428.get(resolvedHeight),
+    width: $1427.get(resolvedWidth) ?? void 0,
+    height: $1427.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1428.replay_events(img);
-  $1428.append($$anchor, img);
+  $1427.replay_events(img);
+  $1427.append($$anchor, img);
 }
 
 // src/illustrations/Illustration07.svelte
-var import_disclose_version1429 = require("svelte/internal/disclose-version");
-var $1429 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1428 = require("svelte/internal/disclose-version");
+var $1428 = __toESM(require("svelte/internal/client"));
 var import_illustration_07_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-07-320.png"));
 var import_illustration_07_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-07-160.png"));
 var import_illustration_07_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-07-640.png"));
 var import_illustration_07_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-07-1024.png"));
-var root96 = $1429.from_html(`<img/>`);
+var root96 = $1428.from_html(`<img/>`);
 function Illustration07($$anchor, $$props) {
   const Illustration07WidthMap = {
     160: import_illustration_07_160.default,
@@ -57993,7 +57962,7 @@ function Illustration07($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1429.prop($$props, "height", 3, 128), alt = $1429.prop($$props, "alt", 3, "Illustration07"), className = $1429.prop($$props, "class", 3, ""), rest = $1429.rest_props($$props, [
+  let height = $1428.prop($$props, "height", 3, 128), alt = $1428.prop($$props, "alt", 3, "Illustration07"), className = $1428.prop($$props, "class", 3, ""), rest = $1428.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58002,32 +57971,32 @@ function Illustration07($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1429.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1429.derived(() => height() ?? 128);
-  let sourceWidth = $1429.derived(() => $1429.get(resolvedWidth) ?? 320);
-  let closestWidth = $1429.derived(() => findClosestWidth($1429.get(sourceWidth), Illustration07AvailableWidths));
-  let imageSrc = $1429.derived(() => Illustration07WidthMap[$1429.get(closestWidth)] ?? import_illustration_07_320.default);
+  let resolvedWidth = $1428.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1428.derived(() => height() ?? 128);
+  let sourceWidth = $1428.derived(() => $1428.get(resolvedWidth) ?? 320);
+  let closestWidth = $1428.derived(() => findClosestWidth($1428.get(sourceWidth), Illustration07AvailableWidths));
+  let imageSrc = $1428.derived(() => Illustration07WidthMap[$1428.get(closestWidth)] ?? import_illustration_07_320.default);
   var img = root96();
-  $1429.attribute_effect(img, () => ({
-    src: $1429.get(imageSrc),
+  $1428.attribute_effect(img, () => ({
+    src: $1428.get(imageSrc),
     alt: alt(),
-    width: $1429.get(resolvedWidth) ?? void 0,
-    height: $1429.get(resolvedHeight),
+    width: $1428.get(resolvedWidth) ?? void 0,
+    height: $1428.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1429.replay_events(img);
-  $1429.append($$anchor, img);
+  $1428.replay_events(img);
+  $1428.append($$anchor, img);
 }
 
 // src/illustrations/Illustration08.svelte
-var import_disclose_version1430 = require("svelte/internal/disclose-version");
-var $1430 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1429 = require("svelte/internal/disclose-version");
+var $1429 = __toESM(require("svelte/internal/client"));
 var import_illustration_08_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-08-320.png"));
 var import_illustration_08_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-08-160.png"));
 var import_illustration_08_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-08-640.png"));
 var import_illustration_08_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-08-1024.png"));
-var root97 = $1430.from_html(`<img/>`);
+var root97 = $1429.from_html(`<img/>`);
 function Illustration08($$anchor, $$props) {
   const Illustration08WidthMap = {
     160: import_illustration_08_160.default,
@@ -58050,7 +58019,7 @@ function Illustration08($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1430.prop($$props, "height", 3, 128), alt = $1430.prop($$props, "alt", 3, "Illustration08"), className = $1430.prop($$props, "class", 3, ""), rest = $1430.rest_props($$props, [
+  let height = $1429.prop($$props, "height", 3, 128), alt = $1429.prop($$props, "alt", 3, "Illustration08"), className = $1429.prop($$props, "class", 3, ""), rest = $1429.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58059,32 +58028,32 @@ function Illustration08($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1430.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1430.derived(() => height() ?? 128);
-  let sourceWidth = $1430.derived(() => $1430.get(resolvedWidth) ?? 320);
-  let closestWidth = $1430.derived(() => findClosestWidth($1430.get(sourceWidth), Illustration08AvailableWidths));
-  let imageSrc = $1430.derived(() => Illustration08WidthMap[$1430.get(closestWidth)] ?? import_illustration_08_320.default);
+  let resolvedWidth = $1429.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1429.derived(() => height() ?? 128);
+  let sourceWidth = $1429.derived(() => $1429.get(resolvedWidth) ?? 320);
+  let closestWidth = $1429.derived(() => findClosestWidth($1429.get(sourceWidth), Illustration08AvailableWidths));
+  let imageSrc = $1429.derived(() => Illustration08WidthMap[$1429.get(closestWidth)] ?? import_illustration_08_320.default);
   var img = root97();
-  $1430.attribute_effect(img, () => ({
-    src: $1430.get(imageSrc),
+  $1429.attribute_effect(img, () => ({
+    src: $1429.get(imageSrc),
     alt: alt(),
-    width: $1430.get(resolvedWidth) ?? void 0,
-    height: $1430.get(resolvedHeight),
+    width: $1429.get(resolvedWidth) ?? void 0,
+    height: $1429.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1430.replay_events(img);
-  $1430.append($$anchor, img);
+  $1429.replay_events(img);
+  $1429.append($$anchor, img);
 }
 
 // src/illustrations/Illustration09.svelte
-var import_disclose_version1431 = require("svelte/internal/disclose-version");
-var $1431 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1430 = require("svelte/internal/disclose-version");
+var $1430 = __toESM(require("svelte/internal/client"));
 var import_illustration_09_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-09-320.png"));
 var import_illustration_09_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-09-160.png"));
 var import_illustration_09_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-09-640.png"));
 var import_illustration_09_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-09-1024.png"));
-var root98 = $1431.from_html(`<img/>`);
+var root98 = $1430.from_html(`<img/>`);
 function Illustration09($$anchor, $$props) {
   const Illustration09WidthMap = {
     160: import_illustration_09_160.default,
@@ -58107,7 +58076,7 @@ function Illustration09($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1431.prop($$props, "height", 3, 128), alt = $1431.prop($$props, "alt", 3, "Illustration09"), className = $1431.prop($$props, "class", 3, ""), rest = $1431.rest_props($$props, [
+  let height = $1430.prop($$props, "height", 3, 128), alt = $1430.prop($$props, "alt", 3, "Illustration09"), className = $1430.prop($$props, "class", 3, ""), rest = $1430.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58116,32 +58085,32 @@ function Illustration09($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1431.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1431.derived(() => height() ?? 128);
-  let sourceWidth = $1431.derived(() => $1431.get(resolvedWidth) ?? 320);
-  let closestWidth = $1431.derived(() => findClosestWidth($1431.get(sourceWidth), Illustration09AvailableWidths));
-  let imageSrc = $1431.derived(() => Illustration09WidthMap[$1431.get(closestWidth)] ?? import_illustration_09_320.default);
+  let resolvedWidth = $1430.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1430.derived(() => height() ?? 128);
+  let sourceWidth = $1430.derived(() => $1430.get(resolvedWidth) ?? 320);
+  let closestWidth = $1430.derived(() => findClosestWidth($1430.get(sourceWidth), Illustration09AvailableWidths));
+  let imageSrc = $1430.derived(() => Illustration09WidthMap[$1430.get(closestWidth)] ?? import_illustration_09_320.default);
   var img = root98();
-  $1431.attribute_effect(img, () => ({
-    src: $1431.get(imageSrc),
+  $1430.attribute_effect(img, () => ({
+    src: $1430.get(imageSrc),
     alt: alt(),
-    width: $1431.get(resolvedWidth) ?? void 0,
-    height: $1431.get(resolvedHeight),
+    width: $1430.get(resolvedWidth) ?? void 0,
+    height: $1430.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1431.replay_events(img);
-  $1431.append($$anchor, img);
+  $1430.replay_events(img);
+  $1430.append($$anchor, img);
 }
 
 // src/illustrations/Illustration10.svelte
-var import_disclose_version1432 = require("svelte/internal/disclose-version");
-var $1432 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1431 = require("svelte/internal/disclose-version");
+var $1431 = __toESM(require("svelte/internal/client"));
 var import_illustration_10_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-10-320.png"));
 var import_illustration_10_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-10-160.png"));
 var import_illustration_10_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-10-640.png"));
 var import_illustration_10_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-10-1024.png"));
-var root99 = $1432.from_html(`<img/>`);
+var root99 = $1431.from_html(`<img/>`);
 function Illustration10($$anchor, $$props) {
   const Illustration10WidthMap = {
     160: import_illustration_10_160.default,
@@ -58164,7 +58133,7 @@ function Illustration10($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1432.prop($$props, "height", 3, 128), alt = $1432.prop($$props, "alt", 3, "Illustration10"), className = $1432.prop($$props, "class", 3, ""), rest = $1432.rest_props($$props, [
+  let height = $1431.prop($$props, "height", 3, 128), alt = $1431.prop($$props, "alt", 3, "Illustration10"), className = $1431.prop($$props, "class", 3, ""), rest = $1431.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58173,32 +58142,32 @@ function Illustration10($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1432.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1432.derived(() => height() ?? 128);
-  let sourceWidth = $1432.derived(() => $1432.get(resolvedWidth) ?? 320);
-  let closestWidth = $1432.derived(() => findClosestWidth($1432.get(sourceWidth), Illustration10AvailableWidths));
-  let imageSrc = $1432.derived(() => Illustration10WidthMap[$1432.get(closestWidth)] ?? import_illustration_10_320.default);
+  let resolvedWidth = $1431.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1431.derived(() => height() ?? 128);
+  let sourceWidth = $1431.derived(() => $1431.get(resolvedWidth) ?? 320);
+  let closestWidth = $1431.derived(() => findClosestWidth($1431.get(sourceWidth), Illustration10AvailableWidths));
+  let imageSrc = $1431.derived(() => Illustration10WidthMap[$1431.get(closestWidth)] ?? import_illustration_10_320.default);
   var img = root99();
-  $1432.attribute_effect(img, () => ({
-    src: $1432.get(imageSrc),
+  $1431.attribute_effect(img, () => ({
+    src: $1431.get(imageSrc),
     alt: alt(),
-    width: $1432.get(resolvedWidth) ?? void 0,
-    height: $1432.get(resolvedHeight),
+    width: $1431.get(resolvedWidth) ?? void 0,
+    height: $1431.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1432.replay_events(img);
-  $1432.append($$anchor, img);
+  $1431.replay_events(img);
+  $1431.append($$anchor, img);
 }
 
 // src/illustrations/Illustration11.svelte
-var import_disclose_version1433 = require("svelte/internal/disclose-version");
-var $1433 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1432 = require("svelte/internal/disclose-version");
+var $1432 = __toESM(require("svelte/internal/client"));
 var import_illustration_11_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-11-320.png"));
 var import_illustration_11_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-11-160.png"));
 var import_illustration_11_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-11-640.png"));
 var import_illustration_11_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-11-1024.png"));
-var root100 = $1433.from_html(`<img/>`);
+var root100 = $1432.from_html(`<img/>`);
 function Illustration11($$anchor, $$props) {
   const Illustration11WidthMap = {
     160: import_illustration_11_160.default,
@@ -58221,7 +58190,7 @@ function Illustration11($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1433.prop($$props, "height", 3, 128), alt = $1433.prop($$props, "alt", 3, "Illustration11"), className = $1433.prop($$props, "class", 3, ""), rest = $1433.rest_props($$props, [
+  let height = $1432.prop($$props, "height", 3, 128), alt = $1432.prop($$props, "alt", 3, "Illustration11"), className = $1432.prop($$props, "class", 3, ""), rest = $1432.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58230,32 +58199,32 @@ function Illustration11($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1433.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1433.derived(() => height() ?? 128);
-  let sourceWidth = $1433.derived(() => $1433.get(resolvedWidth) ?? 320);
-  let closestWidth = $1433.derived(() => findClosestWidth($1433.get(sourceWidth), Illustration11AvailableWidths));
-  let imageSrc = $1433.derived(() => Illustration11WidthMap[$1433.get(closestWidth)] ?? import_illustration_11_320.default);
+  let resolvedWidth = $1432.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1432.derived(() => height() ?? 128);
+  let sourceWidth = $1432.derived(() => $1432.get(resolvedWidth) ?? 320);
+  let closestWidth = $1432.derived(() => findClosestWidth($1432.get(sourceWidth), Illustration11AvailableWidths));
+  let imageSrc = $1432.derived(() => Illustration11WidthMap[$1432.get(closestWidth)] ?? import_illustration_11_320.default);
   var img = root100();
-  $1433.attribute_effect(img, () => ({
-    src: $1433.get(imageSrc),
+  $1432.attribute_effect(img, () => ({
+    src: $1432.get(imageSrc),
     alt: alt(),
-    width: $1433.get(resolvedWidth) ?? void 0,
-    height: $1433.get(resolvedHeight),
+    width: $1432.get(resolvedWidth) ?? void 0,
+    height: $1432.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1433.replay_events(img);
-  $1433.append($$anchor, img);
+  $1432.replay_events(img);
+  $1432.append($$anchor, img);
 }
 
 // src/illustrations/Illustration12.svelte
-var import_disclose_version1434 = require("svelte/internal/disclose-version");
-var $1434 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1433 = require("svelte/internal/disclose-version");
+var $1433 = __toESM(require("svelte/internal/client"));
 var import_illustration_12_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12-320.png"));
 var import_illustration_12_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12-160.png"));
 var import_illustration_12_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12-640.png"));
 var import_illustration_12_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12-1024.png"));
-var root101 = $1434.from_html(`<img/>`);
+var root101 = $1433.from_html(`<img/>`);
 function Illustration12($$anchor, $$props) {
   const Illustration12WidthMap = {
     160: import_illustration_12_160.default,
@@ -58278,7 +58247,7 @@ function Illustration12($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1434.prop($$props, "height", 3, 128), alt = $1434.prop($$props, "alt", 3, "Illustration12"), className = $1434.prop($$props, "class", 3, ""), rest = $1434.rest_props($$props, [
+  let height = $1433.prop($$props, "height", 3, 128), alt = $1433.prop($$props, "alt", 3, "Illustration12"), className = $1433.prop($$props, "class", 3, ""), rest = $1433.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58287,34 +58256,34 @@ function Illustration12($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1434.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1434.derived(() => height() ?? 128);
-  let sourceWidth = $1434.derived(() => $1434.get(resolvedWidth) ?? 320);
-  let closestWidth = $1434.derived(() => findClosestWidth($1434.get(sourceWidth), Illustration12AvailableWidths));
-  let imageSrc = $1434.derived(() => Illustration12WidthMap[$1434.get(closestWidth)] ?? import_illustration_12_320.default);
+  let resolvedWidth = $1433.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1433.derived(() => height() ?? 128);
+  let sourceWidth = $1433.derived(() => $1433.get(resolvedWidth) ?? 320);
+  let closestWidth = $1433.derived(() => findClosestWidth($1433.get(sourceWidth), Illustration12AvailableWidths));
+  let imageSrc = $1433.derived(() => Illustration12WidthMap[$1433.get(closestWidth)] ?? import_illustration_12_320.default);
   var img = root101();
-  $1434.attribute_effect(img, () => ({
-    src: $1434.get(imageSrc),
+  $1433.attribute_effect(img, () => ({
+    src: $1433.get(imageSrc),
     alt: alt(),
-    width: $1434.get(resolvedWidth) ?? void 0,
-    height: $1434.get(resolvedHeight),
+    width: $1433.get(resolvedWidth) ?? void 0,
+    height: $1433.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1434.replay_events(img);
-  $1434.append($$anchor, img);
+  $1433.replay_events(img);
+  $1433.append($$anchor, img);
 }
 
 // src/illustrations/Illustration.svelte
-var import_disclose_version1435 = require("svelte/internal/disclose-version");
-var $1435 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1434 = require("svelte/internal/disclose-version");
+var $1434 = __toESM(require("svelte/internal/client"));
 var import_illustration_12 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12.png"));
 var import_illustration_122 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-12.png"));
 var import_illustration_16 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-16.png"));
 var import_illustration_20 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-20.png"));
 var import_illustration_24 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-24.png"));
 var import_illustration_28 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-28.png"));
-var root102 = $1435.from_html(`<img/>`);
+var root102 = $1434.from_html(`<img/>`);
 function Illustration($$anchor, $$props) {
   const IllustrationWidthMap = {
     12: import_illustration_122.default,
@@ -58338,7 +58307,7 @@ function Illustration($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1435.prop($$props, "height", 3, 128), alt = $1435.prop($$props, "alt", 3, "Illustration"), className = $1435.prop($$props, "class", 3, ""), rest = $1435.rest_props($$props, [
+  let height = $1434.prop($$props, "height", 3, 128), alt = $1434.prop($$props, "alt", 3, "Illustration"), className = $1434.prop($$props, "class", 3, ""), rest = $1434.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58347,32 +58316,32 @@ function Illustration($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1435.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1435.derived(() => height() ?? 128);
-  let sourceWidth = $1435.derived(() => $1435.get(resolvedWidth) ?? 320);
-  let closestWidth = $1435.derived(() => findClosestWidth($1435.get(sourceWidth), IllustrationAvailableWidths));
-  let imageSrc = $1435.derived(() => IllustrationWidthMap[$1435.get(closestWidth)] ?? import_illustration_12.default);
+  let resolvedWidth = $1434.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1434.derived(() => height() ?? 128);
+  let sourceWidth = $1434.derived(() => $1434.get(resolvedWidth) ?? 320);
+  let closestWidth = $1434.derived(() => findClosestWidth($1434.get(sourceWidth), IllustrationAvailableWidths));
+  let imageSrc = $1434.derived(() => IllustrationWidthMap[$1434.get(closestWidth)] ?? import_illustration_12.default);
   var img = root102();
-  $1435.attribute_effect(img, () => ({
-    src: $1435.get(imageSrc),
+  $1434.attribute_effect(img, () => ({
+    src: $1434.get(imageSrc),
     alt: alt(),
-    width: $1435.get(resolvedWidth) ?? void 0,
-    height: $1435.get(resolvedHeight),
+    width: $1434.get(resolvedWidth) ?? void 0,
+    height: $1434.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1435.replay_events(img);
-  $1435.append($$anchor, img);
+  $1434.replay_events(img);
+  $1434.append($$anchor, img);
 }
 
 // src/illustrations/Illustration13.svelte
-var import_disclose_version1436 = require("svelte/internal/disclose-version");
-var $1436 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1435 = require("svelte/internal/disclose-version");
+var $1435 = __toESM(require("svelte/internal/client"));
 var import_illustration_13_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-13-320.png"));
 var import_illustration_13_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-13-160.png"));
 var import_illustration_13_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-13-640.png"));
 var import_illustration_13_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-13-1024.png"));
-var root103 = $1436.from_html(`<img/>`);
+var root103 = $1435.from_html(`<img/>`);
 function Illustration13($$anchor, $$props) {
   const Illustration13WidthMap = {
     160: import_illustration_13_160.default,
@@ -58395,7 +58364,7 @@ function Illustration13($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1436.prop($$props, "height", 3, 128), alt = $1436.prop($$props, "alt", 3, "Illustration13"), className = $1436.prop($$props, "class", 3, ""), rest = $1436.rest_props($$props, [
+  let height = $1435.prop($$props, "height", 3, 128), alt = $1435.prop($$props, "alt", 3, "Illustration13"), className = $1435.prop($$props, "class", 3, ""), rest = $1435.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58404,32 +58373,32 @@ function Illustration13($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1436.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1436.derived(() => height() ?? 128);
-  let sourceWidth = $1436.derived(() => $1436.get(resolvedWidth) ?? 320);
-  let closestWidth = $1436.derived(() => findClosestWidth($1436.get(sourceWidth), Illustration13AvailableWidths));
-  let imageSrc = $1436.derived(() => Illustration13WidthMap[$1436.get(closestWidth)] ?? import_illustration_13_320.default);
+  let resolvedWidth = $1435.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1435.derived(() => height() ?? 128);
+  let sourceWidth = $1435.derived(() => $1435.get(resolvedWidth) ?? 320);
+  let closestWidth = $1435.derived(() => findClosestWidth($1435.get(sourceWidth), Illustration13AvailableWidths));
+  let imageSrc = $1435.derived(() => Illustration13WidthMap[$1435.get(closestWidth)] ?? import_illustration_13_320.default);
   var img = root103();
-  $1436.attribute_effect(img, () => ({
-    src: $1436.get(imageSrc),
+  $1435.attribute_effect(img, () => ({
+    src: $1435.get(imageSrc),
     alt: alt(),
-    width: $1436.get(resolvedWidth) ?? void 0,
-    height: $1436.get(resolvedHeight),
+    width: $1435.get(resolvedWidth) ?? void 0,
+    height: $1435.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1436.replay_events(img);
-  $1436.append($$anchor, img);
+  $1435.replay_events(img);
+  $1435.append($$anchor, img);
 }
 
 // src/illustrations/Illustration14.svelte
-var import_disclose_version1437 = require("svelte/internal/disclose-version");
-var $1437 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1436 = require("svelte/internal/disclose-version");
+var $1436 = __toESM(require("svelte/internal/client"));
 var import_illustration_14_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-14-320.png"));
 var import_illustration_14_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-14-160.png"));
 var import_illustration_14_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-14-640.png"));
 var import_illustration_14_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-14-1024.png"));
-var root104 = $1437.from_html(`<img/>`);
+var root104 = $1436.from_html(`<img/>`);
 function Illustration14($$anchor, $$props) {
   const Illustration14WidthMap = {
     160: import_illustration_14_160.default,
@@ -58452,7 +58421,7 @@ function Illustration14($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1437.prop($$props, "height", 3, 128), alt = $1437.prop($$props, "alt", 3, "Illustration14"), className = $1437.prop($$props, "class", 3, ""), rest = $1437.rest_props($$props, [
+  let height = $1436.prop($$props, "height", 3, 128), alt = $1436.prop($$props, "alt", 3, "Illustration14"), className = $1436.prop($$props, "class", 3, ""), rest = $1436.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58461,32 +58430,32 @@ function Illustration14($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1437.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1437.derived(() => height() ?? 128);
-  let sourceWidth = $1437.derived(() => $1437.get(resolvedWidth) ?? 320);
-  let closestWidth = $1437.derived(() => findClosestWidth($1437.get(sourceWidth), Illustration14AvailableWidths));
-  let imageSrc = $1437.derived(() => Illustration14WidthMap[$1437.get(closestWidth)] ?? import_illustration_14_320.default);
+  let resolvedWidth = $1436.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1436.derived(() => height() ?? 128);
+  let sourceWidth = $1436.derived(() => $1436.get(resolvedWidth) ?? 320);
+  let closestWidth = $1436.derived(() => findClosestWidth($1436.get(sourceWidth), Illustration14AvailableWidths));
+  let imageSrc = $1436.derived(() => Illustration14WidthMap[$1436.get(closestWidth)] ?? import_illustration_14_320.default);
   var img = root104();
-  $1437.attribute_effect(img, () => ({
-    src: $1437.get(imageSrc),
+  $1436.attribute_effect(img, () => ({
+    src: $1436.get(imageSrc),
     alt: alt(),
-    width: $1437.get(resolvedWidth) ?? void 0,
-    height: $1437.get(resolvedHeight),
+    width: $1436.get(resolvedWidth) ?? void 0,
+    height: $1436.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1437.replay_events(img);
-  $1437.append($$anchor, img);
+  $1436.replay_events(img);
+  $1436.append($$anchor, img);
 }
 
 // src/illustrations/Illustration15.svelte
-var import_disclose_version1438 = require("svelte/internal/disclose-version");
-var $1438 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1437 = require("svelte/internal/disclose-version");
+var $1437 = __toESM(require("svelte/internal/client"));
 var import_illustration_15_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-15-320.png"));
 var import_illustration_15_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-15-160.png"));
 var import_illustration_15_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-15-640.png"));
 var import_illustration_15_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-15-1024.png"));
-var root105 = $1438.from_html(`<img/>`);
+var root105 = $1437.from_html(`<img/>`);
 function Illustration15($$anchor, $$props) {
   const Illustration15WidthMap = {
     160: import_illustration_15_160.default,
@@ -58509,7 +58478,7 @@ function Illustration15($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1438.prop($$props, "height", 3, 128), alt = $1438.prop($$props, "alt", 3, "Illustration15"), className = $1438.prop($$props, "class", 3, ""), rest = $1438.rest_props($$props, [
+  let height = $1437.prop($$props, "height", 3, 128), alt = $1437.prop($$props, "alt", 3, "Illustration15"), className = $1437.prop($$props, "class", 3, ""), rest = $1437.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58518,32 +58487,32 @@ function Illustration15($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1438.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1438.derived(() => height() ?? 128);
-  let sourceWidth = $1438.derived(() => $1438.get(resolvedWidth) ?? 320);
-  let closestWidth = $1438.derived(() => findClosestWidth($1438.get(sourceWidth), Illustration15AvailableWidths));
-  let imageSrc = $1438.derived(() => Illustration15WidthMap[$1438.get(closestWidth)] ?? import_illustration_15_320.default);
+  let resolvedWidth = $1437.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1437.derived(() => height() ?? 128);
+  let sourceWidth = $1437.derived(() => $1437.get(resolvedWidth) ?? 320);
+  let closestWidth = $1437.derived(() => findClosestWidth($1437.get(sourceWidth), Illustration15AvailableWidths));
+  let imageSrc = $1437.derived(() => Illustration15WidthMap[$1437.get(closestWidth)] ?? import_illustration_15_320.default);
   var img = root105();
-  $1438.attribute_effect(img, () => ({
-    src: $1438.get(imageSrc),
+  $1437.attribute_effect(img, () => ({
+    src: $1437.get(imageSrc),
     alt: alt(),
-    width: $1438.get(resolvedWidth) ?? void 0,
-    height: $1438.get(resolvedHeight),
+    width: $1437.get(resolvedWidth) ?? void 0,
+    height: $1437.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1438.replay_events(img);
-  $1438.append($$anchor, img);
+  $1437.replay_events(img);
+  $1437.append($$anchor, img);
 }
 
 // src/illustrations/Illustration16.svelte
-var import_disclose_version1439 = require("svelte/internal/disclose-version");
-var $1439 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1438 = require("svelte/internal/disclose-version");
+var $1438 = __toESM(require("svelte/internal/client"));
 var import_illustration_16_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-16-320.png"));
 var import_illustration_16_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-16-160.png"));
 var import_illustration_16_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-16-640.png"));
 var import_illustration_16_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-16-1024.png"));
-var root106 = $1439.from_html(`<img/>`);
+var root106 = $1438.from_html(`<img/>`);
 function Illustration16($$anchor, $$props) {
   const Illustration16WidthMap = {
     160: import_illustration_16_160.default,
@@ -58566,7 +58535,7 @@ function Illustration16($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1439.prop($$props, "height", 3, 128), alt = $1439.prop($$props, "alt", 3, "Illustration16"), className = $1439.prop($$props, "class", 3, ""), rest = $1439.rest_props($$props, [
+  let height = $1438.prop($$props, "height", 3, 128), alt = $1438.prop($$props, "alt", 3, "Illustration16"), className = $1438.prop($$props, "class", 3, ""), rest = $1438.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58575,32 +58544,32 @@ function Illustration16($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1439.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1439.derived(() => height() ?? 128);
-  let sourceWidth = $1439.derived(() => $1439.get(resolvedWidth) ?? 320);
-  let closestWidth = $1439.derived(() => findClosestWidth($1439.get(sourceWidth), Illustration16AvailableWidths));
-  let imageSrc = $1439.derived(() => Illustration16WidthMap[$1439.get(closestWidth)] ?? import_illustration_16_320.default);
+  let resolvedWidth = $1438.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1438.derived(() => height() ?? 128);
+  let sourceWidth = $1438.derived(() => $1438.get(resolvedWidth) ?? 320);
+  let closestWidth = $1438.derived(() => findClosestWidth($1438.get(sourceWidth), Illustration16AvailableWidths));
+  let imageSrc = $1438.derived(() => Illustration16WidthMap[$1438.get(closestWidth)] ?? import_illustration_16_320.default);
   var img = root106();
-  $1439.attribute_effect(img, () => ({
-    src: $1439.get(imageSrc),
+  $1438.attribute_effect(img, () => ({
+    src: $1438.get(imageSrc),
     alt: alt(),
-    width: $1439.get(resolvedWidth) ?? void 0,
-    height: $1439.get(resolvedHeight),
+    width: $1438.get(resolvedWidth) ?? void 0,
+    height: $1438.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1439.replay_events(img);
-  $1439.append($$anchor, img);
+  $1438.replay_events(img);
+  $1438.append($$anchor, img);
 }
 
 // src/illustrations/Illustration17.svelte
-var import_disclose_version1440 = require("svelte/internal/disclose-version");
-var $1440 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1439 = require("svelte/internal/disclose-version");
+var $1439 = __toESM(require("svelte/internal/client"));
 var import_illustration_17_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-17-320.png"));
 var import_illustration_17_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-17-160.png"));
 var import_illustration_17_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-17-640.png"));
 var import_illustration_17_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-17-1024.png"));
-var root107 = $1440.from_html(`<img/>`);
+var root107 = $1439.from_html(`<img/>`);
 function Illustration17($$anchor, $$props) {
   const Illustration17WidthMap = {
     160: import_illustration_17_160.default,
@@ -58623,7 +58592,7 @@ function Illustration17($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1440.prop($$props, "height", 3, 128), alt = $1440.prop($$props, "alt", 3, "Illustration17"), className = $1440.prop($$props, "class", 3, ""), rest = $1440.rest_props($$props, [
+  let height = $1439.prop($$props, "height", 3, 128), alt = $1439.prop($$props, "alt", 3, "Illustration17"), className = $1439.prop($$props, "class", 3, ""), rest = $1439.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58632,32 +58601,32 @@ function Illustration17($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1440.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1440.derived(() => height() ?? 128);
-  let sourceWidth = $1440.derived(() => $1440.get(resolvedWidth) ?? 320);
-  let closestWidth = $1440.derived(() => findClosestWidth($1440.get(sourceWidth), Illustration17AvailableWidths));
-  let imageSrc = $1440.derived(() => Illustration17WidthMap[$1440.get(closestWidth)] ?? import_illustration_17_320.default);
+  let resolvedWidth = $1439.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1439.derived(() => height() ?? 128);
+  let sourceWidth = $1439.derived(() => $1439.get(resolvedWidth) ?? 320);
+  let closestWidth = $1439.derived(() => findClosestWidth($1439.get(sourceWidth), Illustration17AvailableWidths));
+  let imageSrc = $1439.derived(() => Illustration17WidthMap[$1439.get(closestWidth)] ?? import_illustration_17_320.default);
   var img = root107();
-  $1440.attribute_effect(img, () => ({
-    src: $1440.get(imageSrc),
+  $1439.attribute_effect(img, () => ({
+    src: $1439.get(imageSrc),
     alt: alt(),
-    width: $1440.get(resolvedWidth) ?? void 0,
-    height: $1440.get(resolvedHeight),
+    width: $1439.get(resolvedWidth) ?? void 0,
+    height: $1439.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1440.replay_events(img);
-  $1440.append($$anchor, img);
+  $1439.replay_events(img);
+  $1439.append($$anchor, img);
 }
 
 // src/illustrations/Illustration18.svelte
-var import_disclose_version1441 = require("svelte/internal/disclose-version");
-var $1441 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1440 = require("svelte/internal/disclose-version");
+var $1440 = __toESM(require("svelte/internal/client"));
 var import_illustration_18_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-18-320.png"));
 var import_illustration_18_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-18-160.png"));
 var import_illustration_18_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-18-640.png"));
 var import_illustration_18_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-18-1024.png"));
-var root108 = $1441.from_html(`<img/>`);
+var root108 = $1440.from_html(`<img/>`);
 function Illustration18($$anchor, $$props) {
   const Illustration18WidthMap = {
     160: import_illustration_18_160.default,
@@ -58680,7 +58649,7 @@ function Illustration18($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1441.prop($$props, "height", 3, 128), alt = $1441.prop($$props, "alt", 3, "Illustration18"), className = $1441.prop($$props, "class", 3, ""), rest = $1441.rest_props($$props, [
+  let height = $1440.prop($$props, "height", 3, 128), alt = $1440.prop($$props, "alt", 3, "Illustration18"), className = $1440.prop($$props, "class", 3, ""), rest = $1440.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58689,32 +58658,32 @@ function Illustration18($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1441.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1441.derived(() => height() ?? 128);
-  let sourceWidth = $1441.derived(() => $1441.get(resolvedWidth) ?? 320);
-  let closestWidth = $1441.derived(() => findClosestWidth($1441.get(sourceWidth), Illustration18AvailableWidths));
-  let imageSrc = $1441.derived(() => Illustration18WidthMap[$1441.get(closestWidth)] ?? import_illustration_18_320.default);
+  let resolvedWidth = $1440.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1440.derived(() => height() ?? 128);
+  let sourceWidth = $1440.derived(() => $1440.get(resolvedWidth) ?? 320);
+  let closestWidth = $1440.derived(() => findClosestWidth($1440.get(sourceWidth), Illustration18AvailableWidths));
+  let imageSrc = $1440.derived(() => Illustration18WidthMap[$1440.get(closestWidth)] ?? import_illustration_18_320.default);
   var img = root108();
-  $1441.attribute_effect(img, () => ({
-    src: $1441.get(imageSrc),
+  $1440.attribute_effect(img, () => ({
+    src: $1440.get(imageSrc),
     alt: alt(),
-    width: $1441.get(resolvedWidth) ?? void 0,
-    height: $1441.get(resolvedHeight),
+    width: $1440.get(resolvedWidth) ?? void 0,
+    height: $1440.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1441.replay_events(img);
-  $1441.append($$anchor, img);
+  $1440.replay_events(img);
+  $1440.append($$anchor, img);
 }
 
 // src/illustrations/Illustration19.svelte
-var import_disclose_version1442 = require("svelte/internal/disclose-version");
-var $1442 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1441 = require("svelte/internal/disclose-version");
+var $1441 = __toESM(require("svelte/internal/client"));
 var import_illustration_19_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-19-320.png"));
 var import_illustration_19_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-19-160.png"));
 var import_illustration_19_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-19-640.png"));
 var import_illustration_19_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-19-1024.png"));
-var root109 = $1442.from_html(`<img/>`);
+var root109 = $1441.from_html(`<img/>`);
 function Illustration19($$anchor, $$props) {
   const Illustration19WidthMap = {
     160: import_illustration_19_160.default,
@@ -58737,7 +58706,7 @@ function Illustration19($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1442.prop($$props, "height", 3, 128), alt = $1442.prop($$props, "alt", 3, "Illustration19"), className = $1442.prop($$props, "class", 3, ""), rest = $1442.rest_props($$props, [
+  let height = $1441.prop($$props, "height", 3, 128), alt = $1441.prop($$props, "alt", 3, "Illustration19"), className = $1441.prop($$props, "class", 3, ""), rest = $1441.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58746,32 +58715,32 @@ function Illustration19($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1442.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1442.derived(() => height() ?? 128);
-  let sourceWidth = $1442.derived(() => $1442.get(resolvedWidth) ?? 320);
-  let closestWidth = $1442.derived(() => findClosestWidth($1442.get(sourceWidth), Illustration19AvailableWidths));
-  let imageSrc = $1442.derived(() => Illustration19WidthMap[$1442.get(closestWidth)] ?? import_illustration_19_320.default);
+  let resolvedWidth = $1441.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1441.derived(() => height() ?? 128);
+  let sourceWidth = $1441.derived(() => $1441.get(resolvedWidth) ?? 320);
+  let closestWidth = $1441.derived(() => findClosestWidth($1441.get(sourceWidth), Illustration19AvailableWidths));
+  let imageSrc = $1441.derived(() => Illustration19WidthMap[$1441.get(closestWidth)] ?? import_illustration_19_320.default);
   var img = root109();
-  $1442.attribute_effect(img, () => ({
-    src: $1442.get(imageSrc),
+  $1441.attribute_effect(img, () => ({
+    src: $1441.get(imageSrc),
     alt: alt(),
-    width: $1442.get(resolvedWidth) ?? void 0,
-    height: $1442.get(resolvedHeight),
+    width: $1441.get(resolvedWidth) ?? void 0,
+    height: $1441.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1442.replay_events(img);
-  $1442.append($$anchor, img);
+  $1441.replay_events(img);
+  $1441.append($$anchor, img);
 }
 
 // src/illustrations/Illustration20.svelte
-var import_disclose_version1443 = require("svelte/internal/disclose-version");
-var $1443 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1442 = require("svelte/internal/disclose-version");
+var $1442 = __toESM(require("svelte/internal/client"));
 var import_illustration_20_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-20-320.png"));
 var import_illustration_20_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-20-160.png"));
 var import_illustration_20_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-20-640.png"));
 var import_illustration_20_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-20-1024.png"));
-var root110 = $1443.from_html(`<img/>`);
+var root110 = $1442.from_html(`<img/>`);
 function Illustration20($$anchor, $$props) {
   const Illustration20WidthMap = {
     160: import_illustration_20_160.default,
@@ -58794,7 +58763,7 @@ function Illustration20($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1443.prop($$props, "height", 3, 128), alt = $1443.prop($$props, "alt", 3, "Illustration20"), className = $1443.prop($$props, "class", 3, ""), rest = $1443.rest_props($$props, [
+  let height = $1442.prop($$props, "height", 3, 128), alt = $1442.prop($$props, "alt", 3, "Illustration20"), className = $1442.prop($$props, "class", 3, ""), rest = $1442.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58803,32 +58772,32 @@ function Illustration20($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1443.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1443.derived(() => height() ?? 128);
-  let sourceWidth = $1443.derived(() => $1443.get(resolvedWidth) ?? 320);
-  let closestWidth = $1443.derived(() => findClosestWidth($1443.get(sourceWidth), Illustration20AvailableWidths));
-  let imageSrc = $1443.derived(() => Illustration20WidthMap[$1443.get(closestWidth)] ?? import_illustration_20_320.default);
+  let resolvedWidth = $1442.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1442.derived(() => height() ?? 128);
+  let sourceWidth = $1442.derived(() => $1442.get(resolvedWidth) ?? 320);
+  let closestWidth = $1442.derived(() => findClosestWidth($1442.get(sourceWidth), Illustration20AvailableWidths));
+  let imageSrc = $1442.derived(() => Illustration20WidthMap[$1442.get(closestWidth)] ?? import_illustration_20_320.default);
   var img = root110();
-  $1443.attribute_effect(img, () => ({
-    src: $1443.get(imageSrc),
+  $1442.attribute_effect(img, () => ({
+    src: $1442.get(imageSrc),
     alt: alt(),
-    width: $1443.get(resolvedWidth) ?? void 0,
-    height: $1443.get(resolvedHeight),
+    width: $1442.get(resolvedWidth) ?? void 0,
+    height: $1442.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1443.replay_events(img);
-  $1443.append($$anchor, img);
+  $1442.replay_events(img);
+  $1442.append($$anchor, img);
 }
 
 // src/illustrations/Illustration21.svelte
-var import_disclose_version1444 = require("svelte/internal/disclose-version");
-var $1444 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1443 = require("svelte/internal/disclose-version");
+var $1443 = __toESM(require("svelte/internal/client"));
 var import_illustration_21_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-21-320.png"));
 var import_illustration_21_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-21-160.png"));
 var import_illustration_21_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-21-640.png"));
 var import_illustration_21_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-21-1024.png"));
-var root111 = $1444.from_html(`<img/>`);
+var root111 = $1443.from_html(`<img/>`);
 function Illustration21($$anchor, $$props) {
   const Illustration21WidthMap = {
     160: import_illustration_21_160.default,
@@ -58851,7 +58820,7 @@ function Illustration21($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1444.prop($$props, "height", 3, 128), alt = $1444.prop($$props, "alt", 3, "Illustration21"), className = $1444.prop($$props, "class", 3, ""), rest = $1444.rest_props($$props, [
+  let height = $1443.prop($$props, "height", 3, 128), alt = $1443.prop($$props, "alt", 3, "Illustration21"), className = $1443.prop($$props, "class", 3, ""), rest = $1443.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58860,32 +58829,32 @@ function Illustration21($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1444.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1444.derived(() => height() ?? 128);
-  let sourceWidth = $1444.derived(() => $1444.get(resolvedWidth) ?? 320);
-  let closestWidth = $1444.derived(() => findClosestWidth($1444.get(sourceWidth), Illustration21AvailableWidths));
-  let imageSrc = $1444.derived(() => Illustration21WidthMap[$1444.get(closestWidth)] ?? import_illustration_21_320.default);
+  let resolvedWidth = $1443.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1443.derived(() => height() ?? 128);
+  let sourceWidth = $1443.derived(() => $1443.get(resolvedWidth) ?? 320);
+  let closestWidth = $1443.derived(() => findClosestWidth($1443.get(sourceWidth), Illustration21AvailableWidths));
+  let imageSrc = $1443.derived(() => Illustration21WidthMap[$1443.get(closestWidth)] ?? import_illustration_21_320.default);
   var img = root111();
-  $1444.attribute_effect(img, () => ({
-    src: $1444.get(imageSrc),
+  $1443.attribute_effect(img, () => ({
+    src: $1443.get(imageSrc),
     alt: alt(),
-    width: $1444.get(resolvedWidth) ?? void 0,
-    height: $1444.get(resolvedHeight),
+    width: $1443.get(resolvedWidth) ?? void 0,
+    height: $1443.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1444.replay_events(img);
-  $1444.append($$anchor, img);
+  $1443.replay_events(img);
+  $1443.append($$anchor, img);
 }
 
 // src/illustrations/Illustration22.svelte
-var import_disclose_version1445 = require("svelte/internal/disclose-version");
-var $1445 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1444 = require("svelte/internal/disclose-version");
+var $1444 = __toESM(require("svelte/internal/client"));
 var import_illustration_22_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-22-320.png"));
 var import_illustration_22_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-22-160.png"));
 var import_illustration_22_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-22-640.png"));
 var import_illustration_22_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-22-1024.png"));
-var root112 = $1445.from_html(`<img/>`);
+var root112 = $1444.from_html(`<img/>`);
 function Illustration22($$anchor, $$props) {
   const Illustration22WidthMap = {
     160: import_illustration_22_160.default,
@@ -58908,7 +58877,7 @@ function Illustration22($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1445.prop($$props, "height", 3, 128), alt = $1445.prop($$props, "alt", 3, "Illustration22"), className = $1445.prop($$props, "class", 3, ""), rest = $1445.rest_props($$props, [
+  let height = $1444.prop($$props, "height", 3, 128), alt = $1444.prop($$props, "alt", 3, "Illustration22"), className = $1444.prop($$props, "class", 3, ""), rest = $1444.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58917,32 +58886,32 @@ function Illustration22($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1445.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1445.derived(() => height() ?? 128);
-  let sourceWidth = $1445.derived(() => $1445.get(resolvedWidth) ?? 320);
-  let closestWidth = $1445.derived(() => findClosestWidth($1445.get(sourceWidth), Illustration22AvailableWidths));
-  let imageSrc = $1445.derived(() => Illustration22WidthMap[$1445.get(closestWidth)] ?? import_illustration_22_320.default);
+  let resolvedWidth = $1444.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1444.derived(() => height() ?? 128);
+  let sourceWidth = $1444.derived(() => $1444.get(resolvedWidth) ?? 320);
+  let closestWidth = $1444.derived(() => findClosestWidth($1444.get(sourceWidth), Illustration22AvailableWidths));
+  let imageSrc = $1444.derived(() => Illustration22WidthMap[$1444.get(closestWidth)] ?? import_illustration_22_320.default);
   var img = root112();
-  $1445.attribute_effect(img, () => ({
-    src: $1445.get(imageSrc),
+  $1444.attribute_effect(img, () => ({
+    src: $1444.get(imageSrc),
     alt: alt(),
-    width: $1445.get(resolvedWidth) ?? void 0,
-    height: $1445.get(resolvedHeight),
+    width: $1444.get(resolvedWidth) ?? void 0,
+    height: $1444.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1445.replay_events(img);
-  $1445.append($$anchor, img);
+  $1444.replay_events(img);
+  $1444.append($$anchor, img);
 }
 
 // src/illustrations/Illustration23.svelte
-var import_disclose_version1446 = require("svelte/internal/disclose-version");
-var $1446 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1445 = require("svelte/internal/disclose-version");
+var $1445 = __toESM(require("svelte/internal/client"));
 var import_illustration_23_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-23-320.png"));
 var import_illustration_23_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-23-160.png"));
 var import_illustration_23_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-23-640.png"));
 var import_illustration_23_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-23-1024.png"));
-var root113 = $1446.from_html(`<img/>`);
+var root113 = $1445.from_html(`<img/>`);
 function Illustration23($$anchor, $$props) {
   const Illustration23WidthMap = {
     160: import_illustration_23_160.default,
@@ -58965,7 +58934,7 @@ function Illustration23($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1446.prop($$props, "height", 3, 128), alt = $1446.prop($$props, "alt", 3, "Illustration23"), className = $1446.prop($$props, "class", 3, ""), rest = $1446.rest_props($$props, [
+  let height = $1445.prop($$props, "height", 3, 128), alt = $1445.prop($$props, "alt", 3, "Illustration23"), className = $1445.prop($$props, "class", 3, ""), rest = $1445.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -58974,32 +58943,32 @@ function Illustration23($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1446.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1446.derived(() => height() ?? 128);
-  let sourceWidth = $1446.derived(() => $1446.get(resolvedWidth) ?? 320);
-  let closestWidth = $1446.derived(() => findClosestWidth($1446.get(sourceWidth), Illustration23AvailableWidths));
-  let imageSrc = $1446.derived(() => Illustration23WidthMap[$1446.get(closestWidth)] ?? import_illustration_23_320.default);
+  let resolvedWidth = $1445.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1445.derived(() => height() ?? 128);
+  let sourceWidth = $1445.derived(() => $1445.get(resolvedWidth) ?? 320);
+  let closestWidth = $1445.derived(() => findClosestWidth($1445.get(sourceWidth), Illustration23AvailableWidths));
+  let imageSrc = $1445.derived(() => Illustration23WidthMap[$1445.get(closestWidth)] ?? import_illustration_23_320.default);
   var img = root113();
-  $1446.attribute_effect(img, () => ({
-    src: $1446.get(imageSrc),
+  $1445.attribute_effect(img, () => ({
+    src: $1445.get(imageSrc),
     alt: alt(),
-    width: $1446.get(resolvedWidth) ?? void 0,
-    height: $1446.get(resolvedHeight),
+    width: $1445.get(resolvedWidth) ?? void 0,
+    height: $1445.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1446.replay_events(img);
-  $1446.append($$anchor, img);
+  $1445.replay_events(img);
+  $1445.append($$anchor, img);
 }
 
 // src/illustrations/Illustration24.svelte
-var import_disclose_version1447 = require("svelte/internal/disclose-version");
-var $1447 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1446 = require("svelte/internal/disclose-version");
+var $1446 = __toESM(require("svelte/internal/client"));
 var import_illustration_24_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-24-320.png"));
 var import_illustration_24_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-24-160.png"));
 var import_illustration_24_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-24-640.png"));
 var import_illustration_24_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-24-1024.png"));
-var root114 = $1447.from_html(`<img/>`);
+var root114 = $1446.from_html(`<img/>`);
 function Illustration24($$anchor, $$props) {
   const Illustration24WidthMap = {
     160: import_illustration_24_160.default,
@@ -59022,7 +58991,7 @@ function Illustration24($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1447.prop($$props, "height", 3, 128), alt = $1447.prop($$props, "alt", 3, "Illustration24"), className = $1447.prop($$props, "class", 3, ""), rest = $1447.rest_props($$props, [
+  let height = $1446.prop($$props, "height", 3, 128), alt = $1446.prop($$props, "alt", 3, "Illustration24"), className = $1446.prop($$props, "class", 3, ""), rest = $1446.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59031,32 +59000,32 @@ function Illustration24($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1447.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1447.derived(() => height() ?? 128);
-  let sourceWidth = $1447.derived(() => $1447.get(resolvedWidth) ?? 320);
-  let closestWidth = $1447.derived(() => findClosestWidth($1447.get(sourceWidth), Illustration24AvailableWidths));
-  let imageSrc = $1447.derived(() => Illustration24WidthMap[$1447.get(closestWidth)] ?? import_illustration_24_320.default);
+  let resolvedWidth = $1446.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1446.derived(() => height() ?? 128);
+  let sourceWidth = $1446.derived(() => $1446.get(resolvedWidth) ?? 320);
+  let closestWidth = $1446.derived(() => findClosestWidth($1446.get(sourceWidth), Illustration24AvailableWidths));
+  let imageSrc = $1446.derived(() => Illustration24WidthMap[$1446.get(closestWidth)] ?? import_illustration_24_320.default);
   var img = root114();
-  $1447.attribute_effect(img, () => ({
-    src: $1447.get(imageSrc),
+  $1446.attribute_effect(img, () => ({
+    src: $1446.get(imageSrc),
     alt: alt(),
-    width: $1447.get(resolvedWidth) ?? void 0,
-    height: $1447.get(resolvedHeight),
+    width: $1446.get(resolvedWidth) ?? void 0,
+    height: $1446.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1447.replay_events(img);
-  $1447.append($$anchor, img);
+  $1446.replay_events(img);
+  $1446.append($$anchor, img);
 }
 
 // src/illustrations/Illustration25.svelte
-var import_disclose_version1448 = require("svelte/internal/disclose-version");
-var $1448 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1447 = require("svelte/internal/disclose-version");
+var $1447 = __toESM(require("svelte/internal/client"));
 var import_illustration_25_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-25-320.png"));
 var import_illustration_25_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-25-160.png"));
 var import_illustration_25_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-25-640.png"));
 var import_illustration_25_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-25-1024.png"));
-var root115 = $1448.from_html(`<img/>`);
+var root115 = $1447.from_html(`<img/>`);
 function Illustration25($$anchor, $$props) {
   const Illustration25WidthMap = {
     160: import_illustration_25_160.default,
@@ -59079,7 +59048,7 @@ function Illustration25($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1448.prop($$props, "height", 3, 128), alt = $1448.prop($$props, "alt", 3, "Illustration25"), className = $1448.prop($$props, "class", 3, ""), rest = $1448.rest_props($$props, [
+  let height = $1447.prop($$props, "height", 3, 128), alt = $1447.prop($$props, "alt", 3, "Illustration25"), className = $1447.prop($$props, "class", 3, ""), rest = $1447.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59088,32 +59057,32 @@ function Illustration25($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1448.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1448.derived(() => height() ?? 128);
-  let sourceWidth = $1448.derived(() => $1448.get(resolvedWidth) ?? 320);
-  let closestWidth = $1448.derived(() => findClosestWidth($1448.get(sourceWidth), Illustration25AvailableWidths));
-  let imageSrc = $1448.derived(() => Illustration25WidthMap[$1448.get(closestWidth)] ?? import_illustration_25_320.default);
+  let resolvedWidth = $1447.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1447.derived(() => height() ?? 128);
+  let sourceWidth = $1447.derived(() => $1447.get(resolvedWidth) ?? 320);
+  let closestWidth = $1447.derived(() => findClosestWidth($1447.get(sourceWidth), Illustration25AvailableWidths));
+  let imageSrc = $1447.derived(() => Illustration25WidthMap[$1447.get(closestWidth)] ?? import_illustration_25_320.default);
   var img = root115();
-  $1448.attribute_effect(img, () => ({
-    src: $1448.get(imageSrc),
+  $1447.attribute_effect(img, () => ({
+    src: $1447.get(imageSrc),
     alt: alt(),
-    width: $1448.get(resolvedWidth) ?? void 0,
-    height: $1448.get(resolvedHeight),
+    width: $1447.get(resolvedWidth) ?? void 0,
+    height: $1447.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1448.replay_events(img);
-  $1448.append($$anchor, img);
+  $1447.replay_events(img);
+  $1447.append($$anchor, img);
 }
 
 // src/illustrations/Illustration26.svelte
-var import_disclose_version1449 = require("svelte/internal/disclose-version");
-var $1449 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1448 = require("svelte/internal/disclose-version");
+var $1448 = __toESM(require("svelte/internal/client"));
 var import_illustration_26_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-26-320.png"));
 var import_illustration_26_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-26-160.png"));
 var import_illustration_26_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-26-640.png"));
 var import_illustration_26_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-26-1024.png"));
-var root116 = $1449.from_html(`<img/>`);
+var root116 = $1448.from_html(`<img/>`);
 function Illustration26($$anchor, $$props) {
   const Illustration26WidthMap = {
     160: import_illustration_26_160.default,
@@ -59136,7 +59105,7 @@ function Illustration26($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1449.prop($$props, "height", 3, 128), alt = $1449.prop($$props, "alt", 3, "Illustration26"), className = $1449.prop($$props, "class", 3, ""), rest = $1449.rest_props($$props, [
+  let height = $1448.prop($$props, "height", 3, 128), alt = $1448.prop($$props, "alt", 3, "Illustration26"), className = $1448.prop($$props, "class", 3, ""), rest = $1448.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59145,32 +59114,32 @@ function Illustration26($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1449.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1449.derived(() => height() ?? 128);
-  let sourceWidth = $1449.derived(() => $1449.get(resolvedWidth) ?? 320);
-  let closestWidth = $1449.derived(() => findClosestWidth($1449.get(sourceWidth), Illustration26AvailableWidths));
-  let imageSrc = $1449.derived(() => Illustration26WidthMap[$1449.get(closestWidth)] ?? import_illustration_26_320.default);
+  let resolvedWidth = $1448.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1448.derived(() => height() ?? 128);
+  let sourceWidth = $1448.derived(() => $1448.get(resolvedWidth) ?? 320);
+  let closestWidth = $1448.derived(() => findClosestWidth($1448.get(sourceWidth), Illustration26AvailableWidths));
+  let imageSrc = $1448.derived(() => Illustration26WidthMap[$1448.get(closestWidth)] ?? import_illustration_26_320.default);
   var img = root116();
-  $1449.attribute_effect(img, () => ({
-    src: $1449.get(imageSrc),
+  $1448.attribute_effect(img, () => ({
+    src: $1448.get(imageSrc),
     alt: alt(),
-    width: $1449.get(resolvedWidth) ?? void 0,
-    height: $1449.get(resolvedHeight),
+    width: $1448.get(resolvedWidth) ?? void 0,
+    height: $1448.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1449.replay_events(img);
-  $1449.append($$anchor, img);
+  $1448.replay_events(img);
+  $1448.append($$anchor, img);
 }
 
 // src/illustrations/Illustration27.svelte
-var import_disclose_version1450 = require("svelte/internal/disclose-version");
-var $1450 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1449 = require("svelte/internal/disclose-version");
+var $1449 = __toESM(require("svelte/internal/client"));
 var import_illustration_27_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-27-320.png"));
 var import_illustration_27_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-27-160.png"));
 var import_illustration_27_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-27-640.png"));
 var import_illustration_27_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-27-1024.png"));
-var root117 = $1450.from_html(`<img/>`);
+var root117 = $1449.from_html(`<img/>`);
 function Illustration27($$anchor, $$props) {
   const Illustration27WidthMap = {
     160: import_illustration_27_160.default,
@@ -59193,7 +59162,7 @@ function Illustration27($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1450.prop($$props, "height", 3, 128), alt = $1450.prop($$props, "alt", 3, "Illustration27"), className = $1450.prop($$props, "class", 3, ""), rest = $1450.rest_props($$props, [
+  let height = $1449.prop($$props, "height", 3, 128), alt = $1449.prop($$props, "alt", 3, "Illustration27"), className = $1449.prop($$props, "class", 3, ""), rest = $1449.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59202,32 +59171,32 @@ function Illustration27($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1450.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1450.derived(() => height() ?? 128);
-  let sourceWidth = $1450.derived(() => $1450.get(resolvedWidth) ?? 320);
-  let closestWidth = $1450.derived(() => findClosestWidth($1450.get(sourceWidth), Illustration27AvailableWidths));
-  let imageSrc = $1450.derived(() => Illustration27WidthMap[$1450.get(closestWidth)] ?? import_illustration_27_320.default);
+  let resolvedWidth = $1449.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1449.derived(() => height() ?? 128);
+  let sourceWidth = $1449.derived(() => $1449.get(resolvedWidth) ?? 320);
+  let closestWidth = $1449.derived(() => findClosestWidth($1449.get(sourceWidth), Illustration27AvailableWidths));
+  let imageSrc = $1449.derived(() => Illustration27WidthMap[$1449.get(closestWidth)] ?? import_illustration_27_320.default);
   var img = root117();
-  $1450.attribute_effect(img, () => ({
-    src: $1450.get(imageSrc),
+  $1449.attribute_effect(img, () => ({
+    src: $1449.get(imageSrc),
     alt: alt(),
-    width: $1450.get(resolvedWidth) ?? void 0,
-    height: $1450.get(resolvedHeight),
+    width: $1449.get(resolvedWidth) ?? void 0,
+    height: $1449.get(resolvedHeight),
     class: className(),
     ...rest
   }));
-  $1450.replay_events(img);
-  $1450.append($$anchor, img);
+  $1449.replay_events(img);
+  $1449.append($$anchor, img);
 }
 
 // src/illustrations/Illustration28.svelte
-var import_disclose_version1451 = require("svelte/internal/disclose-version");
-var $1451 = __toESM(require("svelte/internal/client"));
+var import_disclose_version1450 = require("svelte/internal/disclose-version");
+var $1450 = __toESM(require("svelte/internal/client"));
 var import_illustration_28_320 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-28-320.png"));
 var import_illustration_28_160 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-28-160.png"));
 var import_illustration_28_640 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-28-640.png"));
 var import_illustration_28_1024 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/illustration-28-1024.png"));
-var root118 = $1451.from_html(`<img/>`);
+var root118 = $1450.from_html(`<img/>`);
 function Illustration28($$anchor, $$props) {
   const Illustration28WidthMap = {
     160: import_illustration_28_160.default,
@@ -59250,7 +59219,40 @@ function Illustration28($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1451.prop($$props, "height", 3, 128), alt = $1451.prop($$props, "alt", 3, "Illustration28"), className = $1451.prop($$props, "class", 3, ""), rest = $1451.rest_props($$props, [
+  let height = $1450.prop($$props, "height", 3, 128), alt = $1450.prop($$props, "alt", 3, "Illustration28"), className = $1450.prop($$props, "class", 3, ""), rest = $1450.rest_props($$props, [
+    "$$slots",
+    "$$events",
+    "$$legacy",
+    "width",
+    "height",
+    "alt",
+    "class"
+  ]);
+  let resolvedWidth = $1450.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1450.derived(() => height() ?? 128);
+  let sourceWidth = $1450.derived(() => $1450.get(resolvedWidth) ?? 320);
+  let closestWidth = $1450.derived(() => findClosestWidth($1450.get(sourceWidth), Illustration28AvailableWidths));
+  let imageSrc = $1450.derived(() => Illustration28WidthMap[$1450.get(closestWidth)] ?? import_illustration_28_320.default);
+  var img = root118();
+  $1450.attribute_effect(img, () => ({
+    src: $1450.get(imageSrc),
+    alt: alt(),
+    width: $1450.get(resolvedWidth) ?? void 0,
+    height: $1450.get(resolvedHeight),
+    class: className(),
+    ...rest
+  }));
+  $1450.replay_events(img);
+  $1450.append($$anchor, img);
+}
+
+// src/illustrations/LineDrawing01.svelte
+var import_disclose_version1451 = require("svelte/internal/disclose-version");
+var $1451 = __toESM(require("svelte/internal/client"));
+var import_line_drawing_01 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-01.svg"));
+var root119 = $1451.from_html(`<img/>`);
+function LineDrawing01($$anchor, $$props) {
+  let height = $1451.prop($$props, "height", 3, 128), alt = $1451.prop($$props, "alt", 3, "LineDrawing01"), className = $1451.prop($$props, "class", 3, ""), rest = $1451.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59261,10 +59263,8 @@ function Illustration28($$anchor, $$props) {
   ]);
   let resolvedWidth = $1451.derived(() => $$props.width ?? void 0);
   let resolvedHeight = $1451.derived(() => height() ?? 128);
-  let sourceWidth = $1451.derived(() => $1451.get(resolvedWidth) ?? 320);
-  let closestWidth = $1451.derived(() => findClosestWidth($1451.get(sourceWidth), Illustration28AvailableWidths));
-  let imageSrc = $1451.derived(() => Illustration28WidthMap[$1451.get(closestWidth)] ?? import_illustration_28_320.default);
-  var img = root118();
+  let imageSrc = $1451.derived(() => import_line_drawing_01.default);
+  var img = root119();
   $1451.attribute_effect(img, () => ({
     src: $1451.get(imageSrc),
     alt: alt(),
@@ -59277,13 +59277,13 @@ function Illustration28($$anchor, $$props) {
   $1451.append($$anchor, img);
 }
 
-// src/illustrations/LineDrawing01.svelte
+// src/illustrations/LineDrawing02.svelte
 var import_disclose_version1452 = require("svelte/internal/disclose-version");
 var $1452 = __toESM(require("svelte/internal/client"));
-var import_line_drawing_01 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-01.svg"));
-var root119 = $1452.from_html(`<img/>`);
-function LineDrawing01($$anchor, $$props) {
-  let height = $1452.prop($$props, "height", 3, 128), alt = $1452.prop($$props, "alt", 3, "LineDrawing01"), className = $1452.prop($$props, "class", 3, ""), rest = $1452.rest_props($$props, [
+var import_line_drawing_02 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-02.svg"));
+var root120 = $1452.from_html(`<img/>`);
+function LineDrawing02($$anchor, $$props) {
+  let height = $1452.prop($$props, "height", 3, 128), alt = $1452.prop($$props, "alt", 3, "LineDrawing02"), className = $1452.prop($$props, "class", 3, ""), rest = $1452.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59294,8 +59294,8 @@ function LineDrawing01($$anchor, $$props) {
   ]);
   let resolvedWidth = $1452.derived(() => $$props.width ?? void 0);
   let resolvedHeight = $1452.derived(() => height() ?? 128);
-  let imageSrc = $1452.derived(() => import_line_drawing_01.default);
-  var img = root119();
+  let imageSrc = $1452.derived(() => import_line_drawing_02.default);
+  var img = root120();
   $1452.attribute_effect(img, () => ({
     src: $1452.get(imageSrc),
     alt: alt(),
@@ -59308,13 +59308,13 @@ function LineDrawing01($$anchor, $$props) {
   $1452.append($$anchor, img);
 }
 
-// src/illustrations/LineDrawing02.svelte
+// src/illustrations/LineDrawing03.svelte
 var import_disclose_version1453 = require("svelte/internal/disclose-version");
 var $1453 = __toESM(require("svelte/internal/client"));
-var import_line_drawing_02 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-02.svg"));
-var root120 = $1453.from_html(`<img/>`);
-function LineDrawing02($$anchor, $$props) {
-  let height = $1453.prop($$props, "height", 3, 128), alt = $1453.prop($$props, "alt", 3, "LineDrawing02"), className = $1453.prop($$props, "class", 3, ""), rest = $1453.rest_props($$props, [
+var import_line_drawing_03 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-03.svg"));
+var root121 = $1453.from_html(`<img/>`);
+function LineDrawing03($$anchor, $$props) {
+  let height = $1453.prop($$props, "height", 3, 128), alt = $1453.prop($$props, "alt", 3, "LineDrawing03"), className = $1453.prop($$props, "class", 3, ""), rest = $1453.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59325,8 +59325,8 @@ function LineDrawing02($$anchor, $$props) {
   ]);
   let resolvedWidth = $1453.derived(() => $$props.width ?? void 0);
   let resolvedHeight = $1453.derived(() => height() ?? 128);
-  let imageSrc = $1453.derived(() => import_line_drawing_02.default);
-  var img = root120();
+  let imageSrc = $1453.derived(() => import_line_drawing_03.default);
+  var img = root121();
   $1453.attribute_effect(img, () => ({
     src: $1453.get(imageSrc),
     alt: alt(),
@@ -59339,13 +59339,13 @@ function LineDrawing02($$anchor, $$props) {
   $1453.append($$anchor, img);
 }
 
-// src/illustrations/LineDrawing03.svelte
+// src/illustrations/QrCodeBig.svelte
 var import_disclose_version1454 = require("svelte/internal/disclose-version");
 var $1454 = __toESM(require("svelte/internal/client"));
-var import_line_drawing_03 = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/line-drawing-03.svg"));
-var root121 = $1454.from_html(`<img/>`);
-function LineDrawing03($$anchor, $$props) {
-  let height = $1454.prop($$props, "height", 3, 128), alt = $1454.prop($$props, "alt", 3, "LineDrawing03"), className = $1454.prop($$props, "class", 3, ""), rest = $1454.rest_props($$props, [
+var import_qr_code_big = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/qr-code-big.svg"));
+var root122 = $1454.from_html(`<img/>`);
+function QrCodeBig($$anchor, $$props) {
+  let height = $1454.prop($$props, "height", 3, 128), alt = $1454.prop($$props, "alt", 3, "QrCodeBig"), className = $1454.prop($$props, "class", 3, ""), rest = $1454.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59356,8 +59356,8 @@ function LineDrawing03($$anchor, $$props) {
   ]);
   let resolvedWidth = $1454.derived(() => $$props.width ?? void 0);
   let resolvedHeight = $1454.derived(() => height() ?? 128);
-  let imageSrc = $1454.derived(() => import_line_drawing_03.default);
-  var img = root121();
+  let imageSrc = $1454.derived(() => import_qr_code_big.default);
+  var img = root122();
   $1454.attribute_effect(img, () => ({
     src: $1454.get(imageSrc),
     alt: alt(),
@@ -59370,13 +59370,13 @@ function LineDrawing03($$anchor, $$props) {
   $1454.append($$anchor, img);
 }
 
-// src/illustrations/QrCodeBig.svelte
+// src/illustrations/Voice.svelte
 var import_disclose_version1455 = require("svelte/internal/disclose-version");
 var $1455 = __toESM(require("svelte/internal/client"));
-var import_qr_code_big = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/qr-code-big.svg"));
-var root122 = $1455.from_html(`<img/>`);
-function QrCodeBig($$anchor, $$props) {
-  let height = $1455.prop($$props, "height", 3, 128), alt = $1455.prop($$props, "alt", 3, "QrCodeBig"), className = $1455.prop($$props, "class", 3, ""), rest = $1455.rest_props($$props, [
+var import_voice = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/voice.svg"));
+var root123 = $1455.from_html(`<img/>`);
+function Voice($$anchor, $$props) {
+  let height = $1455.prop($$props, "height", 3, 128), alt = $1455.prop($$props, "alt", 3, "Voice"), className = $1455.prop($$props, "class", 3, ""), rest = $1455.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59387,8 +59387,8 @@ function QrCodeBig($$anchor, $$props) {
   ]);
   let resolvedWidth = $1455.derived(() => $$props.width ?? void 0);
   let resolvedHeight = $1455.derived(() => height() ?? 128);
-  let imageSrc = $1455.derived(() => import_qr_code_big.default);
-  var img = root122();
+  let imageSrc = $1455.derived(() => import_voice.default);
+  var img = root123();
   $1455.attribute_effect(img, () => ({
     src: $1455.get(imageSrc),
     alt: alt(),
@@ -59401,45 +59401,14 @@ function QrCodeBig($$anchor, $$props) {
   $1455.append($$anchor, img);
 }
 
-// src/illustrations/Voice.svelte
+// src/images/Image01.svelte
 var import_disclose_version1456 = require("svelte/internal/disclose-version");
 var $1456 = __toESM(require("svelte/internal/client"));
-var import_voice = __toESM(require("@snowui-design-system/resource-base/assets/illustrations/voice.svg"));
-var root123 = $1456.from_html(`<img/>`);
-function Voice($$anchor, $$props) {
-  let height = $1456.prop($$props, "height", 3, 128), alt = $1456.prop($$props, "alt", 3, "Voice"), className = $1456.prop($$props, "class", 3, ""), rest = $1456.rest_props($$props, [
-    "$$slots",
-    "$$events",
-    "$$legacy",
-    "width",
-    "height",
-    "alt",
-    "class"
-  ]);
-  let resolvedWidth = $1456.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1456.derived(() => height() ?? 128);
-  let imageSrc = $1456.derived(() => import_voice.default);
-  var img = root123();
-  $1456.attribute_effect(img, () => ({
-    src: $1456.get(imageSrc),
-    alt: alt(),
-    width: $1456.get(resolvedWidth) ?? void 0,
-    height: $1456.get(resolvedHeight),
-    class: className(),
-    ...rest
-  }));
-  $1456.replay_events(img);
-  $1456.append($$anchor, img);
-}
-
-// src/images/Image01.svelte
-var import_disclose_version1457 = require("svelte/internal/disclose-version");
-var $1457 = __toESM(require("svelte/internal/client"));
 var import_image_01_320 = __toESM(require("@snowui-design-system/resource-base/assets/images/image-01-320.png"));
 var import_image_01_160 = __toESM(require("@snowui-design-system/resource-base/assets/images/image-01-160.png"));
 var import_image_01_640 = __toESM(require("@snowui-design-system/resource-base/assets/images/image-01-640.png"));
 var import_image_01_1024 = __toESM(require("@snowui-design-system/resource-base/assets/images/image-01-1024.png"));
-var root124 = $1457.from_html(`<img/>`);
+var root124 = $1456.from_html(`<img/>`);
 function Image01($$anchor, $$props) {
   const Image01WidthMap = {
     160: import_image_01_160.default,
@@ -59462,7 +59431,7 @@ function Image01($$anchor, $$props) {
     }
     return closest;
   };
-  let height = $1457.prop($$props, "height", 3, 128), alt = $1457.prop($$props, "alt", 3, "Image01"), className = $1457.prop($$props, "class", 3, ""), rest = $1457.rest_props($$props, [
+  let height = $1456.prop($$props, "height", 3, 128), alt = $1456.prop($$props, "alt", 3, "Image01"), className = $1456.prop($$props, "class", 3, ""), rest = $1456.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59471,16 +59440,48 @@ function Image01($$anchor, $$props) {
     "alt",
     "class"
   ]);
-  let resolvedWidth = $1457.derived(() => $$props.width ?? void 0);
-  let resolvedHeight = $1457.derived(() => height() ?? 128);
-  let sourceWidth = $1457.derived(() => $1457.get(resolvedWidth) ?? 320);
-  let closestWidth = $1457.derived(() => findClosestWidth($1457.get(sourceWidth), Image01AvailableWidths));
-  let imageSrc = $1457.derived(() => Image01WidthMap[$1457.get(closestWidth)] ?? import_image_01_320.default);
+  let resolvedWidth = $1456.derived(() => $$props.width ?? void 0);
+  let resolvedHeight = $1456.derived(() => height() ?? 128);
+  let sourceWidth = $1456.derived(() => $1456.get(resolvedWidth) ?? 320);
+  let closestWidth = $1456.derived(() => findClosestWidth($1456.get(sourceWidth), Image01AvailableWidths));
+  let imageSrc = $1456.derived(() => Image01WidthMap[$1456.get(closestWidth)] ?? import_image_01_320.default);
   var img = root124();
+  $1456.attribute_effect(img, () => ({
+    src: $1456.get(imageSrc),
+    alt: alt(),
+    width: $1456.get(resolvedWidth) ?? void 0,
+    height: $1456.get(resolvedHeight),
+    class: className(),
+    ...rest
+  }));
+  $1456.replay_events(img);
+  $1456.append($$anchor, img);
+}
+
+// src/logos/Android.svelte
+var import_disclose_version1457 = require("svelte/internal/disclose-version");
+var $1457 = __toESM(require("svelte/internal/client"));
+var import_android = __toESM(require("@snowui-design-system/resource-base/assets/logos/android.svg"));
+var root125 = $1457.from_html(`<img/>`);
+function Android($$anchor, $$props) {
+  let size = $1457.prop($$props, "size", 3, 32), alt = $1457.prop($$props, "alt", 3, "Android"), className = $1457.prop($$props, "class", 3, ""), rest = $1457.rest_props($$props, [
+    "$$slots",
+    "$$events",
+    "$$legacy",
+    "size",
+    "width",
+    "height",
+    "alt",
+    "class"
+  ]);
+  let resolvedWidth = $1457.derived(() => size() ?? $$props.width ?? 32);
+  let resolvedHeight = $1457.derived(() => size() ?? $$props.height ?? 32);
+  let imageSrc = $1457.derived(() => import_android.default);
+  var img = root125();
   $1457.attribute_effect(img, () => ({
     src: $1457.get(imageSrc),
     alt: alt(),
-    width: $1457.get(resolvedWidth) ?? void 0,
+    width: $1457.get(resolvedWidth),
     height: $1457.get(resolvedHeight),
     class: className(),
     ...rest
@@ -59489,13 +59490,13 @@ function Image01($$anchor, $$props) {
   $1457.append($$anchor, img);
 }
 
-// src/logos/Android.svelte
+// src/logos/AppStore.svelte
 var import_disclose_version1458 = require("svelte/internal/disclose-version");
 var $1458 = __toESM(require("svelte/internal/client"));
-var import_android = __toESM(require("@snowui-design-system/resource-base/assets/logos/android.svg"));
-var root125 = $1458.from_html(`<img/>`);
-function Android($$anchor, $$props) {
-  let size = $1458.prop($$props, "size", 3, 32), alt = $1458.prop($$props, "alt", 3, "Android"), className = $1458.prop($$props, "class", 3, ""), rest = $1458.rest_props($$props, [
+var import_app_store = __toESM(require("@snowui-design-system/resource-base/assets/logos/app-store.svg"));
+var root126 = $1458.from_html(`<img/>`);
+function AppStore($$anchor, $$props) {
+  let size = $1458.prop($$props, "size", 3, 32), alt = $1458.prop($$props, "alt", 3, "AppStore"), className = $1458.prop($$props, "class", 3, ""), rest = $1458.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59507,8 +59508,8 @@ function Android($$anchor, $$props) {
   ]);
   let resolvedWidth = $1458.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1458.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1458.derived(() => import_android.default);
-  var img = root125();
+  let imageSrc = $1458.derived(() => import_app_store.default);
+  var img = root126();
   $1458.attribute_effect(img, () => ({
     src: $1458.get(imageSrc),
     alt: alt(),
@@ -59521,13 +59522,13 @@ function Android($$anchor, $$props) {
   $1458.append($$anchor, img);
 }
 
-// src/logos/AppStore.svelte
+// src/logos/AppleIntelligence2a.svelte
 var import_disclose_version1459 = require("svelte/internal/disclose-version");
 var $1459 = __toESM(require("svelte/internal/client"));
-var import_app_store = __toESM(require("@snowui-design-system/resource-base/assets/logos/app-store.svg"));
-var root126 = $1459.from_html(`<img/>`);
-function AppStore($$anchor, $$props) {
-  let size = $1459.prop($$props, "size", 3, 32), alt = $1459.prop($$props, "alt", 3, "AppStore"), className = $1459.prop($$props, "class", 3, ""), rest = $1459.rest_props($$props, [
+var import_apple_intelligence_2a = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-2a.svg"));
+var root127 = $1459.from_html(`<img/>`);
+function AppleIntelligence2a($$anchor, $$props) {
+  let size = $1459.prop($$props, "size", 3, 32), alt = $1459.prop($$props, "alt", 3, "AppleIntelligence2a"), className = $1459.prop($$props, "class", 3, ""), rest = $1459.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59539,8 +59540,8 @@ function AppStore($$anchor, $$props) {
   ]);
   let resolvedWidth = $1459.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1459.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1459.derived(() => import_app_store.default);
-  var img = root126();
+  let imageSrc = $1459.derived(() => import_apple_intelligence_2a.default);
+  var img = root127();
   $1459.attribute_effect(img, () => ({
     src: $1459.get(imageSrc),
     alt: alt(),
@@ -59553,13 +59554,13 @@ function AppStore($$anchor, $$props) {
   $1459.append($$anchor, img);
 }
 
-// src/logos/AppleIntelligence2a.svelte
+// src/logos/AppleIntelligence2b.svelte
 var import_disclose_version1460 = require("svelte/internal/disclose-version");
 var $1460 = __toESM(require("svelte/internal/client"));
-var import_apple_intelligence_2a = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-2a.svg"));
-var root127 = $1460.from_html(`<img/>`);
-function AppleIntelligence2a($$anchor, $$props) {
-  let size = $1460.prop($$props, "size", 3, 32), alt = $1460.prop($$props, "alt", 3, "AppleIntelligence2a"), className = $1460.prop($$props, "class", 3, ""), rest = $1460.rest_props($$props, [
+var import_apple_intelligence_2b = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-2b.svg"));
+var root128 = $1460.from_html(`<img/>`);
+function AppleIntelligence2b($$anchor, $$props) {
+  let size = $1460.prop($$props, "size", 3, 32), alt = $1460.prop($$props, "alt", 3, "AppleIntelligence2b"), className = $1460.prop($$props, "class", 3, ""), rest = $1460.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59571,8 +59572,8 @@ function AppleIntelligence2a($$anchor, $$props) {
   ]);
   let resolvedWidth = $1460.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1460.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1460.derived(() => import_apple_intelligence_2a.default);
-  var img = root127();
+  let imageSrc = $1460.derived(() => import_apple_intelligence_2b.default);
+  var img = root128();
   $1460.attribute_effect(img, () => ({
     src: $1460.get(imageSrc),
     alt: alt(),
@@ -59585,13 +59586,13 @@ function AppleIntelligence2a($$anchor, $$props) {
   $1460.append($$anchor, img);
 }
 
-// src/logos/AppleIntelligence2b.svelte
+// src/logos/AppleIntelligenceA.svelte
 var import_disclose_version1461 = require("svelte/internal/disclose-version");
 var $1461 = __toESM(require("svelte/internal/client"));
-var import_apple_intelligence_2b = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-2b.svg"));
-var root128 = $1461.from_html(`<img/>`);
-function AppleIntelligence2b($$anchor, $$props) {
-  let size = $1461.prop($$props, "size", 3, 32), alt = $1461.prop($$props, "alt", 3, "AppleIntelligence2b"), className = $1461.prop($$props, "class", 3, ""), rest = $1461.rest_props($$props, [
+var import_apple_intelligence_a = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-a.svg"));
+var root129 = $1461.from_html(`<img/>`);
+function AppleIntelligenceA($$anchor, $$props) {
+  let size = $1461.prop($$props, "size", 3, 32), alt = $1461.prop($$props, "alt", 3, "AppleIntelligenceA"), className = $1461.prop($$props, "class", 3, ""), rest = $1461.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59603,8 +59604,8 @@ function AppleIntelligence2b($$anchor, $$props) {
   ]);
   let resolvedWidth = $1461.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1461.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1461.derived(() => import_apple_intelligence_2b.default);
-  var img = root128();
+  let imageSrc = $1461.derived(() => import_apple_intelligence_a.default);
+  var img = root129();
   $1461.attribute_effect(img, () => ({
     src: $1461.get(imageSrc),
     alt: alt(),
@@ -59617,13 +59618,13 @@ function AppleIntelligence2b($$anchor, $$props) {
   $1461.append($$anchor, img);
 }
 
-// src/logos/AppleIntelligenceA.svelte
+// src/logos/AppleIntelligenceB.svelte
 var import_disclose_version1462 = require("svelte/internal/disclose-version");
 var $1462 = __toESM(require("svelte/internal/client"));
-var import_apple_intelligence_a = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-a.svg"));
-var root129 = $1462.from_html(`<img/>`);
-function AppleIntelligenceA($$anchor, $$props) {
-  let size = $1462.prop($$props, "size", 3, 32), alt = $1462.prop($$props, "alt", 3, "AppleIntelligenceA"), className = $1462.prop($$props, "class", 3, ""), rest = $1462.rest_props($$props, [
+var import_apple_intelligence_b = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-b.svg"));
+var root130 = $1462.from_html(`<img/>`);
+function AppleIntelligenceB($$anchor, $$props) {
+  let size = $1462.prop($$props, "size", 3, 32), alt = $1462.prop($$props, "alt", 3, "AppleIntelligenceB"), className = $1462.prop($$props, "class", 3, ""), rest = $1462.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59635,8 +59636,8 @@ function AppleIntelligenceA($$anchor, $$props) {
   ]);
   let resolvedWidth = $1462.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1462.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1462.derived(() => import_apple_intelligence_a.default);
-  var img = root129();
+  let imageSrc = $1462.derived(() => import_apple_intelligence_b.default);
+  var img = root130();
   $1462.attribute_effect(img, () => ({
     src: $1462.get(imageSrc),
     alt: alt(),
@@ -59649,13 +59650,13 @@ function AppleIntelligenceA($$anchor, $$props) {
   $1462.append($$anchor, img);
 }
 
-// src/logos/AppleIntelligenceB.svelte
+// src/logos/Apple.svelte
 var import_disclose_version1463 = require("svelte/internal/disclose-version");
 var $1463 = __toESM(require("svelte/internal/client"));
-var import_apple_intelligence_b = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple-intelligence-b.svg"));
-var root130 = $1463.from_html(`<img/>`);
-function AppleIntelligenceB($$anchor, $$props) {
-  let size = $1463.prop($$props, "size", 3, 32), alt = $1463.prop($$props, "alt", 3, "AppleIntelligenceB"), className = $1463.prop($$props, "class", 3, ""), rest = $1463.rest_props($$props, [
+var import_apple = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple.svg"));
+var root131 = $1463.from_html(`<img/>`);
+function Apple($$anchor, $$props) {
+  let size = $1463.prop($$props, "size", 3, 32), alt = $1463.prop($$props, "alt", 3, "Apple"), className = $1463.prop($$props, "class", 3, ""), rest = $1463.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59667,8 +59668,8 @@ function AppleIntelligenceB($$anchor, $$props) {
   ]);
   let resolvedWidth = $1463.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1463.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1463.derived(() => import_apple_intelligence_b.default);
-  var img = root130();
+  let imageSrc = $1463.derived(() => import_apple.default);
+  var img = root131();
   $1463.attribute_effect(img, () => ({
     src: $1463.get(imageSrc),
     alt: alt(),
@@ -59681,13 +59682,13 @@ function AppleIntelligenceB($$anchor, $$props) {
   $1463.append($$anchor, img);
 }
 
-// src/logos/Apple.svelte
+// src/logos/Arc.svelte
 var import_disclose_version1464 = require("svelte/internal/disclose-version");
 var $1464 = __toESM(require("svelte/internal/client"));
-var import_apple = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple.svg"));
-var root131 = $1464.from_html(`<img/>`);
-function Apple($$anchor, $$props) {
-  let size = $1464.prop($$props, "size", 3, 32), alt = $1464.prop($$props, "alt", 3, "Apple"), className = $1464.prop($$props, "class", 3, ""), rest = $1464.rest_props($$props, [
+var import_arc = __toESM(require("@snowui-design-system/resource-base/assets/logos/arc.svg"));
+var root132 = $1464.from_html(`<img/>`);
+function Arc($$anchor, $$props) {
+  let size = $1464.prop($$props, "size", 3, 32), alt = $1464.prop($$props, "alt", 3, "Arc"), className = $1464.prop($$props, "class", 3, ""), rest = $1464.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59699,8 +59700,8 @@ function Apple($$anchor, $$props) {
   ]);
   let resolvedWidth = $1464.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1464.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1464.derived(() => import_apple.default);
-  var img = root131();
+  let imageSrc = $1464.derived(() => import_arc.default);
+  var img = root132();
   $1464.attribute_effect(img, () => ({
     src: $1464.get(imageSrc),
     alt: alt(),
@@ -59713,13 +59714,13 @@ function Apple($$anchor, $$props) {
   $1464.append($$anchor, img);
 }
 
-// src/logos/Arc.svelte
+// src/logos/Behance.svelte
 var import_disclose_version1465 = require("svelte/internal/disclose-version");
 var $1465 = __toESM(require("svelte/internal/client"));
-var import_arc = __toESM(require("@snowui-design-system/resource-base/assets/logos/arc.svg"));
-var root132 = $1465.from_html(`<img/>`);
-function Arc($$anchor, $$props) {
-  let size = $1465.prop($$props, "size", 3, 32), alt = $1465.prop($$props, "alt", 3, "Arc"), className = $1465.prop($$props, "class", 3, ""), rest = $1465.rest_props($$props, [
+var import_behance = __toESM(require("@snowui-design-system/resource-base/assets/logos/behance.svg"));
+var root133 = $1465.from_html(`<img/>`);
+function Behance($$anchor, $$props) {
+  let size = $1465.prop($$props, "size", 3, 32), alt = $1465.prop($$props, "alt", 3, "Behance"), className = $1465.prop($$props, "class", 3, ""), rest = $1465.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59731,8 +59732,8 @@ function Arc($$anchor, $$props) {
   ]);
   let resolvedWidth = $1465.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1465.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1465.derived(() => import_arc.default);
-  var img = root132();
+  let imageSrc = $1465.derived(() => import_behance.default);
+  var img = root133();
   $1465.attribute_effect(img, () => ({
     src: $1465.get(imageSrc),
     alt: alt(),
@@ -59745,13 +59746,13 @@ function Arc($$anchor, $$props) {
   $1465.append($$anchor, img);
 }
 
-// src/logos/Behance.svelte
+// src/logos/ChatGpt.svelte
 var import_disclose_version1466 = require("svelte/internal/disclose-version");
 var $1466 = __toESM(require("svelte/internal/client"));
-var import_behance = __toESM(require("@snowui-design-system/resource-base/assets/logos/behance.svg"));
-var root133 = $1466.from_html(`<img/>`);
-function Behance($$anchor, $$props) {
-  let size = $1466.prop($$props, "size", 3, 32), alt = $1466.prop($$props, "alt", 3, "Behance"), className = $1466.prop($$props, "class", 3, ""), rest = $1466.rest_props($$props, [
+var import_chat_gpt = __toESM(require("@snowui-design-system/resource-base/assets/logos/chat-gpt.svg"));
+var root134 = $1466.from_html(`<img/>`);
+function ChatGpt($$anchor, $$props) {
+  let size = $1466.prop($$props, "size", 3, 32), alt = $1466.prop($$props, "alt", 3, "ChatGpt"), className = $1466.prop($$props, "class", 3, ""), rest = $1466.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59763,8 +59764,8 @@ function Behance($$anchor, $$props) {
   ]);
   let resolvedWidth = $1466.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1466.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1466.derived(() => import_behance.default);
-  var img = root133();
+  let imageSrc = $1466.derived(() => import_chat_gpt.default);
+  var img = root134();
   $1466.attribute_effect(img, () => ({
     src: $1466.get(imageSrc),
     alt: alt(),
@@ -59777,13 +59778,13 @@ function Behance($$anchor, $$props) {
   $1466.append($$anchor, img);
 }
 
-// src/logos/ChatGpt.svelte
+// src/logos/Claude.svelte
 var import_disclose_version1467 = require("svelte/internal/disclose-version");
 var $1467 = __toESM(require("svelte/internal/client"));
-var import_chat_gpt = __toESM(require("@snowui-design-system/resource-base/assets/logos/chat-gpt.svg"));
-var root134 = $1467.from_html(`<img/>`);
-function ChatGpt($$anchor, $$props) {
-  let size = $1467.prop($$props, "size", 3, 32), alt = $1467.prop($$props, "alt", 3, "ChatGpt"), className = $1467.prop($$props, "class", 3, ""), rest = $1467.rest_props($$props, [
+var import_claude = __toESM(require("@snowui-design-system/resource-base/assets/logos/claude.svg"));
+var root135 = $1467.from_html(`<img/>`);
+function Claude($$anchor, $$props) {
+  let size = $1467.prop($$props, "size", 3, 32), alt = $1467.prop($$props, "alt", 3, "Claude"), className = $1467.prop($$props, "class", 3, ""), rest = $1467.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59795,8 +59796,8 @@ function ChatGpt($$anchor, $$props) {
   ]);
   let resolvedWidth = $1467.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1467.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1467.derived(() => import_chat_gpt.default);
-  var img = root134();
+  let imageSrc = $1467.derived(() => import_claude.default);
+  var img = root135();
   $1467.attribute_effect(img, () => ({
     src: $1467.get(imageSrc),
     alt: alt(),
@@ -59809,13 +59810,13 @@ function ChatGpt($$anchor, $$props) {
   $1467.append($$anchor, img);
 }
 
-// src/logos/Claude.svelte
+// src/logos/Copilot.svelte
 var import_disclose_version1468 = require("svelte/internal/disclose-version");
 var $1468 = __toESM(require("svelte/internal/client"));
-var import_claude = __toESM(require("@snowui-design-system/resource-base/assets/logos/claude.svg"));
-var root135 = $1468.from_html(`<img/>`);
-function Claude($$anchor, $$props) {
-  let size = $1468.prop($$props, "size", 3, 32), alt = $1468.prop($$props, "alt", 3, "Claude"), className = $1468.prop($$props, "class", 3, ""), rest = $1468.rest_props($$props, [
+var import_copilot = __toESM(require("@snowui-design-system/resource-base/assets/logos/copilot.svg"));
+var root136 = $1468.from_html(`<img/>`);
+function Copilot($$anchor, $$props) {
+  let size = $1468.prop($$props, "size", 3, 32), alt = $1468.prop($$props, "alt", 3, "Copilot"), className = $1468.prop($$props, "class", 3, ""), rest = $1468.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59827,8 +59828,8 @@ function Claude($$anchor, $$props) {
   ]);
   let resolvedWidth = $1468.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1468.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1468.derived(() => import_claude.default);
-  var img = root135();
+  let imageSrc = $1468.derived(() => import_copilot.default);
+  var img = root136();
   $1468.attribute_effect(img, () => ({
     src: $1468.get(imageSrc),
     alt: alt(),
@@ -59841,13 +59842,13 @@ function Claude($$anchor, $$props) {
   $1468.append($$anchor, img);
 }
 
-// src/logos/Copilot.svelte
+// src/logos/Discord.svelte
 var import_disclose_version1469 = require("svelte/internal/disclose-version");
 var $1469 = __toESM(require("svelte/internal/client"));
-var import_copilot = __toESM(require("@snowui-design-system/resource-base/assets/logos/copilot.svg"));
-var root136 = $1469.from_html(`<img/>`);
-function Copilot($$anchor, $$props) {
-  let size = $1469.prop($$props, "size", 3, 32), alt = $1469.prop($$props, "alt", 3, "Copilot"), className = $1469.prop($$props, "class", 3, ""), rest = $1469.rest_props($$props, [
+var import_discord = __toESM(require("@snowui-design-system/resource-base/assets/logos/discord.svg"));
+var root137 = $1469.from_html(`<img/>`);
+function Discord($$anchor, $$props) {
+  let size = $1469.prop($$props, "size", 3, 32), alt = $1469.prop($$props, "alt", 3, "Discord"), className = $1469.prop($$props, "class", 3, ""), rest = $1469.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59859,8 +59860,8 @@ function Copilot($$anchor, $$props) {
   ]);
   let resolvedWidth = $1469.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1469.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1469.derived(() => import_copilot.default);
-  var img = root136();
+  let imageSrc = $1469.derived(() => import_discord.default);
+  var img = root137();
   $1469.attribute_effect(img, () => ({
     src: $1469.get(imageSrc),
     alt: alt(),
@@ -59873,13 +59874,13 @@ function Copilot($$anchor, $$props) {
   $1469.append($$anchor, img);
 }
 
-// src/logos/Discord.svelte
+// src/logos/Dribbble.svelte
 var import_disclose_version1470 = require("svelte/internal/disclose-version");
 var $1470 = __toESM(require("svelte/internal/client"));
-var import_discord = __toESM(require("@snowui-design-system/resource-base/assets/logos/discord.svg"));
-var root137 = $1470.from_html(`<img/>`);
-function Discord($$anchor, $$props) {
-  let size = $1470.prop($$props, "size", 3, 32), alt = $1470.prop($$props, "alt", 3, "Discord"), className = $1470.prop($$props, "class", 3, ""), rest = $1470.rest_props($$props, [
+var import_dribbble = __toESM(require("@snowui-design-system/resource-base/assets/logos/dribbble.svg"));
+var root138 = $1470.from_html(`<img/>`);
+function Dribbble($$anchor, $$props) {
+  let size = $1470.prop($$props, "size", 3, 32), alt = $1470.prop($$props, "alt", 3, "Dribbble"), className = $1470.prop($$props, "class", 3, ""), rest = $1470.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59891,8 +59892,8 @@ function Discord($$anchor, $$props) {
   ]);
   let resolvedWidth = $1470.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1470.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1470.derived(() => import_discord.default);
-  var img = root137();
+  let imageSrc = $1470.derived(() => import_dribbble.default);
+  var img = root138();
   $1470.attribute_effect(img, () => ({
     src: $1470.get(imageSrc),
     alt: alt(),
@@ -59905,13 +59906,13 @@ function Discord($$anchor, $$props) {
   $1470.append($$anchor, img);
 }
 
-// src/logos/Dribbble.svelte
+// src/logos/Dropbox.svelte
 var import_disclose_version1471 = require("svelte/internal/disclose-version");
 var $1471 = __toESM(require("svelte/internal/client"));
-var import_dribbble = __toESM(require("@snowui-design-system/resource-base/assets/logos/dribbble.svg"));
-var root138 = $1471.from_html(`<img/>`);
-function Dribbble($$anchor, $$props) {
-  let size = $1471.prop($$props, "size", 3, 32), alt = $1471.prop($$props, "alt", 3, "Dribbble"), className = $1471.prop($$props, "class", 3, ""), rest = $1471.rest_props($$props, [
+var import_dropbox = __toESM(require("@snowui-design-system/resource-base/assets/logos/dropbox.svg"));
+var root139 = $1471.from_html(`<img/>`);
+function Dropbox($$anchor, $$props) {
+  let size = $1471.prop($$props, "size", 3, 32), alt = $1471.prop($$props, "alt", 3, "Dropbox"), className = $1471.prop($$props, "class", 3, ""), rest = $1471.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59923,8 +59924,8 @@ function Dribbble($$anchor, $$props) {
   ]);
   let resolvedWidth = $1471.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1471.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1471.derived(() => import_dribbble.default);
-  var img = root138();
+  let imageSrc = $1471.derived(() => import_dropbox.default);
+  var img = root139();
   $1471.attribute_effect(img, () => ({
     src: $1471.get(imageSrc),
     alt: alt(),
@@ -59937,13 +59938,13 @@ function Dribbble($$anchor, $$props) {
   $1471.append($$anchor, img);
 }
 
-// src/logos/Dropbox.svelte
+// src/logos/Excel.svelte
 var import_disclose_version1472 = require("svelte/internal/disclose-version");
 var $1472 = __toESM(require("svelte/internal/client"));
-var import_dropbox = __toESM(require("@snowui-design-system/resource-base/assets/logos/dropbox.svg"));
-var root139 = $1472.from_html(`<img/>`);
-function Dropbox($$anchor, $$props) {
-  let size = $1472.prop($$props, "size", 3, 32), alt = $1472.prop($$props, "alt", 3, "Dropbox"), className = $1472.prop($$props, "class", 3, ""), rest = $1472.rest_props($$props, [
+var import_excel = __toESM(require("@snowui-design-system/resource-base/assets/logos/excel.svg"));
+var root140 = $1472.from_html(`<img/>`);
+function Excel($$anchor, $$props) {
+  let size = $1472.prop($$props, "size", 3, 32), alt = $1472.prop($$props, "alt", 3, "Excel"), className = $1472.prop($$props, "class", 3, ""), rest = $1472.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59955,8 +59956,8 @@ function Dropbox($$anchor, $$props) {
   ]);
   let resolvedWidth = $1472.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1472.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1472.derived(() => import_dropbox.default);
-  var img = root139();
+  let imageSrc = $1472.derived(() => import_excel.default);
+  var img = root140();
   $1472.attribute_effect(img, () => ({
     src: $1472.get(imageSrc),
     alt: alt(),
@@ -59969,13 +59970,13 @@ function Dropbox($$anchor, $$props) {
   $1472.append($$anchor, img);
 }
 
-// src/logos/Excel.svelte
+// src/logos/Facebook.svelte
 var import_disclose_version1473 = require("svelte/internal/disclose-version");
 var $1473 = __toESM(require("svelte/internal/client"));
-var import_excel = __toESM(require("@snowui-design-system/resource-base/assets/logos/excel.svg"));
-var root140 = $1473.from_html(`<img/>`);
-function Excel($$anchor, $$props) {
-  let size = $1473.prop($$props, "size", 3, 32), alt = $1473.prop($$props, "alt", 3, "Excel"), className = $1473.prop($$props, "class", 3, ""), rest = $1473.rest_props($$props, [
+var import_facebook = __toESM(require("@snowui-design-system/resource-base/assets/logos/facebook.svg"));
+var root141 = $1473.from_html(`<img/>`);
+function Facebook($$anchor, $$props) {
+  let size = $1473.prop($$props, "size", 3, 32), alt = $1473.prop($$props, "alt", 3, "Facebook"), className = $1473.prop($$props, "class", 3, ""), rest = $1473.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -59987,8 +59988,8 @@ function Excel($$anchor, $$props) {
   ]);
   let resolvedWidth = $1473.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1473.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1473.derived(() => import_excel.default);
-  var img = root140();
+  let imageSrc = $1473.derived(() => import_facebook.default);
+  var img = root141();
   $1473.attribute_effect(img, () => ({
     src: $1473.get(imageSrc),
     alt: alt(),
@@ -60001,13 +60002,13 @@ function Excel($$anchor, $$props) {
   $1473.append($$anchor, img);
 }
 
-// src/logos/Facebook.svelte
+// src/logos/FigmaA.svelte
 var import_disclose_version1474 = require("svelte/internal/disclose-version");
 var $1474 = __toESM(require("svelte/internal/client"));
-var import_facebook = __toESM(require("@snowui-design-system/resource-base/assets/logos/facebook.svg"));
-var root141 = $1474.from_html(`<img/>`);
-function Facebook($$anchor, $$props) {
-  let size = $1474.prop($$props, "size", 3, 32), alt = $1474.prop($$props, "alt", 3, "Facebook"), className = $1474.prop($$props, "class", 3, ""), rest = $1474.rest_props($$props, [
+var import_figma_a = __toESM(require("@snowui-design-system/resource-base/assets/logos/figma-a.svg"));
+var root142 = $1474.from_html(`<img/>`);
+function FigmaA($$anchor, $$props) {
+  let size = $1474.prop($$props, "size", 3, 32), alt = $1474.prop($$props, "alt", 3, "FigmaA"), className = $1474.prop($$props, "class", 3, ""), rest = $1474.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60019,8 +60020,8 @@ function Facebook($$anchor, $$props) {
   ]);
   let resolvedWidth = $1474.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1474.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1474.derived(() => import_facebook.default);
-  var img = root141();
+  let imageSrc = $1474.derived(() => import_figma_a.default);
+  var img = root142();
   $1474.attribute_effect(img, () => ({
     src: $1474.get(imageSrc),
     alt: alt(),
@@ -60033,13 +60034,13 @@ function Facebook($$anchor, $$props) {
   $1474.append($$anchor, img);
 }
 
-// src/logos/FigmaA.svelte
+// src/logos/FigmaB.svelte
 var import_disclose_version1475 = require("svelte/internal/disclose-version");
 var $1475 = __toESM(require("svelte/internal/client"));
-var import_figma_a = __toESM(require("@snowui-design-system/resource-base/assets/logos/figma-a.svg"));
-var root142 = $1475.from_html(`<img/>`);
-function FigmaA($$anchor, $$props) {
-  let size = $1475.prop($$props, "size", 3, 32), alt = $1475.prop($$props, "alt", 3, "FigmaA"), className = $1475.prop($$props, "class", 3, ""), rest = $1475.rest_props($$props, [
+var import_figma_b = __toESM(require("@snowui-design-system/resource-base/assets/logos/figma-b.svg"));
+var root143 = $1475.from_html(`<img/>`);
+function FigmaB($$anchor, $$props) {
+  let size = $1475.prop($$props, "size", 3, 32), alt = $1475.prop($$props, "alt", 3, "FigmaB"), className = $1475.prop($$props, "class", 3, ""), rest = $1475.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60051,8 +60052,8 @@ function FigmaA($$anchor, $$props) {
   ]);
   let resolvedWidth = $1475.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1475.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1475.derived(() => import_figma_a.default);
-  var img = root142();
+  let imageSrc = $1475.derived(() => import_figma_b.default);
+  var img = root143();
   $1475.attribute_effect(img, () => ({
     src: $1475.get(imageSrc),
     alt: alt(),
@@ -60065,13 +60066,13 @@ function FigmaA($$anchor, $$props) {
   $1475.append($$anchor, img);
 }
 
-// src/logos/FigmaB.svelte
+// src/logos/Framer.svelte
 var import_disclose_version1476 = require("svelte/internal/disclose-version");
 var $1476 = __toESM(require("svelte/internal/client"));
-var import_figma_b = __toESM(require("@snowui-design-system/resource-base/assets/logos/figma-b.svg"));
-var root143 = $1476.from_html(`<img/>`);
-function FigmaB($$anchor, $$props) {
-  let size = $1476.prop($$props, "size", 3, 32), alt = $1476.prop($$props, "alt", 3, "FigmaB"), className = $1476.prop($$props, "class", 3, ""), rest = $1476.rest_props($$props, [
+var import_framer = __toESM(require("@snowui-design-system/resource-base/assets/logos/framer.svg"));
+var root144 = $1476.from_html(`<img/>`);
+function Framer($$anchor, $$props) {
+  let size = $1476.prop($$props, "size", 3, 32), alt = $1476.prop($$props, "alt", 3, "Framer"), className = $1476.prop($$props, "class", 3, ""), rest = $1476.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60083,8 +60084,8 @@ function FigmaB($$anchor, $$props) {
   ]);
   let resolvedWidth = $1476.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1476.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1476.derived(() => import_figma_b.default);
-  var img = root143();
+  let imageSrc = $1476.derived(() => import_framer.default);
+  var img = root144();
   $1476.attribute_effect(img, () => ({
     src: $1476.get(imageSrc),
     alt: alt(),
@@ -60097,13 +60098,13 @@ function FigmaB($$anchor, $$props) {
   $1476.append($$anchor, img);
 }
 
-// src/logos/Framer.svelte
+// src/logos/Gemini.svelte
 var import_disclose_version1477 = require("svelte/internal/disclose-version");
 var $1477 = __toESM(require("svelte/internal/client"));
-var import_framer = __toESM(require("@snowui-design-system/resource-base/assets/logos/framer.svg"));
-var root144 = $1477.from_html(`<img/>`);
-function Framer($$anchor, $$props) {
-  let size = $1477.prop($$props, "size", 3, 32), alt = $1477.prop($$props, "alt", 3, "Framer"), className = $1477.prop($$props, "class", 3, ""), rest = $1477.rest_props($$props, [
+var import_gemini = __toESM(require("@snowui-design-system/resource-base/assets/logos/gemini.svg"));
+var root145 = $1477.from_html(`<img/>`);
+function Gemini($$anchor, $$props) {
+  let size = $1477.prop($$props, "size", 3, 32), alt = $1477.prop($$props, "alt", 3, "Gemini"), className = $1477.prop($$props, "class", 3, ""), rest = $1477.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60115,8 +60116,8 @@ function Framer($$anchor, $$props) {
   ]);
   let resolvedWidth = $1477.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1477.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1477.derived(() => import_framer.default);
-  var img = root144();
+  let imageSrc = $1477.derived(() => import_gemini.default);
+  var img = root145();
   $1477.attribute_effect(img, () => ({
     src: $1477.get(imageSrc),
     alt: alt(),
@@ -60129,13 +60130,13 @@ function Framer($$anchor, $$props) {
   $1477.append($$anchor, img);
 }
 
-// src/logos/Gemini.svelte
+// src/logos/Github.svelte
 var import_disclose_version1478 = require("svelte/internal/disclose-version");
 var $1478 = __toESM(require("svelte/internal/client"));
-var import_gemini = __toESM(require("@snowui-design-system/resource-base/assets/logos/gemini.svg"));
-var root145 = $1478.from_html(`<img/>`);
-function Gemini($$anchor, $$props) {
-  let size = $1478.prop($$props, "size", 3, 32), alt = $1478.prop($$props, "alt", 3, "Gemini"), className = $1478.prop($$props, "class", 3, ""), rest = $1478.rest_props($$props, [
+var import_github = __toESM(require("@snowui-design-system/resource-base/assets/logos/github.svg"));
+var root146 = $1478.from_html(`<img/>`);
+function Github($$anchor, $$props) {
+  let size = $1478.prop($$props, "size", 3, 32), alt = $1478.prop($$props, "alt", 3, "Github"), className = $1478.prop($$props, "class", 3, ""), rest = $1478.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60147,8 +60148,8 @@ function Gemini($$anchor, $$props) {
   ]);
   let resolvedWidth = $1478.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1478.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1478.derived(() => import_gemini.default);
-  var img = root145();
+  let imageSrc = $1478.derived(() => import_github.default);
+  var img = root146();
   $1478.attribute_effect(img, () => ({
     src: $1478.get(imageSrc),
     alt: alt(),
@@ -60161,13 +60162,13 @@ function Gemini($$anchor, $$props) {
   $1478.append($$anchor, img);
 }
 
-// src/logos/Github.svelte
+// src/logos/GoogleDrive.svelte
 var import_disclose_version1479 = require("svelte/internal/disclose-version");
 var $1479 = __toESM(require("svelte/internal/client"));
-var import_github = __toESM(require("@snowui-design-system/resource-base/assets/logos/github.svg"));
-var root146 = $1479.from_html(`<img/>`);
-function Github($$anchor, $$props) {
-  let size = $1479.prop($$props, "size", 3, 32), alt = $1479.prop($$props, "alt", 3, "Github"), className = $1479.prop($$props, "class", 3, ""), rest = $1479.rest_props($$props, [
+var import_google_drive = __toESM(require("@snowui-design-system/resource-base/assets/logos/google-drive.svg"));
+var root147 = $1479.from_html(`<img/>`);
+function GoogleDrive($$anchor, $$props) {
+  let size = $1479.prop($$props, "size", 3, 32), alt = $1479.prop($$props, "alt", 3, "GoogleDrive"), className = $1479.prop($$props, "class", 3, ""), rest = $1479.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60179,8 +60180,8 @@ function Github($$anchor, $$props) {
   ]);
   let resolvedWidth = $1479.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1479.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1479.derived(() => import_github.default);
-  var img = root146();
+  let imageSrc = $1479.derived(() => import_google_drive.default);
+  var img = root147();
   $1479.attribute_effect(img, () => ({
     src: $1479.get(imageSrc),
     alt: alt(),
@@ -60193,13 +60194,13 @@ function Github($$anchor, $$props) {
   $1479.append($$anchor, img);
 }
 
-// src/logos/GoogleDrive.svelte
+// src/logos/GooglePlay.svelte
 var import_disclose_version1480 = require("svelte/internal/disclose-version");
 var $1480 = __toESM(require("svelte/internal/client"));
-var import_google_drive = __toESM(require("@snowui-design-system/resource-base/assets/logos/google-drive.svg"));
-var root147 = $1480.from_html(`<img/>`);
-function GoogleDrive($$anchor, $$props) {
-  let size = $1480.prop($$props, "size", 3, 32), alt = $1480.prop($$props, "alt", 3, "GoogleDrive"), className = $1480.prop($$props, "class", 3, ""), rest = $1480.rest_props($$props, [
+var import_google_play = __toESM(require("@snowui-design-system/resource-base/assets/logos/google-play.svg"));
+var root148 = $1480.from_html(`<img/>`);
+function GooglePlay($$anchor, $$props) {
+  let size = $1480.prop($$props, "size", 3, 32), alt = $1480.prop($$props, "alt", 3, "GooglePlay"), className = $1480.prop($$props, "class", 3, ""), rest = $1480.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60211,8 +60212,8 @@ function GoogleDrive($$anchor, $$props) {
   ]);
   let resolvedWidth = $1480.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1480.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1480.derived(() => import_google_drive.default);
-  var img = root147();
+  let imageSrc = $1480.derived(() => import_google_play.default);
+  var img = root148();
   $1480.attribute_effect(img, () => ({
     src: $1480.get(imageSrc),
     alt: alt(),
@@ -60225,13 +60226,13 @@ function GoogleDrive($$anchor, $$props) {
   $1480.append($$anchor, img);
 }
 
-// src/logos/GooglePlay.svelte
+// src/logos/Google.svelte
 var import_disclose_version1481 = require("svelte/internal/disclose-version");
 var $1481 = __toESM(require("svelte/internal/client"));
-var import_google_play = __toESM(require("@snowui-design-system/resource-base/assets/logos/google-play.svg"));
-var root148 = $1481.from_html(`<img/>`);
-function GooglePlay($$anchor, $$props) {
-  let size = $1481.prop($$props, "size", 3, 32), alt = $1481.prop($$props, "alt", 3, "GooglePlay"), className = $1481.prop($$props, "class", 3, ""), rest = $1481.rest_props($$props, [
+var import_google = __toESM(require("@snowui-design-system/resource-base/assets/logos/google.svg"));
+var root149 = $1481.from_html(`<img/>`);
+function Google($$anchor, $$props) {
+  let size = $1481.prop($$props, "size", 3, 32), alt = $1481.prop($$props, "alt", 3, "Google"), className = $1481.prop($$props, "class", 3, ""), rest = $1481.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60243,8 +60244,8 @@ function GooglePlay($$anchor, $$props) {
   ]);
   let resolvedWidth = $1481.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1481.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1481.derived(() => import_google_play.default);
-  var img = root148();
+  let imageSrc = $1481.derived(() => import_google.default);
+  var img = root149();
   $1481.attribute_effect(img, () => ({
     src: $1481.get(imageSrc),
     alt: alt(),
@@ -60257,13 +60258,13 @@ function GooglePlay($$anchor, $$props) {
   $1481.append($$anchor, img);
 }
 
-// src/logos/Google.svelte
+// src/logos/Grok.svelte
 var import_disclose_version1482 = require("svelte/internal/disclose-version");
 var $1482 = __toESM(require("svelte/internal/client"));
-var import_google = __toESM(require("@snowui-design-system/resource-base/assets/logos/google.svg"));
-var root149 = $1482.from_html(`<img/>`);
-function Google($$anchor, $$props) {
-  let size = $1482.prop($$props, "size", 3, 32), alt = $1482.prop($$props, "alt", 3, "Google"), className = $1482.prop($$props, "class", 3, ""), rest = $1482.rest_props($$props, [
+var import_grok = __toESM(require("@snowui-design-system/resource-base/assets/logos/grok.svg"));
+var root150 = $1482.from_html(`<img/>`);
+function Grok($$anchor, $$props) {
+  let size = $1482.prop($$props, "size", 3, 32), alt = $1482.prop($$props, "alt", 3, "Grok"), className = $1482.prop($$props, "class", 3, ""), rest = $1482.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60275,8 +60276,8 @@ function Google($$anchor, $$props) {
   ]);
   let resolvedWidth = $1482.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1482.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1482.derived(() => import_google.default);
-  var img = root149();
+  let imageSrc = $1482.derived(() => import_grok.default);
+  var img = root150();
   $1482.attribute_effect(img, () => ({
     src: $1482.get(imageSrc),
     alt: alt(),
@@ -60289,13 +60290,13 @@ function Google($$anchor, $$props) {
   $1482.append($$anchor, img);
 }
 
-// src/logos/Grok.svelte
+// src/logos/Gumroad.svelte
 var import_disclose_version1483 = require("svelte/internal/disclose-version");
 var $1483 = __toESM(require("svelte/internal/client"));
-var import_grok = __toESM(require("@snowui-design-system/resource-base/assets/logos/grok.svg"));
-var root150 = $1483.from_html(`<img/>`);
-function Grok($$anchor, $$props) {
-  let size = $1483.prop($$props, "size", 3, 32), alt = $1483.prop($$props, "alt", 3, "Grok"), className = $1483.prop($$props, "class", 3, ""), rest = $1483.rest_props($$props, [
+var import_gumroad = __toESM(require("@snowui-design-system/resource-base/assets/logos/gumroad.svg"));
+var root151 = $1483.from_html(`<img/>`);
+function Gumroad($$anchor, $$props) {
+  let size = $1483.prop($$props, "size", 3, 32), alt = $1483.prop($$props, "alt", 3, "Gumroad"), className = $1483.prop($$props, "class", 3, ""), rest = $1483.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60307,8 +60308,8 @@ function Grok($$anchor, $$props) {
   ]);
   let resolvedWidth = $1483.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1483.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1483.derived(() => import_grok.default);
-  var img = root150();
+  let imageSrc = $1483.derived(() => import_gumroad.default);
+  var img = root151();
   $1483.attribute_effect(img, () => ({
     src: $1483.get(imageSrc),
     alt: alt(),
@@ -60321,13 +60322,13 @@ function Grok($$anchor, $$props) {
   $1483.append($$anchor, img);
 }
 
-// src/logos/Gumroad.svelte
+// src/logos/ICloud.svelte
 var import_disclose_version1484 = require("svelte/internal/disclose-version");
 var $1484 = __toESM(require("svelte/internal/client"));
-var import_gumroad = __toESM(require("@snowui-design-system/resource-base/assets/logos/gumroad.svg"));
-var root151 = $1484.from_html(`<img/>`);
-function Gumroad($$anchor, $$props) {
-  let size = $1484.prop($$props, "size", 3, 32), alt = $1484.prop($$props, "alt", 3, "Gumroad"), className = $1484.prop($$props, "class", 3, ""), rest = $1484.rest_props($$props, [
+var import_i_cloud = __toESM(require("@snowui-design-system/resource-base/assets/logos/i-cloud.svg"));
+var root152 = $1484.from_html(`<img/>`);
+function ICloud($$anchor, $$props) {
+  let size = $1484.prop($$props, "size", 3, 32), alt = $1484.prop($$props, "alt", 3, "ICloud"), className = $1484.prop($$props, "class", 3, ""), rest = $1484.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60339,8 +60340,8 @@ function Gumroad($$anchor, $$props) {
   ]);
   let resolvedWidth = $1484.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1484.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1484.derived(() => import_gumroad.default);
-  var img = root151();
+  let imageSrc = $1484.derived(() => import_i_cloud.default);
+  var img = root152();
   $1484.attribute_effect(img, () => ({
     src: $1484.get(imageSrc),
     alt: alt(),
@@ -60353,13 +60354,13 @@ function Gumroad($$anchor, $$props) {
   $1484.append($$anchor, img);
 }
 
-// src/logos/ICloud.svelte
+// src/logos/Instagram.svelte
 var import_disclose_version1485 = require("svelte/internal/disclose-version");
 var $1485 = __toESM(require("svelte/internal/client"));
-var import_i_cloud = __toESM(require("@snowui-design-system/resource-base/assets/logos/i-cloud.svg"));
-var root152 = $1485.from_html(`<img/>`);
-function ICloud($$anchor, $$props) {
-  let size = $1485.prop($$props, "size", 3, 32), alt = $1485.prop($$props, "alt", 3, "ICloud"), className = $1485.prop($$props, "class", 3, ""), rest = $1485.rest_props($$props, [
+var import_instagram = __toESM(require("@snowui-design-system/resource-base/assets/logos/instagram.svg"));
+var root153 = $1485.from_html(`<img/>`);
+function Instagram($$anchor, $$props) {
+  let size = $1485.prop($$props, "size", 3, 32), alt = $1485.prop($$props, "alt", 3, "Instagram"), className = $1485.prop($$props, "class", 3, ""), rest = $1485.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60371,8 +60372,8 @@ function ICloud($$anchor, $$props) {
   ]);
   let resolvedWidth = $1485.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1485.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1485.derived(() => import_i_cloud.default);
-  var img = root152();
+  let imageSrc = $1485.derived(() => import_instagram.default);
+  var img = root153();
   $1485.attribute_effect(img, () => ({
     src: $1485.get(imageSrc),
     alt: alt(),
@@ -60385,13 +60386,13 @@ function ICloud($$anchor, $$props) {
   $1485.append($$anchor, img);
 }
 
-// src/logos/Instagram.svelte
+// src/logos/LemonSqueezy.svelte
 var import_disclose_version1486 = require("svelte/internal/disclose-version");
 var $1486 = __toESM(require("svelte/internal/client"));
-var import_instagram = __toESM(require("@snowui-design-system/resource-base/assets/logos/instagram.svg"));
-var root153 = $1486.from_html(`<img/>`);
-function Instagram($$anchor, $$props) {
-  let size = $1486.prop($$props, "size", 3, 32), alt = $1486.prop($$props, "alt", 3, "Instagram"), className = $1486.prop($$props, "class", 3, ""), rest = $1486.rest_props($$props, [
+var import_lemon_squeezy = __toESM(require("@snowui-design-system/resource-base/assets/logos/lemon-squeezy.svg"));
+var root154 = $1486.from_html(`<img/>`);
+function LemonSqueezy($$anchor, $$props) {
+  let size = $1486.prop($$props, "size", 3, 32), alt = $1486.prop($$props, "alt", 3, "LemonSqueezy"), className = $1486.prop($$props, "class", 3, ""), rest = $1486.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60403,8 +60404,8 @@ function Instagram($$anchor, $$props) {
   ]);
   let resolvedWidth = $1486.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1486.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1486.derived(() => import_instagram.default);
-  var img = root153();
+  let imageSrc = $1486.derived(() => import_lemon_squeezy.default);
+  var img = root154();
   $1486.attribute_effect(img, () => ({
     src: $1486.get(imageSrc),
     alt: alt(),
@@ -60417,13 +60418,13 @@ function Instagram($$anchor, $$props) {
   $1486.append($$anchor, img);
 }
 
-// src/logos/LemonSqueezy.svelte
+// src/logos/LinkedIn.svelte
 var import_disclose_version1487 = require("svelte/internal/disclose-version");
 var $1487 = __toESM(require("svelte/internal/client"));
-var import_lemon_squeezy = __toESM(require("@snowui-design-system/resource-base/assets/logos/lemon-squeezy.svg"));
-var root154 = $1487.from_html(`<img/>`);
-function LemonSqueezy($$anchor, $$props) {
-  let size = $1487.prop($$props, "size", 3, 32), alt = $1487.prop($$props, "alt", 3, "LemonSqueezy"), className = $1487.prop($$props, "class", 3, ""), rest = $1487.rest_props($$props, [
+var import_linked_in = __toESM(require("@snowui-design-system/resource-base/assets/logos/linked-in.svg"));
+var root155 = $1487.from_html(`<img/>`);
+function LinkedIn($$anchor, $$props) {
+  let size = $1487.prop($$props, "size", 3, 32), alt = $1487.prop($$props, "alt", 3, "LinkedIn"), className = $1487.prop($$props, "class", 3, ""), rest = $1487.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60435,8 +60436,8 @@ function LemonSqueezy($$anchor, $$props) {
   ]);
   let resolvedWidth = $1487.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1487.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1487.derived(() => import_lemon_squeezy.default);
-  var img = root154();
+  let imageSrc = $1487.derived(() => import_linked_in.default);
+  var img = root155();
   $1487.attribute_effect(img, () => ({
     src: $1487.get(imageSrc),
     alt: alt(),
@@ -60449,13 +60450,13 @@ function LemonSqueezy($$anchor, $$props) {
   $1487.append($$anchor, img);
 }
 
-// src/logos/LinkedIn.svelte
+// src/logos/Loop.svelte
 var import_disclose_version1488 = require("svelte/internal/disclose-version");
 var $1488 = __toESM(require("svelte/internal/client"));
-var import_linked_in = __toESM(require("@snowui-design-system/resource-base/assets/logos/linked-in.svg"));
-var root155 = $1488.from_html(`<img/>`);
-function LinkedIn($$anchor, $$props) {
-  let size = $1488.prop($$props, "size", 3, 32), alt = $1488.prop($$props, "alt", 3, "LinkedIn"), className = $1488.prop($$props, "class", 3, ""), rest = $1488.rest_props($$props, [
+var import_loop = __toESM(require("@snowui-design-system/resource-base/assets/logos/loop.svg"));
+var root156 = $1488.from_html(`<img/>`);
+function Loop($$anchor, $$props) {
+  let size = $1488.prop($$props, "size", 3, 32), alt = $1488.prop($$props, "alt", 3, "Loop"), className = $1488.prop($$props, "class", 3, ""), rest = $1488.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60467,8 +60468,8 @@ function LinkedIn($$anchor, $$props) {
   ]);
   let resolvedWidth = $1488.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1488.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1488.derived(() => import_linked_in.default);
-  var img = root155();
+  let imageSrc = $1488.derived(() => import_loop.default);
+  var img = root156();
   $1488.attribute_effect(img, () => ({
     src: $1488.get(imageSrc),
     alt: alt(),
@@ -60481,13 +60482,13 @@ function LinkedIn($$anchor, $$props) {
   $1488.append($$anchor, img);
 }
 
-// src/logos/Loop.svelte
+// src/logos/Mastercard.svelte
 var import_disclose_version1489 = require("svelte/internal/disclose-version");
 var $1489 = __toESM(require("svelte/internal/client"));
-var import_loop = __toESM(require("@snowui-design-system/resource-base/assets/logos/loop.svg"));
-var root156 = $1489.from_html(`<img/>`);
-function Loop($$anchor, $$props) {
-  let size = $1489.prop($$props, "size", 3, 32), alt = $1489.prop($$props, "alt", 3, "Loop"), className = $1489.prop($$props, "class", 3, ""), rest = $1489.rest_props($$props, [
+var import_mastercard = __toESM(require("@snowui-design-system/resource-base/assets/logos/mastercard.svg"));
+var root157 = $1489.from_html(`<img/>`);
+function Mastercard($$anchor, $$props) {
+  let size = $1489.prop($$props, "size", 3, 32), alt = $1489.prop($$props, "alt", 3, "Mastercard"), className = $1489.prop($$props, "class", 3, ""), rest = $1489.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60499,8 +60500,8 @@ function Loop($$anchor, $$props) {
   ]);
   let resolvedWidth = $1489.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1489.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1489.derived(() => import_loop.default);
-  var img = root156();
+  let imageSrc = $1489.derived(() => import_mastercard.default);
+  var img = root157();
   $1489.attribute_effect(img, () => ({
     src: $1489.get(imageSrc),
     alt: alt(),
@@ -60513,13 +60514,13 @@ function Loop($$anchor, $$props) {
   $1489.append($$anchor, img);
 }
 
-// src/logos/Mastercard.svelte
+// src/logos/Medium.svelte
 var import_disclose_version1490 = require("svelte/internal/disclose-version");
 var $1490 = __toESM(require("svelte/internal/client"));
-var import_mastercard = __toESM(require("@snowui-design-system/resource-base/assets/logos/mastercard.svg"));
-var root157 = $1490.from_html(`<img/>`);
-function Mastercard($$anchor, $$props) {
-  let size = $1490.prop($$props, "size", 3, 32), alt = $1490.prop($$props, "alt", 3, "Mastercard"), className = $1490.prop($$props, "class", 3, ""), rest = $1490.rest_props($$props, [
+var import_medium = __toESM(require("@snowui-design-system/resource-base/assets/logos/medium.svg"));
+var root158 = $1490.from_html(`<img/>`);
+function Medium($$anchor, $$props) {
+  let size = $1490.prop($$props, "size", 3, 32), alt = $1490.prop($$props, "alt", 3, "Medium"), className = $1490.prop($$props, "class", 3, ""), rest = $1490.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60531,8 +60532,8 @@ function Mastercard($$anchor, $$props) {
   ]);
   let resolvedWidth = $1490.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1490.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1490.derived(() => import_mastercard.default);
-  var img = root157();
+  let imageSrc = $1490.derived(() => import_medium.default);
+  var img = root158();
   $1490.attribute_effect(img, () => ({
     src: $1490.get(imageSrc),
     alt: alt(),
@@ -60545,13 +60546,13 @@ function Mastercard($$anchor, $$props) {
   $1490.append($$anchor, img);
 }
 
-// src/logos/Medium.svelte
+// src/logos/Messenger.svelte
 var import_disclose_version1491 = require("svelte/internal/disclose-version");
 var $1491 = __toESM(require("svelte/internal/client"));
-var import_medium = __toESM(require("@snowui-design-system/resource-base/assets/logos/medium.svg"));
-var root158 = $1491.from_html(`<img/>`);
-function Medium($$anchor, $$props) {
-  let size = $1491.prop($$props, "size", 3, 32), alt = $1491.prop($$props, "alt", 3, "Medium"), className = $1491.prop($$props, "class", 3, ""), rest = $1491.rest_props($$props, [
+var import_messenger = __toESM(require("@snowui-design-system/resource-base/assets/logos/messenger.svg"));
+var root159 = $1491.from_html(`<img/>`);
+function Messenger($$anchor, $$props) {
+  let size = $1491.prop($$props, "size", 3, 32), alt = $1491.prop($$props, "alt", 3, "Messenger"), className = $1491.prop($$props, "class", 3, ""), rest = $1491.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60563,8 +60564,8 @@ function Medium($$anchor, $$props) {
   ]);
   let resolvedWidth = $1491.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1491.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1491.derived(() => import_medium.default);
-  var img = root158();
+  let imageSrc = $1491.derived(() => import_messenger.default);
+  var img = root159();
   $1491.attribute_effect(img, () => ({
     src: $1491.get(imageSrc),
     alt: alt(),
@@ -60577,13 +60578,13 @@ function Medium($$anchor, $$props) {
   $1491.append($$anchor, img);
 }
 
-// src/logos/Messenger.svelte
+// src/logos/Meta.svelte
 var import_disclose_version1492 = require("svelte/internal/disclose-version");
 var $1492 = __toESM(require("svelte/internal/client"));
-var import_messenger = __toESM(require("@snowui-design-system/resource-base/assets/logos/messenger.svg"));
-var root159 = $1492.from_html(`<img/>`);
-function Messenger($$anchor, $$props) {
-  let size = $1492.prop($$props, "size", 3, 32), alt = $1492.prop($$props, "alt", 3, "Messenger"), className = $1492.prop($$props, "class", 3, ""), rest = $1492.rest_props($$props, [
+var import_meta = __toESM(require("@snowui-design-system/resource-base/assets/logos/meta.svg"));
+var root160 = $1492.from_html(`<img/>`);
+function Meta($$anchor, $$props) {
+  let size = $1492.prop($$props, "size", 3, 32), alt = $1492.prop($$props, "alt", 3, "Meta"), className = $1492.prop($$props, "class", 3, ""), rest = $1492.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60595,8 +60596,8 @@ function Messenger($$anchor, $$props) {
   ]);
   let resolvedWidth = $1492.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1492.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1492.derived(() => import_messenger.default);
-  var img = root159();
+  let imageSrc = $1492.derived(() => import_meta.default);
+  var img = root160();
   $1492.attribute_effect(img, () => ({
     src: $1492.get(imageSrc),
     alt: alt(),
@@ -60609,13 +60610,13 @@ function Messenger($$anchor, $$props) {
   $1492.append($$anchor, img);
 }
 
-// src/logos/Meta.svelte
+// src/logos/Microsoft.svelte
 var import_disclose_version1493 = require("svelte/internal/disclose-version");
 var $1493 = __toESM(require("svelte/internal/client"));
-var import_meta = __toESM(require("@snowui-design-system/resource-base/assets/logos/meta.svg"));
-var root160 = $1493.from_html(`<img/>`);
-function Meta($$anchor, $$props) {
-  let size = $1493.prop($$props, "size", 3, 32), alt = $1493.prop($$props, "alt", 3, "Meta"), className = $1493.prop($$props, "class", 3, ""), rest = $1493.rest_props($$props, [
+var import_microsoft = __toESM(require("@snowui-design-system/resource-base/assets/logos/microsoft.svg"));
+var root161 = $1493.from_html(`<img/>`);
+function Microsoft($$anchor, $$props) {
+  let size = $1493.prop($$props, "size", 3, 32), alt = $1493.prop($$props, "alt", 3, "Microsoft"), className = $1493.prop($$props, "class", 3, ""), rest = $1493.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60627,8 +60628,8 @@ function Meta($$anchor, $$props) {
   ]);
   let resolvedWidth = $1493.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1493.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1493.derived(() => import_meta.default);
-  var img = root160();
+  let imageSrc = $1493.derived(() => import_microsoft.default);
+  var img = root161();
   $1493.attribute_effect(img, () => ({
     src: $1493.get(imageSrc),
     alt: alt(),
@@ -60641,13 +60642,13 @@ function Meta($$anchor, $$props) {
   $1493.append($$anchor, img);
 }
 
-// src/logos/Microsoft.svelte
+// src/logos/Midjourney.svelte
 var import_disclose_version1494 = require("svelte/internal/disclose-version");
 var $1494 = __toESM(require("svelte/internal/client"));
-var import_microsoft = __toESM(require("@snowui-design-system/resource-base/assets/logos/microsoft.svg"));
-var root161 = $1494.from_html(`<img/>`);
-function Microsoft($$anchor, $$props) {
-  let size = $1494.prop($$props, "size", 3, 32), alt = $1494.prop($$props, "alt", 3, "Microsoft"), className = $1494.prop($$props, "class", 3, ""), rest = $1494.rest_props($$props, [
+var import_midjourney = __toESM(require("@snowui-design-system/resource-base/assets/logos/midjourney.svg"));
+var root162 = $1494.from_html(`<img/>`);
+function Midjourney($$anchor, $$props) {
+  let size = $1494.prop($$props, "size", 3, 32), alt = $1494.prop($$props, "alt", 3, "Midjourney"), className = $1494.prop($$props, "class", 3, ""), rest = $1494.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60659,8 +60660,8 @@ function Microsoft($$anchor, $$props) {
   ]);
   let resolvedWidth = $1494.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1494.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1494.derived(() => import_microsoft.default);
-  var img = root161();
+  let imageSrc = $1494.derived(() => import_midjourney.default);
+  var img = root162();
   $1494.attribute_effect(img, () => ({
     src: $1494.get(imageSrc),
     alt: alt(),
@@ -60673,13 +60674,13 @@ function Microsoft($$anchor, $$props) {
   $1494.append($$anchor, img);
 }
 
-// src/logos/Midjourney.svelte
+// src/logos/Nintendo.svelte
 var import_disclose_version1495 = require("svelte/internal/disclose-version");
 var $1495 = __toESM(require("svelte/internal/client"));
-var import_midjourney = __toESM(require("@snowui-design-system/resource-base/assets/logos/midjourney.svg"));
-var root162 = $1495.from_html(`<img/>`);
-function Midjourney($$anchor, $$props) {
-  let size = $1495.prop($$props, "size", 3, 32), alt = $1495.prop($$props, "alt", 3, "Midjourney"), className = $1495.prop($$props, "class", 3, ""), rest = $1495.rest_props($$props, [
+var import_nintendo = __toESM(require("@snowui-design-system/resource-base/assets/logos/nintendo.svg"));
+var root163 = $1495.from_html(`<img/>`);
+function Nintendo($$anchor, $$props) {
+  let size = $1495.prop($$props, "size", 3, 32), alt = $1495.prop($$props, "alt", 3, "Nintendo"), className = $1495.prop($$props, "class", 3, ""), rest = $1495.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60691,8 +60692,8 @@ function Midjourney($$anchor, $$props) {
   ]);
   let resolvedWidth = $1495.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1495.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1495.derived(() => import_midjourney.default);
-  var img = root162();
+  let imageSrc = $1495.derived(() => import_nintendo.default);
+  var img = root163();
   $1495.attribute_effect(img, () => ({
     src: $1495.get(imageSrc),
     alt: alt(),
@@ -60705,13 +60706,13 @@ function Midjourney($$anchor, $$props) {
   $1495.append($$anchor, img);
 }
 
-// src/logos/Nintendo.svelte
+// src/logos/Notion.svelte
 var import_disclose_version1496 = require("svelte/internal/disclose-version");
 var $1496 = __toESM(require("svelte/internal/client"));
-var import_nintendo = __toESM(require("@snowui-design-system/resource-base/assets/logos/nintendo.svg"));
-var root163 = $1496.from_html(`<img/>`);
-function Nintendo($$anchor, $$props) {
-  let size = $1496.prop($$props, "size", 3, 32), alt = $1496.prop($$props, "alt", 3, "Nintendo"), className = $1496.prop($$props, "class", 3, ""), rest = $1496.rest_props($$props, [
+var import_notion = __toESM(require("@snowui-design-system/resource-base/assets/logos/notion.svg"));
+var root164 = $1496.from_html(`<img/>`);
+function Notion($$anchor, $$props) {
+  let size = $1496.prop($$props, "size", 3, 32), alt = $1496.prop($$props, "alt", 3, "Notion"), className = $1496.prop($$props, "class", 3, ""), rest = $1496.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60723,8 +60724,8 @@ function Nintendo($$anchor, $$props) {
   ]);
   let resolvedWidth = $1496.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1496.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1496.derived(() => import_nintendo.default);
-  var img = root163();
+  let imageSrc = $1496.derived(() => import_notion.default);
+  var img = root164();
   $1496.attribute_effect(img, () => ({
     src: $1496.get(imageSrc),
     alt: alt(),
@@ -60737,13 +60738,13 @@ function Nintendo($$anchor, $$props) {
   $1496.append($$anchor, img);
 }
 
-// src/logos/Notion.svelte
+// src/logos/OneDrive.svelte
 var import_disclose_version1497 = require("svelte/internal/disclose-version");
 var $1497 = __toESM(require("svelte/internal/client"));
-var import_notion = __toESM(require("@snowui-design-system/resource-base/assets/logos/notion.svg"));
-var root164 = $1497.from_html(`<img/>`);
-function Notion($$anchor, $$props) {
-  let size = $1497.prop($$props, "size", 3, 32), alt = $1497.prop($$props, "alt", 3, "Notion"), className = $1497.prop($$props, "class", 3, ""), rest = $1497.rest_props($$props, [
+var import_one_drive = __toESM(require("@snowui-design-system/resource-base/assets/logos/one-drive.svg"));
+var root165 = $1497.from_html(`<img/>`);
+function OneDrive($$anchor, $$props) {
+  let size = $1497.prop($$props, "size", 3, 32), alt = $1497.prop($$props, "alt", 3, "OneDrive"), className = $1497.prop($$props, "class", 3, ""), rest = $1497.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60755,8 +60756,8 @@ function Notion($$anchor, $$props) {
   ]);
   let resolvedWidth = $1497.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1497.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1497.derived(() => import_notion.default);
-  var img = root164();
+  let imageSrc = $1497.derived(() => import_one_drive.default);
+  var img = root165();
   $1497.attribute_effect(img, () => ({
     src: $1497.get(imageSrc),
     alt: alt(),
@@ -60769,13 +60770,13 @@ function Notion($$anchor, $$props) {
   $1497.append($$anchor, img);
 }
 
-// src/logos/OneDrive.svelte
+// src/logos/OneNote.svelte
 var import_disclose_version1498 = require("svelte/internal/disclose-version");
 var $1498 = __toESM(require("svelte/internal/client"));
-var import_one_drive = __toESM(require("@snowui-design-system/resource-base/assets/logos/one-drive.svg"));
-var root165 = $1498.from_html(`<img/>`);
-function OneDrive($$anchor, $$props) {
-  let size = $1498.prop($$props, "size", 3, 32), alt = $1498.prop($$props, "alt", 3, "OneDrive"), className = $1498.prop($$props, "class", 3, ""), rest = $1498.rest_props($$props, [
+var import_one_note = __toESM(require("@snowui-design-system/resource-base/assets/logos/one-note.svg"));
+var root166 = $1498.from_html(`<img/>`);
+function OneNote($$anchor, $$props) {
+  let size = $1498.prop($$props, "size", 3, 32), alt = $1498.prop($$props, "alt", 3, "OneNote"), className = $1498.prop($$props, "class", 3, ""), rest = $1498.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60787,8 +60788,8 @@ function OneDrive($$anchor, $$props) {
   ]);
   let resolvedWidth = $1498.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1498.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1498.derived(() => import_one_drive.default);
-  var img = root165();
+  let imageSrc = $1498.derived(() => import_one_note.default);
+  var img = root166();
   $1498.attribute_effect(img, () => ({
     src: $1498.get(imageSrc),
     alt: alt(),
@@ -60801,13 +60802,13 @@ function OneDrive($$anchor, $$props) {
   $1498.append($$anchor, img);
 }
 
-// src/logos/OneNote.svelte
+// src/logos/PayPal.svelte
 var import_disclose_version1499 = require("svelte/internal/disclose-version");
 var $1499 = __toESM(require("svelte/internal/client"));
-var import_one_note = __toESM(require("@snowui-design-system/resource-base/assets/logos/one-note.svg"));
-var root166 = $1499.from_html(`<img/>`);
-function OneNote($$anchor, $$props) {
-  let size = $1499.prop($$props, "size", 3, 32), alt = $1499.prop($$props, "alt", 3, "OneNote"), className = $1499.prop($$props, "class", 3, ""), rest = $1499.rest_props($$props, [
+var import_pay_pal = __toESM(require("@snowui-design-system/resource-base/assets/logos/pay-pal.svg"));
+var root167 = $1499.from_html(`<img/>`);
+function PayPal($$anchor, $$props) {
+  let size = $1499.prop($$props, "size", 3, 32), alt = $1499.prop($$props, "alt", 3, "PayPal"), className = $1499.prop($$props, "class", 3, ""), rest = $1499.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60819,8 +60820,8 @@ function OneNote($$anchor, $$props) {
   ]);
   let resolvedWidth = $1499.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1499.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1499.derived(() => import_one_note.default);
-  var img = root166();
+  let imageSrc = $1499.derived(() => import_pay_pal.default);
+  var img = root167();
   $1499.attribute_effect(img, () => ({
     src: $1499.get(imageSrc),
     alt: alt(),
@@ -60833,13 +60834,13 @@ function OneNote($$anchor, $$props) {
   $1499.append($$anchor, img);
 }
 
-// src/logos/PayPal.svelte
+// src/logos/Perplexity.svelte
 var import_disclose_version1500 = require("svelte/internal/disclose-version");
 var $1500 = __toESM(require("svelte/internal/client"));
-var import_pay_pal = __toESM(require("@snowui-design-system/resource-base/assets/logos/pay-pal.svg"));
-var root167 = $1500.from_html(`<img/>`);
-function PayPal($$anchor, $$props) {
-  let size = $1500.prop($$props, "size", 3, 32), alt = $1500.prop($$props, "alt", 3, "PayPal"), className = $1500.prop($$props, "class", 3, ""), rest = $1500.rest_props($$props, [
+var import_perplexity = __toESM(require("@snowui-design-system/resource-base/assets/logos/perplexity.svg"));
+var root168 = $1500.from_html(`<img/>`);
+function Perplexity($$anchor, $$props) {
+  let size = $1500.prop($$props, "size", 3, 32), alt = $1500.prop($$props, "alt", 3, "Perplexity"), className = $1500.prop($$props, "class", 3, ""), rest = $1500.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60851,8 +60852,8 @@ function PayPal($$anchor, $$props) {
   ]);
   let resolvedWidth = $1500.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1500.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1500.derived(() => import_pay_pal.default);
-  var img = root167();
+  let imageSrc = $1500.derived(() => import_perplexity.default);
+  var img = root168();
   $1500.attribute_effect(img, () => ({
     src: $1500.get(imageSrc),
     alt: alt(),
@@ -60865,13 +60866,13 @@ function PayPal($$anchor, $$props) {
   $1500.append($$anchor, img);
 }
 
-// src/logos/Perplexity.svelte
+// src/logos/Pinterest.svelte
 var import_disclose_version1501 = require("svelte/internal/disclose-version");
 var $1501 = __toESM(require("svelte/internal/client"));
-var import_perplexity = __toESM(require("@snowui-design-system/resource-base/assets/logos/perplexity.svg"));
-var root168 = $1501.from_html(`<img/>`);
-function Perplexity($$anchor, $$props) {
-  let size = $1501.prop($$props, "size", 3, 32), alt = $1501.prop($$props, "alt", 3, "Perplexity"), className = $1501.prop($$props, "class", 3, ""), rest = $1501.rest_props($$props, [
+var import_pinterest = __toESM(require("@snowui-design-system/resource-base/assets/logos/pinterest.svg"));
+var root169 = $1501.from_html(`<img/>`);
+function Pinterest($$anchor, $$props) {
+  let size = $1501.prop($$props, "size", 3, 32), alt = $1501.prop($$props, "alt", 3, "Pinterest"), className = $1501.prop($$props, "class", 3, ""), rest = $1501.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60883,8 +60884,8 @@ function Perplexity($$anchor, $$props) {
   ]);
   let resolvedWidth = $1501.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1501.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1501.derived(() => import_perplexity.default);
-  var img = root168();
+  let imageSrc = $1501.derived(() => import_pinterest.default);
+  var img = root169();
   $1501.attribute_effect(img, () => ({
     src: $1501.get(imageSrc),
     alt: alt(),
@@ -60897,13 +60898,13 @@ function Perplexity($$anchor, $$props) {
   $1501.append($$anchor, img);
 }
 
-// src/logos/Pinterest.svelte
+// src/logos/PowerPoint.svelte
 var import_disclose_version1502 = require("svelte/internal/disclose-version");
 var $1502 = __toESM(require("svelte/internal/client"));
-var import_pinterest = __toESM(require("@snowui-design-system/resource-base/assets/logos/pinterest.svg"));
-var root169 = $1502.from_html(`<img/>`);
-function Pinterest($$anchor, $$props) {
-  let size = $1502.prop($$props, "size", 3, 32), alt = $1502.prop($$props, "alt", 3, "Pinterest"), className = $1502.prop($$props, "class", 3, ""), rest = $1502.rest_props($$props, [
+var import_power_point = __toESM(require("@snowui-design-system/resource-base/assets/logos/power-point.svg"));
+var root170 = $1502.from_html(`<img/>`);
+function PowerPoint($$anchor, $$props) {
+  let size = $1502.prop($$props, "size", 3, 32), alt = $1502.prop($$props, "alt", 3, "PowerPoint"), className = $1502.prop($$props, "class", 3, ""), rest = $1502.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60915,8 +60916,8 @@ function Pinterest($$anchor, $$props) {
   ]);
   let resolvedWidth = $1502.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1502.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1502.derived(() => import_pinterest.default);
-  var img = root169();
+  let imageSrc = $1502.derived(() => import_power_point.default);
+  var img = root170();
   $1502.attribute_effect(img, () => ({
     src: $1502.get(imageSrc),
     alt: alt(),
@@ -60929,13 +60930,13 @@ function Pinterest($$anchor, $$props) {
   $1502.append($$anchor, img);
 }
 
-// src/logos/PowerPoint.svelte
+// src/logos/Reddit.svelte
 var import_disclose_version1503 = require("svelte/internal/disclose-version");
 var $1503 = __toESM(require("svelte/internal/client"));
-var import_power_point = __toESM(require("@snowui-design-system/resource-base/assets/logos/power-point.svg"));
-var root170 = $1503.from_html(`<img/>`);
-function PowerPoint($$anchor, $$props) {
-  let size = $1503.prop($$props, "size", 3, 32), alt = $1503.prop($$props, "alt", 3, "PowerPoint"), className = $1503.prop($$props, "class", 3, ""), rest = $1503.rest_props($$props, [
+var import_reddit = __toESM(require("@snowui-design-system/resource-base/assets/logos/reddit.svg"));
+var root171 = $1503.from_html(`<img/>`);
+function Reddit($$anchor, $$props) {
+  let size = $1503.prop($$props, "size", 3, 32), alt = $1503.prop($$props, "alt", 3, "Reddit"), className = $1503.prop($$props, "class", 3, ""), rest = $1503.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60947,8 +60948,8 @@ function PowerPoint($$anchor, $$props) {
   ]);
   let resolvedWidth = $1503.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1503.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1503.derived(() => import_power_point.default);
-  var img = root170();
+  let imageSrc = $1503.derived(() => import_reddit.default);
+  var img = root171();
   $1503.attribute_effect(img, () => ({
     src: $1503.get(imageSrc),
     alt: alt(),
@@ -60961,13 +60962,13 @@ function PowerPoint($$anchor, $$props) {
   $1503.append($$anchor, img);
 }
 
-// src/logos/Reddit.svelte
+// src/logos/RssLogo.svelte
 var import_disclose_version1504 = require("svelte/internal/disclose-version");
 var $1504 = __toESM(require("svelte/internal/client"));
-var import_reddit = __toESM(require("@snowui-design-system/resource-base/assets/logos/reddit.svg"));
-var root171 = $1504.from_html(`<img/>`);
-function Reddit($$anchor, $$props) {
-  let size = $1504.prop($$props, "size", 3, 32), alt = $1504.prop($$props, "alt", 3, "Reddit"), className = $1504.prop($$props, "class", 3, ""), rest = $1504.rest_props($$props, [
+var import_rss_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/rss-logo.svg"));
+var root172 = $1504.from_html(`<img/>`);
+function RssLogo($$anchor, $$props) {
+  let size = $1504.prop($$props, "size", 3, 32), alt = $1504.prop($$props, "alt", 3, "RssLogo"), className = $1504.prop($$props, "class", 3, ""), rest = $1504.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -60979,8 +60980,8 @@ function Reddit($$anchor, $$props) {
   ]);
   let resolvedWidth = $1504.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1504.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1504.derived(() => import_reddit.default);
-  var img = root171();
+  let imageSrc = $1504.derived(() => import_rss_logo.default);
+  var img = root172();
   $1504.attribute_effect(img, () => ({
     src: $1504.get(imageSrc),
     alt: alt(),
@@ -60993,13 +60994,13 @@ function Reddit($$anchor, $$props) {
   $1504.append($$anchor, img);
 }
 
-// src/logos/RssLogo.svelte
+// src/logos/Slack.svelte
 var import_disclose_version1505 = require("svelte/internal/disclose-version");
 var $1505 = __toESM(require("svelte/internal/client"));
-var import_rss_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/rss-logo.svg"));
-var root172 = $1505.from_html(`<img/>`);
-function RssLogo($$anchor, $$props) {
-  let size = $1505.prop($$props, "size", 3, 32), alt = $1505.prop($$props, "alt", 3, "RssLogo"), className = $1505.prop($$props, "class", 3, ""), rest = $1505.rest_props($$props, [
+var import_slack = __toESM(require("@snowui-design-system/resource-base/assets/logos/slack.svg"));
+var root173 = $1505.from_html(`<img/>`);
+function Slack($$anchor, $$props) {
+  let size = $1505.prop($$props, "size", 3, 32), alt = $1505.prop($$props, "alt", 3, "Slack"), className = $1505.prop($$props, "class", 3, ""), rest = $1505.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -61011,8 +61012,8 @@ function RssLogo($$anchor, $$props) {
   ]);
   let resolvedWidth = $1505.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1505.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1505.derived(() => import_rss_logo.default);
-  var img = root172();
+  let imageSrc = $1505.derived(() => import_slack.default);
+  var img = root173();
   $1505.attribute_effect(img, () => ({
     src: $1505.get(imageSrc),
     alt: alt(),
@@ -61025,13 +61026,13 @@ function RssLogo($$anchor, $$props) {
   $1505.append($$anchor, img);
 }
 
-// src/logos/Slack.svelte
+// src/logos/Snapchat.svelte
 var import_disclose_version1506 = require("svelte/internal/disclose-version");
 var $1506 = __toESM(require("svelte/internal/client"));
-var import_slack = __toESM(require("@snowui-design-system/resource-base/assets/logos/slack.svg"));
-var root173 = $1506.from_html(`<img/>`);
-function Slack($$anchor, $$props) {
-  let size = $1506.prop($$props, "size", 3, 32), alt = $1506.prop($$props, "alt", 3, "Slack"), className = $1506.prop($$props, "class", 3, ""), rest = $1506.rest_props($$props, [
+var import_snapchat = __toESM(require("@snowui-design-system/resource-base/assets/logos/snapchat.svg"));
+var root174 = $1506.from_html(`<img/>`);
+function Snapchat($$anchor, $$props) {
+  let size = $1506.prop($$props, "size", 3, 32), alt = $1506.prop($$props, "alt", 3, "Snapchat"), className = $1506.prop($$props, "class", 3, ""), rest = $1506.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -61043,8 +61044,8 @@ function Slack($$anchor, $$props) {
   ]);
   let resolvedWidth = $1506.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1506.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1506.derived(() => import_slack.default);
-  var img = root173();
+  let imageSrc = $1506.derived(() => import_snapchat.default);
+  var img = root174();
   $1506.attribute_effect(img, () => ({
     src: $1506.get(imageSrc),
     alt: alt(),
@@ -61057,13 +61058,13 @@ function Slack($$anchor, $$props) {
   $1506.append($$anchor, img);
 }
 
-// src/logos/Snapchat.svelte
+// src/logos/SnowLogo.svelte
 var import_disclose_version1507 = require("svelte/internal/disclose-version");
 var $1507 = __toESM(require("svelte/internal/client"));
-var import_snapchat = __toESM(require("@snowui-design-system/resource-base/assets/logos/snapchat.svg"));
-var root174 = $1507.from_html(`<img/>`);
-function Snapchat($$anchor, $$props) {
-  let size = $1507.prop($$props, "size", 3, 32), alt = $1507.prop($$props, "alt", 3, "Snapchat"), className = $1507.prop($$props, "class", 3, ""), rest = $1507.rest_props($$props, [
+var import_snow_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/snow-logo.svg"));
+var root175 = $1507.from_html(`<img/>`);
+function SnowLogo($$anchor, $$props) {
+  let size = $1507.prop($$props, "size", 3, 32), alt = $1507.prop($$props, "alt", 3, "SnowLogo"), className = $1507.prop($$props, "class", 3, ""), rest = $1507.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -61075,8 +61076,8 @@ function Snapchat($$anchor, $$props) {
   ]);
   let resolvedWidth = $1507.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1507.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1507.derived(() => import_snapchat.default);
-  var img = root174();
+  let imageSrc = $1507.derived(() => import_snow_logo.default);
+  var img = root175();
   $1507.attribute_effect(img, () => ({
     src: $1507.get(imageSrc),
     alt: alt(),
@@ -61089,13 +61090,13 @@ function Snapchat($$anchor, $$props) {
   $1507.append($$anchor, img);
 }
 
-// src/logos/SnowLogo.svelte
+// src/logos/Stripe.svelte
 var import_disclose_version1508 = require("svelte/internal/disclose-version");
 var $1508 = __toESM(require("svelte/internal/client"));
-var import_snow_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/snow-logo.svg"));
-var root175 = $1508.from_html(`<img/>`);
-function SnowLogo($$anchor, $$props) {
-  let size = $1508.prop($$props, "size", 3, 32), alt = $1508.prop($$props, "alt", 3, "SnowLogo"), className = $1508.prop($$props, "class", 3, ""), rest = $1508.rest_props($$props, [
+var import_stripe = __toESM(require("@snowui-design-system/resource-base/assets/logos/stripe.svg"));
+var root176 = $1508.from_html(`<img/>`);
+function Stripe($$anchor, $$props) {
+  let size = $1508.prop($$props, "size", 3, 32), alt = $1508.prop($$props, "alt", 3, "Stripe"), className = $1508.prop($$props, "class", 3, ""), rest = $1508.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -61107,8 +61108,8 @@ function SnowLogo($$anchor, $$props) {
   ]);
   let resolvedWidth = $1508.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1508.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1508.derived(() => import_snow_logo.default);
-  var img = root175();
+  let imageSrc = $1508.derived(() => import_stripe.default);
+  var img = root176();
   $1508.attribute_effect(img, () => ({
     src: $1508.get(imageSrc),
     alt: alt(),
@@ -61121,13 +61122,13 @@ function SnowLogo($$anchor, $$props) {
   $1508.append($$anchor, img);
 }
 
-// src/logos/Stripe.svelte
+// src/logos/Svelte.svelte
 var import_disclose_version1509 = require("svelte/internal/disclose-version");
 var $1509 = __toESM(require("svelte/internal/client"));
-var import_stripe = __toESM(require("@snowui-design-system/resource-base/assets/logos/stripe.svg"));
-var root176 = $1509.from_html(`<img/>`);
-function Stripe($$anchor, $$props) {
-  let size = $1509.prop($$props, "size", 3, 32), alt = $1509.prop($$props, "alt", 3, "Stripe"), className = $1509.prop($$props, "class", 3, ""), rest = $1509.rest_props($$props, [
+var import_svelte2 = __toESM(require("@snowui-design-system/resource-base/assets/logos/svelte.svg"));
+var root177 = $1509.from_html(`<img/>`);
+function Svelte($$anchor, $$props) {
+  let size = $1509.prop($$props, "size", 3, 32), alt = $1509.prop($$props, "alt", 3, "Svelte"), className = $1509.prop($$props, "class", 3, ""), rest = $1509.rest_props($$props, [
     "$$slots",
     "$$events",
     "$$legacy",
@@ -61139,8 +61140,8 @@ function Stripe($$anchor, $$props) {
   ]);
   let resolvedWidth = $1509.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1509.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1509.derived(() => import_stripe.default);
-  var img = root176();
+  let imageSrc = $1509.derived(() => import_svelte2.default);
+  var img = root177();
   $1509.attribute_effect(img, () => ({
     src: $1509.get(imageSrc),
     alt: alt(),
@@ -61157,7 +61158,7 @@ function Stripe($$anchor, $$props) {
 var import_disclose_version1510 = require("svelte/internal/disclose-version");
 var $1510 = __toESM(require("svelte/internal/client"));
 var import_telegram = __toESM(require("@snowui-design-system/resource-base/assets/logos/telegram.svg"));
-var root177 = $1510.from_html(`<img/>`);
+var root178 = $1510.from_html(`<img/>`);
 function Telegram($$anchor, $$props) {
   let size = $1510.prop($$props, "size", 3, 32), alt = $1510.prop($$props, "alt", 3, "Telegram"), className = $1510.prop($$props, "class", 3, ""), rest = $1510.rest_props($$props, [
     "$$slots",
@@ -61172,7 +61173,7 @@ function Telegram($$anchor, $$props) {
   let resolvedWidth = $1510.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1510.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1510.derived(() => import_telegram.default);
-  var img = root177();
+  var img = root178();
   $1510.attribute_effect(img, () => ({
     src: $1510.get(imageSrc),
     alt: alt(),
@@ -61189,7 +61190,7 @@ function Telegram($$anchor, $$props) {
 var import_disclose_version1511 = require("svelte/internal/disclose-version");
 var $1511 = __toESM(require("svelte/internal/client"));
 var import_threads = __toESM(require("@snowui-design-system/resource-base/assets/logos/threads.svg"));
-var root178 = $1511.from_html(`<img/>`);
+var root179 = $1511.from_html(`<img/>`);
 function Threads($$anchor, $$props) {
   let size = $1511.prop($$props, "size", 3, 32), alt = $1511.prop($$props, "alt", 3, "Threads"), className = $1511.prop($$props, "class", 3, ""), rest = $1511.rest_props($$props, [
     "$$slots",
@@ -61204,7 +61205,7 @@ function Threads($$anchor, $$props) {
   let resolvedWidth = $1511.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1511.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1511.derived(() => import_threads.default);
-  var img = root178();
+  var img = root179();
   $1511.attribute_effect(img, () => ({
     src: $1511.get(imageSrc),
     alt: alt(),
@@ -61221,7 +61222,7 @@ function Threads($$anchor, $$props) {
 var import_disclose_version1512 = require("svelte/internal/disclose-version");
 var $1512 = __toESM(require("svelte/internal/client"));
 var import_tik_tok = __toESM(require("@snowui-design-system/resource-base/assets/logos/tik-tok.svg"));
-var root179 = $1512.from_html(`<img/>`);
+var root180 = $1512.from_html(`<img/>`);
 function TikTok($$anchor, $$props) {
   let size = $1512.prop($$props, "size", 3, 32), alt = $1512.prop($$props, "alt", 3, "TikTok"), className = $1512.prop($$props, "class", 3, ""), rest = $1512.rest_props($$props, [
     "$$slots",
@@ -61236,7 +61237,7 @@ function TikTok($$anchor, $$props) {
   let resolvedWidth = $1512.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1512.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1512.derived(() => import_tik_tok.default);
-  var img = root179();
+  var img = root180();
   $1512.attribute_effect(img, () => ({
     src: $1512.get(imageSrc),
     alt: alt(),
@@ -61253,7 +61254,7 @@ function TikTok($$anchor, $$props) {
 var import_disclose_version1513 = require("svelte/internal/disclose-version");
 var $1513 = __toESM(require("svelte/internal/client"));
 var import_twitch = __toESM(require("@snowui-design-system/resource-base/assets/logos/twitch.svg"));
-var root180 = $1513.from_html(`<img/>`);
+var root181 = $1513.from_html(`<img/>`);
 function Twitch($$anchor, $$props) {
   let size = $1513.prop($$props, "size", 3, 32), alt = $1513.prop($$props, "alt", 3, "Twitch"), className = $1513.prop($$props, "class", 3, ""), rest = $1513.rest_props($$props, [
     "$$slots",
@@ -61268,7 +61269,7 @@ function Twitch($$anchor, $$props) {
   let resolvedWidth = $1513.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1513.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1513.derived(() => import_twitch.default);
-  var img = root180();
+  var img = root181();
   $1513.attribute_effect(img, () => ({
     src: $1513.get(imageSrc),
     alt: alt(),
@@ -61285,7 +61286,7 @@ function Twitch($$anchor, $$props) {
 var import_disclose_version1514 = require("svelte/internal/disclose-version");
 var $1514 = __toESM(require("svelte/internal/client"));
 var import_twitter = __toESM(require("@snowui-design-system/resource-base/assets/logos/twitter.svg"));
-var root181 = $1514.from_html(`<img/>`);
+var root182 = $1514.from_html(`<img/>`);
 function Twitter($$anchor, $$props) {
   let size = $1514.prop($$props, "size", 3, 32), alt = $1514.prop($$props, "alt", 3, "Twitter"), className = $1514.prop($$props, "class", 3, ""), rest = $1514.rest_props($$props, [
     "$$slots",
@@ -61300,7 +61301,7 @@ function Twitter($$anchor, $$props) {
   let resolvedWidth = $1514.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1514.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1514.derived(() => import_twitter.default);
-  var img = root181();
+  var img = root182();
   $1514.attribute_effect(img, () => ({
     src: $1514.get(imageSrc),
     alt: alt(),
@@ -61317,7 +61318,7 @@ function Twitter($$anchor, $$props) {
 var import_disclose_version1515 = require("svelte/internal/disclose-version");
 var $1515 = __toESM(require("svelte/internal/client"));
 var import_visa = __toESM(require("@snowui-design-system/resource-base/assets/logos/visa.svg"));
-var root182 = $1515.from_html(`<img/>`);
+var root183 = $1515.from_html(`<img/>`);
 function Visa($$anchor, $$props) {
   let size = $1515.prop($$props, "size", 3, 32), alt = $1515.prop($$props, "alt", 3, "Visa"), className = $1515.prop($$props, "class", 3, ""), rest = $1515.rest_props($$props, [
     "$$slots",
@@ -61332,7 +61333,7 @@ function Visa($$anchor, $$props) {
   let resolvedWidth = $1515.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1515.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1515.derived(() => import_visa.default);
-  var img = root182();
+  var img = root183();
   $1515.attribute_effect(img, () => ({
     src: $1515.get(imageSrc),
     alt: alt(),
@@ -61349,7 +61350,7 @@ function Visa($$anchor, $$props) {
 var import_disclose_version1516 = require("svelte/internal/disclose-version");
 var $1516 = __toESM(require("svelte/internal/client"));
 var import_whats_app = __toESM(require("@snowui-design-system/resource-base/assets/logos/whats-app.svg"));
-var root183 = $1516.from_html(`<img/>`);
+var root184 = $1516.from_html(`<img/>`);
 function WhatsApp($$anchor, $$props) {
   let size = $1516.prop($$props, "size", 3, 32), alt = $1516.prop($$props, "alt", 3, "WhatsApp"), className = $1516.prop($$props, "class", 3, ""), rest = $1516.rest_props($$props, [
     "$$slots",
@@ -61364,7 +61365,7 @@ function WhatsApp($$anchor, $$props) {
   let resolvedWidth = $1516.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1516.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1516.derived(() => import_whats_app.default);
-  var img = root183();
+  var img = root184();
   $1516.attribute_effect(img, () => ({
     src: $1516.get(imageSrc),
     alt: alt(),
@@ -61381,7 +61382,7 @@ function WhatsApp($$anchor, $$props) {
 var import_disclose_version1517 = require("svelte/internal/disclose-version");
 var $1517 = __toESM(require("svelte/internal/client"));
 var import_word = __toESM(require("@snowui-design-system/resource-base/assets/logos/word.svg"));
-var root184 = $1517.from_html(`<img/>`);
+var root185 = $1517.from_html(`<img/>`);
 function Word($$anchor, $$props) {
   let size = $1517.prop($$props, "size", 3, 32), alt = $1517.prop($$props, "alt", 3, "Word"), className = $1517.prop($$props, "class", 3, ""), rest = $1517.rest_props($$props, [
     "$$slots",
@@ -61396,7 +61397,7 @@ function Word($$anchor, $$props) {
   let resolvedWidth = $1517.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1517.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1517.derived(() => import_word.default);
-  var img = root184();
+  var img = root185();
   $1517.attribute_effect(img, () => ({
     src: $1517.get(imageSrc),
     alt: alt(),
@@ -61413,7 +61414,7 @@ function Word($$anchor, $$props) {
 var import_disclose_version1518 = require("svelte/internal/disclose-version");
 var $1518 = __toESM(require("svelte/internal/client"));
 var import_x_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/x-logo.svg"));
-var root185 = $1518.from_html(`<img/>`);
+var root186 = $1518.from_html(`<img/>`);
 function XLogo($$anchor, $$props) {
   let size = $1518.prop($$props, "size", 3, 32), alt = $1518.prop($$props, "alt", 3, "XLogo"), className = $1518.prop($$props, "class", 3, ""), rest = $1518.rest_props($$props, [
     "$$slots",
@@ -61428,7 +61429,7 @@ function XLogo($$anchor, $$props) {
   let resolvedWidth = $1518.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1518.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1518.derived(() => import_x_logo.default);
-  var img = root185();
+  var img = root186();
   $1518.attribute_effect(img, () => ({
     src: $1518.get(imageSrc),
     alt: alt(),
@@ -61445,7 +61446,7 @@ function XLogo($$anchor, $$props) {
 var import_disclose_version1519 = require("svelte/internal/disclose-version");
 var $1519 = __toESM(require("svelte/internal/client"));
 var import_youtube = __toESM(require("@snowui-design-system/resource-base/assets/logos/youtube.svg"));
-var root186 = $1519.from_html(`<img/>`);
+var root187 = $1519.from_html(`<img/>`);
 function Youtube($$anchor, $$props) {
   let size = $1519.prop($$props, "size", 3, 32), alt = $1519.prop($$props, "alt", 3, "Youtube"), className = $1519.prop($$props, "class", 3, ""), rest = $1519.rest_props($$props, [
     "$$slots",
@@ -61460,7 +61461,7 @@ function Youtube($$anchor, $$props) {
   let resolvedWidth = $1519.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1519.derived(() => size() ?? $$props.height ?? 32);
   let imageSrc = $1519.derived(() => import_youtube.default);
-  var img = root186();
+  var img = root187();
   $1519.attribute_effect(img, () => ({
     src: $1519.get(imageSrc),
     alt: alt(),
@@ -61481,13 +61482,13 @@ var componentNames = {
   emoji: ["BombEmoji", "FaceBlowingKiss", "FaceSteamFromNose", "FaceTearsJoy", "GrinningCat", "GrinningFaceSweat", "HeartArrow", "HundredPoints", "LoudlyCryingFace", "RedHeart", "RobotEmoji", "SeeMonkey", "SkullCrossbones", "SmilingFaceHearts", "SmilingFaceHorns", "SmilingFaceSunglasses", "SnowflakeEmoji", "Snowman", "UmbrellaEmoji", "WinkingFace", "WinkingFaceTongue"],
   illustrations: ["Humanoid", "Illustration", "Illustration01", "Illustration02", "Illustration03", "Illustration04", "Illustration05", "Illustration06", "Illustration07", "Illustration08", "Illustration09", "Illustration10", "Illustration11", "Illustration12", "Illustration13", "Illustration14", "Illustration15", "Illustration16", "Illustration17", "Illustration18", "Illustration19", "Illustration20", "Illustration21", "Illustration22", "Illustration23", "Illustration24", "Illustration25", "Illustration26", "Illustration27", "Illustration28", "LineDrawing01", "LineDrawing02", "LineDrawing03", "QrCodeBig", "Voice"],
   images: ["Image01"],
-  logos: ["Android", "AppStore", "Apple", "AppleIntelligence2a", "AppleIntelligence2b", "AppleIntelligenceA", "AppleIntelligenceB", "Arc", "Behance", "ChatGpt", "Claude", "Copilot", "Discord", "Dribbble", "Dropbox", "Excel", "Facebook", "FigmaA", "FigmaB", "Framer", "Gemini", "Github", "Google", "GoogleDrive", "GooglePlay", "Grok", "Gumroad", "ICloud", "Instagram", "LemonSqueezy", "LinkedIn", "Loop", "Mastercard", "Medium", "Messenger", "Meta", "Microsoft", "Midjourney", "Nintendo", "Notion", "OneDrive", "OneNote", "PayPal", "Perplexity", "Pinterest", "PowerPoint", "Reddit", "RssLogo", "Slack", "Snapchat", "SnowLogo", "Stripe", "Telegram", "Threads", "TikTok", "Twitch", "Twitter", "Visa", "WhatsApp", "Word", "XLogo", "Youtube"]
+  logos: ["Android", "AppStore", "Apple", "AppleIntelligence2a", "AppleIntelligence2b", "AppleIntelligenceA", "AppleIntelligenceB", "Arc", "Behance", "ChatGpt", "Claude", "Copilot", "Discord", "Dribbble", "Dropbox", "Excel", "Facebook", "FigmaA", "FigmaB", "Framer", "Gemini", "Github", "Google", "GoogleDrive", "GooglePlay", "Grok", "Gumroad", "ICloud", "Instagram", "LemonSqueezy", "LinkedIn", "Loop", "Mastercard", "Medium", "Messenger", "Meta", "Microsoft", "Midjourney", "Nintendo", "Notion", "OneDrive", "OneNote", "PayPal", "Perplexity", "Pinterest", "PowerPoint", "Reddit", "RssLogo", "Slack", "Snapchat", "SnowLogo", "Stripe", "Svelte", "Telegram", "Threads", "TikTok", "Twitch", "Twitter", "Visa", "WhatsApp", "Word", "XLogo", "Youtube"]
 };
 
 // src/lib/Icon.svelte
 var import_disclose_version1520 = require("svelte/internal/disclose-version");
 var $1520 = __toESM(require("svelte/internal/client"));
-var import_svelte2 = require("svelte");
+var import_svelte3 = require("svelte");
 var root_2 = $1520.from_html(`<span>\u25A7</span>`);
 function Icon($$anchor, $$props) {
   $1520.push($$props, true);
@@ -61503,7 +61504,7 @@ function Icon($$anchor, $$props) {
     "class",
     "as"
   ]);
-  const ctx = (0, import_svelte2.getContext)(RESOURCE_ICON_CONTEXT_KEY);
+  const ctx = (0, import_svelte3.getContext)(RESOURCE_ICON_CONTEXT_KEY);
   let weight = $1520.derived(() => $$props.weight ?? ctx?.weight ?? "regular");
   let size = $1520.derived(() => $$props.size ?? ctx?.size ?? 32);
   let resolvedSize = $1520.derived(() => typeof $1520.get(size) === "number" ? `${$1520.get(size)}px` : $1520.get(size));
@@ -61598,7 +61599,7 @@ function Icon($$anchor, $$props) {
 // src/lib/IconProvider.svelte
 var import_disclose_version1521 = require("svelte/internal/disclose-version");
 var $1521 = __toESM(require("svelte/internal/client"));
-var import_svelte3 = require("svelte");
+var import_svelte4 = require("svelte");
 function IconProvider($$anchor, $$props) {
   $1521.push($$props, true);
   const ctx = {
@@ -61633,7 +61634,7 @@ function IconProvider($$anchor, $$props) {
       return void 0;
     }
   };
-  (0, import_svelte3.setContext)(RESOURCE_ICON_CONTEXT_KEY, ctx);
+  (0, import_svelte4.setContext)(RESOURCE_ICON_CONTEXT_KEY, ctx);
   var fragment = $1521.comment();
   var node = $1521.first_child(fragment);
   $1521.snippet(node, () => $$props.children ?? $1521.noop);
@@ -62970,6 +62971,7 @@ function IconProvider($$anchor, $$props) {
   SunDim,
   SunHorizon,
   Sunglasses,
+  Svelte,
   Swap,
   Swatches,
   SwimmingPool,

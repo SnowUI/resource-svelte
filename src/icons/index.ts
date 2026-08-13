@@ -11,7 +11,6 @@ export { default as ArrowLineLeft } from './snowui/ArrowLineLeft.svelte';
 export { default as ArrowLineRight } from './snowui/ArrowLineRight.svelte';
 export { default as ArrowLineUp } from './snowui/ArrowLineUp.svelte';
 export { default as ArrowLineUpDown } from './snowui/ArrowLineUpDown.svelte';
-export { default as ArrowRight } from './snowui/ArrowRight.svelte';
 export { default as ArrowRise } from './snowui/ArrowRise.svelte';
 export { default as ArrowsDown } from './snowui/ArrowsDown.svelte';
 export { default as ArrowsDownUp } from './snowui/ArrowsDownUp.svelte';
@@ -164,6 +163,7 @@ export { default as ArrowLineDownLeft } from './phosphor/ArrowLineDownLeft.svelt
 export { default as ArrowLineDownRight } from './phosphor/ArrowLineDownRight.svelte';
 export { default as ArrowLineUpLeft } from './phosphor/ArrowLineUpLeft.svelte';
 export { default as ArrowLineUpRight } from './phosphor/ArrowLineUpRight.svelte';
+export { default as ArrowRight } from './phosphor/ArrowRight.svelte';
 export { default as ArrowsClockwise } from './phosphor/ArrowsClockwise.svelte';
 export { default as ArrowsCounterClockwise } from './phosphor/ArrowsCounterClockwise.svelte';
 export { default as ArrowsHorizontal } from './phosphor/ArrowsHorizontal.svelte';
