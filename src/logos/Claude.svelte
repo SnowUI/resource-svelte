@@ -1,16 +1,27 @@
 <script lang="ts">
   import type { AvatarProps } from '../lib/types';
-import ClaudeSrc from '@snowui-design-system/resource-base/assets/logos/claude.svg';
+
   let { size = 32, width, height, alt = "Claude", class: className = "", ...rest }: AvatarProps = $props();
   let resolvedWidth = $derived(size ?? width ?? 32);
   let resolvedHeight = $derived(size ?? height ?? 32);
-  let imageSrc = $derived(ClaudeSrc);
 </script>
-<img
-  src={imageSrc}
-  alt={alt}
+
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
   width={resolvedWidth}
   height={resolvedHeight}
   class={className}
+  role={alt ? "img" : undefined}
+  aria-label={alt || undefined}
+  aria-hidden={alt ? undefined : "true"}
   {...rest}
-/>
+>
+<g clip-path="url(#clip0_7159_5284)">
+<path d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z" fill="#CC9B7A"/>
+<path d="M20.1007 9.3335H17.3902L22.3247 22.6099L25.0352 22.6102L20.1007 9.3335ZM12.2678 9.3335L7.33331 22.6102H10.0993L11.095 19.8222L16.2729 19.8219L17.2796 22.6102H20.0455L15.1001 9.3335H12.2678ZM12.0021 17.3548L13.684 12.686L15.3767 17.3548H12.0021Z" fill="currentColor"/>
+</g>
+<defs>
+<clipPath id="clip0_7159_5284">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -59653,8 +59653,7 @@ function AppleIntelligenceB($$anchor, $$props) {
 // src/logos/Apple.svelte
 var import_disclose_version1463 = require("svelte/internal/disclose-version");
 var $1463 = __toESM(require("svelte/internal/client"));
-var import_apple = __toESM(require("@snowui-design-system/resource-base/assets/logos/apple.svg"));
-var root131 = $1463.from_html(`<img/>`);
+var root131 = $1463.from_svg(`<svg><path d="M22.4655 7.49023C24.5857 7.49034 26.832 8.68175 28.4304 10.7363C23.1899 13.6979 24.0384 21.4144 29.3337 23.4785C28.6057 25.1417 28.2549 25.8852 27.3171 27.3584C26.0088 29.4149 24.1637 31.9753 21.8757 31.9941C19.845 32.0166 19.3212 30.6296 16.5641 30.6465C13.8072 30.6616 13.2323 32.0206 11.1979 32C8.9117 31.9793 7.16344 29.6688 5.85516 27.6123C2.19486 21.866 1.80997 15.1204 4.06708 11.5322C5.67278 8.98461 8.20529 7.49417 10.5847 7.49414C13.0059 7.49414 14.5296 8.86418 16.5349 8.86426C18.48 8.86426 19.6646 7.49023 22.4655 7.49023ZM21.8522 0C22.1314 1.94365 21.3597 3.84811 20.3415 5.19531C19.2522 6.64025 17.3745 7.75746 15.5554 7.69922C15.2233 5.83838 16.0735 3.92068 17.1081 2.63184C18.2431 1.20954 20.1883 0.118529 21.8522 0Z" fill="currentColor"></path></svg>`);
 function Apple($$anchor, $$props) {
   let size = $1463.prop($$props, "size", 3, 32), alt = $1463.prop($$props, "alt", 3, "Apple"), className = $1463.prop($$props, "class", 3, ""), rest = $1463.rest_props($$props, [
     "$$slots",
@@ -59668,18 +59667,20 @@ function Apple($$anchor, $$props) {
   ]);
   let resolvedWidth = $1463.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1463.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1463.derived(() => import_apple.default);
-  var img = root131();
-  $1463.attribute_effect(img, () => ({
-    src: $1463.get(imageSrc),
-    alt: alt(),
+  var svg = root131();
+  $1463.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1463.get(resolvedWidth),
     height: $1463.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1463.replay_events(img);
-  $1463.append($$anchor, img);
+  $1463.append($$anchor, svg);
 }
 
 // src/logos/Arc.svelte
@@ -59749,8 +59750,7 @@ function Behance($$anchor, $$props) {
 // src/logos/ChatGpt.svelte
 var import_disclose_version1466 = require("svelte/internal/disclose-version");
 var $1466 = __toESM(require("svelte/internal/client"));
-var import_chat_gpt = __toESM(require("@snowui-design-system/resource-base/assets/logos/chat-gpt.svg"));
-var root134 = $1466.from_html(`<img/>`);
+var root134 = $1466.from_svg(`<svg><path d="M29.8905 13.0965C30.1644 12.2844 30.3041 11.4341 30.3042 10.5783C30.3041 9.16204 29.9218 7.77139 29.1965 6.54926C27.7392 4.04632 25.0358 2.50104 22.1101 2.50104C21.5337 2.50104 20.9589 2.56111 20.3953 2.68023C19.6372 1.8375 18.7067 1.16289 17.6651 0.700901C16.6235 0.238909 15.4945 2.46305e-05 14.3525 0H14.3012L14.2819 0.000111657C10.7383 0.000111657 7.59573 2.25626 6.50639 5.58234C5.37878 5.81021 4.31351 6.27314 3.3819 6.94012C2.45029 7.6071 1.67384 8.46276 1.10451 9.4498C0.381469 10.6793 0.00044245 12.0754 0 13.4969C0.000276322 15.4946 0.751842 17.4212 2.10916 18.9035C1.83518 19.7156 1.69544 20.5659 1.69532 21.4217C1.69545 22.838 2.07778 24.2286 2.80301 25.4507C3.66544 26.9323 4.98248 28.1054 6.56422 28.8007C8.14595 29.4961 9.91064 29.6778 11.6038 29.3197C12.362 30.1624 13.2926 30.837 14.3342 31.299C15.3759 31.761 16.505 31.9999 17.6471 32H17.6984L17.7192 31.9999C21.2648 31.9999 24.4063 29.7436 25.4957 26.4145C26.6233 26.1866 27.6885 25.7236 28.6201 25.0566C29.5518 24.3896 30.3282 23.534 30.8976 22.547C31.6199 21.3186 32.0002 19.9236 32 18.5034C31.9997 16.5057 31.2482 14.5792 29.8908 13.0969L29.8905 13.0965ZM17.7004 29.908H17.692C16.2733 29.9075 14.8996 29.4164 13.8099 28.5201C13.8746 28.4857 13.9385 28.45 14.0017 28.4128L20.4592 24.7325C20.6203 24.642 20.7543 24.511 20.8475 24.3529C20.9408 24.1947 20.9899 24.015 20.99 23.8321V14.8433L23.7194 16.3983C23.7337 16.4054 23.746 16.4158 23.7553 16.4287C23.7646 16.4416 23.7705 16.4565 23.7725 16.4722V23.911C23.7687 27.2183 21.0526 29.9013 17.7004 29.908ZM4.64224 24.4051C4.10885 23.4951 3.82783 22.4625 3.82747 21.4112C3.82747 21.0684 3.85782 20.7246 3.91692 20.3868C3.96493 20.4152 4.04871 20.4657 4.10884 20.4997L10.5663 24.1801C10.7273 24.2728 10.9104 24.3216 11.0968 24.3216C11.2832 24.3216 11.4663 24.2726 11.6272 24.1798L19.5111 19.6882V22.7983L19.5112 22.8037C19.5112 22.8187 19.5077 22.8334 19.5009 22.8468C19.4942 22.8602 19.4843 22.8719 19.4722 22.8809L12.9443 26.5998C12.0206 27.1243 10.9736 27.4005 9.90791 27.4008C8.84106 27.4006 7.793 27.1238 6.8688 26.5979C5.94461 26.0721 5.17676 25.3157 4.64224 24.4047V24.4051ZM2.94341 10.4955C3.65264 9.27998 4.77252 8.3493 6.10704 7.8663C6.10704 7.92116 6.10387 8.01835 6.10387 8.08583V15.4466L6.10376 15.4526C6.10379 15.6354 6.15283 15.8149 6.24592 15.9729C6.33901 16.1309 6.47282 16.2618 6.63376 16.3523L14.5177 20.8433L11.7884 22.3983C11.7749 22.407 11.7594 22.4124 11.7434 22.4138C11.7273 22.4152 11.7111 22.4128 11.6963 22.4065L5.16772 18.6845C4.24481 18.157 3.47863 17.3994 2.94595 16.4877C2.41328 15.5759 2.13283 14.542 2.13271 13.4896C2.13312 12.4389 2.41277 11.4066 2.94375 10.4958L2.94341 10.4955ZM25.3683 15.6445L17.4844 11.1529L20.2138 9.59849C20.2273 9.58973 20.2427 9.58438 20.2588 9.58294C20.2748 9.5815 20.291 9.584 20.3058 9.59023L26.8343 13.3091C27.758 13.8358 28.525 14.593 29.0583 15.5047C29.5916 16.4163 29.8725 17.4504 29.8727 18.503C29.8727 21.0154 28.2838 23.2635 25.8948 24.1312V16.5504C25.8951 16.5476 25.8951 16.5447 25.8951 16.5419C25.8951 16.3598 25.8463 16.1809 25.7538 16.0234C25.6613 15.8658 25.5283 15.7351 25.3683 15.6445ZM28.0849 11.6102C28.0214 11.5718 27.9575 11.5342 27.8931 11.4974L21.4356 7.81692C21.2746 7.72435 21.0916 7.67555 20.9053 7.67549C20.7189 7.67555 20.5359 7.72435 20.3749 7.81692L12.4909 12.3086V9.19843L12.4908 9.19307C12.4908 9.16268 12.5054 9.13408 12.53 9.11587L19.0579 5.40012C19.9812 4.87488 21.0283 4.59837 22.0941 4.59832C25.4506 4.59832 28.1725 7.28403 28.1725 10.5958C28.1724 10.9357 28.143 11.2749 28.0849 11.6099V11.6102ZM11.007 17.1534L8.27701 15.5984C8.26268 15.5914 8.25034 15.581 8.24107 15.5681C8.23181 15.5552 8.22591 15.5403 8.2239 15.5246V8.0856C8.22538 4.77562 10.9473 2.09215 14.3023 2.09215C15.7232 2.09244 17.0992 2.58359 18.1915 3.48036C18.1423 3.50683 18.0566 3.55353 17.9997 3.58761L11.5422 7.26794C11.3811 7.35839 11.2471 7.48931 11.1539 7.64741C11.0607 7.80551 11.0116 7.98515 11.0115 8.16805V8.17397L11.007 17.1534ZM12.4897 13.9993L16.001 11.9982L19.5124 13.998V17.9988L16.001 19.9987L12.4897 17.9988V13.9993Z" fill="currentColor"></path></svg>`);
 function ChatGpt($$anchor, $$props) {
   let size = $1466.prop($$props, "size", 3, 32), alt = $1466.prop($$props, "alt", 3, "ChatGpt"), className = $1466.prop($$props, "class", 3, ""), rest = $1466.rest_props($$props, [
     "$$slots",
@@ -59764,25 +59764,26 @@ function ChatGpt($$anchor, $$props) {
   ]);
   let resolvedWidth = $1466.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1466.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1466.derived(() => import_chat_gpt.default);
-  var img = root134();
-  $1466.attribute_effect(img, () => ({
-    src: $1466.get(imageSrc),
-    alt: alt(),
+  var svg = root134();
+  $1466.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1466.get(resolvedWidth),
     height: $1466.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1466.replay_events(img);
-  $1466.append($$anchor, img);
+  $1466.append($$anchor, svg);
 }
 
 // src/logos/Claude.svelte
 var import_disclose_version1467 = require("svelte/internal/disclose-version");
 var $1467 = __toESM(require("svelte/internal/client"));
-var import_claude = __toESM(require("@snowui-design-system/resource-base/assets/logos/claude.svg"));
-var root135 = $1467.from_html(`<img/>`);
+var root135 = $1467.from_svg(`<svg><g clip-path="url(#clip0_7159_5284)"><path d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z" fill="#CC9B7A"></path><path d="M20.1007 9.3335H17.3902L22.3247 22.6099L25.0352 22.6102L20.1007 9.3335ZM12.2678 9.3335L7.33331 22.6102H10.0993L11.095 19.8222L16.2729 19.8219L17.2796 22.6102H20.0455L15.1001 9.3335H12.2678ZM12.0021 17.3548L13.684 12.686L15.3767 17.3548H12.0021Z" fill="currentColor"></path></g><defs><clipPath id="clip0_7159_5284"><rect width="32" height="32" fill="white"></rect></clipPath></defs></svg>`);
 function Claude($$anchor, $$props) {
   let size = $1467.prop($$props, "size", 3, 32), alt = $1467.prop($$props, "alt", 3, "Claude"), className = $1467.prop($$props, "class", 3, ""), rest = $1467.rest_props($$props, [
     "$$slots",
@@ -59796,18 +59797,20 @@ function Claude($$anchor, $$props) {
   ]);
   let resolvedWidth = $1467.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1467.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1467.derived(() => import_claude.default);
-  var img = root135();
-  $1467.attribute_effect(img, () => ({
-    src: $1467.get(imageSrc),
-    alt: alt(),
+  var svg = root135();
+  $1467.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1467.get(resolvedWidth),
     height: $1467.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1467.replay_events(img);
-  $1467.append($$anchor, img);
+  $1467.append($$anchor, svg);
 }
 
 // src/logos/Copilot.svelte
@@ -60037,8 +60040,7 @@ function FigmaA($$anchor, $$props) {
 // src/logos/FigmaB.svelte
 var import_disclose_version1475 = require("svelte/internal/disclose-version");
 var $1475 = __toESM(require("svelte/internal/client"));
-var import_figma_b = __toESM(require("@snowui-design-system/resource-base/assets/logos/figma-b.svg"));
-var root143 = $1475.from_html(`<img/>`);
+var root143 = $1475.from_svg(`<svg><path d="M0 16C0 7.16347 7.16347 0 16 0C24.8365 0 32 7.16347 32 16C32 24.8365 24.8365 32 16 32C7.16347 32 0 24.8365 0 16Z" fill="currentColor"></path><path d="M12.4 27.2C14.3882 27.2 16 25.5882 16 23.6V20H12.4C10.4118 20 8.79999 21.6118 8.79999 23.6C8.79999 25.5882 10.4118 27.2 12.4 27.2Z" fill="#0ACF83"></path><path d="M8.79999 16.3998C8.79999 14.4116 10.4118 12.7998 12.4 12.7998H16V19.9998H12.4C10.4118 19.9998 8.79999 18.388 8.79999 16.3998Z" fill="#A259FF"></path><path d="M8.79999 9.2001C8.79999 7.21187 10.4118 5.6001 12.4 5.6001H16V12.8001H12.4C10.4118 12.8001 8.79999 11.1883 8.79999 9.2001Z" fill="#F25022"></path><path d="M16 5.6001H19.6C21.5882 5.6001 23.2 7.21187 23.2 9.2001C23.2 11.1883 21.5882 12.8001 19.6 12.8001H16V5.6001Z" fill="#FF7262"></path><path d="M23.2 16.3998C23.2 18.388 21.5882 19.9998 19.6 19.9998C17.6118 19.9998 16 18.388 16 16.3998C16 14.4116 17.6118 12.7998 19.6 12.7998C21.5882 12.7998 23.2 14.4116 23.2 16.3998Z" fill="#1ABCFE"></path></svg>`);
 function FigmaB($$anchor, $$props) {
   let size = $1475.prop($$props, "size", 3, 32), alt = $1475.prop($$props, "alt", 3, "FigmaB"), className = $1475.prop($$props, "class", 3, ""), rest = $1475.rest_props($$props, [
     "$$slots",
@@ -60052,25 +60054,26 @@ function FigmaB($$anchor, $$props) {
   ]);
   let resolvedWidth = $1475.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1475.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1475.derived(() => import_figma_b.default);
-  var img = root143();
-  $1475.attribute_effect(img, () => ({
-    src: $1475.get(imageSrc),
-    alt: alt(),
+  var svg = root143();
+  $1475.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1475.get(resolvedWidth),
     height: $1475.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1475.replay_events(img);
-  $1475.append($$anchor, img);
+  $1475.append($$anchor, svg);
 }
 
 // src/logos/Framer.svelte
 var import_disclose_version1476 = require("svelte/internal/disclose-version");
 var $1476 = __toESM(require("svelte/internal/client"));
-var import_framer = __toESM(require("@snowui-design-system/resource-base/assets/logos/framer.svg"));
-var root144 = $1476.from_html(`<img/>`);
+var root144 = $1476.from_svg(`<svg><circle cx="16" cy="16" r="16" fill="currentColor"></circle><path d="M8.79999 20.5161H15.6555V27.5742L8.79999 20.5161Z" fill="white"></path><path d="M8.79999 13.458H15.6555V20.5161H8.79999V13.458Z" fill="white"></path><path d="M15.6555 13.458L22.511 20.5161H15.6555V13.458Z" fill="white"></path><path d="M15.6555 6.3999H22.511V13.458H15.6555V6.3999Z" fill="white"></path><path d="M8.79999 6.3999H15.6555V13.458L8.79999 6.3999Z" fill="white"></path></svg>`);
 function Framer($$anchor, $$props) {
   let size = $1476.prop($$props, "size", 3, 32), alt = $1476.prop($$props, "alt", 3, "Framer"), className = $1476.prop($$props, "class", 3, ""), rest = $1476.rest_props($$props, [
     "$$slots",
@@ -60084,18 +60087,20 @@ function Framer($$anchor, $$props) {
   ]);
   let resolvedWidth = $1476.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1476.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1476.derived(() => import_framer.default);
-  var img = root144();
-  $1476.attribute_effect(img, () => ({
-    src: $1476.get(imageSrc),
-    alt: alt(),
+  var svg = root144();
+  $1476.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1476.get(resolvedWidth),
     height: $1476.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1476.replay_events(img);
-  $1476.append($$anchor, img);
+  $1476.append($$anchor, svg);
 }
 
 // src/logos/Gemini.svelte
@@ -60133,8 +60138,7 @@ function Gemini($$anchor, $$props) {
 // src/logos/Github.svelte
 var import_disclose_version1478 = require("svelte/internal/disclose-version");
 var $1478 = __toESM(require("svelte/internal/client"));
-var import_github = __toESM(require("@snowui-design-system/resource-base/assets/logos/github.svg"));
-var root146 = $1478.from_html(`<img/>`);
+var root146 = $1478.from_svg(`<svg><path fill-rule="evenodd" clip-rule="evenodd" d="M15.9985 0C7.16339 0 0 7.16339 0 16.0005C0 23.0696 4.58406 29.0661 10.942 31.1828C11.7425 31.3291 12.0343 30.8351 12.0343 30.4107C12.0343 30.0316 12.0205 29.0248 12.0126 27.69C7.56217 28.6565 6.62316 25.5448 6.62316 25.5448C5.89533 23.6972 4.84631 23.2051 4.84631 23.2051C3.3936 22.2121 4.95632 22.2317 4.95632 22.2317C6.56226 22.3457 7.40698 23.8809 7.40698 23.8809C8.83416 26.3257 11.1522 25.6194 12.0637 25.2108C12.2091 24.1766 12.6216 23.4713 13.0793 23.0715C9.52663 22.6678 5.79121 21.2947 5.79121 15.1636C5.79121 13.4172 6.41493 11.9891 7.43841 10.8703C7.2734 10.4656 6.72433 8.83907 7.59459 6.63593C7.59459 6.63593 8.93827 6.20571 11.995 8.27625C13.2709 7.92167 14.6401 7.74388 16.0005 7.73799C17.3589 7.74388 18.7281 7.92167 20.006 8.27625C23.0607 6.20571 24.4015 6.63593 24.4015 6.63593C25.2747 8.83907 24.7256 10.4656 24.5606 10.8703C25.5861 11.9891 26.2058 13.4172 26.2058 15.1636C26.2058 21.3104 22.4645 22.6629 18.9 23.0588C19.4746 23.5528 19.9864 24.5292 19.9864 26.0222C19.9864 28.1605 19.9667 29.8862 19.9667 30.4107C19.9667 30.839 20.2545 31.337 21.0668 31.1808C27.4199 29.0602 32 23.0676 32 16.0005C32 7.16339 24.8356 0 15.9985 0Z" fill="currentColor"></path></svg>`);
 function Github($$anchor, $$props) {
   let size = $1478.prop($$props, "size", 3, 32), alt = $1478.prop($$props, "alt", 3, "Github"), className = $1478.prop($$props, "class", 3, ""), rest = $1478.rest_props($$props, [
     "$$slots",
@@ -60148,18 +60152,20 @@ function Github($$anchor, $$props) {
   ]);
   let resolvedWidth = $1478.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1478.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1478.derived(() => import_github.default);
-  var img = root146();
-  $1478.attribute_effect(img, () => ({
-    src: $1478.get(imageSrc),
-    alt: alt(),
+  var svg = root146();
+  $1478.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1478.get(resolvedWidth),
     height: $1478.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1478.replay_events(img);
-  $1478.append($$anchor, img);
+  $1478.append($$anchor, svg);
 }
 
 // src/logos/GoogleDrive.svelte
@@ -60261,8 +60267,7 @@ function Google($$anchor, $$props) {
 // src/logos/Grok.svelte
 var import_disclose_version1482 = require("svelte/internal/disclose-version");
 var $1482 = __toESM(require("svelte/internal/client"));
-var import_grok = __toESM(require("@snowui-design-system/resource-base/assets/logos/grok.svg"));
-var root150 = $1482.from_html(`<img/>`);
+var root150 = $1482.from_svg(`<svg><path d="M12.3587 20.5904L22.9972 12.9122C23.5187 12.5358 24.2642 12.6826 24.5127 13.2673C25.8207 16.3508 25.2363 20.0565 22.634 22.6008C20.0318 25.145 16.411 25.703 13.1015 24.4322L9.48617 26.0688C14.6716 29.5341 20.9684 28.6771 24.9032 24.8273C28.0243 21.7758 28.9909 17.6163 28.0871 13.8653L28.0952 13.8733C26.7845 8.36296 28.4175 6.16041 31.7625 1.65654C31.8416 1.54975 31.9208 1.44296 32 1.3335L27.5982 5.63714V5.62379L12.356 20.5931" fill="currentColor"></path><path d="M10.1634 22.4566C6.44151 18.9805 7.0832 13.601 10.2589 10.4988C12.6072 8.20277 16.4546 7.26569 19.8133 8.64328L23.4204 7.01473C22.7706 6.55553 21.9377 6.06163 20.982 5.71456C16.6622 3.97655 11.4904 4.84155 7.97884 8.27218C4.60108 11.5747 3.53887 16.6525 5.36292 20.9856C6.72549 24.224 4.49185 26.5146 2.24183 28.8266C1.44449 29.6462 0.644421 30.4658 0 31.3335L10.1606 22.4592" fill="currentColor"></path></svg>`);
 function Grok($$anchor, $$props) {
   let size = $1482.prop($$props, "size", 3, 32), alt = $1482.prop($$props, "alt", 3, "Grok"), className = $1482.prop($$props, "class", 3, ""), rest = $1482.rest_props($$props, [
     "$$slots",
@@ -60276,25 +60281,26 @@ function Grok($$anchor, $$props) {
   ]);
   let resolvedWidth = $1482.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1482.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1482.derived(() => import_grok.default);
-  var img = root150();
-  $1482.attribute_effect(img, () => ({
-    src: $1482.get(imageSrc),
-    alt: alt(),
+  var svg = root150();
+  $1482.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1482.get(resolvedWidth),
     height: $1482.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1482.replay_events(img);
-  $1482.append($$anchor, img);
+  $1482.append($$anchor, svg);
 }
 
 // src/logos/Gumroad.svelte
 var import_disclose_version1483 = require("svelte/internal/disclose-version");
 var $1483 = __toESM(require("svelte/internal/client"));
-var import_gumroad = __toESM(require("@snowui-design-system/resource-base/assets/logos/gumroad.svg"));
-var root151 = $1483.from_html(`<img/>`);
+var root151 = $1483.from_svg(`<svg><path d="M16.3334 32.0001C24.9859 32.0001 32 24.9925 32 16.348C32 7.70357 24.9859 0.695801 16.3334 0.695801C7.68096 0.695801 0.666687 7.70357 0.666687 16.348C0.666687 24.9925 7.68096 32.0001 16.3334 32.0001Z" fill="currentColor"></path><path d="M16 31.3045C24.4414 31.3045 31.3334 24.4801 31.3334 16.0002C31.3334 7.52036 24.4414 0.695801 16 0.695801C7.55879 0.695801 0.666687 7.52036 0.666687 16.0002C0.666687 24.4801 7.55879 31.3045 16 31.3045Z" fill="#FF90E8"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0 16C0 7.11074 7.21535 0 16 0C24.7848 0 32 7.11075 32 16C32 24.8894 24.7848 32 16 32C7.21535 32 0 24.8894 0 16ZM16 1.12202C7.75933 1.12202 1.07383 7.78048 1.07383 16C1.07383 24.2196 7.75933 30.878 16 30.878C24.2408 30.878 30.9262 24.2196 30.9262 16C30.9262 7.78048 24.2408 1.12202 16 1.12202Z" fill="currentColor"></path><path d="M14.1751 23.6522C9.86729 23.6522 7.33331 20.0112 7.33331 15.482C7.33331 10.7752 10.1207 6.95654 15.442 6.95654C20.9324 6.95654 22.7906 10.8641 22.875 13.0842H18.9051C18.8208 11.8409 17.8071 9.976 15.3576 9.976C12.7392 9.976 11.0498 12.3738 11.0498 15.3044C11.0498 18.2351 12.7392 20.6327 15.3576 20.6327C17.7227 20.6327 18.7363 18.679 19.1586 16.7254H15.3576V15.1268H23.3333V23.297H19.8343V18.1461C19.5809 20.0112 18.4828 23.6522 14.1751 23.6522Z" fill="currentColor"></path></svg>`);
 function Gumroad($$anchor, $$props) {
   let size = $1483.prop($$props, "size", 3, 32), alt = $1483.prop($$props, "alt", 3, "Gumroad"), className = $1483.prop($$props, "class", 3, ""), rest = $1483.rest_props($$props, [
     "$$slots",
@@ -60308,18 +60314,20 @@ function Gumroad($$anchor, $$props) {
   ]);
   let resolvedWidth = $1483.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1483.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1483.derived(() => import_gumroad.default);
-  var img = root151();
-  $1483.attribute_effect(img, () => ({
-    src: $1483.get(imageSrc),
-    alt: alt(),
+  var svg = root151();
+  $1483.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1483.get(resolvedWidth),
     height: $1483.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1483.replay_events(img);
-  $1483.append($$anchor, img);
+  $1483.append($$anchor, svg);
 }
 
 // src/logos/ICloud.svelte
@@ -60517,8 +60525,7 @@ function Mastercard($$anchor, $$props) {
 // src/logos/Medium.svelte
 var import_disclose_version1490 = require("svelte/internal/disclose-version");
 var $1490 = __toESM(require("svelte/internal/client"));
-var import_medium = __toESM(require("@snowui-design-system/resource-base/assets/logos/medium.svg"));
-var root158 = $1490.from_html(`<img/>`);
+var root158 = $1490.from_svg(`<svg><path d="M18.0499 15.9997C18.0499 21.1543 14.0093 25.3332 9.02479 25.3332C4.0403 25.3332 0 21.1556 0 15.9997C0 10.8438 4.04061 6.6665 9.02479 6.6665C14.009 6.6665 18.0499 10.845 18.0499 15.9997ZM27.9505 15.9997C27.9505 20.8521 25.9301 24.7855 23.438 24.7855C20.9459 24.7855 18.9254 20.8509 18.9254 15.9997C18.9254 11.1485 20.9459 7.21388 23.438 7.21388C25.9301 7.21388 27.9505 11.1485 27.9505 15.9997ZM32 15.9997C32 20.3473 31.2893 23.8714 30.4129 23.8714C29.5364 23.8714 28.8257 20.346 28.8257 15.9997C28.8257 11.6534 29.5364 8.12797 30.4132 8.12797C31.2899 8.12797 32 11.6524 32 15.9997Z" fill="currentColor"></path></svg>`);
 function Medium($$anchor, $$props) {
   let size = $1490.prop($$props, "size", 3, 32), alt = $1490.prop($$props, "alt", 3, "Medium"), className = $1490.prop($$props, "class", 3, ""), rest = $1490.rest_props($$props, [
     "$$slots",
@@ -60532,18 +60539,20 @@ function Medium($$anchor, $$props) {
   ]);
   let resolvedWidth = $1490.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1490.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1490.derived(() => import_medium.default);
-  var img = root158();
-  $1490.attribute_effect(img, () => ({
-    src: $1490.get(imageSrc),
-    alt: alt(),
+  var svg = root158();
+  $1490.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1490.get(resolvedWidth),
     height: $1490.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1490.replay_events(img);
-  $1490.append($$anchor, img);
+  $1490.append($$anchor, svg);
 }
 
 // src/logos/Messenger.svelte
@@ -60645,8 +60654,7 @@ function Microsoft($$anchor, $$props) {
 // src/logos/Midjourney.svelte
 var import_disclose_version1494 = require("svelte/internal/disclose-version");
 var $1494 = __toESM(require("svelte/internal/client"));
-var import_midjourney = __toESM(require("@snowui-design-system/resource-base/assets/logos/midjourney.svg"));
-var root162 = $1494.from_html(`<img/>`);
+var root162 = $1494.from_svg(`<svg><path d="M19.7329 22.2083C17.5657 21.3633 15.2801 20.9478 12.8757 20.9619C10.0376 20.9788 7.30608 21.7926 4.98802 23.3106C4.52659 23.6123 4.03309 23.0363 4.38252 22.6604C4.5799 22.4476 4.75683 22.2299 4.91333 22.0076C6.31464 20.0148 7.14364 17.7676 7.40033 15.266C7.83514 11.0225 6.46583 6.9772 4.3674 3.29016C4.28115 3.13888 4.36471 2.85403 4.51946 2.75317C4.68127 2.64765 4.8464 2.63845 5.01471 2.72575C8.29689 4.43366 11.2273 6.54517 13.8058 9.06048C17.3784 12.5449 20.0157 16.8264 20.6336 21.8041C20.6704 22.0984 20.5548 22.2771 20.2868 22.3402C20.1143 22.3809 19.9107 22.2774 19.7329 22.2083ZM23.0085 28.1547C23.5598 28.5661 24.072 28.5263 24.5957 28.145C25.1855 27.715 25.7931 27.2734 26.4185 26.8198C26.9564 26.4297 27.5975 26.2917 28.2501 26.4678C28.5056 26.5373 28.8014 26.696 29.1375 26.9437C29.7235 27.3768 30.313 27.8053 30.906 28.229C31.0975 28.3652 31.3029 28.4348 31.5222 28.4378C31.8026 28.4419 31.9609 28.5822 31.9971 28.8588C32.0043 28.9091 31.9981 28.9603 31.9792 29.0075C31.8986 29.2139 31.7472 29.3174 31.5249 29.318C31.1266 29.3198 30.7634 29.2071 30.4357 28.9801C29.8009 28.5396 29.1748 28.0869 28.5578 27.6222C28.0661 27.2533 27.5255 27.1259 27.0044 27.501C26.351 27.9706 25.6984 28.4412 25.0465 28.9128C24.4928 29.3133 23.8918 29.4268 23.2433 29.2534C22.9688 29.1797 22.6659 29.0189 22.3346 28.7713C21.7258 28.3166 21.1499 27.8991 20.6069 27.5187C20.1375 27.189 19.6635 27.1911 19.1852 27.5249C18.6606 27.8911 18.1102 28.2901 17.534 28.7217C17.1594 29.0025 16.8357 29.1797 16.563 29.2534C15.9187 29.4285 15.3159 29.3153 14.7546 28.9137C14.1533 28.4837 13.5555 28.049 12.9611 27.6098C12.3449 27.1551 11.8666 27.1764 11.2601 27.6151C10.6542 28.0538 10.0487 28.4932 9.44357 28.9331C8.91426 29.3177 8.32026 29.4235 7.66176 29.2507C7.38789 29.1788 7.08558 29.0187 6.75477 28.7704C6.18277 28.3411 5.57014 27.8985 4.9169 27.4426C4.54615 27.1834 3.98859 27.2462 3.6374 27.501C2.95801 27.9937 2.27602 28.4829 1.59147 28.9686C1.25122 29.2098 0.854097 29.3247 0.399973 29.3135C0.216849 29.3094 0.0879119 29.1962 0.0132246 28.9739C0.00135226 28.9389 -0.00259621 28.9017 0.00166216 28.865C0.0295371 28.5915 0.181537 28.4484 0.457786 28.436C0.71566 28.4248 0.933222 28.3549 1.11041 28.2264C1.76054 27.755 2.41141 27.2847 3.06303 26.8154C3.07903 26.8036 3.08228 26.7888 3.07278 26.7712C2.78452 26.2607 2.49347 25.7517 2.19966 25.2444C2.01116 24.9206 2.17747 24.5632 2.56422 24.5384C11.487 23.9825 20.4097 23.4244 29.3323 22.8639C29.4483 22.8562 29.5647 22.8557 29.6808 22.8621C29.9529 22.8772 30.1147 23.1832 30.0391 23.4291C30.0143 23.5111 29.9401 23.6073 29.8168 23.7175C27.8287 25.4965 25.4857 26.903 23.0156 28.0795C22.9723 28.1007 22.97 28.1258 23.0085 28.1547ZM3.33246 25.4018C3.33098 25.4023 3.32961 25.403 3.32847 25.4041C3.32732 25.4051 3.32641 25.4064 3.32582 25.4078C3.32522 25.4093 3.32495 25.4108 3.32502 25.4124C3.32508 25.4139 3.32549 25.4154 3.32621 25.4168L3.88459 26.3873C3.89222 26.4005 3.90373 26.411 3.91757 26.4175C3.9314 26.4239 3.94689 26.426 3.96196 26.4235C4.52152 26.3298 5.02446 26.4368 5.47083 26.7446C6.06183 27.1516 6.68689 27.6024 7.34608 28.0972C7.84132 28.4688 8.36064 28.5997 8.88701 28.229C9.40207 27.8663 10.0133 27.4243 10.7204 26.903C11.3588 26.4324 11.9937 26.2643 12.7602 26.4926C12.9801 26.558 13.2832 26.7349 13.6697 27.0233C14.1923 27.4121 14.7193 27.7948 15.2507 28.1715C15.8233 28.5775 16.3177 28.5174 16.8689 28.1034C17.4849 27.64 18.1098 27.1884 18.7433 26.7491C19.5347 26.1997 20.4958 26.3112 21.2596 26.8826C21.5304 27.0858 21.8043 27.2848 22.0812 27.4797C22.1073 27.4987 22.1427 27.5023 22.173 27.4888C24.3714 26.4896 26.3873 25.2939 28.2208 23.9015C28.2984 23.8425 28.2886 23.8163 28.1914 23.8228C19.9193 24.3411 11.7071 24.8552 3.55471 25.3647C3.47956 25.3696 3.4051 25.382 3.33246 25.4018ZM22.2465 21.2733C21.2107 17.2475 19.4172 13.3853 16.8352 10.2343C15.7249 8.87972 14.5239 7.7565 13.2323 6.86484C12.9077 6.64105 13.0891 6.09175 13.4857 6.09349C13.5871 6.09349 13.6973 6.12029 13.8165 6.17395C19.6511 8.79242 23.8568 13.7905 26.27 19.6324C26.5375 20.28 26.7734 20.9401 26.9769 21.6104C27.104 22.027 26.7136 22.4048 26.3233 22.1579C25.3186 21.5237 23.9804 21.4768 22.724 21.6342C22.4893 21.6635 22.3017 21.4892 22.2465 21.2733ZM23.0628 20.7134C23.9608 20.6249 24.906 20.6833 25.7783 20.939C25.7826 20.9402 25.7872 20.9401 25.7916 20.9389C25.7959 20.9377 25.7998 20.9353 25.8029 20.932C25.806 20.9288 25.8082 20.9247 25.8092 20.9203C25.8101 20.9159 25.8099 20.9114 25.8085 20.9071C24.0684 16.209 21.0969 11.9399 17.0147 9.01888C16.9407 8.96634 16.9335 8.97436 16.9934 9.04276C19.8938 12.3583 21.8705 16.4133 23.0076 20.6754C23.0153 20.7037 23.0337 20.7163 23.0628 20.7134ZM7.62883 8.59512C8.89763 12.9518 8.57757 17.5943 6.2942 21.5246C6.29265 21.5271 6.29198 21.53 6.29229 21.533C6.29259 21.5359 6.29387 21.5386 6.29591 21.5407C6.29794 21.5429 6.30063 21.5442 6.30355 21.5447C6.30646 21.5451 6.30944 21.5446 6.31202 21.5431C8.39913 20.5801 10.6019 20.0915 12.9202 20.0774C15.2107 20.0632 17.4419 20.4406 19.6138 21.2097C19.6182 21.2113 19.6229 21.2117 19.6275 21.2109C19.6321 21.2101 19.6364 21.2081 19.64 21.2052C19.6436 21.2022 19.6464 21.1984 19.648 21.194C19.6496 21.1897 19.6501 21.185 19.6493 21.1804C18.778 15.7207 15.1377 11.126 10.9489 7.69724C9.39707 6.4264 7.73289 5.27607 5.95633 4.24643C5.89883 4.21279 5.88552 4.22572 5.91633 4.28536C6.61108 5.62465 7.18189 7.06126 7.62883 8.59512Z" fill="currentColor"></path></svg>`);
 function Midjourney($$anchor, $$props) {
   let size = $1494.prop($$props, "size", 3, 32), alt = $1494.prop($$props, "alt", 3, "Midjourney"), className = $1494.prop($$props, "class", 3, ""), rest = $1494.rest_props($$props, [
     "$$slots",
@@ -60660,18 +60668,20 @@ function Midjourney($$anchor, $$props) {
   ]);
   let resolvedWidth = $1494.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1494.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1494.derived(() => import_midjourney.default);
-  var img = root162();
-  $1494.attribute_effect(img, () => ({
-    src: $1494.get(imageSrc),
-    alt: alt(),
+  var svg = root162();
+  $1494.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1494.get(resolvedWidth),
     height: $1494.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1494.replay_events(img);
-  $1494.append($$anchor, img);
+  $1494.append($$anchor, svg);
 }
 
 // src/logos/Nintendo.svelte
@@ -60709,8 +60719,7 @@ function Nintendo($$anchor, $$props) {
 // src/logos/Notion.svelte
 var import_disclose_version1496 = require("svelte/internal/disclose-version");
 var $1496 = __toESM(require("svelte/internal/client"));
-var import_notion = __toESM(require("@snowui-design-system/resource-base/assets/logos/notion.svg"));
-var root164 = $1496.from_html(`<img/>`);
+var root164 = $1496.from_svg(`<svg><path d="M20.5117 0.0732422C22.7832 -0.113629 23.3681 0.0109051 24.7959 1.00586L30.7012 4.98828C31.6752 5.67269 32 5.85921 32 6.60547V28.4424C32 29.811 31.4802 30.6203 29.6631 30.7441L8.17969 31.9893C6.81569 32.0517 6.16647 31.8647 5.45215 30.9932L1.10352 25.5811C0.324265 24.5848 0 23.8389 0 22.9668V3.55664C0 2.43745 0.519999 1.50381 2.01172 1.37988L20.5117 0.0732422ZM28.7539 7.29004L7.65918 8.47168C6.88073 8.53443 6.62109 8.90818 6.62109 9.7168V28.2559C6.62114 29.252 7.1398 29.625 8.30762 29.5635L28.4941 28.4424C29.6628 28.3807 29.7929 27.6959 29.793 26.8867V8.47168C29.793 7.66371 29.4692 7.22797 28.7539 7.29004ZM26.5488 10.7109C26.6782 11.2714 26.5482 11.8316 25.9629 11.8945L24.9902 12.0801V25.7676C24.1461 26.2028 23.3675 26.4511 22.7188 26.4512C21.6798 26.4512 21.4198 26.1397 20.6416 25.207L14.2793 15.627V24.8965L16.292 25.332C16.292 25.332 16.2922 26.4512 14.668 26.4512L10.1904 26.7002C10.0607 26.4508 10.1908 25.8297 10.6445 25.7051L11.8135 25.3945V13.1387L10.1904 13.0137C10.0604 12.4532 10.3848 11.6449 11.2939 11.582L16.0977 11.2715L22.7188 20.9775V12.3916L21.0303 12.2061C20.9007 11.5209 21.4193 11.0227 22.0684 10.9609L26.5488 10.7109ZM24.1465 2.62402C23.562 2.18874 22.7825 1.69074 21.29 1.81543L3.50488 3.05957C2.85627 3.12127 2.72701 3.43225 2.98535 3.68164L5.51758 5.61035C6.55515 6.41894 6.94529 6.3571 8.89355 6.23242L27.2607 5.1748C27.6503 5.1748 27.3262 4.80121 27.1963 4.73926L24.1465 2.62402Z" fill="currentColor"></path></svg>`);
 function Notion($$anchor, $$props) {
   let size = $1496.prop($$props, "size", 3, 32), alt = $1496.prop($$props, "alt", 3, "Notion"), className = $1496.prop($$props, "class", 3, ""), rest = $1496.rest_props($$props, [
     "$$slots",
@@ -60724,18 +60733,20 @@ function Notion($$anchor, $$props) {
   ]);
   let resolvedWidth = $1496.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1496.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1496.derived(() => import_notion.default);
-  var img = root164();
-  $1496.attribute_effect(img, () => ({
-    src: $1496.get(imageSrc),
-    alt: alt(),
+  var svg = root164();
+  $1496.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1496.get(resolvedWidth),
     height: $1496.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1496.replay_events(img);
-  $1496.append($$anchor, img);
+  $1496.append($$anchor, svg);
 }
 
 // src/logos/OneDrive.svelte
@@ -60837,8 +60848,7 @@ function PayPal($$anchor, $$props) {
 // src/logos/Perplexity.svelte
 var import_disclose_version1500 = require("svelte/internal/disclose-version");
 var $1500 = __toESM(require("svelte/internal/client"));
-var import_perplexity = __toESM(require("@snowui-design-system/resource-base/assets/logos/perplexity.svg"));
-var root168 = $1500.from_html(`<img/>`);
+var root168 = $1500.from_svg(`<svg><g clip-path="url(#clip0_7159_5282)"><path d="M0 8C0 3.58172 3.58172 0 8 0H24C28.4183 0 32 3.58172 32 8V24C32 28.4183 28.4183 32 24 32H8C3.58172 32 0 28.4183 0 24V8Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M9.53154 5.75L15.3829 11.1447V5.76245H16.5219V11.1689L22.3994 5.75V11.9008H24.8125V20.7727H22.4068V26.2497L16.5219 21.0759V26.3091H15.3829V21.1612L9.53817 26.3125V20.7727H7.125V11.9008H9.53154V5.75ZM14.5242 13.0267H8.26402V19.6469H9.53674V17.5586L14.5242 13.0267ZM10.6771 18.0582V23.8002L15.3829 19.6528V13.7812L10.6771 18.0582ZM16.5546 19.5979V13.7756L21.2617 18.0529V20.7727H21.2678V23.7416L16.5546 19.5979ZM22.4068 19.6469H23.6735V13.0267H17.46L22.4068 17.5117V19.6469ZM21.2604 11.9008V8.33972L17.3979 11.9008H21.2604ZM14.533 11.9008H10.6706V8.33972L14.533 11.9008Z" fill="white"></path></g><defs><clipPath id="clip0_7159_5282"><rect width="32" height="32" fill="white"></rect></clipPath></defs></svg>`);
 function Perplexity($$anchor, $$props) {
   let size = $1500.prop($$props, "size", 3, 32), alt = $1500.prop($$props, "alt", 3, "Perplexity"), className = $1500.prop($$props, "class", 3, ""), rest = $1500.rest_props($$props, [
     "$$slots",
@@ -60852,18 +60862,20 @@ function Perplexity($$anchor, $$props) {
   ]);
   let resolvedWidth = $1500.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1500.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1500.derived(() => import_perplexity.default);
-  var img = root168();
-  $1500.attribute_effect(img, () => ({
-    src: $1500.get(imageSrc),
-    alt: alt(),
+  var svg = root168();
+  $1500.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1500.get(resolvedWidth),
     height: $1500.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1500.replay_events(img);
-  $1500.append($$anchor, img);
+  $1500.append($$anchor, svg);
 }
 
 // src/logos/Pinterest.svelte
@@ -61029,8 +61041,7 @@ function Slack($$anchor, $$props) {
 // src/logos/Snapchat.svelte
 var import_disclose_version1506 = require("svelte/internal/disclose-version");
 var $1506 = __toESM(require("svelte/internal/client"));
-var import_snapchat = __toESM(require("@snowui-design-system/resource-base/assets/logos/snapchat.svg"));
-var root174 = $1506.from_html(`<img/>`);
+var root174 = $1506.from_svg(`<svg><path d="M0 16C0 7.16347 7.16347 0 16 0C24.8365 0 32 7.16347 32 16C32 24.8365 24.8365 32 16 32C7.16347 32 0 24.8365 0 16Z" fill="#FFE300"></path><path d="M24.5809 20.5834C21.4837 19.0841 20.9901 16.7693 20.9681 16.5976C20.9416 16.3896 20.9115 16.2261 21.1409 16.0146C21.3621 15.8102 22.3437 15.2026 22.6161 15.0125C23.0663 14.6978 23.2645 14.3835 23.1184 13.9972C23.0162 13.7299 22.7673 13.6292 22.5052 13.6292C22.4225 13.6295 22.3401 13.6388 22.2595 13.6568C21.7648 13.7642 21.2845 14.012 21.0065 14.079C20.9731 14.0876 20.9388 14.0922 20.9043 14.0927C20.7561 14.0927 20.6999 14.0268 20.7142 13.8485C20.7489 13.3078 20.8225 12.2526 20.7372 11.267C20.6202 9.91076 20.1827 9.23883 19.6641 8.6445C19.4132 8.3563 18.2481 7.11816 15.9998 7.11816C13.7514 7.11816 12.5879 8.3563 12.3385 8.64096C11.8183 9.23523 11.3814 9.90716 11.2654 11.2634C11.1801 12.2491 11.2567 13.3038 11.2884 13.8449C11.2986 14.0146 11.2465 14.0892 11.0983 14.0892C11.0638 14.0886 11.0295 14.0839 10.9961 14.0754C10.7187 14.0084 10.2383 13.7606 9.74365 13.6533C9.66299 13.6352 9.58059 13.626 9.49785 13.6257C9.23472 13.6257 8.98685 13.7279 8.88465 13.9936C8.73852 14.3799 8.93579 14.6942 9.38752 15.009C9.65985 15.199 10.6415 15.8061 10.8627 16.011C11.0917 16.2226 11.0621 16.3861 11.0355 16.594C11.0135 16.7683 10.5193 19.0831 7.42272 20.5798C7.24132 20.6677 6.93272 20.8537 7.47692 21.1542C8.33125 21.6263 8.89999 21.5757 9.34205 21.8604C9.71712 22.102 9.49532 22.6232 9.76819 22.8113C10.1034 23.0428 11.0942 22.795 12.3743 23.2176C13.4473 23.5712 14.0994 24.5702 16.0023 24.5702C17.9053 24.5702 18.5762 23.5666 19.6304 23.2176C20.9079 22.795 21.9007 23.0428 22.2365 22.8113C22.5088 22.6232 22.2875 22.102 22.6626 21.8604C23.1046 21.5757 23.6729 21.6263 24.5277 21.1542C25.0709 20.8572 24.7623 20.6712 24.5809 20.5834Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.2233 19.6589C25.5248 19.8265 25.7895 20.0288 25.9285 20.4069C26.0843 20.8301 25.9888 21.3093 25.6086 21.7161L25.6035 21.7223C25.4501 21.892 25.2686 22.0341 25.0669 22.1423C24.6669 22.3619 24.2413 22.5315 23.7997 22.6471C23.7152 22.6697 23.635 22.7063 23.5626 22.7555C23.487 22.8224 23.4556 22.9056 23.4164 23.0093C23.3868 23.0879 23.3528 23.1781 23.2918 23.2818C23.1871 23.4643 23.0433 23.6213 22.8707 23.7417C22.4578 24.0268 21.9939 24.0447 21.5023 24.0636L21.5008 24.0637C21.0571 24.0805 20.5542 24.0996 19.98 24.2895C19.7485 24.3661 19.5027 24.5169 19.2181 24.6916L19.2163 24.6927C18.5231 25.1173 17.5744 25.6983 15.9989 25.6983C14.4219 25.6983 13.4797 25.1193 12.7914 24.6962C12.5047 24.5184 12.2574 24.3661 12.0193 24.2874C11.4444 24.0979 10.9411 24.0784 10.497 24.0616H10.497C10.0054 24.0427 9.54146 24.0248 9.1286 23.7397C8.98287 23.6385 8.8574 23.5109 8.7586 23.3635C8.66273 23.2246 8.61855 23.1071 8.58136 23.0082C8.54223 22.9042 8.51084 22.8207 8.43513 22.7545C8.35793 22.7029 8.2726 22.6647 8.18273 22.6415C7.74713 22.5263 7.3272 22.3583 6.93233 22.1413C6.74253 22.0403 6.57005 21.9097 6.42133 21.7545C6.01611 21.3385 5.91187 20.8449 6.0713 20.411C6.25186 19.9203 6.64309 19.7241 7.05345 19.5184C7.12388 19.483 7.19487 19.4474 7.26547 19.41C8.17507 18.9159 8.8874 18.2986 9.38507 17.5704C9.527 17.3649 9.65027 17.1473 9.75353 16.9199C9.80207 16.7871 9.80107 16.715 9.76833 16.6481C9.73327 16.5934 9.68693 16.5469 9.6324 16.5117C9.47653 16.4084 9.31767 16.3052 9.2088 16.2347C9.16856 16.2083 9.12998 16.1831 9.09317 16.1591C8.94584 16.0629 8.82711 15.9853 8.74533 15.9281C8.35953 15.6583 8.08973 15.3716 7.9206 15.0512C7.80313 14.8295 7.73487 14.5851 7.72033 14.3345C7.70573 14.0841 7.74533 13.8333 7.83627 13.5995C8.09073 12.927 8.72693 12.5095 9.497 12.5095C9.65933 12.5094 9.8212 12.5265 9.97987 12.5607C10.0223 12.5699 10.0642 12.5795 10.1056 12.5903C10.0989 12.1329 10.1092 11.6449 10.1501 11.1671C10.2952 9.48907 10.8833 8.60707 11.4965 7.905C11.8895 7.4638 12.353 7.0908 12.868 6.80127C13.7995 6.26981 14.8497 6 15.9999 6C17.1501 6 18.2053 6.26981 19.1359 6.80127C19.6496 7.09073 20.1121 7.463 20.5048 7.90293C21.118 8.60507 21.7061 9.48547 21.8513 11.1651C21.8921 11.6429 21.9024 12.1283 21.8952 12.5883C21.9366 12.5775 21.979 12.5678 22.0215 12.5586C22.1801 12.5245 22.342 12.5073 22.5043 12.5075C23.2739 12.5075 23.9091 12.925 24.1645 13.5975C24.2551 13.8312 24.2943 14.0817 24.2793 14.3319C24.2645 14.5822 24.1959 14.8263 24.0782 15.0477C23.9095 15.3681 23.6397 15.6547 23.2539 15.9245C23.1518 15.9973 22.9933 16.0998 22.7934 16.2293L22.7905 16.2311C22.6775 16.3042 22.511 16.4125 22.3495 16.5193C22.3012 16.5523 22.2603 16.5949 22.2294 16.6445C22.1983 16.7089 22.1962 16.7794 22.2397 16.9036C22.3443 17.1358 22.4697 17.3581 22.6142 17.5679C23.1231 18.3129 23.8569 18.9414 24.7967 19.4397C24.8444 19.4644 24.8923 19.4886 24.9399 19.5125C24.9836 19.5345 25.027 19.5564 25.07 19.5786C25.1145 19.5991 25.1666 19.6257 25.2233 19.6589ZM23.354 21.6064C23.6765 21.5205 24.0587 21.4187 24.5269 21.1601C25.0711 20.8571 24.7624 20.6711 24.5795 20.5797C21.4823 19.0829 20.9887 16.7681 20.9667 16.5939C20.9658 16.5869 20.9649 16.5799 20.964 16.5729C20.9385 16.3748 20.9179 16.2152 21.1395 16.0109C21.2899 15.8715 21.7919 15.5463 22.1834 15.2926C22.3677 15.1732 22.5275 15.0697 22.6147 15.0088C23.0659 14.6941 23.2631 14.3798 23.117 13.9935C23.0148 13.7277 22.767 13.6255 22.5038 13.6255C22.4211 13.6258 22.3387 13.6351 22.2581 13.6531C21.9665 13.7164 21.6799 13.8285 21.4368 13.9235C21.2675 13.9897 21.1192 14.0477 21.0051 14.0752C20.9717 14.0839 20.9374 14.0885 20.9029 14.089C20.7547 14.089 20.7011 14.0231 20.7128 13.8448C20.714 13.8258 20.7153 13.8062 20.7166 13.7859C20.7525 13.23 20.8181 12.2143 20.7358 11.2632C20.6198 9.90707 20.1824 9.23507 19.6627 8.6408C19.4133 8.3562 18.2385 7.12313 15.9979 7.12313C13.7571 7.12313 12.5855 8.36133 12.3361 8.64693C11.8169 9.2412 11.38 9.9132 11.263 11.2693C11.1846 12.1753 11.243 13.1396 11.2775 13.7098C11.2806 13.76 11.2834 13.8072 11.286 13.8509C11.2962 14.0205 11.2441 14.0951 11.0959 14.0951C11.0614 14.0945 11.0271 14.0899 10.9937 14.0813C10.8799 14.0539 10.732 13.996 10.563 13.9299C10.3199 13.8348 10.0331 13.7226 9.74127 13.6593C9.6606 13.6412 9.57813 13.6319 9.49547 13.6317C9.23387 13.6317 8.98447 13.7323 8.88227 13.9996C8.73613 14.3859 8.9344 14.7002 9.38507 15.0149C9.47236 15.0759 9.63248 15.1797 9.81708 15.2993C10.2085 15.553 10.71 15.8781 10.8603 16.017C11.0818 16.2217 11.0613 16.3814 11.0356 16.58C11.0348 16.5866 11.0339 16.5933 11.0331 16.6001C11.0111 16.7717 10.5169 19.0865 7.42033 20.5858C7.23893 20.6737 6.93027 20.8597 7.47447 21.1601C7.94139 21.4168 8.32284 21.518 8.64502 21.6036C8.91237 21.6746 9.13891 21.7347 9.3396 21.8638C9.54241 21.9945 9.57086 22.2069 9.59728 22.4042C9.61972 22.5717 9.6407 22.7284 9.7658 22.8147C9.9113 22.915 10.1802 22.9253 10.5422 22.9392C11.0155 22.9573 11.648 22.9815 12.3719 23.221C12.7352 23.3407 13.0509 23.5347 13.3833 23.739C14.0326 24.138 14.7455 24.5761 16.0014 24.5761C17.2619 24.5761 17.9825 24.1339 18.6333 23.7345C18.9629 23.5322 19.2746 23.3409 19.6295 23.2235C20.3547 22.9841 20.987 22.9599 21.4599 22.9418C21.8217 22.9279 22.0902 22.9176 22.2355 22.8173C22.3609 22.7309 22.3817 22.5743 22.4041 22.4067C22.4304 22.2094 22.4587 21.997 22.6617 21.8663C22.8617 21.7376 23.0875 21.6774 23.354 21.6064Z" fill="currentColor"></path></svg>`);
 function Snapchat($$anchor, $$props) {
   let size = $1506.prop($$props, "size", 3, 32), alt = $1506.prop($$props, "alt", 3, "Snapchat"), className = $1506.prop($$props, "class", 3, ""), rest = $1506.rest_props($$props, [
     "$$slots",
@@ -61044,18 +61055,20 @@ function Snapchat($$anchor, $$props) {
   ]);
   let resolvedWidth = $1506.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1506.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1506.derived(() => import_snapchat.default);
-  var img = root174();
-  $1506.attribute_effect(img, () => ({
-    src: $1506.get(imageSrc),
-    alt: alt(),
+  var svg = root174();
+  $1506.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1506.get(resolvedWidth),
     height: $1506.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1506.replay_events(img);
-  $1506.append($$anchor, img);
+  $1506.append($$anchor, svg);
 }
 
 // src/logos/SnowLogo.svelte
@@ -61189,8 +61202,7 @@ function Telegram($$anchor, $$props) {
 // src/logos/Threads.svelte
 var import_disclose_version1511 = require("svelte/internal/disclose-version");
 var $1511 = __toESM(require("svelte/internal/client"));
-var import_threads = __toESM(require("@snowui-design-system/resource-base/assets/logos/threads.svg"));
-var root179 = $1511.from_html(`<img/>`);
+var root179 = $1511.from_svg(`<svg><path d="M0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16Z" fill="currentColor"></path><path d="M21.192 15.2211C21.0986 15.177 21.0037 15.1347 20.9075 15.0941C20.74 12.06 19.0539 10.3229 16.2226 10.3052C16.2098 10.3051 16.197 10.3051 16.1842 10.3051C14.4908 10.3051 13.0823 11.0158 12.2155 12.3091L13.7726 13.3594C14.4202 12.3933 15.4365 12.1874 16.185 12.1874C16.1936 12.1874 16.2023 12.1874 16.2108 12.1874C17.1431 12.1933 17.8465 12.4598 18.3018 12.9795C18.6332 13.3579 18.8548 13.8807 18.9645 14.5406C18.138 14.4025 17.2441 14.36 16.2885 14.4139C13.5967 14.5663 11.8662 16.1099 11.9824 18.2548C12.0414 19.3428 12.5927 20.2788 13.5346 20.8903C14.331 21.4072 15.3567 21.6599 16.4227 21.6027C17.8305 21.5268 18.9349 20.9987 19.7054 20.0331C20.2905 19.2997 20.6606 18.3494 20.824 17.1519C21.4949 17.5501 21.9921 18.0739 22.2667 18.7037C22.7337 19.7743 22.7609 21.5335 21.301 22.9677C20.0219 24.2242 18.4843 24.7677 16.1607 24.7845C13.5831 24.7657 11.6337 23.9529 10.3663 22.3687C9.17942 20.8853 8.56605 18.7426 8.54316 16.0002C8.56605 13.2577 9.17942 11.115 10.3663 9.63157C11.6337 8.04737 13.5831 7.23461 16.1606 7.21577C18.7569 7.23475 20.7403 8.05143 22.0562 9.64327C22.7015 10.4239 23.1879 11.4056 23.5087 12.5502L25.3334 12.0715C24.9446 10.6626 24.3329 9.44857 23.5005 8.44172C21.8135 6.40091 19.3461 5.35518 16.167 5.3335H16.1543C12.9816 5.3551 10.5419 6.40481 8.90287 8.45342C7.44438 10.2764 6.69205 12.813 6.66677 15.9927L6.66669 16.0002L6.66677 16.0077C6.69205 19.1873 7.44438 21.7239 8.90287 23.5469C10.5419 25.5955 12.9816 26.6453 16.1543 26.6668H16.167C18.9877 26.6476 20.9759 25.9215 22.6138 24.3125C24.7567 22.2075 24.6922 19.5689 23.9859 17.9492C23.4792 16.7876 22.5131 15.8442 21.192 15.2211ZM16.3219 19.7232C15.1421 19.7885 13.9165 19.2678 13.856 18.1526C13.8112 17.3257 14.4545 16.4031 16.3943 16.2931C16.6165 16.2805 16.8345 16.2744 17.0486 16.2744C17.7532 16.2744 18.4123 16.3417 19.0116 16.4705C18.7881 19.2152 17.477 19.6608 16.3219 19.7232Z" fill="white"></path></svg>`);
 function Threads($$anchor, $$props) {
   let size = $1511.prop($$props, "size", 3, 32), alt = $1511.prop($$props, "alt", 3, "Threads"), className = $1511.prop($$props, "class", 3, ""), rest = $1511.rest_props($$props, [
     "$$slots",
@@ -61204,25 +61216,26 @@ function Threads($$anchor, $$props) {
   ]);
   let resolvedWidth = $1511.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1511.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1511.derived(() => import_threads.default);
-  var img = root179();
-  $1511.attribute_effect(img, () => ({
-    src: $1511.get(imageSrc),
-    alt: alt(),
+  var svg = root179();
+  $1511.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1511.get(resolvedWidth),
     height: $1511.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1511.replay_events(img);
-  $1511.append($$anchor, img);
+  $1511.append($$anchor, svg);
 }
 
 // src/logos/TikTok.svelte
 var import_disclose_version1512 = require("svelte/internal/disclose-version");
 var $1512 = __toESM(require("svelte/internal/client"));
-var import_tik_tok = __toESM(require("@snowui-design-system/resource-base/assets/logos/tik-tok.svg"));
-var root180 = $1512.from_html(`<img/>`);
+var root180 = $1512.from_svg(`<svg><circle cx="16" cy="16" r="16" fill="currentColor"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M14.1328 13.7902V12.9789C13.8512 12.939 13.5673 12.9183 13.2829 12.917C9.80527 12.917 6.97601 15.7467 6.97601 19.2244C6.97601 21.3576 8.04216 23.246 9.66855 24.3879C8.57955 23.2233 7.97412 21.6882 7.975 20.0938C7.975 16.6657 10.7237 13.8702 14.1328 13.7902Z" fill="#00F2EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M14.2813 22.9739C15.8329 22.9739 17.0987 21.7396 17.1563 20.2013L17.1616 6.4695H19.6702C19.6167 6.18279 19.5896 5.89177 19.5892 5.6001H16.1631L16.1574 19.3324C16.1002 20.8702 14.834 22.104 13.2829 22.104C12.8172 22.1042 12.3585 21.9907 11.9466 21.7734C12.2125 22.1444 12.563 22.4469 12.969 22.6556C13.375 22.8644 13.8248 22.9734 14.2813 22.9739ZM24.3566 11.1305V10.3673C23.4346 10.3682 22.5325 10.1 21.7607 9.59556C22.4373 10.3746 23.3483 10.9132 24.357 11.1305" fill="#00F2EA"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.7604 9.59484C21.0041 8.72946 20.5876 7.61903 20.588 6.46974H19.6701C19.7889 7.10498 20.0354 7.70948 20.3948 8.24665C20.7541 8.78382 21.2187 9.24247 21.7604 9.59484ZM13.2827 16.3433C12.5191 16.3442 11.787 16.6479 11.2471 17.1879C10.7071 17.7278 10.4034 18.4599 10.4025 19.2235C10.403 19.7488 10.547 20.264 10.8191 20.7134C11.0911 21.1627 11.4808 21.5292 11.946 21.7732C11.5918 21.2847 11.4011 20.6968 11.401 20.0934C11.4018 19.3297 11.7054 18.5975 12.2454 18.0575C12.7854 17.5174 13.5175 17.2136 14.2812 17.2127C14.578 17.2127 14.8624 17.2618 15.1311 17.3461V13.848C14.8496 13.8081 14.5656 13.7874 14.2812 13.7861C14.2312 13.7861 14.1821 13.7889 14.1326 13.7899V16.4767C13.8578 16.3892 13.5711 16.3443 13.2827 16.3433Z" fill="#FF004F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M24.3566 11.1304V13.7934C22.5797 13.7934 20.9337 13.225 19.5894 12.2604V19.2237C19.5894 22.7013 16.7606 25.5306 13.283 25.5306C11.9391 25.5306 10.6929 25.1066 9.66864 24.3873C10.2575 25.0223 10.9712 25.5288 11.7649 25.8752C12.5587 26.2215 13.4155 26.4002 14.2815 26.4C17.7591 26.4 20.5884 23.5707 20.5884 20.0936V13.1302C21.9772 14.1289 23.645 14.6652 25.3556 14.6632V11.2361C25.0126 11.2361 24.6791 11.199 24.3566 11.1299" fill="#FF004F"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19.5894 19.2235V12.2602C20.9781 13.259 22.646 13.7953 24.3566 13.7932V11.1302C23.348 10.9127 22.4372 10.374 21.7608 9.59482C21.219 9.24246 20.7544 8.78381 20.3951 8.24664C20.0358 7.70947 19.7892 7.10497 19.6704 6.46973H17.1617L17.1565 20.2016C17.0988 21.7393 15.8331 22.9737 14.2815 22.9737C13.825 22.9732 13.3751 22.864 12.9691 22.6553C12.5632 22.4466 12.2127 22.1442 11.9467 21.7732C11.4815 21.5292 11.0917 21.1628 10.8196 20.7134C10.5474 20.2641 10.4033 19.7489 10.4028 19.2235C10.4036 18.4599 10.7074 17.7278 11.2473 17.1879C11.7873 16.6479 12.5194 16.3442 13.283 16.3433C13.5793 16.3433 13.8637 16.3919 14.1329 16.4767V13.7899C10.7238 13.8699 7.9751 16.6653 7.9751 20.0934C7.9751 21.7512 8.61917 23.2605 9.66865 24.3875C10.7266 25.1324 11.9892 25.5315 13.283 25.5304C16.7606 25.5304 19.5894 22.7011 19.5894 19.2235Z" fill="white"></path></svg>`);
 function TikTok($$anchor, $$props) {
   let size = $1512.prop($$props, "size", 3, 32), alt = $1512.prop($$props, "alt", 3, "TikTok"), className = $1512.prop($$props, "class", 3, ""), rest = $1512.rest_props($$props, [
     "$$slots",
@@ -61236,18 +61249,20 @@ function TikTok($$anchor, $$props) {
   ]);
   let resolvedWidth = $1512.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1512.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1512.derived(() => import_tik_tok.default);
-  var img = root180();
-  $1512.attribute_effect(img, () => ({
-    src: $1512.get(imageSrc),
-    alt: alt(),
+  var svg = root180();
+  $1512.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1512.get(resolvedWidth),
     height: $1512.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1512.replay_events(img);
-  $1512.append($$anchor, img);
+  $1512.append($$anchor, svg);
 }
 
 // src/logos/Twitch.svelte
@@ -61413,8 +61428,7 @@ function Word($$anchor, $$props) {
 // src/logos/XLogo.svelte
 var import_disclose_version1518 = require("svelte/internal/disclose-version");
 var $1518 = __toESM(require("svelte/internal/client"));
-var import_x_logo = __toESM(require("@snowui-design-system/resource-base/assets/logos/x-logo.svg"));
-var root186 = $1518.from_html(`<img/>`);
+var root186 = $1518.from_svg(`<svg><path fill-rule="evenodd" clip-rule="evenodd" d="M11.9877 16.2296L0 1.3335H9.49513L16.8951 10.5403L24.8007 1.37495H30.0301L19.4235 13.6861L32 29.3335H22.5332L14.5206 19.3769L5.96634 29.3059H0.708592L11.9877 16.2296ZM23.9131 26.5735L5.82209 4.09348H8.1142L26.1824 26.5735H23.9131Z" fill="currentColor"></path></svg>`);
 function XLogo($$anchor, $$props) {
   let size = $1518.prop($$props, "size", 3, 32), alt = $1518.prop($$props, "alt", 3, "XLogo"), className = $1518.prop($$props, "class", 3, ""), rest = $1518.rest_props($$props, [
     "$$slots",
@@ -61428,18 +61442,20 @@ function XLogo($$anchor, $$props) {
   ]);
   let resolvedWidth = $1518.derived(() => size() ?? $$props.width ?? 32);
   let resolvedHeight = $1518.derived(() => size() ?? $$props.height ?? 32);
-  let imageSrc = $1518.derived(() => import_x_logo.default);
-  var img = root186();
-  $1518.attribute_effect(img, () => ({
-    src: $1518.get(imageSrc),
-    alt: alt(),
+  var svg = root186();
+  $1518.attribute_effect(svg, () => ({
+    viewBox: "0 0 32 32",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
     width: $1518.get(resolvedWidth),
     height: $1518.get(resolvedHeight),
     class: className(),
+    role: alt() ? "img" : void 0,
+    "aria-label": alt() || void 0,
+    "aria-hidden": alt() ? void 0 : "true",
     ...rest
   }));
-  $1518.replay_events(img);
-  $1518.append($$anchor, img);
+  $1518.append($$anchor, svg);
 }
 
 // src/logos/Youtube.svelte

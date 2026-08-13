@@ -61,6 +61,14 @@ Provider 也支持替换策略：
 </IconProvider>
 ```
 
+## Logo 颜色继承
+
+Resource Base 中包含 `currentColor` 的 SVG Logo 会以内联 SVG 生成，因此可直接继承使用位置的文字颜色；其余彩色 Logo 继续按原始品牌色渲染。
+
+```svelte
+<Github size={16} style="color: inherit" />
+```
+
 ## Props
 
 ```ts

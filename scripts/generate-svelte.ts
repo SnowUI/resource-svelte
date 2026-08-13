@@ -5,6 +5,7 @@ import {
   wrapSvgAsSvelte,
   generateIconComponentCode,
   generateAvatarComponentCode,
+  generateInlineSvgAvatarComponentCode,
   generateIllustrationComponentCode,
 } from './utils/generate-component';
 
@@ -345,6 +346,16 @@ async function main() {
         code = generateIllustrationComponentCode(compName, defaultFile.path, sizeFiles.length > 0 ? sizeFiles : undefined, 1024);
       } else if (group.folder === 'images') {
         code = generateIllustrationComponentCode(compName, defaultFile.path, sizeFiles.length > 0 ? sizeFiles : undefined, 320);
+      } else if (
+        group.folder === 'logos' &&
+        defaultFile.format === 'svg' &&
+        defaultFile.content.toString('utf8').includes('currentColor')
+      ) {
+        code = generateInlineSvgAvatarComponentCode(
+          compName,
+          defaultFile.content.toString('utf8'),
+          32,
+        );
       } else {
         const defaultSize = group.folder === 'avatars' ? 32 : 32;
         code = generateAvatarComponentCode(compName, defaultFile.path, sizeFiles.length > 0 ? sizeFiles : undefined, defaultSize);

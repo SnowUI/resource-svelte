@@ -332,6 +332,53 @@ export function generateAvatarComponentCode(
 }
 
 /**
+ * Generate an inline SVG material component so currentColor can inherit from
+ * the consuming page. External SVGs rendered through <img> cannot inherit it.
+ */
+export function generateInlineSvgAvatarComponentCode(
+  componentName: string,
+  svgSource: string,
+  defaultSize: number = 32,
+): string {
+  const cleaned = svgSource
+    .replace(/<\?xml[^>]*>/gi, '')
+    .replace(/<!DOCTYPE[^>]*>/gi, '')
+    .trim();
+  const svgMatch = cleaned.match(/<svg\b([^>]*)>([\s\S]*?)<\/svg>/i);
+  if (!svgMatch) {
+    throw new Error(`Invalid SVG source for ${componentName}`);
+  }
+
+  const rootAttributes = svgMatch[1]
+    .replace(/\s(?:width|height)=("[^"]*"|'[^']*')/gi, '')
+    .trim();
+  const inner = svgMatch[2].trim();
+
+  return [
+    '<script lang="ts">',
+    "  import type { AvatarProps } from '../lib/types';",
+    '',
+    `  let { size = ${defaultSize}, width, height, alt = "${componentName}", class: className = "", ...rest }: AvatarProps = $props();`,
+    `  let resolvedWidth = $derived(size ?? width ?? ${defaultSize});`,
+    `  let resolvedHeight = $derived(size ?? height ?? ${defaultSize});`,
+    '</script>',
+    '',
+    `<svg ${rootAttributes}`,
+    '  width={resolvedWidth}',
+    '  height={resolvedHeight}',
+    '  class={className}',
+    '  role={alt ? "img" : undefined}',
+    '  aria-label={alt || undefined}',
+    '  aria-hidden={alt ? undefined : "true"}',
+    '  {...rest}',
+    '>',
+    inner,
+    '</svg>',
+    '',
+  ].join('\n');
+}
+
+/**
  * 生成 Illustration/Background/Image 组件代码（默认高度固定，宽度自适应）
  */
 export function generateIllustrationComponentCode(
