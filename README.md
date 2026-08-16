@@ -61,6 +61,28 @@ Provider 也支持替换策略：
 </IconProvider>
 ```
 
+## 作为 SnowUI 组件内置图标的可选适配器
+
+SnowUI Components 自带内置功能图标，不安装本包也能完整显示。项目希望组件内置图标跟随 resource-svelte collection 切换时，把本包 resolver 传给 Components 的 `IconProvider`：
+
+```svelte
+<script lang="ts">
+  import { IconProvider as ComponentIconProvider } from "@snowui-design-system/components";
+  import { createSnowUIComponentIconResolver } from "@snowui-design-system/resource-svelte";
+
+  const phosphorIcons = createSnowUIComponentIconResolver({
+    collection: "phosphor",
+    fallbackCollections: ["snowui"],
+  });
+</script>
+
+<ComponentIconProvider resolver={phosphorIcons}>
+  <App />
+</ComponentIconProvider>
+```
+
+切换传入的 resolver 即可统一切换所有未被逐实例覆盖的组件内置图标。本适配器保持结构化契约，不会让 resource-svelte 反向依赖 Components。
+
 ## Logo 颜色继承
 
 Resource Base 中包含 `currentColor` 的 SVG Logo 会以内联 SVG 生成，因此可直接继承使用位置的文字颜色；其余彩色 Logo 继续按原始品牌色渲染。

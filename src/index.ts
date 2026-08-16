@@ -193,3 +193,8 @@ export type { ComponentCategory } from './component-names';
 export { RESOURCE_ICON_CONTEXT_KEY } from './lib/types';
 export { default as Icon } from './lib/Icon.svelte';
 export { default as IconProvider } from './lib/IconProvider.svelte';
+export {
+  createSnowUIComponentIconResolver,
+  type ComponentIconResolverOptions,
+  type ComponentIconResolverRequest,
+} from './lib/component-icon-resolver';

@@ -14,7 +14,7 @@ import * as $1331 from "svelte/internal/client";
 import { getContext } from "svelte";
 
 // src/lib/types.ts
-var RESOURCE_ICON_CONTEXT_KEY = Symbol("RESOURCE_ICON_CONTEXT_KEY");
+var RESOURCE_ICON_CONTEXT_KEY = Symbol.for("@snowui-design-system/resource-icon-context");
 
 // src/lib/switch-resolver.ts
 function matchesPreservePattern(pattern, meta) {
@@ -60111,6 +60111,23 @@ function IconProvider($$anchor, $$props) {
   $1521.append($$anchor, fragment);
   $1521.pop();
 }
+
+// src/lib/component-icon-resolver.ts
+function createSnowUIComponentIconResolver(options = {}) {
+  return ({ name, collection }) => {
+    const registry = iconsByCollection;
+    const collections = [
+      collection,
+      options.collection,
+      ...options.fallbackCollections ?? []
+    ].filter((value) => Boolean(value));
+    for (const candidate of collections) {
+      const component3 = registry[candidate]?.[name];
+      if (component3) return component3;
+    }
+    return collections.length === 0 ? iconsByDefault[name] : void 0;
+  };
+}
 export {
   Add,
   AddressBook,
@@ -61624,6 +61641,7 @@ export {
   Youtube,
   YoutubeLogo,
   componentNames,
+  createSnowUIComponentIconResolver,
   iconsByCollection,
   iconsByDefault,
   phosphor_exports as phosphor,

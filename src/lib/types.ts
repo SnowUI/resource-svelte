@@ -1,4 +1,4 @@
-export const RESOURCE_ICON_CONTEXT_KEY = Symbol('RESOURCE_ICON_CONTEXT_KEY');
+export const RESOURCE_ICON_CONTEXT_KEY = Symbol.for('@snowui-design-system/resource-icon-context');
 export type ResourceSize = 12 | 16 | 20 | 24 | 28 | 32 | 40 | 48 | 80;
 export type IconWeight = 'regular' | 'thin' | 'light' | 'bold' | 'fill' | 'duotone';
 
