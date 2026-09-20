@@ -82,3 +82,8 @@
     {@html content}
   </svg>
 {/if}
+
+<style>
+  /* Functional icons retain a readable canvas under responsive flex layouts. */
+  svg { min-width: 12px; min-height: 12px; flex-shrink: 0; }
+</style>

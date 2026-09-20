@@ -132,3 +132,7 @@ https://github.com/SnowUI/resource-svelte
 ```
 
 发布顺序中，必须先发布 `resource-base`，再发布 `resource-svelte`。
+
+### 图标响应式可读性
+
+功能图标由 IconBase 统一保留最小 12×12 CSS px 画布，并禁止 flex 挤压；比例与原始矢量路径保持不变。
