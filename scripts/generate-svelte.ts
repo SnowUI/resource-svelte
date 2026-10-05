@@ -424,6 +424,11 @@ async function main() {
   exportLines.push(`export { RESOURCE_ICON_CONTEXT_KEY } from './lib/types';`);
   exportLines.push(`export { default as Icon } from './lib/Icon.svelte';`);
   exportLines.push(`export { default as IconProvider } from './lib/IconProvider.svelte';`);
+  exportLines.push(`export {`);
+  exportLines.push(`  createSnowUIComponentIconResolver,`);
+  exportLines.push(`  type ComponentIconResolverOptions,`);
+  exportLines.push(`  type ComponentIconResolverRequest,`);
+  exportLines.push(`} from './lib/component-icon-resolver';`);
   exportLines.push('');
   await writeFileIfChanged(path.join(srcDir, 'index.ts'), exportLines.join('\n'));
 

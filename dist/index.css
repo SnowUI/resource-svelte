@@ -1,3 +1,10 @@
+/* svelte-css:src/lib/IconBase.svelte.css */
+svg.svelte-woqzif {
+  min-width: 12px;
+  min-height: 12px;
+  flex-shrink: 0;
+}
+
 /* svelte-css:src/lib/Icon.svelte.css */
 :where(.resource-icon-missing) {
   display: inline-flex;
