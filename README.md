@@ -117,6 +117,17 @@ pnpm build
 
 生成脚本会优先读取同级 monorepo 中的 `../resource-base`，独立仓库中则读取已安装的 `@snowui-design-system/resource-base`。
 
+## 许可映射门禁
+
+运行代码采用 `PACKAGE_LICENSE.md` 中的 MIT；生成组件内嵌或引用的素材继续适用 Base 清单中的独立授权。`RESOURCE_LICENSE_MANIFEST.json` 将每个生成组件唯一映射到一个 Base 素材条目，并继承来源、版本、权利证据、适用授权和品牌标记。
+
+```bash
+pnpm license:check:structure
+pnpm license:check
+```
+
+前者检查清单新鲜度及未匹配／重复映射，供本地构建使用；后者还会在任一条目为 `unresolved` 时失败，并由 `prepublishOnly` 强制执行。
+
 ## 发布与同步
 
 本目录对应 GitHub 仓库：
