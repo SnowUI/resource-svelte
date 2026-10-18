@@ -93,6 +93,8 @@ for (const absolute of await componentFiles()) {
     rightsEvidence: entry.rightsEvidence,
     applicableLicense: entry.applicableLicense,
     brandMark: entry.brandMark,
+    ownerConfirmed: entry.ownerConfirmed,
+    confirmationRecord: entry.confirmationRecord,
     resolution: entry.resolution,
   }));
   const reasons = [...new Set(sources.flatMap(entry => entry.resolution.reasons))];
@@ -113,7 +115,14 @@ for (const absolute of await componentFiles()) {
     rightsEvidence: [...new Set(sources.flatMap(entry => entry.rightsEvidence))],
     applicableLicense: applicableLicenses.length === 1 ? applicableLicenses[0] : null,
     brandMark: sources.some(entry => entry.brandMark),
-    resolution: { status: unresolvedBaseAssetIds.length === 0 && applicableLicenses.length === 1 ? 'resolved' : 'unresolved', reasons },
+    ownerConfirmed: sources.every(entry => entry.ownerConfirmed === true),
+    confirmationRecord: baseManifest.ownerConfirmation?.record ?? null,
+    resolution: {
+      status: unresolvedBaseAssetIds.length === 0 && applicableLicenses.length === 1 ? 'resolved' : 'unresolved',
+      evidenceBasis: sources.every(entry => entry.ownerConfirmed === true) ? 'owner-confirmed' : 'incomplete',
+      mappingBasis: 'automated-mapping-verified',
+      reasons,
+    },
   });
 }
 
@@ -139,6 +148,7 @@ const manifest = {
   schemaVersion: 1,
   package: packageName,
   baseManifest: '@snowui-design-system/resource-base/RESOURCE_LICENSE_MANIFEST.json',
+  ownerConfirmation: baseManifest.ownerConfirmation,
   summary: { generatedComponents: entries.length, unresolved: unresolved.length, mappingErrors: mappingErrors.length, duplicateMappings: duplicates.length, aliasGroups: aliases.length, missingBaseAssets: missingBaseAssets.length },
   mappingErrors,
   duplicateMappings: duplicates,

@@ -1,8 +1,8 @@
 # Package licensing
 
-The hand-written Svelte adapter code in this package is available under the MIT License below. Generated components embed or reference assets from `@snowui-design-system/resource-base` and retain each source asset's separate terms.
+The hand-written Svelte adapter code and SnowUI-created assets in this package are available under the MIT License below. Generated components embed or reference assets from `@snowui-design-system/resource-base`. Phosphor assets retain their original MIT License and copyright notice; other third-party assets retain their original Owner-verified licenses.
 
-`RESOURCE_LICENSE_MANIFEST.json` maps every generated component to exactly one Base manifest entry. An inherited `unresolved` entry is not a license grant and blocks publication. Phosphor components remain subject to `THIRD_PARTY_NOTICES.md`; SnowUI, `special`, Logo and other assets are not relicensed by the adapter code license.
+`OWNER_RESOURCE_LICENSE_CONFIRMATION.md` records the Owner's 2026-10-18 confirmation for the exact Base raw source set identified by SHA-256. It does not automatically cover later asset changes. `RESOURCE_LICENSE_MANIFEST.json` maps generated components to Base entries and distinguishes Owner confirmation from automated mapping verification. Unknown source versions remain `null`; brand-mark status is retained. An inherited `unresolved` entry remains a publication blocker.
 
 MIT License
 

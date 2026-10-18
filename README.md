@@ -119,7 +119,7 @@ pnpm build
 
 ## 许可映射门禁
 
-运行代码采用 `PACKAGE_LICENSE.md` 中的 MIT；生成组件内嵌或引用的素材继续适用 Base 清单中的独立授权。`RESOURCE_LICENSE_MANIFEST.json` 将每个生成组件唯一映射到一个 Base 素材条目，并继承来源、版本、权利证据、适用授权和品牌标记。
+手写 Svelte 适配代码和 SnowUI 自有素材采用 `PACKAGE_LICENSE.md` 中的 MIT；Phosphor 保留原 MIT 与版权声明，其他第三方素材保留 Owner 核实的原许可。随包 `OWNER_RESOURCE_LICENSE_CONFIRMATION.md` 对应 Base 当前原始素材集合的批准 SHA，后续新增或修改不自动继承本次确认。`RESOURCE_LICENSE_MANIFEST.json` 将生成组件映射到 Base 素材条目，并分别继承 Owner 确认、自动映射核验、来源版本、适用授权和品牌标记。
 
 ```bash
 pnpm license:check:structure
