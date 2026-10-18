@@ -23,7 +23,7 @@
         "prepublishOnly": "pnpm build && pnpm license:check"
     },
     "dependencies": {
-        "@snowui-design-system/resource-base": "^1.0.29"
+        "@snowui-design-system/resource-base": "^1.0.30"
     },
     "peerDependencies": {
         "svelte": "^4.0.0 || ^5.0.0"
