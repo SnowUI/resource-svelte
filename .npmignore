@@ -1,0 +1,28 @@
+# 保留 .gitignore 原有排除规则；npm 存在本文件后不再回退读取 .gitignore。
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 本机维护入口、计划与历史不属于 npm 使用者交付。
+/AGENTS.md
+/docs/
