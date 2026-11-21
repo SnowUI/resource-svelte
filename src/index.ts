@@ -133,6 +133,7 @@ export { default as AppleIntelligenceA } from './logos/AppleIntelligenceA.svelte
 export { default as AppleIntelligenceB } from './logos/AppleIntelligenceB.svelte';
 export { default as Apple } from './logos/Apple.svelte';
 export { default as Arc } from './logos/Arc.svelte';
+export { default as Authenticator } from './logos/Authenticator.svelte';
 export { default as Behance } from './logos/Behance.svelte';
 export { default as ChatGpt } from './logos/ChatGpt.svelte';
 export { default as Claude } from './logos/Claude.svelte';

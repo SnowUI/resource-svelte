@@ -26,3 +26,4 @@ yarn-error.log*
 # 本机维护入口、计划与历史不属于 npm 使用者交付。
 /AGENTS.md
 /docs/
+/cursor_mac_id_modifier.sh

@@ -4,11 +4,11 @@
   "baseManifest": "@snowui-design-system/resource-base/RESOURCE_LICENSE_MANIFEST.json",
   "ownerConfirmation": {
     "record": "OWNER_RESOURCE_LICENSE_CONFIRMATION.md",
-    "approvedSourceSetSha256": "6881d6a490a36a0be35c47d9422a3834e232aafa43f9d637919761a3ff5de3b6",
-    "currentSourceSetSha256": "6881d6a490a36a0be35c47d9422a3834e232aafa43f9d637919761a3ff5de3b6"
+    "approvedSourceSetSha256": "a56e742b0a08da4df3832e553558ae66e9a3b1cf8463fbb063556fb7ae80a17f",
+    "currentSourceSetSha256": "a56e742b0a08da4df3832e553558ae66e9a3b1cf8463fbb063556fb7ae80a17f"
   },
   "summary": {
-    "generatedComponents": 1519,
+    "generatedComponents": 1520,
     "unresolved": 0,
     "mappingErrors": 0,
     "duplicateMappings": 0,
@@ -74320,6 +74320,55 @@
       "inheritedAssetRights": [
         {
           "baseAssetId": "material:logos:arc",
+          "source": {
+            "name": null,
+            "url": null
+          },
+          "sourceVersion": null,
+          "rightsEvidence": [
+            "OWNER_RESOURCE_LICENSE_CONFIRMATION.md"
+          ],
+          "applicableLicense": "Owner-confirmed original third-party license",
+          "brandMark": true,
+          "ownerConfirmed": true,
+          "confirmationRecord": "OWNER_RESOURCE_LICENSE_CONFIRMATION.md",
+          "resolution": {
+            "status": "resolved",
+            "evidenceBasis": "owner-confirmed",
+            "mappingBasis": "automated-mapping-verified",
+            "reasons": []
+          }
+        }
+      ],
+      "unresolvedBaseAssetIds": [],
+      "source": {
+        "name": null,
+        "url": null
+      },
+      "sourceVersion": null,
+      "rightsEvidence": [
+        "OWNER_RESOURCE_LICENSE_CONFIRMATION.md"
+      ],
+      "applicableLicense": "Owner-confirmed original third-party license",
+      "brandMark": true,
+      "ownerConfirmed": true,
+      "confirmationRecord": "OWNER_RESOURCE_LICENSE_CONFIRMATION.md",
+      "resolution": {
+        "status": "resolved",
+        "evidenceBasis": "owner-confirmed",
+        "mappingBasis": "automated-mapping-verified",
+        "reasons": []
+      }
+    },
+    {
+      "generatedFile": "src/logos/Authenticator.svelte",
+      "generatedFileSha256": "7ce2643a279d2c57b941160b73893579eb9af223a5f313a6be66fb129cd0d177",
+      "mappingType": "logical-asset",
+      "baseAssetId": "material:logos:authenticator",
+      "relatedBaseAssetIds": [],
+      "inheritedAssetRights": [
+        {
+          "baseAssetId": "material:logos:authenticator",
           "source": {
             "name": null,
             "url": null

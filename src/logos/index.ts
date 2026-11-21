@@ -6,6 +6,7 @@ export { default as AppleIntelligenceA } from './AppleIntelligenceA.svelte';
 export { default as AppleIntelligenceB } from './AppleIntelligenceB.svelte';
 export { default as Apple } from './Apple.svelte';
 export { default as Arc } from './Arc.svelte';
+export { default as Authenticator } from './Authenticator.svelte';
 export { default as Behance } from './Behance.svelte';
 export { default as ChatGpt } from './ChatGpt.svelte';
 export { default as Claude } from './Claude.svelte';
