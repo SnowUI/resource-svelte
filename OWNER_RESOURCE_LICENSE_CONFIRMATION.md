@@ -1,11 +1,11 @@
 # Owner resource license confirmation
 
-Date: 2026-10-18
+Date: 2026-11-21 (initial confirmation: 2026-10-18)
 
-The SnowUI Owner confirms that all assets in the approved raw source set identified below have the required permissions and that the Owner personally verified the applicable rights. This confirmation covers the complete current `raw-assets/` collection in `resource-base`; it does not automatically extend to any later added or modified asset. No external source version is asserted where `sourceVersion` is `null`.
+The SnowUI Owner confirms that all assets in the approved raw source set identified below have the required permissions and that the Owner personally verified the applicable rights (initially confirmed on 2026-10-18 for 7,810 files, updated on 2026-11-21 to include Owner-added `raw-assets/logos/Authenticator.svg`). This confirmation covers the complete current `raw-assets/` collection in `resource-base`; it does not automatically extend to any later added or modified asset. No external source version is asserted where `sourceVersion` is `null`.
 
-- Approved source set: 7,810 allowed raw asset files, represented by sorted `raw-assets/...` paths relative to `resource-base/` and each file's SHA-256.
-- Approved source-set SHA-256: `6881d6a490a36a0be35c47d9422a3834e232aafa43f9d637919761a3ff5de3b6`.
+- Approved source set: 7,811 allowed raw asset files, represented by sorted `raw-assets/...` paths relative to `resource-base/` and each file's SHA-256.
+- Approved source-set SHA-256: `a56e742b0a08da4df3832e553558ae66e9a3b1cf8463fbb063556fb7ae80a17f` (supersedes initial 2026-10-18 hash `6881d6a490a36a0be35c47d9422a3834e232aafa43f9d637919761a3ff5de3b6`).
 - SnowUI-created assets are licensed under MIT.
 - Phosphor Icons are distributed under their original MIT license; retain the full upstream copyright and license text in `THIRD_PARTY_NOTICES.md`.
 - Other third-party assets retain their original licenses as individually verified by the Owner. This record does not relicense those assets as MIT. The applicable original license text and its particulars are not inferred here.
