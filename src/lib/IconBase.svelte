@@ -8,7 +8,11 @@
     type IconMeta,
   } from "./types";
   import { resolveSwitch } from "./switch-resolver";
-  import { iconsByCollection } from "../icons/by-name";
+
+  // Lazy-load the full icon registry only when an IconProvider replace policy is active,
+  // keeping direct single-icon imports tree-shakable without pulling all collections.
+  let registryPromise: Promise<Record<string, Record<string, any>>> | undefined;
+  let loadedRegistry = $state<Record<string, Record<string, any>> | null>(null);
 
   type WeightsMap = Partial<Record<IconWeight, string>>;
 
@@ -41,16 +45,26 @@
     }
   });
 
-  // 决定是否需要根据 Provider 替换策略切换到另一个 collection 的同语义图标。
-  // bypassSwitch=true 时（即上一层 IconBase 已经切换过）不再二次替换。
+  $effect(() => {
+    if (bypassSwitch || !meta || !ctx?.replace || loadedRegistry) return;
+    registryPromise ??= import("../icons/by-name").then(
+      (module) => module.iconsByCollection as Record<string, Record<string, any>>,
+    );
+    void registryPromise.then((registry) => {
+      loadedRegistry = registry;
+    });
+  });
+
+  // Decide whether the current icon should switch to another collection under Provider replace policy.
+  // bypassSwitch=true prevents recursive switching after one switch has already resolved.
   let switched = $derived.by(() => {
-    if (bypassSwitch || !meta || !ctx?.replace) return null;
-    return resolveSwitch(meta, ctx.replace, iconsByCollection as Record<string, Record<string, unknown>>);
+    if (bypassSwitch || !meta || !ctx?.replace || !loadedRegistry) return null;
+    return resolveSwitch(meta, ctx.replace, loadedRegistry);
   });
 
   let SwitchedComponent = $derived.by(() => {
-    if (!switched) return null;
-    const c = (iconsByCollection as Record<string, Record<string, any>>)[switched.collection]?.[switched.iconName];
+    if (!switched || !loadedRegistry) return null;
+    const c = loadedRegistry[switched.collection]?.[switched.iconName];
     return c ?? null;
   });
 
