@@ -1,20 +1,21 @@
 var __defProp = Object.defineProperty;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __esm = (fn, res) => function __init() {
+  return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
 };
 
-// src/icons/snowui/Add.svelte
-import "svelte/internal/disclose-version";
-import * as $1332 from "svelte/internal/client";
-
-// src/lib/IconBase.svelte
-import "svelte/internal/disclose-version";
-import * as $1331 from "svelte/internal/client";
-import { getContext } from "svelte";
-
 // src/lib/types.ts
-var RESOURCE_ICON_CONTEXT_KEY = Symbol.for("@snowui-design-system/resource-icon-context");
+var RESOURCE_ICON_CONTEXT_KEY;
+var init_types = __esm({
+  "src/lib/types.ts"() {
+    "use strict";
+    RESOURCE_ICON_CONTEXT_KEY = Symbol.for("@snowui-design-system/resource-icon-context");
+  }
+});
 
 // src/lib/switch-resolver.ts
 function matchesPreservePattern(pattern, meta) {
@@ -66,6 +67,11 @@ function resolveSwitch(meta, policy, registry) {
   }
   return null;
 }
+var init_switch_resolver = __esm({
+  "src/lib/switch-resolver.ts"() {
+    "use strict";
+  }
+});
 
 // src/icons/phosphor/AddressBook.svelte
 import "svelte/internal/disclose-version";
@@ -101,6 +107,12 @@ function AddressBook($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AddressBook = __esm({
+  "src/icons/phosphor/AddressBook.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AirTrafficControl.svelte
 import "svelte/internal/disclose-version";
@@ -136,6 +148,12 @@ function AirTrafficControl($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AirTrafficControl = __esm({
+  "src/icons/phosphor/AirTrafficControl.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Airplane.svelte
 import "svelte/internal/disclose-version";
@@ -171,6 +189,12 @@ function Airplane($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Airplane = __esm({
+  "src/icons/phosphor/Airplane.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AirplaneInFlight.svelte
 import "svelte/internal/disclose-version";
@@ -206,6 +230,12 @@ function AirplaneInFlight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AirplaneInFlight = __esm({
+  "src/icons/phosphor/AirplaneInFlight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AirplaneLanding.svelte
 import "svelte/internal/disclose-version";
@@ -241,6 +271,12 @@ function AirplaneLanding($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AirplaneLanding = __esm({
+  "src/icons/phosphor/AirplaneLanding.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AirplaneTakeoff.svelte
 import "svelte/internal/disclose-version";
@@ -276,6 +312,12 @@ function AirplaneTakeoff($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AirplaneTakeoff = __esm({
+  "src/icons/phosphor/AirplaneTakeoff.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AirplaneTilt.svelte
 import "svelte/internal/disclose-version";
@@ -311,6 +353,12 @@ function AirplaneTilt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AirplaneTilt = __esm({
+  "src/icons/phosphor/AirplaneTilt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Airplay.svelte
 import "svelte/internal/disclose-version";
@@ -346,6 +394,12 @@ function Airplay($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Airplay = __esm({
+  "src/icons/phosphor/Airplay.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Alarm.svelte
 import "svelte/internal/disclose-version";
@@ -381,6 +435,12 @@ function Alarm($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Alarm = __esm({
+  "src/icons/phosphor/Alarm.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Alien.svelte
 import "svelte/internal/disclose-version";
@@ -416,6 +476,12 @@ function Alien($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Alien = __esm({
+  "src/icons/phosphor/Alien.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignBottom.svelte
 import "svelte/internal/disclose-version";
@@ -451,6 +517,12 @@ function AlignBottom($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignBottom = __esm({
+  "src/icons/phosphor/AlignBottom.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignBottomSimple.svelte
 import "svelte/internal/disclose-version";
@@ -486,6 +558,12 @@ function AlignBottomSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignBottomSimple = __esm({
+  "src/icons/phosphor/AlignBottomSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignCenterHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -521,6 +599,12 @@ function AlignCenterHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignCenterHorizontal = __esm({
+  "src/icons/phosphor/AlignCenterHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignCenterHorizontalSimple.svelte
 import "svelte/internal/disclose-version";
@@ -556,6 +640,12 @@ function AlignCenterHorizontalSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignCenterHorizontalSimple = __esm({
+  "src/icons/phosphor/AlignCenterHorizontalSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignCenterVertical.svelte
 import "svelte/internal/disclose-version";
@@ -591,6 +681,12 @@ function AlignCenterVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignCenterVertical = __esm({
+  "src/icons/phosphor/AlignCenterVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignCenterVerticalSimple.svelte
 import "svelte/internal/disclose-version";
@@ -626,6 +722,12 @@ function AlignCenterVerticalSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignCenterVerticalSimple = __esm({
+  "src/icons/phosphor/AlignCenterVerticalSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignLeft.svelte
 import "svelte/internal/disclose-version";
@@ -661,6 +763,12 @@ function AlignLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignLeft = __esm({
+  "src/icons/phosphor/AlignLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignLeftSimple.svelte
 import "svelte/internal/disclose-version";
@@ -696,6 +804,12 @@ function AlignLeftSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignLeftSimple = __esm({
+  "src/icons/phosphor/AlignLeftSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignRight.svelte
 import "svelte/internal/disclose-version";
@@ -731,6 +845,12 @@ function AlignRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignRight = __esm({
+  "src/icons/phosphor/AlignRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignRightSimple.svelte
 import "svelte/internal/disclose-version";
@@ -766,6 +886,12 @@ function AlignRightSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignRightSimple = __esm({
+  "src/icons/phosphor/AlignRightSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignTop.svelte
 import "svelte/internal/disclose-version";
@@ -801,6 +927,12 @@ function AlignTop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignTop = __esm({
+  "src/icons/phosphor/AlignTop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AlignTopSimple.svelte
 import "svelte/internal/disclose-version";
@@ -836,6 +968,12 @@ function AlignTopSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AlignTopSimple = __esm({
+  "src/icons/phosphor/AlignTopSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AmazonLogo.svelte
 import "svelte/internal/disclose-version";
@@ -871,6 +1009,12 @@ function AmazonLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AmazonLogo = __esm({
+  "src/icons/phosphor/AmazonLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Anchor.svelte
 import "svelte/internal/disclose-version";
@@ -906,6 +1050,12 @@ function Anchor($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Anchor = __esm({
+  "src/icons/phosphor/Anchor.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AnchorSimple.svelte
 import "svelte/internal/disclose-version";
@@ -941,6 +1091,12 @@ function AnchorSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AnchorSimple = __esm({
+  "src/icons/phosphor/AnchorSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AndroidLogo.svelte
 import "svelte/internal/disclose-version";
@@ -976,6 +1132,12 @@ function AndroidLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AndroidLogo = __esm({
+  "src/icons/phosphor/AndroidLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AngularLogo.svelte
 import "svelte/internal/disclose-version";
@@ -1011,6 +1173,12 @@ function AngularLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AngularLogo = __esm({
+  "src/icons/phosphor/AngularLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Aperture.svelte
 import "svelte/internal/disclose-version";
@@ -1046,6 +1214,12 @@ function Aperture($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Aperture = __esm({
+  "src/icons/phosphor/Aperture.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AppStoreLogo.svelte
 import "svelte/internal/disclose-version";
@@ -1081,6 +1255,12 @@ function AppStoreLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AppStoreLogo = __esm({
+  "src/icons/phosphor/AppStoreLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AppWindow.svelte
 import "svelte/internal/disclose-version";
@@ -1116,6 +1296,12 @@ function AppWindow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AppWindow = __esm({
+  "src/icons/phosphor/AppWindow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AppleLogo.svelte
 import "svelte/internal/disclose-version";
@@ -1151,6 +1337,12 @@ function AppleLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AppleLogo = __esm({
+  "src/icons/phosphor/AppleLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ApplePodcastsLogo.svelte
 import "svelte/internal/disclose-version";
@@ -1186,6 +1378,12 @@ function ApplePodcastsLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ApplePodcastsLogo = __esm({
+  "src/icons/phosphor/ApplePodcastsLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Archive.svelte
 import "svelte/internal/disclose-version";
@@ -1221,6 +1419,12 @@ function Archive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Archive = __esm({
+  "src/icons/phosphor/Archive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArchiveBox.svelte
 import "svelte/internal/disclose-version";
@@ -1256,6 +1460,12 @@ function ArchiveBox($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArchiveBox = __esm({
+  "src/icons/phosphor/ArchiveBox.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArchiveTray.svelte
 import "svelte/internal/disclose-version";
@@ -1291,6 +1501,12 @@ function ArchiveTray($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArchiveTray = __esm({
+  "src/icons/phosphor/ArchiveTray.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Armchair.svelte
 import "svelte/internal/disclose-version";
@@ -1326,6 +1542,12 @@ function Armchair($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Armchair = __esm({
+  "src/icons/phosphor/Armchair.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowArcLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1361,6 +1583,12 @@ function ArrowArcLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowArcLeft = __esm({
+  "src/icons/phosphor/ArrowArcLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowArcRight.svelte
 import "svelte/internal/disclose-version";
@@ -1396,6 +1624,12 @@ function ArrowArcRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowArcRight = __esm({
+  "src/icons/phosphor/ArrowArcRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendDoubleUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1431,6 +1665,12 @@ function ArrowBendDoubleUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendDoubleUpLeft = __esm({
+  "src/icons/phosphor/ArrowBendDoubleUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendDoubleUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -1466,6 +1706,12 @@ function ArrowBendDoubleUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendDoubleUpRight = __esm({
+  "src/icons/phosphor/ArrowBendDoubleUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1501,6 +1747,12 @@ function ArrowBendDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendDownLeft = __esm({
+  "src/icons/phosphor/ArrowBendDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -1536,6 +1788,12 @@ function ArrowBendDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendDownRight = __esm({
+  "src/icons/phosphor/ArrowBendDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendLeftDown.svelte
 import "svelte/internal/disclose-version";
@@ -1571,6 +1829,12 @@ function ArrowBendLeftDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendLeftDown = __esm({
+  "src/icons/phosphor/ArrowBendLeftDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendLeftUp.svelte
 import "svelte/internal/disclose-version";
@@ -1606,6 +1870,12 @@ function ArrowBendLeftUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendLeftUp = __esm({
+  "src/icons/phosphor/ArrowBendLeftUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendRightDown.svelte
 import "svelte/internal/disclose-version";
@@ -1641,6 +1911,12 @@ function ArrowBendRightDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendRightDown = __esm({
+  "src/icons/phosphor/ArrowBendRightDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendRightUp.svelte
 import "svelte/internal/disclose-version";
@@ -1676,6 +1952,12 @@ function ArrowBendRightUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendRightUp = __esm({
+  "src/icons/phosphor/ArrowBendRightUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1711,6 +1993,12 @@ function ArrowBendUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendUpLeft = __esm({
+  "src/icons/phosphor/ArrowBendUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowBendUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -1746,6 +2034,12 @@ function ArrowBendUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowBendUpRight = __esm({
+  "src/icons/phosphor/ArrowBendUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleDown.svelte
 import "svelte/internal/disclose-version";
@@ -1781,6 +2075,12 @@ function ArrowCircleDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleDown = __esm({
+  "src/icons/phosphor/ArrowCircleDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1816,6 +2116,12 @@ function ArrowCircleDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleDownLeft = __esm({
+  "src/icons/phosphor/ArrowCircleDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -1851,6 +2157,12 @@ function ArrowCircleDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleDownRight = __esm({
+  "src/icons/phosphor/ArrowCircleDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1886,6 +2198,12 @@ function ArrowCircleLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleLeft = __esm({
+  "src/icons/phosphor/ArrowCircleLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleRight.svelte
 import "svelte/internal/disclose-version";
@@ -1921,6 +2239,12 @@ function ArrowCircleRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleRight = __esm({
+  "src/icons/phosphor/ArrowCircleRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleUp.svelte
 import "svelte/internal/disclose-version";
@@ -1956,6 +2280,12 @@ function ArrowCircleUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleUp = __esm({
+  "src/icons/phosphor/ArrowCircleUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -1991,6 +2321,12 @@ function ArrowCircleUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleUpLeft = __esm({
+  "src/icons/phosphor/ArrowCircleUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCircleUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -2026,6 +2362,12 @@ function ArrowCircleUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCircleUpRight = __esm({
+  "src/icons/phosphor/ArrowCircleUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -2061,6 +2403,12 @@ function ArrowClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowClockwise = __esm({
+  "src/icons/phosphor/ArrowClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowCounterClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -2096,6 +2444,12 @@ function ArrowCounterClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowCounterClockwise = __esm({
+  "src/icons/phosphor/ArrowCounterClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowDown.svelte
 import "svelte/internal/disclose-version";
@@ -2131,6 +2485,12 @@ function ArrowDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowDown = __esm({
+  "src/icons/phosphor/ArrowDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2166,6 +2526,12 @@ function ArrowDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowDownLeft = __esm({
+  "src/icons/phosphor/ArrowDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -2201,6 +2567,12 @@ function ArrowDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowDownRight = __esm({
+  "src/icons/phosphor/ArrowDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2236,6 +2608,12 @@ function ArrowElbowDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowDownLeft = __esm({
+  "src/icons/phosphor/ArrowElbowDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -2271,6 +2649,12 @@ function ArrowElbowDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowDownRight = __esm({
+  "src/icons/phosphor/ArrowElbowDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2306,6 +2690,12 @@ function ArrowElbowLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowLeft = __esm({
+  "src/icons/phosphor/ArrowElbowLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowLeftDown.svelte
 import "svelte/internal/disclose-version";
@@ -2341,6 +2731,12 @@ function ArrowElbowLeftDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowLeftDown = __esm({
+  "src/icons/phosphor/ArrowElbowLeftDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowLeftUp.svelte
 import "svelte/internal/disclose-version";
@@ -2376,6 +2772,12 @@ function ArrowElbowLeftUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowLeftUp = __esm({
+  "src/icons/phosphor/ArrowElbowLeftUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowRight.svelte
 import "svelte/internal/disclose-version";
@@ -2411,6 +2813,12 @@ function ArrowElbowRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowRight = __esm({
+  "src/icons/phosphor/ArrowElbowRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowRightDown.svelte
 import "svelte/internal/disclose-version";
@@ -2446,6 +2854,12 @@ function ArrowElbowRightDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowRightDown = __esm({
+  "src/icons/phosphor/ArrowElbowRightDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowRightUp.svelte
 import "svelte/internal/disclose-version";
@@ -2481,6 +2895,12 @@ function ArrowElbowRightUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowRightUp = __esm({
+  "src/icons/phosphor/ArrowElbowRightUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2516,6 +2936,12 @@ function ArrowElbowUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowUpLeft = __esm({
+  "src/icons/phosphor/ArrowElbowUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowElbowUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -2551,6 +2977,12 @@ function ArrowElbowUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowElbowUpRight = __esm({
+  "src/icons/phosphor/ArrowElbowUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatDown.svelte
 import "svelte/internal/disclose-version";
@@ -2586,6 +3018,12 @@ function ArrowFatDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatDown = __esm({
+  "src/icons/phosphor/ArrowFatDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2621,6 +3059,12 @@ function ArrowFatLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLeft = __esm({
+  "src/icons/phosphor/ArrowFatLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLineDown.svelte
 import "svelte/internal/disclose-version";
@@ -2656,6 +3100,12 @@ function ArrowFatLineDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLineDown = __esm({
+  "src/icons/phosphor/ArrowFatLineDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLineLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2691,6 +3141,12 @@ function ArrowFatLineLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLineLeft = __esm({
+  "src/icons/phosphor/ArrowFatLineLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLineRight.svelte
 import "svelte/internal/disclose-version";
@@ -2726,6 +3182,12 @@ function ArrowFatLineRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLineRight = __esm({
+  "src/icons/phosphor/ArrowFatLineRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLineUp.svelte
 import "svelte/internal/disclose-version";
@@ -2761,6 +3223,12 @@ function ArrowFatLineUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLineUp = __esm({
+  "src/icons/phosphor/ArrowFatLineUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLinesDown.svelte
 import "svelte/internal/disclose-version";
@@ -2796,6 +3264,12 @@ function ArrowFatLinesDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLinesDown = __esm({
+  "src/icons/phosphor/ArrowFatLinesDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLinesLeft.svelte
 import "svelte/internal/disclose-version";
@@ -2831,6 +3305,12 @@ function ArrowFatLinesLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLinesLeft = __esm({
+  "src/icons/phosphor/ArrowFatLinesLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLinesRight.svelte
 import "svelte/internal/disclose-version";
@@ -2866,6 +3346,12 @@ function ArrowFatLinesRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLinesRight = __esm({
+  "src/icons/phosphor/ArrowFatLinesRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatLinesUp.svelte
 import "svelte/internal/disclose-version";
@@ -2901,6 +3387,12 @@ function ArrowFatLinesUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatLinesUp = __esm({
+  "src/icons/phosphor/ArrowFatLinesUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatRight.svelte
 import "svelte/internal/disclose-version";
@@ -2936,6 +3428,12 @@ function ArrowFatRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatRight = __esm({
+  "src/icons/phosphor/ArrowFatRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowFatUp.svelte
 import "svelte/internal/disclose-version";
@@ -2971,6 +3469,12 @@ function ArrowFatUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFatUp = __esm({
+  "src/icons/phosphor/ArrowFatUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3006,6 +3510,12 @@ function ArrowLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLeft = __esm({
+  "src/icons/phosphor/ArrowLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineDown.svelte
 import "svelte/internal/disclose-version";
@@ -3041,6 +3551,12 @@ function ArrowLineDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineDown = __esm({
+  "src/icons/phosphor/ArrowLineDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3076,6 +3592,12 @@ function ArrowLineDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineDownLeft = __esm({
+  "src/icons/phosphor/ArrowLineDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -3111,6 +3633,12 @@ function ArrowLineDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineDownRight = __esm({
+  "src/icons/phosphor/ArrowLineDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3146,6 +3674,12 @@ function ArrowLineLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineLeft = __esm({
+  "src/icons/phosphor/ArrowLineLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineRight.svelte
 import "svelte/internal/disclose-version";
@@ -3181,6 +3715,12 @@ function ArrowLineRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineRight = __esm({
+  "src/icons/phosphor/ArrowLineRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineUp.svelte
 import "svelte/internal/disclose-version";
@@ -3216,6 +3756,12 @@ function ArrowLineUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineUp = __esm({
+  "src/icons/phosphor/ArrowLineUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3251,6 +3797,12 @@ function ArrowLineUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineUpLeft = __esm({
+  "src/icons/phosphor/ArrowLineUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowLineUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -3286,6 +3838,12 @@ function ArrowLineUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineUpRight = __esm({
+  "src/icons/phosphor/ArrowLineUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowRight.svelte
 import "svelte/internal/disclose-version";
@@ -3321,6 +3879,12 @@ function ArrowRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowRight = __esm({
+  "src/icons/phosphor/ArrowRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareDown.svelte
 import "svelte/internal/disclose-version";
@@ -3356,6 +3920,12 @@ function ArrowSquareDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareDown = __esm({
+  "src/icons/phosphor/ArrowSquareDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3391,6 +3961,12 @@ function ArrowSquareDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareDownLeft = __esm({
+  "src/icons/phosphor/ArrowSquareDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -3426,6 +4002,12 @@ function ArrowSquareDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareDownRight = __esm({
+  "src/icons/phosphor/ArrowSquareDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareIn.svelte
 import "svelte/internal/disclose-version";
@@ -3461,6 +4043,12 @@ function ArrowSquareIn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareIn = __esm({
+  "src/icons/phosphor/ArrowSquareIn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3496,6 +4084,12 @@ function ArrowSquareLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareLeft = __esm({
+  "src/icons/phosphor/ArrowSquareLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareOut.svelte
 import "svelte/internal/disclose-version";
@@ -3531,6 +4125,12 @@ function ArrowSquareOut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareOut = __esm({
+  "src/icons/phosphor/ArrowSquareOut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareRight.svelte
 import "svelte/internal/disclose-version";
@@ -3566,6 +4166,12 @@ function ArrowSquareRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareRight = __esm({
+  "src/icons/phosphor/ArrowSquareRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareUp.svelte
 import "svelte/internal/disclose-version";
@@ -3601,6 +4207,12 @@ function ArrowSquareUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareUp = __esm({
+  "src/icons/phosphor/ArrowSquareUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3636,6 +4248,12 @@ function ArrowSquareUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareUpLeft = __esm({
+  "src/icons/phosphor/ArrowSquareUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowSquareUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -3671,6 +4289,12 @@ function ArrowSquareUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowSquareUpRight = __esm({
+  "src/icons/phosphor/ArrowSquareUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUDownLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3706,6 +4330,12 @@ function ArrowUDownLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUDownLeft = __esm({
+  "src/icons/phosphor/ArrowUDownLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUDownRight.svelte
 import "svelte/internal/disclose-version";
@@ -3741,6 +4371,12 @@ function ArrowUDownRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUDownRight = __esm({
+  "src/icons/phosphor/ArrowUDownRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowULeftDown.svelte
 import "svelte/internal/disclose-version";
@@ -3776,6 +4412,12 @@ function ArrowULeftDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowULeftDown = __esm({
+  "src/icons/phosphor/ArrowULeftDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowULeftUp.svelte
 import "svelte/internal/disclose-version";
@@ -3811,6 +4453,12 @@ function ArrowULeftUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowULeftUp = __esm({
+  "src/icons/phosphor/ArrowULeftUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowURightDown.svelte
 import "svelte/internal/disclose-version";
@@ -3846,6 +4494,12 @@ function ArrowURightDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowURightDown = __esm({
+  "src/icons/phosphor/ArrowURightDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowURightUp.svelte
 import "svelte/internal/disclose-version";
@@ -3881,6 +4535,12 @@ function ArrowURightUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowURightUp = __esm({
+  "src/icons/phosphor/ArrowURightUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -3916,6 +4576,12 @@ function ArrowUUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUUpLeft = __esm({
+  "src/icons/phosphor/ArrowUUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -3951,6 +4617,12 @@ function ArrowUUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUUpRight = __esm({
+  "src/icons/phosphor/ArrowUUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUp.svelte
 import "svelte/internal/disclose-version";
@@ -3986,6 +4658,12 @@ function ArrowUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUp = __esm({
+  "src/icons/phosphor/ArrowUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUpLeft.svelte
 import "svelte/internal/disclose-version";
@@ -4021,6 +4699,12 @@ function ArrowUpLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUpLeft = __esm({
+  "src/icons/phosphor/ArrowUpLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowUpRight.svelte
 import "svelte/internal/disclose-version";
@@ -4056,6 +4740,12 @@ function ArrowUpRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowUpRight = __esm({
+  "src/icons/phosphor/ArrowUpRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -4091,6 +4781,12 @@ function ArrowsClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsClockwise = __esm({
+  "src/icons/phosphor/ArrowsClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsCounterClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -4126,6 +4822,12 @@ function ArrowsCounterClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsCounterClockwise = __esm({
+  "src/icons/phosphor/ArrowsCounterClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsDownUp.svelte
 import "svelte/internal/disclose-version";
@@ -4161,6 +4863,12 @@ function ArrowsDownUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsDownUp = __esm({
+  "src/icons/phosphor/ArrowsDownUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -4196,6 +4904,12 @@ function ArrowsHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsHorizontal = __esm({
+  "src/icons/phosphor/ArrowsHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsIn.svelte
 import "svelte/internal/disclose-version";
@@ -4231,6 +4945,12 @@ function ArrowsIn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsIn = __esm({
+  "src/icons/phosphor/ArrowsIn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsInCardinal.svelte
 import "svelte/internal/disclose-version";
@@ -4266,6 +4986,12 @@ function ArrowsInCardinal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsInCardinal = __esm({
+  "src/icons/phosphor/ArrowsInCardinal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsInLineHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -4301,6 +5027,12 @@ function ArrowsInLineHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsInLineHorizontal = __esm({
+  "src/icons/phosphor/ArrowsInLineHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsInLineVertical.svelte
 import "svelte/internal/disclose-version";
@@ -4336,6 +5068,12 @@ function ArrowsInLineVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsInLineVertical = __esm({
+  "src/icons/phosphor/ArrowsInLineVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsInSimple.svelte
 import "svelte/internal/disclose-version";
@@ -4371,6 +5109,12 @@ function ArrowsInSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsInSimple = __esm({
+  "src/icons/phosphor/ArrowsInSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsLeftRight.svelte
 import "svelte/internal/disclose-version";
@@ -4406,6 +5150,12 @@ function ArrowsLeftRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsLeftRight = __esm({
+  "src/icons/phosphor/ArrowsLeftRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsMerge.svelte
 import "svelte/internal/disclose-version";
@@ -4441,6 +5191,12 @@ function ArrowsMerge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsMerge = __esm({
+  "src/icons/phosphor/ArrowsMerge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsOut.svelte
 import "svelte/internal/disclose-version";
@@ -4476,6 +5232,12 @@ function ArrowsOut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsOut = __esm({
+  "src/icons/phosphor/ArrowsOut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsOutCardinal.svelte
 import "svelte/internal/disclose-version";
@@ -4511,6 +5273,12 @@ function ArrowsOutCardinal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsOutCardinal = __esm({
+  "src/icons/phosphor/ArrowsOutCardinal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsOutLineHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -4546,6 +5314,12 @@ function ArrowsOutLineHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsOutLineHorizontal = __esm({
+  "src/icons/phosphor/ArrowsOutLineHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsOutLineVertical.svelte
 import "svelte/internal/disclose-version";
@@ -4581,6 +5355,12 @@ function ArrowsOutLineVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsOutLineVertical = __esm({
+  "src/icons/phosphor/ArrowsOutLineVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsOutSimple.svelte
 import "svelte/internal/disclose-version";
@@ -4616,6 +5396,12 @@ function ArrowsOutSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsOutSimple = __esm({
+  "src/icons/phosphor/ArrowsOutSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsSplit.svelte
 import "svelte/internal/disclose-version";
@@ -4651,6 +5437,12 @@ function ArrowsSplit($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsSplit = __esm({
+  "src/icons/phosphor/ArrowsSplit.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArrowsVertical.svelte
 import "svelte/internal/disclose-version";
@@ -4686,6 +5478,12 @@ function ArrowsVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsVertical = __esm({
+  "src/icons/phosphor/ArrowsVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Article.svelte
 import "svelte/internal/disclose-version";
@@ -4721,6 +5519,12 @@ function Article($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Article = __esm({
+  "src/icons/phosphor/Article.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArticleMedium.svelte
 import "svelte/internal/disclose-version";
@@ -4756,6 +5560,12 @@ function ArticleMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArticleMedium = __esm({
+  "src/icons/phosphor/ArticleMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ArticleNyTimes.svelte
 import "svelte/internal/disclose-version";
@@ -4791,6 +5601,12 @@ function ArticleNyTimes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArticleNyTimes = __esm({
+  "src/icons/phosphor/ArticleNyTimes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Asterisk.svelte
 import "svelte/internal/disclose-version";
@@ -4826,6 +5642,12 @@ function Asterisk($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Asterisk = __esm({
+  "src/icons/phosphor/Asterisk.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/AsteriskSimple.svelte
 import "svelte/internal/disclose-version";
@@ -4861,6 +5683,12 @@ function AsteriskSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_AsteriskSimple = __esm({
+  "src/icons/phosphor/AsteriskSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/At.svelte
 import "svelte/internal/disclose-version";
@@ -4892,6 +5720,12 @@ function At($$anchor, $$props) {
     () => rest
   ));
 }
+var init_At = __esm({
+  "src/icons/phosphor/At.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Atom.svelte
 import "svelte/internal/disclose-version";
@@ -4927,6 +5761,12 @@ function Atom($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Atom = __esm({
+  "src/icons/phosphor/Atom.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Baby.svelte
 import "svelte/internal/disclose-version";
@@ -4962,6 +5802,12 @@ function Baby($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Baby = __esm({
+  "src/icons/phosphor/Baby.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Backpack.svelte
 import "svelte/internal/disclose-version";
@@ -4997,6 +5843,12 @@ function Backpack($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Backpack = __esm({
+  "src/icons/phosphor/Backpack.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Backspace.svelte
 import "svelte/internal/disclose-version";
@@ -5032,6 +5884,12 @@ function Backspace($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Backspace = __esm({
+  "src/icons/phosphor/Backspace.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bag.svelte
 import "svelte/internal/disclose-version";
@@ -5067,6 +5925,12 @@ function Bag($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bag = __esm({
+  "src/icons/phosphor/Bag.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BagSimple.svelte
 import "svelte/internal/disclose-version";
@@ -5102,6 +5966,12 @@ function BagSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BagSimple = __esm({
+  "src/icons/phosphor/BagSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Balloon.svelte
 import "svelte/internal/disclose-version";
@@ -5137,6 +6007,12 @@ function Balloon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Balloon = __esm({
+  "src/icons/phosphor/Balloon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bandaids.svelte
 import "svelte/internal/disclose-version";
@@ -5172,6 +6048,12 @@ function Bandaids($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bandaids = __esm({
+  "src/icons/phosphor/Bandaids.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bank.svelte
 import "svelte/internal/disclose-version";
@@ -5207,6 +6089,12 @@ function Bank($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bank = __esm({
+  "src/icons/phosphor/Bank.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Barbell.svelte
 import "svelte/internal/disclose-version";
@@ -5242,6 +6130,12 @@ function Barbell($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Barbell = __esm({
+  "src/icons/phosphor/Barbell.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Barcode.svelte
 import "svelte/internal/disclose-version";
@@ -5277,6 +6171,12 @@ function Barcode($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Barcode = __esm({
+  "src/icons/phosphor/Barcode.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Barricade.svelte
 import "svelte/internal/disclose-version";
@@ -5312,6 +6212,12 @@ function Barricade($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Barricade = __esm({
+  "src/icons/phosphor/Barricade.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Baseball.svelte
 import "svelte/internal/disclose-version";
@@ -5347,6 +6253,12 @@ function Baseball($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Baseball = __esm({
+  "src/icons/phosphor/Baseball.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BaseballCap.svelte
 import "svelte/internal/disclose-version";
@@ -5382,6 +6294,12 @@ function BaseballCap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BaseballCap = __esm({
+  "src/icons/phosphor/BaseballCap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Basket.svelte
 import "svelte/internal/disclose-version";
@@ -5417,6 +6335,12 @@ function Basket($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Basket = __esm({
+  "src/icons/phosphor/Basket.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Basketball.svelte
 import "svelte/internal/disclose-version";
@@ -5452,6 +6376,12 @@ function Basketball($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Basketball = __esm({
+  "src/icons/phosphor/Basketball.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bathtub.svelte
 import "svelte/internal/disclose-version";
@@ -5487,6 +6417,12 @@ function Bathtub($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bathtub = __esm({
+  "src/icons/phosphor/Bathtub.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryCharging.svelte
 import "svelte/internal/disclose-version";
@@ -5522,6 +6458,12 @@ function BatteryCharging($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryCharging = __esm({
+  "src/icons/phosphor/BatteryCharging.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryChargingVertical.svelte
 import "svelte/internal/disclose-version";
@@ -5557,6 +6499,12 @@ function BatteryChargingVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryChargingVertical = __esm({
+  "src/icons/phosphor/BatteryChargingVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryEmpty.svelte
 import "svelte/internal/disclose-version";
@@ -5592,6 +6540,12 @@ function BatteryEmpty($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryEmpty = __esm({
+  "src/icons/phosphor/BatteryEmpty.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryFull.svelte
 import "svelte/internal/disclose-version";
@@ -5627,6 +6581,12 @@ function BatteryFull($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryFull = __esm({
+  "src/icons/phosphor/BatteryFull.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryHigh.svelte
 import "svelte/internal/disclose-version";
@@ -5662,6 +6622,12 @@ function BatteryHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryHigh = __esm({
+  "src/icons/phosphor/BatteryHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryLow.svelte
 import "svelte/internal/disclose-version";
@@ -5697,6 +6663,12 @@ function BatteryLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryLow = __esm({
+  "src/icons/phosphor/BatteryLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryMedium.svelte
 import "svelte/internal/disclose-version";
@@ -5732,6 +6704,12 @@ function BatteryMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryMedium = __esm({
+  "src/icons/phosphor/BatteryMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryPlus.svelte
 import "svelte/internal/disclose-version";
@@ -5767,6 +6745,12 @@ function BatteryPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryPlus = __esm({
+  "src/icons/phosphor/BatteryPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryPlusVertical.svelte
 import "svelte/internal/disclose-version";
@@ -5802,6 +6786,12 @@ function BatteryPlusVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryPlusVertical = __esm({
+  "src/icons/phosphor/BatteryPlusVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryVerticalEmpty.svelte
 import "svelte/internal/disclose-version";
@@ -5837,6 +6827,12 @@ function BatteryVerticalEmpty($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryVerticalEmpty = __esm({
+  "src/icons/phosphor/BatteryVerticalEmpty.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryVerticalFull.svelte
 import "svelte/internal/disclose-version";
@@ -5872,6 +6868,12 @@ function BatteryVerticalFull($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryVerticalFull = __esm({
+  "src/icons/phosphor/BatteryVerticalFull.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryVerticalHigh.svelte
 import "svelte/internal/disclose-version";
@@ -5907,6 +6909,12 @@ function BatteryVerticalHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryVerticalHigh = __esm({
+  "src/icons/phosphor/BatteryVerticalHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryVerticalLow.svelte
 import "svelte/internal/disclose-version";
@@ -5942,6 +6950,12 @@ function BatteryVerticalLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryVerticalLow = __esm({
+  "src/icons/phosphor/BatteryVerticalLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryVerticalMedium.svelte
 import "svelte/internal/disclose-version";
@@ -5977,6 +6991,12 @@ function BatteryVerticalMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryVerticalMedium = __esm({
+  "src/icons/phosphor/BatteryVerticalMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryWarning.svelte
 import "svelte/internal/disclose-version";
@@ -6012,6 +7032,12 @@ function BatteryWarning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryWarning = __esm({
+  "src/icons/phosphor/BatteryWarning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BatteryWarningVertical.svelte
 import "svelte/internal/disclose-version";
@@ -6047,6 +7073,12 @@ function BatteryWarningVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BatteryWarningVertical = __esm({
+  "src/icons/phosphor/BatteryWarningVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bed.svelte
 import "svelte/internal/disclose-version";
@@ -6082,6 +7114,12 @@ function Bed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bed = __esm({
+  "src/icons/phosphor/Bed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BeerBottle.svelte
 import "svelte/internal/disclose-version";
@@ -6117,6 +7155,12 @@ function BeerBottle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BeerBottle = __esm({
+  "src/icons/phosphor/BeerBottle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BeerStein.svelte
 import "svelte/internal/disclose-version";
@@ -6152,6 +7196,12 @@ function BeerStein($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BeerStein = __esm({
+  "src/icons/phosphor/BeerStein.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BehanceLogo.svelte
 import "svelte/internal/disclose-version";
@@ -6187,6 +7237,12 @@ function BehanceLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BehanceLogo = __esm({
+  "src/icons/phosphor/BehanceLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bell.svelte
 import "svelte/internal/disclose-version";
@@ -6222,6 +7278,12 @@ function Bell($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bell = __esm({
+  "src/icons/phosphor/Bell.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellRinging.svelte
 import "svelte/internal/disclose-version";
@@ -6257,6 +7319,12 @@ function BellRinging($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellRinging = __esm({
+  "src/icons/phosphor/BellRinging.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellSimple.svelte
 import "svelte/internal/disclose-version";
@@ -6292,6 +7360,12 @@ function BellSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellSimple = __esm({
+  "src/icons/phosphor/BellSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellSimpleRinging.svelte
 import "svelte/internal/disclose-version";
@@ -6327,6 +7401,12 @@ function BellSimpleRinging($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellSimpleRinging = __esm({
+  "src/icons/phosphor/BellSimpleRinging.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellSimpleSlash.svelte
 import "svelte/internal/disclose-version";
@@ -6362,6 +7442,12 @@ function BellSimpleSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellSimpleSlash = __esm({
+  "src/icons/phosphor/BellSimpleSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellSimpleZ.svelte
 import "svelte/internal/disclose-version";
@@ -6397,6 +7483,12 @@ function BellSimpleZ($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellSimpleZ = __esm({
+  "src/icons/phosphor/BellSimpleZ.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellSlash.svelte
 import "svelte/internal/disclose-version";
@@ -6432,6 +7524,12 @@ function BellSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellSlash = __esm({
+  "src/icons/phosphor/BellSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BellZ.svelte
 import "svelte/internal/disclose-version";
@@ -6467,6 +7565,12 @@ function BellZ($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BellZ = __esm({
+  "src/icons/phosphor/BellZ.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BezierCurve.svelte
 import "svelte/internal/disclose-version";
@@ -6502,6 +7606,12 @@ function BezierCurve($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BezierCurve = __esm({
+  "src/icons/phosphor/BezierCurve.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bicycle.svelte
 import "svelte/internal/disclose-version";
@@ -6537,6 +7647,12 @@ function Bicycle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bicycle = __esm({
+  "src/icons/phosphor/Bicycle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Binoculars.svelte
 import "svelte/internal/disclose-version";
@@ -6572,6 +7688,12 @@ function Binoculars($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Binoculars = __esm({
+  "src/icons/phosphor/Binoculars.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bird.svelte
 import "svelte/internal/disclose-version";
@@ -6607,6 +7729,12 @@ function Bird($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bird = __esm({
+  "src/icons/phosphor/Bird.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bluetooth.svelte
 import "svelte/internal/disclose-version";
@@ -6642,6 +7770,12 @@ function Bluetooth($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bluetooth = __esm({
+  "src/icons/phosphor/Bluetooth.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BluetoothConnected.svelte
 import "svelte/internal/disclose-version";
@@ -6677,6 +7811,12 @@ function BluetoothConnected($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BluetoothConnected = __esm({
+  "src/icons/phosphor/BluetoothConnected.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BluetoothSlash.svelte
 import "svelte/internal/disclose-version";
@@ -6712,6 +7852,12 @@ function BluetoothSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BluetoothSlash = __esm({
+  "src/icons/phosphor/BluetoothSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BluetoothX.svelte
 import "svelte/internal/disclose-version";
@@ -6747,6 +7893,12 @@ function BluetoothX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BluetoothX = __esm({
+  "src/icons/phosphor/BluetoothX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Boat.svelte
 import "svelte/internal/disclose-version";
@@ -6782,6 +7934,12 @@ function Boat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Boat = __esm({
+  "src/icons/phosphor/Boat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bone.svelte
 import "svelte/internal/disclose-version";
@@ -6817,6 +7975,12 @@ function Bone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bone = __esm({
+  "src/icons/phosphor/Bone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Book.svelte
 import "svelte/internal/disclose-version";
@@ -6852,6 +8016,12 @@ function Book($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Book = __esm({
+  "src/icons/phosphor/Book.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BookBookmark.svelte
 import "svelte/internal/disclose-version";
@@ -6887,6 +8057,12 @@ function BookBookmark($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BookBookmark = __esm({
+  "src/icons/phosphor/BookBookmark.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BookOpen.svelte
 import "svelte/internal/disclose-version";
@@ -6922,6 +8098,12 @@ function BookOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BookOpen = __esm({
+  "src/icons/phosphor/BookOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BookOpenText.svelte
 import "svelte/internal/disclose-version";
@@ -6957,6 +8139,12 @@ function BookOpenText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BookOpenText = __esm({
+  "src/icons/phosphor/BookOpenText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bookmark.svelte
 import "svelte/internal/disclose-version";
@@ -6992,6 +8180,12 @@ function Bookmark($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bookmark = __esm({
+  "src/icons/phosphor/Bookmark.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BookmarkSimple.svelte
 import "svelte/internal/disclose-version";
@@ -7027,6 +8221,12 @@ function BookmarkSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BookmarkSimple = __esm({
+  "src/icons/phosphor/BookmarkSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bookmarks.svelte
 import "svelte/internal/disclose-version";
@@ -7062,6 +8262,12 @@ function Bookmarks($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bookmarks = __esm({
+  "src/icons/phosphor/Bookmarks.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BookmarksSimple.svelte
 import "svelte/internal/disclose-version";
@@ -7097,6 +8303,12 @@ function BookmarksSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BookmarksSimple = __esm({
+  "src/icons/phosphor/BookmarksSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Books.svelte
 import "svelte/internal/disclose-version";
@@ -7132,6 +8344,12 @@ function Books($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Books = __esm({
+  "src/icons/phosphor/Books.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Boot.svelte
 import "svelte/internal/disclose-version";
@@ -7167,6 +8385,12 @@ function Boot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Boot = __esm({
+  "src/icons/phosphor/Boot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BoundingBox.svelte
 import "svelte/internal/disclose-version";
@@ -7202,6 +8426,12 @@ function BoundingBox($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BoundingBox = __esm({
+  "src/icons/phosphor/BoundingBox.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BowlFood.svelte
 import "svelte/internal/disclose-version";
@@ -7237,6 +8467,12 @@ function BowlFood($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BowlFood = __esm({
+  "src/icons/phosphor/BowlFood.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BracketsAngle.svelte
 import "svelte/internal/disclose-version";
@@ -7272,6 +8508,12 @@ function BracketsAngle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BracketsAngle = __esm({
+  "src/icons/phosphor/BracketsAngle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BracketsCurly.svelte
 import "svelte/internal/disclose-version";
@@ -7307,6 +8549,12 @@ function BracketsCurly($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BracketsCurly = __esm({
+  "src/icons/phosphor/BracketsCurly.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BracketsRound.svelte
 import "svelte/internal/disclose-version";
@@ -7342,6 +8590,12 @@ function BracketsRound($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BracketsRound = __esm({
+  "src/icons/phosphor/BracketsRound.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BracketsSquare.svelte
 import "svelte/internal/disclose-version";
@@ -7377,6 +8631,12 @@ function BracketsSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BracketsSquare = __esm({
+  "src/icons/phosphor/BracketsSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Brain.svelte
 import "svelte/internal/disclose-version";
@@ -7412,6 +8672,12 @@ function Brain($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Brain = __esm({
+  "src/icons/phosphor/Brain.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Brandy.svelte
 import "svelte/internal/disclose-version";
@@ -7447,6 +8713,12 @@ function Brandy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Brandy = __esm({
+  "src/icons/phosphor/Brandy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bridge.svelte
 import "svelte/internal/disclose-version";
@@ -7482,6 +8754,12 @@ function Bridge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bridge = __esm({
+  "src/icons/phosphor/Bridge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Briefcase.svelte
 import "svelte/internal/disclose-version";
@@ -7517,6 +8795,12 @@ function Briefcase($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Briefcase = __esm({
+  "src/icons/phosphor/Briefcase.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BriefcaseMetal.svelte
 import "svelte/internal/disclose-version";
@@ -7552,6 +8836,12 @@ function BriefcaseMetal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BriefcaseMetal = __esm({
+  "src/icons/phosphor/BriefcaseMetal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Broadcast.svelte
 import "svelte/internal/disclose-version";
@@ -7587,6 +8877,12 @@ function Broadcast($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Broadcast = __esm({
+  "src/icons/phosphor/Broadcast.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Broom.svelte
 import "svelte/internal/disclose-version";
@@ -7622,6 +8918,12 @@ function Broom($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Broom = __esm({
+  "src/icons/phosphor/Broom.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Browser.svelte
 import "svelte/internal/disclose-version";
@@ -7657,6 +8959,12 @@ function Browser($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Browser = __esm({
+  "src/icons/phosphor/Browser.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Browsers.svelte
 import "svelte/internal/disclose-version";
@@ -7692,6 +9000,12 @@ function Browsers($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Browsers = __esm({
+  "src/icons/phosphor/Browsers.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bug.svelte
 import "svelte/internal/disclose-version";
@@ -7727,6 +9041,12 @@ function Bug($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bug = __esm({
+  "src/icons/phosphor/Bug.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BugBeetle.svelte
 import "svelte/internal/disclose-version";
@@ -7762,6 +9082,12 @@ function BugBeetle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BugBeetle = __esm({
+  "src/icons/phosphor/BugBeetle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/BugDroid.svelte
 import "svelte/internal/disclose-version";
@@ -7797,6 +9123,12 @@ function BugDroid($$anchor, $$props) {
     () => rest
   ));
 }
+var init_BugDroid = __esm({
+  "src/icons/phosphor/BugDroid.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Buildings.svelte
 import "svelte/internal/disclose-version";
@@ -7832,6 +9164,12 @@ function Buildings($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Buildings = __esm({
+  "src/icons/phosphor/Buildings.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Bus.svelte
 import "svelte/internal/disclose-version";
@@ -7867,6 +9205,12 @@ function Bus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Bus = __esm({
+  "src/icons/phosphor/Bus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Butterfly.svelte
 import "svelte/internal/disclose-version";
@@ -7902,6 +9246,12 @@ function Butterfly($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Butterfly = __esm({
+  "src/icons/phosphor/Butterfly.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cactus.svelte
 import "svelte/internal/disclose-version";
@@ -7937,6 +9287,12 @@ function Cactus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cactus = __esm({
+  "src/icons/phosphor/Cactus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cake.svelte
 import "svelte/internal/disclose-version";
@@ -7972,6 +9328,12 @@ function Cake($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cake = __esm({
+  "src/icons/phosphor/Cake.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Calculator.svelte
 import "svelte/internal/disclose-version";
@@ -8007,6 +9369,12 @@ function Calculator($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Calculator = __esm({
+  "src/icons/phosphor/Calculator.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Calendar.svelte
 import "svelte/internal/disclose-version";
@@ -8042,6 +9410,12 @@ function Calendar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Calendar = __esm({
+  "src/icons/phosphor/Calendar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CalendarBlank.svelte
 import "svelte/internal/disclose-version";
@@ -8077,6 +9451,12 @@ function CalendarBlank($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CalendarBlank = __esm({
+  "src/icons/phosphor/CalendarBlank.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CalendarCheck.svelte
 import "svelte/internal/disclose-version";
@@ -8112,6 +9492,12 @@ function CalendarCheck($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CalendarCheck = __esm({
+  "src/icons/phosphor/CalendarCheck.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CalendarPlus.svelte
 import "svelte/internal/disclose-version";
@@ -8147,6 +9533,12 @@ function CalendarPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CalendarPlus = __esm({
+  "src/icons/phosphor/CalendarPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CalendarX.svelte
 import "svelte/internal/disclose-version";
@@ -8182,6 +9574,12 @@ function CalendarX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CalendarX = __esm({
+  "src/icons/phosphor/CalendarX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CallBell.svelte
 import "svelte/internal/disclose-version";
@@ -8217,6 +9615,12 @@ function CallBell($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CallBell = __esm({
+  "src/icons/phosphor/CallBell.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Camera.svelte
 import "svelte/internal/disclose-version";
@@ -8252,6 +9656,12 @@ function Camera($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Camera = __esm({
+  "src/icons/phosphor/Camera.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CameraPlus.svelte
 import "svelte/internal/disclose-version";
@@ -8287,6 +9697,12 @@ function CameraPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CameraPlus = __esm({
+  "src/icons/phosphor/CameraPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CameraRotate.svelte
 import "svelte/internal/disclose-version";
@@ -8322,6 +9738,12 @@ function CameraRotate($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CameraRotate = __esm({
+  "src/icons/phosphor/CameraRotate.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CameraSlash.svelte
 import "svelte/internal/disclose-version";
@@ -8357,6 +9779,12 @@ function CameraSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CameraSlash = __esm({
+  "src/icons/phosphor/CameraSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Campfire.svelte
 import "svelte/internal/disclose-version";
@@ -8392,6 +9820,12 @@ function Campfire($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Campfire = __esm({
+  "src/icons/phosphor/Campfire.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Car.svelte
 import "svelte/internal/disclose-version";
@@ -8427,6 +9861,12 @@ function Car($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Car = __esm({
+  "src/icons/phosphor/Car.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CarProfile.svelte
 import "svelte/internal/disclose-version";
@@ -8462,6 +9902,12 @@ function CarProfile($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CarProfile = __esm({
+  "src/icons/phosphor/CarProfile.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CarSimple.svelte
 import "svelte/internal/disclose-version";
@@ -8497,6 +9943,12 @@ function CarSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CarSimple = __esm({
+  "src/icons/phosphor/CarSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cardholder.svelte
 import "svelte/internal/disclose-version";
@@ -8532,6 +9984,12 @@ function Cardholder($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cardholder = __esm({
+  "src/icons/phosphor/Cardholder.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cards.svelte
 import "svelte/internal/disclose-version";
@@ -8567,6 +10025,12 @@ function Cards($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cards = __esm({
+  "src/icons/phosphor/Cards.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleDoubleDown.svelte
 import "svelte/internal/disclose-version";
@@ -8602,6 +10066,12 @@ function CaretCircleDoubleDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleDoubleDown = __esm({
+  "src/icons/phosphor/CaretCircleDoubleDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleDoubleLeft.svelte
 import "svelte/internal/disclose-version";
@@ -8637,6 +10107,12 @@ function CaretCircleDoubleLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleDoubleLeft = __esm({
+  "src/icons/phosphor/CaretCircleDoubleLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleDoubleRight.svelte
 import "svelte/internal/disclose-version";
@@ -8672,6 +10148,12 @@ function CaretCircleDoubleRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleDoubleRight = __esm({
+  "src/icons/phosphor/CaretCircleDoubleRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleDoubleUp.svelte
 import "svelte/internal/disclose-version";
@@ -8707,6 +10189,12 @@ function CaretCircleDoubleUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleDoubleUp = __esm({
+  "src/icons/phosphor/CaretCircleDoubleUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleDown.svelte
 import "svelte/internal/disclose-version";
@@ -8742,6 +10230,12 @@ function CaretCircleDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleDown = __esm({
+  "src/icons/phosphor/CaretCircleDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleLeft.svelte
 import "svelte/internal/disclose-version";
@@ -8777,6 +10271,12 @@ function CaretCircleLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleLeft = __esm({
+  "src/icons/phosphor/CaretCircleLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleRight.svelte
 import "svelte/internal/disclose-version";
@@ -8812,6 +10312,12 @@ function CaretCircleRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleRight = __esm({
+  "src/icons/phosphor/CaretCircleRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleUp.svelte
 import "svelte/internal/disclose-version";
@@ -8847,6 +10353,12 @@ function CaretCircleUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleUp = __esm({
+  "src/icons/phosphor/CaretCircleUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretCircleUpDown.svelte
 import "svelte/internal/disclose-version";
@@ -8882,6 +10394,12 @@ function CaretCircleUpDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretCircleUpDown = __esm({
+  "src/icons/phosphor/CaretCircleUpDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretDoubleDown.svelte
 import "svelte/internal/disclose-version";
@@ -8917,6 +10435,12 @@ function CaretDoubleDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretDoubleDown = __esm({
+  "src/icons/phosphor/CaretDoubleDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretDoubleLeft.svelte
 import "svelte/internal/disclose-version";
@@ -8952,6 +10476,12 @@ function CaretDoubleLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretDoubleLeft = __esm({
+  "src/icons/phosphor/CaretDoubleLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretDoubleRight.svelte
 import "svelte/internal/disclose-version";
@@ -8987,6 +10517,12 @@ function CaretDoubleRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretDoubleRight = __esm({
+  "src/icons/phosphor/CaretDoubleRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretDoubleUp.svelte
 import "svelte/internal/disclose-version";
@@ -9022,6 +10558,12 @@ function CaretDoubleUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretDoubleUp = __esm({
+  "src/icons/phosphor/CaretDoubleUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretDown.svelte
 import "svelte/internal/disclose-version";
@@ -9057,6 +10599,12 @@ function CaretDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretDown = __esm({
+  "src/icons/phosphor/CaretDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretLeft.svelte
 import "svelte/internal/disclose-version";
@@ -9092,6 +10640,12 @@ function CaretLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretLeft = __esm({
+  "src/icons/phosphor/CaretLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretRight.svelte
 import "svelte/internal/disclose-version";
@@ -9127,6 +10681,12 @@ function CaretRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretRight = __esm({
+  "src/icons/phosphor/CaretRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretUp.svelte
 import "svelte/internal/disclose-version";
@@ -9162,6 +10722,12 @@ function CaretUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretUp = __esm({
+  "src/icons/phosphor/CaretUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CaretUpDown.svelte
 import "svelte/internal/disclose-version";
@@ -9197,6 +10763,12 @@ function CaretUpDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CaretUpDown = __esm({
+  "src/icons/phosphor/CaretUpDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Carrot.svelte
 import "svelte/internal/disclose-version";
@@ -9232,6 +10804,12 @@ function Carrot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Carrot = __esm({
+  "src/icons/phosphor/Carrot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CassetteTape.svelte
 import "svelte/internal/disclose-version";
@@ -9267,6 +10845,12 @@ function CassetteTape($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CassetteTape = __esm({
+  "src/icons/phosphor/CassetteTape.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CastleTurret.svelte
 import "svelte/internal/disclose-version";
@@ -9302,6 +10886,12 @@ function CastleTurret($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CastleTurret = __esm({
+  "src/icons/phosphor/CastleTurret.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cat.svelte
 import "svelte/internal/disclose-version";
@@ -9337,6 +10927,12 @@ function Cat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cat = __esm({
+  "src/icons/phosphor/Cat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalFull.svelte
 import "svelte/internal/disclose-version";
@@ -9372,6 +10968,12 @@ function CellSignalFull($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalFull = __esm({
+  "src/icons/phosphor/CellSignalFull.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalHigh.svelte
 import "svelte/internal/disclose-version";
@@ -9407,6 +11009,12 @@ function CellSignalHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalHigh = __esm({
+  "src/icons/phosphor/CellSignalHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalLow.svelte
 import "svelte/internal/disclose-version";
@@ -9442,6 +11050,12 @@ function CellSignalLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalLow = __esm({
+  "src/icons/phosphor/CellSignalLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalMedium.svelte
 import "svelte/internal/disclose-version";
@@ -9477,6 +11091,12 @@ function CellSignalMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalMedium = __esm({
+  "src/icons/phosphor/CellSignalMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalNone.svelte
 import "svelte/internal/disclose-version";
@@ -9512,6 +11132,12 @@ function CellSignalNone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalNone = __esm({
+  "src/icons/phosphor/CellSignalNone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalSlash.svelte
 import "svelte/internal/disclose-version";
@@ -9547,6 +11173,12 @@ function CellSignalSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalSlash = __esm({
+  "src/icons/phosphor/CellSignalSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CellSignalX.svelte
 import "svelte/internal/disclose-version";
@@ -9582,6 +11214,12 @@ function CellSignalX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CellSignalX = __esm({
+  "src/icons/phosphor/CellSignalX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Certificate.svelte
 import "svelte/internal/disclose-version";
@@ -9617,6 +11255,12 @@ function Certificate($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Certificate = __esm({
+  "src/icons/phosphor/Certificate.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Chair.svelte
 import "svelte/internal/disclose-version";
@@ -9652,6 +11296,12 @@ function Chair($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Chair = __esm({
+  "src/icons/phosphor/Chair.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Chalkboard.svelte
 import "svelte/internal/disclose-version";
@@ -9687,6 +11337,12 @@ function Chalkboard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Chalkboard = __esm({
+  "src/icons/phosphor/Chalkboard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChalkboardSimple.svelte
 import "svelte/internal/disclose-version";
@@ -9722,6 +11378,12 @@ function ChalkboardSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChalkboardSimple = __esm({
+  "src/icons/phosphor/ChalkboardSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChalkboardTeacher.svelte
 import "svelte/internal/disclose-version";
@@ -9757,6 +11419,12 @@ function ChalkboardTeacher($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChalkboardTeacher = __esm({
+  "src/icons/phosphor/ChalkboardTeacher.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Champagne.svelte
 import "svelte/internal/disclose-version";
@@ -9792,6 +11460,12 @@ function Champagne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Champagne = __esm({
+  "src/icons/phosphor/Champagne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChargingStation.svelte
 import "svelte/internal/disclose-version";
@@ -9827,6 +11501,12 @@ function ChargingStation($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChargingStation = __esm({
+  "src/icons/phosphor/ChargingStation.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartBar.svelte
 import "svelte/internal/disclose-version";
@@ -9862,6 +11542,12 @@ function ChartBar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartBar = __esm({
+  "src/icons/phosphor/ChartBar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartBarHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -9897,6 +11583,12 @@ function ChartBarHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartBarHorizontal = __esm({
+  "src/icons/phosphor/ChartBarHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartDonut.svelte
 import "svelte/internal/disclose-version";
@@ -9932,6 +11624,12 @@ function ChartDonut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartDonut = __esm({
+  "src/icons/phosphor/ChartDonut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartLine.svelte
 import "svelte/internal/disclose-version";
@@ -9967,6 +11665,12 @@ function ChartLine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartLine = __esm({
+  "src/icons/phosphor/ChartLine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartLineDown.svelte
 import "svelte/internal/disclose-version";
@@ -10002,6 +11706,12 @@ function ChartLineDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartLineDown = __esm({
+  "src/icons/phosphor/ChartLineDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartLineUp.svelte
 import "svelte/internal/disclose-version";
@@ -10037,6 +11747,12 @@ function ChartLineUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartLineUp = __esm({
+  "src/icons/phosphor/ChartLineUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartPie.svelte
 import "svelte/internal/disclose-version";
@@ -10072,6 +11788,12 @@ function ChartPie($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartPie = __esm({
+  "src/icons/phosphor/ChartPie.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartPieSlice.svelte
 import "svelte/internal/disclose-version";
@@ -10107,6 +11829,12 @@ function ChartPieSlice($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartPieSlice = __esm({
+  "src/icons/phosphor/ChartPieSlice.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartPolar.svelte
 import "svelte/internal/disclose-version";
@@ -10142,6 +11870,12 @@ function ChartPolar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartPolar = __esm({
+  "src/icons/phosphor/ChartPolar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChartScatter.svelte
 import "svelte/internal/disclose-version";
@@ -10177,6 +11911,12 @@ function ChartScatter($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChartScatter = __esm({
+  "src/icons/phosphor/ChartScatter.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Chat.svelte
 import "svelte/internal/disclose-version";
@@ -10212,6 +11952,12 @@ function Chat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Chat = __esm({
+  "src/icons/phosphor/Chat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCentered.svelte
 import "svelte/internal/disclose-version";
@@ -10247,6 +11993,12 @@ function ChatCentered($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCentered = __esm({
+  "src/icons/phosphor/ChatCentered.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCenteredDots.svelte
 import "svelte/internal/disclose-version";
@@ -10282,6 +12034,12 @@ function ChatCenteredDots($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCenteredDots = __esm({
+  "src/icons/phosphor/ChatCenteredDots.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCenteredText.svelte
 import "svelte/internal/disclose-version";
@@ -10317,6 +12075,12 @@ function ChatCenteredText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCenteredText = __esm({
+  "src/icons/phosphor/ChatCenteredText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCircle.svelte
 import "svelte/internal/disclose-version";
@@ -10352,6 +12116,12 @@ function ChatCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCircle = __esm({
+  "src/icons/phosphor/ChatCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCircleDots.svelte
 import "svelte/internal/disclose-version";
@@ -10387,6 +12157,12 @@ function ChatCircleDots($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCircleDots = __esm({
+  "src/icons/phosphor/ChatCircleDots.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatCircleText.svelte
 import "svelte/internal/disclose-version";
@@ -10422,6 +12198,12 @@ function ChatCircleText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatCircleText = __esm({
+  "src/icons/phosphor/ChatCircleText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatDots.svelte
 import "svelte/internal/disclose-version";
@@ -10457,6 +12239,12 @@ function ChatDots($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatDots = __esm({
+  "src/icons/phosphor/ChatDots.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatTeardrop.svelte
 import "svelte/internal/disclose-version";
@@ -10492,6 +12280,12 @@ function ChatTeardrop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatTeardrop = __esm({
+  "src/icons/phosphor/ChatTeardrop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatTeardropDots.svelte
 import "svelte/internal/disclose-version";
@@ -10527,6 +12321,12 @@ function ChatTeardropDots($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatTeardropDots = __esm({
+  "src/icons/phosphor/ChatTeardropDots.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatTeardropText.svelte
 import "svelte/internal/disclose-version";
@@ -10562,6 +12362,12 @@ function ChatTeardropText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatTeardropText = __esm({
+  "src/icons/phosphor/ChatTeardropText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatText.svelte
 import "svelte/internal/disclose-version";
@@ -10597,6 +12403,12 @@ function ChatText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatText = __esm({
+  "src/icons/phosphor/ChatText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Chats.svelte
 import "svelte/internal/disclose-version";
@@ -10632,6 +12444,12 @@ function Chats($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Chats = __esm({
+  "src/icons/phosphor/Chats.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatsCircle.svelte
 import "svelte/internal/disclose-version";
@@ -10667,6 +12485,12 @@ function ChatsCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatsCircle = __esm({
+  "src/icons/phosphor/ChatsCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ChatsTeardrop.svelte
 import "svelte/internal/disclose-version";
@@ -10702,6 +12526,12 @@ function ChatsTeardrop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatsTeardrop = __esm({
+  "src/icons/phosphor/ChatsTeardrop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Check.svelte
 import "svelte/internal/disclose-version";
@@ -10737,6 +12567,12 @@ function Check($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Check = __esm({
+  "src/icons/phosphor/Check.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CheckCircle.svelte
 import "svelte/internal/disclose-version";
@@ -10772,6 +12608,12 @@ function CheckCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckCircle = __esm({
+  "src/icons/phosphor/CheckCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CheckFat.svelte
 import "svelte/internal/disclose-version";
@@ -10807,6 +12649,12 @@ function CheckFat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckFat = __esm({
+  "src/icons/phosphor/CheckFat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CheckSquare.svelte
 import "svelte/internal/disclose-version";
@@ -10842,6 +12690,12 @@ function CheckSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckSquare = __esm({
+  "src/icons/phosphor/CheckSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CheckSquareOffset.svelte
 import "svelte/internal/disclose-version";
@@ -10877,6 +12731,12 @@ function CheckSquareOffset($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckSquareOffset = __esm({
+  "src/icons/phosphor/CheckSquareOffset.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Checks.svelte
 import "svelte/internal/disclose-version";
@@ -10912,6 +12772,12 @@ function Checks($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Checks = __esm({
+  "src/icons/phosphor/Checks.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Church.svelte
 import "svelte/internal/disclose-version";
@@ -10947,6 +12813,12 @@ function Church($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Church = __esm({
+  "src/icons/phosphor/Church.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Circle.svelte
 import "svelte/internal/disclose-version";
@@ -10982,6 +12854,12 @@ function Circle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Circle = __esm({
+  "src/icons/phosphor/Circle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CircleDashed.svelte
 import "svelte/internal/disclose-version";
@@ -11017,6 +12895,12 @@ function CircleDashed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CircleDashed = __esm({
+  "src/icons/phosphor/CircleDashed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CircleHalf.svelte
 import "svelte/internal/disclose-version";
@@ -11052,6 +12936,12 @@ function CircleHalf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CircleHalf = __esm({
+  "src/icons/phosphor/CircleHalf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CircleHalfTilt.svelte
 import "svelte/internal/disclose-version";
@@ -11087,6 +12977,12 @@ function CircleHalfTilt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CircleHalfTilt = __esm({
+  "src/icons/phosphor/CircleHalfTilt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CircleNotch.svelte
 import "svelte/internal/disclose-version";
@@ -11122,6 +13018,12 @@ function CircleNotch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CircleNotch = __esm({
+  "src/icons/phosphor/CircleNotch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CirclesFour.svelte
 import "svelte/internal/disclose-version";
@@ -11157,6 +13059,12 @@ function CirclesFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CirclesFour = __esm({
+  "src/icons/phosphor/CirclesFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CirclesThree.svelte
 import "svelte/internal/disclose-version";
@@ -11192,6 +13100,12 @@ function CirclesThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CirclesThree = __esm({
+  "src/icons/phosphor/CirclesThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CirclesThreePlus.svelte
 import "svelte/internal/disclose-version";
@@ -11227,6 +13141,12 @@ function CirclesThreePlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CirclesThreePlus = __esm({
+  "src/icons/phosphor/CirclesThreePlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Circuitry.svelte
 import "svelte/internal/disclose-version";
@@ -11262,6 +13182,12 @@ function Circuitry($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Circuitry = __esm({
+  "src/icons/phosphor/Circuitry.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Clipboard.svelte
 import "svelte/internal/disclose-version";
@@ -11297,6 +13223,12 @@ function Clipboard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Clipboard = __esm({
+  "src/icons/phosphor/Clipboard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClipboardText.svelte
 import "svelte/internal/disclose-version";
@@ -11332,6 +13264,12 @@ function ClipboardText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClipboardText = __esm({
+  "src/icons/phosphor/ClipboardText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Clock.svelte
 import "svelte/internal/disclose-version";
@@ -11367,6 +13305,12 @@ function Clock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Clock = __esm({
+  "src/icons/phosphor/Clock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClockAfternoon.svelte
 import "svelte/internal/disclose-version";
@@ -11402,6 +13346,12 @@ function ClockAfternoon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClockAfternoon = __esm({
+  "src/icons/phosphor/ClockAfternoon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClockClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -11437,6 +13387,12 @@ function ClockClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClockClockwise = __esm({
+  "src/icons/phosphor/ClockClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClockCountdown.svelte
 import "svelte/internal/disclose-version";
@@ -11472,6 +13428,12 @@ function ClockCountdown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClockCountdown = __esm({
+  "src/icons/phosphor/ClockCountdown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClockCounterClockwise.svelte
 import "svelte/internal/disclose-version";
@@ -11507,6 +13469,12 @@ function ClockCounterClockwise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClockCounterClockwise = __esm({
+  "src/icons/phosphor/ClockCounterClockwise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ClosedCaptioning.svelte
 import "svelte/internal/disclose-version";
@@ -11542,6 +13510,12 @@ function ClosedCaptioning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ClosedCaptioning = __esm({
+  "src/icons/phosphor/ClosedCaptioning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cloud.svelte
 import "svelte/internal/disclose-version";
@@ -11577,6 +13551,12 @@ function Cloud($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cloud = __esm({
+  "src/icons/phosphor/Cloud.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudArrowDown.svelte
 import "svelte/internal/disclose-version";
@@ -11612,6 +13592,12 @@ function CloudArrowDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudArrowDown = __esm({
+  "src/icons/phosphor/CloudArrowDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudArrowUp.svelte
 import "svelte/internal/disclose-version";
@@ -11647,6 +13633,12 @@ function CloudArrowUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudArrowUp = __esm({
+  "src/icons/phosphor/CloudArrowUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudCheck.svelte
 import "svelte/internal/disclose-version";
@@ -11682,6 +13674,12 @@ function CloudCheck($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudCheck = __esm({
+  "src/icons/phosphor/CloudCheck.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudFog.svelte
 import "svelte/internal/disclose-version";
@@ -11717,6 +13715,12 @@ function CloudFog($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudFog = __esm({
+  "src/icons/phosphor/CloudFog.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudLightning.svelte
 import "svelte/internal/disclose-version";
@@ -11752,6 +13756,12 @@ function CloudLightning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudLightning = __esm({
+  "src/icons/phosphor/CloudLightning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudMoon.svelte
 import "svelte/internal/disclose-version";
@@ -11787,6 +13797,12 @@ function CloudMoon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudMoon = __esm({
+  "src/icons/phosphor/CloudMoon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudRain.svelte
 import "svelte/internal/disclose-version";
@@ -11822,6 +13838,12 @@ function CloudRain($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudRain = __esm({
+  "src/icons/phosphor/CloudRain.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudSlash.svelte
 import "svelte/internal/disclose-version";
@@ -11857,6 +13879,12 @@ function CloudSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudSlash = __esm({
+  "src/icons/phosphor/CloudSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudSnow.svelte
 import "svelte/internal/disclose-version";
@@ -11892,6 +13920,12 @@ function CloudSnow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudSnow = __esm({
+  "src/icons/phosphor/CloudSnow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudSun.svelte
 import "svelte/internal/disclose-version";
@@ -11927,6 +13961,12 @@ function CloudSun($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudSun = __esm({
+  "src/icons/phosphor/CloudSun.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudWarning.svelte
 import "svelte/internal/disclose-version";
@@ -11962,6 +14002,12 @@ function CloudWarning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudWarning = __esm({
+  "src/icons/phosphor/CloudWarning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CloudX.svelte
 import "svelte/internal/disclose-version";
@@ -11997,6 +14043,12 @@ function CloudX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CloudX = __esm({
+  "src/icons/phosphor/CloudX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Club.svelte
 import "svelte/internal/disclose-version";
@@ -12032,6 +14084,12 @@ function Club($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Club = __esm({
+  "src/icons/phosphor/Club.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CoatHanger.svelte
 import "svelte/internal/disclose-version";
@@ -12067,6 +14125,12 @@ function CoatHanger($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CoatHanger = __esm({
+  "src/icons/phosphor/CoatHanger.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CodaLogo.svelte
 import "svelte/internal/disclose-version";
@@ -12102,6 +14166,12 @@ function CodaLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CodaLogo = __esm({
+  "src/icons/phosphor/CodaLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Code.svelte
 import "svelte/internal/disclose-version";
@@ -12137,6 +14207,12 @@ function Code($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Code = __esm({
+  "src/icons/phosphor/Code.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CodeBlock.svelte
 import "svelte/internal/disclose-version";
@@ -12172,6 +14248,12 @@ function CodeBlock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CodeBlock = __esm({
+  "src/icons/phosphor/CodeBlock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CodeSimple.svelte
 import "svelte/internal/disclose-version";
@@ -12207,6 +14289,12 @@ function CodeSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CodeSimple = __esm({
+  "src/icons/phosphor/CodeSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CodepenLogo.svelte
 import "svelte/internal/disclose-version";
@@ -12242,6 +14330,12 @@ function CodepenLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CodepenLogo = __esm({
+  "src/icons/phosphor/CodepenLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CodesandboxLogo.svelte
 import "svelte/internal/disclose-version";
@@ -12277,6 +14371,12 @@ function CodesandboxLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CodesandboxLogo = __esm({
+  "src/icons/phosphor/CodesandboxLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Coffee.svelte
 import "svelte/internal/disclose-version";
@@ -12312,6 +14412,12 @@ function Coffee($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Coffee = __esm({
+  "src/icons/phosphor/Coffee.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Coin.svelte
 import "svelte/internal/disclose-version";
@@ -12347,6 +14453,12 @@ function Coin($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Coin = __esm({
+  "src/icons/phosphor/Coin.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CoinVertical.svelte
 import "svelte/internal/disclose-version";
@@ -12382,6 +14494,12 @@ function CoinVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CoinVertical = __esm({
+  "src/icons/phosphor/CoinVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Coins.svelte
 import "svelte/internal/disclose-version";
@@ -12417,6 +14535,12 @@ function Coins($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Coins = __esm({
+  "src/icons/phosphor/Coins.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Columns.svelte
 import "svelte/internal/disclose-version";
@@ -12452,6 +14576,12 @@ function Columns($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Columns = __esm({
+  "src/icons/phosphor/Columns.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Command.svelte
 import "svelte/internal/disclose-version";
@@ -12487,6 +14617,12 @@ function Command($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Command = __esm({
+  "src/icons/phosphor/Command.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Compass.svelte
 import "svelte/internal/disclose-version";
@@ -12522,6 +14658,12 @@ function Compass($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Compass = __esm({
+  "src/icons/phosphor/Compass.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CompassOff.svelte
 import "svelte/internal/disclose-version";
@@ -12557,6 +14699,12 @@ function CompassOff($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CompassOff = __esm({
+  "src/icons/phosphor/CompassOff.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CompassTool.svelte
 import "svelte/internal/disclose-version";
@@ -12592,6 +14740,12 @@ function CompassTool($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CompassTool = __esm({
+  "src/icons/phosphor/CompassTool.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ComputerTower.svelte
 import "svelte/internal/disclose-version";
@@ -12627,6 +14781,12 @@ function ComputerTower($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ComputerTower = __esm({
+  "src/icons/phosphor/ComputerTower.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Confetti.svelte
 import "svelte/internal/disclose-version";
@@ -12662,6 +14822,12 @@ function Confetti($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Confetti = __esm({
+  "src/icons/phosphor/Confetti.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ContactlessPayment.svelte
 import "svelte/internal/disclose-version";
@@ -12697,6 +14863,12 @@ function ContactlessPayment($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ContactlessPayment = __esm({
+  "src/icons/phosphor/ContactlessPayment.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Control.svelte
 import "svelte/internal/disclose-version";
@@ -12732,6 +14904,12 @@ function Control($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Control = __esm({
+  "src/icons/phosphor/Control.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cookie.svelte
 import "svelte/internal/disclose-version";
@@ -12767,6 +14945,12 @@ function Cookie($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cookie = __esm({
+  "src/icons/phosphor/Cookie.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CookingPot.svelte
 import "svelte/internal/disclose-version";
@@ -12802,6 +14986,12 @@ function CookingPot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CookingPot = __esm({
+  "src/icons/phosphor/CookingPot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Copy.svelte
 import "svelte/internal/disclose-version";
@@ -12837,6 +15027,12 @@ function Copy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Copy = __esm({
+  "src/icons/phosphor/Copy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CopySimple.svelte
 import "svelte/internal/disclose-version";
@@ -12872,6 +15068,12 @@ function CopySimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CopySimple = __esm({
+  "src/icons/phosphor/CopySimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Copyleft.svelte
 import "svelte/internal/disclose-version";
@@ -12907,6 +15109,12 @@ function Copyleft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Copyleft = __esm({
+  "src/icons/phosphor/Copyleft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Copyright.svelte
 import "svelte/internal/disclose-version";
@@ -12942,6 +15150,12 @@ function Copyright($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Copyright = __esm({
+  "src/icons/phosphor/Copyright.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CornersIn.svelte
 import "svelte/internal/disclose-version";
@@ -12977,6 +15191,12 @@ function CornersIn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CornersIn = __esm({
+  "src/icons/phosphor/CornersIn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CornersOut.svelte
 import "svelte/internal/disclose-version";
@@ -13012,6 +15232,12 @@ function CornersOut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CornersOut = __esm({
+  "src/icons/phosphor/CornersOut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Couch.svelte
 import "svelte/internal/disclose-version";
@@ -13047,6 +15273,12 @@ function Couch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Couch = __esm({
+  "src/icons/phosphor/Couch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cpu.svelte
 import "svelte/internal/disclose-version";
@@ -13082,6 +15314,12 @@ function Cpu($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cpu = __esm({
+  "src/icons/phosphor/Cpu.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CreditCard.svelte
 import "svelte/internal/disclose-version";
@@ -13117,6 +15355,12 @@ function CreditCard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CreditCard = __esm({
+  "src/icons/phosphor/CreditCard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Crop.svelte
 import "svelte/internal/disclose-version";
@@ -13152,6 +15396,12 @@ function Crop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Crop = __esm({
+  "src/icons/phosphor/Crop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cross.svelte
 import "svelte/internal/disclose-version";
@@ -13187,6 +15437,12 @@ function Cross($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cross = __esm({
+  "src/icons/phosphor/Cross.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Crosshair.svelte
 import "svelte/internal/disclose-version";
@@ -13222,6 +15478,12 @@ function Crosshair($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Crosshair = __esm({
+  "src/icons/phosphor/Crosshair.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CrosshairSimple.svelte
 import "svelte/internal/disclose-version";
@@ -13257,6 +15519,12 @@ function CrosshairSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CrosshairSimple = __esm({
+  "src/icons/phosphor/CrosshairSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Crown.svelte
 import "svelte/internal/disclose-version";
@@ -13292,6 +15560,12 @@ function Crown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Crown = __esm({
+  "src/icons/phosphor/Crown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CrownSimple.svelte
 import "svelte/internal/disclose-version";
@@ -13327,6 +15601,12 @@ function CrownSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CrownSimple = __esm({
+  "src/icons/phosphor/CrownSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cube.svelte
 import "svelte/internal/disclose-version";
@@ -13362,6 +15642,12 @@ function Cube($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cube = __esm({
+  "src/icons/phosphor/Cube.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CubeFocus.svelte
 import "svelte/internal/disclose-version";
@@ -13397,6 +15683,12 @@ function CubeFocus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CubeFocus = __esm({
+  "src/icons/phosphor/CubeFocus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CubeTransparent.svelte
 import "svelte/internal/disclose-version";
@@ -13432,6 +15724,12 @@ function CubeTransparent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CubeTransparent = __esm({
+  "src/icons/phosphor/CubeTransparent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyBtc.svelte
 import "svelte/internal/disclose-version";
@@ -13467,6 +15765,12 @@ function CurrencyBtc($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyBtc = __esm({
+  "src/icons/phosphor/CurrencyBtc.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyCircleDollar.svelte
 import "svelte/internal/disclose-version";
@@ -13502,6 +15806,12 @@ function CurrencyCircleDollar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyCircleDollar = __esm({
+  "src/icons/phosphor/CurrencyCircleDollar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyCny.svelte
 import "svelte/internal/disclose-version";
@@ -13537,6 +15847,12 @@ function CurrencyCny($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyCny = __esm({
+  "src/icons/phosphor/CurrencyCny.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyDollar.svelte
 import "svelte/internal/disclose-version";
@@ -13572,6 +15888,12 @@ function CurrencyDollar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyDollar = __esm({
+  "src/icons/phosphor/CurrencyDollar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyDollarSimple.svelte
 import "svelte/internal/disclose-version";
@@ -13607,6 +15929,12 @@ function CurrencyDollarSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyDollarSimple = __esm({
+  "src/icons/phosphor/CurrencyDollarSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyEth.svelte
 import "svelte/internal/disclose-version";
@@ -13642,6 +15970,12 @@ function CurrencyEth($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyEth = __esm({
+  "src/icons/phosphor/CurrencyEth.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyEur.svelte
 import "svelte/internal/disclose-version";
@@ -13677,6 +16011,12 @@ function CurrencyEur($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyEur = __esm({
+  "src/icons/phosphor/CurrencyEur.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyGbp.svelte
 import "svelte/internal/disclose-version";
@@ -13712,6 +16052,12 @@ function CurrencyGbp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyGbp = __esm({
+  "src/icons/phosphor/CurrencyGbp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyInr.svelte
 import "svelte/internal/disclose-version";
@@ -13747,6 +16093,12 @@ function CurrencyInr($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyInr = __esm({
+  "src/icons/phosphor/CurrencyInr.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyJpy.svelte
 import "svelte/internal/disclose-version";
@@ -13782,6 +16134,12 @@ function CurrencyJpy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyJpy = __esm({
+  "src/icons/phosphor/CurrencyJpy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyKrw.svelte
 import "svelte/internal/disclose-version";
@@ -13817,6 +16175,12 @@ function CurrencyKrw($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyKrw = __esm({
+  "src/icons/phosphor/CurrencyKrw.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyKzt.svelte
 import "svelte/internal/disclose-version";
@@ -13852,6 +16216,12 @@ function CurrencyKzt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyKzt = __esm({
+  "src/icons/phosphor/CurrencyKzt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyNgn.svelte
 import "svelte/internal/disclose-version";
@@ -13887,6 +16257,12 @@ function CurrencyNgn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyNgn = __esm({
+  "src/icons/phosphor/CurrencyNgn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CurrencyRub.svelte
 import "svelte/internal/disclose-version";
@@ -13922,6 +16298,12 @@ function CurrencyRub($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CurrencyRub = __esm({
+  "src/icons/phosphor/CurrencyRub.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cursor.svelte
 import "svelte/internal/disclose-version";
@@ -13957,6 +16339,12 @@ function Cursor($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cursor = __esm({
+  "src/icons/phosphor/Cursor.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CursorClick.svelte
 import "svelte/internal/disclose-version";
@@ -13992,6 +16380,12 @@ function CursorClick($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CursorClick = __esm({
+  "src/icons/phosphor/CursorClick.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/CursorText.svelte
 import "svelte/internal/disclose-version";
@@ -14027,6 +16421,12 @@ function CursorText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CursorText = __esm({
+  "src/icons/phosphor/CursorText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Cylinder.svelte
 import "svelte/internal/disclose-version";
@@ -14062,6 +16462,12 @@ function Cylinder($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Cylinder = __esm({
+  "src/icons/phosphor/Cylinder.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Database.svelte
 import "svelte/internal/disclose-version";
@@ -14097,6 +16503,12 @@ function Database($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Database = __esm({
+  "src/icons/phosphor/Database.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Desktop.svelte
 import "svelte/internal/disclose-version";
@@ -14132,6 +16544,12 @@ function Desktop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Desktop = __esm({
+  "src/icons/phosphor/Desktop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DesktopTower.svelte
 import "svelte/internal/disclose-version";
@@ -14167,6 +16585,12 @@ function DesktopTower($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DesktopTower = __esm({
+  "src/icons/phosphor/DesktopTower.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Detective.svelte
 import "svelte/internal/disclose-version";
@@ -14202,6 +16626,12 @@ function Detective($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Detective = __esm({
+  "src/icons/phosphor/Detective.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DevToLogo.svelte
 import "svelte/internal/disclose-version";
@@ -14237,6 +16667,12 @@ function DevToLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DevToLogo = __esm({
+  "src/icons/phosphor/DevToLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceMobile.svelte
 import "svelte/internal/disclose-version";
@@ -14272,6 +16708,12 @@ function DeviceMobile($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceMobile = __esm({
+  "src/icons/phosphor/DeviceMobile.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceMobileCamera.svelte
 import "svelte/internal/disclose-version";
@@ -14307,6 +16749,12 @@ function DeviceMobileCamera($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceMobileCamera = __esm({
+  "src/icons/phosphor/DeviceMobileCamera.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceMobileSpeaker.svelte
 import "svelte/internal/disclose-version";
@@ -14342,6 +16790,12 @@ function DeviceMobileSpeaker($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceMobileSpeaker = __esm({
+  "src/icons/phosphor/DeviceMobileSpeaker.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceTablet.svelte
 import "svelte/internal/disclose-version";
@@ -14377,6 +16831,12 @@ function DeviceTablet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceTablet = __esm({
+  "src/icons/phosphor/DeviceTablet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceTabletCamera.svelte
 import "svelte/internal/disclose-version";
@@ -14412,6 +16872,12 @@ function DeviceTabletCamera($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceTabletCamera = __esm({
+  "src/icons/phosphor/DeviceTabletCamera.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DeviceTabletSpeaker.svelte
 import "svelte/internal/disclose-version";
@@ -14447,6 +16913,12 @@ function DeviceTabletSpeaker($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DeviceTabletSpeaker = __esm({
+  "src/icons/phosphor/DeviceTabletSpeaker.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Devices.svelte
 import "svelte/internal/disclose-version";
@@ -14482,6 +16954,12 @@ function Devices($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Devices = __esm({
+  "src/icons/phosphor/Devices.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Diamond.svelte
 import "svelte/internal/disclose-version";
@@ -14517,6 +16995,12 @@ function Diamond($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Diamond = __esm({
+  "src/icons/phosphor/Diamond.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiamondsFour.svelte
 import "svelte/internal/disclose-version";
@@ -14552,6 +17036,12 @@ function DiamondsFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiamondsFour = __esm({
+  "src/icons/phosphor/DiamondsFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceFive.svelte
 import "svelte/internal/disclose-version";
@@ -14587,6 +17077,12 @@ function DiceFive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceFive = __esm({
+  "src/icons/phosphor/DiceFive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceFour.svelte
 import "svelte/internal/disclose-version";
@@ -14622,6 +17118,12 @@ function DiceFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceFour = __esm({
+  "src/icons/phosphor/DiceFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceOne.svelte
 import "svelte/internal/disclose-version";
@@ -14657,6 +17159,12 @@ function DiceOne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceOne = __esm({
+  "src/icons/phosphor/DiceOne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceSix.svelte
 import "svelte/internal/disclose-version";
@@ -14692,6 +17200,12 @@ function DiceSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceSix = __esm({
+  "src/icons/phosphor/DiceSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceThree.svelte
 import "svelte/internal/disclose-version";
@@ -14727,6 +17241,12 @@ function DiceThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceThree = __esm({
+  "src/icons/phosphor/DiceThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiceTwo.svelte
 import "svelte/internal/disclose-version";
@@ -14762,6 +17282,12 @@ function DiceTwo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiceTwo = __esm({
+  "src/icons/phosphor/DiceTwo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Disc.svelte
 import "svelte/internal/disclose-version";
@@ -14797,6 +17323,12 @@ function Disc($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Disc = __esm({
+  "src/icons/phosphor/Disc.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DiscordLogo.svelte
 import "svelte/internal/disclose-version";
@@ -14832,6 +17364,12 @@ function DiscordLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DiscordLogo = __esm({
+  "src/icons/phosphor/DiscordLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Divide.svelte
 import "svelte/internal/disclose-version";
@@ -14867,6 +17405,12 @@ function Divide($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Divide = __esm({
+  "src/icons/phosphor/Divide.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Dna.svelte
 import "svelte/internal/disclose-version";
@@ -14902,6 +17446,12 @@ function Dna($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Dna = __esm({
+  "src/icons/phosphor/Dna.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Dog.svelte
 import "svelte/internal/disclose-version";
@@ -14937,6 +17487,12 @@ function Dog($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Dog = __esm({
+  "src/icons/phosphor/Dog.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Door.svelte
 import "svelte/internal/disclose-version";
@@ -14972,6 +17528,12 @@ function Door($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Door = __esm({
+  "src/icons/phosphor/Door.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DoorOpen.svelte
 import "svelte/internal/disclose-version";
@@ -15007,6 +17569,12 @@ function DoorOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DoorOpen = __esm({
+  "src/icons/phosphor/DoorOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Dot.svelte
 import "svelte/internal/disclose-version";
@@ -15042,6 +17610,12 @@ function Dot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Dot = __esm({
+  "src/icons/phosphor/Dot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotOutline.svelte
 import "svelte/internal/disclose-version";
@@ -15077,6 +17651,12 @@ function DotOutline($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotOutline = __esm({
+  "src/icons/phosphor/DotOutline.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsNine.svelte
 import "svelte/internal/disclose-version";
@@ -15112,6 +17692,12 @@ function DotsNine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsNine = __esm({
+  "src/icons/phosphor/DotsNine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsSix.svelte
 import "svelte/internal/disclose-version";
@@ -15147,6 +17733,12 @@ function DotsSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsSix = __esm({
+  "src/icons/phosphor/DotsSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsSixVertical.svelte
 import "svelte/internal/disclose-version";
@@ -15182,6 +17774,12 @@ function DotsSixVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsSixVertical = __esm({
+  "src/icons/phosphor/DotsSixVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThree.svelte
 import "svelte/internal/disclose-version";
@@ -15217,6 +17815,12 @@ function DotsThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThree = __esm({
+  "src/icons/phosphor/DotsThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThreeCircle.svelte
 import "svelte/internal/disclose-version";
@@ -15252,6 +17856,12 @@ function DotsThreeCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThreeCircle = __esm({
+  "src/icons/phosphor/DotsThreeCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThreeCircleVertical.svelte
 import "svelte/internal/disclose-version";
@@ -15287,6 +17897,12 @@ function DotsThreeCircleVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThreeCircleVertical = __esm({
+  "src/icons/phosphor/DotsThreeCircleVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThreeOutline.svelte
 import "svelte/internal/disclose-version";
@@ -15322,6 +17938,12 @@ function DotsThreeOutline($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThreeOutline = __esm({
+  "src/icons/phosphor/DotsThreeOutline.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThreeOutlineVertical.svelte
 import "svelte/internal/disclose-version";
@@ -15357,6 +17979,12 @@ function DotsThreeOutlineVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThreeOutlineVertical = __esm({
+  "src/icons/phosphor/DotsThreeOutlineVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DotsThreeVertical.svelte
 import "svelte/internal/disclose-version";
@@ -15392,6 +18020,12 @@ function DotsThreeVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotsThreeVertical = __esm({
+  "src/icons/phosphor/DotsThreeVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Download.svelte
 import "svelte/internal/disclose-version";
@@ -15427,6 +18061,12 @@ function Download($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Download = __esm({
+  "src/icons/phosphor/Download.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DownloadSimple.svelte
 import "svelte/internal/disclose-version";
@@ -15462,6 +18102,12 @@ function DownloadSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DownloadSimple = __esm({
+  "src/icons/phosphor/DownloadSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Dress.svelte
 import "svelte/internal/disclose-version";
@@ -15497,6 +18143,12 @@ function Dress($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Dress = __esm({
+  "src/icons/phosphor/Dress.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DribbbleLogo.svelte
 import "svelte/internal/disclose-version";
@@ -15532,6 +18184,12 @@ function DribbbleLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DribbbleLogo = __esm({
+  "src/icons/phosphor/DribbbleLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Drop.svelte
 import "svelte/internal/disclose-version";
@@ -15567,6 +18225,12 @@ function Drop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Drop = __esm({
+  "src/icons/phosphor/Drop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DropHalf.svelte
 import "svelte/internal/disclose-version";
@@ -15602,6 +18266,12 @@ function DropHalf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DropHalf = __esm({
+  "src/icons/phosphor/DropHalf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DropHalfBottom.svelte
 import "svelte/internal/disclose-version";
@@ -15637,6 +18307,12 @@ function DropHalfBottom($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DropHalfBottom = __esm({
+  "src/icons/phosphor/DropHalfBottom.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/DropboxLogo.svelte
 import "svelte/internal/disclose-version";
@@ -15672,6 +18348,12 @@ function DropboxLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DropboxLogo = __esm({
+  "src/icons/phosphor/DropboxLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Ear.svelte
 import "svelte/internal/disclose-version";
@@ -15707,6 +18389,12 @@ function Ear($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ear = __esm({
+  "src/icons/phosphor/Ear.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EarSlash.svelte
 import "svelte/internal/disclose-version";
@@ -15742,6 +18430,12 @@ function EarSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EarSlash = __esm({
+  "src/icons/phosphor/EarSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Egg.svelte
 import "svelte/internal/disclose-version";
@@ -15777,6 +18471,12 @@ function Egg($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Egg = __esm({
+  "src/icons/phosphor/Egg.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EggCrack.svelte
 import "svelte/internal/disclose-version";
@@ -15812,6 +18512,12 @@ function EggCrack($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EggCrack = __esm({
+  "src/icons/phosphor/EggCrack.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Eject.svelte
 import "svelte/internal/disclose-version";
@@ -15847,6 +18553,12 @@ function Eject($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Eject = __esm({
+  "src/icons/phosphor/Eject.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EjectSimple.svelte
 import "svelte/internal/disclose-version";
@@ -15882,6 +18594,12 @@ function EjectSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EjectSimple = __esm({
+  "src/icons/phosphor/EjectSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Elevator.svelte
 import "svelte/internal/disclose-version";
@@ -15917,6 +18635,12 @@ function Elevator($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Elevator = __esm({
+  "src/icons/phosphor/Elevator.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Engine.svelte
 import "svelte/internal/disclose-version";
@@ -15952,6 +18676,12 @@ function Engine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Engine = __esm({
+  "src/icons/phosphor/Engine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Envelope.svelte
 import "svelte/internal/disclose-version";
@@ -15987,6 +18717,12 @@ function Envelope($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Envelope = __esm({
+  "src/icons/phosphor/Envelope.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EnvelopeOpen.svelte
 import "svelte/internal/disclose-version";
@@ -16022,6 +18758,12 @@ function EnvelopeOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EnvelopeOpen = __esm({
+  "src/icons/phosphor/EnvelopeOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EnvelopeSimple.svelte
 import "svelte/internal/disclose-version";
@@ -16057,6 +18799,12 @@ function EnvelopeSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EnvelopeSimple = __esm({
+  "src/icons/phosphor/EnvelopeSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EnvelopeSimpleOpen.svelte
 import "svelte/internal/disclose-version";
@@ -16092,6 +18840,12 @@ function EnvelopeSimpleOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EnvelopeSimpleOpen = __esm({
+  "src/icons/phosphor/EnvelopeSimpleOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Equalizer.svelte
 import "svelte/internal/disclose-version";
@@ -16127,6 +18881,12 @@ function Equalizer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Equalizer = __esm({
+  "src/icons/phosphor/Equalizer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Equals.svelte
 import "svelte/internal/disclose-version";
@@ -16162,6 +18922,12 @@ function Equals($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Equals = __esm({
+  "src/icons/phosphor/Equals.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Eraser.svelte
 import "svelte/internal/disclose-version";
@@ -16197,6 +18963,12 @@ function Eraser($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Eraser = __esm({
+  "src/icons/phosphor/Eraser.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EscalatorDown.svelte
 import "svelte/internal/disclose-version";
@@ -16232,6 +19004,12 @@ function EscalatorDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EscalatorDown = __esm({
+  "src/icons/phosphor/EscalatorDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EscalatorUp.svelte
 import "svelte/internal/disclose-version";
@@ -16267,6 +19045,12 @@ function EscalatorUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EscalatorUp = __esm({
+  "src/icons/phosphor/EscalatorUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Exam.svelte
 import "svelte/internal/disclose-version";
@@ -16302,6 +19086,12 @@ function Exam($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Exam = __esm({
+  "src/icons/phosphor/Exam.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Exclude.svelte
 import "svelte/internal/disclose-version";
@@ -16337,6 +19127,12 @@ function Exclude($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Exclude = __esm({
+  "src/icons/phosphor/Exclude.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ExcludeSquare.svelte
 import "svelte/internal/disclose-version";
@@ -16372,6 +19168,12 @@ function ExcludeSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ExcludeSquare = __esm({
+  "src/icons/phosphor/ExcludeSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Export.svelte
 import "svelte/internal/disclose-version";
@@ -16407,6 +19209,12 @@ function Export($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Export = __esm({
+  "src/icons/phosphor/Export.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Eye.svelte
 import "svelte/internal/disclose-version";
@@ -16442,6 +19250,12 @@ function Eye($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Eye = __esm({
+  "src/icons/phosphor/Eye.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EyeClosed.svelte
 import "svelte/internal/disclose-version";
@@ -16477,6 +19291,12 @@ function EyeClosed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EyeClosed = __esm({
+  "src/icons/phosphor/EyeClosed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EyeSlash.svelte
 import "svelte/internal/disclose-version";
@@ -16512,6 +19332,12 @@ function EyeSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EyeSlash = __esm({
+  "src/icons/phosphor/EyeSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Eyedropper.svelte
 import "svelte/internal/disclose-version";
@@ -16547,6 +19373,12 @@ function Eyedropper($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Eyedropper = __esm({
+  "src/icons/phosphor/Eyedropper.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/EyedropperSample.svelte
 import "svelte/internal/disclose-version";
@@ -16582,6 +19414,12 @@ function EyedropperSample($$anchor, $$props) {
     () => rest
   ));
 }
+var init_EyedropperSample = __esm({
+  "src/icons/phosphor/EyedropperSample.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Eyeglasses.svelte
 import "svelte/internal/disclose-version";
@@ -16617,6 +19455,12 @@ function Eyeglasses($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Eyeglasses = __esm({
+  "src/icons/phosphor/Eyeglasses.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FaceMask.svelte
 import "svelte/internal/disclose-version";
@@ -16652,6 +19496,12 @@ function FaceMask($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FaceMask = __esm({
+  "src/icons/phosphor/FaceMask.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FacebookLogo.svelte
 import "svelte/internal/disclose-version";
@@ -16687,6 +19537,12 @@ function FacebookLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FacebookLogo = __esm({
+  "src/icons/phosphor/FacebookLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Factory.svelte
 import "svelte/internal/disclose-version";
@@ -16722,6 +19578,12 @@ function Factory($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Factory = __esm({
+  "src/icons/phosphor/Factory.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Faders.svelte
 import "svelte/internal/disclose-version";
@@ -16757,6 +19619,12 @@ function Faders($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Faders = __esm({
+  "src/icons/phosphor/Faders.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FadersHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -16792,6 +19660,12 @@ function FadersHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FadersHorizontal = __esm({
+  "src/icons/phosphor/FadersHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Fan.svelte
 import "svelte/internal/disclose-version";
@@ -16827,6 +19701,12 @@ function Fan($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Fan = __esm({
+  "src/icons/phosphor/Fan.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FastForward.svelte
 import "svelte/internal/disclose-version";
@@ -16862,6 +19742,12 @@ function FastForward($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FastForward = __esm({
+  "src/icons/phosphor/FastForward.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FastForwardCircle.svelte
 import "svelte/internal/disclose-version";
@@ -16897,6 +19783,12 @@ function FastForwardCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FastForwardCircle = __esm({
+  "src/icons/phosphor/FastForwardCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Feather.svelte
 import "svelte/internal/disclose-version";
@@ -16932,6 +19824,12 @@ function Feather($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Feather = __esm({
+  "src/icons/phosphor/Feather.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FigmaLogo.svelte
 import "svelte/internal/disclose-version";
@@ -16967,6 +19865,12 @@ function FigmaLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FigmaLogo = __esm({
+  "src/icons/phosphor/FigmaLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/File.svelte
 import "svelte/internal/disclose-version";
@@ -17002,6 +19906,12 @@ function File($$anchor, $$props) {
     () => rest
   ));
 }
+var init_File = __esm({
+  "src/icons/phosphor/File.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileArchive.svelte
 import "svelte/internal/disclose-version";
@@ -17037,6 +19947,12 @@ function FileArchive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileArchive = __esm({
+  "src/icons/phosphor/FileArchive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileArrowDown.svelte
 import "svelte/internal/disclose-version";
@@ -17072,6 +19988,12 @@ function FileArrowDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileArrowDown = __esm({
+  "src/icons/phosphor/FileArrowDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileArrowUp.svelte
 import "svelte/internal/disclose-version";
@@ -17107,6 +20029,12 @@ function FileArrowUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileArrowUp = __esm({
+  "src/icons/phosphor/FileArrowUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileAudio.svelte
 import "svelte/internal/disclose-version";
@@ -17142,6 +20070,12 @@ function FileAudio($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileAudio = __esm({
+  "src/icons/phosphor/FileAudio.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileCloud.svelte
 import "svelte/internal/disclose-version";
@@ -17177,6 +20111,12 @@ function FileCloud($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileCloud = __esm({
+  "src/icons/phosphor/FileCloud.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileCode.svelte
 import "svelte/internal/disclose-version";
@@ -17212,6 +20152,12 @@ function FileCode($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileCode = __esm({
+  "src/icons/phosphor/FileCode.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileCss.svelte
 import "svelte/internal/disclose-version";
@@ -17247,6 +20193,12 @@ function FileCss($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileCss = __esm({
+  "src/icons/phosphor/FileCss.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileCsv.svelte
 import "svelte/internal/disclose-version";
@@ -17282,6 +20234,12 @@ function FileCsv($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileCsv = __esm({
+  "src/icons/phosphor/FileCsv.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileDashed.svelte
 import "svelte/internal/disclose-version";
@@ -17317,6 +20275,12 @@ function FileDashed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileDashed = __esm({
+  "src/icons/phosphor/FileDashed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileDoc.svelte
 import "svelte/internal/disclose-version";
@@ -17352,6 +20316,12 @@ function FileDoc($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileDoc = __esm({
+  "src/icons/phosphor/FileDoc.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileHtml.svelte
 import "svelte/internal/disclose-version";
@@ -17387,6 +20357,12 @@ function FileHtml($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileHtml = __esm({
+  "src/icons/phosphor/FileHtml.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileImage.svelte
 import "svelte/internal/disclose-version";
@@ -17422,6 +20398,12 @@ function FileImage($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileImage = __esm({
+  "src/icons/phosphor/FileImage.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileJpg.svelte
 import "svelte/internal/disclose-version";
@@ -17457,6 +20439,12 @@ function FileJpg($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileJpg = __esm({
+  "src/icons/phosphor/FileJpg.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileJs.svelte
 import "svelte/internal/disclose-version";
@@ -17492,6 +20480,12 @@ function FileJs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileJs = __esm({
+  "src/icons/phosphor/FileJs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileJsx.svelte
 import "svelte/internal/disclose-version";
@@ -17527,6 +20521,12 @@ function FileJsx($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileJsx = __esm({
+  "src/icons/phosphor/FileJsx.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileLock.svelte
 import "svelte/internal/disclose-version";
@@ -17562,6 +20562,12 @@ function FileLock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileLock = __esm({
+  "src/icons/phosphor/FileLock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileMinus.svelte
 import "svelte/internal/disclose-version";
@@ -17597,6 +20603,12 @@ function FileMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileMinus = __esm({
+  "src/icons/phosphor/FileMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilePdf.svelte
 import "svelte/internal/disclose-version";
@@ -17632,6 +20644,12 @@ function FilePdf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilePdf = __esm({
+  "src/icons/phosphor/FilePdf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilePlus.svelte
 import "svelte/internal/disclose-version";
@@ -17667,6 +20685,12 @@ function FilePlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilePlus = __esm({
+  "src/icons/phosphor/FilePlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilePng.svelte
 import "svelte/internal/disclose-version";
@@ -17702,6 +20726,12 @@ function FilePng($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilePng = __esm({
+  "src/icons/phosphor/FilePng.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilePpt.svelte
 import "svelte/internal/disclose-version";
@@ -17737,6 +20767,12 @@ function FilePpt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilePpt = __esm({
+  "src/icons/phosphor/FilePpt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileRs.svelte
 import "svelte/internal/disclose-version";
@@ -17772,6 +20808,12 @@ function FileRs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileRs = __esm({
+  "src/icons/phosphor/FileRs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileSearch.svelte
 import "svelte/internal/disclose-version";
@@ -17807,6 +20849,12 @@ function FileSearch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileSearch = __esm({
+  "src/icons/phosphor/FileSearch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileSql.svelte
 import "svelte/internal/disclose-version";
@@ -17842,6 +20890,12 @@ function FileSql($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileSql = __esm({
+  "src/icons/phosphor/FileSql.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileSvg.svelte
 import "svelte/internal/disclose-version";
@@ -17877,6 +20931,12 @@ function FileSvg($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileSvg = __esm({
+  "src/icons/phosphor/FileSvg.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileText.svelte
 import "svelte/internal/disclose-version";
@@ -17912,6 +20972,12 @@ function FileText($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileText = __esm({
+  "src/icons/phosphor/FileText.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileTs.svelte
 import "svelte/internal/disclose-version";
@@ -17947,6 +21013,12 @@ function FileTs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileTs = __esm({
+  "src/icons/phosphor/FileTs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileTsx.svelte
 import "svelte/internal/disclose-version";
@@ -17982,6 +21054,12 @@ function FileTsx($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileTsx = __esm({
+  "src/icons/phosphor/FileTsx.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileVideo.svelte
 import "svelte/internal/disclose-version";
@@ -18017,6 +21095,12 @@ function FileVideo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileVideo = __esm({
+  "src/icons/phosphor/FileVideo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileVue.svelte
 import "svelte/internal/disclose-version";
@@ -18052,6 +21136,12 @@ function FileVue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileVue = __esm({
+  "src/icons/phosphor/FileVue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileX.svelte
 import "svelte/internal/disclose-version";
@@ -18087,6 +21177,12 @@ function FileX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileX = __esm({
+  "src/icons/phosphor/FileX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileXls.svelte
 import "svelte/internal/disclose-version";
@@ -18122,6 +21218,12 @@ function FileXls($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileXls = __esm({
+  "src/icons/phosphor/FileXls.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FileZip.svelte
 import "svelte/internal/disclose-version";
@@ -18157,6 +21259,12 @@ function FileZip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FileZip = __esm({
+  "src/icons/phosphor/FileZip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Files.svelte
 import "svelte/internal/disclose-version";
@@ -18192,6 +21300,12 @@ function Files($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Files = __esm({
+  "src/icons/phosphor/Files.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilmReel.svelte
 import "svelte/internal/disclose-version";
@@ -18227,6 +21341,12 @@ function FilmReel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilmReel = __esm({
+  "src/icons/phosphor/FilmReel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilmScript.svelte
 import "svelte/internal/disclose-version";
@@ -18262,6 +21382,12 @@ function FilmScript($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilmScript = __esm({
+  "src/icons/phosphor/FilmScript.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilmSlate.svelte
 import "svelte/internal/disclose-version";
@@ -18297,6 +21423,12 @@ function FilmSlate($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilmSlate = __esm({
+  "src/icons/phosphor/FilmSlate.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FilmStrip.svelte
 import "svelte/internal/disclose-version";
@@ -18332,6 +21464,12 @@ function FilmStrip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FilmStrip = __esm({
+  "src/icons/phosphor/FilmStrip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Fingerprint.svelte
 import "svelte/internal/disclose-version";
@@ -18367,6 +21505,12 @@ function Fingerprint($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Fingerprint = __esm({
+  "src/icons/phosphor/Fingerprint.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FingerprintSimple.svelte
 import "svelte/internal/disclose-version";
@@ -18402,6 +21546,12 @@ function FingerprintSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FingerprintSimple = __esm({
+  "src/icons/phosphor/FingerprintSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FinnTheHuman.svelte
 import "svelte/internal/disclose-version";
@@ -18437,6 +21587,12 @@ function FinnTheHuman($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FinnTheHuman = __esm({
+  "src/icons/phosphor/FinnTheHuman.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Fire.svelte
 import "svelte/internal/disclose-version";
@@ -18472,6 +21628,12 @@ function Fire($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Fire = __esm({
+  "src/icons/phosphor/Fire.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FireExtinguisher.svelte
 import "svelte/internal/disclose-version";
@@ -18507,6 +21669,12 @@ function FireExtinguisher($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FireExtinguisher = __esm({
+  "src/icons/phosphor/FireExtinguisher.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FireSimple.svelte
 import "svelte/internal/disclose-version";
@@ -18542,6 +21710,12 @@ function FireSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FireSimple = __esm({
+  "src/icons/phosphor/FireSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FirstAid.svelte
 import "svelte/internal/disclose-version";
@@ -18577,6 +21751,12 @@ function FirstAid($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FirstAid = __esm({
+  "src/icons/phosphor/FirstAid.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FirstAidKit.svelte
 import "svelte/internal/disclose-version";
@@ -18612,6 +21792,12 @@ function FirstAidKit($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FirstAidKit = __esm({
+  "src/icons/phosphor/FirstAidKit.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Fish.svelte
 import "svelte/internal/disclose-version";
@@ -18647,6 +21833,12 @@ function Fish($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Fish = __esm({
+  "src/icons/phosphor/Fish.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FishSimple.svelte
 import "svelte/internal/disclose-version";
@@ -18682,6 +21874,12 @@ function FishSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FishSimple = __esm({
+  "src/icons/phosphor/FishSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Flag.svelte
 import "svelte/internal/disclose-version";
@@ -18717,6 +21915,12 @@ function Flag($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Flag = __esm({
+  "src/icons/phosphor/Flag.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlagBanner.svelte
 import "svelte/internal/disclose-version";
@@ -18752,6 +21956,12 @@ function FlagBanner($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlagBanner = __esm({
+  "src/icons/phosphor/FlagBanner.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlagCheckered.svelte
 import "svelte/internal/disclose-version";
@@ -18787,6 +21997,12 @@ function FlagCheckered($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlagCheckered = __esm({
+  "src/icons/phosphor/FlagCheckered.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlagPennant.svelte
 import "svelte/internal/disclose-version";
@@ -18822,6 +22038,12 @@ function FlagPennant($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlagPennant = __esm({
+  "src/icons/phosphor/FlagPennant.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Flame.svelte
 import "svelte/internal/disclose-version";
@@ -18857,6 +22079,12 @@ function Flame($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Flame = __esm({
+  "src/icons/phosphor/Flame.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Flashlight.svelte
 import "svelte/internal/disclose-version";
@@ -18892,6 +22120,12 @@ function Flashlight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Flashlight = __esm({
+  "src/icons/phosphor/Flashlight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Flask.svelte
 import "svelte/internal/disclose-version";
@@ -18927,6 +22161,12 @@ function Flask($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Flask = __esm({
+  "src/icons/phosphor/Flask.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FloppyDisk.svelte
 import "svelte/internal/disclose-version";
@@ -18962,6 +22202,12 @@ function FloppyDisk($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FloppyDisk = __esm({
+  "src/icons/phosphor/FloppyDisk.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FloppyDiskBack.svelte
 import "svelte/internal/disclose-version";
@@ -18997,6 +22243,12 @@ function FloppyDiskBack($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FloppyDiskBack = __esm({
+  "src/icons/phosphor/FloppyDiskBack.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlowArrow.svelte
 import "svelte/internal/disclose-version";
@@ -19032,6 +22284,12 @@ function FlowArrow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlowArrow = __esm({
+  "src/icons/phosphor/FlowArrow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Flower.svelte
 import "svelte/internal/disclose-version";
@@ -19067,6 +22325,12 @@ function Flower($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Flower = __esm({
+  "src/icons/phosphor/Flower.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlowerLotus.svelte
 import "svelte/internal/disclose-version";
@@ -19102,6 +22366,12 @@ function FlowerLotus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlowerLotus = __esm({
+  "src/icons/phosphor/FlowerLotus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlowerTulip.svelte
 import "svelte/internal/disclose-version";
@@ -19137,6 +22407,12 @@ function FlowerTulip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlowerTulip = __esm({
+  "src/icons/phosphor/FlowerTulip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FlyingSaucer.svelte
 import "svelte/internal/disclose-version";
@@ -19172,6 +22448,12 @@ function FlyingSaucer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FlyingSaucer = __esm({
+  "src/icons/phosphor/FlyingSaucer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Folder.svelte
 import "svelte/internal/disclose-version";
@@ -19207,6 +22489,12 @@ function Folder($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Folder = __esm({
+  "src/icons/phosphor/Folder.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderDashed.svelte
 import "svelte/internal/disclose-version";
@@ -19242,6 +22530,12 @@ function FolderDashed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderDashed = __esm({
+  "src/icons/phosphor/FolderDashed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderLock.svelte
 import "svelte/internal/disclose-version";
@@ -19277,6 +22571,12 @@ function FolderLock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderLock = __esm({
+  "src/icons/phosphor/FolderLock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderMinus.svelte
 import "svelte/internal/disclose-version";
@@ -19312,6 +22612,12 @@ function FolderMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderMinus = __esm({
+  "src/icons/phosphor/FolderMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderNotch.svelte
 import "svelte/internal/disclose-version";
@@ -19347,6 +22653,12 @@ function FolderNotch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderNotch = __esm({
+  "src/icons/phosphor/FolderNotch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderNotchMinus.svelte
 import "svelte/internal/disclose-version";
@@ -19382,6 +22694,12 @@ function FolderNotchMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderNotchMinus = __esm({
+  "src/icons/phosphor/FolderNotchMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderNotchOpen.svelte
 import "svelte/internal/disclose-version";
@@ -19417,6 +22735,12 @@ function FolderNotchOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderNotchOpen = __esm({
+  "src/icons/phosphor/FolderNotchOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderNotchPlus.svelte
 import "svelte/internal/disclose-version";
@@ -19452,6 +22776,12 @@ function FolderNotchPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderNotchPlus = __esm({
+  "src/icons/phosphor/FolderNotchPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderOpen.svelte
 import "svelte/internal/disclose-version";
@@ -19487,6 +22817,12 @@ function FolderOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderOpen = __esm({
+  "src/icons/phosphor/FolderOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderPlus.svelte
 import "svelte/internal/disclose-version";
@@ -19522,6 +22858,12 @@ function FolderPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderPlus = __esm({
+  "src/icons/phosphor/FolderPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimple.svelte
 import "svelte/internal/disclose-version";
@@ -19557,6 +22899,12 @@ function FolderSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimple = __esm({
+  "src/icons/phosphor/FolderSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimpleDashed.svelte
 import "svelte/internal/disclose-version";
@@ -19592,6 +22940,12 @@ function FolderSimpleDashed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimpleDashed = __esm({
+  "src/icons/phosphor/FolderSimpleDashed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimpleLock.svelte
 import "svelte/internal/disclose-version";
@@ -19627,6 +22981,12 @@ function FolderSimpleLock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimpleLock = __esm({
+  "src/icons/phosphor/FolderSimpleLock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimpleMinus.svelte
 import "svelte/internal/disclose-version";
@@ -19662,6 +23022,12 @@ function FolderSimpleMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimpleMinus = __esm({
+  "src/icons/phosphor/FolderSimpleMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimplePlus.svelte
 import "svelte/internal/disclose-version";
@@ -19697,6 +23063,12 @@ function FolderSimplePlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimplePlus = __esm({
+  "src/icons/phosphor/FolderSimplePlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimpleStar.svelte
 import "svelte/internal/disclose-version";
@@ -19732,6 +23104,12 @@ function FolderSimpleStar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimpleStar = __esm({
+  "src/icons/phosphor/FolderSimpleStar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderSimpleUser.svelte
 import "svelte/internal/disclose-version";
@@ -19767,6 +23145,12 @@ function FolderSimpleUser($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderSimpleUser = __esm({
+  "src/icons/phosphor/FolderSimpleUser.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderStar.svelte
 import "svelte/internal/disclose-version";
@@ -19802,6 +23186,12 @@ function FolderStar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderStar = __esm({
+  "src/icons/phosphor/FolderStar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FolderUser.svelte
 import "svelte/internal/disclose-version";
@@ -19837,6 +23227,12 @@ function FolderUser($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FolderUser = __esm({
+  "src/icons/phosphor/FolderUser.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Folders.svelte
 import "svelte/internal/disclose-version";
@@ -19872,6 +23268,12 @@ function Folders($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Folders = __esm({
+  "src/icons/phosphor/Folders.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Football.svelte
 import "svelte/internal/disclose-version";
@@ -19907,6 +23309,12 @@ function Football($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Football = __esm({
+  "src/icons/phosphor/Football.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Footprints.svelte
 import "svelte/internal/disclose-version";
@@ -19942,6 +23350,12 @@ function Footprints($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Footprints = __esm({
+  "src/icons/phosphor/Footprints.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ForkKnife.svelte
 import "svelte/internal/disclose-version";
@@ -19977,6 +23391,12 @@ function ForkKnife($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ForkKnife = __esm({
+  "src/icons/phosphor/ForkKnife.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FrameCorners.svelte
 import "svelte/internal/disclose-version";
@@ -20012,6 +23432,12 @@ function FrameCorners($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FrameCorners = __esm({
+  "src/icons/phosphor/FrameCorners.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FramerLogo.svelte
 import "svelte/internal/disclose-version";
@@ -20047,6 +23473,12 @@ function FramerLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FramerLogo = __esm({
+  "src/icons/phosphor/FramerLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Function.svelte
 import "svelte/internal/disclose-version";
@@ -20082,6 +23514,12 @@ function Function($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Function = __esm({
+  "src/icons/phosphor/Function.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Funnel.svelte
 import "svelte/internal/disclose-version";
@@ -20117,6 +23555,12 @@ function Funnel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Funnel = __esm({
+  "src/icons/phosphor/Funnel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/FunnelSimple.svelte
 import "svelte/internal/disclose-version";
@@ -20152,6 +23596,12 @@ function FunnelSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FunnelSimple = __esm({
+  "src/icons/phosphor/FunnelSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GameController.svelte
 import "svelte/internal/disclose-version";
@@ -20187,6 +23637,12 @@ function GameController($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GameController = __esm({
+  "src/icons/phosphor/GameController.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Garage.svelte
 import "svelte/internal/disclose-version";
@@ -20222,6 +23678,12 @@ function Garage($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Garage = __esm({
+  "src/icons/phosphor/Garage.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GasCan.svelte
 import "svelte/internal/disclose-version";
@@ -20257,6 +23719,12 @@ function GasCan($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GasCan = __esm({
+  "src/icons/phosphor/GasCan.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GasPump.svelte
 import "svelte/internal/disclose-version";
@@ -20292,6 +23760,12 @@ function GasPump($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GasPump = __esm({
+  "src/icons/phosphor/GasPump.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gauge.svelte
 import "svelte/internal/disclose-version";
@@ -20327,6 +23801,12 @@ function Gauge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gauge = __esm({
+  "src/icons/phosphor/Gauge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gavel.svelte
 import "svelte/internal/disclose-version";
@@ -20362,6 +23842,12 @@ function Gavel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gavel = __esm({
+  "src/icons/phosphor/Gavel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gear.svelte
 import "svelte/internal/disclose-version";
@@ -20397,6 +23883,12 @@ function Gear($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gear = __esm({
+  "src/icons/phosphor/Gear.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GearFine.svelte
 import "svelte/internal/disclose-version";
@@ -20432,6 +23924,12 @@ function GearFine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GearFine = __esm({
+  "src/icons/phosphor/GearFine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GearSix.svelte
 import "svelte/internal/disclose-version";
@@ -20467,6 +23965,12 @@ function GearSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GearSix = __esm({
+  "src/icons/phosphor/GearSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderFemale.svelte
 import "svelte/internal/disclose-version";
@@ -20502,6 +24006,12 @@ function GenderFemale($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderFemale = __esm({
+  "src/icons/phosphor/GenderFemale.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderIntersex.svelte
 import "svelte/internal/disclose-version";
@@ -20537,6 +24047,12 @@ function GenderIntersex($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderIntersex = __esm({
+  "src/icons/phosphor/GenderIntersex.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderMale.svelte
 import "svelte/internal/disclose-version";
@@ -20572,6 +24088,12 @@ function GenderMale($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderMale = __esm({
+  "src/icons/phosphor/GenderMale.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderNeuter.svelte
 import "svelte/internal/disclose-version";
@@ -20607,6 +24129,12 @@ function GenderNeuter($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderNeuter = __esm({
+  "src/icons/phosphor/GenderNeuter.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderNonbinary.svelte
 import "svelte/internal/disclose-version";
@@ -20642,6 +24170,12 @@ function GenderNonbinary($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderNonbinary = __esm({
+  "src/icons/phosphor/GenderNonbinary.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GenderTransgender.svelte
 import "svelte/internal/disclose-version";
@@ -20677,6 +24211,12 @@ function GenderTransgender($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GenderTransgender = __esm({
+  "src/icons/phosphor/GenderTransgender.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Ghost.svelte
 import "svelte/internal/disclose-version";
@@ -20712,6 +24252,12 @@ function Ghost($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ghost = __esm({
+  "src/icons/phosphor/Ghost.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gif.svelte
 import "svelte/internal/disclose-version";
@@ -20747,6 +24293,12 @@ function Gif($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gif = __esm({
+  "src/icons/phosphor/Gif.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gift.svelte
 import "svelte/internal/disclose-version";
@@ -20782,6 +24334,12 @@ function Gift($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gift = __esm({
+  "src/icons/phosphor/Gift.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitBranch.svelte
 import "svelte/internal/disclose-version";
@@ -20817,6 +24375,12 @@ function GitBranch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitBranch = __esm({
+  "src/icons/phosphor/GitBranch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitCommit.svelte
 import "svelte/internal/disclose-version";
@@ -20852,6 +24416,12 @@ function GitCommit($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitCommit = __esm({
+  "src/icons/phosphor/GitCommit.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitDiff.svelte
 import "svelte/internal/disclose-version";
@@ -20887,6 +24457,12 @@ function GitDiff($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitDiff = __esm({
+  "src/icons/phosphor/GitDiff.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitFork.svelte
 import "svelte/internal/disclose-version";
@@ -20922,6 +24498,12 @@ function GitFork($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitFork = __esm({
+  "src/icons/phosphor/GitFork.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitMerge.svelte
 import "svelte/internal/disclose-version";
@@ -20957,6 +24539,12 @@ function GitMerge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitMerge = __esm({
+  "src/icons/phosphor/GitMerge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitPullRequest.svelte
 import "svelte/internal/disclose-version";
@@ -20992,6 +24580,12 @@ function GitPullRequest($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitPullRequest = __esm({
+  "src/icons/phosphor/GitPullRequest.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GithubLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21027,6 +24621,12 @@ function GithubLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GithubLogo = __esm({
+  "src/icons/phosphor/GithubLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitlabLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21062,6 +24662,12 @@ function GitlabLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitlabLogo = __esm({
+  "src/icons/phosphor/GitlabLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GitlabLogoSimple.svelte
 import "svelte/internal/disclose-version";
@@ -21097,6 +24703,12 @@ function GitlabLogoSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GitlabLogoSimple = __esm({
+  "src/icons/phosphor/GitlabLogoSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Globe.svelte
 import "svelte/internal/disclose-version";
@@ -21132,6 +24744,12 @@ function Globe($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Globe = __esm({
+  "src/icons/phosphor/Globe.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GlobeHemisphereEast.svelte
 import "svelte/internal/disclose-version";
@@ -21167,6 +24785,12 @@ function GlobeHemisphereEast($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GlobeHemisphereEast = __esm({
+  "src/icons/phosphor/GlobeHemisphereEast.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GlobeHemisphereWest.svelte
 import "svelte/internal/disclose-version";
@@ -21202,6 +24826,12 @@ function GlobeHemisphereWest($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GlobeHemisphereWest = __esm({
+  "src/icons/phosphor/GlobeHemisphereWest.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GlobeSimple.svelte
 import "svelte/internal/disclose-version";
@@ -21237,6 +24867,12 @@ function GlobeSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GlobeSimple = __esm({
+  "src/icons/phosphor/GlobeSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GlobeStand.svelte
 import "svelte/internal/disclose-version";
@@ -21272,6 +24908,12 @@ function GlobeStand($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GlobeStand = __esm({
+  "src/icons/phosphor/GlobeStand.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Goggles.svelte
 import "svelte/internal/disclose-version";
@@ -21307,6 +24949,12 @@ function Goggles($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Goggles = __esm({
+  "src/icons/phosphor/Goggles.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GoodreadsLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21342,6 +24990,12 @@ function GoodreadsLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GoodreadsLogo = __esm({
+  "src/icons/phosphor/GoodreadsLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GoogleCardboardLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21377,6 +25031,12 @@ function GoogleCardboardLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GoogleCardboardLogo = __esm({
+  "src/icons/phosphor/GoogleCardboardLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GoogleChromeLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21412,6 +25072,12 @@ function GoogleChromeLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GoogleChromeLogo = __esm({
+  "src/icons/phosphor/GoogleChromeLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GoogleDriveLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21447,6 +25113,12 @@ function GoogleDriveLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GoogleDriveLogo = __esm({
+  "src/icons/phosphor/GoogleDriveLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GoogleLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21482,6 +25154,12 @@ function GoogleLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GoogleLogo = __esm({
+  "src/icons/phosphor/GoogleLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GooglePhotosLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21517,6 +25195,12 @@ function GooglePhotosLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GooglePhotosLogo = __esm({
+  "src/icons/phosphor/GooglePhotosLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GooglePlayLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21552,6 +25236,12 @@ function GooglePlayLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GooglePlayLogo = __esm({
+  "src/icons/phosphor/GooglePlayLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GooglePodcastsLogo.svelte
 import "svelte/internal/disclose-version";
@@ -21587,6 +25277,12 @@ function GooglePodcastsLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GooglePodcastsLogo = __esm({
+  "src/icons/phosphor/GooglePodcastsLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Gradient.svelte
 import "svelte/internal/disclose-version";
@@ -21622,6 +25318,12 @@ function Gradient($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Gradient = __esm({
+  "src/icons/phosphor/Gradient.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GraduationCap.svelte
 import "svelte/internal/disclose-version";
@@ -21657,6 +25359,12 @@ function GraduationCap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GraduationCap = __esm({
+  "src/icons/phosphor/GraduationCap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Grains.svelte
 import "svelte/internal/disclose-version";
@@ -21692,6 +25400,12 @@ function Grains($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Grains = __esm({
+  "src/icons/phosphor/Grains.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GrainsSlash.svelte
 import "svelte/internal/disclose-version";
@@ -21727,6 +25441,12 @@ function GrainsSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GrainsSlash = __esm({
+  "src/icons/phosphor/GrainsSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Graph.svelte
 import "svelte/internal/disclose-version";
@@ -21762,6 +25482,12 @@ function Graph($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Graph = __esm({
+  "src/icons/phosphor/Graph.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GridFour.svelte
 import "svelte/internal/disclose-version";
@@ -21797,6 +25523,12 @@ function GridFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GridFour = __esm({
+  "src/icons/phosphor/GridFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/GridNine.svelte
 import "svelte/internal/disclose-version";
@@ -21832,6 +25564,12 @@ function GridNine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_GridNine = __esm({
+  "src/icons/phosphor/GridNine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Guitar.svelte
 import "svelte/internal/disclose-version";
@@ -21867,6 +25605,12 @@ function Guitar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Guitar = __esm({
+  "src/icons/phosphor/Guitar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hamburger.svelte
 import "svelte/internal/disclose-version";
@@ -21902,6 +25646,12 @@ function Hamburger($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hamburger = __esm({
+  "src/icons/phosphor/Hamburger.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hammer.svelte
 import "svelte/internal/disclose-version";
@@ -21937,6 +25687,12 @@ function Hammer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hammer = __esm({
+  "src/icons/phosphor/Hammer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hand.svelte
 import "svelte/internal/disclose-version";
@@ -21972,6 +25728,12 @@ function Hand($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hand = __esm({
+  "src/icons/phosphor/Hand.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandCoins.svelte
 import "svelte/internal/disclose-version";
@@ -22007,6 +25769,12 @@ function HandCoins($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandCoins = __esm({
+  "src/icons/phosphor/HandCoins.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandEye.svelte
 import "svelte/internal/disclose-version";
@@ -22042,6 +25810,12 @@ function HandEye($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandEye = __esm({
+  "src/icons/phosphor/HandEye.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandFist.svelte
 import "svelte/internal/disclose-version";
@@ -22077,6 +25851,12 @@ function HandFist($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandFist = __esm({
+  "src/icons/phosphor/HandFist.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandGrabbing.svelte
 import "svelte/internal/disclose-version";
@@ -22112,6 +25892,12 @@ function HandGrabbing($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandGrabbing = __esm({
+  "src/icons/phosphor/HandGrabbing.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandHeart.svelte
 import "svelte/internal/disclose-version";
@@ -22147,6 +25933,12 @@ function HandHeart($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandHeart = __esm({
+  "src/icons/phosphor/HandHeart.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandPalm.svelte
 import "svelte/internal/disclose-version";
@@ -22182,6 +25974,12 @@ function HandPalm($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandPalm = __esm({
+  "src/icons/phosphor/HandPalm.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandPointing.svelte
 import "svelte/internal/disclose-version";
@@ -22217,6 +26015,12 @@ function HandPointing($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandPointing = __esm({
+  "src/icons/phosphor/HandPointing.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandSoap.svelte
 import "svelte/internal/disclose-version";
@@ -22252,6 +26056,12 @@ function HandSoap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandSoap = __esm({
+  "src/icons/phosphor/HandSoap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandSwipeLeft.svelte
 import "svelte/internal/disclose-version";
@@ -22287,6 +26097,12 @@ function HandSwipeLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandSwipeLeft = __esm({
+  "src/icons/phosphor/HandSwipeLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandSwipeRight.svelte
 import "svelte/internal/disclose-version";
@@ -22322,6 +26138,12 @@ function HandSwipeRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandSwipeRight = __esm({
+  "src/icons/phosphor/HandSwipeRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandTap.svelte
 import "svelte/internal/disclose-version";
@@ -22357,6 +26179,12 @@ function HandTap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandTap = __esm({
+  "src/icons/phosphor/HandTap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandWaving.svelte
 import "svelte/internal/disclose-version";
@@ -22392,6 +26220,12 @@ function HandWaving($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandWaving = __esm({
+  "src/icons/phosphor/HandWaving.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Handbag.svelte
 import "svelte/internal/disclose-version";
@@ -22427,6 +26261,12 @@ function Handbag($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Handbag = __esm({
+  "src/icons/phosphor/Handbag.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandbagSimple.svelte
 import "svelte/internal/disclose-version";
@@ -22462,6 +26302,12 @@ function HandbagSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandbagSimple = __esm({
+  "src/icons/phosphor/HandbagSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandsClapping.svelte
 import "svelte/internal/disclose-version";
@@ -22497,6 +26343,12 @@ function HandsClapping($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandsClapping = __esm({
+  "src/icons/phosphor/HandsClapping.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HandsPraying.svelte
 import "svelte/internal/disclose-version";
@@ -22532,6 +26384,12 @@ function HandsPraying($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HandsPraying = __esm({
+  "src/icons/phosphor/HandsPraying.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Handshake.svelte
 import "svelte/internal/disclose-version";
@@ -22567,6 +26425,12 @@ function Handshake($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Handshake = __esm({
+  "src/icons/phosphor/Handshake.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HardDrive.svelte
 import "svelte/internal/disclose-version";
@@ -22602,6 +26466,12 @@ function HardDrive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HardDrive = __esm({
+  "src/icons/phosphor/HardDrive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HardDrives.svelte
 import "svelte/internal/disclose-version";
@@ -22637,6 +26507,12 @@ function HardDrives($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HardDrives = __esm({
+  "src/icons/phosphor/HardDrives.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hash.svelte
 import "svelte/internal/disclose-version";
@@ -22672,6 +26548,12 @@ function Hash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hash = __esm({
+  "src/icons/phosphor/Hash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HashStraight.svelte
 import "svelte/internal/disclose-version";
@@ -22707,6 +26589,12 @@ function HashStraight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HashStraight = __esm({
+  "src/icons/phosphor/HashStraight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Headlights.svelte
 import "svelte/internal/disclose-version";
@@ -22742,6 +26630,12 @@ function Headlights($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Headlights = __esm({
+  "src/icons/phosphor/Headlights.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Headphones.svelte
 import "svelte/internal/disclose-version";
@@ -22777,6 +26671,12 @@ function Headphones($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Headphones = __esm({
+  "src/icons/phosphor/Headphones.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Headset.svelte
 import "svelte/internal/disclose-version";
@@ -22812,6 +26712,12 @@ function Headset($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Headset = __esm({
+  "src/icons/phosphor/Headset.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Heart.svelte
 import "svelte/internal/disclose-version";
@@ -22847,6 +26753,12 @@ function Heart($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Heart = __esm({
+  "src/icons/phosphor/Heart.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HeartBreak.svelte
 import "svelte/internal/disclose-version";
@@ -22882,6 +26794,12 @@ function HeartBreak($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HeartBreak = __esm({
+  "src/icons/phosphor/HeartBreak.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HeartHalf.svelte
 import "svelte/internal/disclose-version";
@@ -22917,6 +26835,12 @@ function HeartHalf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HeartHalf = __esm({
+  "src/icons/phosphor/HeartHalf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HeartStraight.svelte
 import "svelte/internal/disclose-version";
@@ -22952,6 +26876,12 @@ function HeartStraight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HeartStraight = __esm({
+  "src/icons/phosphor/HeartStraight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HeartStraightBreak.svelte
 import "svelte/internal/disclose-version";
@@ -22987,6 +26917,12 @@ function HeartStraightBreak($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HeartStraightBreak = __esm({
+  "src/icons/phosphor/HeartStraightBreak.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Heartbeat.svelte
 import "svelte/internal/disclose-version";
@@ -23022,6 +26958,12 @@ function Heartbeat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Heartbeat = __esm({
+  "src/icons/phosphor/Heartbeat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hexagon.svelte
 import "svelte/internal/disclose-version";
@@ -23057,6 +26999,12 @@ function Hexagon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hexagon = __esm({
+  "src/icons/phosphor/Hexagon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HighHeel.svelte
 import "svelte/internal/disclose-version";
@@ -23092,6 +27040,12 @@ function HighHeel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HighHeel = __esm({
+  "src/icons/phosphor/HighHeel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HighlighterCircle.svelte
 import "svelte/internal/disclose-version";
@@ -23127,6 +27081,12 @@ function HighlighterCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HighlighterCircle = __esm({
+  "src/icons/phosphor/HighlighterCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hoodie.svelte
 import "svelte/internal/disclose-version";
@@ -23162,6 +27122,12 @@ function Hoodie($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hoodie = __esm({
+  "src/icons/phosphor/Hoodie.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Horse.svelte
 import "svelte/internal/disclose-version";
@@ -23197,6 +27163,12 @@ function Horse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Horse = __esm({
+  "src/icons/phosphor/Horse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Hourglass.svelte
 import "svelte/internal/disclose-version";
@@ -23232,6 +27204,12 @@ function Hourglass($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Hourglass = __esm({
+  "src/icons/phosphor/Hourglass.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassHigh.svelte
 import "svelte/internal/disclose-version";
@@ -23267,6 +27245,12 @@ function HourglassHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassHigh = __esm({
+  "src/icons/phosphor/HourglassHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassLow.svelte
 import "svelte/internal/disclose-version";
@@ -23302,6 +27286,12 @@ function HourglassLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassLow = __esm({
+  "src/icons/phosphor/HourglassLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassMedium.svelte
 import "svelte/internal/disclose-version";
@@ -23337,6 +27327,12 @@ function HourglassMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassMedium = __esm({
+  "src/icons/phosphor/HourglassMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassSimple.svelte
 import "svelte/internal/disclose-version";
@@ -23372,6 +27368,12 @@ function HourglassSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassSimple = __esm({
+  "src/icons/phosphor/HourglassSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassSimpleHigh.svelte
 import "svelte/internal/disclose-version";
@@ -23407,6 +27409,12 @@ function HourglassSimpleHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassSimpleHigh = __esm({
+  "src/icons/phosphor/HourglassSimpleHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassSimpleLow.svelte
 import "svelte/internal/disclose-version";
@@ -23442,6 +27450,12 @@ function HourglassSimpleLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassSimpleLow = __esm({
+  "src/icons/phosphor/HourglassSimpleLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HourglassSimpleMedium.svelte
 import "svelte/internal/disclose-version";
@@ -23477,6 +27491,12 @@ function HourglassSimpleMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HourglassSimpleMedium = __esm({
+  "src/icons/phosphor/HourglassSimpleMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/House.svelte
 import "svelte/internal/disclose-version";
@@ -23512,6 +27532,12 @@ function House($$anchor, $$props) {
     () => rest
   ));
 }
+var init_House = __esm({
+  "src/icons/phosphor/House.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HouseLine.svelte
 import "svelte/internal/disclose-version";
@@ -23547,6 +27573,12 @@ function HouseLine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HouseLine = __esm({
+  "src/icons/phosphor/HouseLine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/HouseSimple.svelte
 import "svelte/internal/disclose-version";
@@ -23582,6 +27614,12 @@ function HouseSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HouseSimple = __esm({
+  "src/icons/phosphor/HouseSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/IceCream.svelte
 import "svelte/internal/disclose-version";
@@ -23617,6 +27655,12 @@ function IceCream($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IceCream = __esm({
+  "src/icons/phosphor/IceCream.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/IdentificationBadge.svelte
 import "svelte/internal/disclose-version";
@@ -23652,6 +27696,12 @@ function IdentificationBadge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IdentificationBadge = __esm({
+  "src/icons/phosphor/IdentificationBadge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/IdentificationCard.svelte
 import "svelte/internal/disclose-version";
@@ -23687,6 +27737,12 @@ function IdentificationCard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IdentificationCard = __esm({
+  "src/icons/phosphor/IdentificationCard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Image.svelte
 import "svelte/internal/disclose-version";
@@ -23722,6 +27778,12 @@ function Image($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Image = __esm({
+  "src/icons/phosphor/Image.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ImageSquare.svelte
 import "svelte/internal/disclose-version";
@@ -23757,6 +27819,12 @@ function ImageSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ImageSquare = __esm({
+  "src/icons/phosphor/ImageSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Images.svelte
 import "svelte/internal/disclose-version";
@@ -23792,6 +27860,12 @@ function Images($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Images = __esm({
+  "src/icons/phosphor/Images.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ImagesSquare.svelte
 import "svelte/internal/disclose-version";
@@ -23827,6 +27901,12 @@ function ImagesSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ImagesSquare = __esm({
+  "src/icons/phosphor/ImagesSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Infinity.svelte
 import "svelte/internal/disclose-version";
@@ -23862,6 +27942,12 @@ function Infinity($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Infinity = __esm({
+  "src/icons/phosphor/Infinity.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Info.svelte
 import "svelte/internal/disclose-version";
@@ -23897,6 +27983,12 @@ function Info($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Info = __esm({
+  "src/icons/phosphor/Info.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/InstagramLogo.svelte
 import "svelte/internal/disclose-version";
@@ -23932,6 +28024,12 @@ function InstagramLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_InstagramLogo = __esm({
+  "src/icons/phosphor/InstagramLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Intersect.svelte
 import "svelte/internal/disclose-version";
@@ -23967,6 +28065,12 @@ function Intersect($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Intersect = __esm({
+  "src/icons/phosphor/Intersect.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/IntersectSquare.svelte
 import "svelte/internal/disclose-version";
@@ -24002,6 +28106,12 @@ function IntersectSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IntersectSquare = __esm({
+  "src/icons/phosphor/IntersectSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/IntersectThree.svelte
 import "svelte/internal/disclose-version";
@@ -24037,6 +28147,12 @@ function IntersectThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IntersectThree = __esm({
+  "src/icons/phosphor/IntersectThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Jeep.svelte
 import "svelte/internal/disclose-version";
@@ -24072,6 +28188,12 @@ function Jeep($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Jeep = __esm({
+  "src/icons/phosphor/Jeep.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Kanban.svelte
 import "svelte/internal/disclose-version";
@@ -24107,6 +28229,12 @@ function Kanban($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Kanban = __esm({
+  "src/icons/phosphor/Kanban.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Key.svelte
 import "svelte/internal/disclose-version";
@@ -24142,6 +28270,12 @@ function Key($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Key = __esm({
+  "src/icons/phosphor/Key.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/KeyReturn.svelte
 import "svelte/internal/disclose-version";
@@ -24177,6 +28311,12 @@ function KeyReturn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_KeyReturn = __esm({
+  "src/icons/phosphor/KeyReturn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Keyboard.svelte
 import "svelte/internal/disclose-version";
@@ -24212,6 +28352,12 @@ function Keyboard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Keyboard = __esm({
+  "src/icons/phosphor/Keyboard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Keyhole.svelte
 import "svelte/internal/disclose-version";
@@ -24247,6 +28393,12 @@ function Keyhole($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Keyhole = __esm({
+  "src/icons/phosphor/Keyhole.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Knife.svelte
 import "svelte/internal/disclose-version";
@@ -24282,6 +28434,12 @@ function Knife($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Knife = __esm({
+  "src/icons/phosphor/Knife.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Ladder.svelte
 import "svelte/internal/disclose-version";
@@ -24317,6 +28475,12 @@ function Ladder($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ladder = __esm({
+  "src/icons/phosphor/Ladder.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LadderSimple.svelte
 import "svelte/internal/disclose-version";
@@ -24352,6 +28516,12 @@ function LadderSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LadderSimple = __esm({
+  "src/icons/phosphor/LadderSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lamp.svelte
 import "svelte/internal/disclose-version";
@@ -24387,6 +28557,12 @@ function Lamp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lamp = __esm({
+  "src/icons/phosphor/Lamp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Laptop.svelte
 import "svelte/internal/disclose-version";
@@ -24422,6 +28598,12 @@ function Laptop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Laptop = __esm({
+  "src/icons/phosphor/Laptop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Layout.svelte
 import "svelte/internal/disclose-version";
@@ -24457,6 +28639,12 @@ function Layout($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Layout = __esm({
+  "src/icons/phosphor/Layout.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Leaf.svelte
 import "svelte/internal/disclose-version";
@@ -24492,6 +28680,12 @@ function Leaf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Leaf = __esm({
+  "src/icons/phosphor/Leaf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lifebuoy.svelte
 import "svelte/internal/disclose-version";
@@ -24527,6 +28721,12 @@ function Lifebuoy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lifebuoy = __esm({
+  "src/icons/phosphor/Lifebuoy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lightbulb.svelte
 import "svelte/internal/disclose-version";
@@ -24562,6 +28762,12 @@ function Lightbulb($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lightbulb = __esm({
+  "src/icons/phosphor/Lightbulb.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LightbulbFilament.svelte
 import "svelte/internal/disclose-version";
@@ -24597,6 +28803,12 @@ function LightbulbFilament($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LightbulbFilament = __esm({
+  "src/icons/phosphor/LightbulbFilament.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lighthouse.svelte
 import "svelte/internal/disclose-version";
@@ -24632,6 +28844,12 @@ function Lighthouse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lighthouse = __esm({
+  "src/icons/phosphor/Lighthouse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lightning.svelte
 import "svelte/internal/disclose-version";
@@ -24667,6 +28885,12 @@ function Lightning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lightning = __esm({
+  "src/icons/phosphor/Lightning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LightningA.svelte
 import "svelte/internal/disclose-version";
@@ -24702,6 +28926,12 @@ function LightningA($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LightningA = __esm({
+  "src/icons/phosphor/LightningA.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LightningSlash.svelte
 import "svelte/internal/disclose-version";
@@ -24737,6 +28967,12 @@ function LightningSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LightningSlash = __esm({
+  "src/icons/phosphor/LightningSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LineSegment.svelte
 import "svelte/internal/disclose-version";
@@ -24772,6 +29008,12 @@ function LineSegment($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LineSegment = __esm({
+  "src/icons/phosphor/LineSegment.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LineSegments.svelte
 import "svelte/internal/disclose-version";
@@ -24807,6 +29049,12 @@ function LineSegments($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LineSegments = __esm({
+  "src/icons/phosphor/LineSegments.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Link.svelte
 import "svelte/internal/disclose-version";
@@ -24842,6 +29090,12 @@ function Link($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Link = __esm({
+  "src/icons/phosphor/Link.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkBreak.svelte
 import "svelte/internal/disclose-version";
@@ -24877,6 +29131,12 @@ function LinkBreak($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkBreak = __esm({
+  "src/icons/phosphor/LinkBreak.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkSimple.svelte
 import "svelte/internal/disclose-version";
@@ -24912,6 +29172,12 @@ function LinkSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkSimple = __esm({
+  "src/icons/phosphor/LinkSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkSimpleBreak.svelte
 import "svelte/internal/disclose-version";
@@ -24947,6 +29213,12 @@ function LinkSimpleBreak($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkSimpleBreak = __esm({
+  "src/icons/phosphor/LinkSimpleBreak.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkSimpleHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -24982,6 +29254,12 @@ function LinkSimpleHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkSimpleHorizontal = __esm({
+  "src/icons/phosphor/LinkSimpleHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkSimpleHorizontalBreak.svelte
 import "svelte/internal/disclose-version";
@@ -25017,6 +29295,12 @@ function LinkSimpleHorizontalBreak($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkSimpleHorizontalBreak = __esm({
+  "src/icons/phosphor/LinkSimpleHorizontalBreak.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinkedinLogo.svelte
 import "svelte/internal/disclose-version";
@@ -25052,6 +29336,12 @@ function LinkedinLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinkedinLogo = __esm({
+  "src/icons/phosphor/LinkedinLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LinuxLogo.svelte
 import "svelte/internal/disclose-version";
@@ -25087,6 +29377,12 @@ function LinuxLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LinuxLogo = __esm({
+  "src/icons/phosphor/LinuxLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/List.svelte
 import "svelte/internal/disclose-version";
@@ -25122,6 +29418,12 @@ function List($$anchor, $$props) {
     () => rest
   ));
 }
+var init_List = __esm({
+  "src/icons/phosphor/List.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListBullets.svelte
 import "svelte/internal/disclose-version";
@@ -25157,6 +29459,12 @@ function ListBullets($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListBullets = __esm({
+  "src/icons/phosphor/ListBullets.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListChecks.svelte
 import "svelte/internal/disclose-version";
@@ -25192,6 +29500,12 @@ function ListChecks($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListChecks = __esm({
+  "src/icons/phosphor/ListChecks.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListDashes.svelte
 import "svelte/internal/disclose-version";
@@ -25227,6 +29541,12 @@ function ListDashes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListDashes = __esm({
+  "src/icons/phosphor/ListDashes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListMagnifyingGlass.svelte
 import "svelte/internal/disclose-version";
@@ -25262,6 +29582,12 @@ function ListMagnifyingGlass($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListMagnifyingGlass = __esm({
+  "src/icons/phosphor/ListMagnifyingGlass.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListNumbers.svelte
 import "svelte/internal/disclose-version";
@@ -25297,6 +29623,12 @@ function ListNumbers($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListNumbers = __esm({
+  "src/icons/phosphor/ListNumbers.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ListPlus.svelte
 import "svelte/internal/disclose-version";
@@ -25332,6 +29664,12 @@ function ListPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ListPlus = __esm({
+  "src/icons/phosphor/ListPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lock.svelte
 import "svelte/internal/disclose-version";
@@ -25367,6 +29705,12 @@ function Lock($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lock = __esm({
+  "src/icons/phosphor/Lock.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockKey.svelte
 import "svelte/internal/disclose-version";
@@ -25402,6 +29746,12 @@ function LockKey($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockKey = __esm({
+  "src/icons/phosphor/LockKey.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockKeyOpen.svelte
 import "svelte/internal/disclose-version";
@@ -25437,6 +29787,12 @@ function LockKeyOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockKeyOpen = __esm({
+  "src/icons/phosphor/LockKeyOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockLaminated.svelte
 import "svelte/internal/disclose-version";
@@ -25472,6 +29828,12 @@ function LockLaminated($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockLaminated = __esm({
+  "src/icons/phosphor/LockLaminated.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockLaminatedOpen.svelte
 import "svelte/internal/disclose-version";
@@ -25507,6 +29869,12 @@ function LockLaminatedOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockLaminatedOpen = __esm({
+  "src/icons/phosphor/LockLaminatedOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockOpen.svelte
 import "svelte/internal/disclose-version";
@@ -25542,6 +29910,12 @@ function LockOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockOpen = __esm({
+  "src/icons/phosphor/LockOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockSimple.svelte
 import "svelte/internal/disclose-version";
@@ -25577,6 +29951,12 @@ function LockSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockSimple = __esm({
+  "src/icons/phosphor/LockSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/LockSimpleOpen.svelte
 import "svelte/internal/disclose-version";
@@ -25612,6 +29992,12 @@ function LockSimpleOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_LockSimpleOpen = __esm({
+  "src/icons/phosphor/LockSimpleOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Lockers.svelte
 import "svelte/internal/disclose-version";
@@ -25647,6 +30033,12 @@ function Lockers($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Lockers = __esm({
+  "src/icons/phosphor/Lockers.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MagicWand.svelte
 import "svelte/internal/disclose-version";
@@ -25682,6 +30074,12 @@ function MagicWand($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MagicWand = __esm({
+  "src/icons/phosphor/MagicWand.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Magnet.svelte
 import "svelte/internal/disclose-version";
@@ -25717,6 +30115,12 @@ function Magnet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Magnet = __esm({
+  "src/icons/phosphor/Magnet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MagnetStraight.svelte
 import "svelte/internal/disclose-version";
@@ -25752,6 +30156,12 @@ function MagnetStraight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MagnetStraight = __esm({
+  "src/icons/phosphor/MagnetStraight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MagnifyingGlass.svelte
 import "svelte/internal/disclose-version";
@@ -25787,6 +30197,12 @@ function MagnifyingGlass($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MagnifyingGlass = __esm({
+  "src/icons/phosphor/MagnifyingGlass.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MagnifyingGlassMinus.svelte
 import "svelte/internal/disclose-version";
@@ -25822,6 +30238,12 @@ function MagnifyingGlassMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MagnifyingGlassMinus = __esm({
+  "src/icons/phosphor/MagnifyingGlassMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MagnifyingGlassPlus.svelte
 import "svelte/internal/disclose-version";
@@ -25857,6 +30279,12 @@ function MagnifyingGlassPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MagnifyingGlassPlus = __esm({
+  "src/icons/phosphor/MagnifyingGlassPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MapPin.svelte
 import "svelte/internal/disclose-version";
@@ -25892,6 +30320,12 @@ function MapPin($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MapPin = __esm({
+  "src/icons/phosphor/MapPin.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MapPinLine.svelte
 import "svelte/internal/disclose-version";
@@ -25927,6 +30361,12 @@ function MapPinLine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MapPinLine = __esm({
+  "src/icons/phosphor/MapPinLine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MapTrifold.svelte
 import "svelte/internal/disclose-version";
@@ -25962,6 +30402,12 @@ function MapTrifold($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MapTrifold = __esm({
+  "src/icons/phosphor/MapTrifold.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MarkerCircle.svelte
 import "svelte/internal/disclose-version";
@@ -25997,6 +30443,12 @@ function MarkerCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MarkerCircle = __esm({
+  "src/icons/phosphor/MarkerCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Martini.svelte
 import "svelte/internal/disclose-version";
@@ -26032,6 +30484,12 @@ function Martini($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Martini = __esm({
+  "src/icons/phosphor/Martini.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MaskHappy.svelte
 import "svelte/internal/disclose-version";
@@ -26067,6 +30525,12 @@ function MaskHappy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MaskHappy = __esm({
+  "src/icons/phosphor/MaskHappy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MaskSad.svelte
 import "svelte/internal/disclose-version";
@@ -26102,6 +30566,12 @@ function MaskSad($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MaskSad = __esm({
+  "src/icons/phosphor/MaskSad.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MathOperations.svelte
 import "svelte/internal/disclose-version";
@@ -26137,6 +30607,12 @@ function MathOperations($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MathOperations = __esm({
+  "src/icons/phosphor/MathOperations.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Medal.svelte
 import "svelte/internal/disclose-version";
@@ -26172,6 +30648,12 @@ function Medal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Medal = __esm({
+  "src/icons/phosphor/Medal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MedalMilitary.svelte
 import "svelte/internal/disclose-version";
@@ -26207,6 +30689,12 @@ function MedalMilitary($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MedalMilitary = __esm({
+  "src/icons/phosphor/MedalMilitary.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MediumLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26242,6 +30730,12 @@ function MediumLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MediumLogo = __esm({
+  "src/icons/phosphor/MediumLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Megaphone.svelte
 import "svelte/internal/disclose-version";
@@ -26277,6 +30771,12 @@ function Megaphone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Megaphone = __esm({
+  "src/icons/phosphor/Megaphone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MegaphoneSimple.svelte
 import "svelte/internal/disclose-version";
@@ -26312,6 +30812,12 @@ function MegaphoneSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MegaphoneSimple = __esm({
+  "src/icons/phosphor/MegaphoneSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MessengerLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26347,6 +30853,12 @@ function MessengerLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MessengerLogo = __esm({
+  "src/icons/phosphor/MessengerLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MetaLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26382,6 +30894,12 @@ function MetaLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MetaLogo = __esm({
+  "src/icons/phosphor/MetaLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Metronome.svelte
 import "svelte/internal/disclose-version";
@@ -26417,6 +30935,12 @@ function Metronome($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Metronome = __esm({
+  "src/icons/phosphor/Metronome.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Microphone.svelte
 import "svelte/internal/disclose-version";
@@ -26452,6 +30976,12 @@ function Microphone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Microphone = __esm({
+  "src/icons/phosphor/Microphone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrophoneSlash.svelte
 import "svelte/internal/disclose-version";
@@ -26487,6 +31017,12 @@ function MicrophoneSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrophoneSlash = __esm({
+  "src/icons/phosphor/MicrophoneSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrophoneStage.svelte
 import "svelte/internal/disclose-version";
@@ -26522,6 +31058,12 @@ function MicrophoneStage($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrophoneStage = __esm({
+  "src/icons/phosphor/MicrophoneStage.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrosoftExcelLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26557,6 +31099,12 @@ function MicrosoftExcelLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrosoftExcelLogo = __esm({
+  "src/icons/phosphor/MicrosoftExcelLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrosoftOutlookLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26592,6 +31140,12 @@ function MicrosoftOutlookLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrosoftOutlookLogo = __esm({
+  "src/icons/phosphor/MicrosoftOutlookLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrosoftPowerpointLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26627,6 +31181,12 @@ function MicrosoftPowerpointLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrosoftPowerpointLogo = __esm({
+  "src/icons/phosphor/MicrosoftPowerpointLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrosoftTeamsLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26662,6 +31222,12 @@ function MicrosoftTeamsLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrosoftTeamsLogo = __esm({
+  "src/icons/phosphor/MicrosoftTeamsLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MicrosoftWordLogo.svelte
 import "svelte/internal/disclose-version";
@@ -26697,6 +31263,12 @@ function MicrosoftWordLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MicrosoftWordLogo = __esm({
+  "src/icons/phosphor/MicrosoftWordLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Minus.svelte
 import "svelte/internal/disclose-version";
@@ -26732,6 +31304,12 @@ function Minus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Minus = __esm({
+  "src/icons/phosphor/Minus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MinusCircle.svelte
 import "svelte/internal/disclose-version";
@@ -26767,6 +31345,12 @@ function MinusCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MinusCircle = __esm({
+  "src/icons/phosphor/MinusCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MinusSquare.svelte
 import "svelte/internal/disclose-version";
@@ -26802,6 +31386,12 @@ function MinusSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MinusSquare = __esm({
+  "src/icons/phosphor/MinusSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Money.svelte
 import "svelte/internal/disclose-version";
@@ -26837,6 +31427,12 @@ function Money($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Money = __esm({
+  "src/icons/phosphor/Money.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Monitor.svelte
 import "svelte/internal/disclose-version";
@@ -26872,6 +31468,12 @@ function Monitor($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Monitor = __esm({
+  "src/icons/phosphor/Monitor.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MonitorPlay.svelte
 import "svelte/internal/disclose-version";
@@ -26907,6 +31509,12 @@ function MonitorPlay($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MonitorPlay = __esm({
+  "src/icons/phosphor/MonitorPlay.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Moon.svelte
 import "svelte/internal/disclose-version";
@@ -26942,6 +31550,12 @@ function Moon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Moon = __esm({
+  "src/icons/phosphor/Moon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MoonStars.svelte
 import "svelte/internal/disclose-version";
@@ -26977,6 +31591,12 @@ function MoonStars($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MoonStars = __esm({
+  "src/icons/phosphor/MoonStars.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Moped.svelte
 import "svelte/internal/disclose-version";
@@ -27012,6 +31632,12 @@ function Moped($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Moped = __esm({
+  "src/icons/phosphor/Moped.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MopedFront.svelte
 import "svelte/internal/disclose-version";
@@ -27047,6 +31673,12 @@ function MopedFront($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MopedFront = __esm({
+  "src/icons/phosphor/MopedFront.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Mosque.svelte
 import "svelte/internal/disclose-version";
@@ -27082,6 +31714,12 @@ function Mosque($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Mosque = __esm({
+  "src/icons/phosphor/Mosque.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Motorcycle.svelte
 import "svelte/internal/disclose-version";
@@ -27117,6 +31755,12 @@ function Motorcycle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Motorcycle = __esm({
+  "src/icons/phosphor/Motorcycle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Mountains.svelte
 import "svelte/internal/disclose-version";
@@ -27152,6 +31796,12 @@ function Mountains($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Mountains = __esm({
+  "src/icons/phosphor/Mountains.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Mouse.svelte
 import "svelte/internal/disclose-version";
@@ -27187,6 +31837,12 @@ function Mouse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Mouse = __esm({
+  "src/icons/phosphor/Mouse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MouseSimple.svelte
 import "svelte/internal/disclose-version";
@@ -27222,6 +31878,12 @@ function MouseSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MouseSimple = __esm({
+  "src/icons/phosphor/MouseSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MusicNote.svelte
 import "svelte/internal/disclose-version";
@@ -27257,6 +31919,12 @@ function MusicNote($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MusicNote = __esm({
+  "src/icons/phosphor/MusicNote.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MusicNoteSimple.svelte
 import "svelte/internal/disclose-version";
@@ -27292,6 +31960,12 @@ function MusicNoteSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MusicNoteSimple = __esm({
+  "src/icons/phosphor/MusicNoteSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MusicNotes.svelte
 import "svelte/internal/disclose-version";
@@ -27327,6 +32001,12 @@ function MusicNotes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MusicNotes = __esm({
+  "src/icons/phosphor/MusicNotes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MusicNotesPlus.svelte
 import "svelte/internal/disclose-version";
@@ -27362,6 +32042,12 @@ function MusicNotesPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MusicNotesPlus = __esm({
+  "src/icons/phosphor/MusicNotesPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/MusicNotesSimple.svelte
 import "svelte/internal/disclose-version";
@@ -27397,6 +32083,12 @@ function MusicNotesSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_MusicNotesSimple = __esm({
+  "src/icons/phosphor/MusicNotesSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NavigationArrow.svelte
 import "svelte/internal/disclose-version";
@@ -27432,6 +32124,12 @@ function NavigationArrow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NavigationArrow = __esm({
+  "src/icons/phosphor/NavigationArrow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Needle.svelte
 import "svelte/internal/disclose-version";
@@ -27467,6 +32165,12 @@ function Needle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Needle = __esm({
+  "src/icons/phosphor/Needle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Newspaper.svelte
 import "svelte/internal/disclose-version";
@@ -27502,6 +32206,12 @@ function Newspaper($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Newspaper = __esm({
+  "src/icons/phosphor/Newspaper.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NewspaperClipping.svelte
 import "svelte/internal/disclose-version";
@@ -27537,6 +32247,12 @@ function NewspaperClipping($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NewspaperClipping = __esm({
+  "src/icons/phosphor/NewspaperClipping.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Notches.svelte
 import "svelte/internal/disclose-version";
@@ -27572,6 +32288,12 @@ function Notches($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Notches = __esm({
+  "src/icons/phosphor/Notches.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Note.svelte
 import "svelte/internal/disclose-version";
@@ -27607,6 +32329,12 @@ function Note($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Note = __esm({
+  "src/icons/phosphor/Note.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NoteBlank.svelte
 import "svelte/internal/disclose-version";
@@ -27642,6 +32370,12 @@ function NoteBlank($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NoteBlank = __esm({
+  "src/icons/phosphor/NoteBlank.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NotePencil.svelte
 import "svelte/internal/disclose-version";
@@ -27677,6 +32411,12 @@ function NotePencil($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NotePencil = __esm({
+  "src/icons/phosphor/NotePencil.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Notebook.svelte
 import "svelte/internal/disclose-version";
@@ -27712,6 +32452,12 @@ function Notebook($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Notebook = __esm({
+  "src/icons/phosphor/Notebook.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Notepad.svelte
 import "svelte/internal/disclose-version";
@@ -27747,6 +32493,12 @@ function Notepad($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Notepad = __esm({
+  "src/icons/phosphor/Notepad.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Notification.svelte
 import "svelte/internal/disclose-version";
@@ -27782,6 +32534,12 @@ function Notification($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Notification = __esm({
+  "src/icons/phosphor/Notification.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NotionLogo.svelte
 import "svelte/internal/disclose-version";
@@ -27817,6 +32575,12 @@ function NotionLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NotionLogo = __esm({
+  "src/icons/phosphor/NotionLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleEight.svelte
 import "svelte/internal/disclose-version";
@@ -27852,6 +32616,12 @@ function NumberCircleEight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleEight = __esm({
+  "src/icons/phosphor/NumberCircleEight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleFive.svelte
 import "svelte/internal/disclose-version";
@@ -27887,6 +32657,12 @@ function NumberCircleFive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleFive = __esm({
+  "src/icons/phosphor/NumberCircleFive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleFour.svelte
 import "svelte/internal/disclose-version";
@@ -27922,6 +32698,12 @@ function NumberCircleFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleFour = __esm({
+  "src/icons/phosphor/NumberCircleFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleNine.svelte
 import "svelte/internal/disclose-version";
@@ -27957,6 +32739,12 @@ function NumberCircleNine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleNine = __esm({
+  "src/icons/phosphor/NumberCircleNine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleOne.svelte
 import "svelte/internal/disclose-version";
@@ -27992,6 +32780,12 @@ function NumberCircleOne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleOne = __esm({
+  "src/icons/phosphor/NumberCircleOne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleSeven.svelte
 import "svelte/internal/disclose-version";
@@ -28027,6 +32821,12 @@ function NumberCircleSeven($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleSeven = __esm({
+  "src/icons/phosphor/NumberCircleSeven.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleSix.svelte
 import "svelte/internal/disclose-version";
@@ -28062,6 +32862,12 @@ function NumberCircleSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleSix = __esm({
+  "src/icons/phosphor/NumberCircleSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleThree.svelte
 import "svelte/internal/disclose-version";
@@ -28097,6 +32903,12 @@ function NumberCircleThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleThree = __esm({
+  "src/icons/phosphor/NumberCircleThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleTwo.svelte
 import "svelte/internal/disclose-version";
@@ -28132,6 +32944,12 @@ function NumberCircleTwo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleTwo = __esm({
+  "src/icons/phosphor/NumberCircleTwo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberCircleZero.svelte
 import "svelte/internal/disclose-version";
@@ -28167,6 +32985,12 @@ function NumberCircleZero($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberCircleZero = __esm({
+  "src/icons/phosphor/NumberCircleZero.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberEight.svelte
 import "svelte/internal/disclose-version";
@@ -28202,6 +33026,12 @@ function NumberEight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberEight = __esm({
+  "src/icons/phosphor/NumberEight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberFive.svelte
 import "svelte/internal/disclose-version";
@@ -28237,6 +33067,12 @@ function NumberFive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberFive = __esm({
+  "src/icons/phosphor/NumberFive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberFour.svelte
 import "svelte/internal/disclose-version";
@@ -28272,6 +33108,12 @@ function NumberFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberFour = __esm({
+  "src/icons/phosphor/NumberFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberNine.svelte
 import "svelte/internal/disclose-version";
@@ -28307,6 +33149,12 @@ function NumberNine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberNine = __esm({
+  "src/icons/phosphor/NumberNine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberOne.svelte
 import "svelte/internal/disclose-version";
@@ -28342,6 +33190,12 @@ function NumberOne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberOne = __esm({
+  "src/icons/phosphor/NumberOne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSeven.svelte
 import "svelte/internal/disclose-version";
@@ -28377,6 +33231,12 @@ function NumberSeven($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSeven = __esm({
+  "src/icons/phosphor/NumberSeven.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSix.svelte
 import "svelte/internal/disclose-version";
@@ -28412,6 +33272,12 @@ function NumberSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSix = __esm({
+  "src/icons/phosphor/NumberSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareEight.svelte
 import "svelte/internal/disclose-version";
@@ -28447,6 +33313,12 @@ function NumberSquareEight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareEight = __esm({
+  "src/icons/phosphor/NumberSquareEight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareFive.svelte
 import "svelte/internal/disclose-version";
@@ -28482,6 +33354,12 @@ function NumberSquareFive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareFive = __esm({
+  "src/icons/phosphor/NumberSquareFive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareFour.svelte
 import "svelte/internal/disclose-version";
@@ -28517,6 +33395,12 @@ function NumberSquareFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareFour = __esm({
+  "src/icons/phosphor/NumberSquareFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareNine.svelte
 import "svelte/internal/disclose-version";
@@ -28552,6 +33436,12 @@ function NumberSquareNine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareNine = __esm({
+  "src/icons/phosphor/NumberSquareNine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareOne.svelte
 import "svelte/internal/disclose-version";
@@ -28587,6 +33477,12 @@ function NumberSquareOne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareOne = __esm({
+  "src/icons/phosphor/NumberSquareOne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareSeven.svelte
 import "svelte/internal/disclose-version";
@@ -28622,6 +33518,12 @@ function NumberSquareSeven($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareSeven = __esm({
+  "src/icons/phosphor/NumberSquareSeven.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareSix.svelte
 import "svelte/internal/disclose-version";
@@ -28657,6 +33559,12 @@ function NumberSquareSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareSix = __esm({
+  "src/icons/phosphor/NumberSquareSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareThree.svelte
 import "svelte/internal/disclose-version";
@@ -28692,6 +33600,12 @@ function NumberSquareThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareThree = __esm({
+  "src/icons/phosphor/NumberSquareThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareTwo.svelte
 import "svelte/internal/disclose-version";
@@ -28727,6 +33641,12 @@ function NumberSquareTwo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareTwo = __esm({
+  "src/icons/phosphor/NumberSquareTwo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberSquareZero.svelte
 import "svelte/internal/disclose-version";
@@ -28762,6 +33682,12 @@ function NumberSquareZero($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberSquareZero = __esm({
+  "src/icons/phosphor/NumberSquareZero.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberThree.svelte
 import "svelte/internal/disclose-version";
@@ -28797,6 +33723,12 @@ function NumberThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberThree = __esm({
+  "src/icons/phosphor/NumberThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberTwo.svelte
 import "svelte/internal/disclose-version";
@@ -28832,6 +33764,12 @@ function NumberTwo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberTwo = __esm({
+  "src/icons/phosphor/NumberTwo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NumberZero.svelte
 import "svelte/internal/disclose-version";
@@ -28867,6 +33805,12 @@ function NumberZero($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NumberZero = __esm({
+  "src/icons/phosphor/NumberZero.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Nut.svelte
 import "svelte/internal/disclose-version";
@@ -28902,6 +33846,12 @@ function Nut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Nut = __esm({
+  "src/icons/phosphor/Nut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/NyTimesLogo.svelte
 import "svelte/internal/disclose-version";
@@ -28937,6 +33887,12 @@ function NyTimesLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_NyTimesLogo = __esm({
+  "src/icons/phosphor/NyTimesLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Octagon.svelte
 import "svelte/internal/disclose-version";
@@ -28972,6 +33928,12 @@ function Octagon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Octagon = __esm({
+  "src/icons/phosphor/Octagon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/OfficeChair.svelte
 import "svelte/internal/disclose-version";
@@ -29007,6 +33969,12 @@ function OfficeChair($$anchor, $$props) {
     () => rest
   ));
 }
+var init_OfficeChair = __esm({
+  "src/icons/phosphor/OfficeChair.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Option.svelte
 import "svelte/internal/disclose-version";
@@ -29042,6 +34010,12 @@ function Option($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Option = __esm({
+  "src/icons/phosphor/Option.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/OrangeSlice.svelte
 import "svelte/internal/disclose-version";
@@ -29077,6 +34051,12 @@ function OrangeSlice($$anchor, $$props) {
     () => rest
   ));
 }
+var init_OrangeSlice = __esm({
+  "src/icons/phosphor/OrangeSlice.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Package.svelte
 import "svelte/internal/disclose-version";
@@ -29112,6 +34092,12 @@ function Package($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Package = __esm({
+  "src/icons/phosphor/Package.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaintBrush.svelte
 import "svelte/internal/disclose-version";
@@ -29147,6 +34133,12 @@ function PaintBrush($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaintBrush = __esm({
+  "src/icons/phosphor/PaintBrush.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaintBrushBroad.svelte
 import "svelte/internal/disclose-version";
@@ -29182,6 +34174,12 @@ function PaintBrushBroad($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaintBrushBroad = __esm({
+  "src/icons/phosphor/PaintBrushBroad.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaintBrushHousehold.svelte
 import "svelte/internal/disclose-version";
@@ -29217,6 +34215,12 @@ function PaintBrushHousehold($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaintBrushHousehold = __esm({
+  "src/icons/phosphor/PaintBrushHousehold.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaintBucket.svelte
 import "svelte/internal/disclose-version";
@@ -29252,6 +34256,12 @@ function PaintBucket($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaintBucket = __esm({
+  "src/icons/phosphor/PaintBucket.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaintRoller.svelte
 import "svelte/internal/disclose-version";
@@ -29287,6 +34297,12 @@ function PaintRoller($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaintRoller = __esm({
+  "src/icons/phosphor/PaintRoller.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Palette.svelte
 import "svelte/internal/disclose-version";
@@ -29322,6 +34338,12 @@ function Palette($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Palette = __esm({
+  "src/icons/phosphor/Palette.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pants.svelte
 import "svelte/internal/disclose-version";
@@ -29357,6 +34379,12 @@ function Pants($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pants = __esm({
+  "src/icons/phosphor/Pants.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaperPlane.svelte
 import "svelte/internal/disclose-version";
@@ -29392,6 +34420,12 @@ function PaperPlane($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaperPlane = __esm({
+  "src/icons/phosphor/PaperPlane.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaperPlaneRight.svelte
 import "svelte/internal/disclose-version";
@@ -29427,6 +34461,12 @@ function PaperPlaneRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaperPlaneRight = __esm({
+  "src/icons/phosphor/PaperPlaneRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaperPlaneTilt.svelte
 import "svelte/internal/disclose-version";
@@ -29462,6 +34502,12 @@ function PaperPlaneTilt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaperPlaneTilt = __esm({
+  "src/icons/phosphor/PaperPlaneTilt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Paperclip.svelte
 import "svelte/internal/disclose-version";
@@ -29497,6 +34543,12 @@ function Paperclip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Paperclip = __esm({
+  "src/icons/phosphor/Paperclip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaperclipHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -29532,6 +34584,12 @@ function PaperclipHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaperclipHorizontal = __esm({
+  "src/icons/phosphor/PaperclipHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Parachute.svelte
 import "svelte/internal/disclose-version";
@@ -29567,6 +34625,12 @@ function Parachute($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Parachute = __esm({
+  "src/icons/phosphor/Parachute.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Paragraph.svelte
 import "svelte/internal/disclose-version";
@@ -29602,6 +34666,12 @@ function Paragraph($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Paragraph = __esm({
+  "src/icons/phosphor/Paragraph.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Parallelogram.svelte
 import "svelte/internal/disclose-version";
@@ -29637,6 +34707,12 @@ function Parallelogram($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Parallelogram = __esm({
+  "src/icons/phosphor/Parallelogram.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Park.svelte
 import "svelte/internal/disclose-version";
@@ -29672,6 +34748,12 @@ function Park($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Park = __esm({
+  "src/icons/phosphor/Park.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Password.svelte
 import "svelte/internal/disclose-version";
@@ -29707,6 +34789,12 @@ function Password($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Password = __esm({
+  "src/icons/phosphor/Password.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Path.svelte
 import "svelte/internal/disclose-version";
@@ -29742,6 +34830,12 @@ function Path($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Path = __esm({
+  "src/icons/phosphor/Path.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PatreonLogo.svelte
 import "svelte/internal/disclose-version";
@@ -29777,6 +34871,12 @@ function PatreonLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PatreonLogo = __esm({
+  "src/icons/phosphor/PatreonLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pause.svelte
 import "svelte/internal/disclose-version";
@@ -29812,6 +34912,12 @@ function Pause($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pause = __esm({
+  "src/icons/phosphor/Pause.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PauseCircle.svelte
 import "svelte/internal/disclose-version";
@@ -29847,6 +34953,12 @@ function PauseCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PauseCircle = __esm({
+  "src/icons/phosphor/PauseCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PawPrint.svelte
 import "svelte/internal/disclose-version";
@@ -29882,6 +34994,12 @@ function PawPrint($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PawPrint = __esm({
+  "src/icons/phosphor/PawPrint.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PaypalLogo.svelte
 import "svelte/internal/disclose-version";
@@ -29917,6 +35035,12 @@ function PaypalLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PaypalLogo = __esm({
+  "src/icons/phosphor/PaypalLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Peace.svelte
 import "svelte/internal/disclose-version";
@@ -29952,6 +35076,12 @@ function Peace($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Peace = __esm({
+  "src/icons/phosphor/Peace.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pen.svelte
 import "svelte/internal/disclose-version";
@@ -29987,6 +35117,12 @@ function Pen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pen = __esm({
+  "src/icons/phosphor/Pen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PenNib.svelte
 import "svelte/internal/disclose-version";
@@ -30022,6 +35158,12 @@ function PenNib($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PenNib = __esm({
+  "src/icons/phosphor/PenNib.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PenNibStraight.svelte
 import "svelte/internal/disclose-version";
@@ -30057,6 +35199,12 @@ function PenNibStraight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PenNibStraight = __esm({
+  "src/icons/phosphor/PenNibStraight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pencil.svelte
 import "svelte/internal/disclose-version";
@@ -30092,6 +35240,12 @@ function Pencil($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pencil = __esm({
+  "src/icons/phosphor/Pencil.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilCircle.svelte
 import "svelte/internal/disclose-version";
@@ -30127,6 +35281,12 @@ function PencilCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilCircle = __esm({
+  "src/icons/phosphor/PencilCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilLine.svelte
 import "svelte/internal/disclose-version";
@@ -30162,6 +35322,12 @@ function PencilLine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilLine = __esm({
+  "src/icons/phosphor/PencilLine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilSimple.svelte
 import "svelte/internal/disclose-version";
@@ -30197,6 +35363,12 @@ function PencilSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilSimple = __esm({
+  "src/icons/phosphor/PencilSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilSimpleLine.svelte
 import "svelte/internal/disclose-version";
@@ -30232,6 +35404,12 @@ function PencilSimpleLine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilSimpleLine = __esm({
+  "src/icons/phosphor/PencilSimpleLine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilSimpleSlash.svelte
 import "svelte/internal/disclose-version";
@@ -30267,6 +35445,12 @@ function PencilSimpleSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilSimpleSlash = __esm({
+  "src/icons/phosphor/PencilSimpleSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PencilSlash.svelte
 import "svelte/internal/disclose-version";
@@ -30302,6 +35486,12 @@ function PencilSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PencilSlash = __esm({
+  "src/icons/phosphor/PencilSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pentagram.svelte
 import "svelte/internal/disclose-version";
@@ -30337,6 +35527,12 @@ function Pentagram($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pentagram = __esm({
+  "src/icons/phosphor/Pentagram.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pepper.svelte
 import "svelte/internal/disclose-version";
@@ -30372,6 +35568,12 @@ function Pepper($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pepper = __esm({
+  "src/icons/phosphor/Pepper.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Percent.svelte
 import "svelte/internal/disclose-version";
@@ -30407,6 +35609,12 @@ function Percent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Percent = __esm({
+  "src/icons/phosphor/Percent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Person.svelte
 import "svelte/internal/disclose-version";
@@ -30442,6 +35650,12 @@ function Person($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Person = __esm({
+  "src/icons/phosphor/Person.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonArmsSpread.svelte
 import "svelte/internal/disclose-version";
@@ -30477,6 +35691,12 @@ function PersonArmsSpread($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonArmsSpread = __esm({
+  "src/icons/phosphor/PersonArmsSpread.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonSimple.svelte
 import "svelte/internal/disclose-version";
@@ -30512,6 +35732,12 @@ function PersonSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonSimple = __esm({
+  "src/icons/phosphor/PersonSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonSimpleBike.svelte
 import "svelte/internal/disclose-version";
@@ -30547,6 +35773,12 @@ function PersonSimpleBike($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonSimpleBike = __esm({
+  "src/icons/phosphor/PersonSimpleBike.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonSimpleRun.svelte
 import "svelte/internal/disclose-version";
@@ -30582,6 +35814,12 @@ function PersonSimpleRun($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonSimpleRun = __esm({
+  "src/icons/phosphor/PersonSimpleRun.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonSimpleThrow.svelte
 import "svelte/internal/disclose-version";
@@ -30617,6 +35855,12 @@ function PersonSimpleThrow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonSimpleThrow = __esm({
+  "src/icons/phosphor/PersonSimpleThrow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PersonSimpleWalk.svelte
 import "svelte/internal/disclose-version";
@@ -30652,6 +35896,12 @@ function PersonSimpleWalk($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PersonSimpleWalk = __esm({
+  "src/icons/phosphor/PersonSimpleWalk.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Perspective.svelte
 import "svelte/internal/disclose-version";
@@ -30687,6 +35937,12 @@ function Perspective($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Perspective = __esm({
+  "src/icons/phosphor/Perspective.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Phone.svelte
 import "svelte/internal/disclose-version";
@@ -30722,6 +35978,12 @@ function Phone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Phone = __esm({
+  "src/icons/phosphor/Phone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneCall.svelte
 import "svelte/internal/disclose-version";
@@ -30757,6 +36019,12 @@ function PhoneCall($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneCall = __esm({
+  "src/icons/phosphor/PhoneCall.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneDisconnect.svelte
 import "svelte/internal/disclose-version";
@@ -30792,6 +36060,12 @@ function PhoneDisconnect($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneDisconnect = __esm({
+  "src/icons/phosphor/PhoneDisconnect.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneIncoming.svelte
 import "svelte/internal/disclose-version";
@@ -30827,6 +36101,12 @@ function PhoneIncoming($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneIncoming = __esm({
+  "src/icons/phosphor/PhoneIncoming.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneOutgoing.svelte
 import "svelte/internal/disclose-version";
@@ -30862,6 +36142,12 @@ function PhoneOutgoing($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneOutgoing = __esm({
+  "src/icons/phosphor/PhoneOutgoing.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhonePlus.svelte
 import "svelte/internal/disclose-version";
@@ -30897,6 +36183,12 @@ function PhonePlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhonePlus = __esm({
+  "src/icons/phosphor/PhonePlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneSlash.svelte
 import "svelte/internal/disclose-version";
@@ -30932,6 +36224,12 @@ function PhoneSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneSlash = __esm({
+  "src/icons/phosphor/PhoneSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhoneX.svelte
 import "svelte/internal/disclose-version";
@@ -30967,6 +36265,12 @@ function PhoneX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhoneX = __esm({
+  "src/icons/phosphor/PhoneX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PhosphorLogo.svelte
 import "svelte/internal/disclose-version";
@@ -31002,6 +36306,12 @@ function PhosphorLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PhosphorLogo = __esm({
+  "src/icons/phosphor/PhosphorLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pi.svelte
 import "svelte/internal/disclose-version";
@@ -31033,6 +36343,12 @@ function Pi($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pi = __esm({
+  "src/icons/phosphor/Pi.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PianoKeys.svelte
 import "svelte/internal/disclose-version";
@@ -31068,6 +36384,12 @@ function PianoKeys($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PianoKeys = __esm({
+  "src/icons/phosphor/PianoKeys.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PictureInPicture.svelte
 import "svelte/internal/disclose-version";
@@ -31103,6 +36425,12 @@ function PictureInPicture($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PictureInPicture = __esm({
+  "src/icons/phosphor/PictureInPicture.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PiggyBank.svelte
 import "svelte/internal/disclose-version";
@@ -31138,6 +36466,12 @@ function PiggyBank($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PiggyBank = __esm({
+  "src/icons/phosphor/PiggyBank.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pill.svelte
 import "svelte/internal/disclose-version";
@@ -31173,6 +36507,12 @@ function Pill($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pill = __esm({
+  "src/icons/phosphor/Pill.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PinterestLogo.svelte
 import "svelte/internal/disclose-version";
@@ -31208,6 +36548,12 @@ function PinterestLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PinterestLogo = __esm({
+  "src/icons/phosphor/PinterestLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pinwheel.svelte
 import "svelte/internal/disclose-version";
@@ -31243,6 +36589,12 @@ function Pinwheel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pinwheel = __esm({
+  "src/icons/phosphor/Pinwheel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pizza.svelte
 import "svelte/internal/disclose-version";
@@ -31278,6 +36630,12 @@ function Pizza($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pizza = __esm({
+  "src/icons/phosphor/Pizza.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Placeholder.svelte
 import "svelte/internal/disclose-version";
@@ -31313,6 +36671,12 @@ function Placeholder($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Placeholder = __esm({
+  "src/icons/phosphor/Placeholder.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Planet.svelte
 import "svelte/internal/disclose-version";
@@ -31348,6 +36712,12 @@ function Planet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Planet = __esm({
+  "src/icons/phosphor/Planet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Plant.svelte
 import "svelte/internal/disclose-version";
@@ -31383,6 +36753,12 @@ function Plant($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Plant = __esm({
+  "src/icons/phosphor/Plant.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Play.svelte
 import "svelte/internal/disclose-version";
@@ -31418,6 +36794,12 @@ function Play($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Play = __esm({
+  "src/icons/phosphor/Play.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlayCircle.svelte
 import "svelte/internal/disclose-version";
@@ -31453,6 +36835,12 @@ function PlayCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlayCircle = __esm({
+  "src/icons/phosphor/PlayCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlayPause.svelte
 import "svelte/internal/disclose-version";
@@ -31488,6 +36876,12 @@ function PlayPause($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlayPause = __esm({
+  "src/icons/phosphor/PlayPause.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Playlist.svelte
 import "svelte/internal/disclose-version";
@@ -31523,6 +36917,12 @@ function Playlist($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Playlist = __esm({
+  "src/icons/phosphor/Playlist.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Plug.svelte
 import "svelte/internal/disclose-version";
@@ -31558,6 +36958,12 @@ function Plug($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Plug = __esm({
+  "src/icons/phosphor/Plug.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlugCharging.svelte
 import "svelte/internal/disclose-version";
@@ -31593,6 +36999,12 @@ function PlugCharging($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlugCharging = __esm({
+  "src/icons/phosphor/PlugCharging.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Plugs.svelte
 import "svelte/internal/disclose-version";
@@ -31628,6 +37040,12 @@ function Plugs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Plugs = __esm({
+  "src/icons/phosphor/Plugs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlugsConnected.svelte
 import "svelte/internal/disclose-version";
@@ -31663,6 +37081,12 @@ function PlugsConnected($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlugsConnected = __esm({
+  "src/icons/phosphor/PlugsConnected.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Plus.svelte
 import "svelte/internal/disclose-version";
@@ -31698,6 +37122,12 @@ function Plus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Plus = __esm({
+  "src/icons/phosphor/Plus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlusCircle.svelte
 import "svelte/internal/disclose-version";
@@ -31733,6 +37163,12 @@ function PlusCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlusCircle = __esm({
+  "src/icons/phosphor/PlusCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlusMinus.svelte
 import "svelte/internal/disclose-version";
@@ -31768,6 +37204,12 @@ function PlusMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlusMinus = __esm({
+  "src/icons/phosphor/PlusMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PlusSquare.svelte
 import "svelte/internal/disclose-version";
@@ -31803,6 +37245,12 @@ function PlusSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PlusSquare = __esm({
+  "src/icons/phosphor/PlusSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PokerChip.svelte
 import "svelte/internal/disclose-version";
@@ -31838,6 +37286,12 @@ function PokerChip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PokerChip = __esm({
+  "src/icons/phosphor/PokerChip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PoliceCar.svelte
 import "svelte/internal/disclose-version";
@@ -31873,6 +37327,12 @@ function PoliceCar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PoliceCar = __esm({
+  "src/icons/phosphor/PoliceCar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Polygon.svelte
 import "svelte/internal/disclose-version";
@@ -31908,6 +37368,12 @@ function Polygon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Polygon = __esm({
+  "src/icons/phosphor/Polygon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Popcorn.svelte
 import "svelte/internal/disclose-version";
@@ -31943,6 +37409,12 @@ function Popcorn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Popcorn = __esm({
+  "src/icons/phosphor/Popcorn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PottedPlant.svelte
 import "svelte/internal/disclose-version";
@@ -31978,6 +37450,12 @@ function PottedPlant($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PottedPlant = __esm({
+  "src/icons/phosphor/PottedPlant.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Power.svelte
 import "svelte/internal/disclose-version";
@@ -32013,6 +37491,12 @@ function Power($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Power = __esm({
+  "src/icons/phosphor/Power.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Prescription.svelte
 import "svelte/internal/disclose-version";
@@ -32048,6 +37532,12 @@ function Prescription($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Prescription = __esm({
+  "src/icons/phosphor/Prescription.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Presentation.svelte
 import "svelte/internal/disclose-version";
@@ -32083,6 +37573,12 @@ function Presentation($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Presentation = __esm({
+  "src/icons/phosphor/Presentation.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PresentationChart.svelte
 import "svelte/internal/disclose-version";
@@ -32118,6 +37614,12 @@ function PresentationChart($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PresentationChart = __esm({
+  "src/icons/phosphor/PresentationChart.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Printer.svelte
 import "svelte/internal/disclose-version";
@@ -32153,6 +37655,12 @@ function Printer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Printer = __esm({
+  "src/icons/phosphor/Printer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Prohibit.svelte
 import "svelte/internal/disclose-version";
@@ -32188,6 +37696,12 @@ function Prohibit($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Prohibit = __esm({
+  "src/icons/phosphor/Prohibit.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ProhibitInset.svelte
 import "svelte/internal/disclose-version";
@@ -32223,6 +37737,12 @@ function ProhibitInset($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ProhibitInset = __esm({
+  "src/icons/phosphor/ProhibitInset.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ProjectorScreen.svelte
 import "svelte/internal/disclose-version";
@@ -32258,6 +37778,12 @@ function ProjectorScreen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ProjectorScreen = __esm({
+  "src/icons/phosphor/ProjectorScreen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ProjectorScreenChart.svelte
 import "svelte/internal/disclose-version";
@@ -32293,6 +37819,12 @@ function ProjectorScreenChart($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ProjectorScreenChart = __esm({
+  "src/icons/phosphor/ProjectorScreenChart.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Pulse.svelte
 import "svelte/internal/disclose-version";
@@ -32328,6 +37860,12 @@ function Pulse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Pulse = __esm({
+  "src/icons/phosphor/Pulse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PushPin.svelte
 import "svelte/internal/disclose-version";
@@ -32363,6 +37901,12 @@ function PushPin($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PushPin = __esm({
+  "src/icons/phosphor/PushPin.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PushPinSimple.svelte
 import "svelte/internal/disclose-version";
@@ -32398,6 +37942,12 @@ function PushPinSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PushPinSimple = __esm({
+  "src/icons/phosphor/PushPinSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PushPinSimpleSlash.svelte
 import "svelte/internal/disclose-version";
@@ -32433,6 +37983,12 @@ function PushPinSimpleSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PushPinSimpleSlash = __esm({
+  "src/icons/phosphor/PushPinSimpleSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PushPinSlash.svelte
 import "svelte/internal/disclose-version";
@@ -32468,6 +38024,12 @@ function PushPinSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PushPinSlash = __esm({
+  "src/icons/phosphor/PushPinSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/PuzzlePiece.svelte
 import "svelte/internal/disclose-version";
@@ -32503,6 +38065,12 @@ function PuzzlePiece($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PuzzlePiece = __esm({
+  "src/icons/phosphor/PuzzlePiece.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/QrCode.svelte
 import "svelte/internal/disclose-version";
@@ -32538,6 +38106,12 @@ function QrCode($$anchor, $$props) {
     () => rest
   ));
 }
+var init_QrCode = __esm({
+  "src/icons/phosphor/QrCode.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Question.svelte
 import "svelte/internal/disclose-version";
@@ -32573,6 +38147,12 @@ function Question($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Question = __esm({
+  "src/icons/phosphor/Question.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Queue.svelte
 import "svelte/internal/disclose-version";
@@ -32608,6 +38188,12 @@ function Queue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Queue = __esm({
+  "src/icons/phosphor/Queue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Quotes.svelte
 import "svelte/internal/disclose-version";
@@ -32643,6 +38229,12 @@ function Quotes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Quotes = __esm({
+  "src/icons/phosphor/Quotes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Radical.svelte
 import "svelte/internal/disclose-version";
@@ -32678,6 +38270,12 @@ function Radical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Radical = __esm({
+  "src/icons/phosphor/Radical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Radio.svelte
 import "svelte/internal/disclose-version";
@@ -32713,6 +38311,12 @@ function Radio($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Radio = __esm({
+  "src/icons/phosphor/Radio.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RadioButton.svelte
 import "svelte/internal/disclose-version";
@@ -32748,6 +38352,12 @@ function RadioButton($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RadioButton = __esm({
+  "src/icons/phosphor/RadioButton.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Radioactive.svelte
 import "svelte/internal/disclose-version";
@@ -32783,6 +38393,12 @@ function Radioactive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Radioactive = __esm({
+  "src/icons/phosphor/Radioactive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rainbow.svelte
 import "svelte/internal/disclose-version";
@@ -32818,6 +38434,12 @@ function Rainbow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rainbow = __esm({
+  "src/icons/phosphor/Rainbow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RainbowCloud.svelte
 import "svelte/internal/disclose-version";
@@ -32853,6 +38475,12 @@ function RainbowCloud($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RainbowCloud = __esm({
+  "src/icons/phosphor/RainbowCloud.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ReadCvLogo.svelte
 import "svelte/internal/disclose-version";
@@ -32888,6 +38516,12 @@ function ReadCvLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ReadCvLogo = __esm({
+  "src/icons/phosphor/ReadCvLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Receipt.svelte
 import "svelte/internal/disclose-version";
@@ -32923,6 +38557,12 @@ function Receipt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Receipt = __esm({
+  "src/icons/phosphor/Receipt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ReceiptX.svelte
 import "svelte/internal/disclose-version";
@@ -32958,6 +38598,12 @@ function ReceiptX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ReceiptX = __esm({
+  "src/icons/phosphor/ReceiptX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Record.svelte
 import "svelte/internal/disclose-version";
@@ -32993,6 +38639,12 @@ function Record($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Record = __esm({
+  "src/icons/phosphor/Record.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rectangle.svelte
 import "svelte/internal/disclose-version";
@@ -33028,6 +38680,12 @@ function Rectangle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rectangle = __esm({
+  "src/icons/phosphor/Rectangle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Recycle.svelte
 import "svelte/internal/disclose-version";
@@ -33063,6 +38721,12 @@ function Recycle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Recycle = __esm({
+  "src/icons/phosphor/Recycle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RedditLogo.svelte
 import "svelte/internal/disclose-version";
@@ -33098,6 +38762,12 @@ function RedditLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RedditLogo = __esm({
+  "src/icons/phosphor/RedditLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Repeat.svelte
 import "svelte/internal/disclose-version";
@@ -33133,6 +38803,12 @@ function Repeat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Repeat = __esm({
+  "src/icons/phosphor/Repeat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RepeatOnce.svelte
 import "svelte/internal/disclose-version";
@@ -33168,6 +38844,12 @@ function RepeatOnce($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RepeatOnce = __esm({
+  "src/icons/phosphor/RepeatOnce.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rewind.svelte
 import "svelte/internal/disclose-version";
@@ -33203,6 +38885,12 @@ function Rewind($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rewind = __esm({
+  "src/icons/phosphor/Rewind.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RewindCircle.svelte
 import "svelte/internal/disclose-version";
@@ -33238,6 +38926,12 @@ function RewindCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RewindCircle = __esm({
+  "src/icons/phosphor/RewindCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RoadHorizon.svelte
 import "svelte/internal/disclose-version";
@@ -33273,6 +38967,12 @@ function RoadHorizon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RoadHorizon = __esm({
+  "src/icons/phosphor/RoadHorizon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Robot.svelte
 import "svelte/internal/disclose-version";
@@ -33308,6 +39008,12 @@ function Robot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Robot = __esm({
+  "src/icons/phosphor/Robot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rocket.svelte
 import "svelte/internal/disclose-version";
@@ -33343,6 +39049,12 @@ function Rocket($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rocket = __esm({
+  "src/icons/phosphor/Rocket.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RocketLaunch.svelte
 import "svelte/internal/disclose-version";
@@ -33378,6 +39090,12 @@ function RocketLaunch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RocketLaunch = __esm({
+  "src/icons/phosphor/RocketLaunch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rows.svelte
 import "svelte/internal/disclose-version";
@@ -33413,6 +39131,12 @@ function Rows($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rows = __esm({
+  "src/icons/phosphor/Rows.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rss.svelte
 import "svelte/internal/disclose-version";
@@ -33448,6 +39172,12 @@ function Rss($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rss = __esm({
+  "src/icons/phosphor/Rss.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/RssSimple.svelte
 import "svelte/internal/disclose-version";
@@ -33483,6 +39213,12 @@ function RssSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RssSimple = __esm({
+  "src/icons/phosphor/RssSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Rug.svelte
 import "svelte/internal/disclose-version";
@@ -33518,6 +39254,12 @@ function Rug($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rug = __esm({
+  "src/icons/phosphor/Rug.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Ruler.svelte
 import "svelte/internal/disclose-version";
@@ -33553,6 +39295,12 @@ function Ruler($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ruler = __esm({
+  "src/icons/phosphor/Ruler.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Scales.svelte
 import "svelte/internal/disclose-version";
@@ -33588,6 +39336,12 @@ function Scales($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Scales = __esm({
+  "src/icons/phosphor/Scales.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Scan.svelte
 import "svelte/internal/disclose-version";
@@ -33623,6 +39377,12 @@ function Scan($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Scan = __esm({
+  "src/icons/phosphor/Scan.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Scissors.svelte
 import "svelte/internal/disclose-version";
@@ -33658,6 +39418,12 @@ function Scissors($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Scissors = __esm({
+  "src/icons/phosphor/Scissors.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Scooter.svelte
 import "svelte/internal/disclose-version";
@@ -33693,6 +39459,12 @@ function Scooter($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Scooter = __esm({
+  "src/icons/phosphor/Scooter.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Screencast.svelte
 import "svelte/internal/disclose-version";
@@ -33728,6 +39500,12 @@ function Screencast($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Screencast = __esm({
+  "src/icons/phosphor/Screencast.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ScribbleLoop.svelte
 import "svelte/internal/disclose-version";
@@ -33763,6 +39541,12 @@ function ScribbleLoop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ScribbleLoop = __esm({
+  "src/icons/phosphor/ScribbleLoop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Scroll.svelte
 import "svelte/internal/disclose-version";
@@ -33798,6 +39582,12 @@ function Scroll($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Scroll = __esm({
+  "src/icons/phosphor/Scroll.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Seal.svelte
 import "svelte/internal/disclose-version";
@@ -33833,6 +39623,12 @@ function Seal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Seal = __esm({
+  "src/icons/phosphor/Seal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SealCheck.svelte
 import "svelte/internal/disclose-version";
@@ -33868,6 +39664,12 @@ function SealCheck($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SealCheck = __esm({
+  "src/icons/phosphor/SealCheck.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SealQuestion.svelte
 import "svelte/internal/disclose-version";
@@ -33903,6 +39705,12 @@ function SealQuestion($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SealQuestion = __esm({
+  "src/icons/phosphor/SealQuestion.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SealWarning.svelte
 import "svelte/internal/disclose-version";
@@ -33938,6 +39746,12 @@ function SealWarning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SealWarning = __esm({
+  "src/icons/phosphor/SealWarning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Selection.svelte
 import "svelte/internal/disclose-version";
@@ -33973,6 +39787,12 @@ function Selection($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Selection = __esm({
+  "src/icons/phosphor/Selection.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionAll.svelte
 import "svelte/internal/disclose-version";
@@ -34008,6 +39828,12 @@ function SelectionAll($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionAll = __esm({
+  "src/icons/phosphor/SelectionAll.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionBackground.svelte
 import "svelte/internal/disclose-version";
@@ -34043,6 +39869,12 @@ function SelectionBackground($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionBackground = __esm({
+  "src/icons/phosphor/SelectionBackground.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionForeground.svelte
 import "svelte/internal/disclose-version";
@@ -34078,6 +39910,12 @@ function SelectionForeground($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionForeground = __esm({
+  "src/icons/phosphor/SelectionForeground.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionInverse.svelte
 import "svelte/internal/disclose-version";
@@ -34113,6 +39951,12 @@ function SelectionInverse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionInverse = __esm({
+  "src/icons/phosphor/SelectionInverse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionPlus.svelte
 import "svelte/internal/disclose-version";
@@ -34148,6 +39992,12 @@ function SelectionPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionPlus = __esm({
+  "src/icons/phosphor/SelectionPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SelectionSlash.svelte
 import "svelte/internal/disclose-version";
@@ -34183,6 +40033,12 @@ function SelectionSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SelectionSlash = __esm({
+  "src/icons/phosphor/SelectionSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Shapes.svelte
 import "svelte/internal/disclose-version";
@@ -34218,6 +40074,12 @@ function Shapes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Shapes = __esm({
+  "src/icons/phosphor/Shapes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Share.svelte
 import "svelte/internal/disclose-version";
@@ -34253,6 +40115,12 @@ function Share($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Share = __esm({
+  "src/icons/phosphor/Share.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShareFat.svelte
 import "svelte/internal/disclose-version";
@@ -34288,6 +40156,12 @@ function ShareFat($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShareFat = __esm({
+  "src/icons/phosphor/ShareFat.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShareNetwork.svelte
 import "svelte/internal/disclose-version";
@@ -34323,6 +40197,12 @@ function ShareNetwork($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShareNetwork = __esm({
+  "src/icons/phosphor/ShareNetwork.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Shield.svelte
 import "svelte/internal/disclose-version";
@@ -34358,6 +40238,12 @@ function Shield($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Shield = __esm({
+  "src/icons/phosphor/Shield.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldCheck.svelte
 import "svelte/internal/disclose-version";
@@ -34393,6 +40279,12 @@ function ShieldCheck($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldCheck = __esm({
+  "src/icons/phosphor/ShieldCheck.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldCheckered.svelte
 import "svelte/internal/disclose-version";
@@ -34428,6 +40320,12 @@ function ShieldCheckered($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldCheckered = __esm({
+  "src/icons/phosphor/ShieldCheckered.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldChevron.svelte
 import "svelte/internal/disclose-version";
@@ -34463,6 +40361,12 @@ function ShieldChevron($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldChevron = __esm({
+  "src/icons/phosphor/ShieldChevron.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldPlus.svelte
 import "svelte/internal/disclose-version";
@@ -34498,6 +40402,12 @@ function ShieldPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldPlus = __esm({
+  "src/icons/phosphor/ShieldPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldSlash.svelte
 import "svelte/internal/disclose-version";
@@ -34533,6 +40443,12 @@ function ShieldSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldSlash = __esm({
+  "src/icons/phosphor/ShieldSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldStar.svelte
 import "svelte/internal/disclose-version";
@@ -34568,6 +40484,12 @@ function ShieldStar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldStar = __esm({
+  "src/icons/phosphor/ShieldStar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShieldWarning.svelte
 import "svelte/internal/disclose-version";
@@ -34603,6 +40525,12 @@ function ShieldWarning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShieldWarning = __esm({
+  "src/icons/phosphor/ShieldWarning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShirtFolded.svelte
 import "svelte/internal/disclose-version";
@@ -34638,6 +40566,12 @@ function ShirtFolded($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShirtFolded = __esm({
+  "src/icons/phosphor/ShirtFolded.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShootingStar.svelte
 import "svelte/internal/disclose-version";
@@ -34673,6 +40607,12 @@ function ShootingStar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShootingStar = __esm({
+  "src/icons/phosphor/ShootingStar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShoppingBag.svelte
 import "svelte/internal/disclose-version";
@@ -34708,6 +40648,12 @@ function ShoppingBag($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShoppingBag = __esm({
+  "src/icons/phosphor/ShoppingBag.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShoppingBagOpen.svelte
 import "svelte/internal/disclose-version";
@@ -34743,6 +40689,12 @@ function ShoppingBagOpen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShoppingBagOpen = __esm({
+  "src/icons/phosphor/ShoppingBagOpen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShoppingCart.svelte
 import "svelte/internal/disclose-version";
@@ -34778,6 +40730,12 @@ function ShoppingCart($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShoppingCart = __esm({
+  "src/icons/phosphor/ShoppingCart.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShoppingCartSimple.svelte
 import "svelte/internal/disclose-version";
@@ -34813,6 +40771,12 @@ function ShoppingCartSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShoppingCartSimple = __esm({
+  "src/icons/phosphor/ShoppingCartSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Shower.svelte
 import "svelte/internal/disclose-version";
@@ -34848,6 +40812,12 @@ function Shower($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Shower = __esm({
+  "src/icons/phosphor/Shower.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Shrimp.svelte
 import "svelte/internal/disclose-version";
@@ -34883,6 +40853,12 @@ function Shrimp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Shrimp = __esm({
+  "src/icons/phosphor/Shrimp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Shuffle.svelte
 import "svelte/internal/disclose-version";
@@ -34918,6 +40894,12 @@ function Shuffle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Shuffle = __esm({
+  "src/icons/phosphor/Shuffle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShuffleAngular.svelte
 import "svelte/internal/disclose-version";
@@ -34953,6 +40935,12 @@ function ShuffleAngular($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShuffleAngular = __esm({
+  "src/icons/phosphor/ShuffleAngular.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ShuffleSimple.svelte
 import "svelte/internal/disclose-version";
@@ -34988,6 +40976,12 @@ function ShuffleSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ShuffleSimple = __esm({
+  "src/icons/phosphor/ShuffleSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sidebar.svelte
 import "svelte/internal/disclose-version";
@@ -35023,6 +41017,12 @@ function Sidebar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sidebar = __esm({
+  "src/icons/phosphor/Sidebar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SidebarSimple.svelte
 import "svelte/internal/disclose-version";
@@ -35058,6 +41058,12 @@ function SidebarSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SidebarSimple = __esm({
+  "src/icons/phosphor/SidebarSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sigma.svelte
 import "svelte/internal/disclose-version";
@@ -35093,6 +41099,12 @@ function Sigma($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sigma = __esm({
+  "src/icons/phosphor/Sigma.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SignIn.svelte
 import "svelte/internal/disclose-version";
@@ -35128,6 +41140,12 @@ function SignIn($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SignIn = __esm({
+  "src/icons/phosphor/SignIn.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SignOut.svelte
 import "svelte/internal/disclose-version";
@@ -35163,6 +41181,12 @@ function SignOut($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SignOut = __esm({
+  "src/icons/phosphor/SignOut.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Signature.svelte
 import "svelte/internal/disclose-version";
@@ -35198,6 +41222,12 @@ function Signature($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Signature = __esm({
+  "src/icons/phosphor/Signature.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Signpost.svelte
 import "svelte/internal/disclose-version";
@@ -35233,6 +41263,12 @@ function Signpost($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Signpost = __esm({
+  "src/icons/phosphor/Signpost.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SimCard.svelte
 import "svelte/internal/disclose-version";
@@ -35268,6 +41304,12 @@ function SimCard($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SimCard = __esm({
+  "src/icons/phosphor/SimCard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Siren.svelte
 import "svelte/internal/disclose-version";
@@ -35303,6 +41345,12 @@ function Siren($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Siren = __esm({
+  "src/icons/phosphor/Siren.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SketchLogo.svelte
 import "svelte/internal/disclose-version";
@@ -35338,6 +41386,12 @@ function SketchLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SketchLogo = __esm({
+  "src/icons/phosphor/SketchLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SkipBack.svelte
 import "svelte/internal/disclose-version";
@@ -35373,6 +41427,12 @@ function SkipBack($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SkipBack = __esm({
+  "src/icons/phosphor/SkipBack.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SkipBackCircle.svelte
 import "svelte/internal/disclose-version";
@@ -35408,6 +41468,12 @@ function SkipBackCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SkipBackCircle = __esm({
+  "src/icons/phosphor/SkipBackCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SkipForward.svelte
 import "svelte/internal/disclose-version";
@@ -35443,6 +41509,12 @@ function SkipForward($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SkipForward = __esm({
+  "src/icons/phosphor/SkipForward.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SkipForwardCircle.svelte
 import "svelte/internal/disclose-version";
@@ -35478,6 +41550,12 @@ function SkipForwardCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SkipForwardCircle = __esm({
+  "src/icons/phosphor/SkipForwardCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Skull.svelte
 import "svelte/internal/disclose-version";
@@ -35513,6 +41591,12 @@ function Skull($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Skull = __esm({
+  "src/icons/phosphor/Skull.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SlackLogo.svelte
 import "svelte/internal/disclose-version";
@@ -35548,6 +41632,12 @@ function SlackLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SlackLogo = __esm({
+  "src/icons/phosphor/SlackLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sliders.svelte
 import "svelte/internal/disclose-version";
@@ -35583,6 +41673,12 @@ function Sliders($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sliders = __esm({
+  "src/icons/phosphor/Sliders.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SlidersHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -35618,6 +41714,12 @@ function SlidersHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SlidersHorizontal = __esm({
+  "src/icons/phosphor/SlidersHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Slideshow.svelte
 import "svelte/internal/disclose-version";
@@ -35653,6 +41755,12 @@ function Slideshow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Slideshow = __esm({
+  "src/icons/phosphor/Slideshow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Smiley.svelte
 import "svelte/internal/disclose-version";
@@ -35688,6 +41796,12 @@ function Smiley($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Smiley = __esm({
+  "src/icons/phosphor/Smiley.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyAngry.svelte
 import "svelte/internal/disclose-version";
@@ -35723,6 +41837,12 @@ function SmileyAngry($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyAngry = __esm({
+  "src/icons/phosphor/SmileyAngry.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyBlank.svelte
 import "svelte/internal/disclose-version";
@@ -35758,6 +41878,12 @@ function SmileyBlank($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyBlank = __esm({
+  "src/icons/phosphor/SmileyBlank.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyMeh.svelte
 import "svelte/internal/disclose-version";
@@ -35793,6 +41919,12 @@ function SmileyMeh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyMeh = __esm({
+  "src/icons/phosphor/SmileyMeh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyNervous.svelte
 import "svelte/internal/disclose-version";
@@ -35828,6 +41960,12 @@ function SmileyNervous($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyNervous = __esm({
+  "src/icons/phosphor/SmileyNervous.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileySad.svelte
 import "svelte/internal/disclose-version";
@@ -35863,6 +42001,12 @@ function SmileySad($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileySad = __esm({
+  "src/icons/phosphor/SmileySad.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileySticker.svelte
 import "svelte/internal/disclose-version";
@@ -35898,6 +42042,12 @@ function SmileySticker($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileySticker = __esm({
+  "src/icons/phosphor/SmileySticker.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyWink.svelte
 import "svelte/internal/disclose-version";
@@ -35933,6 +42083,12 @@ function SmileyWink($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyWink = __esm({
+  "src/icons/phosphor/SmileyWink.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SmileyXEyes.svelte
 import "svelte/internal/disclose-version";
@@ -35968,6 +42124,12 @@ function SmileyXEyes($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SmileyXEyes = __esm({
+  "src/icons/phosphor/SmileyXEyes.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SnapchatLogo.svelte
 import "svelte/internal/disclose-version";
@@ -36003,6 +42165,12 @@ function SnapchatLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SnapchatLogo = __esm({
+  "src/icons/phosphor/SnapchatLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sneaker.svelte
 import "svelte/internal/disclose-version";
@@ -36038,6 +42206,12 @@ function Sneaker($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sneaker = __esm({
+  "src/icons/phosphor/Sneaker.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SneakerMove.svelte
 import "svelte/internal/disclose-version";
@@ -36073,6 +42247,12 @@ function SneakerMove($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SneakerMove = __esm({
+  "src/icons/phosphor/SneakerMove.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Snowflake.svelte
 import "svelte/internal/disclose-version";
@@ -36108,6 +42288,12 @@ function Snowflake($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Snowflake = __esm({
+  "src/icons/phosphor/Snowflake.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SoccerBall.svelte
 import "svelte/internal/disclose-version";
@@ -36143,6 +42329,12 @@ function SoccerBall($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SoccerBall = __esm({
+  "src/icons/phosphor/SoccerBall.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SortAscending.svelte
 import "svelte/internal/disclose-version";
@@ -36178,6 +42370,12 @@ function SortAscending($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SortAscending = __esm({
+  "src/icons/phosphor/SortAscending.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SortDescending.svelte
 import "svelte/internal/disclose-version";
@@ -36213,6 +42411,12 @@ function SortDescending($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SortDescending = __esm({
+  "src/icons/phosphor/SortDescending.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SoundcloudLogo.svelte
 import "svelte/internal/disclose-version";
@@ -36248,6 +42452,12 @@ function SoundcloudLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SoundcloudLogo = __esm({
+  "src/icons/phosphor/SoundcloudLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Spade.svelte
 import "svelte/internal/disclose-version";
@@ -36283,6 +42493,12 @@ function Spade($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Spade = __esm({
+  "src/icons/phosphor/Spade.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sparkle.svelte
 import "svelte/internal/disclose-version";
@@ -36318,6 +42534,12 @@ function Sparkle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sparkle = __esm({
+  "src/icons/phosphor/Sparkle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerHifi.svelte
 import "svelte/internal/disclose-version";
@@ -36353,6 +42575,12 @@ function SpeakerHifi($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerHifi = __esm({
+  "src/icons/phosphor/SpeakerHifi.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerHigh.svelte
 import "svelte/internal/disclose-version";
@@ -36388,6 +42616,12 @@ function SpeakerHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerHigh = __esm({
+  "src/icons/phosphor/SpeakerHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerLow.svelte
 import "svelte/internal/disclose-version";
@@ -36423,6 +42657,12 @@ function SpeakerLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerLow = __esm({
+  "src/icons/phosphor/SpeakerLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerNone.svelte
 import "svelte/internal/disclose-version";
@@ -36458,6 +42698,12 @@ function SpeakerNone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerNone = __esm({
+  "src/icons/phosphor/SpeakerNone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSimpleHigh.svelte
 import "svelte/internal/disclose-version";
@@ -36493,6 +42739,12 @@ function SpeakerSimpleHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSimpleHigh = __esm({
+  "src/icons/phosphor/SpeakerSimpleHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSimpleLow.svelte
 import "svelte/internal/disclose-version";
@@ -36528,6 +42780,12 @@ function SpeakerSimpleLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSimpleLow = __esm({
+  "src/icons/phosphor/SpeakerSimpleLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSimpleNone.svelte
 import "svelte/internal/disclose-version";
@@ -36563,6 +42821,12 @@ function SpeakerSimpleNone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSimpleNone = __esm({
+  "src/icons/phosphor/SpeakerSimpleNone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSimpleSlash.svelte
 import "svelte/internal/disclose-version";
@@ -36598,6 +42862,12 @@ function SpeakerSimpleSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSimpleSlash = __esm({
+  "src/icons/phosphor/SpeakerSimpleSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSimpleX.svelte
 import "svelte/internal/disclose-version";
@@ -36633,6 +42903,12 @@ function SpeakerSimpleX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSimpleX = __esm({
+  "src/icons/phosphor/SpeakerSimpleX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerSlash.svelte
 import "svelte/internal/disclose-version";
@@ -36668,6 +42944,12 @@ function SpeakerSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerSlash = __esm({
+  "src/icons/phosphor/SpeakerSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpeakerX.svelte
 import "svelte/internal/disclose-version";
@@ -36703,6 +42985,12 @@ function SpeakerX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpeakerX = __esm({
+  "src/icons/phosphor/SpeakerX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Spinner.svelte
 import "svelte/internal/disclose-version";
@@ -36738,6 +43026,12 @@ function Spinner($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Spinner = __esm({
+  "src/icons/phosphor/Spinner.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpinnerGap.svelte
 import "svelte/internal/disclose-version";
@@ -36773,6 +43067,12 @@ function SpinnerGap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpinnerGap = __esm({
+  "src/icons/phosphor/SpinnerGap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Spiral.svelte
 import "svelte/internal/disclose-version";
@@ -36808,6 +43108,12 @@ function Spiral($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Spiral = __esm({
+  "src/icons/phosphor/Spiral.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SplitHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -36843,6 +43149,12 @@ function SplitHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SplitHorizontal = __esm({
+  "src/icons/phosphor/SplitHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SplitVertical.svelte
 import "svelte/internal/disclose-version";
@@ -36878,6 +43190,12 @@ function SplitVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SplitVertical = __esm({
+  "src/icons/phosphor/SplitVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SpotifyLogo.svelte
 import "svelte/internal/disclose-version";
@@ -36913,6 +43231,12 @@ function SpotifyLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SpotifyLogo = __esm({
+  "src/icons/phosphor/SpotifyLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Square.svelte
 import "svelte/internal/disclose-version";
@@ -36948,6 +43272,12 @@ function Square($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Square = __esm({
+  "src/icons/phosphor/Square.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquareHalf.svelte
 import "svelte/internal/disclose-version";
@@ -36983,6 +43313,12 @@ function SquareHalf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquareHalf = __esm({
+  "src/icons/phosphor/SquareHalf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquareHalfBottom.svelte
 import "svelte/internal/disclose-version";
@@ -37018,6 +43354,12 @@ function SquareHalfBottom($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquareHalfBottom = __esm({
+  "src/icons/phosphor/SquareHalfBottom.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquareLogo.svelte
 import "svelte/internal/disclose-version";
@@ -37053,6 +43395,12 @@ function SquareLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquareLogo = __esm({
+  "src/icons/phosphor/SquareLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquareSplitHorizontal.svelte
 import "svelte/internal/disclose-version";
@@ -37088,6 +43436,12 @@ function SquareSplitHorizontal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquareSplitHorizontal = __esm({
+  "src/icons/phosphor/SquareSplitHorizontal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquareSplitVertical.svelte
 import "svelte/internal/disclose-version";
@@ -37123,6 +43477,12 @@ function SquareSplitVertical($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquareSplitVertical = __esm({
+  "src/icons/phosphor/SquareSplitVertical.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SquaresFour.svelte
 import "svelte/internal/disclose-version";
@@ -37158,6 +43518,12 @@ function SquaresFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SquaresFour = __esm({
+  "src/icons/phosphor/SquaresFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stack.svelte
 import "svelte/internal/disclose-version";
@@ -37193,6 +43559,12 @@ function Stack($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stack = __esm({
+  "src/icons/phosphor/Stack.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StackOverflowLogo.svelte
 import "svelte/internal/disclose-version";
@@ -37228,6 +43600,12 @@ function StackOverflowLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StackOverflowLogo = __esm({
+  "src/icons/phosphor/StackOverflowLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StackSimple.svelte
 import "svelte/internal/disclose-version";
@@ -37263,6 +43641,12 @@ function StackSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StackSimple = __esm({
+  "src/icons/phosphor/StackSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stairs.svelte
 import "svelte/internal/disclose-version";
@@ -37298,6 +43682,12 @@ function Stairs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stairs = __esm({
+  "src/icons/phosphor/Stairs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stamp.svelte
 import "svelte/internal/disclose-version";
@@ -37333,6 +43723,12 @@ function Stamp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stamp = __esm({
+  "src/icons/phosphor/Stamp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Star.svelte
 import "svelte/internal/disclose-version";
@@ -37368,6 +43764,12 @@ function Star($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Star = __esm({
+  "src/icons/phosphor/Star.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StarAndCrescent.svelte
 import "svelte/internal/disclose-version";
@@ -37403,6 +43805,12 @@ function StarAndCrescent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StarAndCrescent = __esm({
+  "src/icons/phosphor/StarAndCrescent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StarFour.svelte
 import "svelte/internal/disclose-version";
@@ -37438,6 +43846,12 @@ function StarFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StarFour = __esm({
+  "src/icons/phosphor/StarFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StarHalf.svelte
 import "svelte/internal/disclose-version";
@@ -37473,6 +43887,12 @@ function StarHalf($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StarHalf = __esm({
+  "src/icons/phosphor/StarHalf.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StarOfDavid.svelte
 import "svelte/internal/disclose-version";
@@ -37508,6 +43928,12 @@ function StarOfDavid($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StarOfDavid = __esm({
+  "src/icons/phosphor/StarOfDavid.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SteeringWheel.svelte
 import "svelte/internal/disclose-version";
@@ -37543,6 +43969,12 @@ function SteeringWheel($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SteeringWheel = __esm({
+  "src/icons/phosphor/SteeringWheel.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Steps.svelte
 import "svelte/internal/disclose-version";
@@ -37578,6 +44010,12 @@ function Steps($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Steps = __esm({
+  "src/icons/phosphor/Steps.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stethoscope.svelte
 import "svelte/internal/disclose-version";
@@ -37613,6 +44051,12 @@ function Stethoscope($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stethoscope = __esm({
+  "src/icons/phosphor/Stethoscope.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sticker.svelte
 import "svelte/internal/disclose-version";
@@ -37648,6 +44092,12 @@ function Sticker($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sticker = __esm({
+  "src/icons/phosphor/Sticker.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stool.svelte
 import "svelte/internal/disclose-version";
@@ -37683,6 +44133,12 @@ function Stool($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stool = __esm({
+  "src/icons/phosphor/Stool.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Stop.svelte
 import "svelte/internal/disclose-version";
@@ -37718,6 +44174,12 @@ function Stop($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stop = __esm({
+  "src/icons/phosphor/Stop.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StopCircle.svelte
 import "svelte/internal/disclose-version";
@@ -37753,6 +44215,12 @@ function StopCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StopCircle = __esm({
+  "src/icons/phosphor/StopCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Storefront.svelte
 import "svelte/internal/disclose-version";
@@ -37788,6 +44256,12 @@ function Storefront($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Storefront = __esm({
+  "src/icons/phosphor/Storefront.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Strategy.svelte
 import "svelte/internal/disclose-version";
@@ -37823,6 +44297,12 @@ function Strategy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Strategy = __esm({
+  "src/icons/phosphor/Strategy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/StripeLogo.svelte
 import "svelte/internal/disclose-version";
@@ -37858,6 +44338,12 @@ function StripeLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StripeLogo = __esm({
+  "src/icons/phosphor/StripeLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Student.svelte
 import "svelte/internal/disclose-version";
@@ -37893,6 +44379,12 @@ function Student($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Student = __esm({
+  "src/icons/phosphor/Student.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Subtitles.svelte
 import "svelte/internal/disclose-version";
@@ -37928,6 +44420,12 @@ function Subtitles($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Subtitles = __esm({
+  "src/icons/phosphor/Subtitles.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Subtract.svelte
 import "svelte/internal/disclose-version";
@@ -37963,6 +44461,12 @@ function Subtract($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Subtract = __esm({
+  "src/icons/phosphor/Subtract.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SubtractSquare.svelte
 import "svelte/internal/disclose-version";
@@ -37998,6 +44502,12 @@ function SubtractSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SubtractSquare = __esm({
+  "src/icons/phosphor/SubtractSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Suitcase.svelte
 import "svelte/internal/disclose-version";
@@ -38033,6 +44543,12 @@ function Suitcase($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Suitcase = __esm({
+  "src/icons/phosphor/Suitcase.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SuitcaseRolling.svelte
 import "svelte/internal/disclose-version";
@@ -38068,6 +44584,12 @@ function SuitcaseRolling($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SuitcaseRolling = __esm({
+  "src/icons/phosphor/SuitcaseRolling.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SuitcaseSimple.svelte
 import "svelte/internal/disclose-version";
@@ -38103,6 +44625,12 @@ function SuitcaseSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SuitcaseSimple = __esm({
+  "src/icons/phosphor/SuitcaseSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sun.svelte
 import "svelte/internal/disclose-version";
@@ -38138,6 +44666,12 @@ function Sun($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sun = __esm({
+  "src/icons/phosphor/Sun.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SunDim.svelte
 import "svelte/internal/disclose-version";
@@ -38173,6 +44707,12 @@ function SunDim($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SunDim = __esm({
+  "src/icons/phosphor/SunDim.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SunHorizon.svelte
 import "svelte/internal/disclose-version";
@@ -38208,6 +44748,12 @@ function SunHorizon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SunHorizon = __esm({
+  "src/icons/phosphor/SunHorizon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sunglasses.svelte
 import "svelte/internal/disclose-version";
@@ -38243,6 +44789,12 @@ function Sunglasses($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sunglasses = __esm({
+  "src/icons/phosphor/Sunglasses.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Swap.svelte
 import "svelte/internal/disclose-version";
@@ -38278,6 +44830,12 @@ function Swap($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Swap = __esm({
+  "src/icons/phosphor/Swap.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Swatches.svelte
 import "svelte/internal/disclose-version";
@@ -38313,6 +44871,12 @@ function Swatches($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Swatches = __esm({
+  "src/icons/phosphor/Swatches.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/SwimmingPool.svelte
 import "svelte/internal/disclose-version";
@@ -38348,6 +44912,12 @@ function SwimmingPool($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SwimmingPool = __esm({
+  "src/icons/phosphor/SwimmingPool.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Sword.svelte
 import "svelte/internal/disclose-version";
@@ -38383,6 +44953,12 @@ function Sword($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Sword = __esm({
+  "src/icons/phosphor/Sword.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Synagogue.svelte
 import "svelte/internal/disclose-version";
@@ -38418,6 +44994,12 @@ function Synagogue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Synagogue = __esm({
+  "src/icons/phosphor/Synagogue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Syringe.svelte
 import "svelte/internal/disclose-version";
@@ -38453,6 +45035,12 @@ function Syringe($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Syringe = __esm({
+  "src/icons/phosphor/Syringe.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TShirt.svelte
 import "svelte/internal/disclose-version";
@@ -38488,6 +45076,12 @@ function TShirt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TShirt = __esm({
+  "src/icons/phosphor/TShirt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Table.svelte
 import "svelte/internal/disclose-version";
@@ -38523,6 +45117,12 @@ function Table($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Table = __esm({
+  "src/icons/phosphor/Table.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tabs.svelte
 import "svelte/internal/disclose-version";
@@ -38558,6 +45158,12 @@ function Tabs($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tabs = __esm({
+  "src/icons/phosphor/Tabs.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tag.svelte
 import "svelte/internal/disclose-version";
@@ -38593,6 +45199,12 @@ function Tag($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tag = __esm({
+  "src/icons/phosphor/Tag.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TagChevron.svelte
 import "svelte/internal/disclose-version";
@@ -38628,6 +45240,12 @@ function TagChevron($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TagChevron = __esm({
+  "src/icons/phosphor/TagChevron.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TagSimple.svelte
 import "svelte/internal/disclose-version";
@@ -38663,6 +45281,12 @@ function TagSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TagSimple = __esm({
+  "src/icons/phosphor/TagSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Target.svelte
 import "svelte/internal/disclose-version";
@@ -38698,6 +45322,12 @@ function Target($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Target = __esm({
+  "src/icons/phosphor/Target.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Taxi.svelte
 import "svelte/internal/disclose-version";
@@ -38733,6 +45363,12 @@ function Taxi($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Taxi = __esm({
+  "src/icons/phosphor/Taxi.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TelegramLogo.svelte
 import "svelte/internal/disclose-version";
@@ -38768,6 +45404,12 @@ function TelegramLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TelegramLogo = __esm({
+  "src/icons/phosphor/TelegramLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Television.svelte
 import "svelte/internal/disclose-version";
@@ -38803,6 +45445,12 @@ function Television($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Television = __esm({
+  "src/icons/phosphor/Television.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TelevisionSimple.svelte
 import "svelte/internal/disclose-version";
@@ -38838,6 +45486,12 @@ function TelevisionSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TelevisionSimple = __esm({
+  "src/icons/phosphor/TelevisionSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TennisBall.svelte
 import "svelte/internal/disclose-version";
@@ -38873,6 +45527,12 @@ function TennisBall($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TennisBall = __esm({
+  "src/icons/phosphor/TennisBall.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tent.svelte
 import "svelte/internal/disclose-version";
@@ -38908,6 +45568,12 @@ function Tent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tent = __esm({
+  "src/icons/phosphor/Tent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Terminal.svelte
 import "svelte/internal/disclose-version";
@@ -38943,6 +45609,12 @@ function Terminal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Terminal = __esm({
+  "src/icons/phosphor/Terminal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TerminalWindow.svelte
 import "svelte/internal/disclose-version";
@@ -38978,6 +45650,12 @@ function TerminalWindow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TerminalWindow = __esm({
+  "src/icons/phosphor/TerminalWindow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TestTube.svelte
 import "svelte/internal/disclose-version";
@@ -39013,6 +45691,12 @@ function TestTube($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TestTube = __esm({
+  "src/icons/phosphor/TestTube.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAUnderline.svelte
 import "svelte/internal/disclose-version";
@@ -39048,6 +45732,12 @@ function TextAUnderline($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAUnderline = __esm({
+  "src/icons/phosphor/TextAUnderline.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAa.svelte
 import "svelte/internal/disclose-version";
@@ -39083,6 +45773,12 @@ function TextAa($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAa = __esm({
+  "src/icons/phosphor/TextAa.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAlignCenter.svelte
 import "svelte/internal/disclose-version";
@@ -39118,6 +45814,12 @@ function TextAlignCenter($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAlignCenter = __esm({
+  "src/icons/phosphor/TextAlignCenter.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAlignJustify.svelte
 import "svelte/internal/disclose-version";
@@ -39153,6 +45855,12 @@ function TextAlignJustify($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAlignJustify = __esm({
+  "src/icons/phosphor/TextAlignJustify.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAlignLeft.svelte
 import "svelte/internal/disclose-version";
@@ -39188,6 +45896,12 @@ function TextAlignLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAlignLeft = __esm({
+  "src/icons/phosphor/TextAlignLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextAlignRight.svelte
 import "svelte/internal/disclose-version";
@@ -39223,6 +45937,12 @@ function TextAlignRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextAlignRight = __esm({
+  "src/icons/phosphor/TextAlignRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextB.svelte
 import "svelte/internal/disclose-version";
@@ -39258,6 +45978,12 @@ function TextB($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextB = __esm({
+  "src/icons/phosphor/TextB.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextColumns.svelte
 import "svelte/internal/disclose-version";
@@ -39293,6 +46019,12 @@ function TextColumns($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextColumns = __esm({
+  "src/icons/phosphor/TextColumns.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextH.svelte
 import "svelte/internal/disclose-version";
@@ -39328,6 +46060,12 @@ function TextH($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextH = __esm({
+  "src/icons/phosphor/TextH.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHFive.svelte
 import "svelte/internal/disclose-version";
@@ -39363,6 +46101,12 @@ function TextHFive($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHFive = __esm({
+  "src/icons/phosphor/TextHFive.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHFour.svelte
 import "svelte/internal/disclose-version";
@@ -39398,6 +46142,12 @@ function TextHFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHFour = __esm({
+  "src/icons/phosphor/TextHFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHOne.svelte
 import "svelte/internal/disclose-version";
@@ -39433,6 +46183,12 @@ function TextHOne($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHOne = __esm({
+  "src/icons/phosphor/TextHOne.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHSix.svelte
 import "svelte/internal/disclose-version";
@@ -39468,6 +46224,12 @@ function TextHSix($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHSix = __esm({
+  "src/icons/phosphor/TextHSix.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHThree.svelte
 import "svelte/internal/disclose-version";
@@ -39503,6 +46265,12 @@ function TextHThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHThree = __esm({
+  "src/icons/phosphor/TextHThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextHTwo.svelte
 import "svelte/internal/disclose-version";
@@ -39538,6 +46306,12 @@ function TextHTwo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextHTwo = __esm({
+  "src/icons/phosphor/TextHTwo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextIndent.svelte
 import "svelte/internal/disclose-version";
@@ -39573,6 +46347,12 @@ function TextIndent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextIndent = __esm({
+  "src/icons/phosphor/TextIndent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextItalic.svelte
 import "svelte/internal/disclose-version";
@@ -39608,6 +46388,12 @@ function TextItalic($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextItalic = __esm({
+  "src/icons/phosphor/TextItalic.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextOutdent.svelte
 import "svelte/internal/disclose-version";
@@ -39643,6 +46429,12 @@ function TextOutdent($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextOutdent = __esm({
+  "src/icons/phosphor/TextOutdent.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextStrikethrough.svelte
 import "svelte/internal/disclose-version";
@@ -39678,6 +46470,12 @@ function TextStrikethrough($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextStrikethrough = __esm({
+  "src/icons/phosphor/TextStrikethrough.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextT.svelte
 import "svelte/internal/disclose-version";
@@ -39713,6 +46511,12 @@ function TextT($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextT = __esm({
+  "src/icons/phosphor/TextT.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TextUnderline.svelte
 import "svelte/internal/disclose-version";
@@ -39748,6 +46552,12 @@ function TextUnderline($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextUnderline = __esm({
+  "src/icons/phosphor/TextUnderline.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Textbox.svelte
 import "svelte/internal/disclose-version";
@@ -39783,6 +46593,12 @@ function Textbox($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Textbox = __esm({
+  "src/icons/phosphor/Textbox.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Thermometer.svelte
 import "svelte/internal/disclose-version";
@@ -39818,6 +46634,12 @@ function Thermometer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Thermometer = __esm({
+  "src/icons/phosphor/Thermometer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ThermometerCold.svelte
 import "svelte/internal/disclose-version";
@@ -39853,6 +46675,12 @@ function ThermometerCold($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThermometerCold = __esm({
+  "src/icons/phosphor/ThermometerCold.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ThermometerHot.svelte
 import "svelte/internal/disclose-version";
@@ -39888,6 +46716,12 @@ function ThermometerHot($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThermometerHot = __esm({
+  "src/icons/phosphor/ThermometerHot.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ThermometerSimple.svelte
 import "svelte/internal/disclose-version";
@@ -39923,6 +46757,12 @@ function ThermometerSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThermometerSimple = __esm({
+  "src/icons/phosphor/ThermometerSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ThumbsDown.svelte
 import "svelte/internal/disclose-version";
@@ -39958,6 +46798,12 @@ function ThumbsDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThumbsDown = __esm({
+  "src/icons/phosphor/ThumbsDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ThumbsUp.svelte
 import "svelte/internal/disclose-version";
@@ -39993,6 +46839,12 @@ function ThumbsUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThumbsUp = __esm({
+  "src/icons/phosphor/ThumbsUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Ticket.svelte
 import "svelte/internal/disclose-version";
@@ -40028,6 +46880,12 @@ function Ticket($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ticket = __esm({
+  "src/icons/phosphor/Ticket.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TidalLogo.svelte
 import "svelte/internal/disclose-version";
@@ -40063,6 +46921,12 @@ function TidalLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TidalLogo = __esm({
+  "src/icons/phosphor/TidalLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TiktokLogo.svelte
 import "svelte/internal/disclose-version";
@@ -40098,6 +46962,12 @@ function TiktokLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TiktokLogo = __esm({
+  "src/icons/phosphor/TiktokLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Timer.svelte
 import "svelte/internal/disclose-version";
@@ -40133,6 +47003,12 @@ function Timer($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Timer = __esm({
+  "src/icons/phosphor/Timer.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tipi.svelte
 import "svelte/internal/disclose-version";
@@ -40168,6 +47044,12 @@ function Tipi($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tipi = __esm({
+  "src/icons/phosphor/Tipi.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ToggleLeft.svelte
 import "svelte/internal/disclose-version";
@@ -40203,6 +47085,12 @@ function ToggleLeft($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ToggleLeft = __esm({
+  "src/icons/phosphor/ToggleLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ToggleRight.svelte
 import "svelte/internal/disclose-version";
@@ -40238,6 +47126,12 @@ function ToggleRight($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ToggleRight = __esm({
+  "src/icons/phosphor/ToggleRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Toilet.svelte
 import "svelte/internal/disclose-version";
@@ -40273,6 +47167,12 @@ function Toilet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Toilet = __esm({
+  "src/icons/phosphor/Toilet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ToiletPaper.svelte
 import "svelte/internal/disclose-version";
@@ -40308,6 +47208,12 @@ function ToiletPaper($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ToiletPaper = __esm({
+  "src/icons/phosphor/ToiletPaper.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Toolbox.svelte
 import "svelte/internal/disclose-version";
@@ -40343,6 +47249,12 @@ function Toolbox($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Toolbox = __esm({
+  "src/icons/phosphor/Toolbox.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tooth.svelte
 import "svelte/internal/disclose-version";
@@ -40378,6 +47290,12 @@ function Tooth($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tooth = __esm({
+  "src/icons/phosphor/Tooth.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tote.svelte
 import "svelte/internal/disclose-version";
@@ -40413,6 +47331,12 @@ function Tote($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tote = __esm({
+  "src/icons/phosphor/Tote.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/ToteSimple.svelte
 import "svelte/internal/disclose-version";
@@ -40448,6 +47372,12 @@ function ToteSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ToteSimple = __esm({
+  "src/icons/phosphor/ToteSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Trademark.svelte
 import "svelte/internal/disclose-version";
@@ -40483,6 +47413,12 @@ function Trademark($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Trademark = __esm({
+  "src/icons/phosphor/Trademark.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrademarkRegistered.svelte
 import "svelte/internal/disclose-version";
@@ -40518,6 +47454,12 @@ function TrademarkRegistered($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrademarkRegistered = __esm({
+  "src/icons/phosphor/TrademarkRegistered.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrafficCone.svelte
 import "svelte/internal/disclose-version";
@@ -40553,6 +47495,12 @@ function TrafficCone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrafficCone = __esm({
+  "src/icons/phosphor/TrafficCone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrafficSign.svelte
 import "svelte/internal/disclose-version";
@@ -40588,6 +47536,12 @@ function TrafficSign($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrafficSign = __esm({
+  "src/icons/phosphor/TrafficSign.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrafficSignal.svelte
 import "svelte/internal/disclose-version";
@@ -40623,6 +47577,12 @@ function TrafficSignal($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrafficSignal = __esm({
+  "src/icons/phosphor/TrafficSignal.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Train.svelte
 import "svelte/internal/disclose-version";
@@ -40658,6 +47618,12 @@ function Train($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Train = __esm({
+  "src/icons/phosphor/Train.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrainRegional.svelte
 import "svelte/internal/disclose-version";
@@ -40693,6 +47659,12 @@ function TrainRegional($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrainRegional = __esm({
+  "src/icons/phosphor/TrainRegional.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrainSimple.svelte
 import "svelte/internal/disclose-version";
@@ -40728,6 +47700,12 @@ function TrainSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrainSimple = __esm({
+  "src/icons/phosphor/TrainSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tram.svelte
 import "svelte/internal/disclose-version";
@@ -40763,6 +47741,12 @@ function Tram($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tram = __esm({
+  "src/icons/phosphor/Tram.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Translate.svelte
 import "svelte/internal/disclose-version";
@@ -40798,6 +47782,12 @@ function Translate($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Translate = __esm({
+  "src/icons/phosphor/Translate.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Trash.svelte
 import "svelte/internal/disclose-version";
@@ -40833,6 +47823,12 @@ function Trash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Trash = __esm({
+  "src/icons/phosphor/Trash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrashSimple.svelte
 import "svelte/internal/disclose-version";
@@ -40868,6 +47864,12 @@ function TrashSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrashSimple = __esm({
+  "src/icons/phosphor/TrashSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tray.svelte
 import "svelte/internal/disclose-version";
@@ -40903,6 +47905,12 @@ function Tray($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tray = __esm({
+  "src/icons/phosphor/Tray.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Tree.svelte
 import "svelte/internal/disclose-version";
@@ -40938,6 +47946,12 @@ function Tree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Tree = __esm({
+  "src/icons/phosphor/Tree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TreeEvergreen.svelte
 import "svelte/internal/disclose-version";
@@ -40973,6 +47987,12 @@ function TreeEvergreen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TreeEvergreen = __esm({
+  "src/icons/phosphor/TreeEvergreen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TreePalm.svelte
 import "svelte/internal/disclose-version";
@@ -41008,6 +48028,12 @@ function TreePalm($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TreePalm = __esm({
+  "src/icons/phosphor/TreePalm.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TreeStructure.svelte
 import "svelte/internal/disclose-version";
@@ -41043,6 +48069,12 @@ function TreeStructure($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TreeStructure = __esm({
+  "src/icons/phosphor/TreeStructure.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrendDown.svelte
 import "svelte/internal/disclose-version";
@@ -41078,6 +48110,12 @@ function TrendDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrendDown = __esm({
+  "src/icons/phosphor/TrendDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TrendUp.svelte
 import "svelte/internal/disclose-version";
@@ -41113,6 +48151,12 @@ function TrendUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TrendUp = __esm({
+  "src/icons/phosphor/TrendUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Triangle.svelte
 import "svelte/internal/disclose-version";
@@ -41148,6 +48192,12 @@ function Triangle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Triangle = __esm({
+  "src/icons/phosphor/Triangle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Trophy.svelte
 import "svelte/internal/disclose-version";
@@ -41183,6 +48233,12 @@ function Trophy($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Trophy = __esm({
+  "src/icons/phosphor/Trophy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Truck.svelte
 import "svelte/internal/disclose-version";
@@ -41218,6 +48274,12 @@ function Truck($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Truck = __esm({
+  "src/icons/phosphor/Truck.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TwitchLogo.svelte
 import "svelte/internal/disclose-version";
@@ -41253,6 +48315,12 @@ function TwitchLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TwitchLogo = __esm({
+  "src/icons/phosphor/TwitchLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/TwitterLogo.svelte
 import "svelte/internal/disclose-version";
@@ -41288,6 +48356,12 @@ function TwitterLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TwitterLogo = __esm({
+  "src/icons/phosphor/TwitterLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Umbrella.svelte
 import "svelte/internal/disclose-version";
@@ -41323,6 +48397,12 @@ function Umbrella($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Umbrella = __esm({
+  "src/icons/phosphor/Umbrella.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UmbrellaSimple.svelte
 import "svelte/internal/disclose-version";
@@ -41358,6 +48438,12 @@ function UmbrellaSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UmbrellaSimple = __esm({
+  "src/icons/phosphor/UmbrellaSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Unite.svelte
 import "svelte/internal/disclose-version";
@@ -41393,6 +48479,12 @@ function Unite($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Unite = __esm({
+  "src/icons/phosphor/Unite.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UniteSquare.svelte
 import "svelte/internal/disclose-version";
@@ -41428,6 +48520,12 @@ function UniteSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UniteSquare = __esm({
+  "src/icons/phosphor/UniteSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Upload.svelte
 import "svelte/internal/disclose-version";
@@ -41463,6 +48561,12 @@ function Upload($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Upload = __esm({
+  "src/icons/phosphor/Upload.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UploadSimple.svelte
 import "svelte/internal/disclose-version";
@@ -41498,6 +48602,12 @@ function UploadSimple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UploadSimple = __esm({
+  "src/icons/phosphor/UploadSimple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Usb.svelte
 import "svelte/internal/disclose-version";
@@ -41533,6 +48643,12 @@ function Usb($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Usb = __esm({
+  "src/icons/phosphor/Usb.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/User.svelte
 import "svelte/internal/disclose-version";
@@ -41568,6 +48684,12 @@ function User($$anchor, $$props) {
     () => rest
   ));
 }
+var init_User = __esm({
+  "src/icons/phosphor/User.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserCircle.svelte
 import "svelte/internal/disclose-version";
@@ -41603,6 +48725,12 @@ function UserCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserCircle = __esm({
+  "src/icons/phosphor/UserCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserCircleGear.svelte
 import "svelte/internal/disclose-version";
@@ -41638,6 +48766,12 @@ function UserCircleGear($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserCircleGear = __esm({
+  "src/icons/phosphor/UserCircleGear.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserCircleMinus.svelte
 import "svelte/internal/disclose-version";
@@ -41673,6 +48807,12 @@ function UserCircleMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserCircleMinus = __esm({
+  "src/icons/phosphor/UserCircleMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserCirclePlus.svelte
 import "svelte/internal/disclose-version";
@@ -41708,6 +48848,12 @@ function UserCirclePlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserCirclePlus = __esm({
+  "src/icons/phosphor/UserCirclePlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserFocus.svelte
 import "svelte/internal/disclose-version";
@@ -41743,6 +48889,12 @@ function UserFocus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserFocus = __esm({
+  "src/icons/phosphor/UserFocus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserGear.svelte
 import "svelte/internal/disclose-version";
@@ -41778,6 +48930,12 @@ function UserGear($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserGear = __esm({
+  "src/icons/phosphor/UserGear.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserList.svelte
 import "svelte/internal/disclose-version";
@@ -41813,6 +48971,12 @@ function UserList($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserList = __esm({
+  "src/icons/phosphor/UserList.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserMinus.svelte
 import "svelte/internal/disclose-version";
@@ -41848,6 +49012,12 @@ function UserMinus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserMinus = __esm({
+  "src/icons/phosphor/UserMinus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserPlus.svelte
 import "svelte/internal/disclose-version";
@@ -41883,6 +49053,12 @@ function UserPlus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserPlus = __esm({
+  "src/icons/phosphor/UserPlus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserRectangle.svelte
 import "svelte/internal/disclose-version";
@@ -41918,6 +49094,12 @@ function UserRectangle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserRectangle = __esm({
+  "src/icons/phosphor/UserRectangle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserSquare.svelte
 import "svelte/internal/disclose-version";
@@ -41953,6 +49135,12 @@ function UserSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserSquare = __esm({
+  "src/icons/phosphor/UserSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UserSwitch.svelte
 import "svelte/internal/disclose-version";
@@ -41988,6 +49176,12 @@ function UserSwitch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UserSwitch = __esm({
+  "src/icons/phosphor/UserSwitch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Users.svelte
 import "svelte/internal/disclose-version";
@@ -42023,6 +49217,12 @@ function Users($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Users = __esm({
+  "src/icons/phosphor/Users.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UsersFour.svelte
 import "svelte/internal/disclose-version";
@@ -42058,6 +49258,12 @@ function UsersFour($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UsersFour = __esm({
+  "src/icons/phosphor/UsersFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/UsersThree.svelte
 import "svelte/internal/disclose-version";
@@ -42093,6 +49299,12 @@ function UsersThree($$anchor, $$props) {
     () => rest
   ));
 }
+var init_UsersThree = __esm({
+  "src/icons/phosphor/UsersThree.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Van.svelte
 import "svelte/internal/disclose-version";
@@ -42128,6 +49340,12 @@ function Van($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Van = __esm({
+  "src/icons/phosphor/Van.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Vault.svelte
 import "svelte/internal/disclose-version";
@@ -42163,6 +49381,12 @@ function Vault($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Vault = __esm({
+  "src/icons/phosphor/Vault.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Vibrate.svelte
 import "svelte/internal/disclose-version";
@@ -42198,6 +49422,12 @@ function Vibrate($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Vibrate = __esm({
+  "src/icons/phosphor/Vibrate.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Video.svelte
 import "svelte/internal/disclose-version";
@@ -42233,6 +49463,12 @@ function Video($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Video = __esm({
+  "src/icons/phosphor/Video.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/VideoCamera.svelte
 import "svelte/internal/disclose-version";
@@ -42268,6 +49504,12 @@ function VideoCamera($$anchor, $$props) {
     () => rest
   ));
 }
+var init_VideoCamera = __esm({
+  "src/icons/phosphor/VideoCamera.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/VideoCameraSlash.svelte
 import "svelte/internal/disclose-version";
@@ -42303,6 +49545,12 @@ function VideoCameraSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_VideoCameraSlash = __esm({
+  "src/icons/phosphor/VideoCameraSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Vignette.svelte
 import "svelte/internal/disclose-version";
@@ -42338,6 +49586,12 @@ function Vignette($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Vignette = __esm({
+  "src/icons/phosphor/Vignette.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/VinylRecord.svelte
 import "svelte/internal/disclose-version";
@@ -42373,6 +49627,12 @@ function VinylRecord($$anchor, $$props) {
     () => rest
   ));
 }
+var init_VinylRecord = __esm({
+  "src/icons/phosphor/VinylRecord.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/VirtualReality.svelte
 import "svelte/internal/disclose-version";
@@ -42408,6 +49668,12 @@ function VirtualReality($$anchor, $$props) {
     () => rest
   ));
 }
+var init_VirtualReality = __esm({
+  "src/icons/phosphor/VirtualReality.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Virus.svelte
 import "svelte/internal/disclose-version";
@@ -42443,6 +49709,12 @@ function Virus($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Virus = __esm({
+  "src/icons/phosphor/Virus.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Voicemail.svelte
 import "svelte/internal/disclose-version";
@@ -42478,6 +49750,12 @@ function Voicemail($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Voicemail = __esm({
+  "src/icons/phosphor/Voicemail.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Volleyball.svelte
 import "svelte/internal/disclose-version";
@@ -42513,6 +49791,12 @@ function Volleyball($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Volleyball = __esm({
+  "src/icons/phosphor/Volleyball.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wall.svelte
 import "svelte/internal/disclose-version";
@@ -42548,6 +49832,12 @@ function Wall($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wall = __esm({
+  "src/icons/phosphor/Wall.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wallet.svelte
 import "svelte/internal/disclose-version";
@@ -42583,6 +49873,12 @@ function Wallet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wallet = __esm({
+  "src/icons/phosphor/Wallet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Warehouse.svelte
 import "svelte/internal/disclose-version";
@@ -42618,6 +49914,12 @@ function Warehouse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Warehouse = __esm({
+  "src/icons/phosphor/Warehouse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Warning.svelte
 import "svelte/internal/disclose-version";
@@ -42653,6 +49955,12 @@ function Warning($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Warning = __esm({
+  "src/icons/phosphor/Warning.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WarningCircle.svelte
 import "svelte/internal/disclose-version";
@@ -42688,6 +49996,12 @@ function WarningCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WarningCircle = __esm({
+  "src/icons/phosphor/WarningCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WarningDiamond.svelte
 import "svelte/internal/disclose-version";
@@ -42723,6 +50037,12 @@ function WarningDiamond($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WarningDiamond = __esm({
+  "src/icons/phosphor/WarningDiamond.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WarningOctagon.svelte
 import "svelte/internal/disclose-version";
@@ -42758,6 +50078,12 @@ function WarningOctagon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WarningOctagon = __esm({
+  "src/icons/phosphor/WarningOctagon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Watch.svelte
 import "svelte/internal/disclose-version";
@@ -42793,6 +50119,12 @@ function Watch($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Watch = __esm({
+  "src/icons/phosphor/Watch.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WaveSawtooth.svelte
 import "svelte/internal/disclose-version";
@@ -42828,6 +50160,12 @@ function WaveSawtooth($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WaveSawtooth = __esm({
+  "src/icons/phosphor/WaveSawtooth.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WaveSine.svelte
 import "svelte/internal/disclose-version";
@@ -42863,6 +50201,12 @@ function WaveSine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WaveSine = __esm({
+  "src/icons/phosphor/WaveSine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WaveSquare.svelte
 import "svelte/internal/disclose-version";
@@ -42898,6 +50242,12 @@ function WaveSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WaveSquare = __esm({
+  "src/icons/phosphor/WaveSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WaveTriangle.svelte
 import "svelte/internal/disclose-version";
@@ -42933,6 +50283,12 @@ function WaveTriangle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WaveTriangle = __esm({
+  "src/icons/phosphor/WaveTriangle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Waveform.svelte
 import "svelte/internal/disclose-version";
@@ -42968,6 +50324,12 @@ function Waveform($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Waveform = __esm({
+  "src/icons/phosphor/Waveform.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Waves.svelte
 import "svelte/internal/disclose-version";
@@ -43003,6 +50365,12 @@ function Waves($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Waves = __esm({
+  "src/icons/phosphor/Waves.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Webcam.svelte
 import "svelte/internal/disclose-version";
@@ -43038,6 +50406,12 @@ function Webcam($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Webcam = __esm({
+  "src/icons/phosphor/Webcam.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WebcamSlash.svelte
 import "svelte/internal/disclose-version";
@@ -43073,6 +50447,12 @@ function WebcamSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WebcamSlash = __esm({
+  "src/icons/phosphor/WebcamSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WebhooksLogo.svelte
 import "svelte/internal/disclose-version";
@@ -43108,6 +50488,12 @@ function WebhooksLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WebhooksLogo = __esm({
+  "src/icons/phosphor/WebhooksLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WechatLogo.svelte
 import "svelte/internal/disclose-version";
@@ -43143,6 +50529,12 @@ function WechatLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WechatLogo = __esm({
+  "src/icons/phosphor/WechatLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WhatsappLogo.svelte
 import "svelte/internal/disclose-version";
@@ -43178,6 +50570,12 @@ function WhatsappLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WhatsappLogo = __esm({
+  "src/icons/phosphor/WhatsappLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wheelchair.svelte
 import "svelte/internal/disclose-version";
@@ -43213,6 +50611,12 @@ function Wheelchair($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wheelchair = __esm({
+  "src/icons/phosphor/Wheelchair.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WheelchairMotion.svelte
 import "svelte/internal/disclose-version";
@@ -43248,6 +50652,12 @@ function WheelchairMotion($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WheelchairMotion = __esm({
+  "src/icons/phosphor/WheelchairMotion.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiHigh.svelte
 import "svelte/internal/disclose-version";
@@ -43283,6 +50693,12 @@ function WifiHigh($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiHigh = __esm({
+  "src/icons/phosphor/WifiHigh.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiLow.svelte
 import "svelte/internal/disclose-version";
@@ -43318,6 +50734,12 @@ function WifiLow($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiLow = __esm({
+  "src/icons/phosphor/WifiLow.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiMedium.svelte
 import "svelte/internal/disclose-version";
@@ -43353,6 +50775,12 @@ function WifiMedium($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiMedium = __esm({
+  "src/icons/phosphor/WifiMedium.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiNone.svelte
 import "svelte/internal/disclose-version";
@@ -43388,6 +50816,12 @@ function WifiNone($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiNone = __esm({
+  "src/icons/phosphor/WifiNone.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiSlash.svelte
 import "svelte/internal/disclose-version";
@@ -43423,6 +50857,12 @@ function WifiSlash($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiSlash = __esm({
+  "src/icons/phosphor/WifiSlash.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WifiX.svelte
 import "svelte/internal/disclose-version";
@@ -43458,6 +50898,12 @@ function WifiX($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WifiX = __esm({
+  "src/icons/phosphor/WifiX.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wind.svelte
 import "svelte/internal/disclose-version";
@@ -43493,6 +50939,12 @@ function Wind($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wind = __esm({
+  "src/icons/phosphor/Wind.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/WindowsLogo.svelte
 import "svelte/internal/disclose-version";
@@ -43528,6 +50980,12 @@ function WindowsLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_WindowsLogo = __esm({
+  "src/icons/phosphor/WindowsLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wine.svelte
 import "svelte/internal/disclose-version";
@@ -43563,6 +51021,12 @@ function Wine($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wine = __esm({
+  "src/icons/phosphor/Wine.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/Wrench.svelte
 import "svelte/internal/disclose-version";
@@ -43598,6 +51062,12 @@ function Wrench($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Wrench = __esm({
+  "src/icons/phosphor/Wrench.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/X.svelte
 import "svelte/internal/disclose-version";
@@ -43629,6 +51099,12 @@ function X($$anchor, $$props) {
     () => rest
   ));
 }
+var init_X = __esm({
+  "src/icons/phosphor/X.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/XCircle.svelte
 import "svelte/internal/disclose-version";
@@ -43664,6 +51140,12 @@ function XCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_XCircle = __esm({
+  "src/icons/phosphor/XCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/XSquare.svelte
 import "svelte/internal/disclose-version";
@@ -43699,6 +51181,12 @@ function XSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_XSquare = __esm({
+  "src/icons/phosphor/XSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/YinYang.svelte
 import "svelte/internal/disclose-version";
@@ -43734,6 +51222,12 @@ function YinYang($$anchor, $$props) {
     () => rest
   ));
 }
+var init_YinYang = __esm({
+  "src/icons/phosphor/YinYang.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/phosphor/YoutubeLogo.svelte
 import "svelte/internal/disclose-version";
@@ -43769,6 +51263,12 @@ function YoutubeLogo($$anchor, $$props) {
     () => rest
   ));
 }
+var init_YoutubeLogo = __esm({
+  "src/icons/phosphor/YoutubeLogo.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Ai.svelte
 import "svelte/internal/disclose-version";
@@ -43795,6 +51295,12 @@ function Ai($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Ai = __esm({
+  "src/icons/snowui/Ai.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowFall.svelte
 import "svelte/internal/disclose-version";
@@ -43825,6 +51331,12 @@ function ArrowFall($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowFall = __esm({
+  "src/icons/snowui/ArrowFall.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowLineDown.svelte
 import "svelte/internal/disclose-version";
@@ -43860,6 +51372,12 @@ function ArrowLineDown2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineDown2 = __esm({
+  "src/icons/snowui/ArrowLineDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowLineLeft.svelte
 import "svelte/internal/disclose-version";
@@ -43895,6 +51413,12 @@ function ArrowLineLeft2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineLeft2 = __esm({
+  "src/icons/snowui/ArrowLineLeft.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowLineRight.svelte
 import "svelte/internal/disclose-version";
@@ -43930,6 +51454,12 @@ function ArrowLineRight2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineRight2 = __esm({
+  "src/icons/snowui/ArrowLineRight.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowLineUp.svelte
 import "svelte/internal/disclose-version";
@@ -43965,6 +51495,12 @@ function ArrowLineUp2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineUp2 = __esm({
+  "src/icons/snowui/ArrowLineUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowLineUpDown.svelte
 import "svelte/internal/disclose-version";
@@ -43995,6 +51531,12 @@ function ArrowLineUpDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowLineUpDown = __esm({
+  "src/icons/snowui/ArrowLineUpDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowRise.svelte
 import "svelte/internal/disclose-version";
@@ -44025,6 +51567,12 @@ function ArrowRise($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowRise = __esm({
+  "src/icons/snowui/ArrowRise.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowsDown.svelte
 import "svelte/internal/disclose-version";
@@ -44055,6 +51603,12 @@ function ArrowsDown($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsDown = __esm({
+  "src/icons/snowui/ArrowsDown.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowsDownUp.svelte
 import "svelte/internal/disclose-version";
@@ -44085,6 +51639,12 @@ function ArrowsDownUp2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsDownUp2 = __esm({
+  "src/icons/snowui/ArrowsDownUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ArrowsUp.svelte
 import "svelte/internal/disclose-version";
@@ -44115,6 +51675,12 @@ function ArrowsUp($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ArrowsUp = __esm({
+  "src/icons/snowui/ArrowsUp.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Badge.svelte
 import "svelte/internal/disclose-version";
@@ -44145,6 +51711,12 @@ function Badge($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Badge = __esm({
+  "src/icons/snowui/Badge.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ChatDashed.svelte
 import "svelte/internal/disclose-version";
@@ -44175,6 +51747,12 @@ function ChatDashed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ChatDashed = __esm({
+  "src/icons/snowui/ChatDashed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/CheckboxFalse.svelte
 import "svelte/internal/disclose-version";
@@ -44205,6 +51783,12 @@ function CheckboxFalse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckboxFalse = __esm({
+  "src/icons/snowui/CheckboxFalse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/CheckboxMultiple.svelte
 import "svelte/internal/disclose-version";
@@ -44235,6 +51819,12 @@ function CheckboxMultiple($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckboxMultiple = __esm({
+  "src/icons/snowui/CheckboxMultiple.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/CheckboxTrue.svelte
 import "svelte/internal/disclose-version";
@@ -44265,6 +51855,12 @@ function CheckboxTrue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_CheckboxTrue = __esm({
+  "src/icons/snowui/CheckboxTrue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Chip.svelte
 import "svelte/internal/disclose-version";
@@ -44295,6 +51891,12 @@ function Chip($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Chip = __esm({
+  "src/icons/snowui/Chip.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Clipboard.svelte
 import "svelte/internal/disclose-version";
@@ -44330,6 +51932,12 @@ function Clipboard2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Clipboard2 = __esm({
+  "src/icons/snowui/Clipboard.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Close.svelte
 import "svelte/internal/disclose-version";
@@ -44360,6 +51968,12 @@ function Close($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Close = __esm({
+  "src/icons/snowui/Close.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Copy.svelte
 import "svelte/internal/disclose-version";
@@ -44395,6 +52009,12 @@ function Copy2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Copy2 = __esm({
+  "src/icons/snowui/Copy.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/DotCircle.svelte
 import "svelte/internal/disclose-version";
@@ -44426,6 +52046,12 @@ function DotCircle($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotCircle = __esm({
+  "src/icons/snowui/DotCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/DotSquare.svelte
 import "svelte/internal/disclose-version";
@@ -44457,6 +52083,12 @@ function DotSquare($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DotSquare = __esm({
+  "src/icons/snowui/DotSquare.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Explain.svelte
 import "svelte/internal/disclose-version";
@@ -44487,6 +52119,12 @@ function Explain($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Explain = __esm({
+  "src/icons/snowui/Explain.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/FourLeafClover.svelte
 import "svelte/internal/disclose-version";
@@ -44522,6 +52160,12 @@ function FourLeafClover($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FourLeafClover = __esm({
+  "src/icons/snowui/FourLeafClover.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/FourPointedStar.svelte
 import "svelte/internal/disclose-version";
@@ -44552,6 +52196,12 @@ function FourPointedStar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FourPointedStar = __esm({
+  "src/icons/snowui/FourPointedStar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Goto.svelte
 import "svelte/internal/disclose-version";
@@ -44582,6 +52232,12 @@ function Goto($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Goto = __esm({
+  "src/icons/snowui/Goto.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Help.svelte
 import "svelte/internal/disclose-version";
@@ -44612,6 +52268,12 @@ function Help($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Help = __esm({
+  "src/icons/snowui/Help.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/HorizontalScreen.svelte
 import "svelte/internal/disclose-version";
@@ -44642,6 +52304,12 @@ function HorizontalScreen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_HorizontalScreen = __esm({
+  "src/icons/snowui/HorizontalScreen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSet.svelte
 import "svelte/internal/disclose-version";
@@ -44677,6 +52345,12 @@ function IconSet($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSet = __esm({
+  "src/icons/snowui/IconSet.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize16.svelte
 import "svelte/internal/disclose-version";
@@ -44707,6 +52381,12 @@ function IconSize16($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize16 = __esm({
+  "src/icons/snowui/IconSize16.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize20.svelte
 import "svelte/internal/disclose-version";
@@ -44737,6 +52417,12 @@ function IconSize20($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize20 = __esm({
+  "src/icons/snowui/IconSize20.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize24.svelte
 import "svelte/internal/disclose-version";
@@ -44767,6 +52453,12 @@ function IconSize24($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize24 = __esm({
+  "src/icons/snowui/IconSize24.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize28.svelte
 import "svelte/internal/disclose-version";
@@ -44797,6 +52489,12 @@ function IconSize28($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize28 = __esm({
+  "src/icons/snowui/IconSize28.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize32.svelte
 import "svelte/internal/disclose-version";
@@ -44827,6 +52525,12 @@ function IconSize32($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize32 = __esm({
+  "src/icons/snowui/IconSize32.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize40.svelte
 import "svelte/internal/disclose-version";
@@ -44857,6 +52561,12 @@ function IconSize40($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize40 = __esm({
+  "src/icons/snowui/IconSize40.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize48.svelte
 import "svelte/internal/disclose-version";
@@ -44887,6 +52597,12 @@ function IconSize48($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize48 = __esm({
+  "src/icons/snowui/IconSize48.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/IconSize80.svelte
 import "svelte/internal/disclose-version";
@@ -44917,6 +52633,12 @@ function IconSize80($$anchor, $$props) {
     () => rest
   ));
 }
+var init_IconSize80 = __esm({
+  "src/icons/snowui/IconSize80.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ImageLoading.svelte
 import "svelte/internal/disclose-version";
@@ -44947,6 +52669,12 @@ function ImageLoading($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ImageLoading = __esm({
+  "src/icons/snowui/ImageLoading.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Line.svelte
 import "svelte/internal/disclose-version";
@@ -44977,6 +52705,12 @@ function Line($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Line = __esm({
+  "src/icons/snowui/Line.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Maximize.svelte
 import "svelte/internal/disclose-version";
@@ -45007,6 +52741,12 @@ function Maximize($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Maximize = __esm({
+  "src/icons/snowui/Maximize.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Minimize.svelte
 import "svelte/internal/disclose-version";
@@ -45037,6 +52777,12 @@ function Minimize($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Minimize = __esm({
+  "src/icons/snowui/Minimize.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/PayWave.svelte
 import "svelte/internal/disclose-version";
@@ -45067,6 +52813,12 @@ function PayWave($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PayWave = __esm({
+  "src/icons/snowui/PayWave.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/RadioFalse.svelte
 import "svelte/internal/disclose-version";
@@ -45097,6 +52849,12 @@ function RadioFalse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RadioFalse = __esm({
+  "src/icons/snowui/RadioFalse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/RadioTrue.svelte
 import "svelte/internal/disclose-version";
@@ -45127,6 +52885,12 @@ function RadioTrue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RadioTrue = __esm({
+  "src/icons/snowui/RadioTrue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/RadioTrueAlt.svelte
 import "svelte/internal/disclose-version";
@@ -45157,6 +52921,12 @@ function RadioTrueAlt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RadioTrueAlt = __esm({
+  "src/icons/snowui/RadioTrueAlt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rating1.svelte
 import "svelte/internal/disclose-version";
@@ -45187,6 +52957,12 @@ function Rating1($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rating1 = __esm({
+  "src/icons/snowui/Rating1.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rating2.svelte
 import "svelte/internal/disclose-version";
@@ -45217,6 +52993,12 @@ function Rating2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rating2 = __esm({
+  "src/icons/snowui/Rating2.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rating3.svelte
 import "svelte/internal/disclose-version";
@@ -45247,6 +53029,12 @@ function Rating3($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rating3 = __esm({
+  "src/icons/snowui/Rating3.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rating4.svelte
 import "svelte/internal/disclose-version";
@@ -45277,6 +53065,12 @@ function Rating4($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rating4 = __esm({
+  "src/icons/snowui/Rating4.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rating5.svelte
 import "svelte/internal/disclose-version";
@@ -45307,6 +53101,12 @@ function Rating5($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rating5 = __esm({
+  "src/icons/snowui/Rating5.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Repost.svelte
 import "svelte/internal/disclose-version";
@@ -45337,6 +53137,12 @@ function Repost($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Repost = __esm({
+  "src/icons/snowui/Repost.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Rightbar.svelte
 import "svelte/internal/disclose-version";
@@ -45367,6 +53173,12 @@ function Rightbar($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Rightbar = __esm({
+  "src/icons/snowui/Rightbar.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/RightbarMode.svelte
 import "svelte/internal/disclose-version";
@@ -45397,6 +53209,12 @@ function RightbarMode($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RightbarMode = __esm({
+  "src/icons/snowui/RightbarMode.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Round.svelte
 import "svelte/internal/disclose-version";
@@ -45427,6 +53245,12 @@ function Round($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Round = __esm({
+  "src/icons/snowui/Round.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/RoundedCorner.svelte
 import "svelte/internal/disclose-version";
@@ -45457,6 +53281,12 @@ function RoundedCorner($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RoundedCorner = __esm({
+  "src/icons/snowui/RoundedCorner.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Search.svelte
 import "svelte/internal/disclose-version";
@@ -45487,6 +53317,12 @@ function Search($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Search = __esm({
+  "src/icons/snowui/Search.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Selected.svelte
 import "svelte/internal/disclose-version";
@@ -45517,6 +53353,12 @@ function Selected($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Selected = __esm({
+  "src/icons/snowui/Selected.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/SnowIcon.svelte
 import "svelte/internal/disclose-version";
@@ -45547,6 +53389,12 @@ function SnowIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SnowIcon = __esm({
+  "src/icons/snowui/SnowIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/StarFour.svelte
 import "svelte/internal/disclose-version";
@@ -45577,6 +53425,12 @@ function StarFour2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StarFour2 = __esm({
+  "src/icons/snowui/StarFour.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Stars.svelte
 import "svelte/internal/disclose-version";
@@ -45608,6 +53462,12 @@ function Stars($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Stars = __esm({
+  "src/icons/snowui/Stars.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/StopAlt.svelte
 import "svelte/internal/disclose-version";
@@ -45638,6 +53498,12 @@ function StopAlt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StopAlt = __esm({
+  "src/icons/snowui/StopAlt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/StopSecondary.svelte
 import "svelte/internal/disclose-version";
@@ -45668,6 +53534,12 @@ function StopSecondary($$anchor, $$props) {
     () => rest
   ));
 }
+var init_StopSecondary = __esm({
+  "src/icons/snowui/StopSecondary.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/SwitchFalse.svelte
 import "svelte/internal/disclose-version";
@@ -45698,6 +53570,12 @@ function SwitchFalse($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SwitchFalse = __esm({
+  "src/icons/snowui/SwitchFalse.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/SwitchPoint.svelte
 import "svelte/internal/disclose-version";
@@ -45728,6 +53606,12 @@ function SwitchPoint($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SwitchPoint = __esm({
+  "src/icons/snowui/SwitchPoint.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/SwitchTrue.svelte
 import "svelte/internal/disclose-version";
@@ -45758,6 +53642,12 @@ function SwitchTrue($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SwitchTrue = __esm({
+  "src/icons/snowui/SwitchTrue.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/TextA.svelte
 import "svelte/internal/disclose-version";
@@ -45788,6 +53678,12 @@ function TextA($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TextA = __esm({
+  "src/icons/snowui/TextA.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/ThreeDots.svelte
 import "svelte/internal/disclose-version";
@@ -45818,6 +53714,12 @@ function ThreeDots($$anchor, $$props) {
     () => rest
   ));
 }
+var init_ThreeDots = __esm({
+  "src/icons/snowui/ThreeDots.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Variables.svelte
 import "svelte/internal/disclose-version";
@@ -45848,6 +53750,12 @@ function Variables($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Variables = __esm({
+  "src/icons/snowui/Variables.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/VerticalScreen.svelte
 import "svelte/internal/disclose-version";
@@ -45878,6 +53786,12 @@ function VerticalScreen($$anchor, $$props) {
     () => rest
   ));
 }
+var init_VerticalScreen = __esm({
+  "src/icons/snowui/VerticalScreen.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/Windowed.svelte
 import "svelte/internal/disclose-version";
@@ -45908,6 +53822,12 @@ function Windowed($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Windowed = __esm({
+  "src/icons/snowui/Windowed.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/snowui/XCircle.svelte
 import "svelte/internal/disclose-version";
@@ -45943,6 +53863,12 @@ function XCircle2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_XCircle2 = __esm({
+  "src/icons/snowui/XCircle.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/DefaultIcon.svelte
 import "svelte/internal/disclose-version";
@@ -45973,6 +53899,12 @@ function DefaultIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DefaultIcon = __esm({
+  "src/icons/special/DefaultIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/DocxIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46003,6 +53935,12 @@ function DocxIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_DocxIcon = __esm({
+  "src/icons/special/DocxIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/FormIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46033,6 +53971,12 @@ function FormIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_FormIcon = __esm({
+  "src/icons/special/FormIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/Notepad.svelte
 import "svelte/internal/disclose-version";
@@ -46063,6 +54007,12 @@ function Notepad2($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Notepad2 = __esm({
+  "src/icons/special/Notepad.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/OnenoteIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46093,6 +54043,12 @@ function OnenoteIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_OnenoteIcon = __esm({
+  "src/icons/special/OnenoteIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/PptIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46123,6 +54079,12 @@ function PptIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_PptIcon = __esm({
+  "src/icons/special/PptIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/RoundAlt.svelte
 import "svelte/internal/disclose-version";
@@ -46153,6 +54115,12 @@ function RoundAlt($$anchor, $$props) {
     () => rest
   ));
 }
+var init_RoundAlt = __esm({
+  "src/icons/special/RoundAlt.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/SearchIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46183,6 +54151,12 @@ function SearchIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_SearchIcon = __esm({
+  "src/icons/special/SearchIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/TxtIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46213,6 +54187,12 @@ function TxtIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_TxtIcon = __esm({
+  "src/icons/special/TxtIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/special/XlsxIcon.svelte
 import "svelte/internal/disclose-version";
@@ -46243,10 +54223,19 @@ function XlsxIcon($$anchor, $$props) {
     () => rest
   ));
 }
+var init_XlsxIcon = __esm({
+  "src/icons/special/XlsxIcon.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
 
 // src/icons/by-name.ts
-var _byCol = null;
-var _byDef = null;
+var by_name_exports = {};
+__export(by_name_exports, {
+  iconsByCollection: () => iconsByCollection,
+  iconsByDefault: () => iconsByDefault
+});
 function _ensure() {
   if (_byCol) return;
   _byCol = {
@@ -48912,44 +56901,1387 @@ function _ensure() {
     "youtube-logo": YoutubeLogo
   };
 }
-var iconsByCollection = new Proxy({}, {
-  get(_, prop1522) {
-    _ensure();
-    return _byCol[prop1522];
-  },
-  has(_, prop1522) {
-    _ensure();
-    return prop1522 in _byCol;
-  },
-  ownKeys() {
-    _ensure();
-    return Object.keys(_byCol);
-  },
-  getOwnPropertyDescriptor(_, prop1522) {
-    _ensure();
-    if (!(prop1522 in _byCol)) return void 0;
-    return { enumerable: true, configurable: true, value: _byCol[prop1522] };
-  }
-});
-var iconsByDefault = new Proxy({}, {
-  get(_, prop1522) {
-    _ensure();
-    return _byDef[prop1522];
-  },
-  has(_, prop1522) {
-    _ensure();
-    return prop1522 in _byDef;
-  },
-  ownKeys() {
-    _ensure();
-    return Object.keys(_byDef);
+var _byCol, _byDef, iconsByCollection, iconsByDefault;
+var init_by_name = __esm({
+  "src/icons/by-name.ts"() {
+    "use strict";
+    init_AddressBook();
+    init_AirTrafficControl();
+    init_Airplane();
+    init_AirplaneInFlight();
+    init_AirplaneLanding();
+    init_AirplaneTakeoff();
+    init_AirplaneTilt();
+    init_Airplay();
+    init_Alarm();
+    init_Alien();
+    init_AlignBottom();
+    init_AlignBottomSimple();
+    init_AlignCenterHorizontal();
+    init_AlignCenterHorizontalSimple();
+    init_AlignCenterVertical();
+    init_AlignCenterVerticalSimple();
+    init_AlignLeft();
+    init_AlignLeftSimple();
+    init_AlignRight();
+    init_AlignRightSimple();
+    init_AlignTop();
+    init_AlignTopSimple();
+    init_AmazonLogo();
+    init_Anchor();
+    init_AnchorSimple();
+    init_AndroidLogo();
+    init_AngularLogo();
+    init_Aperture();
+    init_AppStoreLogo();
+    init_AppWindow();
+    init_AppleLogo();
+    init_ApplePodcastsLogo();
+    init_Archive();
+    init_ArchiveBox();
+    init_ArchiveTray();
+    init_Armchair();
+    init_ArrowArcLeft();
+    init_ArrowArcRight();
+    init_ArrowBendDoubleUpLeft();
+    init_ArrowBendDoubleUpRight();
+    init_ArrowBendDownLeft();
+    init_ArrowBendDownRight();
+    init_ArrowBendLeftDown();
+    init_ArrowBendLeftUp();
+    init_ArrowBendRightDown();
+    init_ArrowBendRightUp();
+    init_ArrowBendUpLeft();
+    init_ArrowBendUpRight();
+    init_ArrowCircleDown();
+    init_ArrowCircleDownLeft();
+    init_ArrowCircleDownRight();
+    init_ArrowCircleLeft();
+    init_ArrowCircleRight();
+    init_ArrowCircleUp();
+    init_ArrowCircleUpLeft();
+    init_ArrowCircleUpRight();
+    init_ArrowClockwise();
+    init_ArrowCounterClockwise();
+    init_ArrowDown();
+    init_ArrowDownLeft();
+    init_ArrowDownRight();
+    init_ArrowElbowDownLeft();
+    init_ArrowElbowDownRight();
+    init_ArrowElbowLeft();
+    init_ArrowElbowLeftDown();
+    init_ArrowElbowLeftUp();
+    init_ArrowElbowRight();
+    init_ArrowElbowRightDown();
+    init_ArrowElbowRightUp();
+    init_ArrowElbowUpLeft();
+    init_ArrowElbowUpRight();
+    init_ArrowFatDown();
+    init_ArrowFatLeft();
+    init_ArrowFatLineDown();
+    init_ArrowFatLineLeft();
+    init_ArrowFatLineRight();
+    init_ArrowFatLineUp();
+    init_ArrowFatLinesDown();
+    init_ArrowFatLinesLeft();
+    init_ArrowFatLinesRight();
+    init_ArrowFatLinesUp();
+    init_ArrowFatRight();
+    init_ArrowFatUp();
+    init_ArrowLeft();
+    init_ArrowLineDown();
+    init_ArrowLineDownLeft();
+    init_ArrowLineDownRight();
+    init_ArrowLineLeft();
+    init_ArrowLineRight();
+    init_ArrowLineUp();
+    init_ArrowLineUpLeft();
+    init_ArrowLineUpRight();
+    init_ArrowRight();
+    init_ArrowSquareDown();
+    init_ArrowSquareDownLeft();
+    init_ArrowSquareDownRight();
+    init_ArrowSquareIn();
+    init_ArrowSquareLeft();
+    init_ArrowSquareOut();
+    init_ArrowSquareRight();
+    init_ArrowSquareUp();
+    init_ArrowSquareUpLeft();
+    init_ArrowSquareUpRight();
+    init_ArrowUDownLeft();
+    init_ArrowUDownRight();
+    init_ArrowULeftDown();
+    init_ArrowULeftUp();
+    init_ArrowURightDown();
+    init_ArrowURightUp();
+    init_ArrowUUpLeft();
+    init_ArrowUUpRight();
+    init_ArrowUp();
+    init_ArrowUpLeft();
+    init_ArrowUpRight();
+    init_ArrowsClockwise();
+    init_ArrowsCounterClockwise();
+    init_ArrowsDownUp();
+    init_ArrowsHorizontal();
+    init_ArrowsIn();
+    init_ArrowsInCardinal();
+    init_ArrowsInLineHorizontal();
+    init_ArrowsInLineVertical();
+    init_ArrowsInSimple();
+    init_ArrowsLeftRight();
+    init_ArrowsMerge();
+    init_ArrowsOut();
+    init_ArrowsOutCardinal();
+    init_ArrowsOutLineHorizontal();
+    init_ArrowsOutLineVertical();
+    init_ArrowsOutSimple();
+    init_ArrowsSplit();
+    init_ArrowsVertical();
+    init_Article();
+    init_ArticleMedium();
+    init_ArticleNyTimes();
+    init_Asterisk();
+    init_AsteriskSimple();
+    init_At();
+    init_Atom();
+    init_Baby();
+    init_Backpack();
+    init_Backspace();
+    init_Bag();
+    init_BagSimple();
+    init_Balloon();
+    init_Bandaids();
+    init_Bank();
+    init_Barbell();
+    init_Barcode();
+    init_Barricade();
+    init_Baseball();
+    init_BaseballCap();
+    init_Basket();
+    init_Basketball();
+    init_Bathtub();
+    init_BatteryCharging();
+    init_BatteryChargingVertical();
+    init_BatteryEmpty();
+    init_BatteryFull();
+    init_BatteryHigh();
+    init_BatteryLow();
+    init_BatteryMedium();
+    init_BatteryPlus();
+    init_BatteryPlusVertical();
+    init_BatteryVerticalEmpty();
+    init_BatteryVerticalFull();
+    init_BatteryVerticalHigh();
+    init_BatteryVerticalLow();
+    init_BatteryVerticalMedium();
+    init_BatteryWarning();
+    init_BatteryWarningVertical();
+    init_Bed();
+    init_BeerBottle();
+    init_BeerStein();
+    init_BehanceLogo();
+    init_Bell();
+    init_BellRinging();
+    init_BellSimple();
+    init_BellSimpleRinging();
+    init_BellSimpleSlash();
+    init_BellSimpleZ();
+    init_BellSlash();
+    init_BellZ();
+    init_BezierCurve();
+    init_Bicycle();
+    init_Binoculars();
+    init_Bird();
+    init_Bluetooth();
+    init_BluetoothConnected();
+    init_BluetoothSlash();
+    init_BluetoothX();
+    init_Boat();
+    init_Bone();
+    init_Book();
+    init_BookBookmark();
+    init_BookOpen();
+    init_BookOpenText();
+    init_Bookmark();
+    init_BookmarkSimple();
+    init_Bookmarks();
+    init_BookmarksSimple();
+    init_Books();
+    init_Boot();
+    init_BoundingBox();
+    init_BowlFood();
+    init_BracketsAngle();
+    init_BracketsCurly();
+    init_BracketsRound();
+    init_BracketsSquare();
+    init_Brain();
+    init_Brandy();
+    init_Bridge();
+    init_Briefcase();
+    init_BriefcaseMetal();
+    init_Broadcast();
+    init_Broom();
+    init_Browser();
+    init_Browsers();
+    init_Bug();
+    init_BugBeetle();
+    init_BugDroid();
+    init_Buildings();
+    init_Bus();
+    init_Butterfly();
+    init_Cactus();
+    init_Cake();
+    init_Calculator();
+    init_Calendar();
+    init_CalendarBlank();
+    init_CalendarCheck();
+    init_CalendarPlus();
+    init_CalendarX();
+    init_CallBell();
+    init_Camera();
+    init_CameraPlus();
+    init_CameraRotate();
+    init_CameraSlash();
+    init_Campfire();
+    init_Car();
+    init_CarProfile();
+    init_CarSimple();
+    init_Cardholder();
+    init_Cards();
+    init_CaretCircleDoubleDown();
+    init_CaretCircleDoubleLeft();
+    init_CaretCircleDoubleRight();
+    init_CaretCircleDoubleUp();
+    init_CaretCircleDown();
+    init_CaretCircleLeft();
+    init_CaretCircleRight();
+    init_CaretCircleUp();
+    init_CaretCircleUpDown();
+    init_CaretDoubleDown();
+    init_CaretDoubleLeft();
+    init_CaretDoubleRight();
+    init_CaretDoubleUp();
+    init_CaretDown();
+    init_CaretLeft();
+    init_CaretRight();
+    init_CaretUp();
+    init_CaretUpDown();
+    init_Carrot();
+    init_CassetteTape();
+    init_CastleTurret();
+    init_Cat();
+    init_CellSignalFull();
+    init_CellSignalHigh();
+    init_CellSignalLow();
+    init_CellSignalMedium();
+    init_CellSignalNone();
+    init_CellSignalSlash();
+    init_CellSignalX();
+    init_Certificate();
+    init_Chair();
+    init_Chalkboard();
+    init_ChalkboardSimple();
+    init_ChalkboardTeacher();
+    init_Champagne();
+    init_ChargingStation();
+    init_ChartBar();
+    init_ChartBarHorizontal();
+    init_ChartDonut();
+    init_ChartLine();
+    init_ChartLineDown();
+    init_ChartLineUp();
+    init_ChartPie();
+    init_ChartPieSlice();
+    init_ChartPolar();
+    init_ChartScatter();
+    init_Chat();
+    init_ChatCentered();
+    init_ChatCenteredDots();
+    init_ChatCenteredText();
+    init_ChatCircle();
+    init_ChatCircleDots();
+    init_ChatCircleText();
+    init_ChatDots();
+    init_ChatTeardrop();
+    init_ChatTeardropDots();
+    init_ChatTeardropText();
+    init_ChatText();
+    init_Chats();
+    init_ChatsCircle();
+    init_ChatsTeardrop();
+    init_Check();
+    init_CheckCircle();
+    init_CheckFat();
+    init_CheckSquare();
+    init_CheckSquareOffset();
+    init_Checks();
+    init_Church();
+    init_Circle();
+    init_CircleDashed();
+    init_CircleHalf();
+    init_CircleHalfTilt();
+    init_CircleNotch();
+    init_CirclesFour();
+    init_CirclesThree();
+    init_CirclesThreePlus();
+    init_Circuitry();
+    init_Clipboard();
+    init_ClipboardText();
+    init_Clock();
+    init_ClockAfternoon();
+    init_ClockClockwise();
+    init_ClockCountdown();
+    init_ClockCounterClockwise();
+    init_ClosedCaptioning();
+    init_Cloud();
+    init_CloudArrowDown();
+    init_CloudArrowUp();
+    init_CloudCheck();
+    init_CloudFog();
+    init_CloudLightning();
+    init_CloudMoon();
+    init_CloudRain();
+    init_CloudSlash();
+    init_CloudSnow();
+    init_CloudSun();
+    init_CloudWarning();
+    init_CloudX();
+    init_Club();
+    init_CoatHanger();
+    init_CodaLogo();
+    init_Code();
+    init_CodeBlock();
+    init_CodeSimple();
+    init_CodepenLogo();
+    init_CodesandboxLogo();
+    init_Coffee();
+    init_Coin();
+    init_CoinVertical();
+    init_Coins();
+    init_Columns();
+    init_Command();
+    init_Compass();
+    init_CompassOff();
+    init_CompassTool();
+    init_ComputerTower();
+    init_Confetti();
+    init_ContactlessPayment();
+    init_Control();
+    init_Cookie();
+    init_CookingPot();
+    init_Copy();
+    init_CopySimple();
+    init_Copyleft();
+    init_Copyright();
+    init_CornersIn();
+    init_CornersOut();
+    init_Couch();
+    init_Cpu();
+    init_CreditCard();
+    init_Crop();
+    init_Cross();
+    init_Crosshair();
+    init_CrosshairSimple();
+    init_Crown();
+    init_CrownSimple();
+    init_Cube();
+    init_CubeFocus();
+    init_CubeTransparent();
+    init_CurrencyBtc();
+    init_CurrencyCircleDollar();
+    init_CurrencyCny();
+    init_CurrencyDollar();
+    init_CurrencyDollarSimple();
+    init_CurrencyEth();
+    init_CurrencyEur();
+    init_CurrencyGbp();
+    init_CurrencyInr();
+    init_CurrencyJpy();
+    init_CurrencyKrw();
+    init_CurrencyKzt();
+    init_CurrencyNgn();
+    init_CurrencyRub();
+    init_Cursor();
+    init_CursorClick();
+    init_CursorText();
+    init_Cylinder();
+    init_Database();
+    init_Desktop();
+    init_DesktopTower();
+    init_Detective();
+    init_DevToLogo();
+    init_DeviceMobile();
+    init_DeviceMobileCamera();
+    init_DeviceMobileSpeaker();
+    init_DeviceTablet();
+    init_DeviceTabletCamera();
+    init_DeviceTabletSpeaker();
+    init_Devices();
+    init_Diamond();
+    init_DiamondsFour();
+    init_DiceFive();
+    init_DiceFour();
+    init_DiceOne();
+    init_DiceSix();
+    init_DiceThree();
+    init_DiceTwo();
+    init_Disc();
+    init_DiscordLogo();
+    init_Divide();
+    init_Dna();
+    init_Dog();
+    init_Door();
+    init_DoorOpen();
+    init_Dot();
+    init_DotOutline();
+    init_DotsNine();
+    init_DotsSix();
+    init_DotsSixVertical();
+    init_DotsThree();
+    init_DotsThreeCircle();
+    init_DotsThreeCircleVertical();
+    init_DotsThreeOutline();
+    init_DotsThreeOutlineVertical();
+    init_DotsThreeVertical();
+    init_Download();
+    init_DownloadSimple();
+    init_Dress();
+    init_DribbbleLogo();
+    init_Drop();
+    init_DropHalf();
+    init_DropHalfBottom();
+    init_DropboxLogo();
+    init_Ear();
+    init_EarSlash();
+    init_Egg();
+    init_EggCrack();
+    init_Eject();
+    init_EjectSimple();
+    init_Elevator();
+    init_Engine();
+    init_Envelope();
+    init_EnvelopeOpen();
+    init_EnvelopeSimple();
+    init_EnvelopeSimpleOpen();
+    init_Equalizer();
+    init_Equals();
+    init_Eraser();
+    init_EscalatorDown();
+    init_EscalatorUp();
+    init_Exam();
+    init_Exclude();
+    init_ExcludeSquare();
+    init_Export();
+    init_Eye();
+    init_EyeClosed();
+    init_EyeSlash();
+    init_Eyedropper();
+    init_EyedropperSample();
+    init_Eyeglasses();
+    init_FaceMask();
+    init_FacebookLogo();
+    init_Factory();
+    init_Faders();
+    init_FadersHorizontal();
+    init_Fan();
+    init_FastForward();
+    init_FastForwardCircle();
+    init_Feather();
+    init_FigmaLogo();
+    init_File();
+    init_FileArchive();
+    init_FileArrowDown();
+    init_FileArrowUp();
+    init_FileAudio();
+    init_FileCloud();
+    init_FileCode();
+    init_FileCss();
+    init_FileCsv();
+    init_FileDashed();
+    init_FileDoc();
+    init_FileHtml();
+    init_FileImage();
+    init_FileJpg();
+    init_FileJs();
+    init_FileJsx();
+    init_FileLock();
+    init_FileMinus();
+    init_FilePdf();
+    init_FilePlus();
+    init_FilePng();
+    init_FilePpt();
+    init_FileRs();
+    init_FileSearch();
+    init_FileSql();
+    init_FileSvg();
+    init_FileText();
+    init_FileTs();
+    init_FileTsx();
+    init_FileVideo();
+    init_FileVue();
+    init_FileX();
+    init_FileXls();
+    init_FileZip();
+    init_Files();
+    init_FilmReel();
+    init_FilmScript();
+    init_FilmSlate();
+    init_FilmStrip();
+    init_Fingerprint();
+    init_FingerprintSimple();
+    init_FinnTheHuman();
+    init_Fire();
+    init_FireExtinguisher();
+    init_FireSimple();
+    init_FirstAid();
+    init_FirstAidKit();
+    init_Fish();
+    init_FishSimple();
+    init_Flag();
+    init_FlagBanner();
+    init_FlagCheckered();
+    init_FlagPennant();
+    init_Flame();
+    init_Flashlight();
+    init_Flask();
+    init_FloppyDisk();
+    init_FloppyDiskBack();
+    init_FlowArrow();
+    init_Flower();
+    init_FlowerLotus();
+    init_FlowerTulip();
+    init_FlyingSaucer();
+    init_Folder();
+    init_FolderDashed();
+    init_FolderLock();
+    init_FolderMinus();
+    init_FolderNotch();
+    init_FolderNotchMinus();
+    init_FolderNotchOpen();
+    init_FolderNotchPlus();
+    init_FolderOpen();
+    init_FolderPlus();
+    init_FolderSimple();
+    init_FolderSimpleDashed();
+    init_FolderSimpleLock();
+    init_FolderSimpleMinus();
+    init_FolderSimplePlus();
+    init_FolderSimpleStar();
+    init_FolderSimpleUser();
+    init_FolderStar();
+    init_FolderUser();
+    init_Folders();
+    init_Football();
+    init_Footprints();
+    init_ForkKnife();
+    init_FrameCorners();
+    init_FramerLogo();
+    init_Function();
+    init_Funnel();
+    init_FunnelSimple();
+    init_GameController();
+    init_Garage();
+    init_GasCan();
+    init_GasPump();
+    init_Gauge();
+    init_Gavel();
+    init_Gear();
+    init_GearFine();
+    init_GearSix();
+    init_GenderFemale();
+    init_GenderIntersex();
+    init_GenderMale();
+    init_GenderNeuter();
+    init_GenderNonbinary();
+    init_GenderTransgender();
+    init_Ghost();
+    init_Gif();
+    init_Gift();
+    init_GitBranch();
+    init_GitCommit();
+    init_GitDiff();
+    init_GitFork();
+    init_GitMerge();
+    init_GitPullRequest();
+    init_GithubLogo();
+    init_GitlabLogo();
+    init_GitlabLogoSimple();
+    init_Globe();
+    init_GlobeHemisphereEast();
+    init_GlobeHemisphereWest();
+    init_GlobeSimple();
+    init_GlobeStand();
+    init_Goggles();
+    init_GoodreadsLogo();
+    init_GoogleCardboardLogo();
+    init_GoogleChromeLogo();
+    init_GoogleDriveLogo();
+    init_GoogleLogo();
+    init_GooglePhotosLogo();
+    init_GooglePlayLogo();
+    init_GooglePodcastsLogo();
+    init_Gradient();
+    init_GraduationCap();
+    init_Grains();
+    init_GrainsSlash();
+    init_Graph();
+    init_GridFour();
+    init_GridNine();
+    init_Guitar();
+    init_Hamburger();
+    init_Hammer();
+    init_Hand();
+    init_HandCoins();
+    init_HandEye();
+    init_HandFist();
+    init_HandGrabbing();
+    init_HandHeart();
+    init_HandPalm();
+    init_HandPointing();
+    init_HandSoap();
+    init_HandSwipeLeft();
+    init_HandSwipeRight();
+    init_HandTap();
+    init_HandWaving();
+    init_Handbag();
+    init_HandbagSimple();
+    init_HandsClapping();
+    init_HandsPraying();
+    init_Handshake();
+    init_HardDrive();
+    init_HardDrives();
+    init_Hash();
+    init_HashStraight();
+    init_Headlights();
+    init_Headphones();
+    init_Headset();
+    init_Heart();
+    init_HeartBreak();
+    init_HeartHalf();
+    init_HeartStraight();
+    init_HeartStraightBreak();
+    init_Heartbeat();
+    init_Hexagon();
+    init_HighHeel();
+    init_HighlighterCircle();
+    init_Hoodie();
+    init_Horse();
+    init_Hourglass();
+    init_HourglassHigh();
+    init_HourglassLow();
+    init_HourglassMedium();
+    init_HourglassSimple();
+    init_HourglassSimpleHigh();
+    init_HourglassSimpleLow();
+    init_HourglassSimpleMedium();
+    init_House();
+    init_HouseLine();
+    init_HouseSimple();
+    init_IceCream();
+    init_IdentificationBadge();
+    init_IdentificationCard();
+    init_Image();
+    init_ImageSquare();
+    init_Images();
+    init_ImagesSquare();
+    init_Infinity();
+    init_Info();
+    init_InstagramLogo();
+    init_Intersect();
+    init_IntersectSquare();
+    init_IntersectThree();
+    init_Jeep();
+    init_Kanban();
+    init_Key();
+    init_KeyReturn();
+    init_Keyboard();
+    init_Keyhole();
+    init_Knife();
+    init_Ladder();
+    init_LadderSimple();
+    init_Lamp();
+    init_Laptop();
+    init_Layout();
+    init_Leaf();
+    init_Lifebuoy();
+    init_Lightbulb();
+    init_LightbulbFilament();
+    init_Lighthouse();
+    init_Lightning();
+    init_LightningA();
+    init_LightningSlash();
+    init_LineSegment();
+    init_LineSegments();
+    init_Link();
+    init_LinkBreak();
+    init_LinkSimple();
+    init_LinkSimpleBreak();
+    init_LinkSimpleHorizontal();
+    init_LinkSimpleHorizontalBreak();
+    init_LinkedinLogo();
+    init_LinuxLogo();
+    init_List();
+    init_ListBullets();
+    init_ListChecks();
+    init_ListDashes();
+    init_ListMagnifyingGlass();
+    init_ListNumbers();
+    init_ListPlus();
+    init_Lock();
+    init_LockKey();
+    init_LockKeyOpen();
+    init_LockLaminated();
+    init_LockLaminatedOpen();
+    init_LockOpen();
+    init_LockSimple();
+    init_LockSimpleOpen();
+    init_Lockers();
+    init_MagicWand();
+    init_Magnet();
+    init_MagnetStraight();
+    init_MagnifyingGlass();
+    init_MagnifyingGlassMinus();
+    init_MagnifyingGlassPlus();
+    init_MapPin();
+    init_MapPinLine();
+    init_MapTrifold();
+    init_MarkerCircle();
+    init_Martini();
+    init_MaskHappy();
+    init_MaskSad();
+    init_MathOperations();
+    init_Medal();
+    init_MedalMilitary();
+    init_MediumLogo();
+    init_Megaphone();
+    init_MegaphoneSimple();
+    init_MessengerLogo();
+    init_MetaLogo();
+    init_Metronome();
+    init_Microphone();
+    init_MicrophoneSlash();
+    init_MicrophoneStage();
+    init_MicrosoftExcelLogo();
+    init_MicrosoftOutlookLogo();
+    init_MicrosoftPowerpointLogo();
+    init_MicrosoftTeamsLogo();
+    init_MicrosoftWordLogo();
+    init_Minus();
+    init_MinusCircle();
+    init_MinusSquare();
+    init_Money();
+    init_Monitor();
+    init_MonitorPlay();
+    init_Moon();
+    init_MoonStars();
+    init_Moped();
+    init_MopedFront();
+    init_Mosque();
+    init_Motorcycle();
+    init_Mountains();
+    init_Mouse();
+    init_MouseSimple();
+    init_MusicNote();
+    init_MusicNoteSimple();
+    init_MusicNotes();
+    init_MusicNotesPlus();
+    init_MusicNotesSimple();
+    init_NavigationArrow();
+    init_Needle();
+    init_Newspaper();
+    init_NewspaperClipping();
+    init_Notches();
+    init_Note();
+    init_NoteBlank();
+    init_NotePencil();
+    init_Notebook();
+    init_Notepad();
+    init_Notification();
+    init_NotionLogo();
+    init_NumberCircleEight();
+    init_NumberCircleFive();
+    init_NumberCircleFour();
+    init_NumberCircleNine();
+    init_NumberCircleOne();
+    init_NumberCircleSeven();
+    init_NumberCircleSix();
+    init_NumberCircleThree();
+    init_NumberCircleTwo();
+    init_NumberCircleZero();
+    init_NumberEight();
+    init_NumberFive();
+    init_NumberFour();
+    init_NumberNine();
+    init_NumberOne();
+    init_NumberSeven();
+    init_NumberSix();
+    init_NumberSquareEight();
+    init_NumberSquareFive();
+    init_NumberSquareFour();
+    init_NumberSquareNine();
+    init_NumberSquareOne();
+    init_NumberSquareSeven();
+    init_NumberSquareSix();
+    init_NumberSquareThree();
+    init_NumberSquareTwo();
+    init_NumberSquareZero();
+    init_NumberThree();
+    init_NumberTwo();
+    init_NumberZero();
+    init_Nut();
+    init_NyTimesLogo();
+    init_Octagon();
+    init_OfficeChair();
+    init_Option();
+    init_OrangeSlice();
+    init_Package();
+    init_PaintBrush();
+    init_PaintBrushBroad();
+    init_PaintBrushHousehold();
+    init_PaintBucket();
+    init_PaintRoller();
+    init_Palette();
+    init_Pants();
+    init_PaperPlane();
+    init_PaperPlaneRight();
+    init_PaperPlaneTilt();
+    init_Paperclip();
+    init_PaperclipHorizontal();
+    init_Parachute();
+    init_Paragraph();
+    init_Parallelogram();
+    init_Park();
+    init_Password();
+    init_Path();
+    init_PatreonLogo();
+    init_Pause();
+    init_PauseCircle();
+    init_PawPrint();
+    init_PaypalLogo();
+    init_Peace();
+    init_Pen();
+    init_PenNib();
+    init_PenNibStraight();
+    init_Pencil();
+    init_PencilCircle();
+    init_PencilLine();
+    init_PencilSimple();
+    init_PencilSimpleLine();
+    init_PencilSimpleSlash();
+    init_PencilSlash();
+    init_Pentagram();
+    init_Pepper();
+    init_Percent();
+    init_Person();
+    init_PersonArmsSpread();
+    init_PersonSimple();
+    init_PersonSimpleBike();
+    init_PersonSimpleRun();
+    init_PersonSimpleThrow();
+    init_PersonSimpleWalk();
+    init_Perspective();
+    init_Phone();
+    init_PhoneCall();
+    init_PhoneDisconnect();
+    init_PhoneIncoming();
+    init_PhoneOutgoing();
+    init_PhonePlus();
+    init_PhoneSlash();
+    init_PhoneX();
+    init_PhosphorLogo();
+    init_Pi();
+    init_PianoKeys();
+    init_PictureInPicture();
+    init_PiggyBank();
+    init_Pill();
+    init_PinterestLogo();
+    init_Pinwheel();
+    init_Pizza();
+    init_Placeholder();
+    init_Planet();
+    init_Plant();
+    init_Play();
+    init_PlayCircle();
+    init_PlayPause();
+    init_Playlist();
+    init_Plug();
+    init_PlugCharging();
+    init_Plugs();
+    init_PlugsConnected();
+    init_Plus();
+    init_PlusCircle();
+    init_PlusMinus();
+    init_PlusSquare();
+    init_PokerChip();
+    init_PoliceCar();
+    init_Polygon();
+    init_Popcorn();
+    init_PottedPlant();
+    init_Power();
+    init_Prescription();
+    init_Presentation();
+    init_PresentationChart();
+    init_Printer();
+    init_Prohibit();
+    init_ProhibitInset();
+    init_ProjectorScreen();
+    init_ProjectorScreenChart();
+    init_Pulse();
+    init_PushPin();
+    init_PushPinSimple();
+    init_PushPinSimpleSlash();
+    init_PushPinSlash();
+    init_PuzzlePiece();
+    init_QrCode();
+    init_Question();
+    init_Queue();
+    init_Quotes();
+    init_Radical();
+    init_Radio();
+    init_RadioButton();
+    init_Radioactive();
+    init_Rainbow();
+    init_RainbowCloud();
+    init_ReadCvLogo();
+    init_Receipt();
+    init_ReceiptX();
+    init_Record();
+    init_Rectangle();
+    init_Recycle();
+    init_RedditLogo();
+    init_Repeat();
+    init_RepeatOnce();
+    init_Rewind();
+    init_RewindCircle();
+    init_RoadHorizon();
+    init_Robot();
+    init_Rocket();
+    init_RocketLaunch();
+    init_Rows();
+    init_Rss();
+    init_RssSimple();
+    init_Rug();
+    init_Ruler();
+    init_Scales();
+    init_Scan();
+    init_Scissors();
+    init_Scooter();
+    init_Screencast();
+    init_ScribbleLoop();
+    init_Scroll();
+    init_Seal();
+    init_SealCheck();
+    init_SealQuestion();
+    init_SealWarning();
+    init_Selection();
+    init_SelectionAll();
+    init_SelectionBackground();
+    init_SelectionForeground();
+    init_SelectionInverse();
+    init_SelectionPlus();
+    init_SelectionSlash();
+    init_Shapes();
+    init_Share();
+    init_ShareFat();
+    init_ShareNetwork();
+    init_Shield();
+    init_ShieldCheck();
+    init_ShieldCheckered();
+    init_ShieldChevron();
+    init_ShieldPlus();
+    init_ShieldSlash();
+    init_ShieldStar();
+    init_ShieldWarning();
+    init_ShirtFolded();
+    init_ShootingStar();
+    init_ShoppingBag();
+    init_ShoppingBagOpen();
+    init_ShoppingCart();
+    init_ShoppingCartSimple();
+    init_Shower();
+    init_Shrimp();
+    init_Shuffle();
+    init_ShuffleAngular();
+    init_ShuffleSimple();
+    init_Sidebar();
+    init_SidebarSimple();
+    init_Sigma();
+    init_SignIn();
+    init_SignOut();
+    init_Signature();
+    init_Signpost();
+    init_SimCard();
+    init_Siren();
+    init_SketchLogo();
+    init_SkipBack();
+    init_SkipBackCircle();
+    init_SkipForward();
+    init_SkipForwardCircle();
+    init_Skull();
+    init_SlackLogo();
+    init_Sliders();
+    init_SlidersHorizontal();
+    init_Slideshow();
+    init_Smiley();
+    init_SmileyAngry();
+    init_SmileyBlank();
+    init_SmileyMeh();
+    init_SmileyNervous();
+    init_SmileySad();
+    init_SmileySticker();
+    init_SmileyWink();
+    init_SmileyXEyes();
+    init_SnapchatLogo();
+    init_Sneaker();
+    init_SneakerMove();
+    init_Snowflake();
+    init_SoccerBall();
+    init_SortAscending();
+    init_SortDescending();
+    init_SoundcloudLogo();
+    init_Spade();
+    init_Sparkle();
+    init_SpeakerHifi();
+    init_SpeakerHigh();
+    init_SpeakerLow();
+    init_SpeakerNone();
+    init_SpeakerSimpleHigh();
+    init_SpeakerSimpleLow();
+    init_SpeakerSimpleNone();
+    init_SpeakerSimpleSlash();
+    init_SpeakerSimpleX();
+    init_SpeakerSlash();
+    init_SpeakerX();
+    init_Spinner();
+    init_SpinnerGap();
+    init_Spiral();
+    init_SplitHorizontal();
+    init_SplitVertical();
+    init_SpotifyLogo();
+    init_Square();
+    init_SquareHalf();
+    init_SquareHalfBottom();
+    init_SquareLogo();
+    init_SquareSplitHorizontal();
+    init_SquareSplitVertical();
+    init_SquaresFour();
+    init_Stack();
+    init_StackOverflowLogo();
+    init_StackSimple();
+    init_Stairs();
+    init_Stamp();
+    init_Star();
+    init_StarAndCrescent();
+    init_StarFour();
+    init_StarHalf();
+    init_StarOfDavid();
+    init_SteeringWheel();
+    init_Steps();
+    init_Stethoscope();
+    init_Sticker();
+    init_Stool();
+    init_Stop();
+    init_StopCircle();
+    init_Storefront();
+    init_Strategy();
+    init_StripeLogo();
+    init_Student();
+    init_Subtitles();
+    init_Subtract();
+    init_SubtractSquare();
+    init_Suitcase();
+    init_SuitcaseRolling();
+    init_SuitcaseSimple();
+    init_Sun();
+    init_SunDim();
+    init_SunHorizon();
+    init_Sunglasses();
+    init_Swap();
+    init_Swatches();
+    init_SwimmingPool();
+    init_Sword();
+    init_Synagogue();
+    init_Syringe();
+    init_TShirt();
+    init_Table();
+    init_Tabs();
+    init_Tag();
+    init_TagChevron();
+    init_TagSimple();
+    init_Target();
+    init_Taxi();
+    init_TelegramLogo();
+    init_Television();
+    init_TelevisionSimple();
+    init_TennisBall();
+    init_Tent();
+    init_Terminal();
+    init_TerminalWindow();
+    init_TestTube();
+    init_TextAUnderline();
+    init_TextAa();
+    init_TextAlignCenter();
+    init_TextAlignJustify();
+    init_TextAlignLeft();
+    init_TextAlignRight();
+    init_TextB();
+    init_TextColumns();
+    init_TextH();
+    init_TextHFive();
+    init_TextHFour();
+    init_TextHOne();
+    init_TextHSix();
+    init_TextHThree();
+    init_TextHTwo();
+    init_TextIndent();
+    init_TextItalic();
+    init_TextOutdent();
+    init_TextStrikethrough();
+    init_TextT();
+    init_TextUnderline();
+    init_Textbox();
+    init_Thermometer();
+    init_ThermometerCold();
+    init_ThermometerHot();
+    init_ThermometerSimple();
+    init_ThumbsDown();
+    init_ThumbsUp();
+    init_Ticket();
+    init_TidalLogo();
+    init_TiktokLogo();
+    init_Timer();
+    init_Tipi();
+    init_ToggleLeft();
+    init_ToggleRight();
+    init_Toilet();
+    init_ToiletPaper();
+    init_Toolbox();
+    init_Tooth();
+    init_Tote();
+    init_ToteSimple();
+    init_Trademark();
+    init_TrademarkRegistered();
+    init_TrafficCone();
+    init_TrafficSign();
+    init_TrafficSignal();
+    init_Train();
+    init_TrainRegional();
+    init_TrainSimple();
+    init_Tram();
+    init_Translate();
+    init_Trash();
+    init_TrashSimple();
+    init_Tray();
+    init_Tree();
+    init_TreeEvergreen();
+    init_TreePalm();
+    init_TreeStructure();
+    init_TrendDown();
+    init_TrendUp();
+    init_Triangle();
+    init_Trophy();
+    init_Truck();
+    init_TwitchLogo();
+    init_TwitterLogo();
+    init_Umbrella();
+    init_UmbrellaSimple();
+    init_Unite();
+    init_UniteSquare();
+    init_Upload();
+    init_UploadSimple();
+    init_Usb();
+    init_User();
+    init_UserCircle();
+    init_UserCircleGear();
+    init_UserCircleMinus();
+    init_UserCirclePlus();
+    init_UserFocus();
+    init_UserGear();
+    init_UserList();
+    init_UserMinus();
+    init_UserPlus();
+    init_UserRectangle();
+    init_UserSquare();
+    init_UserSwitch();
+    init_Users();
+    init_UsersFour();
+    init_UsersThree();
+    init_Van();
+    init_Vault();
+    init_Vibrate();
+    init_Video();
+    init_VideoCamera();
+    init_VideoCameraSlash();
+    init_Vignette();
+    init_VinylRecord();
+    init_VirtualReality();
+    init_Virus();
+    init_Voicemail();
+    init_Volleyball();
+    init_Wall();
+    init_Wallet();
+    init_Warehouse();
+    init_Warning();
+    init_WarningCircle();
+    init_WarningDiamond();
+    init_WarningOctagon();
+    init_Watch();
+    init_WaveSawtooth();
+    init_WaveSine();
+    init_WaveSquare();
+    init_WaveTriangle();
+    init_Waveform();
+    init_Waves();
+    init_Webcam();
+    init_WebcamSlash();
+    init_WebhooksLogo();
+    init_WechatLogo();
+    init_WhatsappLogo();
+    init_Wheelchair();
+    init_WheelchairMotion();
+    init_WifiHigh();
+    init_WifiLow();
+    init_WifiMedium();
+    init_WifiNone();
+    init_WifiSlash();
+    init_WifiX();
+    init_Wind();
+    init_WindowsLogo();
+    init_Wine();
+    init_Wrench();
+    init_X();
+    init_XCircle();
+    init_XSquare();
+    init_YinYang();
+    init_YoutubeLogo();
+    init_Add();
+    init_Ai();
+    init_ArrowFall();
+    init_ArrowLineDown2();
+    init_ArrowLineLeft2();
+    init_ArrowLineRight2();
+    init_ArrowLineUp2();
+    init_ArrowLineUpDown();
+    init_ArrowRise();
+    init_ArrowsDown();
+    init_ArrowsDownUp2();
+    init_ArrowsUp();
+    init_Badge();
+    init_ChatDashed();
+    init_CheckboxFalse();
+    init_CheckboxMultiple();
+    init_CheckboxTrue();
+    init_Chip();
+    init_Clipboard2();
+    init_Close();
+    init_Copy2();
+    init_DotCircle();
+    init_DotSquare();
+    init_Explain();
+    init_FourLeafClover();
+    init_FourPointedStar();
+    init_Goto();
+    init_Help();
+    init_HorizontalScreen();
+    init_IconSet();
+    init_IconSize16();
+    init_IconSize20();
+    init_IconSize24();
+    init_IconSize28();
+    init_IconSize32();
+    init_IconSize40();
+    init_IconSize48();
+    init_IconSize80();
+    init_ImageLoading();
+    init_Line();
+    init_Maximize();
+    init_Minimize();
+    init_PayWave();
+    init_RadioFalse();
+    init_RadioTrue();
+    init_RadioTrueAlt();
+    init_Rating1();
+    init_Rating2();
+    init_Rating3();
+    init_Rating4();
+    init_Rating5();
+    init_Repost();
+    init_Rightbar();
+    init_RightbarMode();
+    init_Round();
+    init_RoundedCorner();
+    init_Search();
+    init_Selected();
+    init_SnowIcon();
+    init_StarFour2();
+    init_Stars();
+    init_StopAlt();
+    init_StopSecondary();
+    init_SwitchFalse();
+    init_SwitchPoint();
+    init_SwitchTrue();
+    init_TextA();
+    init_ThreeDots();
+    init_Variables();
+    init_VerticalScreen();
+    init_Windowed();
+    init_XCircle2();
+    init_DefaultIcon();
+    init_DocxIcon();
+    init_FormIcon();
+    init_Notepad2();
+    init_OnenoteIcon();
+    init_PptIcon();
+    init_RoundAlt();
+    init_SearchIcon();
+    init_TxtIcon();
+    init_XlsxIcon();
+    _byCol = null;
+    _byDef = null;
+    iconsByCollection = new Proxy({}, {
+      get(_, prop1522) {
+        _ensure();
+        return _byCol[prop1522];
+      },
+      has(_, prop1522) {
+        _ensure();
+        return prop1522 in _byCol;
+      },
+      ownKeys() {
+        _ensure();
+        return Object.keys(_byCol);
+      },
+      getOwnPropertyDescriptor(_, prop1522) {
+        _ensure();
+        if (!(prop1522 in _byCol)) return void 0;
+        return { enumerable: true, configurable: true, value: _byCol[prop1522] };
+      }
+    });
+    iconsByDefault = new Proxy({}, {
+      get(_, prop1522) {
+        _ensure();
+        return _byDef[prop1522];
+      },
+      has(_, prop1522) {
+        _ensure();
+        return prop1522 in _byDef;
+      },
+      ownKeys() {
+        _ensure();
+        return Object.keys(_byDef);
+      }
+    });
   }
 });
 
 // src/lib/IconBase.svelte
-var root_3 = $1331.from_svg(`<svg><!></svg>`);
+import "svelte/internal/disclose-version";
+import * as $1331 from "svelte/internal/client";
+import { getContext } from "svelte";
 function IconBase($$anchor, $$props) {
   $1331.push($$props, true);
+  let registryPromise;
+  let loadedRegistry = $1331.state(null);
   const ctx = getContext(RESOURCE_ICON_CONTEXT_KEY);
   let color = $1331.prop($$props, "color", 3, "currentColor"), className = $1331.prop($$props, "class", 3, ""), viewBox = $1331.prop($$props, "viewBox", 3, "0 0 256 256"), bypassSwitch = $1331.prop($$props, "bypassSwitch", 3, false), restProps = $1331.rest_props($$props, [
     "$$slots",
@@ -48971,13 +58303,20 @@ function IconBase($$anchor, $$props) {
       ctx.registerChildSize($$props.size);
     }
   });
+  $1331.user_effect(() => {
+    if (bypassSwitch() || !$$props.meta || !ctx?.replace || $1331.get(loadedRegistry)) return;
+    registryPromise ?? (registryPromise = Promise.resolve().then(() => (init_by_name(), by_name_exports)).then((module) => module.iconsByCollection));
+    void registryPromise.then((registry) => {
+      $1331.set(loadedRegistry, registry, true);
+    });
+  });
   let switched = $1331.derived(() => {
-    if (bypassSwitch() || !$$props.meta || !ctx?.replace) return null;
-    return resolveSwitch($$props.meta, ctx.replace, iconsByCollection);
+    if (bypassSwitch() || !$$props.meta || !ctx?.replace || !$1331.get(loadedRegistry)) return null;
+    return resolveSwitch($$props.meta, ctx.replace, $1331.get(loadedRegistry));
   });
   let SwitchedComponent = $1331.derived(() => {
-    if (!$1331.get(switched)) return null;
-    const c = iconsByCollection[$1331.get(switched).collection]?.[$1331.get(switched).iconName];
+    if (!$1331.get(switched) || !$1331.get(loadedRegistry)) return null;
+    const c = $1331.get(loadedRegistry)[$1331.get(switched).collection]?.[$1331.get(switched).iconName];
     return c ?? null;
   });
   let content = $1331.derived(() => $$props.weights && $$props.weights[$1331.get(weight)] || $$props.weights?.regular || "");
@@ -49055,8 +58394,19 @@ function IconBase($$anchor, $$props) {
   $1331.append($$anchor, fragment);
   $1331.pop();
 }
+var root_3;
+var init_IconBase = __esm({
+  "src/lib/IconBase.svelte"() {
+    "use strict";
+    init_types();
+    init_switch_resolver();
+    root_3 = $1331.from_svg(`<svg><!></svg>`);
+  }
+});
 
 // src/icons/snowui/Add.svelte
+import "svelte/internal/disclose-version";
+import * as $1332 from "svelte/internal/client";
 function Add($$anchor, $$props) {
   const weights = {
     "regular": `<path fill="currentColor" d="M17 5a1 1 0 1 0-2 0v10H5a1 1 0 1 0 0 2h10v10a1 1 0 1 0 2 0V17h10a1 1 0 1 0 0-2H17z"/>`
@@ -49079,6 +58429,1335 @@ function Add($$anchor, $$props) {
     () => rest
   ));
 }
+var init_Add = __esm({
+  "src/icons/snowui/Add.svelte"() {
+    "use strict";
+    init_IconBase();
+  }
+});
+
+// src/icons/index.ts
+init_Add();
+init_Ai();
+init_ArrowFall();
+init_ArrowLineDown2();
+init_ArrowLineLeft2();
+init_ArrowLineRight2();
+init_ArrowLineUp2();
+init_ArrowLineUpDown();
+init_ArrowRise();
+init_ArrowsDown();
+init_ArrowsDownUp2();
+init_ArrowsUp();
+init_Badge();
+init_ChatDashed();
+init_CheckboxFalse();
+init_CheckboxMultiple();
+init_CheckboxTrue();
+init_Chip();
+init_Clipboard2();
+init_Close();
+init_Copy2();
+init_DotCircle();
+init_DotSquare();
+init_Explain();
+init_FourLeafClover();
+init_FourPointedStar();
+init_Goto();
+init_Help();
+init_HorizontalScreen();
+init_IconSet();
+init_IconSize16();
+init_IconSize20();
+init_IconSize24();
+init_IconSize28();
+init_IconSize32();
+init_IconSize40();
+init_IconSize48();
+init_IconSize80();
+init_ImageLoading();
+init_Line();
+init_Maximize();
+init_Minimize();
+init_PayWave();
+init_RadioFalse();
+init_RadioTrue();
+init_RadioTrueAlt();
+init_Rating1();
+init_Rating2();
+init_Rating3();
+init_Rating4();
+init_Rating5();
+init_Repost();
+init_Rightbar();
+init_RightbarMode();
+init_Round();
+init_RoundedCorner();
+init_Search();
+init_Selected();
+init_SnowIcon();
+init_StarFour2();
+init_Stars();
+init_StopAlt();
+init_StopSecondary();
+init_SwitchFalse();
+init_SwitchPoint();
+init_SwitchTrue();
+init_TextA();
+init_ThreeDots();
+init_Variables();
+init_VerticalScreen();
+init_Windowed();
+init_XCircle2();
+init_AddressBook();
+init_Airplane();
+init_AirplaneInFlight();
+init_AirplaneLanding();
+init_AirplaneTakeoff();
+init_AirplaneTilt();
+init_Airplay();
+init_AirTrafficControl();
+init_Alarm();
+init_Alien();
+init_AlignBottom();
+init_AlignBottomSimple();
+init_AlignCenterHorizontal();
+init_AlignCenterHorizontalSimple();
+init_AlignCenterVertical();
+init_AlignCenterVerticalSimple();
+init_AlignLeft();
+init_AlignLeftSimple();
+init_AlignRight();
+init_AlignRightSimple();
+init_AlignTop();
+init_AlignTopSimple();
+init_AmazonLogo();
+init_Anchor();
+init_AnchorSimple();
+init_AndroidLogo();
+init_AngularLogo();
+init_Aperture();
+init_AppleLogo();
+init_ApplePodcastsLogo();
+init_AppStoreLogo();
+init_AppWindow();
+init_Archive();
+init_ArchiveBox();
+init_ArchiveTray();
+init_Armchair();
+init_ArrowArcLeft();
+init_ArrowArcRight();
+init_ArrowBendDoubleUpLeft();
+init_ArrowBendDoubleUpRight();
+init_ArrowBendDownLeft();
+init_ArrowBendDownRight();
+init_ArrowBendLeftDown();
+init_ArrowBendLeftUp();
+init_ArrowBendRightDown();
+init_ArrowBendRightUp();
+init_ArrowBendUpLeft();
+init_ArrowBendUpRight();
+init_ArrowCircleDown();
+init_ArrowCircleDownLeft();
+init_ArrowCircleDownRight();
+init_ArrowCircleLeft();
+init_ArrowCircleRight();
+init_ArrowCircleUp();
+init_ArrowCircleUpLeft();
+init_ArrowCircleUpRight();
+init_ArrowClockwise();
+init_ArrowCounterClockwise();
+init_ArrowDown();
+init_ArrowDownLeft();
+init_ArrowDownRight();
+init_ArrowElbowDownLeft();
+init_ArrowElbowDownRight();
+init_ArrowElbowLeft();
+init_ArrowElbowLeftDown();
+init_ArrowElbowLeftUp();
+init_ArrowElbowRight();
+init_ArrowElbowRightDown();
+init_ArrowElbowRightUp();
+init_ArrowElbowUpLeft();
+init_ArrowElbowUpRight();
+init_ArrowFatDown();
+init_ArrowFatLeft();
+init_ArrowFatLineDown();
+init_ArrowFatLineLeft();
+init_ArrowFatLineRight();
+init_ArrowFatLinesDown();
+init_ArrowFatLinesLeft();
+init_ArrowFatLinesRight();
+init_ArrowFatLinesUp();
+init_ArrowFatLineUp();
+init_ArrowFatRight();
+init_ArrowFatUp();
+init_ArrowLeft();
+init_ArrowLineDownLeft();
+init_ArrowLineDownRight();
+init_ArrowLineUpLeft();
+init_ArrowLineUpRight();
+init_ArrowRight();
+init_ArrowsClockwise();
+init_ArrowsCounterClockwise();
+init_ArrowsHorizontal();
+init_ArrowsIn();
+init_ArrowsInCardinal();
+init_ArrowsInLineHorizontal();
+init_ArrowsInLineVertical();
+init_ArrowsInSimple();
+init_ArrowsLeftRight();
+init_ArrowsMerge();
+init_ArrowsOut();
+init_ArrowsOutCardinal();
+init_ArrowsOutLineHorizontal();
+init_ArrowsOutLineVertical();
+init_ArrowsOutSimple();
+init_ArrowSquareDown();
+init_ArrowSquareDownLeft();
+init_ArrowSquareDownRight();
+init_ArrowSquareIn();
+init_ArrowSquareLeft();
+init_ArrowSquareOut();
+init_ArrowSquareRight();
+init_ArrowSquareUp();
+init_ArrowSquareUpLeft();
+init_ArrowSquareUpRight();
+init_ArrowsSplit();
+init_ArrowsVertical();
+init_ArrowUDownLeft();
+init_ArrowUDownRight();
+init_ArrowULeftDown();
+init_ArrowULeftUp();
+init_ArrowUp();
+init_ArrowUpLeft();
+init_ArrowUpRight();
+init_ArrowURightDown();
+init_ArrowURightUp();
+init_ArrowUUpLeft();
+init_ArrowUUpRight();
+init_Article();
+init_ArticleMedium();
+init_ArticleNyTimes();
+init_Asterisk();
+init_AsteriskSimple();
+init_At();
+init_Atom();
+init_Baby();
+init_Backpack();
+init_Backspace();
+init_Bag();
+init_BagSimple();
+init_Balloon();
+init_Bandaids();
+init_Bank();
+init_Barbell();
+init_Barcode();
+init_Barricade();
+init_Baseball();
+init_BaseballCap();
+init_Basket();
+init_Basketball();
+init_Bathtub();
+init_BatteryCharging();
+init_BatteryChargingVertical();
+init_BatteryEmpty();
+init_BatteryFull();
+init_BatteryHigh();
+init_BatteryLow();
+init_BatteryMedium();
+init_BatteryPlus();
+init_BatteryPlusVertical();
+init_BatteryVerticalEmpty();
+init_BatteryVerticalFull();
+init_BatteryVerticalHigh();
+init_BatteryVerticalLow();
+init_BatteryVerticalMedium();
+init_BatteryWarning();
+init_BatteryWarningVertical();
+init_Bed();
+init_BeerBottle();
+init_BeerStein();
+init_BehanceLogo();
+init_Bell();
+init_BellRinging();
+init_BellSimple();
+init_BellSimpleRinging();
+init_BellSimpleSlash();
+init_BellSimpleZ();
+init_BellSlash();
+init_BellZ();
+init_BezierCurve();
+init_Bicycle();
+init_Binoculars();
+init_Bird();
+init_Bluetooth();
+init_BluetoothConnected();
+init_BluetoothSlash();
+init_BluetoothX();
+init_Boat();
+init_Bone();
+init_Book();
+init_BookBookmark();
+init_Bookmark();
+init_Bookmarks();
+init_BookmarkSimple();
+init_BookmarksSimple();
+init_BookOpen();
+init_BookOpenText();
+init_Books();
+init_Boot();
+init_BoundingBox();
+init_BowlFood();
+init_BracketsAngle();
+init_BracketsCurly();
+init_BracketsRound();
+init_BracketsSquare();
+init_Brain();
+init_Brandy();
+init_Bridge();
+init_Briefcase();
+init_BriefcaseMetal();
+init_Broadcast();
+init_Broom();
+init_Browser();
+init_Browsers();
+init_Bug();
+init_BugBeetle();
+init_BugDroid();
+init_Buildings();
+init_Bus();
+init_Butterfly();
+init_Cactus();
+init_Cake();
+init_Calculator();
+init_Calendar();
+init_CalendarBlank();
+init_CalendarCheck();
+init_CalendarPlus();
+init_CalendarX();
+init_CallBell();
+init_Camera();
+init_CameraPlus();
+init_CameraRotate();
+init_CameraSlash();
+init_Campfire();
+init_Car();
+init_Cardholder();
+init_Cards();
+init_CaretCircleDoubleDown();
+init_CaretCircleDoubleLeft();
+init_CaretCircleDoubleRight();
+init_CaretCircleDoubleUp();
+init_CaretCircleDown();
+init_CaretCircleLeft();
+init_CaretCircleRight();
+init_CaretCircleUp();
+init_CaretCircleUpDown();
+init_CaretDoubleDown();
+init_CaretDoubleLeft();
+init_CaretDoubleRight();
+init_CaretDoubleUp();
+init_CaretDown();
+init_CaretLeft();
+init_CaretRight();
+init_CaretUp();
+init_CaretUpDown();
+init_CarProfile();
+init_Carrot();
+init_CarSimple();
+init_CassetteTape();
+init_CastleTurret();
+init_Cat();
+init_CellSignalFull();
+init_CellSignalHigh();
+init_CellSignalLow();
+init_CellSignalMedium();
+init_CellSignalNone();
+init_CellSignalSlash();
+init_CellSignalX();
+init_Certificate();
+init_Chair();
+init_Chalkboard();
+init_ChalkboardSimple();
+init_ChalkboardTeacher();
+init_Champagne();
+init_ChargingStation();
+init_ChartBar();
+init_ChartBarHorizontal();
+init_ChartDonut();
+init_ChartLine();
+init_ChartLineDown();
+init_ChartLineUp();
+init_ChartPie();
+init_ChartPieSlice();
+init_ChartPolar();
+init_ChartScatter();
+init_Chat();
+init_ChatCentered();
+init_ChatCenteredDots();
+init_ChatCenteredText();
+init_ChatCircle();
+init_ChatCircleDots();
+init_ChatCircleText();
+init_ChatDots();
+init_Chats();
+init_ChatsCircle();
+init_ChatsTeardrop();
+init_ChatTeardrop();
+init_ChatTeardropDots();
+init_ChatTeardropText();
+init_ChatText();
+init_Check();
+init_CheckCircle();
+init_CheckFat();
+init_Checks();
+init_CheckSquare();
+init_CheckSquareOffset();
+init_Church();
+init_Circle();
+init_CircleDashed();
+init_CircleHalf();
+init_CircleHalfTilt();
+init_CircleNotch();
+init_CirclesFour();
+init_CirclesThree();
+init_CirclesThreePlus();
+init_Circuitry();
+init_ClipboardText();
+init_Clock();
+init_ClockAfternoon();
+init_ClockClockwise();
+init_ClockCountdown();
+init_ClockCounterClockwise();
+init_ClosedCaptioning();
+init_Cloud();
+init_CloudArrowDown();
+init_CloudArrowUp();
+init_CloudCheck();
+init_CloudFog();
+init_CloudLightning();
+init_CloudMoon();
+init_CloudRain();
+init_CloudSlash();
+init_CloudSnow();
+init_CloudSun();
+init_CloudWarning();
+init_CloudX();
+init_Club();
+init_CoatHanger();
+init_CodaLogo();
+init_Code();
+init_CodeBlock();
+init_CodepenLogo();
+init_CodesandboxLogo();
+init_CodeSimple();
+init_Coffee();
+init_Coin();
+init_Coins();
+init_CoinVertical();
+init_Columns();
+init_Command();
+init_Compass();
+init_CompassOff();
+init_CompassTool();
+init_ComputerTower();
+init_Confetti();
+init_ContactlessPayment();
+init_Control();
+init_Cookie();
+init_CookingPot();
+init_Copyleft();
+init_Copyright();
+init_CopySimple();
+init_CornersIn();
+init_CornersOut();
+init_Couch();
+init_Cpu();
+init_CreditCard();
+init_Crop();
+init_Cross();
+init_Crosshair();
+init_CrosshairSimple();
+init_Crown();
+init_CrownSimple();
+init_Cube();
+init_CubeFocus();
+init_CubeTransparent();
+init_CurrencyBtc();
+init_CurrencyCircleDollar();
+init_CurrencyCny();
+init_CurrencyDollar();
+init_CurrencyDollarSimple();
+init_CurrencyEth();
+init_CurrencyEur();
+init_CurrencyGbp();
+init_CurrencyInr();
+init_CurrencyJpy();
+init_CurrencyKrw();
+init_CurrencyKzt();
+init_CurrencyNgn();
+init_CurrencyRub();
+init_Cursor();
+init_CursorClick();
+init_CursorText();
+init_Cylinder();
+init_Database();
+init_Desktop();
+init_DesktopTower();
+init_Detective();
+init_DeviceMobile();
+init_DeviceMobileCamera();
+init_DeviceMobileSpeaker();
+init_Devices();
+init_DeviceTablet();
+init_DeviceTabletCamera();
+init_DeviceTabletSpeaker();
+init_DevToLogo();
+init_Diamond();
+init_DiamondsFour();
+init_DiceFive();
+init_DiceFour();
+init_DiceOne();
+init_DiceSix();
+init_DiceThree();
+init_DiceTwo();
+init_Disc();
+init_DiscordLogo();
+init_Divide();
+init_Dna();
+init_Dog();
+init_Door();
+init_DoorOpen();
+init_Dot();
+init_DotOutline();
+init_DotsNine();
+init_DotsSix();
+init_DotsSixVertical();
+init_DotsThree();
+init_DotsThreeCircle();
+init_DotsThreeCircleVertical();
+init_DotsThreeOutline();
+init_DotsThreeOutlineVertical();
+init_DotsThreeVertical();
+init_Download();
+init_DownloadSimple();
+init_Dress();
+init_DribbbleLogo();
+init_Drop();
+init_DropboxLogo();
+init_DropHalf();
+init_DropHalfBottom();
+init_Ear();
+init_EarSlash();
+init_Egg();
+init_EggCrack();
+init_Eject();
+init_EjectSimple();
+init_Elevator();
+init_Engine();
+init_Envelope();
+init_EnvelopeOpen();
+init_EnvelopeSimple();
+init_EnvelopeSimpleOpen();
+init_Equalizer();
+init_Equals();
+init_Eraser();
+init_EscalatorDown();
+init_EscalatorUp();
+init_Exam();
+init_Exclude();
+init_ExcludeSquare();
+init_Export();
+init_Eye();
+init_EyeClosed();
+init_Eyedropper();
+init_EyedropperSample();
+init_Eyeglasses();
+init_EyeSlash();
+init_FacebookLogo();
+init_FaceMask();
+init_Factory();
+init_Faders();
+init_FadersHorizontal();
+init_Fan();
+init_FastForward();
+init_FastForwardCircle();
+init_Feather();
+init_FigmaLogo();
+init_File();
+init_FileArchive();
+init_FileArrowDown();
+init_FileArrowUp();
+init_FileAudio();
+init_FileCloud();
+init_FileCode();
+init_FileCss();
+init_FileCsv();
+init_FileDashed();
+init_FileDoc();
+init_FileHtml();
+init_FileImage();
+init_FileJpg();
+init_FileJs();
+init_FileJsx();
+init_FileLock();
+init_FileMinus();
+init_FilePdf();
+init_FilePlus();
+init_FilePng();
+init_FilePpt();
+init_FileRs();
+init_Files();
+init_FileSearch();
+init_FileSql();
+init_FileSvg();
+init_FileText();
+init_FileTs();
+init_FileTsx();
+init_FileVideo();
+init_FileVue();
+init_FileX();
+init_FileXls();
+init_FileZip();
+init_FilmReel();
+init_FilmScript();
+init_FilmSlate();
+init_FilmStrip();
+init_Fingerprint();
+init_FingerprintSimple();
+init_FinnTheHuman();
+init_Fire();
+init_FireExtinguisher();
+init_FireSimple();
+init_FirstAid();
+init_FirstAidKit();
+init_Fish();
+init_FishSimple();
+init_Flag();
+init_FlagBanner();
+init_FlagCheckered();
+init_FlagPennant();
+init_Flame();
+init_Flashlight();
+init_Flask();
+init_FloppyDisk();
+init_FloppyDiskBack();
+init_FlowArrow();
+init_Flower();
+init_FlowerLotus();
+init_FlowerTulip();
+init_FlyingSaucer();
+init_Folder();
+init_FolderDashed();
+init_FolderLock();
+init_FolderMinus();
+init_FolderNotch();
+init_FolderNotchMinus();
+init_FolderNotchOpen();
+init_FolderNotchPlus();
+init_FolderOpen();
+init_FolderPlus();
+init_Folders();
+init_FolderSimple();
+init_FolderSimpleDashed();
+init_FolderSimpleLock();
+init_FolderSimpleMinus();
+init_FolderSimplePlus();
+init_FolderSimpleStar();
+init_FolderSimpleUser();
+init_FolderStar();
+init_FolderUser();
+init_Football();
+init_Footprints();
+init_ForkKnife();
+init_FrameCorners();
+init_FramerLogo();
+init_Function();
+init_Funnel();
+init_FunnelSimple();
+init_GameController();
+init_Garage();
+init_GasCan();
+init_GasPump();
+init_Gauge();
+init_Gavel();
+init_Gear();
+init_GearFine();
+init_GearSix();
+init_GenderFemale();
+init_GenderIntersex();
+init_GenderMale();
+init_GenderNeuter();
+init_GenderNonbinary();
+init_GenderTransgender();
+init_Ghost();
+init_Gif();
+init_Gift();
+init_GitBranch();
+init_GitCommit();
+init_GitDiff();
+init_GitFork();
+init_GithubLogo();
+init_GitlabLogo();
+init_GitlabLogoSimple();
+init_GitMerge();
+init_GitPullRequest();
+init_Globe();
+init_GlobeHemisphereEast();
+init_GlobeHemisphereWest();
+init_GlobeSimple();
+init_GlobeStand();
+init_Goggles();
+init_GoodreadsLogo();
+init_GoogleCardboardLogo();
+init_GoogleChromeLogo();
+init_GoogleDriveLogo();
+init_GoogleLogo();
+init_GooglePhotosLogo();
+init_GooglePlayLogo();
+init_GooglePodcastsLogo();
+init_Gradient();
+init_GraduationCap();
+init_Grains();
+init_GrainsSlash();
+init_Graph();
+init_GridFour();
+init_GridNine();
+init_Guitar();
+init_Hamburger();
+init_Hammer();
+init_Hand();
+init_Handbag();
+init_HandbagSimple();
+init_HandCoins();
+init_HandEye();
+init_HandFist();
+init_HandGrabbing();
+init_HandHeart();
+init_HandPalm();
+init_HandPointing();
+init_HandsClapping();
+init_Handshake();
+init_HandSoap();
+init_HandsPraying();
+init_HandSwipeLeft();
+init_HandSwipeRight();
+init_HandTap();
+init_HandWaving();
+init_HardDrive();
+init_HardDrives();
+init_Hash();
+init_HashStraight();
+init_Headlights();
+init_Headphones();
+init_Headset();
+init_Heart();
+init_Heartbeat();
+init_HeartBreak();
+init_HeartHalf();
+init_HeartStraight();
+init_HeartStraightBreak();
+init_Hexagon();
+init_HighHeel();
+init_HighlighterCircle();
+init_Hoodie();
+init_Horse();
+init_Hourglass();
+init_HourglassHigh();
+init_HourglassLow();
+init_HourglassMedium();
+init_HourglassSimple();
+init_HourglassSimpleHigh();
+init_HourglassSimpleLow();
+init_HourglassSimpleMedium();
+init_House();
+init_HouseLine();
+init_HouseSimple();
+init_IceCream();
+init_IdentificationBadge();
+init_IdentificationCard();
+init_Image();
+init_Images();
+init_ImageSquare();
+init_ImagesSquare();
+init_Infinity();
+init_Info();
+init_InstagramLogo();
+init_Intersect();
+init_IntersectSquare();
+init_IntersectThree();
+init_Jeep();
+init_Kanban();
+init_Key();
+init_Keyboard();
+init_Keyhole();
+init_KeyReturn();
+init_Knife();
+init_Ladder();
+init_LadderSimple();
+init_Lamp();
+init_Laptop();
+init_Layout();
+init_Leaf();
+init_Lifebuoy();
+init_Lightbulb();
+init_LightbulbFilament();
+init_Lighthouse();
+init_Lightning();
+init_LightningA();
+init_LightningSlash();
+init_LineSegment();
+init_LineSegments();
+init_Link();
+init_LinkBreak();
+init_LinkedinLogo();
+init_LinkSimple();
+init_LinkSimpleBreak();
+init_LinkSimpleHorizontal();
+init_LinkSimpleHorizontalBreak();
+init_LinuxLogo();
+init_List();
+init_ListBullets();
+init_ListChecks();
+init_ListDashes();
+init_ListMagnifyingGlass();
+init_ListNumbers();
+init_ListPlus();
+init_Lock();
+init_Lockers();
+init_LockKey();
+init_LockKeyOpen();
+init_LockLaminated();
+init_LockLaminatedOpen();
+init_LockOpen();
+init_LockSimple();
+init_LockSimpleOpen();
+init_MagicWand();
+init_Magnet();
+init_MagnetStraight();
+init_MagnifyingGlass();
+init_MagnifyingGlassMinus();
+init_MagnifyingGlassPlus();
+init_MapPin();
+init_MapPinLine();
+init_MapTrifold();
+init_MarkerCircle();
+init_Martini();
+init_MaskHappy();
+init_MaskSad();
+init_MathOperations();
+init_Medal();
+init_MedalMilitary();
+init_MediumLogo();
+init_Megaphone();
+init_MegaphoneSimple();
+init_MessengerLogo();
+init_MetaLogo();
+init_Metronome();
+init_Microphone();
+init_MicrophoneSlash();
+init_MicrophoneStage();
+init_MicrosoftExcelLogo();
+init_MicrosoftOutlookLogo();
+init_MicrosoftPowerpointLogo();
+init_MicrosoftTeamsLogo();
+init_MicrosoftWordLogo();
+init_Minus();
+init_MinusCircle();
+init_MinusSquare();
+init_Money();
+init_Monitor();
+init_MonitorPlay();
+init_Moon();
+init_MoonStars();
+init_Moped();
+init_MopedFront();
+init_Mosque();
+init_Motorcycle();
+init_Mountains();
+init_Mouse();
+init_MouseSimple();
+init_MusicNote();
+init_MusicNotes();
+init_MusicNoteSimple();
+init_MusicNotesPlus();
+init_MusicNotesSimple();
+init_NavigationArrow();
+init_Needle();
+init_Newspaper();
+init_NewspaperClipping();
+init_Notches();
+init_Note();
+init_NoteBlank();
+init_Notebook();
+init_Notepad();
+init_NotePencil();
+init_Notification();
+init_NotionLogo();
+init_NumberCircleEight();
+init_NumberCircleFive();
+init_NumberCircleFour();
+init_NumberCircleNine();
+init_NumberCircleOne();
+init_NumberCircleSeven();
+init_NumberCircleSix();
+init_NumberCircleThree();
+init_NumberCircleTwo();
+init_NumberCircleZero();
+init_NumberEight();
+init_NumberFive();
+init_NumberFour();
+init_NumberNine();
+init_NumberOne();
+init_NumberSeven();
+init_NumberSix();
+init_NumberSquareEight();
+init_NumberSquareFive();
+init_NumberSquareFour();
+init_NumberSquareNine();
+init_NumberSquareOne();
+init_NumberSquareSeven();
+init_NumberSquareSix();
+init_NumberSquareThree();
+init_NumberSquareTwo();
+init_NumberSquareZero();
+init_NumberThree();
+init_NumberTwo();
+init_NumberZero();
+init_Nut();
+init_NyTimesLogo();
+init_Octagon();
+init_OfficeChair();
+init_Option();
+init_OrangeSlice();
+init_Package();
+init_PaintBrush();
+init_PaintBrushBroad();
+init_PaintBrushHousehold();
+init_PaintBucket();
+init_PaintRoller();
+init_Palette();
+init_Pants();
+init_Paperclip();
+init_PaperclipHorizontal();
+init_PaperPlane();
+init_PaperPlaneRight();
+init_PaperPlaneTilt();
+init_Parachute();
+init_Paragraph();
+init_Parallelogram();
+init_Park();
+init_Password();
+init_Path();
+init_PatreonLogo();
+init_Pause();
+init_PauseCircle();
+init_PawPrint();
+init_PaypalLogo();
+init_Peace();
+init_Pen();
+init_Pencil();
+init_PencilCircle();
+init_PencilLine();
+init_PencilSimple();
+init_PencilSimpleLine();
+init_PencilSimpleSlash();
+init_PencilSlash();
+init_PenNib();
+init_PenNibStraight();
+init_Pentagram();
+init_Pepper();
+init_Percent();
+init_Person();
+init_PersonArmsSpread();
+init_PersonSimple();
+init_PersonSimpleBike();
+init_PersonSimpleRun();
+init_PersonSimpleThrow();
+init_PersonSimpleWalk();
+init_Perspective();
+init_Phone();
+init_PhoneCall();
+init_PhoneDisconnect();
+init_PhoneIncoming();
+init_PhoneOutgoing();
+init_PhonePlus();
+init_PhoneSlash();
+init_PhoneX();
+init_PhosphorLogo();
+init_Pi();
+init_PianoKeys();
+init_PictureInPicture();
+init_PiggyBank();
+init_Pill();
+init_PinterestLogo();
+init_Pinwheel();
+init_Pizza();
+init_Placeholder();
+init_Planet();
+init_Plant();
+init_Play();
+init_PlayCircle();
+init_Playlist();
+init_PlayPause();
+init_Plug();
+init_PlugCharging();
+init_Plugs();
+init_PlugsConnected();
+init_Plus();
+init_PlusCircle();
+init_PlusMinus();
+init_PlusSquare();
+init_PokerChip();
+init_PoliceCar();
+init_Polygon();
+init_Popcorn();
+init_PottedPlant();
+init_Power();
+init_Prescription();
+init_Presentation();
+init_PresentationChart();
+init_Printer();
+init_Prohibit();
+init_ProhibitInset();
+init_ProjectorScreen();
+init_ProjectorScreenChart();
+init_Pulse();
+init_PushPin();
+init_PushPinSimple();
+init_PushPinSimpleSlash();
+init_PushPinSlash();
+init_PuzzlePiece();
+init_QrCode();
+init_Question();
+init_Queue();
+init_Quotes();
+init_Radical();
+init_Radio();
+init_Radioactive();
+init_RadioButton();
+init_Rainbow();
+init_RainbowCloud();
+init_ReadCvLogo();
+init_Receipt();
+init_ReceiptX();
+init_Record();
+init_Rectangle();
+init_Recycle();
+init_RedditLogo();
+init_Repeat();
+init_RepeatOnce();
+init_Rewind();
+init_RewindCircle();
+init_RoadHorizon();
+init_Robot();
+init_Rocket();
+init_RocketLaunch();
+init_Rows();
+init_Rss();
+init_RssSimple();
+init_Rug();
+init_Ruler();
+init_Scales();
+init_Scan();
+init_Scissors();
+init_Scooter();
+init_Screencast();
+init_ScribbleLoop();
+init_Scroll();
+init_Seal();
+init_SealCheck();
+init_SealQuestion();
+init_SealWarning();
+init_Selection();
+init_SelectionAll();
+init_SelectionBackground();
+init_SelectionForeground();
+init_SelectionInverse();
+init_SelectionPlus();
+init_SelectionSlash();
+init_Shapes();
+init_Share();
+init_ShareFat();
+init_ShareNetwork();
+init_Shield();
+init_ShieldCheck();
+init_ShieldCheckered();
+init_ShieldChevron();
+init_ShieldPlus();
+init_ShieldSlash();
+init_ShieldStar();
+init_ShieldWarning();
+init_ShirtFolded();
+init_ShootingStar();
+init_ShoppingBag();
+init_ShoppingBagOpen();
+init_ShoppingCart();
+init_ShoppingCartSimple();
+init_Shower();
+init_Shrimp();
+init_Shuffle();
+init_ShuffleAngular();
+init_ShuffleSimple();
+init_Sidebar();
+init_SidebarSimple();
+init_Sigma();
+init_Signature();
+init_SignIn();
+init_SignOut();
+init_Signpost();
+init_SimCard();
+init_Siren();
+init_SketchLogo();
+init_SkipBack();
+init_SkipBackCircle();
+init_SkipForward();
+init_SkipForwardCircle();
+init_Skull();
+init_SlackLogo();
+init_Sliders();
+init_SlidersHorizontal();
+init_Slideshow();
+init_Smiley();
+init_SmileyAngry();
+init_SmileyBlank();
+init_SmileyMeh();
+init_SmileyNervous();
+init_SmileySad();
+init_SmileySticker();
+init_SmileyWink();
+init_SmileyXEyes();
+init_SnapchatLogo();
+init_Sneaker();
+init_SneakerMove();
+init_Snowflake();
+init_SoccerBall();
+init_SortAscending();
+init_SortDescending();
+init_SoundcloudLogo();
+init_Spade();
+init_Sparkle();
+init_SpeakerHifi();
+init_SpeakerHigh();
+init_SpeakerLow();
+init_SpeakerNone();
+init_SpeakerSimpleHigh();
+init_SpeakerSimpleLow();
+init_SpeakerSimpleNone();
+init_SpeakerSimpleSlash();
+init_SpeakerSimpleX();
+init_SpeakerSlash();
+init_SpeakerX();
+init_Spinner();
+init_SpinnerGap();
+init_Spiral();
+init_SplitHorizontal();
+init_SplitVertical();
+init_SpotifyLogo();
+init_Square();
+init_SquareHalf();
+init_SquareHalfBottom();
+init_SquareLogo();
+init_SquaresFour();
+init_SquareSplitHorizontal();
+init_SquareSplitVertical();
+init_Stack();
+init_StackOverflowLogo();
+init_StackSimple();
+init_Stairs();
+init_Stamp();
+init_Star();
+init_StarAndCrescent();
+init_StarHalf();
+init_StarOfDavid();
+init_SteeringWheel();
+init_Steps();
+init_Stethoscope();
+init_Sticker();
+init_Stool();
+init_Stop();
+init_StopCircle();
+init_Storefront();
+init_Strategy();
+init_StripeLogo();
+init_Student();
+init_Subtitles();
+init_Subtract();
+init_SubtractSquare();
+init_Suitcase();
+init_SuitcaseRolling();
+init_SuitcaseSimple();
+init_Sun();
+init_SunDim();
+init_Sunglasses();
+init_SunHorizon();
+init_Swap();
+init_Swatches();
+init_SwimmingPool();
+init_Sword();
+init_Synagogue();
+init_Syringe();
+init_Table();
+init_Tabs();
+init_Tag();
+init_TagChevron();
+init_TagSimple();
+init_Target();
+init_Taxi();
+init_TelegramLogo();
+init_Television();
+init_TelevisionSimple();
+init_TennisBall();
+init_Tent();
+init_Terminal();
+init_TerminalWindow();
+init_TestTube();
+init_TextAa();
+init_TextAlignCenter();
+init_TextAlignJustify();
+init_TextAlignLeft();
+init_TextAlignRight();
+init_TextAUnderline();
+init_TextB();
+init_Textbox();
+init_TextColumns();
+init_TextH();
+init_TextHFive();
+init_TextHFour();
+init_TextHOne();
+init_TextHSix();
+init_TextHThree();
+init_TextHTwo();
+init_TextIndent();
+init_TextItalic();
+init_TextOutdent();
+init_TextStrikethrough();
+init_TextT();
+init_TextUnderline();
+init_Thermometer();
+init_ThermometerCold();
+init_ThermometerHot();
+init_ThermometerSimple();
+init_ThumbsDown();
+init_ThumbsUp();
+init_Ticket();
+init_TidalLogo();
+init_TiktokLogo();
+init_Timer();
+init_Tipi();
+init_ToggleLeft();
+init_ToggleRight();
+init_Toilet();
+init_ToiletPaper();
+init_Toolbox();
+init_Tooth();
+init_Tote();
+init_ToteSimple();
+init_Trademark();
+init_TrademarkRegistered();
+init_TrafficCone();
+init_TrafficSign();
+init_TrafficSignal();
+init_Train();
+init_TrainRegional();
+init_TrainSimple();
+init_Tram();
+init_Translate();
+init_Trash();
+init_TrashSimple();
+init_Tray();
+init_Tree();
+init_TreeEvergreen();
+init_TreePalm();
+init_TreeStructure();
+init_TrendDown();
+init_TrendUp();
+init_Triangle();
+init_Trophy();
+init_Truck();
+init_TShirt();
+init_TwitchLogo();
+init_TwitterLogo();
+init_Umbrella();
+init_UmbrellaSimple();
+init_Unite();
+init_UniteSquare();
+init_Upload();
+init_UploadSimple();
+init_Usb();
+init_User();
+init_UserCircle();
+init_UserCircleGear();
+init_UserCircleMinus();
+init_UserCirclePlus();
+init_UserFocus();
+init_UserGear();
+init_UserList();
+init_UserMinus();
+init_UserPlus();
+init_UserRectangle();
+init_Users();
+init_UsersFour();
+init_UserSquare();
+init_UsersThree();
+init_UserSwitch();
+init_Van();
+init_Vault();
+init_Vibrate();
+init_Video();
+init_VideoCamera();
+init_VideoCameraSlash();
+init_Vignette();
+init_VinylRecord();
+init_VirtualReality();
+init_Virus();
+init_Voicemail();
+init_Volleyball();
+init_Wall();
+init_Wallet();
+init_Warehouse();
+init_Warning();
+init_WarningCircle();
+init_WarningDiamond();
+init_WarningOctagon();
+init_Watch();
+init_Waveform();
+init_Waves();
+init_WaveSawtooth();
+init_WaveSine();
+init_WaveSquare();
+init_WaveTriangle();
+init_Webcam();
+init_WebcamSlash();
+init_WebhooksLogo();
+init_WechatLogo();
+init_WhatsappLogo();
+init_Wheelchair();
+init_WheelchairMotion();
+init_WifiHigh();
+init_WifiLow();
+init_WifiMedium();
+init_WifiNone();
+init_WifiSlash();
+init_WifiX();
+init_Wind();
+init_WindowsLogo();
+init_Wine();
+init_Wrench();
+init_X();
+init_XSquare();
+init_YinYang();
+init_YoutubeLogo();
+init_DefaultIcon();
+init_DocxIcon();
+init_FormIcon();
+init_OnenoteIcon();
+init_PptIcon();
+init_RoundAlt();
+init_SearchIcon();
+init_TxtIcon();
+init_XlsxIcon();
 
 // src/icons/snowui/index.ts
 var snowui_exports = {};
@@ -49156,6 +59835,78 @@ __export(snowui_exports, {
   Windowed: () => Windowed,
   XCircle: () => XCircle2
 });
+init_Add();
+init_Ai();
+init_ArrowFall();
+init_ArrowLineDown2();
+init_ArrowLineLeft2();
+init_ArrowLineRight2();
+init_ArrowLineUp2();
+init_ArrowLineUpDown();
+init_ArrowRise();
+init_ArrowsDown();
+init_ArrowsDownUp2();
+init_ArrowsUp();
+init_Badge();
+init_ChatDashed();
+init_CheckboxFalse();
+init_CheckboxMultiple();
+init_CheckboxTrue();
+init_Chip();
+init_Clipboard2();
+init_Close();
+init_Copy2();
+init_DotCircle();
+init_DotSquare();
+init_Explain();
+init_FourLeafClover();
+init_FourPointedStar();
+init_Goto();
+init_Help();
+init_HorizontalScreen();
+init_IconSet();
+init_IconSize16();
+init_IconSize20();
+init_IconSize24();
+init_IconSize28();
+init_IconSize32();
+init_IconSize40();
+init_IconSize48();
+init_IconSize80();
+init_ImageLoading();
+init_Line();
+init_Maximize();
+init_Minimize();
+init_PayWave();
+init_RadioFalse();
+init_RadioTrue();
+init_RadioTrueAlt();
+init_Rating1();
+init_Rating2();
+init_Rating3();
+init_Rating4();
+init_Rating5();
+init_Repost();
+init_Rightbar();
+init_RightbarMode();
+init_Round();
+init_RoundedCorner();
+init_Search();
+init_Selected();
+init_SnowIcon();
+init_StarFour2();
+init_Stars();
+init_StopAlt();
+init_StopSecondary();
+init_SwitchFalse();
+init_SwitchPoint();
+init_SwitchTrue();
+init_TextA();
+init_ThreeDots();
+init_Variables();
+init_VerticalScreen();
+init_Windowed();
+init_XCircle2();
 
 // src/icons/phosphor/index.ts
 var phosphor_exports = {};
@@ -50410,6 +61161,1255 @@ __export(phosphor_exports, {
   YinYang: () => YinYang,
   YoutubeLogo: () => YoutubeLogo
 });
+init_AddressBook();
+init_Airplane();
+init_AirplaneInFlight();
+init_AirplaneLanding();
+init_AirplaneTakeoff();
+init_AirplaneTilt();
+init_Airplay();
+init_AirTrafficControl();
+init_Alarm();
+init_Alien();
+init_AlignBottom();
+init_AlignBottomSimple();
+init_AlignCenterHorizontal();
+init_AlignCenterHorizontalSimple();
+init_AlignCenterVertical();
+init_AlignCenterVerticalSimple();
+init_AlignLeft();
+init_AlignLeftSimple();
+init_AlignRight();
+init_AlignRightSimple();
+init_AlignTop();
+init_AlignTopSimple();
+init_AmazonLogo();
+init_Anchor();
+init_AnchorSimple();
+init_AndroidLogo();
+init_AngularLogo();
+init_Aperture();
+init_AppleLogo();
+init_ApplePodcastsLogo();
+init_AppStoreLogo();
+init_AppWindow();
+init_Archive();
+init_ArchiveBox();
+init_ArchiveTray();
+init_Armchair();
+init_ArrowArcLeft();
+init_ArrowArcRight();
+init_ArrowBendDoubleUpLeft();
+init_ArrowBendDoubleUpRight();
+init_ArrowBendDownLeft();
+init_ArrowBendDownRight();
+init_ArrowBendLeftDown();
+init_ArrowBendLeftUp();
+init_ArrowBendRightDown();
+init_ArrowBendRightUp();
+init_ArrowBendUpLeft();
+init_ArrowBendUpRight();
+init_ArrowCircleDown();
+init_ArrowCircleDownLeft();
+init_ArrowCircleDownRight();
+init_ArrowCircleLeft();
+init_ArrowCircleRight();
+init_ArrowCircleUp();
+init_ArrowCircleUpLeft();
+init_ArrowCircleUpRight();
+init_ArrowClockwise();
+init_ArrowCounterClockwise();
+init_ArrowDown();
+init_ArrowDownLeft();
+init_ArrowDownRight();
+init_ArrowElbowDownLeft();
+init_ArrowElbowDownRight();
+init_ArrowElbowLeft();
+init_ArrowElbowLeftDown();
+init_ArrowElbowLeftUp();
+init_ArrowElbowRight();
+init_ArrowElbowRightDown();
+init_ArrowElbowRightUp();
+init_ArrowElbowUpLeft();
+init_ArrowElbowUpRight();
+init_ArrowFatDown();
+init_ArrowFatLeft();
+init_ArrowFatLineDown();
+init_ArrowFatLineLeft();
+init_ArrowFatLineRight();
+init_ArrowFatLinesDown();
+init_ArrowFatLinesLeft();
+init_ArrowFatLinesRight();
+init_ArrowFatLinesUp();
+init_ArrowFatLineUp();
+init_ArrowFatRight();
+init_ArrowFatUp();
+init_ArrowLeft();
+init_ArrowLineDown();
+init_ArrowLineDownLeft();
+init_ArrowLineDownRight();
+init_ArrowLineLeft();
+init_ArrowLineRight();
+init_ArrowLineUp();
+init_ArrowLineUpLeft();
+init_ArrowLineUpRight();
+init_ArrowRight();
+init_ArrowsClockwise();
+init_ArrowsCounterClockwise();
+init_ArrowsDownUp();
+init_ArrowsHorizontal();
+init_ArrowsIn();
+init_ArrowsInCardinal();
+init_ArrowsInLineHorizontal();
+init_ArrowsInLineVertical();
+init_ArrowsInSimple();
+init_ArrowsLeftRight();
+init_ArrowsMerge();
+init_ArrowsOut();
+init_ArrowsOutCardinal();
+init_ArrowsOutLineHorizontal();
+init_ArrowsOutLineVertical();
+init_ArrowsOutSimple();
+init_ArrowSquareDown();
+init_ArrowSquareDownLeft();
+init_ArrowSquareDownRight();
+init_ArrowSquareIn();
+init_ArrowSquareLeft();
+init_ArrowSquareOut();
+init_ArrowSquareRight();
+init_ArrowSquareUp();
+init_ArrowSquareUpLeft();
+init_ArrowSquareUpRight();
+init_ArrowsSplit();
+init_ArrowsVertical();
+init_ArrowUDownLeft();
+init_ArrowUDownRight();
+init_ArrowULeftDown();
+init_ArrowULeftUp();
+init_ArrowUp();
+init_ArrowUpLeft();
+init_ArrowUpRight();
+init_ArrowURightDown();
+init_ArrowURightUp();
+init_ArrowUUpLeft();
+init_ArrowUUpRight();
+init_Article();
+init_ArticleMedium();
+init_ArticleNyTimes();
+init_Asterisk();
+init_AsteriskSimple();
+init_At();
+init_Atom();
+init_Baby();
+init_Backpack();
+init_Backspace();
+init_Bag();
+init_BagSimple();
+init_Balloon();
+init_Bandaids();
+init_Bank();
+init_Barbell();
+init_Barcode();
+init_Barricade();
+init_Baseball();
+init_BaseballCap();
+init_Basket();
+init_Basketball();
+init_Bathtub();
+init_BatteryCharging();
+init_BatteryChargingVertical();
+init_BatteryEmpty();
+init_BatteryFull();
+init_BatteryHigh();
+init_BatteryLow();
+init_BatteryMedium();
+init_BatteryPlus();
+init_BatteryPlusVertical();
+init_BatteryVerticalEmpty();
+init_BatteryVerticalFull();
+init_BatteryVerticalHigh();
+init_BatteryVerticalLow();
+init_BatteryVerticalMedium();
+init_BatteryWarning();
+init_BatteryWarningVertical();
+init_Bed();
+init_BeerBottle();
+init_BeerStein();
+init_BehanceLogo();
+init_Bell();
+init_BellRinging();
+init_BellSimple();
+init_BellSimpleRinging();
+init_BellSimpleSlash();
+init_BellSimpleZ();
+init_BellSlash();
+init_BellZ();
+init_BezierCurve();
+init_Bicycle();
+init_Binoculars();
+init_Bird();
+init_Bluetooth();
+init_BluetoothConnected();
+init_BluetoothSlash();
+init_BluetoothX();
+init_Boat();
+init_Bone();
+init_Book();
+init_BookBookmark();
+init_Bookmark();
+init_Bookmarks();
+init_BookmarkSimple();
+init_BookmarksSimple();
+init_BookOpen();
+init_BookOpenText();
+init_Books();
+init_Boot();
+init_BoundingBox();
+init_BowlFood();
+init_BracketsAngle();
+init_BracketsCurly();
+init_BracketsRound();
+init_BracketsSquare();
+init_Brain();
+init_Brandy();
+init_Bridge();
+init_Briefcase();
+init_BriefcaseMetal();
+init_Broadcast();
+init_Broom();
+init_Browser();
+init_Browsers();
+init_Bug();
+init_BugBeetle();
+init_BugDroid();
+init_Buildings();
+init_Bus();
+init_Butterfly();
+init_Cactus();
+init_Cake();
+init_Calculator();
+init_Calendar();
+init_CalendarBlank();
+init_CalendarCheck();
+init_CalendarPlus();
+init_CalendarX();
+init_CallBell();
+init_Camera();
+init_CameraPlus();
+init_CameraRotate();
+init_CameraSlash();
+init_Campfire();
+init_Car();
+init_Cardholder();
+init_Cards();
+init_CaretCircleDoubleDown();
+init_CaretCircleDoubleLeft();
+init_CaretCircleDoubleRight();
+init_CaretCircleDoubleUp();
+init_CaretCircleDown();
+init_CaretCircleLeft();
+init_CaretCircleRight();
+init_CaretCircleUp();
+init_CaretCircleUpDown();
+init_CaretDoubleDown();
+init_CaretDoubleLeft();
+init_CaretDoubleRight();
+init_CaretDoubleUp();
+init_CaretDown();
+init_CaretLeft();
+init_CaretRight();
+init_CaretUp();
+init_CaretUpDown();
+init_CarProfile();
+init_Carrot();
+init_CarSimple();
+init_CassetteTape();
+init_CastleTurret();
+init_Cat();
+init_CellSignalFull();
+init_CellSignalHigh();
+init_CellSignalLow();
+init_CellSignalMedium();
+init_CellSignalNone();
+init_CellSignalSlash();
+init_CellSignalX();
+init_Certificate();
+init_Chair();
+init_Chalkboard();
+init_ChalkboardSimple();
+init_ChalkboardTeacher();
+init_Champagne();
+init_ChargingStation();
+init_ChartBar();
+init_ChartBarHorizontal();
+init_ChartDonut();
+init_ChartLine();
+init_ChartLineDown();
+init_ChartLineUp();
+init_ChartPie();
+init_ChartPieSlice();
+init_ChartPolar();
+init_ChartScatter();
+init_Chat();
+init_ChatCentered();
+init_ChatCenteredDots();
+init_ChatCenteredText();
+init_ChatCircle();
+init_ChatCircleDots();
+init_ChatCircleText();
+init_ChatDots();
+init_Chats();
+init_ChatsCircle();
+init_ChatsTeardrop();
+init_ChatTeardrop();
+init_ChatTeardropDots();
+init_ChatTeardropText();
+init_ChatText();
+init_Check();
+init_CheckCircle();
+init_CheckFat();
+init_Checks();
+init_CheckSquare();
+init_CheckSquareOffset();
+init_Church();
+init_Circle();
+init_CircleDashed();
+init_CircleHalf();
+init_CircleHalfTilt();
+init_CircleNotch();
+init_CirclesFour();
+init_CirclesThree();
+init_CirclesThreePlus();
+init_Circuitry();
+init_Clipboard();
+init_ClipboardText();
+init_Clock();
+init_ClockAfternoon();
+init_ClockClockwise();
+init_ClockCountdown();
+init_ClockCounterClockwise();
+init_ClosedCaptioning();
+init_Cloud();
+init_CloudArrowDown();
+init_CloudArrowUp();
+init_CloudCheck();
+init_CloudFog();
+init_CloudLightning();
+init_CloudMoon();
+init_CloudRain();
+init_CloudSlash();
+init_CloudSnow();
+init_CloudSun();
+init_CloudWarning();
+init_CloudX();
+init_Club();
+init_CoatHanger();
+init_CodaLogo();
+init_Code();
+init_CodeBlock();
+init_CodepenLogo();
+init_CodesandboxLogo();
+init_CodeSimple();
+init_Coffee();
+init_Coin();
+init_Coins();
+init_CoinVertical();
+init_Columns();
+init_Command();
+init_Compass();
+init_CompassOff();
+init_CompassTool();
+init_ComputerTower();
+init_Confetti();
+init_ContactlessPayment();
+init_Control();
+init_Cookie();
+init_CookingPot();
+init_Copy();
+init_Copyleft();
+init_Copyright();
+init_CopySimple();
+init_CornersIn();
+init_CornersOut();
+init_Couch();
+init_Cpu();
+init_CreditCard();
+init_Crop();
+init_Cross();
+init_Crosshair();
+init_CrosshairSimple();
+init_Crown();
+init_CrownSimple();
+init_Cube();
+init_CubeFocus();
+init_CubeTransparent();
+init_CurrencyBtc();
+init_CurrencyCircleDollar();
+init_CurrencyCny();
+init_CurrencyDollar();
+init_CurrencyDollarSimple();
+init_CurrencyEth();
+init_CurrencyEur();
+init_CurrencyGbp();
+init_CurrencyInr();
+init_CurrencyJpy();
+init_CurrencyKrw();
+init_CurrencyKzt();
+init_CurrencyNgn();
+init_CurrencyRub();
+init_Cursor();
+init_CursorClick();
+init_CursorText();
+init_Cylinder();
+init_Database();
+init_Desktop();
+init_DesktopTower();
+init_Detective();
+init_DeviceMobile();
+init_DeviceMobileCamera();
+init_DeviceMobileSpeaker();
+init_Devices();
+init_DeviceTablet();
+init_DeviceTabletCamera();
+init_DeviceTabletSpeaker();
+init_DevToLogo();
+init_Diamond();
+init_DiamondsFour();
+init_DiceFive();
+init_DiceFour();
+init_DiceOne();
+init_DiceSix();
+init_DiceThree();
+init_DiceTwo();
+init_Disc();
+init_DiscordLogo();
+init_Divide();
+init_Dna();
+init_Dog();
+init_Door();
+init_DoorOpen();
+init_Dot();
+init_DotOutline();
+init_DotsNine();
+init_DotsSix();
+init_DotsSixVertical();
+init_DotsThree();
+init_DotsThreeCircle();
+init_DotsThreeCircleVertical();
+init_DotsThreeOutline();
+init_DotsThreeOutlineVertical();
+init_DotsThreeVertical();
+init_Download();
+init_DownloadSimple();
+init_Dress();
+init_DribbbleLogo();
+init_Drop();
+init_DropboxLogo();
+init_DropHalf();
+init_DropHalfBottom();
+init_Ear();
+init_EarSlash();
+init_Egg();
+init_EggCrack();
+init_Eject();
+init_EjectSimple();
+init_Elevator();
+init_Engine();
+init_Envelope();
+init_EnvelopeOpen();
+init_EnvelopeSimple();
+init_EnvelopeSimpleOpen();
+init_Equalizer();
+init_Equals();
+init_Eraser();
+init_EscalatorDown();
+init_EscalatorUp();
+init_Exam();
+init_Exclude();
+init_ExcludeSquare();
+init_Export();
+init_Eye();
+init_EyeClosed();
+init_Eyedropper();
+init_EyedropperSample();
+init_Eyeglasses();
+init_EyeSlash();
+init_FacebookLogo();
+init_FaceMask();
+init_Factory();
+init_Faders();
+init_FadersHorizontal();
+init_Fan();
+init_FastForward();
+init_FastForwardCircle();
+init_Feather();
+init_FigmaLogo();
+init_File();
+init_FileArchive();
+init_FileArrowDown();
+init_FileArrowUp();
+init_FileAudio();
+init_FileCloud();
+init_FileCode();
+init_FileCss();
+init_FileCsv();
+init_FileDashed();
+init_FileDoc();
+init_FileHtml();
+init_FileImage();
+init_FileJpg();
+init_FileJs();
+init_FileJsx();
+init_FileLock();
+init_FileMinus();
+init_FilePdf();
+init_FilePlus();
+init_FilePng();
+init_FilePpt();
+init_FileRs();
+init_Files();
+init_FileSearch();
+init_FileSql();
+init_FileSvg();
+init_FileText();
+init_FileTs();
+init_FileTsx();
+init_FileVideo();
+init_FileVue();
+init_FileX();
+init_FileXls();
+init_FileZip();
+init_FilmReel();
+init_FilmScript();
+init_FilmSlate();
+init_FilmStrip();
+init_Fingerprint();
+init_FingerprintSimple();
+init_FinnTheHuman();
+init_Fire();
+init_FireExtinguisher();
+init_FireSimple();
+init_FirstAid();
+init_FirstAidKit();
+init_Fish();
+init_FishSimple();
+init_Flag();
+init_FlagBanner();
+init_FlagCheckered();
+init_FlagPennant();
+init_Flame();
+init_Flashlight();
+init_Flask();
+init_FloppyDisk();
+init_FloppyDiskBack();
+init_FlowArrow();
+init_Flower();
+init_FlowerLotus();
+init_FlowerTulip();
+init_FlyingSaucer();
+init_Folder();
+init_FolderDashed();
+init_FolderLock();
+init_FolderMinus();
+init_FolderNotch();
+init_FolderNotchMinus();
+init_FolderNotchOpen();
+init_FolderNotchPlus();
+init_FolderOpen();
+init_FolderPlus();
+init_Folders();
+init_FolderSimple();
+init_FolderSimpleDashed();
+init_FolderSimpleLock();
+init_FolderSimpleMinus();
+init_FolderSimplePlus();
+init_FolderSimpleStar();
+init_FolderSimpleUser();
+init_FolderStar();
+init_FolderUser();
+init_Football();
+init_Footprints();
+init_ForkKnife();
+init_FrameCorners();
+init_FramerLogo();
+init_Function();
+init_Funnel();
+init_FunnelSimple();
+init_GameController();
+init_Garage();
+init_GasCan();
+init_GasPump();
+init_Gauge();
+init_Gavel();
+init_Gear();
+init_GearFine();
+init_GearSix();
+init_GenderFemale();
+init_GenderIntersex();
+init_GenderMale();
+init_GenderNeuter();
+init_GenderNonbinary();
+init_GenderTransgender();
+init_Ghost();
+init_Gif();
+init_Gift();
+init_GitBranch();
+init_GitCommit();
+init_GitDiff();
+init_GitFork();
+init_GithubLogo();
+init_GitlabLogo();
+init_GitlabLogoSimple();
+init_GitMerge();
+init_GitPullRequest();
+init_Globe();
+init_GlobeHemisphereEast();
+init_GlobeHemisphereWest();
+init_GlobeSimple();
+init_GlobeStand();
+init_Goggles();
+init_GoodreadsLogo();
+init_GoogleCardboardLogo();
+init_GoogleChromeLogo();
+init_GoogleDriveLogo();
+init_GoogleLogo();
+init_GooglePhotosLogo();
+init_GooglePlayLogo();
+init_GooglePodcastsLogo();
+init_Gradient();
+init_GraduationCap();
+init_Grains();
+init_GrainsSlash();
+init_Graph();
+init_GridFour();
+init_GridNine();
+init_Guitar();
+init_Hamburger();
+init_Hammer();
+init_Hand();
+init_Handbag();
+init_HandbagSimple();
+init_HandCoins();
+init_HandEye();
+init_HandFist();
+init_HandGrabbing();
+init_HandHeart();
+init_HandPalm();
+init_HandPointing();
+init_HandsClapping();
+init_Handshake();
+init_HandSoap();
+init_HandsPraying();
+init_HandSwipeLeft();
+init_HandSwipeRight();
+init_HandTap();
+init_HandWaving();
+init_HardDrive();
+init_HardDrives();
+init_Hash();
+init_HashStraight();
+init_Headlights();
+init_Headphones();
+init_Headset();
+init_Heart();
+init_Heartbeat();
+init_HeartBreak();
+init_HeartHalf();
+init_HeartStraight();
+init_HeartStraightBreak();
+init_Hexagon();
+init_HighHeel();
+init_HighlighterCircle();
+init_Hoodie();
+init_Horse();
+init_Hourglass();
+init_HourglassHigh();
+init_HourglassLow();
+init_HourglassMedium();
+init_HourglassSimple();
+init_HourglassSimpleHigh();
+init_HourglassSimpleLow();
+init_HourglassSimpleMedium();
+init_House();
+init_HouseLine();
+init_HouseSimple();
+init_IceCream();
+init_IdentificationBadge();
+init_IdentificationCard();
+init_Image();
+init_Images();
+init_ImageSquare();
+init_ImagesSquare();
+init_Infinity();
+init_Info();
+init_InstagramLogo();
+init_Intersect();
+init_IntersectSquare();
+init_IntersectThree();
+init_Jeep();
+init_Kanban();
+init_Key();
+init_Keyboard();
+init_Keyhole();
+init_KeyReturn();
+init_Knife();
+init_Ladder();
+init_LadderSimple();
+init_Lamp();
+init_Laptop();
+init_Layout();
+init_Leaf();
+init_Lifebuoy();
+init_Lightbulb();
+init_LightbulbFilament();
+init_Lighthouse();
+init_Lightning();
+init_LightningA();
+init_LightningSlash();
+init_LineSegment();
+init_LineSegments();
+init_Link();
+init_LinkBreak();
+init_LinkedinLogo();
+init_LinkSimple();
+init_LinkSimpleBreak();
+init_LinkSimpleHorizontal();
+init_LinkSimpleHorizontalBreak();
+init_LinuxLogo();
+init_List();
+init_ListBullets();
+init_ListChecks();
+init_ListDashes();
+init_ListMagnifyingGlass();
+init_ListNumbers();
+init_ListPlus();
+init_Lock();
+init_Lockers();
+init_LockKey();
+init_LockKeyOpen();
+init_LockLaminated();
+init_LockLaminatedOpen();
+init_LockOpen();
+init_LockSimple();
+init_LockSimpleOpen();
+init_MagicWand();
+init_Magnet();
+init_MagnetStraight();
+init_MagnifyingGlass();
+init_MagnifyingGlassMinus();
+init_MagnifyingGlassPlus();
+init_MapPin();
+init_MapPinLine();
+init_MapTrifold();
+init_MarkerCircle();
+init_Martini();
+init_MaskHappy();
+init_MaskSad();
+init_MathOperations();
+init_Medal();
+init_MedalMilitary();
+init_MediumLogo();
+init_Megaphone();
+init_MegaphoneSimple();
+init_MessengerLogo();
+init_MetaLogo();
+init_Metronome();
+init_Microphone();
+init_MicrophoneSlash();
+init_MicrophoneStage();
+init_MicrosoftExcelLogo();
+init_MicrosoftOutlookLogo();
+init_MicrosoftPowerpointLogo();
+init_MicrosoftTeamsLogo();
+init_MicrosoftWordLogo();
+init_Minus();
+init_MinusCircle();
+init_MinusSquare();
+init_Money();
+init_Monitor();
+init_MonitorPlay();
+init_Moon();
+init_MoonStars();
+init_Moped();
+init_MopedFront();
+init_Mosque();
+init_Motorcycle();
+init_Mountains();
+init_Mouse();
+init_MouseSimple();
+init_MusicNote();
+init_MusicNotes();
+init_MusicNoteSimple();
+init_MusicNotesPlus();
+init_MusicNotesSimple();
+init_NavigationArrow();
+init_Needle();
+init_Newspaper();
+init_NewspaperClipping();
+init_Notches();
+init_Note();
+init_NoteBlank();
+init_Notebook();
+init_Notepad();
+init_NotePencil();
+init_Notification();
+init_NotionLogo();
+init_NumberCircleEight();
+init_NumberCircleFive();
+init_NumberCircleFour();
+init_NumberCircleNine();
+init_NumberCircleOne();
+init_NumberCircleSeven();
+init_NumberCircleSix();
+init_NumberCircleThree();
+init_NumberCircleTwo();
+init_NumberCircleZero();
+init_NumberEight();
+init_NumberFive();
+init_NumberFour();
+init_NumberNine();
+init_NumberOne();
+init_NumberSeven();
+init_NumberSix();
+init_NumberSquareEight();
+init_NumberSquareFive();
+init_NumberSquareFour();
+init_NumberSquareNine();
+init_NumberSquareOne();
+init_NumberSquareSeven();
+init_NumberSquareSix();
+init_NumberSquareThree();
+init_NumberSquareTwo();
+init_NumberSquareZero();
+init_NumberThree();
+init_NumberTwo();
+init_NumberZero();
+init_Nut();
+init_NyTimesLogo();
+init_Octagon();
+init_OfficeChair();
+init_Option();
+init_OrangeSlice();
+init_Package();
+init_PaintBrush();
+init_PaintBrushBroad();
+init_PaintBrushHousehold();
+init_PaintBucket();
+init_PaintRoller();
+init_Palette();
+init_Pants();
+init_Paperclip();
+init_PaperclipHorizontal();
+init_PaperPlane();
+init_PaperPlaneRight();
+init_PaperPlaneTilt();
+init_Parachute();
+init_Paragraph();
+init_Parallelogram();
+init_Park();
+init_Password();
+init_Path();
+init_PatreonLogo();
+init_Pause();
+init_PauseCircle();
+init_PawPrint();
+init_PaypalLogo();
+init_Peace();
+init_Pen();
+init_Pencil();
+init_PencilCircle();
+init_PencilLine();
+init_PencilSimple();
+init_PencilSimpleLine();
+init_PencilSimpleSlash();
+init_PencilSlash();
+init_PenNib();
+init_PenNibStraight();
+init_Pentagram();
+init_Pepper();
+init_Percent();
+init_Person();
+init_PersonArmsSpread();
+init_PersonSimple();
+init_PersonSimpleBike();
+init_PersonSimpleRun();
+init_PersonSimpleThrow();
+init_PersonSimpleWalk();
+init_Perspective();
+init_Phone();
+init_PhoneCall();
+init_PhoneDisconnect();
+init_PhoneIncoming();
+init_PhoneOutgoing();
+init_PhonePlus();
+init_PhoneSlash();
+init_PhoneX();
+init_PhosphorLogo();
+init_Pi();
+init_PianoKeys();
+init_PictureInPicture();
+init_PiggyBank();
+init_Pill();
+init_PinterestLogo();
+init_Pinwheel();
+init_Pizza();
+init_Placeholder();
+init_Planet();
+init_Plant();
+init_Play();
+init_PlayCircle();
+init_Playlist();
+init_PlayPause();
+init_Plug();
+init_PlugCharging();
+init_Plugs();
+init_PlugsConnected();
+init_Plus();
+init_PlusCircle();
+init_PlusMinus();
+init_PlusSquare();
+init_PokerChip();
+init_PoliceCar();
+init_Polygon();
+init_Popcorn();
+init_PottedPlant();
+init_Power();
+init_Prescription();
+init_Presentation();
+init_PresentationChart();
+init_Printer();
+init_Prohibit();
+init_ProhibitInset();
+init_ProjectorScreen();
+init_ProjectorScreenChart();
+init_Pulse();
+init_PushPin();
+init_PushPinSimple();
+init_PushPinSimpleSlash();
+init_PushPinSlash();
+init_PuzzlePiece();
+init_QrCode();
+init_Question();
+init_Queue();
+init_Quotes();
+init_Radical();
+init_Radio();
+init_Radioactive();
+init_RadioButton();
+init_Rainbow();
+init_RainbowCloud();
+init_ReadCvLogo();
+init_Receipt();
+init_ReceiptX();
+init_Record();
+init_Rectangle();
+init_Recycle();
+init_RedditLogo();
+init_Repeat();
+init_RepeatOnce();
+init_Rewind();
+init_RewindCircle();
+init_RoadHorizon();
+init_Robot();
+init_Rocket();
+init_RocketLaunch();
+init_Rows();
+init_Rss();
+init_RssSimple();
+init_Rug();
+init_Ruler();
+init_Scales();
+init_Scan();
+init_Scissors();
+init_Scooter();
+init_Screencast();
+init_ScribbleLoop();
+init_Scroll();
+init_Seal();
+init_SealCheck();
+init_SealQuestion();
+init_SealWarning();
+init_Selection();
+init_SelectionAll();
+init_SelectionBackground();
+init_SelectionForeground();
+init_SelectionInverse();
+init_SelectionPlus();
+init_SelectionSlash();
+init_Shapes();
+init_Share();
+init_ShareFat();
+init_ShareNetwork();
+init_Shield();
+init_ShieldCheck();
+init_ShieldCheckered();
+init_ShieldChevron();
+init_ShieldPlus();
+init_ShieldSlash();
+init_ShieldStar();
+init_ShieldWarning();
+init_ShirtFolded();
+init_ShootingStar();
+init_ShoppingBag();
+init_ShoppingBagOpen();
+init_ShoppingCart();
+init_ShoppingCartSimple();
+init_Shower();
+init_Shrimp();
+init_Shuffle();
+init_ShuffleAngular();
+init_ShuffleSimple();
+init_Sidebar();
+init_SidebarSimple();
+init_Sigma();
+init_Signature();
+init_SignIn();
+init_SignOut();
+init_Signpost();
+init_SimCard();
+init_Siren();
+init_SketchLogo();
+init_SkipBack();
+init_SkipBackCircle();
+init_SkipForward();
+init_SkipForwardCircle();
+init_Skull();
+init_SlackLogo();
+init_Sliders();
+init_SlidersHorizontal();
+init_Slideshow();
+init_Smiley();
+init_SmileyAngry();
+init_SmileyBlank();
+init_SmileyMeh();
+init_SmileyNervous();
+init_SmileySad();
+init_SmileySticker();
+init_SmileyWink();
+init_SmileyXEyes();
+init_SnapchatLogo();
+init_Sneaker();
+init_SneakerMove();
+init_Snowflake();
+init_SoccerBall();
+init_SortAscending();
+init_SortDescending();
+init_SoundcloudLogo();
+init_Spade();
+init_Sparkle();
+init_SpeakerHifi();
+init_SpeakerHigh();
+init_SpeakerLow();
+init_SpeakerNone();
+init_SpeakerSimpleHigh();
+init_SpeakerSimpleLow();
+init_SpeakerSimpleNone();
+init_SpeakerSimpleSlash();
+init_SpeakerSimpleX();
+init_SpeakerSlash();
+init_SpeakerX();
+init_Spinner();
+init_SpinnerGap();
+init_Spiral();
+init_SplitHorizontal();
+init_SplitVertical();
+init_SpotifyLogo();
+init_Square();
+init_SquareHalf();
+init_SquareHalfBottom();
+init_SquareLogo();
+init_SquaresFour();
+init_SquareSplitHorizontal();
+init_SquareSplitVertical();
+init_Stack();
+init_StackOverflowLogo();
+init_StackSimple();
+init_Stairs();
+init_Stamp();
+init_Star();
+init_StarAndCrescent();
+init_StarFour();
+init_StarHalf();
+init_StarOfDavid();
+init_SteeringWheel();
+init_Steps();
+init_Stethoscope();
+init_Sticker();
+init_Stool();
+init_Stop();
+init_StopCircle();
+init_Storefront();
+init_Strategy();
+init_StripeLogo();
+init_Student();
+init_Subtitles();
+init_Subtract();
+init_SubtractSquare();
+init_Suitcase();
+init_SuitcaseRolling();
+init_SuitcaseSimple();
+init_Sun();
+init_SunDim();
+init_Sunglasses();
+init_SunHorizon();
+init_Swap();
+init_Swatches();
+init_SwimmingPool();
+init_Sword();
+init_Synagogue();
+init_Syringe();
+init_Table();
+init_Tabs();
+init_Tag();
+init_TagChevron();
+init_TagSimple();
+init_Target();
+init_Taxi();
+init_TelegramLogo();
+init_Television();
+init_TelevisionSimple();
+init_TennisBall();
+init_Tent();
+init_Terminal();
+init_TerminalWindow();
+init_TestTube();
+init_TextAa();
+init_TextAlignCenter();
+init_TextAlignJustify();
+init_TextAlignLeft();
+init_TextAlignRight();
+init_TextAUnderline();
+init_TextB();
+init_Textbox();
+init_TextColumns();
+init_TextH();
+init_TextHFive();
+init_TextHFour();
+init_TextHOne();
+init_TextHSix();
+init_TextHThree();
+init_TextHTwo();
+init_TextIndent();
+init_TextItalic();
+init_TextOutdent();
+init_TextStrikethrough();
+init_TextT();
+init_TextUnderline();
+init_Thermometer();
+init_ThermometerCold();
+init_ThermometerHot();
+init_ThermometerSimple();
+init_ThumbsDown();
+init_ThumbsUp();
+init_Ticket();
+init_TidalLogo();
+init_TiktokLogo();
+init_Timer();
+init_Tipi();
+init_ToggleLeft();
+init_ToggleRight();
+init_Toilet();
+init_ToiletPaper();
+init_Toolbox();
+init_Tooth();
+init_Tote();
+init_ToteSimple();
+init_Trademark();
+init_TrademarkRegistered();
+init_TrafficCone();
+init_TrafficSign();
+init_TrafficSignal();
+init_Train();
+init_TrainRegional();
+init_TrainSimple();
+init_Tram();
+init_Translate();
+init_Trash();
+init_TrashSimple();
+init_Tray();
+init_Tree();
+init_TreeEvergreen();
+init_TreePalm();
+init_TreeStructure();
+init_TrendDown();
+init_TrendUp();
+init_Triangle();
+init_Trophy();
+init_Truck();
+init_TShirt();
+init_TwitchLogo();
+init_TwitterLogo();
+init_Umbrella();
+init_UmbrellaSimple();
+init_Unite();
+init_UniteSquare();
+init_Upload();
+init_UploadSimple();
+init_Usb();
+init_User();
+init_UserCircle();
+init_UserCircleGear();
+init_UserCircleMinus();
+init_UserCirclePlus();
+init_UserFocus();
+init_UserGear();
+init_UserList();
+init_UserMinus();
+init_UserPlus();
+init_UserRectangle();
+init_Users();
+init_UsersFour();
+init_UserSquare();
+init_UsersThree();
+init_UserSwitch();
+init_Van();
+init_Vault();
+init_Vibrate();
+init_Video();
+init_VideoCamera();
+init_VideoCameraSlash();
+init_Vignette();
+init_VinylRecord();
+init_VirtualReality();
+init_Virus();
+init_Voicemail();
+init_Volleyball();
+init_Wall();
+init_Wallet();
+init_Warehouse();
+init_Warning();
+init_WarningCircle();
+init_WarningDiamond();
+init_WarningOctagon();
+init_Watch();
+init_Waveform();
+init_Waves();
+init_WaveSawtooth();
+init_WaveSine();
+init_WaveSquare();
+init_WaveTriangle();
+init_Webcam();
+init_WebcamSlash();
+init_WebhooksLogo();
+init_WechatLogo();
+init_WhatsappLogo();
+init_Wheelchair();
+init_WheelchairMotion();
+init_WifiHigh();
+init_WifiLow();
+init_WifiMedium();
+init_WifiNone();
+init_WifiSlash();
+init_WifiX();
+init_Wind();
+init_WindowsLogo();
+init_Wine();
+init_Wrench();
+init_X();
+init_XCircle();
+init_XSquare();
+init_YinYang();
+init_YoutubeLogo();
 
 // src/icons/special/index.ts
 var special_exports = {};
@@ -50425,6 +62425,19 @@ __export(special_exports, {
   TxtIcon: () => TxtIcon,
   XlsxIcon: () => XlsxIcon
 });
+init_DefaultIcon();
+init_DocxIcon();
+init_FormIcon();
+init_Notepad2();
+init_OnenoteIcon();
+init_PptIcon();
+init_RoundAlt();
+init_SearchIcon();
+init_TxtIcon();
+init_XlsxIcon();
+
+// src/index.ts
+init_by_name();
 
 // src/avatars/Avatar3d01.svelte
 import "svelte/internal/disclose-version";
@@ -59994,7 +72007,12 @@ var componentNames = {
   logos: ["Android", "AppStore", "Apple", "AppleIntelligence2a", "AppleIntelligence2b", "AppleIntelligenceA", "AppleIntelligenceB", "Arc", "Authenticator", "Behance", "ChatGpt", "Claude", "Copilot", "Discord", "Dribbble", "Dropbox", "Excel", "Facebook", "FigmaA", "FigmaB", "Framer", "Gemini", "Github", "Google", "GoogleDrive", "GooglePlay", "Grok", "Gumroad", "ICloud", "Instagram", "LemonSqueezy", "LinkedIn", "Loop", "Mastercard", "Medium", "Messenger", "Meta", "Microsoft", "Midjourney", "Nintendo", "Notion", "OneDrive", "OneNote", "PayPal", "Perplexity", "Pinterest", "PowerPoint", "Reddit", "RssLogo", "Slack", "Snapchat", "SnowLogo", "Stripe", "Svelte", "Telegram", "Threads", "TikTok", "Twitch", "Twitter", "Visa", "WhatsApp", "Word", "XLogo", "Youtube"]
 };
 
+// src/index.ts
+init_types();
+
 // src/lib/Icon.svelte
+init_types();
+init_by_name();
 import "svelte/internal/disclose-version";
 import * as $1521 from "svelte/internal/client";
 import { getContext as getContext2 } from "svelte";
@@ -60106,6 +72124,7 @@ function Icon($$anchor, $$props) {
 }
 
 // src/lib/IconProvider.svelte
+init_types();
 import "svelte/internal/disclose-version";
 import * as $1522 from "svelte/internal/client";
 import { setContext } from "svelte";
@@ -60152,6 +72171,7 @@ function IconProvider($$anchor, $$props) {
 }
 
 // src/lib/component-icon-resolver.ts
+init_by_name();
 function createSnowUIComponentIconResolver(options = {}) {
   return ({ name, collection }) => {
     const registry = iconsByCollection;
