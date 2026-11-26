@@ -3,6 +3,14 @@
     "version": "1.0.33",
     "description": "A lightweight Svelte component package that automatically generates icon, avatar, background, and other components from processed assets in @snowui-design-system/resource-base.",
     "license": "SEE LICENSE IN PACKAGE_LICENSE.md",
+    "homepage": "https://snowui.dev",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SnowUI/resource-svelte.git"
+    },
+    "bugs": {
+        "url": "https://github.com/SnowUI/resource-svelte/issues"
+    },
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "svelte": "./src/index.ts",
